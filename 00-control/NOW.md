@@ -8,5 +8,8 @@ Current Focus:
 - Practice short explainers
 - Avoid business overplanning before job switch
 
+Current Engineering-Linked Task:
+- Create one small explainer idea from the active foundation: **"Big-O in plain English using Two Sum"**
+
 Limit:
 Max 1 small digital-lab task per week.
