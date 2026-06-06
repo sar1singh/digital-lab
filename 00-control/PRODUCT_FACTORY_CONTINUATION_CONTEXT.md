@@ -50,7 +50,7 @@
 ## Current Product Status
 
 ### Product 1: Budget Planner & Expense Tracker
-**Status:** Packaging / Listing Preparation
+**Status:** Ready to Publish
 
 **Completed:**
 - Product strategy finalized
@@ -65,13 +65,15 @@
 - 5 listing/demo images generated
 - Branding updated to Nivora
 - BRAND_QA_CHECKLIST.md created
-- Delivery ZIP package created
-- Google Sheets copy link pasted into delivery file
+- Google Sheets copy link finalized and pasted into delivery file
+- Dashboard bottom summary fixed: B40(=B4->=B5), B41(=B5->=B7)
+- Final clean ZIP rebuilt with only 3 buyer files (xlsx, pdf, copy-link.txt)
+- FINAL_ZIP_QA.md created
+- PRODUCT_CATALOG.csv status set to Ready to Publish
 
 **Publishing candidate:** `delivery/budget-planner-expense-tracker.xlsx`
 
 **Outstanding:**
-- Capture real Google Sheets screenshots (5)
 - Create Gumroad listing
 - Create Payhip listing
 - Publish
@@ -95,7 +97,7 @@
 
 | # | Product | Format | Status | Price |
 |---|---------|--------|--------|-------|
-| 1 | Budget Planner & Expense Tracker | Spreadsheet (7 tabs) | Packaging / Listing Prep | $7 |
+| 1 | Budget Planner & Expense Tracker | Spreadsheet (7 tabs) | Ready to Publish | $7 |
 | 2 | Invoice Template & Billing Calculator | Spreadsheet | Queued | $7 |
 | 3 | Freelancer Pricing Calculator | Spreadsheet | Backlog | $5-$12 |
 | 4 | Net Worth Tracker | Spreadsheet | Backlog | $5-$12 |
@@ -166,16 +168,15 @@ If no, park it.
 
 ## Immediate Next Actions
 
-1. Capture 5 real screenshots from Google Sheets (per `delivery/screenshots/README.md`)
-2. Create Gumroad listing from `LISTING_COPY_GUMROAD.md` (use Nivora brand)
-3. Create Payhip listing from `LISTING_COPY_PAYHIP.md`
-4. Upload XLSX, PDF guide, listing images, screenshots to both listings
-5. Set price to $7 on both platforms
-6. Test checkout preview
-7. Publish both listings
-8. Record listing URLs in `PRODUCT_CATALOG.csv`
-9. Update `PRODUCT_CATALOG.csv` status to Published
-10. **Then** start Product 2 (Invoice Template & Billing Calculator)
+1. Create Gumroad listing from `LISTING_COPY_GUMROAD.md` (use Nivora brand)
+2. Create Payhip listing from `LISTING_COPY_PAYHIP.md`
+3. Upload final ZIP + listing images to both listings
+4. Set price to $7 on both platforms
+5. Test checkout preview
+6. Publish both listings
+7. Record listing URLs in `PRODUCT_CATALOG.csv`
+8. Update `PRODUCT_CATALOG.csv` status to Published
+9. **Then** start Product 2 (Invoice Template & Billing Calculator)
 
 ---
 

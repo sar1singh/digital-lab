@@ -84,7 +84,7 @@ Assistant behavior:
 Publisher brand: Nivora
 Support/contact: workbysar1@gmail.com
 
-1. Budget Planner & Expense Tracker (Product 1 — Packaging — delivery artifacts ready)
+1. Budget Planner & Expense Tracker (Product 1 — Ready to Publish — final ZIP built, Gumroad listing next)
 2. Invoice Template & Billing Calculator (Product 2 — next — not started)
 3. Freelancer Pricing Calculator (Product 3 — backlog)
 4. Net Worth Tracker (Product 4 — backlog)
@@ -315,3 +315,8 @@ Date: 2026-06-07
 Decision: Customer-facing publishing brand finalized as "Nivora". "Work by Sar1" retired as customer-facing brand. Support email remains workbysar1@gmail.com.
 Reason: Brand identity refined for better marketplace positioning. Founder email kept separate as support channel.
 Impact: All delivery files, listing assets, images, PDF, listing copy, and metadata updated from "Work by Sar1" to "Nivora". Email unchanged.
+
+Date: 2026-06-07
+Decision: Dashboard bottom summary formula bug fixed: B40 (=B4->=B5), B41 (=B5->=B7). Expenses now points to Total Expenses, Net Savings now points to Net Savings cell. Final ZIP rebuilt with only 3 clean buyer files.
+Reason: Manual inspection found "Expenses" label at A40/B40 referenced empty B4 cell, "Net Savings" label at A41/B41 referenced Expenses (B5) instead of Net Savings (B7).
+Impact: Both delivery workbook and source artifact v1.2 fixed. Final ZIP QA completed (FINAL_ZIP_QA.md). PRODUCT_CATALOG.csv status updated to Ready to Publish. Next: Gumroad listing.

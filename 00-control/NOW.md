@@ -13,7 +13,7 @@ Current Focus:
 - Sunday: Invoice Template & Billing Calculator
 
 Current Active Task:
-Create Gumroad listing for Nivora Budget Planner & Expense Tracker.
+Create Gumroad listing for Nivora Budget Planner & Expense Tracker — final clean ZIP ready for upload.
 
 Next Task:
 Build and publish Invoice Template & Billing Calculator.

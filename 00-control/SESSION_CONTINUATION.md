@@ -10,7 +10,7 @@ Digital-Lab is a personal digital products experiment. The active execution trac
 
 **Primary goal:** First product built, listed, sold — first $50-$100 revenue.
 
-**Current Product 1 status:** Packaging / Listing Preparation — delivery artifacts ready, Gumroad listing pending.
+**Current Product 1 status:** Ready to Publish — workbook fixed, final ZIP built with 3 clean buyer files, Gumroad listing is the next manual action.
 
 ---
 
@@ -24,17 +24,17 @@ Digital-Lab is a personal digital products experiment. The active execution trac
 - Automated QA: 55/55 PASS
 - Manual Google Sheets QA: PASS
 - v1.2 finalized as current recommended version
-- Brand updated to Nivora across all delivery files, images, PDF, and listing copy
-- Google Sheets copy link pasted into `delivery/google-sheets-copy-link.txt`
-- Delivery folder created with buyer-facing files:
+- Brand updated to Nivora across all files, images, PDF, and listing copy
+- Dashboard bottom summary fixed: B40 (=B4->=B5 Expenses), B41 (=B5->=B7 Net Savings)
+- Final clean ZIP rebuilt with only 3 buyer files (no internal files)
+- FINAL_ZIP_QA.md created
+- Google Sheets copy link finalized and pasted into `delivery/google-sheets-copy-link.txt`
+- Delivery folder contains buyer-ready files:
   - `budget-planner-expense-tracker.xlsx` (no version number)
-  - `quick-start-guide.md`, `.html`, `.pdf`
-  - `release-notes.txt`
-  - `google-sheets-copy-link.txt` (copy link populated)
+  - `budget-planner-expense-tracker-quick-start-guide.pdf`
+  - `google-sheets-copy-link.txt`
   - `listing-assets/` — 5 demo images (product-cover, bundle-preview, feature-*)
-  - `screenshots/README.md` — manual capture guide
-  - `budget-planner-expense-tracker-delivery.zip` (all buyer files)
-  - `BRAND_QA_CHECKLIST.md` — brand verification
+  - `budget-planner-expense-tracker-delivery.zip` (buyer ZIP: xlsx + pdf + copy link)
 
 ---
 
@@ -55,7 +55,7 @@ Digital-Lab is a personal digital products experiment. The active execution trac
 
 ## Current Active Task
 
-Create Gumroad listing for Nivora Budget Planner & Expense Tracker. Capture final screenshots, then publish.
+Create Gumroad listing for Nivora Budget Planner & Expense Tracker.
 
 ---
 
@@ -63,7 +63,7 @@ Create Gumroad listing for Nivora Budget Planner & Expense Tracker. Capture fina
 
 | # | Product | Format | Status | Price |
 |---|---------|--------|--------|-------|
-| 1 | Budget Planner & Expense Tracker | Spreadsheet (7 tabs) | **Packaging / Listing Prep** | $7 |
+| 1 | Budget Planner & Expense Tracker | Spreadsheet (7 tabs) | **Ready to Publish** | $7 |
 | 2 | Invoice Template & Billing Calculator | Spreadsheet | Not started | $7 |
 | 3 | Freelancer Pricing Calculator | Spreadsheet | Backlog | $5-$12 |
 | 4 | Net Worth Tracker | Spreadsheet | Backlog | $5-$12 |
@@ -88,16 +88,15 @@ Create Gumroad listing for Nivora Budget Planner & Expense Tracker. Capture fina
 
 ## Immediate Next Actions
 
-1. Capture 5 real Google Sheets screenshots (per `delivery/screenshots/README.md`)
-2. Create Gumroad listing from `LISTING_COPY_GUMROAD.md` (use Nivora brand)
-3. Create Payhip listing from `LISTING_COPY_PAYHIP.md`
-4. Upload XLSX, PDF guide, listing images, screenshots to both listings
-5. Set price to $7 on both platforms
-6. Test checkout preview
-7. Publish both listings
-8. Record listing URLs in `PRODUCT_CATALOG.csv`
-9. Update `PRODUCT_CATALOG.csv` status to Published
-10. **Then** start Product 2 (Invoice Template & Billing Calculator)
+1. Create Gumroad listing from `LISTING_COPY_GUMROAD.md` (use Nivora brand)
+2. Create Payhip listing from `LISTING_COPY_PAYHIP.md`
+3. Upload final ZIP + listing images to both listings
+4. Set price to $7 on both platforms
+5. Test checkout preview
+6. Publish both listings
+7. Record listing URLs in `PRODUCT_CATALOG.csv`
+8. Update `PRODUCT_CATALOG.csv` status to Published
+9. **Then** start Product 2 (Invoice Template & Billing Calculator)
 
 ---
 
