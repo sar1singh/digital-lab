@@ -78,11 +78,11 @@ Assistant behavior:
 
 ### Current Target Products (Locked Build Order)
 
-1. Budget Planner & Expense Tracker (Product 1 — active)
-2. Invoice Template & Billing Calculator (Product 2 — next)
-3. Freelancer Pricing Calculator (Product 3 — queued)
-4. Net Worth Tracker (Product 4 — queued)
-5. POD Profit Calculator (Product 5 — queued)
+1. Budget Planner & Expense Tracker (Product 1 — Packaging — delivery artifacts ready)
+2. Invoice Template & Billing Calculator (Product 2 — next — not started)
+3. Freelancer Pricing Calculator (Product 3 — backlog)
+4. Net Worth Tracker (Product 4 — backlog)
+5. POD Profit Calculator (Product 5 — backlog)
 
 ### Decision 1
 
@@ -294,3 +294,13 @@ Date: 2026-06-07
 Decision: Locked build order updated. Product 1 is Budget Planner & Expense Tracker. Product 2 is Invoice Template & Billing Calculator. Freelancer Pricing Calculator, Net Worth Tracker, and POD Profit Calculator moved to queued positions 3-5.
 Reason: Budget Planner & Expense Tracker has broader buyer urgency and simpler build scope for first-product validation. Invoice Template & Billing Calculator is a natural adjacent product for weekend execution.
 Impact: Weekend build: Saturday = Budget Planner & Expense Tracker, Sunday = Invoice Template & Billing Calculator. First market validation step is skipped — move directly to building.
+
+Date: 2026-06-07
+Decision: Product 1 (Budget Planner & Expense Tracker) reached Packaging status. Navigation links replaced with plain text for Google Sheets compatibility. Delivery artifacts created.
+Reason: Manual Google Sheets QA found internal openpyxl hyperlinks broken after import. Removed all clickable links, replaced with tab-name listings + bottom-tab navigation instructions.
+Impact: v1.2 created with 91 formulas preserved, 55/55 automated QA pass. Buyer-facing delivery folder created with workbook, quick-start guide (MD/HTML/PDF), 5 listing images, and delivery zip. Next: Google Sheets copy link, screenshots, and Gumroad/Payhip listings.
+
+Date: 2026-06-07
+Decision: Brand identity set to "Work by Sar1" as temporary publishing identity. Generic product names used. Brand decisions deferred until after first sale or 5 products published.
+Reason: Branding was blocking publishing velocity. Using a simple label unblocks listing creation.
+Impact: All listing copy and delivery artifacts use "Work by Sar1" as author/account label. No logo, no brand system work.

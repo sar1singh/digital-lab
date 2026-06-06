@@ -9,13 +9,32 @@ Goal: publish small proven-format products that can create first revenue quickly
 
 ## Product 1: Budget Planner & Expense Tracker
 
-Format: Google Sheet / Excel spreadsheet
+Status: **Packaging** — delivery artifacts ready, listing pending.
+
+Format: Google Sheet / Excel spreadsheet (7 tabs: Start Here, Monthly Budget, Expense Tracker, Bills Tracker, Debt Tracker, Savings Tracker, Dashboard)
 
 Buyer: individuals, freelancers, and solopreneurs who want a simple monthly budget and expense tracking system
 
 Why: broad buyer urgency — everyone managing personal or freelance money needs a simple tracker. Low build effort, high perceived value.
 
+What's done:
+- 7-tab workbook with 91 formulas (SUMIF, COUNTIF, IFERROR, SUM, AVERAGE, TEXT)
+- Formula audit: 17 cross-sheet fixes, navigation fix for Google Sheets
+- Automated QA: 55/55 PASS
+- Manual QA: PASS (Excel + Google Sheets)
+- Buyer-facing delivery: workbook, quick-start guide (MD/HTML/PDF), release notes, 5 listing images, delivery zip
+- Price: $7
+
+What remains:
+- Google Sheets copy link
+- Real screenshots (5)
+- Gumroad listing
+- Payhip listing
+- Publish
+
 ## Product 2: Invoice Template & Billing Calculator
+
+Status: **Queued** — not started. Do not start until Product 1 is published or explicitly parked.
 
 Format: Google Sheet / Excel spreadsheet
 
