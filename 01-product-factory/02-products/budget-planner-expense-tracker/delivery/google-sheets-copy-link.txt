@@ -1,7 +1,7 @@
 Budget Planner & Expense Tracker — Google Sheets Copy Link
 
 Copy Link:
-<PASTE_GOOGLE_SHEETS_COPY_LINK_HERE>
+https://docs.google.com/spreadsheets/d/1MNoYd8Wo14q15qADgFBVbqoJ7WjGMXt_/copy
 
 How to use:
 1. Open the copy link.
