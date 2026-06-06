@@ -45,6 +45,7 @@
 - [ ] Create /copy link and test in incognito browser
 - [ ] Export PDF quick-start guide (1 page)
 - [ ] Capture 5 screenshots per SCREENSHOT_CAPTURE_GUIDE.md
+- [ ] Run manual QA test suite (qa/) before publishing
 
 ### Phase D: List & Publish (Pending)
 

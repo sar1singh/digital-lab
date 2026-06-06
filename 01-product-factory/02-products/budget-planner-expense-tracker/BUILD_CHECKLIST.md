@@ -72,6 +72,11 @@
 - [x] Sample data works with all formulas
 - [x] Sample data clearly marked as example (Start Here note)
 
+## QA Test Suite
+
+- [x] QA test suite created (qa/ directory — 8 files)
+- [ ] Manual QA execution pending (run before publishing)
+
 ## Packaging Tasks
 
 - [ ] Upload XLSX to Google Drive and verify formulas
@@ -79,6 +84,7 @@
 - [ ] Create /copy link
 - [ ] Export PDF quick-start guide
 - [ ] Capture 5 screenshots per SCREENSHOT_CAPTURE_GUIDE.md
+- [ ] Run manual QA test suite
 - [ ] Draft Gumroad listing from LISTING_COPY_GUMROAD.md
 - [ ] Draft Payhip listing from LISTING_COPY_PAYHIP.md
 - [ ] Publish and record URLs in PRODUCT_CATALOG.csv
