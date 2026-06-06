@@ -1,6 +1,6 @@
 # Digital-Lab Continuation Context
 
-Last Updated: 2026-06-05
+Last Updated: 2026-06-06
 
 ## Purpose
 
@@ -15,6 +15,10 @@ This file is not a roadmap. It is the accumulated decision log and strategic con
 Current goal: generate first digital revenue outside of salary.
 
 Target: first $50-$100 revenue.
+
+Current execution track: Product Factory.
+
+Critical rule: Digital-Lab is not Product Factory. Product Factory is only one execution track inside Digital-Lab.
 
 Secondary learning goals:
 - Product validation
@@ -59,6 +63,23 @@ Assistant behavior:
 - Only agree when evidence supports agreement
 
 ## Decisions Already Made
+
+### Locked Decisions
+
+- Product Factory is active.
+- SaaS Lab is parked.
+- Content Lab is parked.
+- Agency Lab is parked.
+- First revenue is more important than innovation.
+- Compete in existing proven markets.
+- Copy successful product formats legally.
+- Improve packaging and execution.
+- Build -> Publish -> Learn -> Repeat.
+
+### Current Target Products
+
+1. Freelancer Pricing Calculator
+2. POD Profit Calculator
 
 ### Decision 1
 
@@ -260,3 +281,8 @@ Date: 2026-06-05
 Decision: First digital revenue is the primary digital-lab mission; operational utility products are the first product category.
 Reason: Research showed stronger buyer urgency around tools that save time, reduce mistakes, or improve money decisions.
 Impact: Build a ranked utility product backlog and launch small products on Gumroad/Payhip before investing in infrastructure.
+
+Date: 2026-06-06
+Decision: Product Factory is the active execution track inside Digital-Lab; SaaS Lab, Content Lab, and Agency Lab are parked.
+Reason: The fastest realistic path to first revenue is publishing small proven-format utility products, not building infrastructure or a brand.
+Impact: Operate through Product Factory documents, track product/listing/revenue metrics, and begin with Freelancer Pricing Calculator and POD Profit Calculator validation.
