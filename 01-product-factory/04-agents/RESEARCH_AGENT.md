@@ -30,6 +30,11 @@ Find proven paid product formats and decide whether a product idea is worth buil
 
 ## Current Priority
 
-Validate:
-1. Freelancer Pricing Calculator
-2. POD Profit Calculator
+No active research required. Build phase is active.
+
+Build order:
+1. Budget Planner & Expense Tracker
+2. Invoice Template & Billing Calculator
+3. Freelancer Pricing Calculator
+4. Net Worth Tracker
+5. POD Profit Calculator

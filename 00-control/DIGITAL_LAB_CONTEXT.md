@@ -1,6 +1,6 @@
 # Digital-Lab Continuation Context
 
-Last Updated: 2026-06-06
+Last Updated: 2026-06-07
 
 ## Purpose
 
@@ -76,10 +76,13 @@ Assistant behavior:
 - Improve packaging and execution.
 - Build -> Publish -> Learn -> Repeat.
 
-### Current Target Products
+### Current Target Products (Locked Build Order)
 
-1. Freelancer Pricing Calculator
-2. POD Profit Calculator
+1. Budget Planner & Expense Tracker (Product 1 — active)
+2. Invoice Template & Billing Calculator (Product 2 — next)
+3. Freelancer Pricing Calculator (Product 3 — queued)
+4. Net Worth Tracker (Product 4 — queued)
+5. POD Profit Calculator (Product 5 — queued)
 
 ### Decision 1
 
@@ -285,4 +288,9 @@ Impact: Build a ranked utility product backlog and launch small products on Gumr
 Date: 2026-06-06
 Decision: Product Factory is the active execution track inside Digital-Lab; SaaS Lab, Content Lab, and Agency Lab are parked.
 Reason: The fastest realistic path to first revenue is publishing small proven-format utility products, not building infrastructure or a brand.
-Impact: Operate through Product Factory documents, track product/listing/revenue metrics, and begin with Freelancer Pricing Calculator and POD Profit Calculator validation.
+Impact: Operate through Product Factory documents, track product/listing/revenue metrics. Initial target products set to Freelancer Pricing Calculator and POD Profit Calculator.
+
+Date: 2026-06-07
+Decision: Locked build order updated. Product 1 is Budget Planner & Expense Tracker. Product 2 is Invoice Template & Billing Calculator. Freelancer Pricing Calculator, Net Worth Tracker, and POD Profit Calculator moved to queued positions 3-5.
+Reason: Budget Planner & Expense Tracker has broader buyer urgency and simpler build scope for first-product validation. Invoice Template & Billing Calculator is a natural adjacent product for weekend execution.
+Impact: Weekend build: Saturday = Budget Planner & Expense Tracker, Sunday = Invoice Template & Billing Calculator. First market validation step is skipped — move directly to building.

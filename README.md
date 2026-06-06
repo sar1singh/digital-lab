@@ -25,8 +25,11 @@ Get first product built, first product listed, first product sale, and first $50
 
 ## Current Target Products
 
-1. Freelancer Pricing Calculator
-2. POD Profit Calculator
+1. Budget Planner & Expense Tracker (building)
+2. Invoice Template & Billing Calculator (next)
+3. Freelancer Pricing Calculator (queued)
+4. Net Worth Tracker (queued)
+5. POD Profit Calculator (queued)
 
 ## Start Here
 

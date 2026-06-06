@@ -9,11 +9,14 @@ Current Focus:
 - Build small operational utility products
 - Publish on Gumroad/Payhip before building infrastructure
 - Avoid analysis paralysis
+- Saturday: Budget Planner & Expense Tracker
+- Sunday: Invoice Template & Billing Calculator
 
 Current Active Task:
-- Prepare Product Factory execution system.
-- Do not implement products yet.
-- First action after setup: conduct focused market validation for Freelancer Pricing Calculator and POD Profit Calculator.
+Build and publish Budget Planner & Expense Tracker.
+
+Next Task:
+Build and publish Invoice Template & Billing Calculator.
 
 Limit:
 - No SaaS, website, branding, newsletter, or Etsy setup before first sale or 5 products published.
@@ -31,5 +34,8 @@ Locked Decisions:
 - Build -> Publish -> Learn -> Repeat.
 
 Current Target Products:
-1. Freelancer Pricing Calculator
-2. POD Profit Calculator
+1. Budget Planner & Expense Tracker (active)
+2. Invoice Template & Billing Calculator (next)
+3. Freelancer Pricing Calculator (queued)
+4. Net Worth Tracker (queued)
+5. POD Profit Calculator (queued)
