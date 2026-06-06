@@ -73,8 +73,8 @@
 
 ## Export Ready
 
-- [ ] XLSX export works
-- [ ] Google Sheet copy link works
-- [ ] All tabs included in export
-- [ ] No broken formulas after export
-- [ ] Quick-start guide PDF complete
+- [x] XLSX export works — generated at artifacts/budget-planner-expense-tracker-v1.xlsx
+- [ ] Google Sheet copy link created
+- [x] All 7 tabs included in export
+- [ ] No broken formulas after export (verify in Excel)
+- [ ] Quick-start guide PDF exported

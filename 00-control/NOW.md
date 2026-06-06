@@ -13,7 +13,7 @@ Current Focus:
 - Sunday: Invoice Template & Billing Calculator
 
 Current Active Task:
-Build Budget Planner & Expense Tracker product workspace.
+QA Budget Planner spreadsheet and prepare Google Sheet/XLSX/PDF packaging.
 
 Next Task:
 Build and publish Invoice Template & Billing Calculator.

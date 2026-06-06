@@ -16,21 +16,27 @@
 - [x] SCREENSHOT_PLAN.md — 5 screenshot descriptions
 - [x] QA_CHECKLIST.md — quality assurance checklist
 
-### Phase B: Build Spreadsheet
+### Phase B: Build Spreadsheet (Done — artifacts/budget-planner-expense-tracker-v1.xlsx)
 
-1. Create Google Sheet with 7 tabs per SHEET_STRUCTURE.md.
-2. Enter all formulas per FORMULAS.md.
-3. Enter sample data per SAMPLE_DATA.md.
-4. Apply formatting, data validation, and conditional formatting.
-5. Lock or color-mark formula cells.
-6. Test all formulas and dashboard values.
+- [x] XLSX generated with all 7 tabs via Python/openpyxl script
+- [x] All formulas from FORMULAS.md implemented (SUMIF, SUM, IFERROR, TEXT, COUNTIF, AVERAGE)
+- [x] Sample data from SAMPLE_DATA.md populated in all tabs
+- [x] Formatting: headers, currency, percentage, date formats
+- [x] Data validation dropdowns on Expense Tracker (Category, Payment Method, Planned/Unplanned)
+- [x] Data validation dropdowns on Bills Tracker (Frequency, Paid Status)
+- [x] Conditional formatting on Monthly Budget difference column
+- [x] Conditional formatting on unpaid bills (red highlight)
+- [x] Dashboard: summary cards, category spending lookup, pie chart, bar chart
+- [x] Formula cells marked with gray background
+- [x] Input cells marked with green background
+- [x] Freeze panes on data tabs
 
-### Phase C: Export & Package
+### Phase C: Export & Package (In Progress)
 
-7. Create XLSX version (File → Download → Microsoft Excel).
-8. Create Google Sheet copy-ready link.
-9. Create 1-page PDF quick-start guide from QUICK_START_GUIDE.md content.
-10. Create 5 screenshots per SCREENSHOT_PLAN.md.
+7. [x] Create XLSX version — generated at artifacts/budget-planner-expense-tracker-v1.xlsx
+8. [ ] Create Google Sheet copy-ready link (upload XLSX to Google Drive)
+9. [ ] Create 1-page PDF quick-start guide from QUICK_START_GUIDE.md content
+10. [ ] Create 5 screenshots per SCREENSHOT_PLAN.md
 
 ### Phase D: List & Publish
 
