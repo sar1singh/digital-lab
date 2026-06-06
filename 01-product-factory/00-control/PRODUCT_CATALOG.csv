@@ -1,5 +1,5 @@
 Product,Category,Format,Status,Platform,Listing URL,Price,Date Started,Date Published,Views,Sales,Revenue,Next Action,Notes,Artifact Path
-Budget Planner & Expense Tracker,Personal finance,Spreadsheet template,In Build,,,,2026-06-07,,0,0,0,QA spreadsheet and prepare packaging,Product 1 — Saturday,02-products/budget-planner-expense-tracker/artifacts/budget-planner-expense-tracker-v1.xlsx
+Budget Planner & Expense Tracker,Personal finance,Spreadsheet template,In Build,,,,2026-06-07,,0,0,0,Package for Gumroad and Payhip,Product 1 — Saturday,02-products/budget-planner-expense-tracker/artifacts/budget-planner-expense-tracker-v1.xlsx
 Invoice Template & Billing Calculator,Business operations,Spreadsheet template,Planned,,,,2026-06-07,,0,0,0,Build and publish next,Product 2 — Sunday
 Freelancer Pricing Calculator,Freelancer tools,Spreadsheet calculator,Planned,,,,,,0,0,0,Wait for Products 1-2 launch,Product 3 — queued
 Net Worth Tracker,Personal finance,Spreadsheet tracker,Planned,,,,,,0,0,0,Wait for Products 1-2 launch,Product 4 — queued

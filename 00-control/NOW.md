@@ -13,7 +13,7 @@ Current Focus:
 - Sunday: Invoice Template & Billing Calculator
 
 Current Active Task:
-QA Budget Planner spreadsheet and prepare Google Sheet/XLSX/PDF packaging.
+Package Budget Planner product for Gumroad and Payhip.
 
 Next Task:
 Build and publish Invoice Template & Billing Calculator.

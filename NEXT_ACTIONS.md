@@ -31,20 +31,31 @@
 - [x] Input cells marked with green background
 - [x] Freeze panes on data tabs
 
-### Phase C: Export & Package (In Progress)
+### Phase C: Packaging (Active — packaging docs ready, manual steps remain)
 
-7. [x] Create XLSX version — generated at artifacts/budget-planner-expense-tracker-v1.xlsx
-8. [ ] Create Google Sheet copy-ready link (upload XLSX to Google Drive)
-9. [ ] Create 1-page PDF quick-start guide from QUICK_START_GUIDE.md content
-10. [ ] Create 5 screenshots per SCREENSHOT_PLAN.md
+- [x] PACKAGING_CHECKLIST.md — full packaging workflow from QA to publish
+- [x] GOOGLE_SHEETS_UPLOAD_GUIDE.md — upload, convert, /copy link, test
+- [x] PDF_QUICK_START_GUIDE.md — buyer-facing PDF-ready guide
+- [x] SCREENSHOT_CAPTURE_GUIDE.md — exact screenshots with file names
+- [x] RELEASE_NOTES_V1.md — version, tabs, limitations, improvements
+- [x] BUYER_DELIVERY_INSTRUCTIONS.md — what buyer receives, how to use
+- [x] FINAL_QA_CHECKLIST.md — pre-publish, publish, post-publish checks
+- [ ] Upload XLSX to Google Drive, convert, verify formulas
+- [ ] Recreate charts in Google Sheets if needed
+- [ ] Create /copy link and test in incognito browser
+- [ ] Export PDF quick-start guide (1 page)
+- [ ] Capture 5 screenshots per SCREENSHOT_CAPTURE_GUIDE.md
 
-### Phase D: List & Publish
+### Phase D: List & Publish (Pending)
 
-11. Create Gumroad listing using LISTING_COPY_GUMROAD.md.
-12. Create Payhip listing using LISTING_COPY_PAYHIP.md.
-13. Publish both listings.
-14. Record listing URLs, price, date published in product catalog.
-15. Run QA against QA_CHECKLIST.md.
+- [ ] Draft Gumroad listing from LISTING_COPY_GUMROAD.md
+- [ ] Draft Payhip listing from LISTING_COPY_PAYHIP.md
+- [ ] Upload XLSX, PDF guide, and screenshots to both listings
+- [ ] Set price to $7 on both platforms
+- [ ] Test checkout preview
+- [ ] Publish both listings
+- [ ] Record listing URLs, price, date published in PRODUCT_CATALOG.csv
+- [ ] Update PRODUCT_CATALOG.csv status to Published
 
 ## Product 2: Invoice Template & Billing Calculator (Sunday)
 
