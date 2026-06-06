@@ -93,11 +93,13 @@
 - [x] Listing/demo assets generated (5 images in delivery/listing-assets/)
 - [x] Screenshots placeholder guide created (delivery/screenshots/README.md)
 - [x] Delivery zip created (delivery/budget-planner-expense-tracker-delivery.zip)
-- [ ] Upload v1.2 XLSX to Google Drive and verify formulas + navigation
-- [ ] Recreate charts in Google Sheets if needed
-- [ ] Create /copy link
-- [ ] Paste Google Sheets /copy link into delivery/google-sheets-copy-link.txt
+- [x] Customer-facing brand updated to Nivora (all delivery files, images, PDF, listing copy)
+- [x] Delivery PDF regenerated with Nivora brand
+- [x] Listing assets regenerated with Nivora brand
+- [x] Final zip regenerated with updated files
+- [x] BRAND_QA_CHECKLIST.md created
+- [x] Google Sheets copy link pasted into delivery/google-sheets-copy-link.txt
 - [ ] Capture real screenshots per delivery/screenshots/README.md
-- [ ] Draft Gumroad listing from LISTING_COPY_GUMROAD.md
-- [ ] Draft Payhip listing from LISTING_COPY_PAYHIP.md
+- [ ] Create Gumroad listing from LISTING_COPY_GUMROAD.md
+- [ ] Create Payhip listing from LISTING_COPY_PAYHIP.md
 - [ ] Publish and record URLs in PRODUCT_CATALOG.csv

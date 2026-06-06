@@ -2,7 +2,11 @@
 
 ## Product Title
 
-Budget Planner & Expense Tracker — Google Sheet Budget Template
+Budget Planner & Expense Tracker — Google Sheets + Excel
+
+## Publisher
+
+by Nivora
 
 ## Tagline
 
@@ -75,6 +79,10 @@ No. This is a one-time purchase. No subscriptions.
 ## Refund Policy
 
 Due to the digital nature of this product, all sales are final. Contact me if you have any issues — I'm happy to help.
+
+## Support
+
+Support: workbysar1@gmail.com
 
 ## Price
 

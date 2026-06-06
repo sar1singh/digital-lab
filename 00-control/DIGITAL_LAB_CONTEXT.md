@@ -78,6 +78,9 @@ Assistant behavior:
 
 ### Current Target Products (Locked Build Order)
 
+Publisher brand: Nivora
+Support/contact: workbysar1@gmail.com
+
 1. Budget Planner & Expense Tracker (Product 1 — Packaging — delivery artifacts ready)
 2. Invoice Template & Billing Calculator (Product 2 — next — not started)
 3. Freelancer Pricing Calculator (Product 3 — backlog)
@@ -304,3 +307,8 @@ Date: 2026-06-07
 Decision: Brand identity set to "Work by Sar1" as temporary publishing identity. Generic product names used. Brand decisions deferred until after first sale or 5 products published.
 Reason: Branding was blocking publishing velocity. Using a simple label unblocks listing creation.
 Impact: All listing copy and delivery artifacts use "Work by Sar1" as author/account label. No logo, no brand system work.
+
+Date: 2026-06-07
+Decision: Customer-facing publishing brand finalized as "Nivora". "Work by Sar1" retired as customer-facing brand. Support email remains workbysar1@gmail.com.
+Reason: Brand identity refined for better marketplace positioning. Founder email kept separate as support channel.
+Impact: All delivery files, listing assets, images, PDF, listing copy, and metadata updated from "Work by Sar1" to "Nivora". Email unchanged.

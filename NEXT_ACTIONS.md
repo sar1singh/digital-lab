@@ -31,7 +31,7 @@
 - [x] Input cells marked with green background
 - [x] Freeze panes on data tabs
 
-### Phase C: Packaging (Active — delivery artifacts ready, manual upload/screenshot steps remain)
+### Phase C: Packaging (Active — brand updated to Nivora, Gumroad listing next)
 
 - [x] PACKAGING_CHECKLIST.md — full packaging workflow from QA to publish
 - [x] GOOGLE_SHEETS_UPLOAD_GUIDE.md — upload, convert, /copy link, test
@@ -44,17 +44,17 @@
 - [x] Navigation links fixed for Google Sheets (v1.2 — hyperlinks replaced with plain text)
 - [x] Navigation QA report created (qa/NAVIGATION_QA_REPORT.md)
 - [x] Workbook copied as buyer-facing filename (delivery/budget-planner-expense-tracker.xlsx)
-- [x] Google Sheets copy link file created (delivery/google-sheets-copy-link.txt)
+- [x] Google Sheets copy link pasted into delivery/google-sheets-copy-link.txt
 - [x] Release notes created (delivery/release-notes.txt)
 - [x] Quick-start guide created (MD + HTML + PDF)
 - [x] Listing/demo assets generated (5 images in delivery/listing-assets/)
 - [x] Screenshots README created (delivery/screenshots/README.md)
 - [x] Delivery zip created (delivery/budget-planner-expense-tracker-delivery.zip)
-- [ ] Paste final Google Sheets /copy link into delivery/google-sheets-copy-link.txt
-- [ ] Export PDF manually if PDF generation was unavailable
+- [x] Brand updated to Nivora (all delivery files, images, PDF, listing copy, asset sources)
+- [x] Support email remains workbysar1@gmail.com (unchanged)
+- [x] BRAND_QA_CHECKLIST.md created
 - [ ] Capture real Google Sheets screenshots per delivery/screenshots/README.md
-- [ ] Upload XLSX to Google Drive, recreate charts, create /copy link
-- [ ] Run manual QA test suite (qa/)
+- [ ] Create Gumroad listing from LISTING_COPY_GUMROAD.md (use Nivora brand)
 
 ### Phase D: List & Publish (Pending)
 
