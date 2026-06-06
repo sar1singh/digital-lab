@@ -1,0 +1,13 @@
+Budget Planner & Expense Tracker — Google Sheets Copy Link
+
+Copy Link:
+<PASTE_GOOGLE_SHEETS_COPY_LINK_HERE>
+
+How to use:
+1. Open the copy link.
+2. Click "Make a copy."
+3. Start from the "Start Here" tab.
+4. Use the tabs at the bottom to navigate.
+
+Support:
+workbysar1@gmail.com

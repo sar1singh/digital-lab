@@ -31,7 +31,7 @@
 - [x] Input cells marked with green background
 - [x] Freeze panes on data tabs
 
-### Phase C: Packaging (Active — packaging docs ready, manual steps remain)
+### Phase C: Packaging (Active — delivery artifacts ready, manual upload/screenshot steps remain)
 
 - [x] PACKAGING_CHECKLIST.md — full packaging workflow from QA to publish
 - [x] GOOGLE_SHEETS_UPLOAD_GUIDE.md — upload, convert, /copy link, test
@@ -40,13 +40,21 @@
 - [x] RELEASE_NOTES_V1.md — version, tabs, limitations, improvements
 - [x] BUYER_DELIVERY_INSTRUCTIONS.md — what buyer receives, how to use
 - [x] FINAL_QA_CHECKLIST.md — pre-publish, publish, post-publish checks
-- [ ] Upload XLSX to Google Drive, convert, verify formulas
-- [ ] Recreate charts in Google Sheets if needed
-- [ ] Create /copy link and test in incognito browser
-- [ ] Export PDF quick-start guide (1 page)
-- [ ] Capture 5 screenshots per SCREENSHOT_CAPTURE_GUIDE.md
-- [x] Automated QA passed (39 checks, 0 P0/P1 blockers — v1.1 created)
-- [ ] Run manual QA test suite (qa/) before publishing
+- [x] Automated QA passed (55 checks, 0 P0/P1 blockers — v1.2 created)
+- [x] Navigation links fixed for Google Sheets (v1.2 — hyperlinks replaced with plain text)
+- [x] Navigation QA report created (qa/NAVIGATION_QA_REPORT.md)
+- [x] Workbook copied as buyer-facing filename (delivery/budget-planner-expense-tracker.xlsx)
+- [x] Google Sheets copy link file created (delivery/google-sheets-copy-link.txt)
+- [x] Release notes created (delivery/release-notes.txt)
+- [x] Quick-start guide created (MD + HTML + PDF)
+- [x] Listing/demo assets generated (5 images in delivery/listing-assets/)
+- [x] Screenshots README created (delivery/screenshots/README.md)
+- [x] Delivery zip created (delivery/budget-planner-expense-tracker-delivery.zip)
+- [ ] Paste final Google Sheets /copy link into delivery/google-sheets-copy-link.txt
+- [ ] Export PDF manually if PDF generation was unavailable
+- [ ] Capture real Google Sheets screenshots per delivery/screenshots/README.md
+- [ ] Upload XLSX to Google Drive, recreate charts, create /copy link
+- [ ] Run manual QA test suite (qa/)
 
 ### Phase D: List & Publish (Pending)
 

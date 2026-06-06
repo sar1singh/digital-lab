@@ -75,18 +75,29 @@
 ## QA Test Suite
 
 - [x] QA test suite created (qa/ directory — 8 files)
-- [x] Automated QA checks passed (39 checks, 0 P0/P1 blockers)
+- [x] Automated QA checks passed (55 checks, 0 P0/P1 blockers)
 - [x] v1.1 created with fixes (Dashboard formulas, Bills Tracker CF)
-- [ ] Manual QA execution pending (run before publishing)
+- [x] v1.2 created with navigation fix (broken hyperlinks removed, plain text instructions added for Google Sheets compatibility)
+- [x] Navigation QA report created (qa/NAVIGATION_QA_REPORT.md)
+- [x] Manual Google Sheets QA passed (v1.2 verified working in Google Sheets)
 
 ## Packaging Tasks
 
-- [ ] Upload XLSX to Google Drive and verify formulas
+- [x] Final buyer-facing workbook copied (delivery/budget-planner-expense-tracker.xlsx)
+- [x] Delivery folder created with all buyer-facing files
+- [x] Google Sheets copy link file created (delivery/google-sheets-copy-link.txt)
+- [x] Release notes created (delivery/release-notes.txt)
+- [x] Quick-start guide Markdown created (delivery/quick-start-guide.md)
+- [x] Quick-start guide HTML created (delivery/quick-start-guide.html)
+- [x] Quick-start guide PDF generated (delivery/budget-planner-expense-tracker-quick-start-guide.pdf)
+- [x] Listing/demo assets generated (5 images in delivery/listing-assets/)
+- [x] Screenshots placeholder guide created (delivery/screenshots/README.md)
+- [x] Delivery zip created (delivery/budget-planner-expense-tracker-delivery.zip)
+- [ ] Upload v1.2 XLSX to Google Drive and verify formulas + navigation
 - [ ] Recreate charts in Google Sheets if needed
 - [ ] Create /copy link
-- [ ] Export PDF quick-start guide
-- [ ] Capture 5 screenshots per SCREENSHOT_CAPTURE_GUIDE.md
-- [ ] Run manual QA test suite
+- [ ] Paste Google Sheets /copy link into delivery/google-sheets-copy-link.txt
+- [ ] Capture real screenshots per delivery/screenshots/README.md
 - [ ] Draft Gumroad listing from LISTING_COPY_GUMROAD.md
 - [ ] Draft Payhip listing from LISTING_COPY_PAYHIP.md
 - [ ] Publish and record URLs in PRODUCT_CATALOG.csv

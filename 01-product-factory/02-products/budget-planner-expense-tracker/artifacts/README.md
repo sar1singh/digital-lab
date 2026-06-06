@@ -5,14 +5,23 @@
 | File | Status |
 |------|--------|
 | `budget-planner-expense-tracker-v1.xlsx` | Initial build (retained for reference) |
-| `budget-planner-expense-tracker-v1.1.xlsx` | Current recommended version (includes automated QA fixes) |
+| `budget-planner-expense-tracker-v1.1.xlsx` | Previous version (retained for reference) |
+| `budget-planner-expense-tracker-v1.2.xlsx` | **Current recommended version** (navigation fixed for Google Sheets) |
 
-### v1.1 Changes
+### v1.2 Changes
+
+- **Fixed** Navigation links: replaced broken openpyxl hyperlinks (incompatible with Google Sheets) with plain tab-name listings and text instructions.
+- **Added** Google Sheets navigation tip: "In Google Sheets, use the sheet tabs at the bottom to navigate."
+- **Added** "Go to Start Here" plain text instruction on all 6 data tabs (replaces broken clickable back-links).
+- **Preserved** all 91 formulas, dropdowns, conditional formatting, charts, and sample data from v1.1.
+- **Automated QA**: 55/55 checks pass.
+- **Formula count**: 91 (unchanged).
+
+### v1.1 Changes (included in v1.2)
 
 - **Fixed** Dashboard Net Savings formula: was `=B3-B4` (blank row), now `=B3-B5` (Income − Expenses)
 - **Fixed** Dashboard Savings Rate % formula: was `=IFERROR(B5/B3,0)` (Expenses/Income), now `=IFERROR(B7/B3,0)` (Net Savings/Income)
 - **Fixed** Bills Tracker unpaid highlighting: replaced static cell fill with real conditional formatting (highlight follows status changes)
-- All other content, formulas, and formatting unchanged from v1.0
 
 ## Spreadsheet Tabs
 
@@ -40,6 +49,7 @@
 2. Open with Google Sheets.
 3. File → Save as Google Sheets.
 4. All formulas and formatting are preserved.
+5. Navigation is plain-text based: use the sheet tabs at the bottom to switch between sections.
 
 ## How to Create a Copy Link
 
@@ -55,6 +65,7 @@ From Google Sheets: File → Download → Microsoft Excel (.xlsx)
 
 - [ ] Open file in Excel and verify no formula breakage (SUMIF cross-sheet references)
 - [ ] Open file in Google Sheets and test all tabs
+- [ ] Verify navigation works: sheet tabs at the bottom (not clickable links)
 - [ ] Verify charts render correctly
 - [ ] Test data validation dropdowns on Expense Tracker, Bills Tracker
 - [ ] Test conditional formatting on Monthly Budget difference column
@@ -63,7 +74,8 @@ From Google Sheets: File → Download → Microsoft Excel (.xlsx)
 
 ## Known Limitations
 
-- SUMIF references use full-column ranges (e.g., `'Expense Tracker'!B:B`). This works in both Excel and Google Sheets but may cause slower performance in Excel with very large datasets.
+- SUMIF references use full-column ranges (e.g., `'Expense Tracker'!C:C`). This works in both Excel and Google Sheets but may cause slower performance in Excel with very large datasets.
+- Navigation is plain-text based (not clickable hyperlinks) for Google Sheets compatibility. Use sheet tabs at the bottom to switch sections.
 - No VBA macros or advanced automation.
 - Charts are Excel native charts — may need regeneration in Google Sheets after upload.
 - Interest calculations in Debt Tracker are for tracking progress only; they do not model compound interest.

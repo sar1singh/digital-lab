@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Budget Planner &amp; Expense Tracker — Quick Start Guide</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #1a1a2e; background: #f8f9fa; line-height: 1.6; padding: 0;
+  }
+  .header {
+    background: linear-gradient(135deg, #2c3e6b 0%, #3b5998 100%);
+    color: #fff; padding: 40px 0; text-align: center;
+  }
+  .header h1 { font-size: 28px; margin-bottom: 8px; }
+  .header p { font-size: 16px; opacity: 0.9; }
+  .container { max-width: 800px; margin: 0 auto; padding: 32px 24px; }
+  h2 {
+    font-size: 20px; color: #2c3e6b; margin: 28px 0 12px;
+    padding-bottom: 6px; border-bottom: 2px solid #e0e0e0;
+  }
+  h3 { font-size: 16px; color: #3b5998; margin: 20px 0 8px; }
+  p, li { font-size: 14px; color: #333; margin-bottom: 8px; }
+  ul, ol { padding-left: 24px; margin-bottom: 12px; }
+  li { margin-bottom: 4px; }
+  .section { background: #fff; border-radius: 8px; padding: 20px 24px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin: 16px 0; }
+  .tab-card {
+    background: #f0f4ff; border-radius: 6px; padding: 12px; text-align: center;
+    border: 1px solid #d0d8f0;
+  }
+  .tab-card h4 { font-size: 14px; color: #2c3e6b; margin-bottom: 4px; }
+  .tab-card p { font-size: 12px; color: #666; margin: 0; }
+  .note {
+    background: #fff8e1; border-left: 4px solid #f59e0b; padding: 12px 16px;
+    border-radius: 4px; margin: 12px 0; font-size: 13px;
+  }
+  .support {
+    background: #2c3e6b; color: #fff; text-align: center; padding: 24px;
+    border-radius: 8px; margin-top: 24px;
+  }
+  .support a { color: #ffd700; text-decoration: none; }
+  .support a:hover { text-decoration: underline; }
+  .footer { text-align: center; color: #999; font-size: 12px; padding: 24px; }
+  @media print {
+    body { background: #fff; }
+    .section { box-shadow: none; border: 1px solid #ddd; break-inside: avoid; }
+    .header { padding: 24px 0; }
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Budget Planner &amp; Expense Tracker</h1>
+  <p>Quick Start Guide</p>
+</div>
+
+<div class="container">
+
+<div class="section">
+  <h2>What's Included</h2>
+  <ul>
+    <li><strong>Excel workbook</strong> (.xlsx) — works with Microsoft Excel and Google Sheets</li>
+    <li><strong>Google Sheets copy link</strong> — make a copy and use online</li>
+    <li><strong>Release notes</strong> — summary of all features</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Google Sheets Version</h2>
+  <ol>
+    <li>Open the copy link provided in <code>google-sheets-copy-link.txt</code></li>
+    <li>Click <strong>File &gt; Make a copy</strong> to save your own version</li>
+    <li>Start from the <strong>Start Here</strong> tab</li>
+    <li>Use the sheet tabs at the bottom to navigate between sections</li>
+  </ol>
+</div>
+
+<div class="section">
+  <h2>Excel Version</h2>
+  <ol>
+    <li>Open <code>budget-planner-expense-tracker.xlsx</code> in Microsoft Excel</li>
+    <li>If you see a yellow security bar, click <strong>Enable Editing</strong></li>
+    <li>Start from the <strong>Start Here</strong> tab</li>
+    <li>Use the sheet tabs at the bottom to navigate between sections</li>
+  </ol>
+</div>
+
+<div class="section">
+  <h2>Quick Overview — All 7 Tabs</h2>
+  <div class="grid">
+    <div class="tab-card"><h4>Start Here</h4><p>Setup instructions and checklist</p></div>
+    <div class="tab-card"><h4>Monthly Budget</h4><p>Plan income &amp; expenses</p></div>
+    <div class="tab-card"><h4>Expense Tracker</h4><p>Log every expense</p></div>
+    <div class="tab-card"><h4>Bills Tracker</h4><p>Track recurring bills</p></div>
+    <div class="tab-card"><h4>Debt Tracker</h4><p>Monitor debt payoff</p></div>
+    <div class="tab-card"><h4>Savings Tracker</h4><p>Set and track goals</p></div>
+    <div class="tab-card"><h4>Dashboard</h4><p>Your financial overview</p></div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Start Here</h2>
+  <p>Your home screen with setup instructions, navigation guide, checklist, currency note, and important warnings about formula cells.</p>
+</div>
+
+<div class="section">
+  <h2>Monthly Budget</h2>
+  <p>Plan your monthly income and expenses:</p>
+  <ul>
+    <li>Enter <strong>Planned Amount</strong> for each income and expense category</li>
+    <li><strong>Actual Amount</strong> pulls automatically from Expense Tracker entries</li>
+    <li><strong>Difference</strong> column shows over/under budget (green = under, red = over)</li>
+    <li>Totals update automatically</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Expense Tracker</h2>
+  <ul>
+    <li>Enter the <strong>Date</strong> — Month fills automatically</li>
+    <li>Select a <strong>Category</strong> from the dropdown</li>
+    <li>Select <strong>Payment Method</strong> from the dropdown</li>
+    <li>Mark as <strong>Planned</strong> or <strong>Unplanned</strong></li>
+    <li>Category totals update in Monthly Budget and Dashboard</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Bills Tracker</h2>
+  <ul>
+    <li>Track bills with due dates, amounts, and frequency</li>
+    <li>Update <strong>Paid Status</strong> as you pay</li>
+    <li>Unpaid bills are highlighted in red</li>
+    <li>Dashboard shows total bills due</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Debt Tracker</h2>
+  <ul>
+    <li>Enter starting balance, current balance, interest rate</li>
+    <li><strong>Payoff Progress</strong> percentage updates automatically</li>
+    <li>Total debt remaining shows on Dashboard</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Savings Tracker</h2>
+  <ul>
+    <li>Set goals with target amount and target date</li>
+    <li><strong>Progress</strong> percentage updates automatically</li>
+    <li>Average savings progress shows on Dashboard</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Dashboard</h2>
+  <p>Your financial overview at a glance:</p>
+  <ul>
+    <li><strong>Total Income</strong> &mdash; planned income from all sources</li>
+    <li><strong>Total Expenses</strong> &mdash; actual spending from Expense Tracker</li>
+    <li><strong>Net Savings</strong> &mdash; income minus expenses</li>
+    <li><strong>Savings Rate</strong> &mdash; percentage of income saved</li>
+    <li><strong>Bills Due</strong> &mdash; unpaid bills requiring attention</li>
+    <li><strong>Debt Remaining</strong> &mdash; total outstanding debt</li>
+    <li><strong>Savings Progress</strong> &mdash; average progress toward goals</li>
+    <li><strong>Category Breakdown</strong> &mdash; spending by category with charts</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Common Notes</h2>
+  <ul>
+    <li>Cells with <strong>gray background</strong> contain formulas — do not edit them</li>
+    <li>Only edit white or green-background input cells</li>
+    <li>Keep category names consistent across tabs for formulas to work</li>
+    <li>Clear sample data before entering your own information</li>
+  </ul>
+</div>
+
+<div class="support">
+  <p style="font-size:16px; margin-bottom:8px;">Need help?</p>
+  <p style="font-size:14px;">Email: <a href="mailto:workbysar1@gmail.com">workbysar1@gmail.com</a></p>
+  <p style="font-size:12px; opacity:0.8; margin-top:8px;">Work by Sar1</p>
+</div>
+
+</div>
+
+<div class="footer">
+  Budget Planner &amp; Expense Tracker &mdash; Work by Sar1
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+Budget Planner & Expense Tracker — Release Notes
+
+Thank you for purchasing the Budget Planner & Expense Tracker!
+
+What you received:
+- Google Sheets copy link (make a copy to start using immediately)
+- Excel workbook (.xlsx) for offline use
+- Quick-start guide
+
+Features — 7 tabs in one workbook:
+
+Start Here
+  Setup instructions, navigation guide, and checklist to get started.
+
+Monthly Budget
+  Plan your income and expenses by category. See planned vs actual amounts with automatic variance tracking.
+
+Expense Tracker
+  Log every expense with date, category, payment method, and notes. Categories auto-populate into your budget.
+
+Bills Tracker
+  Track recurring bills, due dates, and payment status. Unpaid bills are highlighted for attention.
+
+Debt Tracker
+  Monitor multiple debts with starting balance, current balance, and payoff progress percentage.
+
+Savings Tracker
+  Set savings goals and track progress toward each target.
+
+Dashboard
+  At-a-glance summary: income, expenses, net savings, savings rate, bills due, debt remaining, and savings progress. Category spending breakdown with visual charts.
+
+Formulas are built in — numbers update automatically as you enter data. No manual calculations needed.
+
+For help, contact:
+workbysar1@gmail.com
