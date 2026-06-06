@@ -20,6 +20,9 @@ Current execution track: Product Factory.
 
 Critical rule: Digital-Lab is not Product Factory. Product Factory is only one execution track inside Digital-Lab.
 
+Customer-facing publishing brand: Nivora
+Founder/operator email: workbysar1@gmail.com
+
 Secondary learning goals:
 - Product validation
 - Online selling

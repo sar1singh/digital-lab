@@ -22,11 +22,12 @@ What's done:
 - Formula audit: 17 cross-sheet fixes, navigation fix for Google Sheets
 - Automated QA: 55/55 PASS
 - Manual QA: PASS (Excel + Google Sheets)
+- Brand updated to Nivora
+- Google Sheets copy link created and pasted into delivery file
 - Buyer-facing delivery: workbook, quick-start guide (MD/HTML/PDF), release notes, 5 listing images, delivery zip
 - Price: $7
 
 What remains:
-- Google Sheets copy link
 - Real screenshots (5)
 - Gumroad listing
 - Payhip listing

@@ -1,0 +1,207 @@
+# Product Factory Continuation Context
+
+> Copy-paste this file into a new AI session to resume Product Factory execution with full context.
+
+---
+
+## Repository Overview
+
+**Digital-Lab** is a personal digital products experiment. The active execution track is **Product Factory** (building and selling small spreadsheet/template products on Gumroad and Payhip). Three other labs are **parked**: SaaS Lab, Content Lab, Agency Lab.
+
+---
+
+## Current Strategy
+
+- Build small proven-format digital products (spreadsheets, templates, calculators)
+- Sell on Gumroad and Payhip (Phase 1)
+- Compete in existing proven markets; copy successful formats legally
+- Max 1-2 days per product before publishing
+- Build → Publish → Learn → Repeat
+- First revenue ($50-$100) is more important than innovation
+
+---
+
+## Locked Decisions
+
+- Product Factory is active; SaaS Lab, Content Lab, Agency Lab are parked
+- First revenue is primary goal — do not optimize for portfolio, resume, or innovation
+- No SaaS, website, logo, newsletter, audience-building, automation platform, or Product Factory app
+- No Etsy setup before first sale or 5 products published
+- No broad research loops — move directly to execution
+- Do not start Product 2 until Product 1 is listed or explicitly parked
+- Max 1-2 days per product before publishing
+- All P0 and P1 tests must pass before listing goes live
+- No buyer-facing filenames may include version numbers
+- Internal QA files must not be included in buyer delivery
+
+---
+
+## Branding
+
+**Customer-facing publisher brand:** Nivora
+**Founder/operator email:** workbysar1@gmail.com
+**Support email:** workbysar1@gmail.com
+**Platform signup email:** workbysar1@gmail.com
+
+**Critical rule:** Never use "Work by Sar1" as customer-facing branding again.
+
+---
+
+## Current Product Status
+
+### Product 1: Budget Planner & Expense Tracker
+**Status:** Packaging / Listing Preparation
+
+**Completed:**
+- Product strategy finalized
+- Product workspace created
+- Workbook architecture completed (7 tabs, 91 formulas)
+- Formula audit completed (17 cross-sheet fixes)
+- Navigation links fixed for Google Sheets
+- Automated QA: 55/55 PASS
+- Manual QA: PASS (Excel + Google Sheets)
+- Delivery package completed (workbook, guides, release notes)
+- PDF quick-start guide generated
+- 5 listing/demo images generated
+- Branding updated to Nivora
+- BRAND_QA_CHECKLIST.md created
+- Delivery ZIP package created
+- Google Sheets copy link pasted into delivery file
+
+**Publishing candidate:** `delivery/budget-planner-expense-tracker.xlsx`
+
+**Outstanding:**
+- Capture real Google Sheets screenshots (5)
+- Create Gumroad listing
+- Create Payhip listing
+- Publish
+- Record URLs
+
+### Product 2: Invoice Template & Billing Calculator
+**Status:** Queued — not started. Do not start until Product 1 is published.
+
+### Product 3: Freelancer Pricing Calculator
+**Status:** Backlog
+
+### Product 4: Net Worth Tracker
+**Status:** Backlog
+
+### Product 5: POD Profit Calculator
+**Status:** Backlog
+
+---
+
+## Product Roadmap
+
+| # | Product | Format | Status | Price |
+|---|---------|--------|--------|-------|
+| 1 | Budget Planner & Expense Tracker | Spreadsheet (7 tabs) | Packaging / Listing Prep | $7 |
+| 2 | Invoice Template & Billing Calculator | Spreadsheet | Queued | $7 |
+| 3 | Freelancer Pricing Calculator | Spreadsheet | Backlog | $5-$12 |
+| 4 | Net Worth Tracker | Spreadsheet | Backlog | $5-$12 |
+| 5 | POD Profit Calculator | Spreadsheet | Backlog | $5-$12 |
+
+---
+
+## Product Selection Rules
+
+**Reject if:**
+- No demand evidence
+- No competitors
+- Requires education
+- Requires SaaS
+- Requires >2 days effort
+
+**Accept if:**
+- Existing demand
+- Existing competitors
+- Existing buyers
+- Deliverable as XLSX, Google Sheet, PDF, template, or toolkit
+
+---
+
+## Anti-Drift Rules
+
+Before any task, ask: **"Will this increase probability of first $50-$100 revenue?"**
+
+If no, park it.
+
+**Do not:**
+- Build Product Factory SaaS
+- Build a marketplace
+- Build an automation platform
+- Build a website before products exist
+- Spend weeks on branding
+- Do endless market research
+- Optimize before first sale
+
+---
+
+## Success Metrics
+
+| Stage | Milestone | Status |
+|-------|-----------|--------|
+| 1 | Product 1 live | Pending — listing in progress |
+| 2 | First sale | Not yet |
+| 3 | First $50 revenue | Not yet |
+| 4 | First $100 revenue | Not yet |
+| 5 | Five products live | Not yet |
+
+---
+
+## What Must Not Be Changed
+
+1. **Do not start Product 2** until Product 1 is listed or explicitly parked.
+2. **Do not change workbook formulas** — 91 formulas are verified and tested.
+3. **Do not modify v1.2.xlsx** — it is the approved source workbook.
+4. **Do not change product strategy** — Product Factory active, other labs parked.
+5. **Do not do market research** — move directly to execution.
+6. **Do not set up Etsy, website, logo, newsletter, or branding** before first sale or 5 products published.
+7. **No buyer-facing filenames may include version numbers** (v1.2, v1.1, etc.).
+8. **Internal QA files must not be included in buyer delivery.**
+9. **Nivora is the sole customer-facing brand.** Never use "Work by Sar1" for buyer-facing content.
+10. **workbysar1@gmail.com is support/operations only** — not a brand name.
+
+---
+
+## Immediate Next Actions
+
+1. Capture 5 real screenshots from Google Sheets (per `delivery/screenshots/README.md`)
+2. Create Gumroad listing from `LISTING_COPY_GUMROAD.md` (use Nivora brand)
+3. Create Payhip listing from `LISTING_COPY_PAYHIP.md`
+4. Upload XLSX, PDF guide, listing images, screenshots to both listings
+5. Set price to $7 on both platforms
+6. Test checkout preview
+7. Publish both listings
+8. Record listing URLs in `PRODUCT_CATALOG.csv`
+9. Update `PRODUCT_CATALOG.csv` status to Published
+10. **Then** start Product 2 (Invoice Template & Billing Calculator)
+
+---
+
+## Key File Paths
+
+```
+Repository root:              digital-lab/
+Active product:               01-product-factory/02-products/budget-planner-expense-tracker/
+  Source workbook:            .../artifacts/budget-planner-expense-tracker-v1.2.xlsx
+  Delivery folder:            .../delivery/
+  Buyer workbook:             .../delivery/budget-planner-expense-tracker.xlsx
+  QA test suite:              .../qa/
+  Listing copy (Gumroad):     .../LISTING_COPY_GUMROAD.md
+  Listing copy (Payhip):      .../LISTING_COPY_PAYHIP.md
+  Build checklist:            .../BUILD_CHECKLIST.md
+  Brand QA:                   .../delivery/BRAND_QA_CHECKLIST.md
+
+Product catalog:              01-product-factory/00-control/PRODUCT_CATALOG.csv
+Context/continuation:         00-control/
+  NOW.md                      Current active task
+  DIGITAL_LAB_CONTEXT.md      Full decision log and strategic context
+  SESSION_CONTINUATION.md     Copy-paste session resume
+  PRODUCT_FACTORY_CONTINUATION_CONTEXT.md  This file
+NEXT_ACTIONS.md               Detailed phased action list (repo root)
+```
+
+## Approval Flow
+
+`DIGITAL_LAB_CONTEXT.md` → `NOW.md` → `NEXT_ACTIONS.md` → `BUILD_CHECKLIST.md`

@@ -1,13 +1,21 @@
 Budget Planner & Expense Tracker — Google Sheets Copy Link
 
+Brand:
+Nivora
+
 Copy Link:
 https://docs.google.com/spreadsheets/d/1MNoYd8Wo14q15qADgFBVbqoJ7WjGMXt_/copy
 
 How to use:
 1. Open the copy link.
-2. Click "Make a copy."
-3. Start from the "Start Here" tab.
-4. Use the tabs at the bottom to navigate.
+2. Sign in to your Google account if asked.
+3. Click "Make a copy."
+4. Start from the "Start Here" tab.
+5. Use the tabs at the bottom to navigate between Budget, Expenses, Bills, Debt, Savings, and Dashboard.
+
+Included formats:
+- Google Sheets copy link
+- Excel workbook
 
 Support:
 workbysar1@gmail.com

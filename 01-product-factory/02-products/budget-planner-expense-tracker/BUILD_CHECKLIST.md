@@ -99,6 +99,9 @@
 - [x] Final zip regenerated with updated files
 - [x] BRAND_QA_CHECKLIST.md created
 - [x] Google Sheets copy link pasted into delivery/google-sheets-copy-link.txt
+- [x] Final ZIP regenerated with clean buyer-only contents (3 files)
+- [x] Final ZIP QA completed (FINAL_ZIP_QA.md)
+- [x] Dashboard B40/B41 formulas fixed: "Expenses" (=B4->=B5), "Net Savings" (=B5->=B7)
 - [ ] Capture real screenshots per delivery/screenshots/README.md
 - [ ] Create Gumroad listing from LISTING_COPY_GUMROAD.md
 - [ ] Create Payhip listing from LISTING_COPY_PAYHIP.md

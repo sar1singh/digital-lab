@@ -81,16 +81,18 @@ Do not start Product 2 until Product 1 is listed or explicitly parked.
 9. Publish both
 10. Record URLs in PRODUCT_CATALOG.csv
 
-## Founder Identity
+## Brand & Founder Identity
 
-- **Account label:** Work by Sar1
+- **Customer-facing publisher brand:** Nivora
 - **Support email:** workbysar1@gmail.com
-- **Brand:** Not finalized. Using temporary label. Do not block publishing for branding.
+- **Founder/operations email:** workbysar1@gmail.com
+- **Never use "Work by Sar1" as customer-facing branding again.**
 
 ## Key Files
 
 - `00-control/DIGITAL_LAB_CONTEXT.md` — full decision log and strategic context
 - `00-control/SESSION_CONTINUATION.md` — copy-paste resume for new AI session
+- `00-control/PRODUCT_FACTORY_CONTINUATION_CONTEXT.md` — optimized copy-paste resume
 - `00-control/NOW.md` — current active task
 - `00-control/PRODUCT_CATALOG.csv` — ranked pipeline with status, price, URLs
 - `PRODUCT_FACTORY_STRATEGY.md` — strategy and operating thesis

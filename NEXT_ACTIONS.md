@@ -45,6 +45,8 @@
 - [x] Navigation QA report created (qa/NAVIGATION_QA_REPORT.md)
 - [x] Workbook copied as buyer-facing filename (delivery/budget-planner-expense-tracker.xlsx)
 - [x] Google Sheets copy link pasted into delivery/google-sheets-copy-link.txt
+- [x] Final ZIP regenerated with clean buyer-only contents (3 files)
+- [x] Final ZIP QA completed (FINAL_ZIP_QA.md)
 - [x] Release notes created (delivery/release-notes.txt)
 - [x] Quick-start guide created (MD + HTML + PDF)
 - [x] Listing/demo assets generated (5 images in delivery/listing-assets/)
@@ -53,14 +55,13 @@
 - [x] Brand updated to Nivora (all delivery files, images, PDF, listing copy, asset sources)
 - [x] Support email remains workbysar1@gmail.com (unchanged)
 - [x] BRAND_QA_CHECKLIST.md created
+- [x] PRODUCT_FACTORY_CONTINUATION_CONTEXT.md created
 - [ ] Capture real Google Sheets screenshots per delivery/screenshots/README.md
-- [ ] Create Gumroad listing from LISTING_COPY_GUMROAD.md (use Nivora brand)
+- [ ] Create Gumroad and Payhip listings from LISTING_COPY files (use Nivora brand)
 
-### Phase D: List & Publish (Pending)
+### Phase D: List & Publish (Pending — starts after Gumroad listing created)
 
-- [ ] Draft Gumroad listing from LISTING_COPY_GUMROAD.md
-- [ ] Draft Payhip listing from LISTING_COPY_PAYHIP.md
-- [ ] Upload XLSX, PDF guide, and screenshots to both listings
+- [ ] Upload XLSX, PDF guide, listing images, screenshots to both listings
 - [ ] Set price to $7 on both platforms
 - [ ] Test checkout preview
 - [ ] Publish both listings
