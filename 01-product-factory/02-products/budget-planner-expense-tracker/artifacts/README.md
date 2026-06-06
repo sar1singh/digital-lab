@@ -1,8 +1,18 @@
 # Budget Planner & Expense Tracker — Artifact
 
-## Generated File
+## Generated Files
 
-`budget-planner-expense-tracker-v1.xlsx`
+| File | Status |
+|------|--------|
+| `budget-planner-expense-tracker-v1.xlsx` | Initial build (retained for reference) |
+| `budget-planner-expense-tracker-v1.1.xlsx` | Current recommended version (includes automated QA fixes) |
+
+### v1.1 Changes
+
+- **Fixed** Dashboard Net Savings formula: was `=B3-B4` (blank row), now `=B3-B5` (Income − Expenses)
+- **Fixed** Dashboard Savings Rate % formula: was `=IFERROR(B5/B3,0)` (Expenses/Income), now `=IFERROR(B7/B3,0)` (Net Savings/Income)
+- **Fixed** Bills Tracker unpaid highlighting: replaced static cell fill with real conditional formatting (highlight follows status changes)
+- All other content, formulas, and formatting unchanged from v1.0
 
 ## Spreadsheet Tabs
 

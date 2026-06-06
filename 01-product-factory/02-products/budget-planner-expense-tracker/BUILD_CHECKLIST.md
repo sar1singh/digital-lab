@@ -75,6 +75,8 @@
 ## QA Test Suite
 
 - [x] QA test suite created (qa/ directory — 8 files)
+- [x] Automated QA checks passed (39 checks, 0 P0/P1 blockers)
+- [x] v1.1 created with fixes (Dashboard formulas, Bills Tracker CF)
 - [ ] Manual QA execution pending (run before publishing)
 
 ## Packaging Tasks

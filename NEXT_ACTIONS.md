@@ -45,6 +45,7 @@
 - [ ] Create /copy link and test in incognito browser
 - [ ] Export PDF quick-start guide (1 page)
 - [ ] Capture 5 screenshots per SCREENSHOT_CAPTURE_GUIDE.md
+- [x] Automated QA passed (39 checks, 0 P0/P1 blockers — v1.1 created)
 - [ ] Run manual QA test suite (qa/) before publishing
 
 ### Phase D: List & Publish (Pending)
