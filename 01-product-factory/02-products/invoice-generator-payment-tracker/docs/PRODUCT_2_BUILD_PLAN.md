@@ -4,25 +4,28 @@
 
 Build the second Product Factory product using the standards hardened from Product #1.
 
+**Current Status:** Workbook draft built — in `build/nivora-invoice-generator-payment-tracker.xlsx`. Next: Internal QA.
+
 ## Phases
 
-### Phase 1: Planning (Current)
+### Phase 1: Planning (Done)
 - [x] Create workspace with 7-directory structure
 - [x] PRODUCT_SPEC.md
 - [x] SHEET_STRUCTURE.md
 - [x] FORMULAS.md
 - [x] SAMPLE_DATA.md
 - [x] SCREENSHOT_PLAN.md
-- [ ] All QA test case files created
+- [x] All QA test case files created
 
-### Phase 2: Build (Next)
-- [ ] Generate workbook with 7 tabs via Python/openpyxl
-- [ ] Implement all formulas from FORMULAS.md
-- [ ] Populate sample data from SAMPLE_DATA.md
-- [ ] Apply formatting, data validation, conditional formatting
-- [ ] Set freeze panes, formula/input cell styling
+### Phase 2: Build (Done)
+- [x] Generate workbook with 7 tabs via Python/openpyxl
+- [x] Implement all formulas from FORMULAS.md
+- [x] Populate sample data from SAMPLE_DATA.md
+- [x] Apply formatting, data validation, tab colors
+- [x] Set freeze panes, formula/input cell styling
+- [x] Validation: 45/45 checks passed
 
-### Phase 3: Internal QA (After Build)
+### Phase 3: Internal QA (Current)
 - [ ] Run formula test cases (qa/TEST_CASES_FORMULAS.md)
 - [ ] Run Google Sheets import test (qa/TEST_CASES_GOOGLE_SHEETS_IMPORT.md)
 - [ ] Fix all P0/P1 issues

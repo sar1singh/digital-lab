@@ -1,13 +1,15 @@
 # Build Checklist — Nivora Invoice Generator & Payment Tracker
 
+**Status: Workbook draft built** — `build/nivora-invoice-generator-payment-tracker.xlsx`. 45/45 validation checks passed. Next: Internal QA phase.
+
 ## Sheet Setup
 
-- [ ] 7 tabs created and named: Start Here, Dashboard, Clients, Invoice Register, Payment Tracker, Invoice Generator, Settings
-- [ ] Formula cells marked with gray background
-- [ ] Input cells clearly marked (white/green background)
-- [ ] Dashboard gridlines removed
-- [ ] Consistent formatting across all tabs
-- [ ] Freeze panes on data tabs (Clients, Invoice Register, Payment Tracker)
+- [x] 7 tabs created and named: Start Here, Dashboard, Clients, Invoice Register, Payment Tracker, Invoice Generator, Settings
+- [x] Formula cells marked with gray background
+- [x] Input cells clearly marked (white/green background)
+- [x] Dashboard gridlines removed
+- [x] Consistent formatting across all tabs
+- [x] Freeze panes on data tabs (Clients, Invoice Register, Payment Tracker)
 
 ## Start Here Tab
 

@@ -64,7 +64,7 @@ Create Gumroad listing for Nivora Budget Planner & Expense Tracker.
 | # | Product | Format | Status | Price |
 |---|---------|--------|--------|-------|
 | 1 | Budget Planner & Expense Tracker | Spreadsheet (7 tabs) | **Ready to Publish** | $7 |
-| 2 | Invoice Generator & Payment Tracker | Spreadsheet | **Planning — workspace created** | $7 |
+| 2 | Invoice Generator & Payment Tracker | Spreadsheet (7 tabs) | **Workbook draft built — QA pending** | $7 |
 | 3 | Freelancer Pricing Calculator | Spreadsheet | Backlog | $5-$12 |
 | 4 | Net Worth Tracker | Spreadsheet | Backlog | $5-$12 |
 | 5 | POD Profit Calculator | Spreadsheet | Backlog | $5-$12 |
