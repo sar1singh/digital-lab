@@ -84,7 +84,7 @@ Assistant behavior:
 Publisher brand: Nivora
 Support/contact: workbysar1@gmail.com
 
-1. Budget Planner & Expense Tracker (Product 1 — Ready to Publish — final ZIP built, Gumroad listing next)
+1. Budget Planner & Expense Tracker (Product 1 — Ready to Publish — Gumroad listing pending)
 2. Invoice Template & Billing Calculator (Product 2 — next — not started)
 3. Freelancer Pricing Calculator (Product 3 — backlog)
 4. Net Worth Tracker (Product 4 — backlog)
@@ -320,3 +320,8 @@ Date: 2026-06-07
 Decision: Dashboard bottom summary formula bug fixed: B40 (=B4->=B5), B41 (=B5->=B7). Expenses now points to Total Expenses, Net Savings now points to Net Savings cell. Final ZIP rebuilt with only 3 clean buyer files.
 Reason: Manual inspection found "Expenses" label at A40/B40 referenced empty B4 cell, "Net Savings" label at A41/B41 referenced Expenses (B5) instead of Net Savings (B7).
 Impact: Both delivery workbook and source artifact v1.2 fixed. Final ZIP QA completed (FINAL_ZIP_QA.md). PRODUCT_CATALOG.csv status updated to Ready to Publish. Next: Gumroad listing.
+
+Date: 2026-06-07
+Decision: Product Factory process hardening completed. Created systems for: lessons learned, pre-publish review, asset standards, delivery standards, brand standards, retrospective template. Updated workflow to include QA and Pre-Publish Review as separate stages.
+Reason: Product 1 revealed gaps in branding timing, asset generation, delivery packaging, and quality gates. These must be standardized before Product 2.
+Impact: Six new artifacts created in 00-context/, 07-systems/, and 05-templates/. PRODUCT_FACTORY_WORKFLOW.md expanded from 7 to 10 stages. RESEARCH_AGENT.md updated with extended research brief. FIRST_10_PRODUCTS_ROADMAP.md updated with Readiness Review milestone. Next: publish Product 1.

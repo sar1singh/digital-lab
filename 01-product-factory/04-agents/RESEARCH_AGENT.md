@@ -28,13 +28,15 @@ Find proven paid product formats and decide whether a product idea is worth buil
 - Do not recommend content or audience-building as the first move.
 - Focus on products that can become listings quickly.
 
-## Current Priority
+## Extended Research
 
-No active research required. Build phase is active.
+In addition to product validation, research should identify:
 
-Build order:
-1. Budget Planner & Expense Tracker
-2. Invoice Template & Billing Calculator
-3. Freelancer Pricing Calculator
-4. Net Worth Tracker
-5. POD Profit Calculator
+- **Common marketplace screenshots** — what do top-selling products show in their gallery?
+- **Common asset layouts** — cover image layout, feature image style, what's included format
+- **Common buyer expectations** — what do buyers expect to receive after purchase?
+- **Delivery formats** — ZIP structure, included files, guide formats used by competitors
+- **Listing language patterns** — common titles, subtitles, benefit phrasing
+- **Price anchoring** — how similar products are priced and positioned
+
+Record findings in the product research note for use during packaging and listing creation.

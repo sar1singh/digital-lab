@@ -2,7 +2,7 @@
 
 ## Loop
 
-Research -> Validate -> Build -> Package -> List -> Publish -> Track -> Learn -> Repeat.
+Research -> Validate -> Build -> QA -> Package -> Pre-Publish Review -> List -> Publish -> Track -> Retrospective
 
 ## Stage 1: Research
 
@@ -43,32 +43,71 @@ Rules:
 
 Use: [Product Build Checklist](03-templates/PRODUCT_BUILD_CHECKLIST.md)
 
-## Stage 4: Package
+## Stage 4: QA
 
-Goal: make the product easy to understand and buy.
+Goal: verify the product works correctly before packaging.
 
 Required:
-- Clear product title
+- Formula audit — all cross-sheet references correct
+- Automated checks where possible
+- Manual spot-check of key values
+- Navigation test (all tabs, all links)
+- Google Sheets compatibility test (if applicable)
+
+Use: Product-specific QA checklists
+
+## Stage 5: Package
+
+Goal: make the product easy to understand, buy, and use.
+
+Required:
+- Clear product title with brand prefix
 - Plain promise
 - Screenshot or preview
-- What is included
+- What's included
 - Who it is for
 - Simple usage instructions
 - Refund/support note
+- Delivery ZIP with exactly 3 files (workbook, PDF, copy link)
+- All filenames use brand naming convention
 
-Use: [Product Listing Template](03-templates/PRODUCT_LISTING_TEMPLATE.md)
+Use: [Delivery Standard](07-systems/DELIVERY_STANDARD.md), [Brand Standard](07-systems/BRAND_STANDARD.md)
 
-## Stage 5: Launch
+## Stage 6: Pre-Publish Review
 
-Goal: get the listing live.
+Goal: catch all quality, branding, delivery, and listing issues before going live.
+
+Gate: all sections of the Pre-Publish Review Checklist must pass before listing creation begins.
+
+Use: [Pre-Publish Review Checklist](07-systems/PRE_PUBLISH_REVIEW_CHECKLIST.md), [Marketplace Asset Standard](07-systems/MARKETPLACE_ASSET_STANDARD.md)
+
+## Stage 7: List
+
+Goal: create the marketplace listing.
 
 Platforms:
 - Gumroad first
 - Payhip second if easy
 
-Use: [Product Launch Checklist](03-templates/PRODUCT_LAUNCH_CHECKLIST.md)
+Required:
+- All 6 gallery images uploaded in correct order
+- Cover image set as thumbnail
+- What's Included section in description
+- Clear pricing
+- ZIP file uploaded
+- Test purchase before publishing
 
-## Stage 6: Track
+Use: [Product Listing Template](03-templates/PRODUCT_LISTING_TEMPLATE.md), [Marketplace Asset Standard](07-systems/MARKETPLACE_ASSET_STANDARD.md)
+
+## Stage 8: Publish
+
+Goal: get the listing live.
+
+Use: Product Launch Checklist
+
+## Stage 9: Track
+
+Goal: monitor performance and identify improvements.
 
 Track:
 - Product status
@@ -81,12 +120,10 @@ Track:
 
 Use: [Product Catalog](00-control/PRODUCT_CATALOG.csv)
 
-## Stage 7: Retrospective
+## Stage 10: Retrospective
 
-After publishing or after one week live, record:
-- What was built
-- What was learned
-- What should change
-- Whether to improve, bundle, or move on
+Goal: capture lessons learned before starting the next product.
 
-Use: [Product Retrospective Template](03-templates/PRODUCT_RETROSPECTIVE_TEMPLATE.md)
+Complete after publishing or after one week live.
+
+Use: [Product Release Retrospective Template](05-templates/PRODUCT_RELEASE_RETROSPECTIVE_TEMPLATE.md)

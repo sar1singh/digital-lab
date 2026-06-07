@@ -9,7 +9,7 @@ Goal: publish small proven-format products that can create first revenue quickly
 
 ## Product 1: Budget Planner & Expense Tracker
 
-Status: **Packaging** — delivery artifacts ready, listing pending.
+Status: **Ready to Publish** — final ZIP built, listing pending.
 
 Format: Google Sheet / Excel spreadsheet (7 tabs: Start Here, Monthly Budget, Expense Tracker, Bills Tracker, Debt Tracker, Savings Tracker, Dashboard)
 
@@ -28,7 +28,6 @@ What's done:
 - Price: $7
 
 What remains:
-- Real screenshots (5)
 - Gumroad listing
 - Payhip listing
 - Publish
@@ -110,3 +109,7 @@ Why: useful to the same type of buyer Product Factory is serving.
 ## Roadmap Rule
 
 Do not build Product 2 until Product 1 is either listed or explicitly parked. Publishing beats queue expansion.
+
+## Pre-Publish Review Milestone
+
+Before every product release, a **Product Publish Readiness Review** must pass. This is a mandatory gate between packaging and listing creation. See [Pre-Publish Review Checklist](07-systems/PRE_PUBLISH_REVIEW_CHECKLIST.md).
