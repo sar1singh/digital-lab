@@ -54,45 +54,35 @@ Do not start Product 2 until Product 1 is listed or explicitly parked.
 
 ## Product Statuses
 
-- **Planned** — idea selected, not started
-- **In Build** — workspace created, actively building
-- **Packaging** — workbook complete, delivery artifacts created, listing pending
-- **Listed** — Gumroad/Payhip listing live
-- **Published** — listed AND available for purchase
-- **Sold** — at least one purchase recorded
+| Status | Description |
+|--------|-------------|
+| **Planned** | Idea selected, not started |
+| **In Build** | Workspace created, actively building |
+| **Packaging** | Workbook complete, delivery artifacts in progress |
+| **Ready to Publish** | All 5 reviews passed (Content, Branding, Packaging, Marketplace, Delivery). Gate cleared. |
+| **Listed** | Gumroad/Payhip listing created, not yet published |
+| **Published** | Listed AND available for purchase |
+| **Sold** | At least one purchase recorded |
 
-## Publishing Process (Standardized from Product #1 Lessons)
+---
 
-### For each product:
+## Publishing Process (10-Stage Pipeline)
 
-**Pre-Build:**
-1. Lock brand (Nivora), support email, and file naming conventions
+| Stage | Phase | Key Action | Duration |
+|-------|-------|------------|----------|
+| 1 | Idea | Validate product meets selection criteria | < 1 hr |
+| 2 | Build | Create workbook with sample data | 2–6 hrs |
+| 3 | Internal QA | Formula audit, Google Sheets test | 1–2 hrs |
+| 4 | Asset Generation | Create 6 marketplace images (after workbook final) | 1–2 hrs |
+| 5 | Packaging | Branded files, PDF guide (2nd-last), ZIP (last) | 1 hr |
+| 6 | Marketplace Listing | Create Gumroad + Payhip listings | 1 hr |
+| 7 | Publish | All 5 reviews pass → publish | 30 min |
+| 8 | Distribution | Record URLs, verify live | 15 min |
+| 9 | Learnings Capture | Create RETROSPECTIVE.md | 30 min |
+| 10 | Factory Standards Update | Apply lessons to standards | 30 min |
+| | **Total** | | **8–14 hrs** |
 
-**Build & QA:**
-2. Build workbook
-3. Run automated QA (formulas, dropdowns, dashboard, navigation)
-4. Run manual QA in Excel and Google Sheets
-5. Fix all P0/P1 issues
-
-**Packaging (brand-first, screenshots last):**
-6. Generate 6 standardized marketplace images (cover, dashboard, main input, core feature, secondary features, what's included)
-7. Create buyer-facing delivery files with brand prefix
-8. Generate PDF guide (2nd-to-last step)
-9. Build clean ZIP (last step: workbook + PDF + copy link only)
-
-**Pre-Publish Gate (must pass all sections):**
-10. Run Pre-Publish Checklist (Workbook QA, Google Sheets QA, Brand QA, Screenshot QA, ZIP QA, Listing QA)
-
-**Publish:**
-11. Create Gumroad listing (upload ZIP + 6 images, set price)
-12. Create Payhip listing
-13. Publish both
-14. Record URLs in PRODUCT_CATALOG.csv
-
-**Post-Publish:**
-15. Create RETROSPECTIVE.md in product workspace
-16. Update factory standards with any new lessons
-17. Move to next product
+**Gate:** Stage 7 (Publish) requires ALL 5 reviews to pass (Content, Branding, Packaging, Marketplace, Delivery).
 
 ## Brand & Founder Identity
 
@@ -103,25 +93,54 @@ Do not start Product 2 until Product 1 is listed or explicitly parked.
 
 ## Key Files
 
+### Core Factory Documents
+- `PRODUCT_FACTORY_STRATEGY.md` — strategy and operating thesis
+- `PRODUCT_FACTORY_WORKFLOW.md` — 10-stage pipeline (Idea → Build → QA → Assets → Packaging → List → Publish → Distribute → Learn → Update)
+- `PRODUCT_FACTORY_CONTEXT.md` — this file (mission, rules, statuses, processes)
+- `PRODUCT_FACTORY_PUBLISHING_PLAYBOOK.md` — end-to-end playbook with all stages, gates, timelines
+- `FIRST_10_PRODUCTS_ROADMAP.md` — full 10-product pipeline
+
+### Standards & Specifications
+- `PRODUCT_FACTORY_MARKETPLACE_CHECKLIST.md` — platform-specific requirements (Gumroad, Payhip, future)
+- `PRODUCT_FACTORY_ASSET_SPECIFICATIONS.md` — image specs, gallery order, naming, quality requirements
+- `PRODUCT_FACTORY_PRE_PUBLISH_QA.md` — 5-review process (Content, Branding, Packaging, Marketplace, Delivery)
+- `PRODUCT_FACTORY_DELIVERY_STANDARD.md` — ZIP contents, naming, exclusions, packaging sequence
+- `PRODUCT_FACTORY_PRODUCT_STRUCTURE.md` — workspace folder layout and lifecycle
+
+### Legacy Systems (compatible)
+- `07-systems/BRAND_STANDARD.md` — brand usage rules (Nivora, naming, email)
+- `07-systems/DELIVERY_STANDARD.md` — delivery format (superseded by PRODUCT_FACTORY_DELIVERY_STANDARD.md)
+- `07-systems/MARKETPLACE_ASSET_STANDARD.md` — image requirements (superseded by PRODUCT_FACTORY_ASSET_SPECIFICATIONS.md)
+- `07-systems/PRE_PUBLISH_REVIEW_CHECKLIST.md` — gated checklist (superseded by PRODUCT_FACTORY_PRE_PUBLISH_QA.md)
+- `07-systems/` — legacy; new products should reference PRODUCT_FACTORY_* documents
+
+### Templates
+- `templates/PRE_PUBLISH_CHECKLIST.md` — pre-publish gate checklist
+- `templates/DELIVERY_STRUCTURE_STANDARD.md` — folder structure reference
+- `templates/LISTING_ASSET_STANDARD.md` — image set reference
+- `templates/PRODUCT_RETROSPECTIVE_TEMPLATE.md` — post-publish review template
+
+### Context & Control
 - `00-control/DIGITAL_LAB_CONTEXT.md` — full decision log and strategic context
 - `00-control/SESSION_CONTINUATION.md` — copy-paste resume for new AI session
 - `00-control/PRODUCT_FACTORY_CONTINUATION_CONTEXT.md` — optimized copy-paste resume
 - `00-control/NOW.md` — current active task
 - `00-control/PRODUCT_CATALOG.csv` — ranked pipeline with status, price, URLs
-- `PRODUCT_FACTORY_STRATEGY.md` — strategy and operating thesis
-- `FIRST_10_PRODUCTS_ROADMAP.md` — full 10-product pipeline
-- `NEXT_ACTIONS.md` — detailed phased action list
-- `templates/` — standardized templates (pre-publish checklist, delivery structure, asset standards, retrospective)
+- `NEXT_ACTIONS.md` — detailed phased action list (repo root)
 
 ## Mandatory Factory Standards
 
 The following rules apply to ALL products (hardened from Product #1 lessons):
 
-| # | Rule | Detail |
-|---|------|--------|
-| 1 | **Brand-first** | Brand (Nivora), support email, naming conventions locked before any asset or build work |
-| 2 | **Standard folder structure** | artifacts/, build/, docs/, qa/, listing-assets/, screenshots/, delivery/ |
-| 3 | **Delivery folder rule** | Buyer-facing assets only — no QA, drafts, or internal files |
-| 4 | **6-screenshot standard** | Cover, Dashboard, Main Input, Core Feature, Secondary Features, What's Included |
-| 5 | **6-phase exit criteria** | Pass all: Workbook QA, Google Sheets QA, Brand QA, Screenshot QA, ZIP QA, Listing QA |
-| 6 | **Retrospective required** | RETROSPECTIVE.md for every shipped product; lessons update factory standards |
+| # | Rule | Detail | Source Document |
+|---|------|--------|-----------------|
+| 1 | **Brand-first** | Brand (Nivora), support email, naming conventions locked before any asset or build work | `PRODUCT_FACTORY_PUBLISHING_PLAYBOOK.md`, `BRAND_STANDARD.md` |
+| 2 | **Standard folder structure** | artifacts/, build/, qa/, listing-assets/, screenshots/, docs/, delivery/ | `PRODUCT_FACTORY_PRODUCT_STRUCTURE.md` |
+| 3 | **Delivery folder rule** | Buyer-facing assets only — no QA, drafts, or internal files | `PRODUCT_FACTORY_DELIVERY_STANDARD.md` |
+| 4 | **6-screenshot standard** | Cover, Dashboard, Primary Feature, Secondary Feature, Supporting Feature, What's Included | `PRODUCT_FACTORY_ASSET_SPECIFICATIONS.md` |
+| 5 | **5-review exit criteria** | Pass all: Content, Branding, Packaging, Marketplace, Delivery reviews | `PRODUCT_FACTORY_PRE_PUBLISH_QA.md` |
+| 6 | **Retrospective required** | RETROSPECTIVE.md for every shipped product; lessons update factory standards | `PRODUCT_FACTORY_WORKFLOW.md` (Stage 9–10) |
+| 7 | **Assets after QA** | Generate marketplace images only after workbook is final and QA'd | `PRODUCT_FACTORY_ASSET_SPECIFICATIONS.md` |
+| 8 | **ZIP as final step** | Build ZIP last, exactly 3 files (workbook, PDF, copy link), no subdirectories | `PRODUCT_FACTORY_DELIVERY_STANDARD.md` |
+| 9 | **Gumroad first** | List on Gumroad first, then Payhip. Add platforms only after consistent sales | `PRODUCT_FACTORY_MARKETPLACE_CHECKLIST.md` |
+| 10 | **10-stage pipeline** | Idea → Build → QA → Assets → Packaging → List → Publish → Distribute → Learn → Update | `PRODUCT_FACTORY_WORKFLOW.md` |

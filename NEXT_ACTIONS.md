@@ -62,15 +62,18 @@
 
 ## Product 2: Invoice Template & Billing Calculator (Sunday)
 
-10. Build Invoice Template & Billing Calculator spreadsheet in Google Sheets.
-11. Create XLSX version.
-12. Create Google Sheet copy-ready template link.
-13. Create PDF quick-start guide (1 page).
-14. Create 5 screenshots.
-15. Create Gumroad listing.
-16. Create Payhip listing.
-17. Publish.
-18. Record listing URLs, price, date published in product catalog.
+13. Build Invoice Template & Billing Calculator spreadsheet in Google Sheets.
+14. Create XLSX version.
+15. Create Google Sheet copy-ready template link.
+16. Create PDF quick-start guide (1 page).
+17. Create 6 marketplace images per asset spec.
+18. Run 5-review pre-publish QA (Content, Branding, Packaging, Marketplace, Delivery).
+19. Create Gumroad listing.
+20. Create Payhip listing.
+21. Publish.
+22. Record listing URLs, price, date published in product catalog.
+23. Complete Retrospective.
+24. Update factory standards with any new lessons.
 
 ## Anti-Drift
 

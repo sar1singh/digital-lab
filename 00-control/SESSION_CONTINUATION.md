@@ -127,19 +127,31 @@ Brand QA:         .../docs/BRAND_QA_CHECKLIST.md
 
 | Standard | Location |
 |----------|----------|
+| Publishing Playbook | `01-product-factory/PRODUCT_FACTORY_PUBLISHING_PLAYBOOK.md` |
+| Marketplace Checklist | `01-product-factory/PRODUCT_FACTORY_MARKETPLACE_CHECKLIST.md` |
+| Asset Specifications | `01-product-factory/PRODUCT_FACTORY_ASSET_SPECIFICATIONS.md` |
+| Pre-Publish QA | `01-product-factory/PRODUCT_FACTORY_PRE_PUBLISH_QA.md` |
+| Delivery Standard | `01-product-factory/PRODUCT_FACTORY_DELIVERY_STANDARD.md` |
+| Product Structure | `01-product-factory/PRODUCT_FACTORY_PRODUCT_STRUCTURE.md` |
 | Brand Standard | `01-product-factory/07-systems/BRAND_STANDARD.md` |
 | Delivery Structure Standard | `01-product-factory/templates/DELIVERY_STRUCTURE_STANDARD.md` |
 | Listing Asset Standard | `01-product-factory/templates/LISTING_ASSET_STANDARD.md` |
 | Pre-Publish Checklist | `01-product-factory/templates/PRE_PUBLISH_CHECKLIST.md` |
-| Delivery Standard | `01-product-factory/07-systems/DELIVERY_STANDARD.md` |
-| Marketplace Asset Standard | `01-product-factory/07-systems/MARKETPLACE_ASSET_STANDARD.md` |
+| Delivery Standard (legacy) | `01-product-factory/07-systems/DELIVERY_STANDARD.md` |
+| Marketplace Asset Standard (legacy) | `01-product-factory/07-systems/MARKETPLACE_ASSET_STANDARD.md` |
 | Retrospective Template | `01-product-factory/templates/PRODUCT_RETROSPECTIVE_TEMPLATE.md` |
+| Workflow | `01-product-factory/PRODUCT_FACTORY_WORKFLOW.md` |
+| Context | `01-product-factory/PRODUCT_FACTORY_CONTEXT.md` |
 
 ## Mandatory Rules for All Products
 
 1. **Brand-first:** Brand (Nivora), support email, naming conventions locked before any asset or workbook work
-2. **Standard folder structure:** artifacts/, build/, docs/, qa/, listing-assets/, screenshots/, delivery/
+2. **Standard folder structure:** artifacts/, build/, qa/, listing-assets/, screenshots/, docs/, delivery/
 3. **Delivery folder:** buyer-facing assets only — no QA, drafts, or internal files
-4. **6-screenshot standard:** Cover, Dashboard, Main Input, Core Feature, Secondary Features, What's Included
-5. **Exit criteria:** Pass all 6 QA sections (Workbook, Google Sheets, Brand, Screenshot, ZIP, Listing)
-6. **Retrospective required:** RETROSPECTIVE.md created for every shipped product; lessons become factory standards
+4. **6-screenshot standard:** Cover, Dashboard, Primary Feature, Secondary Feature, Supporting Feature, What's Included
+5. **5-review exit criteria:** Pass all reviews — Content, Branding, Packaging, Marketplace, Delivery
+6. **Retrospective required:** RETROSPECTIVE.md for every shipped product; lessons become factory standards
+7. **Assets after QA:** Generate marketplace images only after workbook is final and QA'd
+8. **ZIP as final step:** Build ZIP last, exactly 3 files (workbook, PDF, copy link), no subdirectories
+9. **Gumroad first:** List on Gumroad first, then Payhip. Add platforms only after consistent sales
+10. **10-stage pipeline:** Idea → Build → QA → Assets → Packaging → List → Publish → Distribute → Learn → Update

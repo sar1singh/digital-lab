@@ -1,131 +1,221 @@
 # Product Factory Workflow
 
-## Loop
+> Standard 10-stage pipeline for every Product Factory product. Updated from Product #1 (Nivora Budget Planner & Expense Tracker) learnings.
 
-Research -> Validate -> Build -> QA -> Package -> Pre-Publish Review -> List -> Publish -> Track -> Retrospective
+---
 
-## Stage 1: Research
+## Pipeline
 
-Goal: confirm that buyers already pay for this type of product.
+```
+Idea → Build → Internal QA → Asset Generation → Packaging
+→ Marketplace Listing → Publish → Distribution
+→ Learnings Capture → Factory Standards Update
+```
 
-Outputs:
-- Competitor examples
-- Price range
-- Common features
-- Common listing language
-- Buyer pain points
-- Differentiation angle
+---
 
-Use: [Product Research Template](03-templates/PRODUCT_RESEARCH_TEMPLATE.md)
+## Stage 1: Idea
 
-## Stage 2: Validate
+**Gate:** Does this product meet ALL selection criteria?
 
-Goal: decide whether to build now, defer, or reject.
+**Checks:**
+- [ ] Proven demand (similar products already selling)
+- [ ] Buildable in 1–2 days
+- [ ] Fits spreadsheet/template/calculator format
+- [ ] Clear buyer ROI (saves time, saves money, reduces mistakes)
+- [ ] Explainable in one sentence
 
-Build only if:
-- There are existing paid products in the category.
-- The product can be explained in one sentence.
-- A first version can be built in 1-2 days.
-- The buyer has a money, time, or mistake-reduction reason to pay.
+**Output:** Decision: build now, defer, or reject.
 
-Use: [Product Validation Template](03-templates/PRODUCT_VALIDATION_TEMPLATE.md)
+**References:**
+- [Selection Rules](PRODUCT_FACTORY_CONTEXT.md#selection-rules)
+- [Strategy](PRODUCT_FACTORY_STRATEGY.md)
 
-## Stage 3: Build
+---
 
-Goal: create the smallest useful paid version.
+## Stage 2: Build
 
-Rules:
-- No SaaS.
-- No code-heavy product.
-- No full brand system.
-- No website.
-- Spreadsheet/template/calculator first.
+**Gate:** Workbook is functional with all required tabs. Brand is locked before any file is created.
 
-Use: [Product Build Checklist](03-templates/PRODUCT_BUILD_CHECKLIST.md), [Delivery Structure Standard](templates/DELIVERY_STRUCTURE_STANDARD.md) (Brand-First Workflow section)
+**Rules:**
+- Brand (Nivora), support email (workbysar1@gmail.com), and naming conventions locked before first file
+- No SaaS, no code-heavy product, no full brand system
+- Spreadsheet/template/calculator first
+- Smallest useful paid version only
 
-## Stage 4: QA
+**Output:** Draft workbook with realistic sample data.
 
-Goal: verify the product works correctly before packaging.
+**References:**
+- [Product Structure](PRODUCT_FACTORY_PRODUCT_STRUCTURE.md) — workspace folders
+- [Brand Standard](07-systems/BRAND_STANDARD.md)
 
-Required:
+---
+
+## Stage 3: Internal QA
+
+**Gate:** All QA checks pass. No P0/P1 issues.
+
+**Required:**
 - Formula audit — all cross-sheet references correct
-- Automated checks where possible
-- Manual spot-check of key values
-- Navigation test (all tabs, all links)
-- Google Sheets compatibility test (if applicable)
+- Google Sheets compatibility test
+- All tabs, formulas, dropdowns, formatting verified
+- Dashboard values spot-checked against source data
 
-Use: Product-specific QA checklists
+**Output:** QA report and list of any fixes applied.
 
-## Stage 5: Package
+**References:**
+- [Pre-Publish QA](PRODUCT_FACTORY_PRE_PUBLISH_QA.md) — Content Review section
+- [Delivery Standard](PRODUCT_FACTORY_DELIVERY_STANDARD.md)
 
-Goal: make the product easy to understand, buy, and use.
+---
 
-Required:
-- Clear product title with brand prefix
-- Plain promise
-- Screenshot or preview
-- What's included
-- Who it is for
-- Simple usage instructions
-- Refund/support note
-- Delivery ZIP with exactly 3 files (workbook, PDF, copy link)
-- All filenames use brand naming convention
+## Stage 4: Asset Generation
 
-Use: [Delivery Standard](07-systems/DELIVERY_STANDARD.md), [Brand Standard](07-systems/BRAND_STANDARD.md)
+**Gate:** All 6 marketplace images created and verified. Assets generated AFTER workbook is final.
 
-## Stage 6: Pre-Publish Review
+**Required images:**
+1. `01-cover.png` — Cover with brand, preview, benefits
+2. `02-dashboard.png` — Dashboard with real data
+3. `03-primary-feature.png` — Main input workflow
+4. `04-secondary-feature.png` — Secondary workflow
+5. `05-supporting-feature.png` — Less obvious features
+6. `06-whats-included.png` — Deliverables overview
 
-Goal: catch all quality, branding, delivery, and listing issues before going live.
+**Timing:** Generate assets only after workbook is complete and QA'd. Generating early causes rework.
 
-Gate: all sections of the Pre-Publish Checklist must pass before listing creation begins.
+**References:**
+- [Asset Specifications](PRODUCT_FACTORY_ASSET_SPECIFICATIONS.md)
+- [Listing Asset Standard](templates/LISTING_ASSET_STANDARD.md)
 
-Use: [Pre-Publish Checklist](templates/PRE_PUBLISH_CHECKLIST.md), [Delivery Structure Standard](templates/DELIVERY_STRUCTURE_STANDARD.md), [Listing Asset Standard](templates/LISTING_ASSET_STANDARD.md)
+---
 
-## Stage 7: List
+## Stage 5: Packaging
 
-Goal: create the marketplace listing.
+**Gate:** Delivery folder contains only buyer-facing assets. ZIP is built and verified.
 
-Platforms:
-- Gumroad first
-- Payhip second if easy
+**Sequence (order matters):**
+1. Export final branded workbook
+2. Create Google Sheets copy and validate copy link
+3. Create copy link file
+4. Generate PDF guide (2nd-to-last step)
+5. Build delivery ZIP (final step — exactly 3 files)
 
-Required:
+**ZIP contents:**
+```
+{brand}-{product-slug}-delivery.zip
+├── {brand}-{product-slug}.xlsx
+├── {brand}-{product-slug}-quick-start-guide.pdf
+└── google-sheets-copy-link.txt
+```
+
+**References:**
+- [Delivery Standard](PRODUCT_FACTORY_DELIVERY_STANDARD.md)
+- [Product Structure](PRODUCT_FACTORY_PRODUCT_STRUCTURE.md)
+
+---
+
+## Stage 6: Marketplace Listing
+
+**Gate:** Listing is drafted but not yet published.
+
+**Platforms (current):**
+- Gumroad (product-first, no storefront required)
+- Payhip (storefront-first, brand/store required)
+
+**Required for both:**
 - All 6 gallery images uploaded in correct order
 - Cover image set as thumbnail
-- What's Included section in description
-- Clear pricing
-- ZIP file uploaded
-- Test purchase before publishing
+- ZIP uploaded as product file
+- Complete listing copy (What's Included, Who It's For, Benefits, FAQ)
+- Price set
+- Test purchase completed
 
-Use: [Product Listing Template](03-templates/PRODUCT_LISTING_TEMPLATE.md), [Listing Asset Standard](templates/LISTING_ASSET_STANDARD.md)
+**References:**
+- [Marketplace Checklist](PRODUCT_FACTORY_MARKETPLACE_CHECKLIST.md)
+- [Asset Specifications](PRODUCT_FACTORY_ASSET_SPECIFICATIONS.md)
 
-## Stage 8: Publish
+---
 
-Goal: get the listing live.
+## Stage 7: Publish
 
-Use: Product Launch Checklist
+**Gate:** Pre-publish review passes ALL sections. Test purchase works.
 
-## Stage 9: Track
+**Reviews required:**
+1. Content Review — product correctness and completeness
+2. Branding Review — brand consistency across all buyer-facing content
+3. Packaging Review — delivery package clean and professional
+4. Marketplace Review — listing complete and accurate
+5. Delivery Review — buyer experience from purchase through first use
 
-Goal: monitor performance and identify improvements.
+**All 5 must pass. No partial gates.**
 
-Track:
-- Product status
-- Listing URL
-- Price
-- Views
-- Sales
-- Revenue
-- Notes
+**References:**
+- [Pre-Publish QA](PRODUCT_FACTORY_PRE_PUBLISH_QA.md)
+- [Pre-Publish Checklist](templates/PRE_PUBLISH_CHECKLIST.md)
 
-Use: [Product Catalog](00-control/PRODUCT_CATALOG.csv)
+---
 
-## Stage 10: Retrospective
+## Stage 8: Distribution
 
-Goal: capture lessons learned before starting the next product.
+**Gate:** Listing is live. Product is available for purchase.
 
-Complete after publishing or after one week live. Create `RETROSPECTIVE.md` in the product workspace.
+**Actions:**
+- Record Gumroad URL in PRODUCT_CATALOG.csv
+- Record Payhip URL in PRODUCT_CATALOG.csv
+- Update product status to Published
+- Verify listing visible in marketplace search
+- Verify purchase flow works (incognito test)
 
-Use: [Product Retrospective Template](templates/PRODUCT_RETROSPECTIVE_TEMPLATE.md)
+**References:**
+- [Product Catalog](../00-control/PRODUCT_CATALOG.csv)
 
-Every retrospective's lessons become Product Factory standards. Update templates and context files accordingly.
+---
+
+## Stage 9: Learnings Capture
+
+**Gate:** RETROSPECTIVE.md created in product workspace.
+
+**Document:**
+- What worked
+- What caused friction
+- Buyer friction (observed or suspected)
+- Asset/screenshot improvements
+- Listing/copy improvements
+- Packaging/delivery improvements
+- Lessons learned (numbered)
+- Standard updates required (checklist)
+
+**References:**
+- [Retrospective Template](templates/PRODUCT_RETROSPECTIVE_TEMPLATE.md)
+
+---
+
+## Stage 10: Factory Standards Update
+
+**Gate:** Lessons from retrospective are applied to factory standards.
+
+**Process:**
+1. Review each lesson against existing standards
+2. If standard covers it — is it adequate?
+3. If not — create or update the relevant document
+4. Update continuation/context files
+5. Log the decision
+
+**Then:** Start the next product.
+
+**References:**
+- [Publishing Playbook](PRODUCT_FACTORY_PUBLISHING_PLAYBOOK.md) (end-to-end process)
+
+---
+
+## Workflow Rules Summary
+
+| # | Rule | Source |
+|---|------|--------|
+| 1 | Brand locked before any build work | Product #1 branding rework lesson |
+| 2 | Assets generated only after workbook is final | Product #1 screenshot retake lesson |
+| 3 | ZIP is the final step (exactly 3 files) | Product #1 delivery cleanup lesson |
+| 4 | PDF is second-to-last step | Product #1 PDF regeneration lesson |
+| 5 | All 5 reviews must pass before publishing | Product #1 formula bug in late stage |
+| 6 | Retrospective required for every product | Product #1 process hardening |
+| 7 | Lessons update factory standards | Continuous improvement loop |

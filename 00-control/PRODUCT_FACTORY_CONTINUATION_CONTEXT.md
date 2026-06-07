@@ -164,11 +164,15 @@ If no, park it.
 9. **Nivora is the sole customer-facing brand.** Never use "Work by Sar1" for buyer-facing content.
 10. **workbysar1@gmail.com is support/operations only** — not a brand name.
 11. **Brand-first workflow:** Brand, support email, naming conventions locked before any asset or build work.
-12. **Standard product structure:** artifacts/, build/, docs/, qa/, listing-assets/, screenshots/, delivery/
+12. **Standard product structure:** artifacts/, build/, qa/, listing-assets/, screenshots/, docs/, delivery/
 13. **Delivery folder rule:** buyer-facing assets only — no QA, drafts, or internal files.
-14. **6-screenshot standard:** Cover, Dashboard, Main Input, Core Feature, Secondary Features, What's Included.
-15. **Pre-publish exit criteria:** Must pass all 6 QA sections (Workbook, Google Sheets, Brand, Screenshot, ZIP, Listing).
+14. **6-screenshot standard:** Cover, Dashboard, Primary Feature, Secondary Feature, Supporting Feature, What's Included.
+15. **5-review exit criteria:** Must pass all reviews — Content, Branding, Packaging, Marketplace, Delivery.
 16. **Retrospective required:** RETROSPECTIVE.md for every shipped product; lessons become factory standards.
+17. **Assets after QA:** Generate marketplace images only after workbook is final and QA'd.
+18. **ZIP as final step:** Build ZIP last, exactly 3 files (workbook, PDF, copy link), no subdirectories.
+19. **Gumroad first:** List on Gumroad first, then Payhip. Add platforms only after consistent sales.
+20. **10-stage pipeline:** Idea → Build → QA → Assets → Packaging → List → Publish → Distribute → Learn → Update.
 
 ---
 
@@ -199,6 +203,19 @@ Active product:               01-product-factory/02-products/budget-planner-expe
   Listing copy (Payhip):      .../LISTING_COPY_PAYHIP.md
   Build checklist:            .../BUILD_CHECKLIST.md
   Brand QA:                   .../docs/BRAND_QA_CHECKLIST.md
+  Retrospective:              .../RETROSPECTIVE.md
+
+Product factory docs:         01-product-factory/
+  Workflow:                   PRODUCT_FACTORY_WORKFLOW.md
+  Playbook:                   PRODUCT_FACTORY_PUBLISHING_PLAYBOOK.md
+  Context:                    PRODUCT_FACTORY_CONTEXT.md
+  Marketplace checklist:      PRODUCT_FACTORY_MARKETPLACE_CHECKLIST.md
+  Asset specs:                PRODUCT_FACTORY_ASSET_SPECIFICATIONS.md
+  Pre-publish QA:             PRODUCT_FACTORY_PRE_PUBLISH_QA.md
+  Delivery standard:          PRODUCT_FACTORY_DELIVERY_STANDARD.md
+  Product structure:          PRODUCT_FACTORY_PRODUCT_STRUCTURE.md
+  Strategy:                   PRODUCT_FACTORY_STRATEGY.md
+  Roadmap:                    FIRST_10_PRODUCTS_ROADMAP.md
 
 Product catalog:              01-product-factory/00-control/PRODUCT_CATALOG.csv
 Context/continuation:         00-control/
