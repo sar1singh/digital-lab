@@ -4,8 +4,9 @@ Goal: publish small proven-format products that can create first revenue quickly
 
 ## Weekend Schedule
 
-- Saturday: Budget Planner & Expense Tracker
-- Sunday: Invoice Generator & Payment Tracker
+- Saturday (Jun 6): Budget Planner & Expense Tracker
+- Sunday (Jun 7): Invoice Generator & Payment Tracker
+- Next session: Project Budget Tracker
 
 ## Product 1: Budget Planner & Expense Tracker
 
@@ -18,13 +19,10 @@ Buyer: individuals, freelancers, and solopreneurs who want a simple monthly budg
 Why: broad buyer urgency — everyone managing personal or freelance money needs a simple tracker. Low build effort, high perceived value.
 
 What's done:
-- 7-tab workbook with 91 formulas (SUMIF, COUNTIF, IFERROR, SUM, AVERAGE, TEXT)
-- Formula audit: 17 cross-sheet fixes, navigation fix for Google Sheets
-- Automated QA: 55/55 PASS
-- Manual QA: PASS (Excel + Google Sheets)
+- 7-tab workbook with 91 formulas
+- Formula audit, automated QA (55/55 PASS), manual QA PASS
 - Brand updated to Nivora
-- Google Sheets copy link created and pasted into delivery file
-- Buyer-facing delivery: workbook, quick-start guide (MD/HTML/PDF), release notes, 5 listing images, delivery zip
+- Delivery: workbook, PDF guide, Google Sheets copy link, 5 listing images, delivery ZIP
 - Price: $7
 
 What remains:
@@ -34,21 +32,44 @@ What remains:
 
 ## Product 2: Invoice Generator & Payment Tracker
 
-Status: **Planning** — workspace created with all planning files. Do not start build until Product 1 is published or explicitly parked.
+Status: **Ready to Publish** — all 10 QA layers complete, delivery ZIP ready.
 
-Format: Google Sheet / Excel spreadsheet
+Format: Google Sheet / Excel spreadsheet (7 tabs)
 
 Buyer: freelancers and small business owners who need clean invoices and automatic billing calculations
 
 Why: natural adjacent product to the budget planner. Practical recurring operations problem. Easy to bundle later.
 
-## Product 3: Freelancer Pricing Calculator
+What's done:
+- 7-tab workbook built via Python/openpyxl generator
+- All 10 QA layers PASSED — 3 bugs found and fixed before delivery
+- Pre-publish review: Sections A-G all PASS
+- 6 PNG screenshots generated
+- 10-page PDF quick-start guide generated
+- Delivery ZIP built and verified (3 files)
+- Full retrospective documented
+- 3 new factory rules added (Rules 23-25)
+- Price: $7
 
-Format: Google Sheet / Excel calculator
+What remains:
+- Gumroad listing
+- Payhip listing
+- Publish
 
-Buyer: freelancers pricing fixed-scope projects
+## Product 3: Project Budget Tracker
 
-Why: clear pain around undercharging and scope risk.
+Status: **Specification Phase** — all planning docs complete. Do not build workbook yet.
+
+Format: Google Sheet / Excel spreadsheet (7 tabs: Dashboard, Project List, Budget Detail, Expense Log, Invoice Tracker, Profit Analysis, Settings)
+
+Buyer: freelancers and small business owners managing multiple projects with budgets, tracking actuals vs planned, and monitoring profitability per project
+
+Why: natural adjacent product to the invoice generator. Freelancers who invoice also need to budget per project. Strong bundling potential with Products 1 and 2.
+
+What's done:
+- Product workspace created
+- All 10 planning docs complete
+- Ready to enter Build phase
 
 ## Product 4: Net Worth Tracker
 
@@ -106,9 +127,11 @@ Buyer: Gumroad and Payhip sellers
 
 Why: useful to the same type of buyer Product Factory is serving.
 
-## Roadmap Rule
+## Roadmap Rules
 
-Do not build Product 2 until Product 1 is either listed or explicitly parked. Publishing beats queue expansion.
+- Do not start Product N+1 until Product N is either published or explicitly parked.
+- Products 1-2 are frozen — no further development unless customer reports issue.
+- Publishing beats queue expansion.
 
 ## Pre-Publish Review Milestone
 

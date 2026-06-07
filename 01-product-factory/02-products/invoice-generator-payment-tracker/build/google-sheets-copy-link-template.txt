@@ -1,0 +1,26 @@
+╔══════════════════════════════════════════════════════════════╗
+║       Nivora Invoice Generator & Payment Tracker            ║
+║                  Google Sheets Copy Link                    ║
+╚══════════════════════════════════════════════════════════════╝
+
+Thank you for purchasing Nivora Invoice Generator & Payment Tracker!
+
+This file will contain the Google Sheets copy link after we complete
+our manual QA process. Use this link to make your own editable copy.
+
+=== Your Google Sheets Copy Link ===
+
+https://docs.google.com/spreadsheets/d/1bGzHBf0SMqZZ-nzX26_EG_CwiDmhkrZJ/copy
+
+=== How to Use ===
+
+1. Click the link above (or paste it into your browser).
+2. Google Sheets will prompt: "Make a copy" — click it.
+3. You now have your own editable version in your Google Drive.
+4. If you prefer Excel: Download your copy as File → Download → Microsoft Excel (.xlsx).
+
+=== Need Help? ===
+
+Contact: workbysar1@gmail.com
+
+© Nivora

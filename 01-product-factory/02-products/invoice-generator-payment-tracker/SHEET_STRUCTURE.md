@@ -70,7 +70,7 @@ Columns:
 | B | Invoice Date | Date | Date invoice issued |
 | C | Due Date | Date | Payment due date |
 | D | Client ID | Text | Links to Clients tab |
-| E | Client Name | Text | VLOOKUP from Clients |
+| E | Client Name | Text | VLOOKUP from Clients (manual entry fallback) |
 | F | Description | Text | Brief invoice description |
 | G | Subtotal | Currency | Sum of line items |
 | H | Tax Rate | Percentage | From Settings or manual |
@@ -78,7 +78,7 @@ Columns:
 | J | Total | Currency | Formula: Subtotal + Tax Amount |
 | K | Amount Paid | Currency | Manual entry as payments arrive |
 | L | Outstanding | Currency | Formula: Total - Amount Paid |
-| M | Status | Formula | Paid / Overdue / Partial / Sent / Draft |
+| M | Status | Formula | Auto: Paid / Overdue / Partial / Sent. Manual override: Draft |
 
 ---
 
@@ -92,7 +92,7 @@ Columns:
 |--------|--------|------|-------|
 | A | Payment ID | Text | Structured ID (e.g., PAY-001) |
 | B | Invoice ID | Text | Links to Invoice Register |
-| C | Client Name | Text | VLOOKUP via Invoice ID |
+| C | Client Name | Formula | =IFERROR(VLOOKUP(InvoiceID,'Invoice Register'!A:E,5,FALSE),"") |
 | D | Payment Date | Date | Date payment received |
 | E | Payment Method | Dropdown | From Settings |
 | F | Amount | Currency | Payment amount |

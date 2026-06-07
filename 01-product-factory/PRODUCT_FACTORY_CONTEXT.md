@@ -45,12 +45,12 @@ If no, park it.
 | # | Product | Format | Status | Price |
 |---|---------|--------|--------|-------|
 | 1 | Budget Planner & Expense Tracker | Spreadsheet (7 tabs) | **Ready to Publish** — Gumroad listing pending | $7 |
-| 2 | Invoice Generator & Payment Tracker | Spreadsheet (7 tabs) | Workbook draft built — QA pending | $7 |
-| 3 | Freelancer Pricing Calculator | Spreadsheet | Backlog | $5-$12 |
+| 2 | Invoice Generator & Payment Tracker | Spreadsheet (7 tabs) | **Ready to Publish** — all 10 QA layers complete, delivery ZIP ready | $7 |
+| 3 | Project Budget Tracker | Spreadsheet (7 tabs) | **Specification Phase** — all planning docs complete | $7 |
 | 4 | Net Worth Tracker | Spreadsheet | Backlog | $5-$12 |
 | 5 | POD Profit Calculator | Spreadsheet | Backlog | $5-$12 |
 
-Do not start Product 2 until Product 1 is listed or explicitly parked.
+Do not start Product N+1 until Product N is either published or explicitly parked. Products 1-2 are frozen — no further development unless customer reports issue.
 
 ## Product Statuses
 
@@ -107,12 +107,16 @@ Do not start Product 2 until Product 1 is listed or explicitly parked.
 - `PRODUCT_FACTORY_DELIVERY_STANDARD.md` — ZIP contents, naming, exclusions, packaging sequence
 - `PRODUCT_FACTORY_PRODUCT_STRUCTURE.md` — workspace folder layout and lifecycle
 
-### Legacy Systems (compatible)
+### Systems (active)
+- `07-systems/QA_COVERAGE_STANDARD.md` — 10-layer QA standard for all products
 - `07-systems/BRAND_STANDARD.md` — brand usage rules (Nivora, naming, email)
-- `07-systems/DELIVERY_STANDARD.md` — delivery format (superseded by PRODUCT_FACTORY_DELIVERY_STANDARD.md)
-- `07-systems/MARKETPLACE_ASSET_STANDARD.md` — image requirements (superseded by PRODUCT_FACTORY_ASSET_SPECIFICATIONS.md)
-- `07-systems/PRE_PUBLISH_REVIEW_CHECKLIST.md` — gated checklist (superseded by PRODUCT_FACTORY_PRE_PUBLISH_QA.md)
-- `07-systems/` — legacy; new products should reference PRODUCT_FACTORY_* documents
+- `07-systems/DELIVERY_STANDARD.md` — delivery format and QA gate
+- `07-systems/MARKETPLACE_ASSET_STANDARD.md` — image requirements
+- `07-systems/PRE_PUBLISH_REVIEW_CHECKLIST.md` — gated checklist (Layer 10)
+- `07-systems/templates/` — reusable QA plan and checklist templates
+
+### Legacy Systems (compatible, superseded by PRODUCT_FACTORY_*)
+- `07-systems/` — older documents; new products should reference PRODUCT_FACTORY_* documents
 
 ### Templates
 - `templates/PRE_PUBLISH_CHECKLIST.md` — pre-publish gate checklist
@@ -144,3 +148,8 @@ The following rules apply to ALL products (hardened from Product #1 lessons):
 | 8 | **ZIP as final step** | Build ZIP last, exactly 3 files (workbook, PDF, copy link), no subdirectories | `PRODUCT_FACTORY_DELIVERY_STANDARD.md` |
 | 9 | **Gumroad first** | List on Gumroad first, then Payhip. Add platforms only after consistent sales | `PRODUCT_FACTORY_MARKETPLACE_CHECKLIST.md` |
 | 10 | **10-stage pipeline** | Idea → Build → QA → Assets → Packaging → List → Publish → Distribute → Learn → Update | `PRODUCT_FACTORY_WORKFLOW.md` |
+| 11 | **QA coverage gate** | All 10 QA layers from `QA_COVERAGE_STANDARD.md` must pass before "Delivery Ready" status | `QA_COVERAGE_STANDARD.md` |
+| 12 | **Automated QA before manual** | Implement Layers 1–4 (automated) before Layers 5–9 (manual). Manual QA only for platform/visual behavior | `QA_COVERAGE_STANDARD.md` |
+| 13 | **COUNTIFS finite range** | Negative-match COUNTIFS/SUMIFS must use finite range (not whole-column) and include non-empty criterion `"<>"` | `QA_COVERAGE_STANDARD.md` |
+| 14 | **DV inline lists for GS** | Data validations use inline comma-separated lists (`"A,B,C"`) instead of sheet cell references. Range refs break during GS conversion | `QA_COVERAGE_STANDARD.md` |
+| 15 | **Formula expected values** | Every formula in FORMULAS.md needs at least one test-row expected value, not just structural description | `FORMULAS.md` template |

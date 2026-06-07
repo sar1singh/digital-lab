@@ -2,84 +2,67 @@
 
 Standard 6-image set per Product Factory asset spec.
 
+**Status:** All 6 screenshots generated — validated against 79 QA test cases.
+**Spec files:** See `listing-assets/` for full capture and annotation specs.
+**QA test cases:** `qa/TEST_CASES_SCREENSHOTS.md`
+
 ---
 
 ## Image 1: 01-cover.png
 
-**Content:** Product cover with Nivora brand, workbook preview showing invoice generator layout, key benefits: "Create Invoices · Track Payments · Manage Clients · Dashboard Overview"
-
-**Style:** Branded cover with workbook screenshot inset, "Google Sheets + Excel" badge, price.
+**Spec file:** `listing-assets/01-cover-image.md`
+**Content:** Branded cover with headline, subheadline, 5 feature bullets, Dashboard KPI inset, Excel+GS badge
+**Style:** Dark navy gradient background, inset screenshot with drop shadow, green checkmark bullets
 
 ---
 
 ## Image 2: 02-dashboard.png
 
-**Content:** Full Dashboard tab with sample data. Shows:
-- Summary cards (Total Revenue, Paid, Outstanding, Total Invoices)
-- Invoice Status Breakdown (Paid/Sent/Overdue/Partial/Draft counts)
-- Revenue by Month bar/column
-- Top Clients by Revenue
-
-**Style:** Full tab screenshot, real data visible, gridlines removed.
+**Spec file:** `listing-assets/02-dashboard-screenshot.md`
+**Content:** Dashboard tab with 9 KPI cards, Revenue by Month, Status Breakdown, Top Clients
+**Style:** Full tab screenshot, gridlines hidden, formula bar hidden, 4 annotated callouts
 
 ---
 
 ## Image 3: 03-primary-feature.png
 
-**Content:** Invoice Register tab. Shows:
-- All columns with sample data
-- Status column auto-calculating (Paid, Overdue, Partial, Sent)
-- Outstanding balance column
-- Tax and total calculations
-
-**Style:** Full register view, highlight the status formulas in action.
+**Spec file:** `listing-assets/03-invoice-generator-screenshot.md`
+**Content:** Invoice Generator tab — printable invoice with 3 line items, auto-calculated totals
+**Style:** Clean invoice view, gridlines hidden, 3 annotations on totals and line items
 
 ---
 
 ## Image 4: 04-secondary-feature.png
 
-**Content:** Invoice Generator tab. Shows:
-- Printable invoice layout with sample data
-- Line items with quantity/rate/amount
-- Auto-calculated subtotal, tax, total
-- Payment instructions
-
-**Style:** Clean invoice view — this is the main deliverable the buyer creates.
+**Spec file:** `listing-assets/04-payment-tracker-screenshot.md`
+**Content:** Payment Tracker tab — all 15 payments with VLOOKUP client names, payment methods
+**Style:** Full table screenshot, optional VLOOKUP formula inset
 
 ---
 
 ## Image 5: 05-advanced-features.png
 
-**Content:** Payment Tracker + Clients tabs combined or as collage. Shows:
-- Payment Tracker: payments linked to invoices
-- Clients directory with contact info and status
-- How payments feed into dashboard metrics
-
-**Style:** Split or collage showing both tabs.
+**Spec file:** `listing-assets/05-client-management-screenshot.md`
+**Content:** Clients tab — all 10 clients with contact details and status tracking
+**Style:** Full table screenshot, status callout annotation
 
 ---
 
 ## Image 6: 06-whats-included.png
 
-**Content:** What's Included deliverable grid. Lists:
-- Invoice Generator (printable template)
-- Dashboard (real-time metrics)
-- Client Manager (directory with status)
-- Invoice Register (auto-status tracking)
-- Payment Tracker (income monitoring)
-- Settings (customizable defaults)
-- Quick-start PDF guide
-- Google Sheets + Excel compatible
-
-**Style:** Clean checklist layout with Nivora brand.
+**Spec file:** `listing-assets/06-whats-included-image.md`
+**Content:** 2×4 deliverable grid with icons and descriptions
+**Style:** Composed graphic, white background, item cards, bottom brand bar
 
 ---
 
 ## Notes
 
-- Generate screenshots only after workbook is final and QA'd
+- Generate screenshots only after workbook is final and QA'd (✓ done)
 - Use real sample data — never empty sheets
 - No browser chrome, bookmarks, or personal data
-- All images at 1200+ px wide, PNG format
+- All images at 1200+ px wide, PNG format, 3:2 aspect ratio
 - Consistent aspect ratio across all 6 images
 - Brand (Nivora) on cover and where appropriate
+- 79 QA test cases defined in `qa/TEST_CASES_SCREENSHOTS.md`
+- Screenshot specs are at the file level in `listing-assets/` directory

@@ -32,6 +32,16 @@ All formulas in FORMULAS.md are designed for Excel + Google Sheets compatibility
 - Avoid overly complex CF rules
 - Use simple color scales and highlight rules
 
+### VLOOKUP (Payment Tracker — new in QA)
+- `=IFERROR(VLOOKUP(B2,'Invoice Register'!A:E,5,FALSE),"")` is GS-compatible
+- Single-quoted sheet names (`'Invoice Register'`) are required in both Excel and GS
+- Test by uploading and verifying Client Name column resolves correctly
+
+### Draft Status (manual-only — new in QA)
+- Auto-status formula never produces "Draft" — GS import maintains this behavior
+- "Draft" is available as a manual dropdown/entry option in Settings
+- Dashboard formulas exclude Draft via `"<>Draft"` — this pattern is GS-compatible
+
 ### Charts
 - Excel charts may not render identically in GS
 - Dashboard charts should be recreated in GS during QA phase if needed
@@ -40,13 +50,18 @@ All formulas in FORMULAS.md are designed for Excel + Google Sheets compatibility
 - Invoice Generator tab print layout must be tested in both Excel and GS
 - Set print area, page breaks, and scaling explicitly
 
-## GS-Specific Actions During QA
+## GS Manual QA Runbook
 
-1. Upload XLSX to Google Drive and open in Sheets
-2. Verify all formulas show correct values (no #REF!, #VALUE!, #DIV/0!)
-3. Verify dropdowns work
-4. Verify conditional formatting preserved
-5. Create copy link and test from incognito
-6. Test print layout of Invoice Generator tab
-7. Verify charts render (if included)
-8. Check that navigation instructions are clear (hyperlinks won't work)
+Detailed step-by-step instructions available in:
+`docs/GOOGLE_SHEETS_MANUAL_QA_RUNBOOK.md`
+
+Includes: upload, formula verification, VLOOKUP check, dropdown test, dashboard values,
+print layout, copy link creation, and troubleshooting.
+
+## QA Results Tracker
+
+Results logging available in:
+`qa/GOOGLE_SHEETS_MANUAL_QA_RESULTS.md`
+
+32 test cases covering: tab presence (8), formula integrity (12), dropdowns (2),
+dashboard values (7), visual formatting (3). All default to "Pending Manual Test".

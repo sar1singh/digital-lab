@@ -1,6 +1,10 @@
 # Pre-Publish Review Checklist
 
 > Must pass all sections before any product listing goes live.
+>
+> **Gate rule:** No product can become "Delivery Ready" unless all 10 QA layers
+> from `QA_COVERAGE_STANDARD.md` are complete. Review this checklist as the
+> final Layer 10 verification.
 
 ---
 
@@ -92,12 +96,26 @@
 
 **All items in Sections A–G must be checked before publishing.**
 
+Additionally, all 10 QA layers from `QA_COVERAGE_STANDARD.md` must be complete:
+1. Automated workbook validation — must pass 100%
+2. Formula/business logic tests — must pass 100%
+3. Google Sheets compatibility lint — must pass 100%
+4. UI/layout checks — must pass 100%
+5. Manual smoke QA — all 9 steps documented as PASS
+6. Delivery package QA — all tests pass
+7. Marketplace asset QA — all 6 images meet spec
+8. Listing copy QA — all sections complete
+9. Link/copy-link QA — link tested and verified
+10. Final pre-publish gate — this checklist, all sections A–G pass
+
 If any item fails:
 1. Fix the issue
 2. Re-verify
 3. Do not proceed until all sections pass
 
 Gate keeper: AI agent or human reviewer
+
+**No product can become "Delivery Ready" unless all 10 QA layers are complete.**
 
 ---
 

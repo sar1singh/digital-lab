@@ -32,9 +32,13 @@ Where L2 = Outstanding, C2 = Due Date, K2 = Amount Paid.
 
 Logic:
 - Outstanding = 0 → Paid
-- Today > Due Date → Overdue
-- Amount Paid > 0 but Outstanding > 0 → Partial
+- Today > Due Date → Overdue (even if partial payment exists)
+- Amount Paid > 0 but Outstanding > 0 and Due Date >= Today → Partial
 - Otherwise → Sent
+
+**Note:** "Draft" is NOT produced by this auto-formula. It is available as a manual
+override value in Settings for work-in-progress invoices. The Dashboard's Total
+Revenue and Average Invoice Value formulas exclude Draft invoices via `"<>Draft"`.
 
 ---
 
@@ -42,41 +46,41 @@ Logic:
 
 ### Total Revenue
 ```
-=SUMIFS(Register!J:J,Register!M:M,"<>Draft")
+=SUMIFS('Invoice Register'!J:J,'Invoice Register'!M:M,"<>Draft")
 ```
 Sum of Total column excluding Draft invoices.
 
 ### Paid Revenue
 ```
-=SUMIFS(Register!J:J,Register!M:M,"Paid")
+=SUMIFS('Invoice Register'!J:J,'Invoice Register'!M:M,"Paid")
 ```
 Sum of Total where status = Paid.
 
 ### Outstanding Revenue
 ```
-=SUMIFS(Register!L:L,Register!M:M,"Sent",Register!L:L,">0")+SUMIFS(Register!L:L,Register!M:M,"Overdue",Register!L:L,">0")+SUMIFS(Register!L:L,Register!M:M,"Partial",Register!L:L,">0")
+=SUMIFS('Invoice Register'!L:L,'Invoice Register'!M:M,"Sent",'Invoice Register'!L:L,">0")+SUMIFS('Invoice Register'!L:L,'Invoice Register'!M:M,"Overdue",'Invoice Register'!L:L,">0")+SUMIFS('Invoice Register'!L:L,'Invoice Register'!M:M,"Partial",'Invoice Register'!L:L,">0")
 ```
 Sum of Outstanding where invoice is not fully paid.
 
 ### Total Invoices
 ```
-=COUNTIF(Register!M:M,"<>")-1
+=COUNTIF('Invoice Register'!M:M,"<>")-1
 ```
 Count all invoice entries (minus header).
 
 ### Paid Invoices
 ```
-=COUNTIFS(Register!M:M,"Paid")
+=COUNTIFS('Invoice Register'!M:M,"Paid")
 ```
 
 ### Unpaid Invoices
 ```
-=COUNTIFS(Register!M:M,"Sent")+COUNTIFS(Register!M:M,"Overdue")+COUNTIFS(Register!M:M,"Partial")+COUNTIFS(Register!M:M,"Draft")
+=COUNTIFS('Invoice Register'!M:M,"Sent")+COUNTIFS('Invoice Register'!M:M,"Overdue")+COUNTIFS('Invoice Register'!M:M,"Partial")+COUNTIFS('Invoice Register'!M:M,"Draft")
 ```
 
 ### Overdue Invoices
 ```
-=COUNTIFS(Register!M:M,"Overdue")
+=COUNTIFS('Invoice Register'!M:M,"Overdue")
 ```
 
 ### Active Clients
@@ -86,12 +90,12 @@ Count all invoice entries (minus header).
 
 ### Average Invoice Value
 ```
-=IFERROR(SUMIFS(Register!J:J,Register!M:M,"<>Draft")/COUNTIFS(Register!M:M,"<>Draft"),0)
+=IFERROR(SUMIFS('Invoice Register'!J:J,'Invoice Register'!M:M,"<>Draft")/COUNTIFS('Invoice Register'!M:M,"<>Draft"),0)
 ```
 
 ### Revenue by Month (summary table)
 ```
-=SUMIFS(Register!J:J,Register!M:M,"<>Draft",Register!B:B,">="&DATE(year,month,1),Register!B:B,"<"&DATE(year,month+1,1))
+=SUMIFS('Invoice Register'!J:J,'Invoice Register'!M:M,"<>Draft",'Invoice Register'!B:B,">="&DATE(year,month,1),'Invoice Register'!B:B,"<"&DATE(year,month+1,1))
 ```
 Where year and month reference helper cells.
 
@@ -100,7 +104,7 @@ Count per status using COUNTIFS for each: Paid, Sent, Overdue, Partial, Draft.
 
 ### Top Clients by Revenue (summary table)
 ```
-=SUMIFS(Register!J:J,Register!E:E,client_name,Register!M:M,"<>Draft")
+=SUMIFS('Invoice Register'!J:J,'Invoice Register'!E:E,client_name,'Invoice Register'!M:M,"<>Draft")
 ```
 Where client_name references each top client row.
 
@@ -110,12 +114,11 @@ Where client_name references each top client row.
 
 ### Client Name (Column C)
 ```
-=VLOOKUP(B2,Register!A:E,5,FALSE)
+=IFERROR(VLOOKUP(B2,'Invoice Register'!A:E,5,FALSE),"")
 ```
-Where B2 = Invoice ID, lookup in Invoice Register for Client Name.
-
-Alternative (simpler, no cross-sheet VLOOKUP):
-Manual entry or IFERROR(VLOOKUP(...),"") with IFERROR wrapper.
+Where B2 = Invoice ID, lookup in Invoice Register columns A:E (Invoice ID
+in column A, Client Name in column E). IFERROR wrapper returns blank if
+Invoice ID is not found or row is empty.
 
 ---
 

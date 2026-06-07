@@ -4,7 +4,7 @@
 
 Build the second Product Factory product using the standards hardened from Product #1.
 
-**Current Status:** Workbook draft built — in `build/nivora-invoice-generator-payment-tracker.xlsx`. Next: Internal QA.
+**Current Status:** READY TO PUBLISH — All 10 QA layers passed.
 
 ## Phases
 
@@ -25,33 +25,37 @@ Build the second Product Factory product using the standards hardened from Produ
 - [x] Set freeze panes, formula/input cell styling
 - [x] Validation: 45/45 checks passed
 
-### Phase 3: Internal QA (Current)
-- [ ] Run formula test cases (qa/TEST_CASES_FORMULAS.md)
-- [ ] Run Google Sheets import test (qa/TEST_CASES_GOOGLE_SHEETS_IMPORT.md)
-- [ ] Fix all P0/P1 issues
-- [ ] Run automated QA checks
+### Phase 3: Internal QA (Done)
+- [x] Run formula test cases (qa/TEST_CASES_FORMULAS.md) — corrected expected values
+- [x] Run automated QA checks — 4 QA suites via run_all_qa.py (validate + formulas + lint + layout)
+- [x] Fix all P0/P1 issues — Payment Tracker VLOOKUP, Draft decision, formula corrections
+- [x] Run Google Sheets smoke test (9 manual steps in docs/GOOGLE_SHEETS_MANUAL_QA_RUNBOOK.md) — 9/9 PASSED
 
-### Phase 4: Asset Generation (After QA)
-- [ ] Capture 6 screenshots per SCREENSHOT_PLAN.md
-- [ ] Create cover image with Nivora brand
-- [ ] Save to listing-assets/ with correct naming
+### Phase 4: Asset Generation (Complete)
+- [x] Create screenshot specs (listing-assets/01–06) — capture instructions, annotations, acceptance criteria
+- [x] Create screenshot QA test cases (qa/TEST_CASES_SCREENSHOTS.md — 79 tests)
+- [x] Capture 6 screenshots per specs in listing-assets/
+- [x] Create cover image with Nivora brand
+- [x] Save PNGs to screenshots/
+- [x] Validate screenshots against qa/TEST_CASES_SCREENSHOTS.md
 
-### Phase 5: Packaging (After Assets)
-- [ ] Export final branded workbook
-- [ ] Create Google Sheets copy and validate copy link
-- [ ] Create copy link file (google-sheets-copy-link.txt)
-- [ ] Generate PDF quick-start guide (2nd-to-last step)
-- [ ] Build delivery ZIP (last step — exactly 3 files)
+### Phase 5: Packaging (Complete)
+- [x] Export final branded workbook
+- [x] Create Google Sheets copy and validate copy link
+- [x] Create copy link file (google-sheets-copy-link.txt)
+- [x] Generate PDF quick-start guide (2nd-to-last step)
+- [x] Build delivery ZIP (last step — exactly 3 files)
 
-### Phase 6: Pre-Publish QA
-- [ ] Run 5-review process: Content, Branding, Packaging, Marketplace, Delivery
-- [ ] All reviews must pass before listing
+### Phase 6: Pre-Publish QA (Complete)
+- [x] Run 10-layer QA gate (Layers 1–10)
+- [x] Pre-publish review checklist (Sections A–G)
+- [x] All reviews pass — Ready to Publish
 
-### Phase 7: Publish
-- [ ] Create Gumroad listing
-- [ ] Create Payhip listing
-- [ ] Publish
+### Phase 7: Publish (Manual)
+- [ ] Create Gumroad listing — upload ZIP, set thumbnail, publish
+- [ ] Create Payhip listing — upload ZIP, set thumbnail, publish
 - [ ] Record URLs
+- [ ] Run test purchase
 
 ### Phase 8: Post-Publish
 - [ ] Complete Retrospective

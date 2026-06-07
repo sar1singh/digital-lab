@@ -100,3 +100,11 @@ Before finalizing:
 4. Verify PDF title contains brand
 5. Verify copy link file contains correct URL
 6. Run brand consistency scan
+
+## QA Gate
+
+Delivery cannot be finalized unless all 10 QA layers from `QA_COVERAGE_STANDARD.md`
+are complete. The delivery package is Layer 6; it must pass before ZIP is built.
+Layer 10 (Pre-Publish Gate) is the final sign-off.
+
+**No product can become "Delivery Ready" unless all 10 QA layers are complete.**

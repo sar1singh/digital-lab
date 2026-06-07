@@ -28,7 +28,8 @@
 - No SaaS, website, logo, newsletter, audience-building, automation platform, or Product Factory app
 - No Etsy setup before first sale or 5 products published
 - No broad research loops — move directly to execution
-- Do not start Product 2 until Product 1 is listed or explicitly parked
+- Do not start Product N+1 until Product N is published or explicitly parked
+- Products 1-2 are frozen — no further development unless customer reports issue
 - Max 1-2 days per product before publishing
 - All P0 and P1 tests must pass before listing goes live
 - No buyer-facing filenames may include version numbers
@@ -80,10 +81,18 @@
 - Record URLs
 
 ### Product 2: Invoice Generator & Payment Tracker
-**Status:** Workbook draft built — in `build/nivora-invoice-generator-payment-tracker.xlsx`. 45/45 validation checks passed. QA phase next. Do not publish until Product 1 is published.
+**Status:** READY TO PUBLISH — All 10 QA layers complete.
+**Delivery:** `delivery/nivora-invoice-generator-payment-tracker-delivery.zip` (3 files)
+**QA summary:**
+- All 10 QA layers PASSED
+- 3 bugs found and fixed during QA (Invoice Total formula, Average Invoice Value, Data Validation dropdowns)
+- 4 automated suites + 9-step manual GS smoke QA + 79 screenshot test cases + 22 delivery tests
+- Pre-publish review: Sections A–G all PASS
+- Full retrospective: `docs/PRODUCT_2_RETROSPECTIVE.md`
+- **Outstanding:** Create Gumroad listing, Create Payhip listing, Publish, Record URLs
 
-### Product 3: Freelancer Pricing Calculator
-**Status:** Backlog
+### Product 3: Project Budget Tracker
+**Status:** Planning phase — workspace created, all spec documents complete
 
 ### Product 4: Net Worth Tracker
 **Status:** Backlog
@@ -98,8 +107,8 @@
 | # | Product | Format | Status | Price |
 |---|---------|--------|--------|-------|
 | 1 | Budget Planner & Expense Tracker | Spreadsheet (7 tabs) | Ready to Publish | $7 |
-| 2 | Invoice Generator & Payment Tracker | Spreadsheet (7 tabs) | Workbook draft built — QA pending | $7 |
-| 3 | Freelancer Pricing Calculator | Spreadsheet | Backlog | $5-$12 |
+| 2 | Invoice Generator & Payment Tracker | Spreadsheet (7 tabs) | READY TO PUBLISH | $7 |
+| 3 | Project Budget Tracker | Spreadsheet (7 tabs) | Planning — specs in progress | $7 |
 | 4 | Net Worth Tracker | Spreadsheet | Backlog | $5-$12 |
 | 5 | POD Profit Calculator | Spreadsheet | Backlog | $5-$12 |
 
@@ -143,19 +152,20 @@ If no, park it.
 
 | Stage | Milestone | Status |
 |-------|-----------|--------|
-| 1 | Product 1 live | Pending — listing in progress |
-| 2 | First sale | Not yet |
-| 3 | First $50 revenue | Not yet |
-| 4 | First $100 revenue | Not yet |
-| 5 | Five products live | Not yet |
+| 1 | Product 1 live | Blocked — manual listing needed |
+| 2 | Product 2 live | Blocked — manual listing needed |
+| 3 | First sale | Not yet |
+| 4 | First $50 revenue | Not yet |
+| 5 | First $100 revenue | Not yet |
+| 6 | Five products live | Not yet |
 
 ---
 
 ## What Must Not Be Changed
 
-1. **Do not start Product 2** until Product 1 is listed or explicitly parked.
-2. **Do not change workbook formulas** — 91 formulas are verified and tested.
-3. **Do not modify v1.2.xlsx** — it is the approved source workbook.
+1. **Products 1-2 are frozen** — no further development unless customer reports issue. Do not modify workbooks, delivery files, screenshots, or PDFs.
+2. **Do not start Product 4** until Product 3 is published or explicitly parked.
+3. **Do not change Product 1 workbook formulas** — 91 formulas are verified and tested.
 4. **Do not change product strategy** — Product Factory active, other labs parked.
 5. **Do not do market research** — move directly to execution.
 6. **Do not set up Etsy, website, logo, newsletter, or branding** before first sale or 5 products published.
@@ -173,20 +183,28 @@ If no, park it.
 18. **ZIP as final step:** Build ZIP last, exactly 3 files (workbook, PDF, copy link), no subdirectories.
 19. **Gumroad first:** List on Gumroad first, then Payhip. Add platforms only after consistent sales.
 20. **10-stage pipeline:** Idea → Build → QA → Assets → Packaging → List → Publish → Distribute → Learn → Update.
+21. **QA coverage gate:** All 10 QA layers from `QA_COVERAGE_STANDARD.md` must pass before "Delivery Ready" status.
+22. **Automated QA before manual:** Implement Layers 1–4 (automated) before Layers 5–9 (manual). Manual QA only for platform/visual behavior.
+23. **COUNTIFS negative-match requires finite range + non-empty criterion:** Any `COUNTIFS(...,"<>X")` must use finite range (not `A:A`) and include `"<>"` as secondary criterion to avoid counting empty formula cells.
+24. **Data validations use inline lists for GS compatibility:** Set data validation with comma-separated values `"A,B,C"` instead of referencing sheet cells like `Settings!$C$6`. Range refs break during Google Sheets conversion.
+25. **Formula spec must include expected values:** Every formula in FORMULAS.md needs at least one test-row expected value, not just a structural description. This enables automated QA to catch wrong cell references.
 
 ---
 
 ## Immediate Next Actions
 
-1. Create Gumroad listing from `LISTING_COPY_GUMROAD.md` (use Nivora brand)
-2. Create Payhip listing from `LISTING_COPY_PAYHIP.md`
-3. Upload final ZIP + listing images to both listings
-4. Set price to $7 on both platforms
-5. Test checkout preview
-6. Publish both listings
-7. Record listing URLs in `PRODUCT_CATALOG.csv`
-8. Update `PRODUCT_CATALOG.csv` status to Published
-9. **Then** start Product 2 (Invoice Generator & Payment Tracker)
+### Product 1 & 2: Publish Both Listings
+1. Create Gumroad listing for Product 1 from `LISTING_COPY_GUMROAD.md`
+2. Create Payhip listing for Product 1 from `LISTING_COPY_PAYHIP.md`
+3. Create Gumroad listing for Product 2 from `.../invoice-generator-payment-tracker/LISTING_COPY_GUMROAD.md`
+4. Create Payhip listing for Product 2 from `.../invoice-generator-payment-tracker/LISTING_COPY_PAYHIP.md`
+5. Upload delivery ZIPs + screenshots to both listings
+6. Set price to $7 on both platforms for both products
+7. Test checkout preview
+8. Publish both listings
+9. Record listing URLs in `PRODUCT_CATALOG.csv`
+10. Update `PRODUCT_CATALOG.csv` status to Published
+11. Build Product 3 (Project Budget Tracker) — workbook generation is next phase
 
 ---
 
@@ -194,16 +212,27 @@ If no, park it.
 
 ```
 Repository root:              digital-lab/
-Active product:               01-product-factory/02-products/budget-planner-expense-tracker/
-  Source workbook:            .../artifacts/budget-planner-expense-tracker-v1.2.xlsx
-  Delivery folder:            .../delivery/
-  Buyer workbook:             .../delivery/nivora-budget-planner-expense-tracker.xlsx
-  QA test suite:              .../qa/
-  Listing copy (Gumroad):     .../LISTING_COPY_GUMROAD.md
-  Listing copy (Payhip):      .../LISTING_COPY_PAYHIP.md
-  Build checklist:            .../BUILD_CHECKLIST.md
-  Brand QA:                   .../docs/BRAND_QA_CHECKLIST.md
-  Retrospective:              .../RETROSPECTIVE.md
+Active products:
+  Product 1 (Budget Planner): 01-product-factory/02-products/budget-planner-expense-tracker/
+    Source workbook:           .../artifacts/budget-planner-expense-tracker-v1.2.xlsx
+    Delivery folder:           .../delivery/
+    Buyer workbook:            .../delivery/nivora-budget-planner-expense-tracker.xlsx
+    Retrospective:             .../RETROSPECTIVE.md
+  Product 2 (Invoice Gen):    01-product-factory/02-products/invoice-generator-payment-tracker/
+    Build script:              .../build/build_workbook.py
+    QA runner:                 .../build/run_all_qa.py
+    QA suites:                 .../build/validate_workbook.py, test_workbook_formulas.py, lint_google_sheets_compatibility.py, test_workbook_layout.py
+    PDF generator:             .../build/generate_pdf.py
+    Delivery folder:           .../delivery/
+    Buyer workbook:            .../delivery/nivora-invoice-generator-payment-tracker.xlsx
+    Buyer PDF:                 .../delivery/nivora-invoice-generator-payment-tracker-quick-start-guide.pdf
+    Delivery ZIP:              .../delivery/nivora-invoice-generator-payment-tracker-delivery.zip
+    QA test suite:             .../qa/ (TEST_CASES_SCREENSHOTS.md, TEST_CASES_DELIVERY_PACKAGE.md, GOOGLE_SHEETS_MANUAL_QA_RESULTS.md, PRE_PUBLISH_REVIEW_RESULTS.md)
+    Listing assets (specs):    .../listing-assets/ (01-cover-image.md through 06-whats-included-image.md)
+    Screenshots (PNG):         .../screenshots/ (01-cover.png through 06-whats-included.png)
+    Listing copy:              .../LISTING_COPY_GUMROAD.md, LISTING_COPY_PAYHIP.md
+    Quick-start guide (src):   .../QUICK_START_GUIDE.md
+    Retrospective:             .../docs/PRODUCT_2_RETROSPECTIVE.md
 
 Product factory docs:         01-product-factory/
   Workflow:                   PRODUCT_FACTORY_WORKFLOW.md
@@ -216,6 +245,18 @@ Product factory docs:         01-product-factory/
   Product structure:          PRODUCT_FACTORY_PRODUCT_STRUCTURE.md
   Strategy:                   PRODUCT_FACTORY_STRATEGY.md
   Roadmap:                    FIRST_10_PRODUCTS_ROADMAP.md
+
+  Product 3 (Budget Tracker): 01-product-factory/02-products/project-budget-tracker/
+    Product spec:              .../PRODUCT_SPEC.md
+    Sheet structure:           .../SHEET_STRUCTURE.md
+    Formulas:                  .../FORMULAS.md
+    Sample data:               .../SAMPLE_DATA.md
+    Screenshot plan:           .../SCREENSHOT_PLAN.md
+    Build checklist:           .../BUILD_CHECKLIST.md
+    QA checklist:              .../QA_CHECKLIST.md
+    Quick-start guide:         .../QUICK_START_GUIDE.md
+    Listing copy (Gumroad):    .../LISTING_COPY_GUMROAD.md
+    Listing copy (Payhip):     .../LISTING_COPY_PAYHIP.md
 
 Product catalog:              01-product-factory/00-control/PRODUCT_CATALOG.csv
 Context/continuation:         00-control/

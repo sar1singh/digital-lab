@@ -1,5 +1,8 @@
 # Test Cases: Delivery Package — Invoice Generator & Payment Tracker
 
+**QA Layer:** 6 (Delivery Package QA)
+**Coverage standard:** `01-product-factory/07-systems/QA_COVERAGE_STANDARD.md`
+
 ## File Naming
 
 | ID | Test | Expected | P0/P1 |

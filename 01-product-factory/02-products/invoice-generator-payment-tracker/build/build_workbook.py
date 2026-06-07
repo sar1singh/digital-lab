@@ -142,6 +142,8 @@ notes = [
     "Green/white cells are for your data — enter values here.",
     "Sample data is included as an example. Replace it with your own data.",
     "Always keep a backup of your workbook.",
+    "For Google Sheets: File > Save as Google Sheets. All formulas will convert automatically.",
+    "Invoice Status is auto-calculated (Paid/Overdue/Partial/Sent). Set 'Draft' manually for work-in-progress.",
     "For support: workbysar1@gmail.com",
 ]
 for note in notes:
@@ -192,7 +194,7 @@ for r_idx, client in enumerate(clients_data, 2):
 # Data validation for Client Status
 dv_client_status = DataValidation(
     type="list",
-    formula1="Settings!$C$6",
+    formula1='"Active,Inactive,Archived"',
     allow_blank=True,
 )
 dv_client_status.error = "Please select Active, Inactive, or Archived"
@@ -313,7 +315,10 @@ for r_idx, inv in enumerate(invoices_data, 2):
     style_formula_cell(cell_outstanding)
     cell_outstanding.number_format = '#,##0.00'
 
-    # Status formula (gray)
+    # Status formula (gray) — auto-produces Paid / Overdue / Partial / Sent
+    # "Draft" is NOT auto-produced by this formula. Users can manually type "Draft"
+    # to mark work-in-progress invoices; it is available as a dropdown value in
+    # Settings for manual override.
     cell_status = ws_register.cell(row=r_idx, column=13)
     cell_status.value = f'=IF(L{r_idx}=0,"Paid",IF(TODAY()>C{r_idx},"Overdue",IF(K{r_idx}>0,"Partial","Sent")))'
     style_formula_cell(cell_status)
@@ -337,25 +342,25 @@ for i, h in enumerate(pay_headers, 1):
     ws_payments.cell(row=1, column=i, value=h)
 
 payments_data = [
-    ("PAY-001", "INV-001", "Sarah Chen",      date(2025,1,20),  "Bank Transfer", 1650, "Full payment"),
-    ("PAY-002", "INV-002", "Marcus Johnson",   date(2025,1,25),  "PayPal",        2750, "Invoice paid via PayPal"),
-    ("PAY-003", "INV-003", "Elena Rodriguez",  date(2025,2,1),   "Bank Transfer", 1980, "Wire transfer"),
-    ("PAY-004", "INV-004", "David Kim",        date(2025,2,5),   "Cheque",        3520, "Cheque received"),
-    ("PAY-005", "INV-005", "Aisha Patel",      date(2025,2,10),  "Bank Transfer", 2310, "Direct deposit"),
-    ("PAY-006", "INV-006", "James Wilson",     date(2025,2,15),  "PayPal",        2200, "Partial payment - Q1 campaign"),
-    ("PAY-007", "INV-007", "Sarah Chen",       date(2025,2,20),  "Bank Transfer", 1760, "Full payment"),
-    ("PAY-008", "INV-008", "Carlos Mendez",    date(2025,3,1),   "Cash",          1045, "Paid in cash"),
-    ("PAY-009", "INV-009", "Olivia Thompson",  date(2025,3,5),   "Bank Transfer", 825,  "Full payment"),
-    ("PAY-010", "INV-010", "Marcus Johnson",   date(2025,3,1),   "PayPal",        1400, "Partial - dispute on remaining"),
-    ("PAY-011", "INV-015", "Sarah Chen",       date(2026,3,15),  "Bank Transfer", 1540, "Full payment received"),
-    ("PAY-012", "INV-016", "Carlos Mendez",    date(2026,3,20),  "Bank Transfer", 1320, "Full payment"),
-    ("PAY-013", "INV-020", "Marcus Johnson",   date(2026,4,1),   "Credit Card",   1100, "Partial payment"),
-    ("PAY-014", "INV-023", "Aisha Patel",      date(2026,4,10),  "PayPal",        1430, "Partial payment"),
-    ("PAY-015", "INV-014", "Aisha Patel",      date(2025,3,15),  "Bank Transfer", 1210, "Partial payment"),
+    ("PAY-001", "INV-001", date(2025,1,20),  "Bank Transfer", 1650, "Full payment"),
+    ("PAY-002", "INV-002", date(2025,1,25),  "PayPal",        2750, "Invoice paid via PayPal"),
+    ("PAY-003", "INV-003", date(2025,2,1),   "Bank Transfer", 1980, "Wire transfer"),
+    ("PAY-004", "INV-004", date(2025,2,5),   "Cheque",        3520, "Cheque received"),
+    ("PAY-005", "INV-005", date(2025,2,10),  "Bank Transfer", 2310, "Direct deposit"),
+    ("PAY-006", "INV-006", date(2025,2,15),  "PayPal",        2200, "Partial payment - Q1 campaign"),
+    ("PAY-007", "INV-007", date(2025,2,20),  "Bank Transfer", 1760, "Full payment"),
+    ("PAY-008", "INV-008", date(2025,3,1),   "Cash",          1045, "Paid in cash"),
+    ("PAY-009", "INV-009", date(2025,3,5),   "Bank Transfer", 825,  "Full payment"),
+    ("PAY-010", "INV-010", date(2025,3,1),   "PayPal",        1400, "Partial - dispute on remaining"),
+    ("PAY-011", "INV-015", date(2026,3,15),  "Bank Transfer", 1540, "Full payment received"),
+    ("PAY-012", "INV-016", date(2026,3,20),  "Bank Transfer", 1320, "Full payment"),
+    ("PAY-013", "INV-020", date(2026,4,1),   "Credit Card",   1100, "Partial payment"),
+    ("PAY-014", "INV-023", date(2026,4,10),  "PayPal",        1430, "Partial payment"),
+    ("PAY-015", "INV-014", date(2025,3,15),  "Bank Transfer", 1210, "Partial payment"),
 ]
 
 for r_idx, pay in enumerate(payments_data, 2):
-    pay_id, inv_id, client_name, pay_date, method, amount, notes = pay
+    pay_id, inv_id, pay_date, method, amount, notes = pay
     ws_payments.cell(row=r_idx, column=1, value=pay_id).font = BODY_FONT
     ws_payments.cell(row=r_idx, column=1).border = THIN_BORDER
     ws_payments.cell(row=r_idx, column=1).alignment = CENTER
@@ -364,9 +369,11 @@ for r_idx, pay in enumerate(payments_data, 2):
     ws_payments.cell(row=r_idx, column=2).border = THIN_BORDER
     ws_payments.cell(row=r_idx, column=2).alignment = CENTER
 
-    ws_payments.cell(row=r_idx, column=3, value=client_name).font = BODY_FONT
-    ws_payments.cell(row=r_idx, column=3).border = THIN_BORDER
-    ws_payments.cell(row=r_idx, column=3).alignment = LEFT
+    # Client Name (VLOOKUP formula from Invoice Register - gray formula cell)
+    cell_client = ws_payments.cell(row=r_idx, column=3)
+    cell_client.value = f"=IFERROR(VLOOKUP(B{r_idx},'Invoice Register'!A:E,5,FALSE),\"\")"
+    style_formula_cell(cell_client)
+    cell_client.border = THIN_BORDER
 
     ws_payments.cell(row=r_idx, column=4, value=pay_date).font = BODY_FONT
     ws_payments.cell(row=r_idx, column=4).number_format = "DD-MMM-YYYY"
@@ -395,7 +402,7 @@ ws_payments.freeze_panes = "A2"
 # Data validation for Payment Method
 dv_payment_method = DataValidation(
     type="list",
-    formula1="Settings!$C$7",
+    formula1='"Bank Transfer,PayPal,Cash,Cheque,Credit Card,Other"',
     allow_blank=True,
 )
 dv_payment_method.error = "Please select a valid payment method"
@@ -493,7 +500,7 @@ c_avg_label.border = THIN_BORDER
 ws_dash.merge_cells(start_row=kpi_row3, start_column=1, end_row=kpi_row3, end_column=3)
 
 c_avg_val = ws_dash.cell(row=kpi_row3 + 1, column=1)
-c_avg_val.value = f"=IFERROR(SUMIFS('Invoice Register'!J:J,'Invoice Register'!M:M,\"<>Draft\")/COUNTIFS('Invoice Register'!M:M,\"<>Draft\"),0)"
+c_avg_val.value = f"=IFERROR(SUMIFS('Invoice Register'!J2:J999,'Invoice Register'!M2:M999,\"<>Draft\")/COUNTIFS('Invoice Register'!M2:M999,\"<>Draft\",'Invoice Register'!M2:M999,\"<>\"),0)"
 c_avg_val.font = CARD_VALUE_FONT
 c_avg_val.fill = CARD_FILL
 c_avg_val.alignment = CENTER
@@ -792,7 +799,7 @@ ws_gen.cell(row=summary_row, column=1).alignment = openpyxl.styles.Alignment(hor
 ws_gen.cell(row=summary_row, column=1).border = Border(top=Side(style="medium"), bottom=Side(style="medium"))
 ws_gen.merge_cells(start_row=summary_row, start_column=1, end_row=summary_row, end_column=3)
 cell_total = ws_gen.cell(row=summary_row, column=4)
-cell_total.value = f"=D{summary_row-2}+D{summary_row-1}"
+cell_total.value = f"=D{summary_row-3}+D{summary_row-1}"
 cell_total.font = Font(name="Calibri", bold=True, size=14, color="2F5496")
 cell_total.number_format = '#,##0.00'
 cell_total.alignment = openpyxl.styles.Alignment(horizontal="right", vertical="center")

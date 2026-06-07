@@ -34,7 +34,7 @@ $7 launch price.
 
 - Dashboard with revenue summary, invoice status breakdown, top clients
 - Client directory with status tracking
-- Invoice register with auto-status (Paid, Overdue, Partial, Sent, Draft)
+- Invoice register with auto-status (Paid, Overdue, Partial, Sent; Draft available as manual override)
 - Payment tracking linked to invoices
 - Printable invoice generator with auto-calculated totals
 - Settings tab for currency, tax rate, and dropdown values
