@@ -5,7 +5,7 @@ Goal: publish small proven-format products that can create first revenue quickly
 ## Weekend Schedule
 
 - Saturday: Budget Planner & Expense Tracker
-- Sunday: Invoice Template & Billing Calculator
+- Sunday: Invoice Generator & Payment Tracker
 
 ## Product 1: Budget Planner & Expense Tracker
 
@@ -32,9 +32,9 @@ What remains:
 - Payhip listing
 - Publish
 
-## Product 2: Invoice Template & Billing Calculator
+## Product 2: Invoice Generator & Payment Tracker
 
-Status: **Queued** — not started. Do not start until Product 1 is published or explicitly parked.
+Status: **Planning** — workspace created with all planning files. Do not start build until Product 1 is published or explicitly parked.
 
 Format: Google Sheet / Excel spreadsheet
 

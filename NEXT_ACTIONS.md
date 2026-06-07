@@ -58,11 +58,13 @@
 9. Update PRODUCT_CATALOG.csv status to Published
 10. Complete Product #1 Retrospective (RETROSPECTIVE.md)
 11. Update factory standards with any new lessons
-12. **Then** start Product #2 (Invoice Template & Billing Calculator)
+12. **Then** start Product #2 (Invoice Generator & Payment Tracker)
 
-## Product 2: Invoice Template & Billing Calculator (Sunday)
+## Product 2: Invoice Generator & Payment Tracker (Sunday — Planning Complete)
 
-13. Build Invoice Template & Billing Calculator spreadsheet in Google Sheets.
+Phase A planning is done. Build starts after Product 1 publishes.
+
+13. Build Invoice Generator & Payment Tracker spreadsheet in Google Sheets.
 14. Create XLSX version.
 15. Create Google Sheet copy-ready template link.
 16. Create PDF quick-start guide (1 page).

@@ -16,7 +16,7 @@ Current Active Task:
 Publish Product #1 (Nivora Budget Planner & Expense Tracker) on Gumroad and Payhip. Do not move to Product #2 until Product #1 is published and URLs recorded.
 
 Next Task:
-Build and publish Invoice Template & Billing Calculator.
+Build and publish Invoice Generator & Payment Tracker.
 
 Limit:
 - No SaaS, website, branding, newsletter, or Etsy setup before first sale or 5 products published.
@@ -35,7 +35,7 @@ Locked Decisions:
 
 Current Target Products:
 1. Budget Planner & Expense Tracker (active)
-2. Invoice Template & Billing Calculator (next)
+2. Invoice Generator & Payment Tracker (next)
 3. Freelancer Pricing Calculator (queued)
 4. Net Worth Tracker (queued)
 5. POD Profit Calculator (queued)

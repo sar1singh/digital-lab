@@ -45,7 +45,7 @@ If no, park it.
 | # | Product | Format | Status | Price |
 |---|---------|--------|--------|-------|
 | 1 | Budget Planner & Expense Tracker | Spreadsheet (7 tabs) | **Ready to Publish** — Gumroad listing pending | $7 |
-| 2 | Invoice Template & Billing Calculator | Spreadsheet | Not started | $7 |
+| 2 | Invoice Generator & Payment Tracker | Spreadsheet | Planning — workspace created | $7 |
 | 3 | Freelancer Pricing Calculator | Spreadsheet | Backlog | $5-$12 |
 | 4 | Net Worth Tracker | Spreadsheet | Backlog | $5-$12 |
 | 5 | POD Profit Calculator | Spreadsheet | Backlog | $5-$12 |

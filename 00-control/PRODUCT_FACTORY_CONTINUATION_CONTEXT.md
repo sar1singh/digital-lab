@@ -79,8 +79,8 @@
 - Publish
 - Record URLs
 
-### Product 2: Invoice Template & Billing Calculator
-**Status:** Queued — not started. Do not start until Product 1 is published.
+### Product 2: Invoice Generator & Payment Tracker
+**Status:** Planning — workspace created. Do not start build until Product 1 is published.
 
 ### Product 3: Freelancer Pricing Calculator
 **Status:** Backlog
@@ -98,7 +98,7 @@
 | # | Product | Format | Status | Price |
 |---|---------|--------|--------|-------|
 | 1 | Budget Planner & Expense Tracker | Spreadsheet (7 tabs) | Ready to Publish | $7 |
-| 2 | Invoice Template & Billing Calculator | Spreadsheet | Queued | $7 |
+| 2 | Invoice Generator & Payment Tracker | Spreadsheet | Planning — workspace created | $7 |
 | 3 | Freelancer Pricing Calculator | Spreadsheet | Backlog | $5-$12 |
 | 4 | Net Worth Tracker | Spreadsheet | Backlog | $5-$12 |
 | 5 | POD Profit Calculator | Spreadsheet | Backlog | $5-$12 |
@@ -186,7 +186,7 @@ If no, park it.
 6. Publish both listings
 7. Record listing URLs in `PRODUCT_CATALOG.csv`
 8. Update `PRODUCT_CATALOG.csv` status to Published
-9. **Then** start Product 2 (Invoice Template & Billing Calculator)
+9. **Then** start Product 2 (Invoice Generator & Payment Tracker)
 
 ---
 

@@ -85,7 +85,7 @@ Publisher brand: Nivora
 Support/contact: workbysar1@gmail.com
 
 1. Budget Planner & Expense Tracker (Product 1 — Ready to Publish — Gumroad listing pending)
-2. Invoice Template & Billing Calculator (Product 2 — next — not started)
+2. Invoice Generator & Payment Tracker (Product 2 — next — not started)
 3. Freelancer Pricing Calculator (Product 3 — backlog)
 4. Net Worth Tracker (Product 4 — backlog)
 5. POD Profit Calculator (Product 5 — backlog)
@@ -297,9 +297,9 @@ Reason: The fastest realistic path to first revenue is publishing small proven-f
 Impact: Operate through Product Factory documents, track product/listing/revenue metrics. Initial target products set to Freelancer Pricing Calculator and POD Profit Calculator.
 
 Date: 2026-06-07
-Decision: Locked build order updated. Product 1 is Budget Planner & Expense Tracker. Product 2 is Invoice Template & Billing Calculator. Freelancer Pricing Calculator, Net Worth Tracker, and POD Profit Calculator moved to queued positions 3-5.
-Reason: Budget Planner & Expense Tracker has broader buyer urgency and simpler build scope for first-product validation. Invoice Template & Billing Calculator is a natural adjacent product for weekend execution.
-Impact: Weekend build: Saturday = Budget Planner & Expense Tracker, Sunday = Invoice Template & Billing Calculator. First market validation step is skipped — move directly to building.
+Decision: Locked build order updated. Product 1 is Budget Planner & Expense Tracker. Product 2 is Invoice Generator & Payment Tracker. Freelancer Pricing Calculator, Net Worth Tracker, and POD Profit Calculator moved to queued positions 3-5.
+Reason: Budget Planner & Expense Tracker has broader buyer urgency and simpler build scope for first-product validation. Invoice Generator & Payment Tracker is a natural adjacent product for weekend execution.
+Impact: Weekend build: Saturday = Budget Planner & Expense Tracker, Sunday = Invoice Generator & Payment Tracker. First market validation step is skipped — move directly to building.
 
 Date: 2026-06-07
 Decision: Product 1 (Budget Planner & Expense Tracker) reached Packaging status. Navigation links replaced with plain text for Google Sheets compatibility. Delivery artifacts created.

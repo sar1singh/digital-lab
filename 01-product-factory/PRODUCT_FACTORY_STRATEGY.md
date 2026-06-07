@@ -54,7 +54,7 @@ The target product types are:
 ## Current Target Products
 
 1. Budget Planner & Expense Tracker (active)
-2. Invoice Template & Billing Calculator (next)
+2. Invoice Generator & Payment Tracker (next)
 3. Freelancer Pricing Calculator (queued)
 4. Net Worth Tracker (queued)
 5. POD Profit Calculator (queued)
