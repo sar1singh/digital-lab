@@ -325,3 +325,8 @@ Date: 2026-06-07
 Decision: Product Factory process hardening completed. Created systems for: lessons learned, pre-publish review, asset standards, delivery standards, brand standards, retrospective template. Updated workflow to include QA and Pre-Publish Review as separate stages.
 Reason: Product 1 revealed gaps in branding timing, asset generation, delivery packaging, and quality gates. These must be standardized before Product 2.
 Impact: Six new artifacts created in 00-context/, 07-systems/, and 05-templates/. PRODUCT_FACTORY_WORKFLOW.md expanded from 7 to 10 stages. RESEARCH_AGENT.md updated with extended research brief. FIRST_10_PRODUCTS_ROADMAP.md updated with Readiness Review milestone. Next: publish Product 1.
+
+Date: 2026-06-07
+Decision: Product #1 retrospective completed. 4 standardized templates created at templates/ (DELIVERY_STRUCTURE_STANDARD, LISTING_ASSET_STANDARD, PRE_PUBLISH_CHECKLIST, PRODUCT_RETROSPECTIVE_TEMPLATE). Six mandatory factory rules added to all context files (brand-first workflow, standard folder structure, delivery folder rule, 6-screenshot standard, 6-phase exit criteria, retrospective requirement).
+Reason: Product #1 revealed branding rework, screenshot retakes, delivery cleanup, and missing quality gates. These must be standards, not choices, for Product #2 onward.
+Impact: templates/ directory created with 4 templates. RETROSPECTIVE.md created for Product #1. All continuation files updated with 6 mandatory rules. Reference updated from 07-systems/ to templates/ where applicable.

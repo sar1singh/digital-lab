@@ -48,7 +48,7 @@
 ### Phase D: Publish Product #1 (Active)
 
 1. Upload final ZIP (`nivora-budget-planner-expense-tracker-delivery.zip`) to Gumroad
-2. Upload 5 gallery images to Gumroad (order: cover, dashboard, primary feature, secondary feature, advanced features)
+2. Upload 6 gallery images to Gumroad (order: cover, dashboard, main input, core feature, secondary features, what's included)
 3. Set price to $7
 4. Test checkout preview
 5. Publish Gumroad listing
@@ -56,8 +56,9 @@
 7. Publish Payhip listing
 8. Record listing URLs in PRODUCT_CATALOG.csv
 9. Update PRODUCT_CATALOG.csv status to Published
-10. Complete Product Release Retrospective
-11. **Then** start Product #2 (Invoice Template & Billing Calculator)
+10. Complete Product #1 Retrospective (RETROSPECTIVE.md)
+11. Update factory standards with any new lessons
+12. **Then** start Product #2 (Invoice Template & Billing Calculator)
 
 ## Product 2: Invoice Template & Billing Calculator (Sunday)
 

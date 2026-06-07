@@ -41,7 +41,7 @@ Rules:
 - No website.
 - Spreadsheet/template/calculator first.
 
-Use: [Product Build Checklist](03-templates/PRODUCT_BUILD_CHECKLIST.md)
+Use: [Product Build Checklist](03-templates/PRODUCT_BUILD_CHECKLIST.md), [Delivery Structure Standard](templates/DELIVERY_STRUCTURE_STANDARD.md) (Brand-First Workflow section)
 
 ## Stage 4: QA
 
@@ -77,9 +77,9 @@ Use: [Delivery Standard](07-systems/DELIVERY_STANDARD.md), [Brand Standard](07-s
 
 Goal: catch all quality, branding, delivery, and listing issues before going live.
 
-Gate: all sections of the Pre-Publish Review Checklist must pass before listing creation begins.
+Gate: all sections of the Pre-Publish Checklist must pass before listing creation begins.
 
-Use: [Pre-Publish Review Checklist](07-systems/PRE_PUBLISH_REVIEW_CHECKLIST.md), [Marketplace Asset Standard](07-systems/MARKETPLACE_ASSET_STANDARD.md)
+Use: [Pre-Publish Checklist](templates/PRE_PUBLISH_CHECKLIST.md), [Delivery Structure Standard](templates/DELIVERY_STRUCTURE_STANDARD.md), [Listing Asset Standard](templates/LISTING_ASSET_STANDARD.md)
 
 ## Stage 7: List
 
@@ -97,7 +97,7 @@ Required:
 - ZIP file uploaded
 - Test purchase before publishing
 
-Use: [Product Listing Template](03-templates/PRODUCT_LISTING_TEMPLATE.md), [Marketplace Asset Standard](07-systems/MARKETPLACE_ASSET_STANDARD.md)
+Use: [Product Listing Template](03-templates/PRODUCT_LISTING_TEMPLATE.md), [Listing Asset Standard](templates/LISTING_ASSET_STANDARD.md)
 
 ## Stage 8: Publish
 
@@ -124,6 +124,8 @@ Use: [Product Catalog](00-control/PRODUCT_CATALOG.csv)
 
 Goal: capture lessons learned before starting the next product.
 
-Complete after publishing or after one week live.
+Complete after publishing or after one week live. Create `RETROSPECTIVE.md` in the product workspace.
 
-Use: [Product Release Retrospective Template](05-templates/PRODUCT_RELEASE_RETROSPECTIVE_TEMPLATE.md)
+Use: [Product Retrospective Template](templates/PRODUCT_RETROSPECTIVE_TEMPLATE.md)
+
+Every retrospective's lessons become Product Factory standards. Update templates and context files accordingly.

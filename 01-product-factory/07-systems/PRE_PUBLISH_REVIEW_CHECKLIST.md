@@ -98,3 +98,9 @@ If any item fails:
 3. Do not proceed until all sections pass
 
 Gate keeper: AI agent or human reviewer
+
+---
+
+## Post-Publish Requirement
+
+After publishing, create `RETROSPECTIVE.md` in the product workspace documenting what worked, what failed, and lessons learned. Every retrospective's lessons must be reviewed and potentially added to Product Factory standards. See [Retrospective Template](../templates/PRODUCT_RETROSPECTIVE_TEMPLATE.md).

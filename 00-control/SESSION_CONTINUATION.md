@@ -122,3 +122,24 @@ Brand QA:         .../docs/BRAND_QA_CHECKLIST.md
 - `00-control/PRODUCT_FACTORY_CONTINUATION_CONTEXT.md` — optimized copy-paste resume
 - `00-control/NOW.md` — current active task
 - `01-product-factory/PRODUCT_FACTORY_CONTEXT.md` — factory-specific context
+
+## Product Factory Standards (from Product #1 Lessons)
+
+| Standard | Location |
+|----------|----------|
+| Brand Standard | `01-product-factory/07-systems/BRAND_STANDARD.md` |
+| Delivery Structure Standard | `01-product-factory/templates/DELIVERY_STRUCTURE_STANDARD.md` |
+| Listing Asset Standard | `01-product-factory/templates/LISTING_ASSET_STANDARD.md` |
+| Pre-Publish Checklist | `01-product-factory/templates/PRE_PUBLISH_CHECKLIST.md` |
+| Delivery Standard | `01-product-factory/07-systems/DELIVERY_STANDARD.md` |
+| Marketplace Asset Standard | `01-product-factory/07-systems/MARKETPLACE_ASSET_STANDARD.md` |
+| Retrospective Template | `01-product-factory/templates/PRODUCT_RETROSPECTIVE_TEMPLATE.md` |
+
+## Mandatory Rules for All Products
+
+1. **Brand-first:** Brand (Nivora), support email, naming conventions locked before any asset or workbook work
+2. **Standard folder structure:** artifacts/, build/, docs/, qa/, listing-assets/, screenshots/, delivery/
+3. **Delivery folder:** buyer-facing assets only — no QA, drafts, or internal files
+4. **6-screenshot standard:** Cover, Dashboard, Main Input, Core Feature, Secondary Features, What's Included
+5. **Exit criteria:** Pass all 6 QA sections (Workbook, Google Sheets, Brand, Screenshot, ZIP, Listing)
+6. **Retrospective required:** RETROSPECTIVE.md created for every shipped product; lessons become factory standards

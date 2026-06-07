@@ -163,6 +163,12 @@ If no, park it.
 8. **Internal QA files must not be included in buyer delivery.**
 9. **Nivora is the sole customer-facing brand.** Never use "Work by Sar1" for buyer-facing content.
 10. **workbysar1@gmail.com is support/operations only** — not a brand name.
+11. **Brand-first workflow:** Brand, support email, naming conventions locked before any asset or build work.
+12. **Standard product structure:** artifacts/, build/, docs/, qa/, listing-assets/, screenshots/, delivery/
+13. **Delivery folder rule:** buyer-facing assets only — no QA, drafts, or internal files.
+14. **6-screenshot standard:** Cover, Dashboard, Main Input, Core Feature, Secondary Features, What's Included.
+15. **Pre-publish exit criteria:** Must pass all 6 QA sections (Workbook, Google Sheets, Brand, Screenshot, ZIP, Listing).
+16. **Retrospective required:** RETROSPECTIVE.md for every shipped product; lessons become factory standards.
 
 ---
 

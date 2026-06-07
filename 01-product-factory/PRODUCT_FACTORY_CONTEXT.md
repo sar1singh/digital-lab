@@ -44,7 +44,7 @@ If no, park it.
 
 | # | Product | Format | Status | Price |
 |---|---------|--------|--------|-------|
-| 1 | Budget Planner & Expense Tracker | Spreadsheet (7 tabs) | **Packaging** — delivery artifacts ready | $7 |
+| 1 | Budget Planner & Expense Tracker | Spreadsheet (7 tabs) | **Ready to Publish** — Gumroad listing pending | $7 |
 | 2 | Invoice Template & Billing Calculator | Spreadsheet | Not started | $7 |
 | 3 | Freelancer Pricing Calculator | Spreadsheet | Backlog | $5-$12 |
 | 4 | Net Worth Tracker | Spreadsheet | Backlog | $5-$12 |
@@ -61,25 +61,38 @@ Do not start Product 2 until Product 1 is listed or explicitly parked.
 - **Published** — listed AND available for purchase
 - **Sold** — at least one purchase recorded
 
-## Publishing Process
+## Publishing Process (Standardized from Product #1 Lessons)
 
 ### For each product:
-1. Build workbook (Python/openpyxl generation)
-2. Run automated QA (formulas, dropdowns, dashboard, navigation)
-3. Run manual QA in Excel and Google Sheets
-4. Fix all P0/P1 issues
-5. Create buyer-facing delivery files:
-   - `product-name.xlsx` (no version numbers)
-   - `google-sheets-copy-link.txt`
-   - `release-notes.txt`
-   - `quick-start-guide.md` + `.html` + `.pdf`
-   - Listing images (5 assets)
-   - Screenshots (captured from real Google Sheets)
-6. Create delivery zip (exclude QA files, planning docs, versioned workbooks)
-7. Create Gumroad listing
-8. Create Payhip listing
-9. Publish both
-10. Record URLs in PRODUCT_CATALOG.csv
+
+**Pre-Build:**
+1. Lock brand (Nivora), support email, and file naming conventions
+
+**Build & QA:**
+2. Build workbook
+3. Run automated QA (formulas, dropdowns, dashboard, navigation)
+4. Run manual QA in Excel and Google Sheets
+5. Fix all P0/P1 issues
+
+**Packaging (brand-first, screenshots last):**
+6. Generate 6 standardized marketplace images (cover, dashboard, main input, core feature, secondary features, what's included)
+7. Create buyer-facing delivery files with brand prefix
+8. Generate PDF guide (2nd-to-last step)
+9. Build clean ZIP (last step: workbook + PDF + copy link only)
+
+**Pre-Publish Gate (must pass all sections):**
+10. Run Pre-Publish Checklist (Workbook QA, Google Sheets QA, Brand QA, Screenshot QA, ZIP QA, Listing QA)
+
+**Publish:**
+11. Create Gumroad listing (upload ZIP + 6 images, set price)
+12. Create Payhip listing
+13. Publish both
+14. Record URLs in PRODUCT_CATALOG.csv
+
+**Post-Publish:**
+15. Create RETROSPECTIVE.md in product workspace
+16. Update factory standards with any new lessons
+17. Move to next product
 
 ## Brand & Founder Identity
 
@@ -98,4 +111,17 @@ Do not start Product 2 until Product 1 is listed or explicitly parked.
 - `PRODUCT_FACTORY_STRATEGY.md` — strategy and operating thesis
 - `FIRST_10_PRODUCTS_ROADMAP.md` — full 10-product pipeline
 - `NEXT_ACTIONS.md` — detailed phased action list
-- `PRODUCT_FACTORY_WORKFLOW.md` — Research→Validate→Build→Package→List→Publish→Track
+- `templates/` — standardized templates (pre-publish checklist, delivery structure, asset standards, retrospective)
+
+## Mandatory Factory Standards
+
+The following rules apply to ALL products (hardened from Product #1 lessons):
+
+| # | Rule | Detail |
+|---|------|--------|
+| 1 | **Brand-first** | Brand (Nivora), support email, naming conventions locked before any asset or build work |
+| 2 | **Standard folder structure** | artifacts/, build/, docs/, qa/, listing-assets/, screenshots/, delivery/ |
+| 3 | **Delivery folder rule** | Buyer-facing assets only — no QA, drafts, or internal files |
+| 4 | **6-screenshot standard** | Cover, Dashboard, Main Input, Core Feature, Secondary Features, What's Included |
+| 5 | **6-phase exit criteria** | Pass all: Workbook QA, Google Sheets QA, Brand QA, Screenshot QA, ZIP QA, Listing QA |
+| 6 | **Retrospective required** | RETROSPECTIVE.md for every shipped product; lessons update factory standards |
