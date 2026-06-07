@@ -13,12 +13,12 @@
 - [ ] Bills + Debt + Savings combined (05-bills-debt-savings.png)
 
 ## PDF
-- [x] Quick-start guide PDF exists (budget-planner-expense-tracker-quick-start-guide.pdf)
+- [x] Quick-start guide PDF exists (nivora-budget-planner-expense-tracker-quick-start-guide.pdf)
 - [x] PDF branded as Nivora
 - [x] PDF support email correct
 
 ## ZIP
-- [x] ZIP file exists (budget-planner-expense-tracker-delivery.zip)
+- [x] ZIP file exists (nivora-budget-planner-expense-tracker-delivery.zip)
 - [x] ZIP contains exactly 3 files: xlsx, pdf, google-sheets-copy-link.txt
 - [x] No internal QA or source files in ZIP
 - [x] No version numbers in buyer filenames

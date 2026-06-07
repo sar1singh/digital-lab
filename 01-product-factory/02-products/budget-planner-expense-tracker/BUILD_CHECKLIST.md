@@ -89,10 +89,10 @@
 - [x] Release notes created (delivery/release-notes.txt)
 - [x] Quick-start guide Markdown created (delivery/quick-start-guide.md)
 - [x] Quick-start guide HTML created (delivery/quick-start-guide.html)
-- [x] Quick-start guide PDF generated (delivery/budget-planner-expense-tracker-quick-start-guide.pdf)
+- [x] Quick-start guide PDF generated (delivery/nivora-budget-planner-expense-tracker-quick-start-guide.pdf)
 - [x] Listing/demo assets generated (5 images in delivery/listing-assets/)
 - [x] Screenshots placeholder guide created (delivery/screenshots/README.md)
-- [x] Delivery zip created (delivery/budget-planner-expense-tracker-delivery.zip)
+- [x] Delivery zip created (delivery/nivora-budget-planner-expense-tracker-delivery.zip)
 - [x] Customer-facing brand updated to Nivora (all delivery files, images, PDF, listing copy)
 - [x] Delivery PDF regenerated with Nivora brand
 - [x] Listing assets regenerated with Nivora brand

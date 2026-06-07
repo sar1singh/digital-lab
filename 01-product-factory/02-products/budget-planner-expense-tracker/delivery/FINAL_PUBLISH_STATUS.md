@@ -5,8 +5,8 @@
 | Item | Status | Notes |
 |------|--------|-------|
 | Workbook | ✅ Ready | delivery/nivora-budget-planner-expense-tracker.xlsx (91 formulas, 7 tabs) |
-| PDF Guide | ✅ Ready | delivery/budget-planner-expense-tracker-quick-start-guide.pdf |
-| ZIP Package | ✅ Ready | delivery/budget-planner-expense-tracker-delivery.zip (3 files) |
+| PDF Guide | ✅ Ready | delivery/nivora-budget-planner-expense-tracker-quick-start-guide.pdf |
+| ZIP Package | ✅ Ready | delivery/nivora-budget-planner-expense-tracker-delivery.zip (3 files) |
 | Google Sheets Copy Link | ✅ Ready | delivery/google-sheets-copy-link.txt (Nivora branded) |
 | Brand | ✅ Ready | Nivora — no "Work by Sar1" in buyer files |
 | Listing Copy | ✅ Ready | LISTING_COPY_GUMROAD.md, LISTING_COPY_PAYHIP.md |
