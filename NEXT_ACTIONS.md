@@ -31,42 +31,28 @@
 - [x] Input cells marked with green background
 - [x] Freeze panes on data tabs
 
-### Phase C: Packaging (Active — brand updated to Nivora, Gumroad listing next)
+### Phase C: Final Publishing Polish (Active)
 
-- [x] PACKAGING_CHECKLIST.md — full packaging workflow from QA to publish
-- [x] GOOGLE_SHEETS_UPLOAD_GUIDE.md — upload, convert, /copy link, test
-- [x] PDF_QUICK_START_GUIDE.md — buyer-facing PDF-ready guide
-- [x] SCREENSHOT_CAPTURE_GUIDE.md — exact screenshots with file names
-- [x] RELEASE_NOTES_V1.md — version, tabs, limitations, improvements
-- [x] BUYER_DELIVERY_INSTRUCTIONS.md — what buyer receives, how to use
-- [x] FINAL_QA_CHECKLIST.md — pre-publish, publish, post-publish checks
-- [x] Automated QA passed (55 checks, 0 P0/P1 blockers — v1.2 created)
-- [x] Navigation links fixed for Google Sheets (v1.2 — hyperlinks replaced with plain text)
-- [x] Navigation QA report created (qa/NAVIGATION_QA_REPORT.md)
-- [x] Workbook copied as buyer-facing filename (delivery/budget-planner-expense-tracker.xlsx)
-- [x] Google Sheets copy link pasted into delivery/google-sheets-copy-link.txt
-- [x] Final ZIP regenerated with clean buyer-only contents (3 files)
-- [x] Final ZIP QA completed (FINAL_ZIP_QA.md)
-- [x] Release notes created (delivery/release-notes.txt)
-- [x] Quick-start guide created (MD + HTML + PDF)
-- [x] Listing/demo assets generated (5 images in delivery/listing-assets/)
-- [x] Screenshots README created (delivery/screenshots/README.md)
-- [x] Delivery zip created (delivery/budget-planner-expense-tracker-delivery.zip)
-- [x] Brand updated to Nivora (all delivery files, images, PDF, listing copy, asset sources)
-- [x] Support email remains workbysar1@gmail.com (unchanged)
-- [x] BRAND_QA_CHECKLIST.md created
-- [x] PRODUCT_FACTORY_CONTINUATION_CONTEXT.md created
-- [ ] Capture real Google Sheets screenshots per delivery/screenshots/README.md
-- [ ] Create Gumroad and Payhip listings from LISTING_COPY files (use Nivora brand)
+- [x] Workbook QA complete (91 formulas, 7 tabs)
+- [x] PDF quick-start guide ready
+- [x] ZIP package ready (3 buyer files only)
+- [x] Google Sheets copy link ready (Nivora branded)
+- [x] Listing copy ready (Gumroad + Payhip)
+- [x] Listing images ready (5 assets)
+- [x] Brand verified: Nivora, no "Work by Sar1" in buyer files
+- [x] Publishing readiness checklist created (delivery/PUBLISHING_READINESS_CHECKLIST.md)
+- [x] Screenshot retake guide created (delivery/SCREENSHOT_RETAKE_GUIDE.md)
+- [x] Gumroad image order guide created (delivery/GUMROAD_IMAGE_ORDER.md)
+- [x] Final publish status documented (delivery/FINAL_PUBLISH_STATUS.md)
 
-### Phase D: List & Publish (Pending — starts after Gumroad listing created)
+### Phase D: List & Publish (Remaining)
 
-- [ ] Upload XLSX, PDF guide, listing images, screenshots to both listings
-- [ ] Set price to $7 on both platforms
-- [ ] Test checkout preview
-- [ ] Publish both listings
-- [ ] Record listing URLs, price, date published in PRODUCT_CATALOG.csv
-- [ ] Update PRODUCT_CATALOG.csv status to Published
+1. Rename Google Sheet to "Budget Planner & Expense Tracker — Nivora"
+2. Retake screenshots (4 images per SCREENSHOT_RETAKE_GUIDE.md)
+3. Upload screenshots to delivery/screenshots/
+4. Create Gumroad listing (upload ZIP + 5 images, set $7)
+5. Create Payhip listing (upload ZIP + images, set $7)
+6. Publish both listings
 
 ## Product 2: Invoice Template & Billing Calculator (Sunday)
 
