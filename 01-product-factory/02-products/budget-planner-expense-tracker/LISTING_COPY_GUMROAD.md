@@ -44,14 +44,18 @@ Stop juggling between multiple budgeting apps and spreadsheets. This Budget Plan
 
 **No complicated software. No monthly subscription. Just a clean spreadsheet that works.**
 
-## What Is Included
+## What's Included
 
-- Google Sheet template (copy to your Drive)
-- XLSX version (for Excel users)
-- 7 pre-built tabs: Start Here, Monthly Budget, Expense Tracker, Bills Tracker, Debt Tracker, Savings Tracker, Dashboard
-- Auto-calculating formulas — no setup required
-- Sample data to get started immediately
-- 1-page PDF quick-start guide
+- **Excel workbook** (.xlsx) — works with Excel and Google Sheets
+- **Google Sheets copy link** — make a copy and use online
+- **Quick-start PDF guide** — 1-page setup instructions
+- **7-tab budget planner** — Start Here, Monthly Budget, Expense Tracker, Bills Tracker, Debt Tracker, Savings Tracker, Dashboard
+- **Financial Dashboard** — income, expenses, net savings, savings rate, bills due, debt remaining
+- **Monthly Budget Planner** — plan income & expenses by category
+- **Expense Tracker** — log every expense with date, category, and payment method
+- **Bills Tracker** — track recurring bills and due dates
+- **Debt Tracker** — monitor payoff progress across multiple debts
+- **Savings Tracker** — set goals and track progress automatically
 
 ## Who It Is For
 

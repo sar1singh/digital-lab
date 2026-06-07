@@ -30,9 +30,9 @@ Digital-Lab is a personal digital products experiment. The active execution trac
 - FINAL_ZIP_QA.md created
 - Google Sheets copy link finalized and pasted into `delivery/google-sheets-copy-link.txt`
 - Delivery folder contains buyer-ready files:
-  - `nivora-budget-planner-expense-tracker.xlsx` (no version number, Nivora-branded name)
-  - `nivora-budget-planner-expense-tracker-quick-start-guide.pdf`
-  - `google-sheets-copy-link.txt`
+  - `nivora-budget-planner-expense-tracker.xlsx` (Nivora-branded name, no version number)
+  - `nivora-budget-planner-expense-tracker-quick-start-guide.pdf` (Nivora-branded PDF guide)
+  - `google-sheets-copy-link.txt` (Nivora-branded copy link)
   - `listing-assets/` — 5 demo images (product-cover, bundle-preview, feature-*)
   - `nivora-budget-planner-expense-tracker-delivery.zip` (buyer ZIP: xlsx + pdf + copy link)
 

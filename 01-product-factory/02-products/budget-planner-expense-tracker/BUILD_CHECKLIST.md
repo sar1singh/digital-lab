@@ -102,6 +102,10 @@
 - [x] Final ZIP regenerated with clean buyer-only contents (3 files)
 - [x] Final ZIP QA completed (FINAL_ZIP_QA.md)
 - [x] Dashboard B40/B41 formulas fixed: "Expenses" (=B4->=B5), "Net Savings" (=B5->=B7)
+- [x] PDF title standardized to "Nivora Budget Planner & Expense Tracker"
+- [x] Final ZIP regenerated with clean Nivora-branded files
+- [x] Buyer-facing filename standardized: nivora-budget-planner-expense-tracker.xlsx
+- [x] Listing copy updated with What's Included section
 - [ ] Capture real screenshots per delivery/screenshots/README.md
 - [ ] Create Gumroad listing from LISTING_COPY_GUMROAD.md
 - [ ] Create Payhip listing from LISTING_COPY_PAYHIP.md

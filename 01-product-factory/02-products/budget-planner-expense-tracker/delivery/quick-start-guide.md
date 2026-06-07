@@ -1,4 +1,4 @@
-# Budget Planner & Expense Tracker — Quick Start Guide
+# Nivora Budget Planner & Expense Tracker — Quick Start Guide
 
 ## What's Included
 

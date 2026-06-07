@@ -47,12 +47,12 @@
 
 ### Phase D: List & Publish (Remaining)
 
-1. Rename Google Sheet to "Budget Planner & Expense Tracker — Nivora"
-2. Retake screenshots (4 images per SCREENSHOT_RETAKE_GUIDE.md)
-3. Upload screenshots to delivery/screenshots/
-4. Create Gumroad listing (upload ZIP + 5 images, set $7)
-5. Create Payhip listing (upload ZIP + images, set $7)
-6. Publish both listings
+1. Upload final ZIP to Gumroad
+2. Upload final 5 gallery images
+3. Publish Gumroad listing
+4. Create Payhip listing
+5. Publish Payhip listing
+6. Update catalog with live URLs
 
 ## Product 2: Invoice Template & Billing Calculator (Sunday)
 
