@@ -86,9 +86,9 @@
 - [x] Final buyer-facing workbook copied (delivery/nivora-budget-planner-expense-tracker.xlsx)
 - [x] Delivery folder created with all buyer-facing files
 - [x] Google Sheets copy link file created (delivery/google-sheets-copy-link.txt)
-- [x] Release notes created (delivery/release-notes.txt)
-- [x] Quick-start guide Markdown created (delivery/quick-start-guide.md)
-- [x] Quick-start guide HTML created (delivery/quick-start-guide.html)
+- [x] Release notes created (docs/release-notes.txt)
+- [x] Quick-start guide Markdown created (docs/quick-start-guide.md)
+- [x] Quick-start guide HTML created (docs/quick-start-guide.html)
 - [x] Quick-start guide PDF generated (delivery/nivora-budget-planner-expense-tracker-quick-start-guide.pdf)
 - [x] Listing/demo assets generated (5 images in delivery/listing-assets/)
 - [x] Screenshots placeholder guide created (delivery/screenshots/README.md)

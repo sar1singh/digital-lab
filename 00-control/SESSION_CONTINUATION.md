@@ -112,7 +112,7 @@ QA test suite:    .../qa/ (71 manual test cases)
 Listing copy:     .../LISTING_COPY_GUMROAD.md, LISTING_COPY_PAYHIP.md
 Product catalog:  .../00-control/PRODUCT_CATALOG.csv
 Build checklist:  .../BUILD_CHECKLIST.md
-Brand QA:         .../delivery/BRAND_QA_CHECKLIST.md
+Brand QA:         .../docs/BRAND_QA_CHECKLIST.md
 ```
 
 ## Continuation Files

@@ -192,7 +192,7 @@ Active product:               01-product-factory/02-products/budget-planner-expe
   Listing copy (Gumroad):     .../LISTING_COPY_GUMROAD.md
   Listing copy (Payhip):      .../LISTING_COPY_PAYHIP.md
   Build checklist:            .../BUILD_CHECKLIST.md
-  Brand QA:                   .../delivery/BRAND_QA_CHECKLIST.md
+  Brand QA:                   .../docs/BRAND_QA_CHECKLIST.md
 
 Product catalog:              01-product-factory/00-control/PRODUCT_CATALOG.csv
 Context/continuation:         00-control/

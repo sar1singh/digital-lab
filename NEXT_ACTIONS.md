@@ -40,10 +40,10 @@
 - [x] Listing copy ready (Gumroad + Payhip)
 - [x] Listing images ready (5 assets)
 - [x] Brand verified: Nivora, no "Work by Sar1" in buyer files
-- [x] Publishing readiness checklist created (delivery/PUBLISHING_READINESS_CHECKLIST.md)
-- [x] Screenshot retake guide created (delivery/SCREENSHOT_RETAKE_GUIDE.md)
-- [x] Gumroad image order guide created (delivery/GUMROAD_IMAGE_ORDER.md)
-- [x] Final publish status documented (delivery/FINAL_PUBLISH_STATUS.md)
+- [x] Publishing readiness checklist created (docs/PUBLISHING_READINESS_CHECKLIST.md)
+- [x] Screenshot retake guide created (docs/SCREENSHOT_RETAKE_GUIDE.md)
+- [x] Gumroad image order guide created (docs/GUMROAD_IMAGE_ORDER.md)
+- [x] Final publish status documented (docs/FINAL_PUBLISH_STATUS.md)
 
 ### Phase D: Publish Product #1 (Active)
 

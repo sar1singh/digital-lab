@@ -27,6 +27,24 @@ All delivery filenames use the brand prefix:
 
 ---
 
+## Delivery Folder Structure
+
+The `delivery/` folder contains only customer-facing assets:
+
+```
+delivery/
+├── {brand}-{product-slug}.xlsx              # Buyer workbook
+├── {brand}-{product-slug}-quick-start-guide.pdf  # Buyer PDF guide
+├── google-sheets-copy-link.txt              # Google Sheets copy instructions
+├── {brand}-{product-slug}-delivery.zip      # Buyer ZIP (contains above 3 files)
+├── listing-assets/                          # Marketplace gallery images
+└── screenshots/                             # Raw screenshot sources
+```
+
+**Rule: Delivery folder contains only buyer-facing assets and final ZIP.** Internal planning, QA, and reference documents belong in `docs/` or product workspace root.
+
+---
+
 ## ZIP Contents
 
 ```
