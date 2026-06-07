@@ -71,7 +71,7 @@
 - FINAL_ZIP_QA.md created
 - PRODUCT_CATALOG.csv status set to Ready to Publish
 
-**Publishing candidate:** `delivery/budget-planner-expense-tracker.xlsx`
+**Publishing candidate:** `delivery/nivora-budget-planner-expense-tracker.xlsx`
 
 **Outstanding:**
 - Create Gumroad listing
@@ -187,7 +187,7 @@ Repository root:              digital-lab/
 Active product:               01-product-factory/02-products/budget-planner-expense-tracker/
   Source workbook:            .../artifacts/budget-planner-expense-tracker-v1.2.xlsx
   Delivery folder:            .../delivery/
-  Buyer workbook:             .../delivery/budget-planner-expense-tracker.xlsx
+  Buyer workbook:             .../delivery/nivora-budget-planner-expense-tracker.xlsx
   QA test suite:              .../qa/
   Listing copy (Gumroad):     .../LISTING_COPY_GUMROAD.md
   Listing copy (Payhip):      .../LISTING_COPY_PAYHIP.md

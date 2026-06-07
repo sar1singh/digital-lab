@@ -4,7 +4,7 @@
 
 | Item | Status | Notes |
 |------|--------|-------|
-| Workbook | ✅ Ready | delivery/budget-planner-expense-tracker.xlsx (91 formulas, 7 tabs) |
+| Workbook | ✅ Ready | delivery/nivora-budget-planner-expense-tracker.xlsx (91 formulas, 7 tabs) |
 | PDF Guide | ✅ Ready | delivery/budget-planner-expense-tracker-quick-start-guide.pdf |
 | ZIP Package | ✅ Ready | delivery/budget-planner-expense-tracker-delivery.zip (3 files) |
 | Google Sheets Copy Link | ✅ Ready | delivery/google-sheets-copy-link.txt (Nivora branded) |

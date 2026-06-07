@@ -15,7 +15,7 @@
 
 ## How to Use the Excel Version
 
-1. Open `budget-planner-expense-tracker.xlsx` in Microsoft Excel
+1. Open `nivora-budget-planner-expense-tracker.xlsx` in Microsoft Excel
 2. If you see a yellow security bar, click **Enable Editing**
 3. Start from the **Start Here** tab
 4. Use the sheet tabs at the bottom to navigate between sections

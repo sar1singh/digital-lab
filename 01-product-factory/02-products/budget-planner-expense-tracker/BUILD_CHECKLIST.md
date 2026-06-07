@@ -83,7 +83,7 @@
 
 ## Packaging Tasks
 
-- [x] Final buyer-facing workbook copied (delivery/budget-planner-expense-tracker.xlsx)
+- [x] Final buyer-facing workbook copied (delivery/nivora-budget-planner-expense-tracker.xlsx)
 - [x] Delivery folder created with all buyer-facing files
 - [x] Google Sheets copy link file created (delivery/google-sheets-copy-link.txt)
 - [x] Release notes created (delivery/release-notes.txt)
