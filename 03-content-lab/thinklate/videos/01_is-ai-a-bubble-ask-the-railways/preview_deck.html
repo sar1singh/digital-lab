@@ -155,6 +155,7 @@
         <button class="primary" id="playBtn" onclick="toggleAutoPlay()">▶ Play Full Video</button>
         <button onclick="nextScene()">Next ▶</button>
         <button id="voiceBtn" class="voice-active" onclick="toggleVoice()">🔊 Voice: ON</button>
+        <button id="bgmBtn" class="voice-active" onclick="toggleBGM()">🎵 BGM: ON</button>
       </div>
       <div class="timeline-scrubber">
         <div class="scrubber-bar" onclick="scrubTimeline(event)">
@@ -294,7 +295,15 @@
     let currentIndex = 0;
     let autoPlayActive = false;
     let voiceEnabled = true;
+    let bgmEnabled = true;
+
     const voiceAudio = new Audio();
+    const bgAudio = new Audio('audio_takes/ambient_drone.wav');
+    bgAudio.loop = true;
+    bgAudio.volume = 0.14; // Ducked background drone (-20dB)
+
+    const whooshAudio = new Audio('audio_takes/transition_whoosh.wav');
+    whooshAudio.volume = 0.25;
 
     function toggleVoice() {
       voiceEnabled = !voiceEnabled;
@@ -310,6 +319,20 @@
       }
     }
 
+    function toggleBGM() {
+      bgmEnabled = !bgmEnabled;
+      const bBtn = document.getElementById('bgmBtn');
+      if (bgmEnabled) {
+        bBtn.innerText = "🎵 BGM: ON";
+        bBtn.classList.add('voice-active');
+        if (autoPlayActive) bgAudio.play().catch(e => {});
+      } else {
+        bBtn.innerText = "🎵 BGM: OFF";
+        bBtn.classList.remove('voice-active');
+        bgAudio.pause();
+      }
+    }
+
     function playCurrentVoice() {
       if (!voiceEnabled) return;
       voiceAudio.pause();
@@ -318,6 +341,9 @@
       voiceAudio.play().catch(err => {
         console.log("Audio autoplay prevented by browser policy until user clicks Play:", err);
       });
+      if (bgmEnabled && bgAudio.paused) {
+        bgAudio.play().catch(e => {});
+      }
     }
 
     voiceAudio.onended = () => {
@@ -341,6 +367,10 @@
       void img.offsetWidth; // Force CSS reflow to restart animation
       img.src = sc.image;
       img.classList.add('ken-burns');
+
+      // Play subtle transition whoosh
+      whooshAudio.currentTime = 0;
+      whooshAudio.play().catch(e => {});
 
       document.getElementById('sceneTag').innerText = sc.id;
       document.getElementById('toneTag').innerText = sc.tone;
