@@ -1,0 +1,13 @@
+# Transient media renders & scratch audio takes
+*.mp4
+!03-content-lab/thinklate/templates/preview/*.mp4
+*.mp3
+*.wav
+temp_segments/
+audio_takes/
+
+# Python & OS
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db

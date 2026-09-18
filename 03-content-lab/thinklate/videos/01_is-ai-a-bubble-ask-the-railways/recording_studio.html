@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThinkLate — Recording Studio & Teleprompter</title>
+  <!-- Google Fonts: Plus Jakarta Sans for UI, Outfit for large prompter reading, JetBrains Mono for audio meters -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #070D18;
+      --card-bg: #101B2E;
+      --card-border: #1E2D4A;
+      --ink: #1B2A4A;
+      --amber: #D99A2B;
+      --amber-glow: rgba(217, 154, 43, 0.25);
+      --amber-light: #F6C368;
+      --paper: #F4F1EA;
+      --slate: #94A3B8;
+      --slate-dark: #64748B;
+      --red: #EF4444;
+      --green: #10B981;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--paper);
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Studio Header */
+    header {
+      height: 64px;
+      background: #0B1322;
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 28px;
+      z-index: 100;
+    }
+    .brand-mark {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-logo {
+      width: 32px;
+      height: 32px;
+      background: var(--amber);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      color: #000;
+      font-size: 16px;
+    }
+    .brand-title {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: var(--paper);
+    }
+    .brand-subtitle {
+      font-size: 12px;
+      color: var(--amber);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .header-center {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .take-badge {
+      background: var(--ink);
+      border: 1px solid var(--amber);
+      color: var(--amber-light);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .take-badge .indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--amber);
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* Main Studio Container */
+    .studio-layout {
+      flex: 1;
+      display: flex;
+      overflow: hidden;
+    }
+
+    /* Left Sidebar: Takes Directory */
+    .sidebar {
+      width: 310px;
+      background: #0B1322;
+      border-right: 1px solid var(--card-border);
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+    }
+    .sidebar-header {
+      padding: 16px 20px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      color: var(--slate);
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      display: flex;
+      justify-content: space-between;
+    }
+    .take-list {
+      list-style: none;
+      flex: 1;
+      overflow-y: auto;
+    }
+    .take-item {
+      padding: 14px 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .take-item:hover {
+      background: rgba(217, 154, 43, 0.06);
+    }
+    .take-item.active {
+      background: rgba(27, 42, 74, 0.6);
+      border-left: 4px solid var(--amber);
+    }
+    .take-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .take-item-num {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--paper);
+    }
+    .take-item-time {
+      font-size: 11px;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--slate);
+    }
+    .take-item-title {
+      font-size: 12px;
+      color: var(--slate);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .take-item.recorded .take-item-num::after {
+      content: ' ✓';
+      color: var(--green);
+      font-weight: 900;
+    }
+
+    /* Center Stage: The Teleprompter */
+    .prompter-stage {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg-dark);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Director's Tone & Scene Header */
+    .director-bar {
+      padding: 18px 40px;
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .director-tone {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      flex: 1;
+    }
+    .director-label {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--amber);
+    }
+    .director-text {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--paper);
+    }
+    .director-cue {
+      font-size: 13px;
+      color: var(--slate);
+      font-style: italic;
+    }
+    .font-size-controls {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      background: rgba(0,0,0,0.3);
+      padding: 4px 8px;
+      border-radius: 8px;
+      border: 1px solid var(--card-border);
+    }
+    .btn-icon {
+      background: transparent;
+      border: none;
+      color: var(--slate);
+      padding: 4px 8px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: 4px;
+      transition: all 0.2s;
+    }
+    .btn-icon:hover { color: var(--amber); background: rgba(255,255,255,0.05); }
+
+    /* The Script Teleprompter Scrolling Viewport */
+    .prompter-viewport {
+      flex: 1;
+      overflow-y: auto;
+      padding: 60px 80px 140px 80px;
+      scroll-behavior: smooth;
+    }
+    .script-text {
+      font-family: 'Outfit', sans-serif;
+      font-size: 34px;
+      line-height: 1.65;
+      color: #E2E8F0;
+      font-weight: 500;
+      letter-spacing: -0.2px;
+      max-width: 960px;
+      margin: 0 auto;
+      transition: font-size 0.2s ease;
+    }
+    .script-text.size-normal { font-size: 28px; line-height: 1.6; }
+    .script-text.size-large  { font-size: 36px; line-height: 1.65; }
+    .script-text.size-xl     { font-size: 44px; line-height: 1.7; }
+
+    /* Pause Markers in Script */
+    .pause-breath {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 10px;
+      background: rgba(217, 154, 43, 0.15);
+      border: 1px solid rgba(217, 154, 43, 0.4);
+      color: var(--amber-light);
+      border-radius: 20px;
+      font-size: 0.45em;
+      vertical-align: middle;
+      margin: 0 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      user-select: none;
+    }
+    .pause-beat {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 12px;
+      background: rgba(217, 154, 43, 0.25);
+      border: 1px solid var(--amber);
+      color: #FFF;
+      border-radius: 20px;
+      font-size: 0.5em;
+      vertical-align: middle;
+      margin: 0 10px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      user-select: none;
+    }
+    .pause-section {
+      display: block;
+      margin: 20px 0;
+      padding: 6px 14px;
+      background: rgba(27, 42, 74, 0.8);
+      border-left: 3px solid var(--amber);
+      color: var(--amber-light);
+      font-size: 0.4em;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      letter-spacing: 1px;
+      border-radius: 0 6px 6px 0;
+    }
+
+    /* Phonetic Badges */
+    .phonetic-chip {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.5);
+      color: #6EE7B7;
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-size: 0.45em;
+      vertical-align: middle;
+      margin-left: 6px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+    }
+
+    .emphasis-word {
+      color: var(--amber-light);
+      font-weight: 700;
+      text-shadow: 0 0 16px rgba(217, 154, 43, 0.35);
+    }
+
+    /* Bottom Studio Control Bar */
+    .bottom-studio-bar {
+      height: 90px;
+      background: #0B1322;
+      border-top: 1px solid var(--card-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 36px;
+      z-index: 50;
+    }
+
+    .mic-indicator-group {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      width: 320px;
+    }
+    .mic-icon-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--ink);
+      border: 1px solid var(--card-border);
+      color: var(--slate);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .mic-icon-btn.active {
+      background: var(--amber);
+      color: #000;
+      border-color: var(--amber);
+    }
+    .vu-meter-box {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .vu-meter-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--slate);
+    }
+    .vu-meter-bar {
+      width: 100%;
+      height: 8px;
+      background: #1E293B;
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+    }
+    .vu-meter-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #10B981 0%, #F59E0B 75%, #EF4444 95%);
+      transition: width 0.05s ease;
+    }
+
+    /* Big Center Action Buttons */
+    .record-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .record-btn {
+      background: var(--red);
+      color: #FFF;
+      border: none;
+      padding: 14px 34px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 0 24px rgba(239, 68, 68, 0.4);
+      transition: all 0.2s;
+    }
+    .record-btn:hover {
+      background: #DC2626;
+      transform: scale(1.03);
+    }
+    .record-btn.recording {
+      background: #B91C1C;
+      animation: recordPulse 1s infinite alternate;
+    }
+    @keyframes recordPulse {
+      0% { box-shadow: 0 0 10px rgba(239, 68, 68, 0.4); }
+      100% { box-shadow: 0 0 35px rgba(239, 68, 68, 0.9); }
+    }
+    .record-dot {
+      width: 12px;
+      height: 12px;
+      background: #FFF;
+      border-radius: 50%;
+    }
+
+    .playback-btn {
+      background: var(--ink);
+      border: 1.5px solid var(--amber);
+      color: var(--amber-light);
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s;
+    }
+    .playback-btn:hover {
+      background: var(--amber);
+      color: #000;
+    }
+    .playback-btn:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+      border-color: var(--slate-dark);
+      color: var(--slate);
+    }
+
+    .download-btn {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid var(--green);
+      color: var(--green);
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .download-btn:hover { background: var(--green); color: #000; }
+    .download-btn:disabled { opacity: 0.25; cursor: not-allowed; }
+
+    /* Navigation Buttons */
+    .nav-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .nav-btn {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--paper);
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .nav-btn:hover { border-color: var(--amber); color: var(--amber); }
+
+    /* Right Metrics Drawer */
+    .metrics-card {
+      width: 280px;
+      background: #0B1322;
+      border-left: 1px solid var(--card-border);
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .metric-section-title {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--slate);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .stat-label { color: var(--slate); }
+    .stat-val { font-weight: 700; color: var(--paper); font-family: 'JetBrains Mono', monospace; }
+    .stat-val.highlight { color: var(--amber); }
+
+    .pronounce-box {
+      background: rgba(27, 42, 74, 0.4);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .pronounce-item {
+      font-size: 12px;
+      color: var(--paper);
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .pronounce-word { font-weight: 700; color: var(--amber-light); }
+    .pronounce-phonetic { font-family: 'JetBrains Mono', monospace; color: #6EE7B7; font-size: 11px; }
+
+    /* Keyboard Shortcut Hint */
+    .kbd-hint {
+      font-size: 11px;
+      color: var(--slate);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    kbd {
+      background: rgba(255,255,255,0.1);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Studio Header -->
+  <header>
+    <div class="brand-mark">
+      <div class="brand-logo">TL</div>
+      <div>
+        <div class="brand-title">ThinkLate Voiceover Recording Studio</div>
+        <div class="brand-subtitle">Doc 01: Is AI a Bubble? Ask the Railways</div>
+      </div>
+    </div>
+
+    <div class="header-center">
+      <div class="take-badge" id="takeBadge">
+        <div class="indicator"></div>
+        <span id="takeBadgeText">TAKE 01 OF 13</span>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <div class="kbd-hint">
+        <kbd>Space</kbd> or <kbd>R</kbd> = Record/Stop &nbsp;|&nbsp; <kbd>←</kbd> <kbd>→</kbd> = Prev/Next
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="studio-layout">
+
+    <!-- Left Sidebar: Takes Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <span>Takes Rundown</span>
+        <span id="progressSummary">0 / 13 Done</span>
+      </div>
+      <ul class="take-list" id="takeList">
+        <!-- Injected via JavaScript -->
+      </ul>
+    </aside>
+
+    <!-- Center Stage: The Teleprompter -->
+    <main class="prompter-stage">
+      
+      <!-- Director's Tone Bar -->
+      <div class="director-bar">
+        <div class="director-tone">
+          <div class="director-label">Director's Tone Cue</div>
+          <div class="director-text" id="directorTone">Low, conversational, conspiratorial. You noticed something at work.</div>
+          <div class="director-cue" id="directorCue">"Start quiet, like sharing an insider observation over coffee. Do NOT shout."</div>
+        </div>
+
+        <div class="font-size-controls">
+          <span style="font-size: 11px; color: var(--slate); font-weight: 700; margin-right: 4px;">TEXT:</span>
+          <button class="btn-icon" onclick="changeFontSize('size-normal')">A-</button>
+          <button class="btn-icon" onclick="changeFontSize('size-large')">A</button>
+          <button class="btn-icon" onclick="changeFontSize('size-xl')">A+</button>
+        </div>
+      </div>
+
+      <!-- Script Reading Viewport -->
+      <div class="prompter-viewport" id="prompterViewport">
+        <div class="script-text size-large" id="scriptDisplay">
+          <!-- Injected via JS -->
+        </div>
+      </div>
+
+      <!-- Bottom Audio Controls & VU Meter -->
+      <div class="bottom-studio-bar">
+        
+        <!-- Live Microphone VU Meter -->
+        <div class="mic-indicator-group">
+          <button class="mic-icon-btn" id="micStatusBtn" title="Microphone Status">🎙️</button>
+          <div class="vu-meter-box">
+            <div class="vu-meter-labels">
+              <span>-40dB</span>
+              <span>-12dB</span>
+              <span style="color: #F59E0B;">-3dB</span>
+              <span style="color: #EF4444;">0dB</span>
+            </div>
+            <div class="vu-meter-bar">
+              <div class="vu-meter-fill" id="vuMeterFill"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Big Center Recording Actions -->
+        <div class="record-actions">
+          <button class="record-btn" id="recordBtn" onclick="toggleRecording()">
+            <div class="record-dot" id="recordDot"></div>
+            <span id="recordBtnText">Record Take 01</span>
+          </button>
+
+          <button class="playback-btn" id="playAudioBtn" onclick="playRecordedTake()" disabled>
+            <span>▶ Play Take</span>
+          </button>
+
+          <button class="download-btn" id="downloadBtn" onclick="downloadRecordedTake()" disabled>
+            <span>💾 Save WAV</span>
+          </button>
+        </div>
+
+        <!-- Previous / Next Take Navigation -->
+        <div class="nav-controls">
+          <button class="nav-btn" onclick="prevTake()">◀ Prev</button>
+          <button class="nav-btn" onclick="nextTake()">Next ▶</button>
+        </div>
+
+      </div>
+
+    </main>
+
+    <!-- Right Drawer: Live Metrics & Pronunciation Watchlist -->
+    <aside class="metrics-card">
+      <div class="metric-section-title">Take Target Metrics</div>
+
+      <div>
+        <div class="stat-row">
+          <span class="stat-label">Target Words</span>
+          <span class="stat-val" id="statWords">37 words</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Ideal Pacing</span>
+          <span class="stat-val highlight" id="statWpm">125–145 WPM</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Target Time</span>
+          <span class="stat-val" id="statTime">~17 seconds</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Recorded Time</span>
+          <span class="stat-val" id="statRecTime">0.0s</span>
+        </div>
+      </div>
+
+      <div class="metric-section-title">Pronunciation Watchlist</div>
+      <div class="pronounce-box" id="pronounceBox">
+        <!-- Injected via JS -->
+      </div>
+
+      <div class="metric-section-title">Audacity Setting Reminder</div>
+      <div style="font-size: 11px; color: var(--slate); line-height: 1.5;">
+        • 44.1kHz or 48kHz Mono<br>
+        • Target Peak: -6dB to -3dB<br>
+        • Distance: 6–8 inches off-axis
+      </div>
+    </aside>
+
+  </div>
+
+  <script>
+    // Complete 13 Takes Data with Script, Pronunciations, Tone Cues
+    const takesData = [
+      {
+        num: 1,
+        title: "Cold Open",
+        words: 37,
+        estTime: 17,
+        wpm: "125–145 WPM",
+        tone: "Low, conversational, conspiratorial. You noticed something at work.",
+        cue: "Start quiet, like sharing an insider observation over coffee. Do NOT shout.",
+        pronunciations: [
+          { word: "strategy", phonetic: "STRAT-uh-jee", note: "Clean soft syllables" },
+          { word: "budget", phonetic: "BUH-jit", note: "Crisp ending 't'" },
+          { word: "platform", phonetic: "PLAT-form", note: "Neutral short 'a'" }
+        ],
+        scriptHtml: `
+          Your company has probably announced an <span class="emphasis-word">AI budget</span> too. <span class="pause-breath">// [breath]</span><br>
+          Some new tool <span class="pause-breath">// [breath]</span> some new platform <span class="pause-breath">// [breath]</span> or some big "AI-first" strategy. <span class="pause-beat">/// [1s beat]</span><br><br>
+          And nobody has really explained <span class="emphasis-word">where the money is actually coming from</span>. <span class="pause-breath">// [breath]</span><br>
+          Or what happens <span class="pause-breath">// [breath]</span> when it stops. <span class="pause-section">//// [2s section breath]</span>
+        `
+      },
+      {
+        num: 2,
+        title: "Core Thesis Promise",
+        words: 52,
+        estTime: 24,
+        wpm: "130–155 WPM",
+        tone: "Direct, confident, making the core promise.",
+        cue: "Authoritative and calm. Hit 'real' and 'bubble' with distinct audible weight.",
+        pronunciations: [
+          { word: "documented", phonetic: "DOK-yoo-men-tid", note: "Do not swallow end syllables" },
+          { word: "opposite", phonetic: "OP-uh-zit", note: "Stress first syllable" },
+          { word: "technology", phonetic: "tek-NOL-uh-jee", note: "Stress 'NOL'" }
+        ],
+        scriptHtml: `
+          Over the next seven minutes <span class="pause-breath">// [breath]</span> I want to show you something that will help you spot this <span class="pause-breath">// [breath]</span> every single time <span class="pause-breath">// [breath]</span> whenever something like this happens in the future. <span class="pause-beat">/// [1s beat]</span><br><br>
+          That a technology being <span class="emphasis-word">"real"</span> <span class="pause-breath">// [breath]</span> and being a <span class="emphasis-word">"bubble"</span> <span class="pause-breath">// [breath]</span> are not two opposite things. <span class="pause-beat">/// [1s beat]</span><br>
+          The exact same boom can be <span class="emphasis-word">both</span>. <span class="pause-beat">/// [1s beat]</span><br>
+          This has happened before. <span class="pause-breath">// [breath]</span> It is fully documented. <span class="pause-section">//// [2s section breath]</span>
+        `
+      },
+      {
+        num: 3,
+        title: "The Personal Stake",
+        words: 37,
+        estTime: 16,
+        wpm: "120–145 WPM",
+        tone: "Grounded, personal, sobering.",
+        cue: "Slow down on 'Through your job.' Let the reality land in the room.",
+        pronunciations: [
+          { word: "shareholders", phonetic: "SHAIR-hohl-derz", note: "Clear 'shair', don't say 'sher'" },
+          { word: "ownership", phonetic: "OH-ner-ship", note: "Clean diphthong" },
+          { word: "salary", phonetic: "SAL-uh-ree", note: "Three unhurried syllables" }
+        ],
+        scriptHtml: `
+          And this isn't just a headache for shareholders. <span class="pause-breath">// [breath]</span><br>
+          You probably don't even own a single share. <span class="pause-beat">/// [1s beat]</span><br><br>
+          But if you work on a monthly salary <span class="pause-breath">// [breath]</span> you are already part of this game. <span class="pause-breath">// [breath]</span><br>
+          Not through stock ownership. <span class="pause-breath">// [breath]</span> Through your <span class="emphasis-word">job</span>. <span class="pause-section">//// [2s section breath]</span>
+        `
+      },
+      {
+        num: 4,
+        title: "The Historical Pivot",
+        words: 67,
+        estTime: 29,
+        wpm: "130–150 WPM",
+        tone: "Deadpan pivot, cutting through noise into history.",
+        cue: "Hard pause after 'So... railways.' Pronounce Odlyzko clearly: OD-liz-ko.",
+        pronunciations: [
+          { word: "Odlyzko", phonetic: "OD-liz-ko", note: "CRITICAL: Stress 'OD', not 'leez'" },
+          { word: "mania", phonetic: "MAY-nee-uh", note: "Stress 'MAY', not 'maa-ni-yaa'" },
+          { word: "revolutionary", phonetic: "rev-uh-LOO-shun-air-ee", note: "Smooth cadence" }
+        ],
+        scriptHtml: `
+          So <span class="pause-breath">// [breath]</span> let's look at the railways. <span class="pause-section">//// [2s section breath]</span><br><br>
+          Mid-nineteenth century <span class="pause-breath">// [breath]</span> Britain. <span class="pause-breath">// [breath]</span><br>
+          The railway was a brand new technology. <span class="pause-breath">// [breath]</span> Truly revolutionary. <span class="pause-breath">// [breath]</span><br>
+          And the entire country started pouring money into it. <span class="pause-beat">/// [1s beat]</span><br><br>
+          Professor Andrew Odlyzko <span class="phonetic-chip">OD-liz-ko</span> <span class="pause-breath">// [breath]</span> of the University of Minnesota <span class="pause-breath">// [breath]</span> who has done the most detailed research on this period <span class="pause-breath">// [breath]</span> calls it <span class="pause-breath">// [breath]</span> quote <span class="pause-breath">// [breath]</span><br>
+          <span class="emphasis-word">"the greatest technology mania in history."</span> <span class="pause-beat">/// [1s beat]</span><br><br>
+          Unquote. <span class="pause-breath">// [breath]</span> Greatest. <span class="pause-breath">// [breath]</span> In all of history. <span class="pause-section">//// [2s section breath]</span>
+        `
+      },
+      {
+        num: 5,
+        title: "The Capital Scale (15–20% GDP)",
+        words: 82,
+        estTime: 36,
+        wpm: "120–140 WPM",
+        tone: "Stunned gravity. Do not rush. Let the magnitude sink in.",
+        cue: "Drop your voice lower on 'fifteen to twenty percent'. Give it physical weight.",
+        pronunciations: [
+          { word: "GDP", phonetic: "JEE-dee-PEE", note: "Even spacing, no rushing" },
+          { word: "valuation", phonetic: "val-yoo-AY-shun", note: "Stress 'AY'" },
+          { word: "investors", phonetic: "in-VES-terz", note: "Middle syllable stress" }
+        ],
+        scriptHtml: `
+          Just to understand the scale <span class="pause-breath">// [breath]</span> here is one number. <span class="pause-beat">/// [1s beat]</span><br><br>
+          Across Britain's two railway manias <span class="pause-breath">// [breath]</span> the total capital investment reached <span class="pause-breath">// [breath]</span><br>
+          <span class="emphasis-word">fifteen to twenty percent</span> <span class="pause-breath">// [breath]</span> of the entire country's GDP. <span class="pause-beat">/// [1s beat]</span><br><br>
+          And pay close attention here <span class="pause-breath">// [breath]</span> this was not some paper valuation on the stock market. <span class="pause-breath">// [breath]</span><br>
+          Odlyzko specifically points out <span class="pause-breath">// [breath]</span> this was <span class="emphasis-word">actual cash</span> <span class="pause-breath">// [breath]</span> that investors handed over. <span class="pause-beat">/// [1s beat]</span><br><br>
+          In today's money <span class="pause-breath">// [breath]</span> that would be like the UK spending three hundred to four hundred billion pounds. <span class="pause-breath">// [breath]</span><br>
+          Or the US spending <span class="emphasis-word">three to four trillion dollars</span>. <span class="pause-section">//// [2s section breath]</span>
+        `
+      },
+      {
+        num: 6,
+        title: "Predicted Collapse",
+        words: 69,
+        estTime: 30,
+        wpm: "135–155 WPM",
+        tone: "Sharp, analytical, investigative.",
+        cue: "Deliver 'trustworthy quantitative measures' like uncovering hard forensic proof.",
+        pronunciations: [
+          { word: "quantitative", phonetic: "KWON-tih-tay-tiv", note: "Stress first syllable" },
+          { word: "freight", phonetic: "FRAYT", note: "Clean long 'A' sound" },
+          { word: "measures", phonetic: "MEZH-erz", note: "Soft 'zh' sound" }
+        ],
+        scriptHtml: `
+          Now <span class="pause-breath">// [breath]</span> this is where it gets really interesting. <span class="pause-beat">/// [1s beat]</span><br><br>
+          Nobody was hiding the truth. <span class="pause-breath">// [breath]</span> The data was not a secret. <span class="pause-beat">/// [1s beat]</span><br>
+          Odlyzko writes that <span class="pause-breath">// [breath]</span> quote <span class="pause-breath">// [breath]</span> <span class="emphasis-word">"trustworthy quantitative measures"</span> <span class="pause-breath">// [breath]</span> actually existed at the time <span class="pause-breath">// [breath]</span> clearly showing that real passenger and freight demand would never match the crazy profits being promised. <span class="pause-beat">/// [1s beat]</span><br><br>
+          The numbers were <span class="emphasis-word">there</span>. <span class="pause-breath">// [breath]</span> They were available. <span class="pause-beat">/// [1s beat]</span><br>
+          And people ignored them. <span class="pause-breath">// [breath]</span> For years. <span class="pause-section">//// [2s section breath]</span>
+        `
+      },
+      {
+        num: 7,
+        title: "Victorian Intellectuals",
+        words: 63,
+        estTime: 27,
+        wpm: "130–150 WPM",
+        tone: "Quiet dry sarcasm, intellectual disbelief.",
+        cue: "Hit 'Charles Darwin' and 'John Stuart Mill' with slight ironic disbelief.",
+        pronunciations: [
+          { word: "Brontë", phonetic: "BRON-tay", note: "Ends in 'tay' (rhymes with day)" },
+          { word: "hallucination", phonetic: "huh-loo-sih-NAY-shun", note: "Stress 'NAY'" },
+          { word: "intellectuals", phonetic: "in-tuh-LEK-choo-ulz", note: "Clean enunciation" }
+        ],
+        scriptHtml: `
+          And this wasn't just some gullible crowd. <span class="pause-beat">/// [1s beat]</span><br><br>
+          The people putting in their money included <span class="emphasis-word">Charles Darwin</span>. <span class="pause-breath">// [breath]</span><br>
+          <span class="emphasis-word">John Stuart Mill</span> <span class="pause-breath">// [breath]</span> who was literally one of the greatest economists of his time. <span class="pause-breath">// [breath]</span><br>
+          And the <span class="emphasis-word">Bronte sisters</span> <span class="phonetic-chip">BRON-tay</span>. <span class="pause-beat">/// [1s beat]</span><br><br>
+          Odlyzko uses a phrase for this <span class="pause-breath">// [breath]</span> that really sticks in your mind <span class="pause-breath">// [breath]</span> quote <span class="pause-breath">// [breath]</span><br>
+          <span class="emphasis-word">"a collective hallucination."</span> <span class="pause-beat">/// [1s beat]</span><br><br>
+          Smart people. <span class="pause-breath">// [breath]</span> Clear data. <span class="pause-breath">// [breath]</span> And they still fell for it. <span class="pause-section">//// [2s section breath]</span>
+        `
+      },
+      {
+        num: 8,
+        title: "The Invariant Payoff",
+        words: 65,
+        estTime: 28,
+        wpm: "125–145 WPM",
+        tone: "Decisive payoff, calm authority.",
+        cue: "Deliver the contrast with conviction: 'Investors were wiped out. The tracks survived.'",
+        pronunciations: [
+          { word: "communication", phonetic: "kuh-myoo-nih-KAY-shun", note: "Stress 'KAY'" },
+          { word: "utility", phonetic: "yoo-TIL-ih-tee", note: "Stress 'TIL'" },
+          { word: "wiped out", phonetic: "WYPT OWT", note: "Punch both words clearly" }
+        ],
+        scriptHtml: `
+          So the crash arrived. <span class="pause-breath">// [breath]</span> And then what happened? <span class="pause-beat">/// [1s beat]</span><br><br>
+          Remember this one line. <span class="pause-breath">// [breath]</span> It comes straight from Odlyzko's research. <span class="pause-breath">// [breath]</span> Quote <span class="pause-breath">// [breath]</span><br>
+          the railway mania <span class="pause-breath">// [breath]</span> <span class="emphasis-word">"turned out to be an investment disaster <span class="pause-breath">// [breath]</span> but provided the country with a nationwide communication network of great utility."</span> <span class="pause-beat">/// [1s beat]</span><br><br>
+          Think about that for a second. <span class="pause-beat">/// [1s beat]</span><br>
+          Investors were wiped out. <span class="pause-beat">/// [1s beat]</span><br>
+          The tracks survived. <span class="pause-breath">// [breath]</span> And trains kept running. <span class="pause-section">//// [2s section breath]</span>
+        `
+      },
+      {
+        num: 9,
+        title: "The Pattern Formula",
+        words: 37,
+        estTime: 16,
+        wpm: "125–145 WPM",
+        tone: "Clear summary, memorable invariant.",
+        cue: "Deliver like an indelible proverb: 'The tracks survived. The shareholders didn't.'",
+        pronunciations: [
+          { word: "infrastructure", phonetic: "IN-fruh-struk-cher", note: "First syllable stress 'IN'" },
+          { word: "destroying", phonetic: "dih-STROY-ing", note: "Clean 'stroy'" },
+          { word: "shareholders", phonetic: "SHAIR-hohl-derz", note: "Keep consistent" }
+        ],
+        scriptHtml: `
+          This is the exact pattern I want you to remember. <span class="pause-beat">/// [1s beat]</span><br><br>
+          An infrastructure boom <span class="pause-breath">// [breath]</span> built on outside capital <span class="pause-breath">// [breath]</span><br>
+          can leave behind a lasting <span class="emphasis-word">asset</span> <span class="pause-breath">// [breath]</span><br>
+          while completely destroying the <span class="emphasis-word">investor</span>. <span class="pause-beat">/// [1s beat]</span><br><br>
+          The tracks survived. <span class="pause-breath">// [breath]</span> The shareholders didn't. <span class="pause-section">//// [2s section breath]</span>
+        `
+      },
+      {
+        num: 10,
+        title: "The 1830s Paradox",
+        words: 86,
+        estTime: 37,
+        wpm: "130–150 WPM",
+        tone: "Thoughtful, nuanced, intellectual twist.",
+        cue: "Slow pause before 'Except...'. Treat this as the sophisticated historical twist.",
+        pronunciations: [
+          { word: "prematurely", phonetic: "pree-muh-CHUR-lee", note: "Four crisp syllables" },
+          { word: "irrational", phonetic: "ih-RASH-uh-nul", note: "Short 'ih', stress 'RASH'" },
+          { word: "profitable", phonetic: "PROF-ih-tuh-bul", note: "Stress 'PROF'" }
+        ],
+        scriptHtml: `
+          And this is the part where I have to pause. <span class="pause-section">//// [2s section breath]</span><br><br>
+          Because there is another detail <span class="pause-breath">// [breath]</span> that makes this question genuinely difficult to answer. <span class="pause-beat">/// [1s beat]</span><br><br>
+          Before the big railway mania <span class="pause-breath">// [breath]</span> back in the eighteen-thirties <span class="pause-breath">// [breath]</span> there was a smaller mania. <span class="pause-breath">// [breath]</span> It crashed too. <span class="pause-breath">// [breath]</span> Everyone called it a bubble. <span class="pause-beat">/// [1s beat]</span><br><br>
+          Except <span class="pause-breath">// [breath]</span> Odlyzko writes that a few years later <span class="pause-breath">// [breath]</span> people realized it had <span class="pause-breath">// [breath]</span> quote <span class="pause-breath">// [breath]</span><br>
+          <span class="emphasis-word">"collapsed prematurely"</span> <span class="pause-breath">// [breath]</span> because the projects started during that crazy phase actually succeeded in the long run. <span class="pause-beat">/// [1s beat]</span><br><br>
+          In other words <span class="pause-breath">// [breath]</span> a bubble that turned out not to be irrational after all. <span class="pause-section">//// [2s section breath]</span>
+        `
+      },
+      {
+        num: 11,
+        title: "Modern AI Capex",
+        words: 105,
+        estTime: 48,
+        wpm: "130–150 WPM",
+        tone: "Frank, transparent, intellectual honesty.",
+        cue: "Total humility: 'Here, I am making an inference. Nobody knows for sure yet.'",
+        pronunciations: [
+          { word: "inference", phonetic: "IN-fer-ens", note: "Stress first syllable" },
+          { word: "hypothesis", phonetic: "hy-POTH-uh-sis", note: "Stress 'POTH'" },
+          { word: "depreciation", phonetic: "dih-pree-shee-AY-shun", note: "Stress 'AY', not 'see-a-shun'" },
+          { word: "capex", phonetic: "KAP-eks", note: "Short 'a', clean 'eks'" }
+        ],
+        scriptHtml: `
+          So <span class="pause-breath">// [breath]</span> what about today's AI boom? <span class="pause-beat">/// [1s beat]</span><br><br>
+          Here <span class="pause-breath">// [breath]</span> I am making an <span class="emphasis-word">inference</span>. <span class="pause-breath">// [breath]</span> This is not a proven historical fact. <span class="pause-breath">// [breath]</span><br>
+          I haven't gone through every corporate balance sheet myself. <span class="pause-breath">// [breath]</span><br>
+          And I will always be transparent when I am sharing a hypothesis. <span class="pause-beat">/// [1s beat]</span><br><br>
+          In eighteen-forty-five <span class="pause-breath">// [breath]</span> the path to ruin was straightforward. <span class="pause-breath">// [breath]</span><br>
+          Everyday retail investors <span class="pause-breath">// [breath]</span> paying small down-payments on shares <span class="pause-breath">// [breath]</span><br>
+          and getting wiped out by cash calls they couldn't afford. <span class="pause-beat">/// [1s beat]</span><br><br>
+          Today's AI buildout <span class="pause-breath">// [breath]</span> is being funded by just a handful of massive tech giants out of their own balance sheets. <span class="pause-breath">// [breath]</span><br>
+          So where the real risk eventually lands <span class="pause-breath">// [breath]</span> nobody knows for sure yet. <span class="pause-beat">/// [1s beat]</span><br>
+          And <span class="emphasis-word">that</span> is the actual question. <span class="pause-section">//// [2s section breath]</span>
+        `
+      },
+      {
+        num: 12,
+        title: "The Real Bill (Shareholder vs Headcount)",
+        words: 37,
+        estTime: 16,
+        wpm: "120–140 WPM",
+        tone: "Cold reality check. Punchy payoff.",
+        cue: "Drop the hammer on the final word: 'headcount'. Let it echo in the silence.",
+        pronunciations: [
+          { word: "depreciation", phonetic: "dih-pree-shee-AY-shun", note: "Hit 'AY' firmly" },
+          { word: "headcount", phonetic: "HED-kownt", note: "Crisp punch on both syllables" }
+        ],
+        scriptHtml: `
+          The real question isn't whether AI is a bubble or not. <span class="pause-beat">/// [1s beat]</span><br><br>
+          The real question to ask <span class="pause-breath">// [breath]</span> is when the spending slows down <span class="pause-breath">// [breath]</span><br>
+          who ends up paying the bill. <span class="pause-beat">/// [1s beat]</span><br><br>
+          Sometimes it's the shareholder. <span class="pause-breath">// [breath]</span><br>
+          Sometimes it's the <span class="emphasis-word">headcount</span>. <span class="pause-section">//// [2s section breath]</span>
+        `
+      },
+      {
+        num: 13,
+        title: "The Close",
+        words: 42,
+        estTime: 18,
+        wpm: "120–140 WPM",
+        tone: "Quiet, lingering closing thought.",
+        cue: "Do NOT beg for likes or subscribers. End on a provocative question into silence.",
+        pronunciations: [
+          { word: "paying attention", phonetic: "PAY-ing uh-TEN-shun", note: "Gentle thoughtful cadence" }
+        ],
+        scriptHtml: `
+          In eighteen-forty-five <span class="pause-breath">// [breath]</span> the numbers were right there on the table. <span class="pause-breath">// [breath]</span><br>
+          Even Darwin ignored them. <span class="pause-beat">/// [1s beat]</span><br><br>
+          So the question for us isn't whether this is a bubble. <span class="pause-beat">/// [1s beat]</span><br><br>
+          The real question is <span class="pause-breath">// [breath]</span> <span class="emphasis-word">which number</span> will actually give it away <span class="pause-breath">// [breath]</span><br>
+          and is anyone paying attention to it right now. <span class="pause-section">//// [2s section breath]</span>
+        `
+      }
+    ];
+
+    let currentTakeIndex = 0;
+    let recordedBlobs = {}; // takeIndex -> Blob
+    let audioElements = {}; // takeIndex -> Audio
+
+    // Audio Context & MediaRecorder
+    let mediaRecorder = null;
+    let audioChunks = [];
+    let audioContext = null;
+    let analyser = null;
+    let microphone = null;
+    let animFrameId = null;
+    let isRecording = false;
+    let recordStartTime = 0;
+    let recordTimerInterval = null;
+
+    // Render Takes in Sidebar
+    function renderSidebar() {
+      const list = document.getElementById('takeList');
+      list.innerHTML = '';
+      takesData.forEach((t, idx) => {
+        const li = document.createElement('li');
+        li.className = `take-item ${idx === currentTakeIndex ? 'active' : ''} ${recordedBlobs[idx] ? 'recorded' : ''}`;
+        li.onclick = () => selectTake(idx);
+        li.innerHTML = `
+          <div class="take-item-header">
+            <span class="take-item-num">Take ${String(t.num).padStart(2, '0')}</span>
+            <span class="take-item-time">${t.estTime}s</span>
+          </div>
+          <div class="take-item-title">${t.title}</div>
+        `;
+        list.appendChild(li);
+      });
+
+      const doneCount = Object.keys(recordedBlobs).length;
+      document.getElementById('progressSummary').innerText = `${doneCount} / 13 Done`;
+    }
+
+    // Select and Display Take
+    function selectTake(idx) {
+      if (isRecording) stopRecording();
+      currentTakeIndex = idx;
+      const data = takesData[idx];
+
+      // Update Header & Badge
+      document.getElementById('takeBadgeText').innerText = `TAKE ${String(data.num).padStart(2, '0')} OF 13`;
+      document.getElementById('recordBtnText').innerText = `Record Take ${String(data.num).padStart(2, '0')}`;
+
+      // Update Tone Bar
+      document.getElementById('directorTone').innerText = data.tone;
+      document.getElementById('directorCue').innerText = `"${data.cue}"`;
+
+      // Update Teleprompter Script
+      document.getElementById('scriptDisplay').innerHTML = data.scriptHtml;
+      document.getElementById('prompterViewport').scrollTop = 0;
+
+      // Update Metrics
+      document.getElementById('statWords').innerText = `${data.words} words`;
+      document.getElementById('statWpm').innerText = data.wpm;
+      document.getElementById('statTime').innerText = `~${data.estTime}s`;
+      document.getElementById('statRecTime').innerText = recordedBlobs[idx] ? `${(audioElements[idx]?.duration || 0).toFixed(1)}s` : '0.0s';
+
+      // Update Pronunciations
+      const pBox = document.getElementById('pronounceBox');
+      pBox.innerHTML = '';
+      data.pronunciations.forEach(p => {
+        const div = document.createElement('div');
+        div.className = 'pronounce-item';
+        div.innerHTML = `
+          <span class="pronounce-word">${p.word}</span>
+          <span class="pronounce-phonetic">${p.phonetic} (${p.note})</span>
+        `;
+        pBox.appendChild(div);
+      });
+
+      // Update Audio buttons
+      const hasRecording = !!recordedBlobs[idx];
+      document.getElementById('playAudioBtn').disabled = !hasRecording;
+      document.getElementById('downloadBtn').disabled = !hasRecording;
+
+      renderSidebar();
+    }
+
+    function nextTake() {
+      if (currentTakeIndex < takesData.length - 1) {
+        selectTake(currentTakeIndex + 1);
+      }
+    }
+
+    function prevTake() {
+      if (currentTakeIndex > 0) {
+        selectTake(currentTakeIndex - 1);
+      }
+    }
+
+    function changeFontSize(cls) {
+      const display = document.getElementById('scriptDisplay');
+      display.className = `script-text ${cls}`;
+    }
+
+    // Audio Recording Engine (Browser MediaRecorder)
+    async function initAudio() {
+      if (!audioContext) {
+        audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        analyser = audioContext.createAnalyser();
+        analyser.fftSize = 256;
+
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        microphone = audioContext.createMediaStreamSource(stream);
+        microphone.connect(analyser);
+        document.getElementById('micStatusBtn').classList.add('active');
+
+        drawVUMeter();
+        return stream;
+      }
+      return null;
+    }
+
+    function drawVUMeter() {
+      const dataArray = new Uint8Array(analyser.frequencyBinCount);
+      analyser.getByteFrequencyData(dataArray);
+
+      let sum = 0;
+      for (let i = 0; i < dataArray.length; i++) {
+        sum += dataArray[i];
+      }
+      let avg = sum / dataArray.length;
+      let pct = Math.min(100, (avg / 128) * 100);
+
+      document.getElementById('vuMeterFill').style.width = `${pct}%`;
+      animFrameId = requestAnimationFrame(drawVUMeter);
+    }
+
+    async function toggleRecording() {
+      if (!isRecording) {
+        startRecording();
+      } else {
+        stopRecording();
+      }
+    }
+
+    async function startRecording() {
+      try {
+        const stream = await initAudio() || microphone.mediaStream;
+        audioChunks = [];
+        mediaRecorder = new MediaRecorder(microphone.mediaStream || stream);
+
+        mediaRecorder.ondataavailable = (e) => {
+          if (e.data.size > 0) audioChunks.push(e.data);
+        };
+
+        mediaRecorder.onstop = () => {
+          const blob = new Blob(audioChunks, { type: 'audio/wav' });
+          recordedBlobs[currentTakeIndex] = blob;
+
+          const audioUrl = URL.createObjectURL(blob);
+          const audio = new Audio(audioUrl);
+          audio.onloadedmetadata = () => {
+            document.getElementById('statRecTime').innerText = `${audio.duration.toFixed(1)}s`;
+          };
+          audioElements[currentTakeIndex] = audio;
+
+          document.getElementById('playAudioBtn').disabled = false;
+          document.getElementById('downloadBtn').disabled = false;
+          renderSidebar();
+        };
+
+        mediaRecorder.start();
+        isRecording = true;
+        recordStartTime = Date.now();
+
+        // UI state
+        document.getElementById('recordBtn').classList.add('recording');
+        document.getElementById('recordBtnText').innerText = "Stop Recording";
+        document.getElementById('playAudioBtn').disabled = true;
+
+        recordTimerInterval = setInterval(() => {
+          const elapsed = (Date.now() - recordStartTime) / 1000;
+          document.getElementById('statRecTime').innerText = `${elapsed.toFixed(1)}s`;
+        }, 100);
+
+      } catch (err) {
+        alert("Microphone access is required for in-browser recording. Please allow mic permissions in your browser or record via Audacity.");
+        console.error(err);
+      }
+    }
+
+    function stopRecording() {
+      if (mediaRecorder && isRecording) {
+        mediaRecorder.stop();
+        isRecording = false;
+        clearInterval(recordTimerInterval);
+
+        const data = takesData[currentTakeIndex];
+        document.getElementById('recordBtn').classList.remove('recording');
+        document.getElementById('recordBtnText').innerText = `Record Take ${String(data.num).padStart(2, '0')}`;
+      }
+    }
+
+    function playRecordedTake() {
+      const audio = audioElements[currentTakeIndex];
+      if (audio) {
+        audio.currentTime = 0;
+        audio.play();
+      }
+    }
+
+    function downloadRecordedTake() {
+      const blob = recordedBlobs[currentTakeIndex];
+      if (blob) {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `take_${String(takesData[currentTakeIndex].num).padStart(2, '0')}.wav`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      }
+    }
+
+    // Keyboard Shortcuts (Space or 'R' to record, arrows for navigation)
+    window.addEventListener('keydown', (e) => {
+      if (e.code === 'Space' || e.key === 'r' || e.key === 'R') {
+        // Prevent page scroll on space
+        e.preventDefault();
+        toggleRecording();
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        nextTake();
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        prevTake();
+      }
+    });
+
+    // Initialize first take on load
+    selectTake(0);
+  </script>
+</body>
+</html>
