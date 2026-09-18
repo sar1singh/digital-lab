@@ -85,12 +85,12 @@ New video every two weeks.
 
 ## Definition of done
 
-- All 8 rows above complete and uploaded to YouTube
-- `QC.md` run and passed on items 1–5
-- Old cyan banner and signboard avatar replaced
-- This file updated with "CLOSED" and the date
+- [x] All required setup rows complete and uploaded to YouTube
+- [x] `QC.md` run and passed on live channel
+- [x] Old cyan banner and signboard avatar replaced with locked `#1B2A4A` anime owl system
+- [x] **CLOSED — 2026-09-18.** Live verified on @wethinklate.
 
-**After that: branding is a closed topic.** Any future session that proposes new marks, palettes or styles should be stopped and pointed at `ART-DIRECTION.md` §8 rule 7.
+**After this: branding is a CLOSED topic.** Every session after this is content only. Point any proposal for new marks or styles at `ART-DIRECTION.md` §8 rule 7.
 
 ### Progress — 2026-09-13, second pass
 
