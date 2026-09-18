@@ -23,9 +23,10 @@ Limit:
 - Max 1-2 days per product before publishing.
 
 Locked Decisions:
-- Product Factory is active.
+- Product Factory is active (Product #1 Nivora Budget Planner publishing).
+- Content Lab is active on ThinkLate (@wethinklate) in `03-content-lab/thinklate/`.
+- General Content Lab experiments (SEO, random newsletters) are parked.
 - SaaS Lab is parked.
-- Content Lab is parked.
 - Agency Lab is parked.
 - First revenue is more important than innovation.
 - Compete in existing proven markets.
