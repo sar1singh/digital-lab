@@ -12,20 +12,20 @@ Surface alternation per `CRAFT.md` → PART `06_MOTION-AND-SURFACE`: **ink** for
 
 | Scene | Script | Asset | Status | Motion |
 |---|---|---|---|---|
-| **S1** | `[TAKE 1]` cold open | **A1** — modern data-centre exterior, wide | ⚠️ **source** | Slow push 2% |
-| **S2** | `[TAKE 2]` value claim | `S04_title.png` *(reuse as a holding frame)* | ✅ | Static, 3s |
-| **S3** | `[TAKE 3]` employment, not ownership | **A2** — plain office / desk, neutral | ⚠️ **source** | Slow pan |
-| **S4** | `[TAKE 4]` "To // railways" | `S04_title.png` then `S04b_quote_mania.png` | ✅ | Cut on "railways", hold quote 4s |
-| **S4b** | `[TAKE 4]` Odlyzko quote | `S04b_quote_mania.png` | ✅ | Static — let it read |
-| **S5** | `[TAKE 5]` the one number | `S05_kicker_gdp.png` | ✅ | **Hold 6s minimum.** Only number in the video |
-| **S6** | `[TAKE 6]` the measures existed | `S06_quote_measures.png` | ✅ | Static |
-| **S7** | `[TAKE 7]` Darwin, Mill, Brontës | **A3** — 1840s railway engraving or share certificate, + `S07_lt_investors.png` over it, then `S07_quote_hallucination.png` | ⚠️ **source A3** | Push on A3, lower-third in at 1s |
-| **S8** | `[TAKE 8]` the payoff quote | `S08_quote_disaster.png` · **subscribe pop-up here, visual only** | ✅ | Static. **No narration pause** — rule 13 |
-| **S9** | `[TAKE 9]` the pattern | `S09_lt_pattern.png` over A3 held | ✅ | Lower-third only |
-| **S10** | `[TAKE 10]` the 1830s twist | `S10_quote_premature.png` | ✅ | Static |
-| **S11** | `[TAKE 11]` the honest hole | `S11_label_unverified.png` as a persistent overlay | ✅ | **Stays up for the whole take** |
-| **S12** | `[TAKE 12]` what to watch | `S09_lt_pattern.png` reuse, or black | ✅ | — |
-| **S13** | `[TAKE 13]` close | `S13_endcard.png` | ✅ | Hold to end. Both end-screen zones clear |
+| **S1** | `[TAKE 1]` "Your company announced an AI budget too" | **A1** — modern data-centre exterior, wide | ✅ `A1_datacenter_exterior.png` | Slow push 2% |
+| **S2** | `[TAKE 2]` "Technology being real and a bubble aren't opposites" | `S04_title.png` *(holding frame: "REAL, BUT RUINED")* | ✅ | Static, 3s |
+| **S3** | `[TAKE 3]` "Part of this game through your job" | **A2** — neutral modern office / desk | ✅ `A2_tech_workspace.png` | Slow pan |
+| **S4** | `[TAKE 4]` "So // railways... greatest technology mania in history" | `S04_evidence_ssrn_mania.png` + `LT_S04_ssrn_mania.png` | ✅ | Cut on "railways", hold quote 4s |
+| **S4b** | `[TAKE 4]` Odlyzko SSRN quote | `S04_evidence_ssrn_mania.png` | ✅ | Static — let it read |
+| **S5** | `[TAKE 5]` "15 to 20% of GDP actual capital investment" | `evidence_gdp_odlyzko.png` + `LT_S05_odlyzko_gdp.png` | ✅ | **Hold 6s minimum.** The one number |
+| **S6** | `[TAKE 6]` "Trustworthy quantitative measures existed" | `S06_evidence_ssrn_measures.png` + `LT_S06_ssrn_measures.png` | ✅ | Static |
+| **S7** | `[TAKE 7]` Darwin, J.S. Mill, Brontës: "a collective hallucination" | `S07_evidence_historical_share.png` + `LT_S07_investors_darwin.png` | ✅ | Push on A3, lower-third in at 1s |
+| **S8** | `[TAKE 8]` "Investment disaster, but provided nationwide network of great utility" | `S08_evidence_disaster_utility.png` + `LT_S08_disaster_utility.png` | ✅ | Static. Subscribe visual badge pops up |
+| **S9** | `[TAKE 9]` "Tracks survived. Shareholders didn't." | `S09_lt_pattern.png` over tracks | ✅ | Lower-third only |
+| **S10** | `[TAKE 10]` 1830s mania: "collapsed prematurely" | `S10_evidence_1830s_paradox.png` + `LT_S10_premature_bubble.png` | ✅ | Static |
+| **S11** | `[TAKE 11]` "Today's AI boom: where does the risk actually sit?" | `S11_evidence_goldman_report.png` + `LT_S11_goldman_ai_spend.png` | ✅ | **Pinned inference disclaimer badge** |
+| **S12** | `[TAKE 12]` "Shareholder vs Headcount" | `S12_evidence_sequoia_chart.png` + `LT_S12_sequoia_ai_depreciation.png` | ✅ | Split screen text |
+| **S13** | `[TAKE 13]` "Which number will give it away?" | `S13_endcard.png` | ✅ | Hold to end. Both end zones clear |
 
 **Thumbnail:** `S00_thumbnail.png` — layout frame with `IS AI / NEXT?`. Composite the archival image behind it in Affinity, 1280×720, under 2 MB.
 
