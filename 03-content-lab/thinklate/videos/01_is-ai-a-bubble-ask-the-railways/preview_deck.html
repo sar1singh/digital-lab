@@ -38,7 +38,14 @@
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
-      transition: transform 0.4s ease, opacity 0.3s ease;
+      transform-origin: center center;
+    }
+    @keyframes kenBurns {
+      0% { transform: scale(1.0); }
+      100% { transform: scale(1.08); }
+    }
+    .ken-burns {
+      animation: kenBurns 35s cubic-bezier(0.25, 1, 0.5, 1) forwards;
     }
 
     .player-controls {
@@ -51,7 +58,7 @@
       border-radius: 8px;
       border: 1px solid #1E2E4E;
     }
-    .btn-group { display: flex; gap: 10px; }
+    .btn-group { display: flex; gap: 10px; align-items: center; }
     button {
       background: var(--ink-soft);
       color: var(--paper);
@@ -66,6 +73,7 @@
     button:hover { background: var(--amber); color: #000; border-color: var(--amber); }
     button.primary { background: var(--amber); color: #000; border-color: var(--amber); }
     button.primary:hover { background: #E5A93C; }
+    button.voice-active { background: #10B981; color: #FFF; border-color: #10B981; }
     
     .timeline-scrubber { flex: 1; margin: 0 24px; display: flex; flex-direction: column; gap: 6px; }
     .scrubber-bar {
@@ -144,8 +152,9 @@
     <div class="player-controls">
       <div class="btn-group">
         <button onclick="prevScene()">◀ Prev</button>
-        <button class="primary" id="playBtn" onclick="toggleAutoPlay()">▶ Auto Play</button>
+        <button class="primary" id="playBtn" onclick="toggleAutoPlay()">▶ Play Full Video</button>
         <button onclick="nextScene()">Next ▶</button>
+        <button id="voiceBtn" class="voice-active" onclick="toggleVoice()">🔊 Voice: ON</button>
       </div>
       <div class="timeline-scrubber">
         <div class="scrubber-bar" onclick="scrubTimeline(event)">
@@ -283,18 +292,64 @@
     ];
 
     let currentIndex = 0;
-    let autoPlayTimer = null;
+    let autoPlayActive = false;
+    let voiceEnabled = true;
+    const voiceAudio = new Audio();
+
+    function toggleVoice() {
+      voiceEnabled = !voiceEnabled;
+      const vBtn = document.getElementById('voiceBtn');
+      if (voiceEnabled) {
+        vBtn.innerText = "🔊 Voice: ON";
+        vBtn.classList.add('voice-active');
+        playCurrentVoice();
+      } else {
+        vBtn.innerText = "🔇 Voice: OFF";
+        vBtn.classList.remove('voice-active');
+        voiceAudio.pause();
+      }
+    }
+
+    function playCurrentVoice() {
+      if (!voiceEnabled) return;
+      voiceAudio.pause();
+      const takeNum = String(currentIndex + 1).padStart(2, '0');
+      voiceAudio.src = `audio_takes/take_${takeNum}.mp3`;
+      voiceAudio.play().catch(err => {
+        console.log("Audio autoplay prevented by browser policy until user clicks Play:", err);
+      });
+    }
+
+    voiceAudio.onended = () => {
+      if (autoPlayActive) {
+        setTimeout(() => {
+          if (currentIndex < scenes.length - 1) {
+            nextScene();
+          } else {
+            toggleAutoPlay();
+          }
+        }, 800);
+      }
+    };
 
     function renderScene(idx) {
       const sc = scenes[idx];
       document.getElementById('sceneCounter').innerText = `SCENE ${String(idx + 1).padStart(2, '0')} / 13`;
-      document.getElementById('stageImage').src = sc.image;
+      
+      const img = document.getElementById('stageImage');
+      img.classList.remove('ken-burns');
+      void img.offsetWidth; // Force CSS reflow to restart animation
+      img.src = sc.image;
+      img.classList.add('ken-burns');
+
       document.getElementById('sceneTag').innerText = sc.id;
       document.getElementById('toneTag').innerText = sc.tone;
       document.getElementById('dialogueText').innerHTML = sc.dialogue;
       document.getElementById('evidenceDesc').innerText = sc.evidence;
       document.getElementById('citationCode').innerText = sc.citation;
       document.getElementById('scrubberFill').style.width = `${((idx + 1) / scenes.length) * 100}%`;
+
+      playCurrentVoice();
     }
 
     function nextScene() {
@@ -317,28 +372,23 @@
 
     function toggleAutoPlay() {
       const btn = document.getElementById('playBtn');
-      if (autoPlayTimer) {
-        clearInterval(autoPlayTimer);
-        autoPlayTimer = null;
-        btn.innerText = "▶ Auto Play";
-        btn.classList.remove('primary');
-      } else {
-        btn.innerText = "⏸ Pause";
+      autoPlayActive = !autoPlayActive;
+      if (autoPlayActive) {
+        btn.innerText = "⏸ Pause Video";
         btn.classList.add('primary');
-        autoPlayTimer = setInterval(() => {
-          if (currentIndex < scenes.length - 1) {
-            nextScene();
-          } else {
-            toggleAutoPlay();
-          }
-        }, 5000);
+        playCurrentVoice();
+      } else {
+        btn.innerText = "▶ Play Full Video";
+        btn.classList.remove('primary');
+        voiceAudio.pause();
       }
     }
 
     // Keyboard shortcuts: Arrow keys, Space
     window.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowRight' || e.key === ' ') { nextScene(); e.preventDefault(); }
+      if (e.key === 'ArrowRight') { nextScene(); e.preventDefault(); }
       if (e.key === 'ArrowLeft') { prevScene(); e.preventDefault(); }
+      if (e.key === ' ') { toggleAutoPlay(); e.preventDefault(); }
     });
 
     renderScene(0);
