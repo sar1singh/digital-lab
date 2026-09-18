@@ -55,13 +55,11 @@ Also **2 changes per 14 days.**
 The first two lines are all that shows above "…more" — they carry the search weight.
 
 ```
-How work, money and power actually function — and how that reaches your working life.
+Thinks late, explains straight.
 
-Twenty years too late, but at least it's sourced.
+Documentary explainers on how work, money, and power actually function — traced from the macro decision that caused it down to your daily working life. Economics, technology, and systems analyzed through hindsight.
 
-Long-form explainers on economics, geopolitics and technology, traced from the decision that caused it down to the bill you pay. Every claim sourced. Every guess labelled as a guess.
-
-Hinglish narration. English charts, sources and subtitles.
+Every claim is sourced. Every pattern is documented.
 ```
 
 **Cadence line removed 2026-09-13.** No public schedule until the schedule is real.
