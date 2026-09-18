@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ThinkLate — Video 1 Visual Storyboard & Presentation Preview</title>
+  <style>
+    :root {
+      --ink: #1B2A4A;
+      --ink-soft: #24365C;
+      --paper: #F4F1EA;
+      --slate: #98A2B3;
+      --amber: #D99A2B;
+      --brick: #9B3A2F;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background: #0F172A; color: var(--paper); display: flex; height: 100vh; overflow: hidden; }
+    
+    /* Left: Visual Player (16:9 Cinema) */
+    .player-section { flex: 1.6; display: flex; flex-direction: column; background: #090E17; padding: 24px; border-right: 1px solid #1E293B; }
+    .stage-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+    .channel-badge { font-size: 14px; font-weight: 700; letter-spacing: 2px; color: var(--amber); text-transform: uppercase; }
+    .video-title { font-size: 18px; font-weight: 600; color: var(--paper); }
+    .view-counter { font-size: 13px; color: var(--slate); font-family: monospace; }
+
+    .viewport-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background: #000;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #334155;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    }
+    .viewport-container img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      transition: transform 0.4s ease, opacity 0.3s ease;
+    }
+
+    .player-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 18px;
+      padding: 12px 16px;
+      background: #111C30;
+      border-radius: 8px;
+      border: 1px solid #1E2E4E;
+    }
+    .btn-group { display: flex; gap: 10px; }
+    button {
+      background: var(--ink-soft);
+      color: var(--paper);
+      border: 1px solid var(--slate);
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    button:hover { background: var(--amber); color: #000; border-color: var(--amber); }
+    button.primary { background: var(--amber); color: #000; border-color: var(--amber); }
+    button.primary:hover { background: #E5A93C; }
+    
+    .timeline-scrubber { flex: 1; margin: 0 24px; display: flex; flex-direction: column; gap: 6px; }
+    .scrubber-bar {
+      width: 100%;
+      height: 6px;
+      background: #1E293B;
+      border-radius: 3px;
+      position: relative;
+      cursor: pointer;
+    }
+    .scrubber-fill {
+      height: 100%;
+      background: var(--amber);
+      border-radius: 3px;
+      width: 8%;
+      transition: width 0.2s;
+    }
+
+    /* Right: Narration & Cue Prompter */
+    .prompter-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background: #121E36;
+      padding: 24px;
+      overflow-y: auto;
+    }
+    .scene-meta-card {
+      background: var(--ink-soft);
+      padding: 16px;
+      border-radius: 8px;
+      border-left: 4px solid var(--amber);
+      margin-bottom: 20px;
+    }
+    .scene-id { font-size: 13px; font-weight: 700; color: var(--amber); font-family: monospace; letter-spacing: 1px; }
+    .tone-badge { display: inline-block; background: #1B2A4A; color: var(--paper); padding: 4px 10px; border-radius: 4px; font-size: 12px; margin-top: 6px; font-style: italic; border: 1px solid #3B4E7A; }
+    
+    .dialogue-box {
+      background: #0B1324;
+      padding: 24px;
+      border-radius: 8px;
+      border: 1px solid #1F2E4D;
+      margin-bottom: 20px;
+      flex: 1;
+    }
+    .dialogue-title { font-size: 12px; font-weight: 700; color: var(--slate); letter-spacing: 1.5px; margin-bottom: 12px; text-transform: uppercase; }
+    .dialogue-text { font-size: 20px; line-height: 1.6; color: #FFF; white-space: pre-line; }
+    .dialogue-text b { color: var(--amber); font-weight: 600; }
+    
+    .evidence-box {
+      background: #172642;
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid #2B3D66;
+    }
+    .evidence-title { font-size: 12px; font-weight: 700; color: var(--amber); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 6px; }
+    .evidence-desc { font-size: 14px; color: var(--paper); line-height: 1.5; }
+    .citation-code { font-family: monospace; font-size: 12px; color: var(--slate); margin-top: 6px; display: block; }
+  </style>
+</head>
+<body>
+
+  <div class="player-section">
+    <div class="stage-header">
+      <div>
+        <div class="channel-badge">ThinkLate · Production Preview</div>
+        <div class="video-title">01 — Is AI a Bubble? Ask the Railways</div>
+      </div>
+      <div class="view-counter" id="sceneCounter">SCENE 01 / 13</div>
+    </div>
+
+    <div class="viewport-container">
+      <img id="stageImage" src="assets/A1_datacenter_exterior.png" alt="Scene Visual">
+    </div>
+
+    <div class="player-controls">
+      <div class="btn-group">
+        <button onclick="prevScene()">◀ Prev</button>
+        <button class="primary" id="playBtn" onclick="toggleAutoPlay()">▶ Auto Play</button>
+        <button onclick="nextScene()">Next ▶</button>
+      </div>
+      <div class="timeline-scrubber">
+        <div class="scrubber-bar" onclick="scrubTimeline(event)">
+          <div class="scrubber-fill" id="scrubberFill"></div>
+        </div>
+      </div>
+      <div class="view-counter" id="durationEst">~5.5 min total</div>
+    </div>
+  </div>
+
+  <div class="prompter-section">
+    <div class="scene-meta-card">
+      <div class="scene-id" id="sceneTag">[TAKE 1] · {S1}</div>
+      <div class="tone-badge" id="toneTag">TONE: Low, conversational, conspiratorial</div>
+    </div>
+
+    <div class="dialogue-box">
+      <div class="dialogue-title">Spoken Narration (Hinglish Audio)</div>
+      <div class="dialogue-text" id="dialogueText"></div>
+    </div>
+
+    <div class="evidence-box">
+      <div class="evidence-title">Visual Evidence & Lower-Third Trigger</div>
+      <div class="evidence-desc" id="evidenceDesc"></div>
+      <div class="citation-code" id="citationCode"></div>
+    </div>
+  </div>
+
+  <script>
+    const scenes = [
+      {
+        id: "[TAKE 1] · {S1}",
+        tone: "Low, conversational, conspiratorial. You noticed something at work.",
+        image: "assets/A1_datacenter_exterior.png",
+        dialogue: "Aapki company ne bhi shayad ek AI budget announce kiya hai. //\nKoi naya tool // koi naya platform // koi \"AI-first\" strategy. ///\n\nAur kisi ne yeh nahi bataya ki paisa <b>kahan</b> se aa raha hai. //\nYa kya hoga // jab woh rukega. ////",
+        evidence: "Base Still: A1 Modern Hyperscale Data Center Exterior at dusk. Atmospheric mist, glowing cooling vents. Slow 2% push in.",
+        citation: "Visual Cold Open — Clean frame, zero distraction"
+      },
+      {
+        id: "[TAKE 2] · {S2}",
+        tone: "Direct, confident. Making the core promise.",
+        image: "assets/S04_title.png",
+        dialogue: "Agle saat minute mein // main aapko ek cheez dikhaunga jo aap khud pehchan sakoge // har baar // aage jab bhi aisa kuch ho. ///\n\nKi <b>\"real\"</b> aur <b>\"bubble\"</b> // do opposite cheezein nahi hain. ///\nEk hi buildout dono ho sakta hai. ///\nYeh pehle ho chuka hai. // Documented hai. ////",
+        evidence: "Holding Frame: Title card typography 'REAL, BUT RUINED' / 'IS AI A BUBBLE? ASK THE RAILWAYS'.",
+        citation: "Core thesis frame: Both real infrastructure and capital ruin simultaneously"
+      },
+      {
+        id: "[TAKE 3] · {S3}",
+        tone: "Grounded, personal. Shifting from abstract tech to viewer's pay.",
+        image: "assets/A2_tech_workspace.png",
+        dialogue: "Aur yeh sirf shareholders ka problem nahi hai. //\nAap shayad ek bhi share nahi rakhte. ///\n\nLekin agar aap salary pe kaam karte hain // to aap us buildout ke andar hain. // Bas ownership ke through nahi. // <b>Employment</b> ke through. ////",
+        evidence: "Base Still: A2 Minimalist modern corporate workspace desk at twilight with laptop chart glow.",
+        citation: "Macro-to-Personal pivot: Why salaried employees carry the ultimate depreciation bill"
+      },
+      {
+        id: "[TAKE 4] · {S4}",
+        tone: "Deadpan pivot. Cutting through corporate noise into history.",
+        image: "assets/S04_evidence_ssrn_mania.png",
+        dialogue: "To // railways. ////\n\nUnneesvi sadi ke beech mein // Britain. //\nRailway ek nayi technology thi. // Sach mein revolutionary. //\nAur poora desh ismein paisa daalne laga. ///\n\nUniversity of Minnesota ke Professor Andrew Odlyzko // (pron: OD-liz-ko) // jo iss period ka sabse detailed kaam karte hain // isko kehte hain // quote //\n<b>\"the greatest technology mania in history.\"</b> ///\n\nUnquote. // Greatest. // Aaj tak ka. ////",
+        evidence: "Paper Evidence: Authentic SSRN 1537338 abstract screenshot with yellow highlight on 'greatest technology mania in history'. Lower-third pops up at 1.0s.",
+        citation: "SSRN 1537338: Prof. Andrew Odlyzko, University of Minnesota (2010)"
+      },
+      {
+        id: "[TAKE 5] · {S5}",
+        tone: "Stunned gravity. Do not rush. Let the 15–20% GDP scale sink in.",
+        image: "assets/evidence_gdp_odlyzko.png",
+        dialogue: "Scale samajhne ke liye ek number. ///\n\nBritain ke do railway manias mein // capital investment tha //\n<b>pandrah se bees percent</b> // GDP ka. ///\n\nAur dhyaan dijiye // yeh stock market valuation nahi hai. //\nOdlyzko specifically likhte hain // yeh actual funds the // jo investors ne diye. ///\n\nAaj ke paise mein // woh UK ke liye teen sau se chaar sau billion pounds ke barabar hoga. ////",
+        evidence: "Macroeconomic Evidence: Odlyzko (2024) Page 2 showing London Stock Exchange 1860-1870 chart with Overend Gurney collapse arrow and highlighted paragraph.",
+        citation: "Odlyzko (2024), p. 2: Capital investments of 15 to 20% of GDP"
+      },
+      {
+        id: "[TAKE 6] · {S6}",
+        tone: "Sharp, analytical. Revealing that the collapse was predicted.",
+        image: "assets/S06_evidence_ssrn_measures.png",
+        dialogue: "Ab yahan se interesting hota hai. ///\n\nKisi ko dhoka nahi diya gaya tha information ke bare mein. ///\nOdlyzko likhte hain ki // quote // <b>\"trustworthy quantitative measures\"</b> // maujood the // jo dikha rahe the ki railway transport ki demand utni nahi hogi // jitna profit expect kiya ja raha tha. ///\n\nNumbers <b>the</b>. // Available the. ///\nAur unhe ignore kiya gaya. // Saalon tak. ////",
+        evidence: "Paper Evidence: SSRN paper abstract highlight: 'There were trustworthy quantitative measures to show investors... demand would not be enough...'",
+        citation: "SSRN 1537338: Quantifiable Demand vs Speculative Exuberance"
+      },
+      {
+        id: "[TAKE 7] · {S7}",
+        tone: "Quiet dry sarcasm. Even history's sharpest intellects got blinded.",
+        image: "assets/S07_evidence_historical_share.png",
+        dialogue: "Aur yeh koi bewakoof bheed nahi thi. ///\n\nJin logon ne paisa lagaya // unmein Charles Darwin the. //\nJohn Stuart Mill // jo khud ek economist the. //\nAur Bronte sisters // (pron: BRON-tay). ///\n\nOdlyzko iske liye ek phrase use karte hain // jo mujhe chhod nahi raha // quote //\n<b>\"a collective hallucination.\"</b> ///\n\nSmart log. // Available data. // Phir bhi. ////",
+        evidence: "Primary Archive: 1845 Victorian Railway Share Subscription Archive callout cards for Charles Darwin, J.S. Mill, and the Brontë sisters.",
+        citation: "British Parliamentary Papers & Bank of England Archives (1845–1846)"
+      },
+      {
+        id: "[TAKE 8] · {S8}",
+        tone: "Decisive payoff. The core thesis delivered calmly.",
+        image: "assets/S08_evidence_disaster_utility.png",
+        dialogue: "To crash aaya. // Aur phir? ///\n\nYeh line yaad rakhiye. // Odlyzko ki hai. // Quote //\nrailway mania // <b>\"turned out to be an investment disaster // but provided the country with a nationwide communication network of great utility.\"</b> ///\n\nPadhiye dobara. ///\nInvestors barbaad. ///\nTracks bach gaye. // Aur chalti rahi. ////",
+        evidence: "The Invariant: Real paper conclusion highlighted: 'investment disaster, but provided a nationwide network of great utility'. Visual subscribe badge pops up.",
+        citation: "Odlyzko (2024), Introduction, p. 1: Ruined Capital vs Surviving Infrastructure"
+      },
+      {
+        id: "[TAKE 9] · {S9}",
+        tone: "Clear, authoritative summary. Nailing the pattern down.",
+        image: "assets/S09_lt_pattern.png",
+        dialogue: "Yeh hai woh pattern jo main aapko dena chahta tha. ///\n\nEk infrastructure buildout // jo bahar ke paise se banta hai //\n<b>asset</b> chhod ke jaa sakta hai // aur <b>investor</b> ko le doob sakta hai. ///\n\nTracks bach gaye. // Shareholder nahi. ////",
+        evidence: "Pattern Card: Dark slate navy visual with bold amber rule: 'THE INVARIANT: Overbuilt Infrastructure vs Vanished Capital'.",
+        citation: "ThinkLate Invariant Formula: Asset Survival vs Capital Vaporization"
+      },
+      {
+        id: "[TAKE 10] · {S10}",
+        tone: "Thoughtful, nuanced. Unraveling the counter-intuitive twist.",
+        image: "assets/S10_evidence_1830s_paradox.png",
+        dialogue: "Aur ab woh hissa // jahan mujhe rukna padega. ////\n\nKyunki ek aur baat hai // jo iss sawaal ko genuinely mushkil banati hai. ///\n\nRailway mania se pehle // athara sau tees ke aas paas // ek chhota mania aaya tha. // Woh bhi crash hua. // Sab ne kaha // bubble tha. ///\n\nLekin Odlyzko likhte hain ki kuch saal baad // logon ko laga ki woh <b>\"collapsed prematurely\"</b> // kyunki jo projects shuru hue the // woh chal gaye. ///\n\nMatlab // ek bubble jo bubble nahi tha. ////",
+        evidence: "Historical Paradox: SSRN abstract highlighted: 'collapsed prematurely, as projects started during its exuberant phase became successful'.",
+        citation: "SSRN 1537338: The 1830s Mania and the Difficulty of Identifying True Irrationality"
+      },
+      {
+        id: "[TAKE 11] · {S11}",
+        tone: "Frank, transparent, intellectual honesty. Admitting what is guess vs fact.",
+        image: "assets/S11_evidence_goldman_report.png",
+        dialogue: "To // aaj ke AI buildout ka kya? ///\n\nYahan main <b>infer</b> kar raha hoon. // Yeh documented nahi hai. //\nMain filings khol ke verify nahi kiya. // Aur main aapko bataunga jab main guess kar raha hoon. ///\n\nAthara sau chalis mein // barbaad hone ka raasta clear tha. //\nAam log // part-paid shares // aur calls jo woh bhar nahi sakte the. ///\n\nAaj ka buildout // kuch gine-chune bade tech companies kar rahe hain. //\nTo risk kahan baith raha hai // yeh mujhe nahi pata. ///\nAur <b>yahi</b> sawaal hai. ////",
+        evidence: "Modern Wall Street Research: Goldman Sachs Global Investment Research ('Gen AI: Too Much Spend, Too Little Benefit?') + Pinned Inference Disclaimer.",
+        citation: "Goldman Sachs Top of Mind (June 2024) / Jim Covello Capex Analysis"
+      },
+      {
+        id: "[TAKE 12] · {S12}",
+        tone: "Cold reality check. Connecting macro buildout to viewer's job.",
+        image: "assets/S12_evidence_sequoia_chart.png",
+        dialogue: "Dekhne wali cheez yeh nahi hai ki AI bubble hai ya nahi. ///\n\nDekhne wali cheez yeh hai // ki jab paisa rukta hai // to bill kaun bharta hai. ///\nKabhi woh shareholder hota hai. //\nKabhi woh <b>headcount</b> hota hai. ////",
+        evidence: "Venture Analysis: Sequoia Capital ('AI\'s $600B Question') chart showing Capex vs Realized Revenue Gap. Lower-third: 'Shareholder vs Headcount'.",
+        citation: "Sequoia Capital Analysis (David Cahn): The $600B AI Revenue Gap"
+      },
+      {
+        id: "[TAKE 13] · {S13}",
+        tone: "Quiet, lingering closing thought. Leaves viewer thinking.",
+        image: "assets/S13_endcard.png",
+        dialogue: "Athara sau chalis mein // numbers maujood the. //\nDarwin ne bhi unhe ignore kiya. ///\n\nTo agla sawaal yeh nahi hai // ki yeh bubble hai kya. ///\n\nSawaal yeh hai // ki <b>kaunsa number</b> aapko bata dega // aur abhi use koi dekh raha hai ya nahi. ////",
+        evidence: "End Card: Deep slate navy holding frame with ThinkLate wordmark. Two cleared video recommendation zones per YouTube end-screen specs.",
+        citation: "Zero spoken CTA — Lingering provocative question into silent end screen"
+      }
+    ];
+
+    let currentIndex = 0;
+    let autoPlayTimer = null;
+
+    function renderScene(idx) {
+      const sc = scenes[idx];
+      document.getElementById('sceneCounter').innerText = `SCENE ${String(idx + 1).padStart(2, '0')} / 13`;
+      document.getElementById('stageImage').src = sc.image;
+      document.getElementById('sceneTag').innerText = sc.id;
+      document.getElementById('toneTag').innerText = sc.tone;
+      document.getElementById('dialogueText').innerHTML = sc.dialogue;
+      document.getElementById('evidenceDesc').innerText = sc.evidence;
+      document.getElementById('citationCode').innerText = sc.citation;
+      document.getElementById('scrubberFill').style.width = `${((idx + 1) / scenes.length) * 100}%`;
+    }
+
+    function nextScene() {
+      currentIndex = (currentIndex + 1) % scenes.length;
+      renderScene(currentIndex);
+    }
+
+    function prevScene() {
+      currentIndex = (currentIndex - 1 + scenes.length) % scenes.length;
+      renderScene(currentIndex);
+    }
+
+    function scrubTimeline(e) {
+      const rect = e.currentTarget.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      const pct = clickX / rect.width;
+      currentIndex = Math.min(Math.floor(pct * scenes.length), scenes.length - 1);
+      renderScene(currentIndex);
+    }
+
+    function toggleAutoPlay() {
+      const btn = document.getElementById('playBtn');
+      if (autoPlayTimer) {
+        clearInterval(autoPlayTimer);
+        autoPlayTimer = null;
+        btn.innerText = "▶ Auto Play";
+        btn.classList.remove('primary');
+      } else {
+        btn.innerText = "⏸ Pause";
+        btn.classList.add('primary');
+        autoPlayTimer = setInterval(() => {
+          if (currentIndex < scenes.length - 1) {
+            nextScene();
+          } else {
+            toggleAutoPlay();
+          }
+        }, 5000);
+      }
+    }
+
+    // Keyboard shortcuts: Arrow keys, Space
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') { nextScene(); e.preventDefault(); }
+      if (e.key === 'ArrowLeft') { prevScene(); e.preventDefault(); }
+    });
+
+    renderScene(0);
+  </script>
+</body>
+</html>
