@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect x="0" y="780" width="1100" height="180" fill="#1B2A4A" opacity="0.92"/>
+  <rect x="0" y="780" width="10" height="180" fill="#D99A2B"/>
+  <text x="60" y="870" font-family="IBM Plex Sans, Inter, DejaVu Sans, Helvetica, Arial, sans-serif" font-size="40" font-weight="600" fill="#F4F1EA" text-anchor="start" letter-spacing="0" opacity="1">The track survived.</text>
+  <text x="60" y="922" font-family="IBM Plex Mono, DejaVu Sans Mono, Menlo, monospace" font-size="28" font-weight="400" fill="#A8A29A" text-anchor="start" letter-spacing="0" opacity="1">The shareholders did not.</text>
+</svg>

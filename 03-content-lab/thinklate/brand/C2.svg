@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><rect width="512" height="512" fill="#1B2A4A"/>
+<g stroke-linejoin="miter" fill="none">
+  <!-- the event: amber, behind -->
+  <path d="M 344 132 L 210 256 L 344 380" stroke="#D99A2B" stroke-width="74"/>
+  <!-- the understanding: paper, offset back -->
+  <path d="M 300 132 L 166 256 L 300 380" stroke="#F4F1EA" stroke-width="74"/>
+</g>
+</svg>

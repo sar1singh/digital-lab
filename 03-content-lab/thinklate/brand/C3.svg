@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><rect width="512" height="512" fill="#1B2A4A"/>
+<path d="M 150 402 L 150 258
+   C 150 186, 196 128, 256 128
+   C 316 128, 362 186, 362 258
+   L 362 402 Z" fill="#F4F1EA"/>
+<!-- profile noses, one each side -->
+<path d="M 150 262 L 108 292 L 150 322 Z" fill="#F4F1EA"/>
+<path d="M 362 262 L 404 292 L 362 322 Z" fill="#F4F1EA"/>
+<!-- the backward face sees clearly: amber. the forward face does not: ink -->
+<circle cx="192" cy="256" r="31" fill="#D99A2B"/>
+<circle cx="320" cy="256" r="31" fill="#1B2A4A"/>
+</svg>

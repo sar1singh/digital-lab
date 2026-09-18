@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#1B2A4A"/>
+  <text x="120" y="470" font-family="IBM Plex Mono, DejaVu Sans Mono, Menlo, monospace" font-size="136" font-weight="400" fill="#D99A2B" text-anchor="start" letter-spacing="0" opacity="1">02</text>
+  <rect x="120" y="520" width="900" height="2" fill="#2E4270"/>
+  <text x="120" y="650" font-family="Instrument Serif, Playfair Display, Libre Baskerville, DejaVu Serif, Georgia, serif" font-size="92" font-weight="400" fill="#F4F1EA" text-anchor="start" letter-spacing="0" opacity="1">What the railways actually built</text>
+  <text x="1800" y="1024" font-family="Instrument Serif, Playfair Display, Libre Baskerville, DejaVu Serif, Georgia, serif" font-size="28" font-weight="400" fill="#A8A29A" text-anchor="end" letter-spacing="1.5" opacity="1">ThinkLate</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<rect width="1280" height="720" fill="#F4F1EA"/>
+<rect x="0" y="0" width="768" height="720" fill="#EAE5DA"/>
+<text x="384" y="352" font-family="IBM Plex Sans, Inter, Helvetica, sans-serif" font-size="30" font-weight="600" fill="#6E6A61" text-anchor="middle" letter-spacing="4" opacity="1">VISUAL ZONE</text>
+<text x="384" y="394" font-family="IBM Plex Sans, Inter, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#6E6A61" text-anchor="middle" letter-spacing="0" opacity="1">real chart / map / archival image</text>
+<rect x="820" y="228" width="84" height="9" fill="#A8741A"/>
+<text x="820" y="340" font-family="Instrument Serif, Playfair Display, Georgia, serif" font-size="92" font-weight="600" fill="#A8741A" text-anchor="start" letter-spacing="0" opacity="1">IS AI</text>
+<text x="820" y="438" font-family="Instrument Serif, Playfair Display, Georgia, serif" font-size="92" font-weight="600" fill="#1A1A17" text-anchor="start" letter-spacing="0" opacity="1">NEXT?</text>
+<text x="1236" y="686" font-family="Instrument Serif, Playfair Display, Georgia, serif" font-size="24" font-weight="400" fill="#6E6A61" text-anchor="end" letter-spacing="1.5" opacity="1">ThinkLate</text>
+</svg>

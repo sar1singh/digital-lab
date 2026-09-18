@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#1B2A4A"/>
+  <text x="120" y="330" font-family="Instrument Serif, Playfair Display, Libre Baskerville, DejaVu Serif, Georgia, serif" font-size="200" font-weight="400" fill="#D99A2B" text-anchor="start" letter-spacing="0" opacity="0.35">“</text>
+  <text x="120" y="440" font-family="Instrument Serif, Playfair Display, Libre Baskerville, DejaVu Serif, Georgia, serif" font-size="58" font-weight="400" fill="#F4F1EA" text-anchor="start" letter-spacing="0" opacity="1">The traffic will be there. The only question</text>
+  <text x="120" y="526" font-family="Instrument Serif, Playfair Display, Libre Baskerville, DejaVu Serif, Georgia, serif" font-size="58" font-weight="400" fill="#F4F1EA" text-anchor="start" letter-spacing="0" opacity="1">is who owns the line.</text>
+  <rect x="120" y="800" width="90" height="6" fill="#D99A2B"/>
+  <text x="120" y="880" font-family="IBM Plex Sans, Inter, DejaVu Sans, Helvetica, Arial, sans-serif" font-size="40" font-weight="600" fill="#F4F1EA" text-anchor="start" letter-spacing="0" opacity="1">Railway prospectus</text>
+  <text x="120" y="928" font-family="IBM Plex Mono, DejaVu Sans Mono, Menlo, monospace" font-size="28" font-weight="400" fill="#A8A29A" text-anchor="start" letter-spacing="0" opacity="1">1845</text>
+  <text x="120" y="1024" font-family="IBM Plex Mono, DejaVu Sans Mono, Menlo, monospace" font-size="28" font-weight="400" fill="#A8A29A" text-anchor="start" letter-spacing="0" opacity="1">Source: illustrative — replace before publishing</text>
+  <text x="1800" y="1024" font-family="Instrument Serif, Playfair Display, Libre Baskerville, DejaVu Serif, Georgia, serif" font-size="28" font-weight="400" fill="#A8A29A" text-anchor="end" letter-spacing="1.5" opacity="1">ThinkLate</text>
+</svg>

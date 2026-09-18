@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#1B2A4A"/>
+  <text x="120" y="260" font-family="Instrument Serif, Playfair Display, Libre Baskerville, DejaVu Serif, Georgia, serif" font-size="92" font-weight="400" fill="#F4F1EA" text-anchor="start" letter-spacing="1" opacity="1">ThinkLate</text>
+  <text x="120" y="330" font-family="IBM Plex Sans, Inter, DejaVu Sans, Helvetica, Arial, sans-serif" font-size="40" font-weight="400" fill="#A8A29A" text-anchor="start" letter-spacing="1" opacity="1">Master of none, expert of after</text>
+  <rect x="120" y="400" width="180" height="6" fill="#D99A2B"/>
+  <text x="120" y="520" font-family="IBM Plex Mono, DejaVu Sans Mono, Menlo, monospace" font-size="28" font-weight="400" fill="#D99A2B" text-anchor="start" letter-spacing="4" opacity="1">NEXT</text>
+  <text x="120" y="600" font-family="Instrument Serif, Playfair Display, Libre Baskerville, DejaVu Serif, Georgia, serif" font-size="64" font-weight="400" fill="#F4F1EA" text-anchor="start" letter-spacing="0" opacity="1">Next: The Bubble That Built</text>
+  <text x="120" y="680" font-family="Instrument Serif, Playfair Display, Libre Baskerville, DejaVu Serif, Georgia, serif" font-size="64" font-weight="400" fill="#F4F1EA" text-anchor="start" letter-spacing="0" opacity="1">Real Railways</text>
+  <text x="120" y="880" font-family="IBM Plex Sans, Inter, DejaVu Sans, Helvetica, Arial, sans-serif" font-size="40" font-weight="400" fill="#A8A29A" text-anchor="start" letter-spacing="0" opacity="1">Newsletter + sources in the description</text>
+  <text x="120" y="940" font-family="IBM Plex Mono, DejaVu Sans Mono, Menlo, monospace" font-size="40" font-weight="400" fill="#D99A2B" text-anchor="start" letter-spacing="0" opacity="1">@wethinklate</text>
+  <rect x="1180" y="300" width="560" height="315" fill="none" stroke="#2E4270" stroke-width="2" stroke-dasharray="12 10"/>
+  <text x="1460" y="470" font-family="IBM Plex Mono, DejaVu Sans Mono, Menlo, monospace" font-size="28" font-weight="400" fill="#98A2B3" text-anchor="middle" letter-spacing="0" opacity="1">end-screen element</text>
+  <rect x="1180" y="660" width="270" height="270" fill="none" stroke="#2E4270" stroke-width="2" stroke-dasharray="12 10"/>
+  <text x="1315" y="800" font-family="IBM Plex Mono, DejaVu Sans Mono, Menlo, monospace" font-size="28" font-weight="400" fill="#98A2B3" text-anchor="middle" letter-spacing="0" opacity="1">subscribe</text>
+</svg>

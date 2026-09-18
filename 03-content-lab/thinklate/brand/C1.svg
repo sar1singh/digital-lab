@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><rect width="512" height="512" fill="#1B2A4A"/>
+<!-- tufts: right full, left foreshortened -->
+<path d="M 352 178 L 408 112 L 386 196 Z" fill="#F4F1EA"/>
+<path d="M 246 184 L 212 136 L 236 198 Z" fill="#F4F1EA"/>
+<!-- head, wider on the left = back of skull turned toward us -->
+<ellipse cx="272" cy="282" rx="166" ry="152" fill="#F4F1EA"/>
+<!-- heart-shaped facial disc, pushed right toward the viewer -->
+<path d="M 306 208
+   C 292 172, 250 168, 234 206
+   C 222 236, 226 286, 252 322
+   C 272 352, 296 374, 306 392
+   C 316 374, 340 352, 360 322
+   C 386 286, 390 236, 378 206
+   C 362 168, 320 172, 306 208 Z" fill="#1B2A4A"/>
+<!-- eyes: near eye large, far eye foreshortened -->
+<circle cx="344" cy="258" r="36" fill="#D99A2B"/>
+<circle cx="266" cy="262" r="24" fill="#D99A2B"/>
+<!-- beak -->
+<path d="M 306 300 L 294 326 L 306 344 L 318 326 Z" fill="#F4F1EA"/>
+</svg>

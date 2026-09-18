@@ -1,16 +1,14 @@
-# Content Lab — Parked
+# Content Lab
 
 ## Status
+- **Active Project:** [ThinkLate (@wethinklate)](thinklate/START-HERE.md) — Long-form economics, geopolitics, and technology explainer YouTube channel & media company.
+- **General Content Lab (niche sites, random newsletters, generic social):** Parked. Execution focus is on ThinkLate and Product Factory.
 
-Parked. Not active.
+## ThinkLate Workspace
+- Operating Folder: `03-content-lab/thinklate/`
+- Starting Context: [START-HERE.md](thinklate/START-HERE.md)
+- Context Pack: [CONTEXT-PACK.md](thinklate/CONTEXT-PACK.md)
+- Runbook: [RUNBOOK.md](thinklate/RUNBOOK.md)
+- Brand & Art Direction: [brand/ART-DIRECTION.md](thinklate/brand/ART-DIRECTION.md)
+- Upload Bundle: [brand/EXPORT/CHANNEL-SETUP-PASTESHEET.md](thinklate/brand/EXPORT/CHANNEL-SETUP-PASTESHEET.md)
 
-## Reason
-
-Content creation (newsletters, SEO, social media, audience building) has long feedback loops and lower first-revenue probability. The fastest path to first revenue is Product Factory (small proven-format utility products).
-
-## Reactivation Criteria
-
-Revisit after:
-- First $100 revenue from Product Factory
-- At least 5 products published
-- Clear distribution channel that directly supports product sales

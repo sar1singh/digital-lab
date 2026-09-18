@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F4F1EA"/>
+  <rect x="0" y="0" width="768" height="720" fill="#EAE5DA"/>
+  <text x="384" y="360" font-family="IBM Plex Mono, DejaVu Sans Mono, Menlo, monospace" font-size="26" font-weight="400" fill="#6E6A61" text-anchor="middle" letter-spacing="0" opacity="1">chart / archival image</text>
+  <rect x="816" y="190" width="80" height="8" fill="#A8741A"/>
+  <text x="816" y="300" font-family="Instrument Serif, Playfair Display, Libre Baskerville, DejaVu Serif, Georgia, serif" font-size="84" font-weight="600" fill="#A8741A" text-anchor="start" letter-spacing="0" opacity="1">IS AI</text>
+  <text x="816" y="396" font-family="Instrument Serif, Playfair Display, Libre Baskerville, DejaVu Serif, Georgia, serif" font-size="84" font-weight="600" fill="#1A1A17" text-anchor="start" letter-spacing="0" opacity="1">NEXT?</text>
+  <text x="1240" y="688" font-family="Instrument Serif, Playfair Display, Libre Baskerville, DejaVu Serif, Georgia, serif" font-size="24" font-weight="400" fill="#6E6A61" text-anchor="end" letter-spacing="1.5" opacity="1">ThinkLate</text>
+</svg>

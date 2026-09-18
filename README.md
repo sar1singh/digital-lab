@@ -8,11 +8,11 @@ Product Factory is not Digital-Lab. Product Factory is one execution track insid
 
 Get first product built, first product listed, first product sale, and first $50-$100 revenue as quickly and realistically as possible.
 
-## Active Track
+## Active Tracks
 
-- Active: [Product Factory](01-product-factory/PRODUCT_FACTORY_STRATEGY.md)
+- Active: [Product Factory](01-product-factory/PRODUCT_FACTORY_STRATEGY.md) (Digital utility products)
+- Active: [Content Lab: ThinkLate](03-content-lab/thinklate/START-HERE.md) (YouTube & media explainer company)
 - Parked: SaaS Lab
-- Parked: Content Lab
 - Parked: Agency Lab
 
 ## Success Metrics
