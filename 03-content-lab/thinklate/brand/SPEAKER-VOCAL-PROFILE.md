@@ -56,3 +56,21 @@ The analysis shows that **your voice does not fumble when you speak naturally**.
 2. **No Academic Jargon:** Multi-syllable names and book titles get dropped or simplified.
 3. **Pacing Target on Recording:** **135 WPM**. (Approximately 2.25 words per second).
 4. **Breath Markers in Script:** The script must explicitly contain `//` (half-beat pause) and `///` (full beat dramatic pause) so you never run out of oxygen.
+
+---
+
+## ⚡ 5. Empirical Energy Level & Fatigue Analysis (The Mid-Section Drain)
+
+| Section / Takes | Velocity (Words/sec) | Phonation % (Active Voice) | Pitch Variance (F0 Std Dev) | Perceived Energy & Delivery State |
+| :--- | :--- | :--- | :--- | :--- |
+| **Opening Hook (Takes 01–03)** | **2.74 W/s** | **67.8%** | **20.6 Hz** | ⚡ **High Kinetic Drive** (Adrenaline high, fast forward momentum). |
+| **Mid-Section (Takes 04–05, 10)** | **1.67 W/s** | **57.5%** | **19.6 Hz** *(Take 10 drops to 15.6 Hz)* | 🐢 **Energy Collapse (The 'Reading' Trap)**. Velocity crashed by 39%. Shifted from 'storytelling' into 'deciphering awkward text'. Monotone dip. |
+| **Recovery & Close (Takes 11–13)** | **2.40 W/s** | **60.7%** | **18.6 Hz** | 🎯 **Natural Authority Restored**. Relaxed confidence, punchy cadence. |
+
+### The Root Cause of Your Mid-Section "Low Energy":
+1. **It was NOT vocal weakness:** Your raw vocal volume (RMS) stayed identical (-14.6 dBFS to -15.0 dBFS across all takes), meaning your voice and diaphragm never gave out.
+2. **It was Cognitive Friction & Momentum Bleed:**
+   - In Takes 4, 5, and 10, your brain had to slow down to mentally parse unfamiliar names (*Odlyzko*), unnatural quotation tags (*quote unquote*), and number strings.
+   - When a script creates cognitive friction, the speaker involuntarily drops into **monotone defense mode** (pitch variance dropped to 15.6 Hz in Take 10), and pauses expand to 1.6+ seconds.
+   - On YouTube, **perceived energy is momentum, not shouting**. A 1.6 words/sec take with 16 pauses sounds sluggish and tired, while a 2.3 words/sec take with clean rhythm sounds electric and confident.
+
