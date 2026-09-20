@@ -46,12 +46,7 @@ high-quality Japanese anime style — clean confident linework, smooth cel
 shading with soft gradient blending, crisp highlights.
 
 THE CHARACTER — must match the reference image exactly
-An anthropomorphic owl. Warm tan and cream feathers with subtle brown
-markings. Soft rounded head with two clearly separated pointed ear tufts
-angled outward, smooth unbroken edges, no serrations or wisps. Thick round
-circular lenses in a bold dark charcoal frame with a bridge across the beak
-and visible arms. White collared shirt, deep red tie, dark brown blazer.
-Small tan beak.
+An anthropomorphic character: a stylized Japanese anime owl head set upon an adult human body. Warm tan and cream feathers with subtle brown markings on the head, two clearly separated pointed ear tufts angled outward, smooth unbroken edges, no serrations or wisps. Thick round circular lenses in a bold dark charcoal frame with a bridge across the small beak. Fully human neck, shoulders, torso, and realistic human hands with fingers for natural gestures. White collared dress shirt, deep red silk tie, tailored dark brown wool blazer. Small tan beak.
 
 Same face shape, same proportions, same colours, same glasses, same outfit
 as the reference. Only the expression changes.

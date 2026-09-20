@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThinkLate — Human-Body Owl Host Avatar Dashboard</title>
+  <style>
+    :root {
+      --navy-main: #1B2A4A;
+      --navy-dark: #0B1120;
+      --navy-card: #131E35;
+      --navy-border: #283A5E;
+      --paper: #F4F1EA;
+      --amber: #D99A2B;
+      --amber-glow: rgba(217, 154, 43, 0.2);
+      --slate: #94A3B8;
+      --blue-accent: #2563EB;
+      --blue-hover: #1D4ED8;
+      --green-accent: #10B981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background: var(--navy-dark); color: var(--paper); padding: 36px 48px; line-height: 1.5; }
+    
+    header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid var(--navy-border); padding-bottom: 24px; margin-bottom: 32px; }
+    .channel-badge { display: inline-block; background: var(--amber-glow); border: 1px solid var(--amber); color: var(--amber); padding: 4px 12px; border-radius: 20px; font-size: 13px; font-weight: 700; margin-bottom: 8px; letter-spacing: 0.5px; }
+    .page-title { font-size: 28px; font-weight: 800; color: #FFFFFF; }
+    .subtitle { font-size: 15px; color: var(--slate); margin-top: 4px; }
+    .header-links { display: flex; gap: 12px; }
+    .nav-btn { background: var(--navy-card); border: 1px solid var(--navy-border); color: var(--paper); padding: 8px 16px; border-radius: 8px; text-decoration: none; font-size: 13px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s; }
+    .nav-btn:hover { border-color: var(--amber); color: var(--amber); }
+
+    /* Specification Banner */
+    .spec-card { background: var(--navy-card); border: 1px solid var(--navy-border); border-radius: 12px; padding: 20px 24px; margin-bottom: 36px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .spec-item h4 { font-size: 12px; color: var(--amber); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+    .spec-item p { font-size: 14px; color: #CBD5E1; }
+
+    /* Postures Grid */
+    .section-title { font-size: 20px; font-weight: 700; color: var(--amber); margin-bottom: 20px; display: flex; align-items: center; gap: 8px; }
+    .postures-container { display: flex; flex-direction: column; gap: 32px; margin-bottom: 48px; }
+    
+    .posture-card { background: var(--navy-card); border: 1px solid var(--navy-border); border-radius: 14px; overflow: hidden; display: grid; grid-template-columns: 420px 1fr; gap: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); transition: border-color 0.2s; }
+    .posture-card:hover { border-color: var(--amber); }
+
+    .image-preview-pane { background: #000; display: flex; flex-direction: column; border-right: 1px solid var(--navy-border); }
+    .image-preview-pane img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+    .image-meta { padding: 12px 16px; background: rgba(11, 17, 32, 0.8); display: flex; justify-content: space-between; align-items: center; }
+    .meta-filename { font-family: monospace; font-size: 12px; color: var(--slate); }
+    .open-file-link { font-size: 12px; color: var(--amber); text-decoration: none; font-weight: 600; }
+    .open-file-link:hover { text-decoration: underline; }
+
+    .posture-content { padding: 24px; display: flex; flex-direction: column; justify-content: space-between; gap: 16px; }
+    .posture-header { display: flex; justify-content: space-between; align-items: flex-start; }
+    .posture-id { font-size: 12px; font-weight: 800; color: var(--amber); text-transform: uppercase; letter-spacing: 1px; }
+    .posture-title { font-size: 20px; font-weight: 700; color: #FFFFFF; margin-top: 2px; }
+    .scene-pill { background: rgba(37, 99, 235, 0.15); border: 1px solid #3B82F6; color: #93C5FD; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+
+    .usage-note { font-size: 14px; color: #CBD5E1; background: rgba(11, 17, 32, 0.5); padding: 10px 14px; border-radius: 8px; border-left: 3px solid var(--amber); }
+
+    .prompt-box { background: #070B14; border: 1px solid var(--navy-border); border-radius: 8px; padding: 16px; }
+    .prompt-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .prompt-label { font-size: 11px; font-weight: 700; color: var(--amber); text-transform: uppercase; letter-spacing: 0.5px; }
+    .copy-btn { background: var(--blue-accent); color: white; border: none; padding: 6px 14px; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.2s; }
+    .copy-btn:hover { background: var(--blue-hover); }
+    .copy-btn.copied { background: var(--green-accent); }
+    .prompt-text { font-family: monospace; font-size: 12.5px; color: #E2E8F0; line-height: 1.45; word-break: break-word; }
+
+    /* Workflow Guide Section */
+    .workflow-section { background: var(--navy-card); border: 1px solid var(--navy-border); border-radius: 14px; padding: 28px; margin-bottom: 40px; }
+    .workflow-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 16px; }
+    .step-box { background: #0B1120; border: 1px solid var(--navy-border); border-radius: 10px; padding: 18px; }
+    .step-num { font-size: 12px; font-weight: 800; color: var(--amber); margin-bottom: 6px; }
+    .step-box h4 { font-size: 15px; color: #FFFFFF; margin-bottom: 8px; }
+    .step-box p { font-size: 13px; color: var(--slate); }
+
+    .toast { position: fixed; bottom: 24px; right: 24px; background: var(--amber); color: #000; padding: 12px 24px; border-radius: 8px; font-weight: 700; font-size: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); display: none; z-index: 999; }
+
+    @media (max-width: 900px) {
+      .posture-card { grid-template-columns: 1fr; }
+      body { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <div class="channel-badge">THINKLATE · @wethinklate</div>
+      <h1 class="page-title">Human-Body Owl Host Avatar Dashboard</h1>
+      <p class="subtitle">Canonical 5-Posture Studio System · Clean Cel Anime Style · Solid #1B2A4A Navy Keyer Background</p>
+    </div>
+    <div class="header-links">
+      <a href="../videos/01_is-ai-a-bubble-ask-the-railways/visual_storyboard_browser.html" class="nav-btn">🎬 Video 1 Storyboard</a>
+      <a href="HUMAN-BODY-AVATAR-SYSTEM.md" class="nav-btn">📄 Open Markdown Doc</a>
+    </div>
+  </header>
+
+  <!-- Canonical Anatomy Specs -->
+  <div class="spec-card">
+    <div class="spec-item">
+      <h4>Head & Expression</h4>
+      <p>Anthropomorphic owl head, round charcoal glasses, ear tufts, intelligent deadpan presenter stare.</p>
+    </div>
+    <div class="spec-item">
+      <h4>Body & Hands</h4>
+      <p>Adult human torso, 5-finger articulated human hands, dark brown tailored blazer, white dress shirt, red tie.</p>
+    </div>
+    <div class="spec-item">
+      <h4>Background</h4>
+      <p>Solid flat deep navy <code>#1B2A4A</code> for 1-click transparency removal via DaVinci Resolve 3D Keyer.</p>
+    </div>
+    <div class="spec-item">
+      <h4>Asset Storage</h4>
+      <p>Master 16:9 PNGs saved in: <br><code>brand/postures/</code></p>
+    </div>
+  </div>
+
+  <div class="section-title">🦉 The 5 Canonical Host Postures</div>
+
+  <div class="postures-container">
+
+    <!-- Posture P1 -->
+    <div class="posture-card">
+      <div class="image-preview-pane">
+        <img src="./postures/P1_adjusting_glasses.png" alt="P1 Adjusting Glasses" loading="lazy">
+        <div class="image-meta">
+          <span class="meta-filename">P1_adjusting_glasses.png</span>
+          <a href="./postures/P1_adjusting_glasses.png" target="_blank" class="open-file-link">View Full-Res ↗</a>
+        </div>
+      </div>
+      <div class="posture-content">
+        <div>
+          <div class="posture-header">
+            <div>
+              <div class="posture-id">POSTURE P1</div>
+              <h3 class="posture-title">The Signature Glasses Adjustment</h3>
+            </div>
+            <span class="scene-pill">Scene 4 & Scene 8</span>
+          </div>
+          <div class="usage-note" style="margin-top: 12px;">
+            <strong>Primary Narration Role:</strong> The pivot & skepticism anchor. Used when revealing the historical pivot (<em>"So... let's look at the railways"</em>) or delivering cold financial truths (<em>"The tracks survived"</em>).
+          </div>
+        </div>
+
+        <div class="prompt-box">
+          <div class="prompt-header">
+            <span class="prompt-label">Google Flow / Veo Video Motion Prompt</span>
+            <button class="copy-btn" onclick="copyText('prompt-p1', this)">📋 Copy Prompt</button>
+          </div>
+          <div class="prompt-text" id="prompt-p1">Subtle 2D anime character motion of the character in the reference image. The owl gently adjusts the bridge of his dark round glasses with his right human index finger, then slightly tilts his head while delivering a deadpan, confident direct look at the camera. Occasional eye blink, natural breathing in shoulders and chest, solid deep navy #1B2A4A background, crisp 60fps cel animation, 4k.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Posture P2 -->
+    <div class="posture-card">
+      <div class="image-preview-pane">
+        <img src="./postures/P2_presenting_right.png" alt="P2 Presenting Right" loading="lazy">
+        <div class="image-meta">
+          <span class="meta-filename">P2_presenting_right.png</span>
+          <a href="./postures/P2_presenting_right.png" target="_blank" class="open-file-link">View Full-Res ↗</a>
+        </div>
+      </div>
+      <div class="posture-content">
+        <div>
+          <div class="posture-header">
+            <div>
+              <div class="posture-id">POSTURE P2</div>
+              <h3 class="posture-title">The Side-Screen Presenter (Evidence Workhorse)</h3>
+            </div>
+            <span class="scene-pill">Scenes 4, 6, 7, 10, 11, 12</span>
+          </div>
+          <div class="usage-note" style="margin-top: 12px;">
+            <strong>Primary Narration Role:</strong> Positioned on Left 40% of the screen, body angled right, presenting PDF crops, charts, and Goldman/Sequoia citations placed on Right 60%.
+          </div>
+        </div>
+
+        <div class="prompt-box">
+          <div class="prompt-header">
+            <span class="prompt-label">Google Flow / Veo Video Motion Prompt</span>
+            <button class="copy-btn" onclick="copyText('prompt-p2', this)">📋 Copy Prompt</button>
+          </div>
+          <div class="prompt-text" id="prompt-p2">Subtle 2D anime character motion of the owl presenter in the reference image. The owl is on the left side of the frame, body angled right. The owl speaks with natural head nods, occasional eye blinks behind the round glasses, and subtle organic floating motion in the extended presenting right human hand. Natural shoulder breathing motion, solid deep navy #1B2A4A background, crisp 60fps cel animation, 4k.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Posture P3 -->
+    <div class="posture-card">
+      <div class="image-preview-pane">
+        <img src="./postures/P3_explaining_hands.png" alt="P3 Explaining Hands" loading="lazy">
+        <div class="image-meta">
+          <span class="meta-filename">P3_explaining_hands.png</span>
+          <a href="./postures/P3_explaining_hands.png" target="_blank" class="open-file-link">View Full-Res ↗</a>
+        </div>
+      </div>
+      <div class="posture-content">
+        <div>
+          <div class="posture-header">
+            <div>
+              <div class="posture-id">POSTURE P3</div>
+              <h3 class="posture-title">The Conversational Explainer (Open Hands)</h3>
+            </div>
+            <span class="scene-pill">Scene 1 & Scene 2</span>
+          </div>
+          <div class="usage-note" style="margin-top: 12px;">
+            <strong>Primary Narration Role:</strong> The conversational hook. Direct eye contact, both open human hands gesturing rhythmically to introduce the premise and thesis statement.
+          </div>
+        </div>
+
+        <div class="prompt-box">
+          <div class="prompt-header">
+            <span class="prompt-label">Google Flow / Veo Video Motion Prompt</span>
+            <button class="copy-btn" onclick="copyText('prompt-p3', this)">📋 Copy Prompt</button>
+          </div>
+          <div class="prompt-text" id="prompt-p3">Subtle 2D anime character motion of the character in the reference image. The owl speaks directly to the camera with natural head movement and eye blinks behind the round glasses. Both open human hands gesture expressively and rhythmically at chest level as if explaining a concept. Natural breathing in shoulders, solid deep navy #1B2A4A background, crisp 60fps cel animation, 4k.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Posture P4 -->
+    <div class="posture-card">
+      <div class="image-preview-pane">
+        <img src="./postures/P4_thinking_chin.png" alt="P4 Thinking Chin" loading="lazy">
+        <div class="image-meta">
+          <span class="meta-filename">P4_thinking_chin.png</span>
+          <a href="./postures/P4_thinking_chin.png" target="_blank" class="open-file-link">View Full-Res ↗</a>
+        </div>
+      </div>
+      <div class="posture-content">
+        <div>
+          <div class="posture-header">
+            <div>
+              <div class="posture-id">POSTURE P4</div>
+              <h3 class="posture-title">The Contemplative Analyst (Chin Tap)</h3>
+            </div>
+            <span class="scene-pill">Scene 10 & Scene 13</span>
+          </div>
+          <div class="usage-note" style="margin-top: 12px;">
+            <strong>Primary Narration Role:</strong> Philosophical inquiry and closing question. Pensive human hand on chin, slow contemplation during the 1830s Paradox and final video takeaway.
+          </div>
+        </div>
+
+        <div class="prompt-box">
+          <div class="prompt-header">
+            <span class="prompt-label">Google Flow / Veo Video Motion Prompt</span>
+            <button class="copy-btn" onclick="copyText('prompt-p4', this)">📋 Copy Prompt</button>
+          </div>
+          <div class="prompt-text" id="prompt-p4">Subtle 2D anime character motion of the character in the reference image. The owl holds his human hand under his chin in a pensive thinking pose, with head tilted slightly. His eyes shift thoughtfully, with natural eye blinks behind the glasses and slow meditative shoulder breathing. Beak closed, solid deep navy #1B2A4A background, crisp 60fps cel animation, 4k.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Posture P5 -->
+    <div class="posture-card">
+      <div class="image-preview-pane">
+        <img src="./postures/P5_arms_crossed.png" alt="P5 Arms Crossed" loading="lazy">
+        <div class="image-meta">
+          <span class="meta-filename">P5_arms_crossed.png</span>
+          <a href="./postures/P5_arms_crossed.png" target="_blank" class="open-file-link">View Full-Res ↗</a>
+        </div>
+      </div>
+      <div class="posture-content">
+        <div>
+          <div class="posture-header">
+            <div>
+              <div class="posture-id">POSTURE P5</div>
+              <h3 class="posture-title">The Crossed Arms Invariant</h3>
+            </div>
+            <span class="scene-pill">Scene 8 & Scene 9</span>
+          </div>
+          <div class="usage-note" style="margin-top: 12px;">
+            <strong>Primary Narration Role:</strong> Deadpan reality check. Arms firmly crossed over chest, completely unimpressed by hype, reinforcing the channel invariant: <em>"The technology isn't the bubble. The timeline is."</em>
+          </div>
+        </div>
+
+        <div class="prompt-box">
+          <div class="prompt-header">
+            <span class="prompt-label">Google Flow / Veo Video Motion Prompt</span>
+            <button class="copy-btn" onclick="copyText('prompt-p5', this)">📋 Copy Prompt</button>
+          </div>
+          <div class="prompt-text" id="prompt-p5">Subtle 2D anime character motion of the character in the reference image. The owl stands with human arms crossed over his chest, looking straight at the camera with an unimpressed deadpan stare. Subtle rhythmic chest breathing, a single slow knowing head nod, and a natural eye blink behind the glasses. Beak closed, solid deep navy #1B2A4A background, crisp 60fps cel animation, 4k.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Production Integration Guide -->
+  <div class="workflow-section">
+    <div class="section-title">🛠️ 2 Workflow Methods: AI Video Loop OR DaVinci Static Cut</div>
+    <div class="workflow-steps">
+      <div class="step-box">
+        <div class="step-num">METHOD A (Zero Credits Used)</div>
+        <h4>DaVinci Resolve Dynamic Zoom</h4>
+        <p>Drop the static PNG onto Track V2. Apply <strong>3D Keyer</strong> to remove navy background. Enable <strong>Dynamic Zoom</strong> (1.00 ➔ 1.03 slow creep). Cuts cleanly between postures without spending a single AI video credit!</p>
+      </div>
+      <div class="step-box">
+        <div class="step-num">METHOD B (Google Flow / Veo)</div>
+        <h4>Image-to-Video Animation Loop</h4>
+        <p>In Google Flow, click <strong><code>+</code></strong> in prompt bar, attach posture PNG, paste the prompt from above, and hit generate. Export as 1080p MP4 and key out the navy background in DaVinci.</p>
+      </div>
+      <div class="step-box">
+        <div class="step-num">CHROMA KEYING IN DAVINCI</div>
+        <h4>3D Keyer / Delta Keyer</h4>
+        <p>On the Color Page or Edit Inspector, add 3D Keyer. Sample the <code>#1B2A4A</code> navy background. Clean the black/white clip matte to isolate the avatar perfectly over any B-roll or chart.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast">Prompt copied to clipboard!</div>
+
+  <script>
+    function copyText(elementId, btn) {
+      const text = document.getElementById(elementId).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '✓ Copied!';
+        btn.classList.add('copied');
+        
+        const toast = document.getElementById('toast');
+        toast.style.display = 'block';
+        
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.classList.remove('copied');
+          toast.style.display = 'none';
+        }, 2200);
+      });
+    }
+  </script>
+</body>
+</html>

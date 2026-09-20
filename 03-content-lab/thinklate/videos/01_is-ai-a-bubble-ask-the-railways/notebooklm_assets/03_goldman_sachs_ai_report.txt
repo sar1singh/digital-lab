@@ -1,0 +1,26 @@
+TITLE: Gen AI: Too Much Spend, Too Little Benefit?
+PUBLICATION: Goldman Sachs Global Investment Research, Top of Mind (Issue 129, June 2024)
+KEY FIGURES:
+- Jim Covello, Head of Global Equity Research, Goldman Sachs
+- Daron Acemoglu, Institute Professor, Massachusetts Institute of Technology (MIT)
+- Joseph Briggs, Senior Global Economist, Goldman Sachs
+- Kash Rangan, Senior Equity Research Analyst (Software), Goldman Sachs
+
+EXECUTIVE SUMMARY & KEY EVIDENCE:
+
+1. THE $1 TRILLION CAPEX DILEMMA
+Goldman Sachs estimates that tech giants, utilities, and corporations will spend upwards of $1 trillion on AI-related capital expenditures over the next several years, including data centers, GPU computing clusters, power grid upgrades, and networking infrastructure.
+
+2. JIM COVELLO'S CORE SKEPTICISM (HEAD OF GLOBAL EQUITY RESEARCH)
+- The Cost-to-Problem Mismatch: Covello questions whether the fundamental design of generative AI is capable of solving the complex, high-value problems required to deliver a return on this massive $1T investment. 
+- The Historical Cost Curve Fallacy: Throughout 30 years of technology history (the internet, mobile, cloud computing), technology revolutions succeeded because cheaper solutions replaced expensive solutions (e.g., e-commerce replaced expensive brick-and-mortar storefronts; cheap commodity servers replaced expensive mainframe computers). Generative AI inverted this pattern: it is vastly more expensive than the existing human and software solutions it seeks to replace.
+- Rapid Depreciation Risk: Unlike physical infrastructure (railways, real estate) that lasts for 50-100 years, AI data center hardware (GPUs) experiences rapid 3-to-5-year physical and economic obsolescence. If multi-billion-dollar revenue streams do not emerge rapidly, corporate balance sheets face massive write-downs.
+- Quotation: "AI technology is exceptionally expensive, and to justify those costs, the technology must be able to solve complex problems, which it is not designed to do... What $1 trillion problem will AI solve? Replacing low-wage jobs with tremendously expensive technology is basically the opposite of the prior technology transitions I've witnessed in my 30 years of following the tech industry."
+
+3. PROFESSOR DARON ACEMOGLU (MIT)
+- Modest Productivity Impact: Acemoglu estimates that generative AI will realistically impact less than 5% of all economic tasks over the next 10 years.
+- Macroeconomic Forecast: Generative AI will contribute only a modest 0.5% increase in total US labor productivity and a 0.9% cumulative boost to US GDP over the next decade.
+- Premature Commercialization: Excessive corporate enthusiasm is leading companies to deploy AI prematurely into enterprise workflows before accuracy, hallucination rates, and security guarantees are solved.
+
+4. SKEPTICS VS BULLS
+- While bulls (Kash Rangan, Eric Sheridan) argue that every foundational platform shift begins with an infrastructure overbuild (similar to telecom fiber in the late 1990s), Covello and Acemoglu note that the ongoing maintenance, power consumption, and replacement costs of GPU clusters make long-term idle overbuild far more economically catastrophic than passive fiber cables.
