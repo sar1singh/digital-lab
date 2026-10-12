@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recording Deck v2 &mdash; The 100% Debt Paradox | ThinkLate</title>
+  <meta name="description" content="ThinkLate teleprompter deck for The 100% Debt Paradox. Full script with breath markers, visual cues, and kinetic text callouts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+:root{--bg:#080C14;--surf:#0F1626;--card:#141D30;--bdr:#1E2C48;--txt:#F1F5F9;--muted:#64748B;--dim:#94A3B8;--gold:#F59E0B;--cyan:#06B6D4;--red:#EF4444;--grn:#10B981;--purp:#8B5CF6;--fs:30px;--lh:1.9;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--txt);font-family:'Plus Jakarta Sans',sans-serif;font-size:var(--fs);line-height:var(--lh);padding-bottom:340px;scroll-behavior:smooth;}
+#pgwrap{position:fixed;top:0;left:0;width:100%;height:5px;background:rgba(255,255,255,.05);z-index:200;}
+#pg{height:100%;width:0%;background:linear-gradient(90deg,var(--cyan),var(--gold));transition:width .1s;}
+nav{position:fixed;top:5px;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:12px 32px;background:rgba(8,12,20,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--bdr);}
+.brand{font-size:13px;font-weight:800;color:var(--gold);letter-spacing:.14em;text-transform:uppercase;}
+.ctrl{display:flex;gap:10px;align-items:center;}
+button{background:var(--card);border:1px solid var(--bdr);color:var(--dim);padding:7px 20px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;transition:all .18s;}
+button:hover{background:var(--bdr);color:var(--txt);}
+button.on{background:var(--cyan);color:#000;border-color:var(--cyan);}
+#albl{font-size:12px;color:var(--muted);font-family:'JetBrains Mono',monospace;min-width:80px;}
+#fsc button{padding:6px 14px;font-size:16px;}
+main{max-width:920px;margin:0 auto;padding:120px 40px 60px;}
+.act{margin-bottom:64px;border:1px solid var(--bdr);border-radius:18px;overflow:hidden;}
+.ah{padding:16px 30px;font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;display:flex;align-items:center;gap:12px;}
+.ah.a1{background:linear-gradient(135deg,#0f1a35,#1a0f35);color:var(--cyan);border-bottom:1px solid #1E2C48;}
+.ah.a2{background:linear-gradient(135deg,#1a1005,#251505);color:var(--gold);border-bottom:1px solid #2a1f05;}
+.ah.a3{background:linear-gradient(135deg,#150a0a,#2a0f0f);color:var(--red);border-bottom:1px solid #2a1010;}
+.ah.a4{background:linear-gradient(135deg,#0a150a,#0f2a0f);color:var(--grn);border-bottom:1px solid #102a10;}
+.ah.a5{background:linear-gradient(135deg,#100a20,#1a0f35);color:var(--purp);border-bottom:1px solid #1e1040;}
+.dot{width:10px;height:10px;border-radius:50%;background:currentColor;flex-shrink:0;}
+.ab{padding:34px 38px;display:flex;flex-direction:column;gap:26px;}
+.vc{background:rgba(6,182,212,.04);border:1px dashed rgba(6,182,212,.28);border-radius:10px;padding:10px 18px;font-size:13px;font-family:'JetBrains Mono',monospace;color:#5eead4;}
+.vc::before{content:'\1F3AC  VISUAL: ';opacity:.65;}
+.kt{background:rgba(245,158,11,.06);border:1px solid rgba(245,158,11,.32);border-radius:10px;padding:12px 22px;font-size:13px;font-family:'JetBrains Mono',monospace;color:var(--gold);letter-spacing:.04em;font-weight:800;}
+.kt::before{content:'\26A1  KT: ';opacity:.6;}
+.ln{font-size:var(--fs);line-height:var(--lh);font-weight:600;color:var(--txt);}
+.em{color:var(--gold);font-weight:800;}
+.b1{color:var(--cyan);font-size:.68em;vertical-align:super;margin:0 1px;font-weight:800;}
+.b2{color:var(--red);font-size:.68em;vertical-align:super;margin:0 1px;font-weight:800;}
+.sdiv{height:1px;background:linear-gradient(90deg,transparent,var(--bdr),transparent);margin:4px 0;}
+.outro{color:var(--muted);font-size:.78em;margin-top:28px;font-style:italic;}
+#leg{position:fixed;bottom:24px;right:28px;background:var(--card);border:1px solid var(--bdr);border-radius:12px;padding:14px 20px;font-size:12px;font-family:'JetBrains Mono',monospace;line-height:2;color:var(--dim);z-index:100;}
+::-webkit-scrollbar{width:6px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--bdr);border-radius:4px;}
+::-webkit-scrollbar-thumb:hover{background:var(--muted);}
+</style>
+</head>
+<body>
+<div id="pgwrap"><div id="pg"></div></div>
+<nav>
+  <div class="brand">&#127908; ThinkLate &middot; Recording Deck v2</div>
+  <div class="ctrl">
+    <span id="albl">ACT &mdash; / 5</span>
+    <div id="fsc" style="display:flex;gap:6px;">
+      <button onclick="cfs(-2)">A&minus;</button>
+      <button onclick="cfs(2)">A+</button>
+    </div>
+    <button id="sb" onclick="tog()">&#9654; Auto-Scroll</button>
+  </div>
+</nav>
+<main>
+
+<div class="act" data-act="1">
+  <div class="ah a1"><span class="dot"></span>ACT 1 &mdash; THE MACRO HOOK</div>
+  <div class="ab">
+    <div class="vc">2D Dark Academic Cityscape, neon red numbers ticking up: $40,100,000,000,000</div>
+    <div class="ln">
+    Look at housing today. <span class="b1">//</span> The math makes no sense at all. <span class="b2">///</span><br>
+    A lavish penthouse in Mumbai, <span class="b1">//</span> and a condo in Manhattan&hellip; <span class="b1">//</span><br>
+    Can easily cost fifteen million bucks. <span class="b2">///</span><br>
+    Giant piles of cash. <span class="b2">///</span>
+    </div>
+    <div class="vc">2D Minimalist Vector: Medieval European Castle vs Smoggy Modern Tower</div>
+    <div class="ln">
+    Yet in the old EU lands, <span class="b1">//</span> using that exact same money&hellip; <span class="b1">//</span><br>
+    You can buy a stone castle <span class="b1">//</span> built in the middle ages. <span class="b2">///</span><br>
+    With moats, <span class="b1">//</span> tall stone walls, <span class="b1">//</span> and noble dynastic past. <span class="b2">///</span><br><br>
+    In Delhi, <span class="b1">//</span> you inhale toxic smoke. <span class="b2">///</span><br>
+    In Manhattan, <span class="b1">//</span> you face endless stalled lanes. <span class="b2">///</span><br>
+    Old supply and demand <span class="b1">//</span> has completely vanished. <span class="b2">///</span>
+    </div>
+    <div class="vc">2D Vector Illustration: Stressed applicant at loan officer desk</div>
+    <div class="ln">
+    Now think about this: <span class="b1">//</span><br>
+    If you and I walk into a bank&hellip; <span class="b1">//</span><br>
+    In Miami, <span class="b1">//</span> Boston, <span class="b1">//</span> Mumbai, <span class="b1">//</span> Dallas&hellip; <span class="b1">//</span><br>
+    And ask to take a loan double what we make? <span class="b1">//</span><br>
+    They laugh at us <span class="b1">//</span> and shut the gate. <span class="b2">///</span><br><br>
+    And if someone cannot pay? <span class="b1">//</span><br>
+    Done. Finis. <span class="b2">///</span><br>
+    The bank takes the home. <span class="b1">//</span> The bank impounds the auto. <span class="b2">///</span><br>
+    And that human loses all financial peace. <span class="b2">///</span>
+    </div>
+    <div class="kt">BUT WHAT HAPPENS WHEN A NATION DOES IT?</div>
+    <div class="ln">
+    What happens when a whole nation does it? <span class="b2">///</span><br>
+    When Washington owes past tens of thousands of billions? <span class="b1">//</span><br>
+    And global politicians take loans endlessly? <span class="b1">//</span><br>
+    They do not go into default. <span class="b2">///</span><br>
+    No one evicts the White House. <span class="b2">///</span><br>
+    Instead&hellip; <span class="b1">//</span> politicians vote to lift the debt cap. <span class="b2">///</span>
+    </div>
+    <div class="vc">2D Owl Avatar sitting at podcast desk (PIP Bottom-Left)</div>
+    <div class="ln">
+    Tonight, <span class="b1">//</span> we examine the ultimate illusion. <span class="b2">///</span><br>
+    The deep money con. <span class="b2">///</span><br><br>
+    And who pays the tab? <span class="b1">//</span><br>
+    The lazy? <span class="b1">//</span> The wicked? <span class="b1">//</span><br>
+    No. <span class="b2">///</span><br>
+    It punishes the honest, <span class="b1">//</span> disciplined human <span class="b1">//</span> who saves cash. <span class="b2">///</span><br><br>
+    The system is not failing. <span class="b1">//</span><br>
+    It functions exactly as designed. <span class="b2">///</span><br>
+    You and I play a fixed game. <span class="b2">///</span>
+    </div>
+    <div class="sdiv"></div>
+  </div>
+</div>
+
+<div class="act" data-act="2">
+  <div class="ah a2"><span class="dot"></span>ACT 2 &mdash; THE STAKES &amp; THE DATA</div>
+  <div class="ab">
+    <div class="vc">2D Minimalist Line Graph showing massive debt spikes past $40T and $365T</div>
+    <div class="ln">
+    Look at the official data. <span class="b1">//</span> Digits do not lie. <span class="b2">///</span><br>
+    Total debt on the globe <span class="b1">//</span> exploded past all sane limits. <span class="b2">///</span><br>
+    Tens of thousands of billions. <span class="b2">///</span><br>
+    Japan owes two point six times its total economic output. <span class="b2">///</span><br>
+    Washington passed massive new debt peaks. <span class="b2">///</span><br>
+    And now&hellip; <span class="b1">//</span><br>
+    The nation spends a full thousand billion bucks each twelve months <span class="b1">//</span><br>
+    Just to pay the holding fees on its debt. <span class="b2">///</span><br>
+    That exceeds its whole defense budget. <span class="b2">///</span><br>
+    India and developing giants <span class="b1">//</span> must fight this same incoming tide. <span class="b2">///</span><br><br>
+    By all old textbooks, <span class="b1">//</span> this should have collapsed. <span class="b2">///</span><br>
+    So why hasn&rsquo;t it? <span class="b2">///</span>
+    </div>
+    <div class="kt">THE VILLAIN IS DILUTION.</div>
+    <div class="ln">
+    Because the villain is not the debt itself. <span class="b1">//</span><br>
+    The villain is dilution. <span class="b2">///</span><br><br>
+    When a system sinks in unpayable debt&hellip; <span class="b1">//</span><br>
+    Politicians do not pay. <span class="b2">///</span><br>
+    The titans holding solid assets do not pay. <span class="b2">///</span><br>
+    <em>You</em> do. <span class="b2">///</span>
+    </div>
+    <div class="vc">2D Vector Animation: Two apples on a wooden table, currency notes multiplying</div>
+    <div class="ln">
+    Think of a simple spot in town. <span class="b2">///</span><br>
+    Imagine two apples, <span class="b1">//</span> and two men. <span class="b2">///</span><br>
+    Each man holds ten bucks. <span class="b2">///</span><br>
+    The apple costs ten bucks. <span class="b2">///</span><br><br>
+    Now imagine the state mints new cash slips&hellip; <span class="b1">//</span><br>
+    And hands each human twenty bucks instead. <span class="b2">///</span><br>
+    The count of apples did not expand. <span class="b2">///</span><br>
+    So each apple instantly jumps to twenty bucks. <span class="b2">///</span><br>
+    That is inflation. <span class="b2">///</span>
+    </div>
+    <div class="kt">WHO TOUCHES THE MONEY FIRST?</div>
+    <div class="ln">
+    Now behold the quiet con: <span class="b1">//</span><br>
+    New money does not fall on all men at once. <span class="b2">///</span><br>
+    The human who touches that new money at the fountainhead&hellip; <span class="b1">//</span><br>
+    Wins the whole pot. <span class="b2">///</span>
+    </div>
+    <div class="sdiv"></div>
+  </div>
+</div>
+
+<div class="act" data-act="3">
+  <div class="ah a3"><span class="dot"></span>ACT 3 &mdash; THE HISTORICAL PATTERN (THE BODY)</div>
+  <div class="ab">
+    <div class="vc">2D Cohesive World Map. Mediterranean basin lit up</div>
+    <div class="ln">
+    This is not an accident of today. <span class="b2">///</span><br>
+    This is an ancient, <span class="b1">//</span> looping cycle. <span class="b2">///</span><br>
+    And it follows an unmistakable line of logic. <span class="b2">///</span>
+    </div>
+    <div class="vc">2D Vector Illustration: Legions marching, white bullion coins glinting</div>
+    <div class="ln">
+    Go back to ancient Italy. <span class="b2">///</span><br>
+    At its peak, <span class="b1">//</span> that Latin state held vast dominions. <span class="b2">///</span><br>
+    Dozens of legions <span class="b1">//</span> defending distant outposts. <span class="b2">///</span><br>
+    Each fighting man expected payment. <span class="b1">//</span> Daily. <span class="b2">///</span><br><br>
+    The official Latin coin was solid white bullion. <span class="b2">///</span><br>
+    At the peak, <span class="b1">//</span> it was almost untainted, <span class="b1">//</span> shining metal. <span class="b2">///</span><br>
+    You could step into any town&hellip; <span class="b1">//</span><br>
+    And that coin bought you meat, <span class="b1">//</span> wine, <span class="b1">//</span> a bed at night. <span class="b2">///</span><br>
+    Men put complete faith in it. <span class="b2">///</span>
+    </div>
+    <div class="kt">THE PUBLIC VAULT GOES EMPTY</div>
+    <div class="ln">
+    Then came endless battles on distant plains. <span class="b2">///</span><br>
+    The public vault was empty. <span class="b2">///</span><br>
+    And no chief of state wanted to face fighting legions <span class="b1">//</span><br>
+    To announce that money had vanished. <span class="b2">///</span><br><br>
+    So politicians made a fateful move. <span class="b2">///</span><br>
+    Instead of paying legions in solid white bullion&hellip; <span class="b1">//</span><br>
+    They melted the coins and injected cheap tin and zinc. <span class="b2">///</span><br>
+    Just a tiny bit at dawn. <span class="b1">//</span> Nobody noticed. <span class="b2">///</span><br>
+    Then additional cheap metal. <span class="b1">//</span> Then double that. <span class="b2">///</span>
+    </div>
+    <div class="vc">2D Vector Animation: Coin melted, base alloy injected, stamped again</div>
+    <div class="ln">
+    In fifty seasons&hellip; <span class="b1">//</span><br>
+    The white metal in that coin collapsed. <span class="b2">///</span><br>
+    Falling off nine tenths of clean bullion&hellip; <span class="b1">//</span><br>
+    Down to less than one twentieth. <span class="b2">///</span><br><br>
+    Think of what that did to a fighting man. <span class="b2">///</span><br>
+    He took home the exact same count of coins each moon. <span class="b2">///</span><br>
+    The coins looked authentic on the face. <span class="b2">///</span><br>
+    Yet when he walked into the shop to buy a meal&hellip; <span class="b1">//</span><br>
+    The shop doubled the tab. <span class="b1">//</span> Then pushed it up tenfold. <span class="b2">///</span><br>
+    Because the man at the stall also found out <span class="b1">//</span> the coin was hollow. <span class="b2">///</span>
+    </div>
+    <div class="kt">SAME COUNT OF COINS. HALF THE MEAL.</div>
+    <div class="ln">
+    Same count of coins. <span class="b1">//</span> Less than half the meal. <span class="b2">///</span><br><br>
+    That man was not in pain because he toiled less. <span class="b2">///</span><br>
+    He was in pain because the state diluted the value <span class="b1">//</span><br>
+    Way ahead of him. <span class="b2">///</span><br><br>
+    This is coin dilution. <span class="b2">///</span><br>
+    And it dismantled that Latin state <span class="b1">//</span><br>
+    With lethal speed. <span class="b2">///</span>
+    </div>
+    <div class="vc">2D Cohesive World Map. Zoom to Western Europe — 1720, grand Baroque halls</div>
+    <div class="ln">
+    Now jump ahead to seventeen-twenty. <span class="b2">///</span><br>
+    The old kingdom of Louis was deep in debt. <span class="b2">///</span><br>
+    Costly clashes had emptied the public vaults. <span class="b2">///</span><br>
+    The nation was insolvent. <span class="b2">///</span><br>
+    Few jobs. <span class="b1">//</span> No loans. <span class="b2">///</span>
+    </div>
+    <div class="vc">2D Illustration: John Law — confident, sharp figure in Baroque halls</div>
+    <div class="ln">
+    Then stepped in a shady math mind named John Law. <span class="b2">///</span><br>
+    He told the politicians what they longed to accept: <span class="b2">///</span><br>
+    Abandon gold coins. <span class="b1">//</span> Issue fiat banknotes instead. <span class="b2">///</span><br>
+    Set up a massive state monopoly. <span class="b1">//</span> Give it exclusive shipping lanes. <span class="b2">///</span><br>
+    Use newly minted banknotes <span class="b1">//</span> to fund public tasks and employment. <span class="b2">///</span><br>
+    The economy will bounce back. <span class="b2">///</span><br><br>
+    The state said yes. <span class="b1">//</span> They held no options. <span class="b2">///</span>
+    </div>
+    <div class="vc">2D Vector Animation: Banknotes stamped, workers lining up</div>
+    <div class="ln">
+    Initially, <span class="b1">//</span> it succeeded. <span class="b2">///</span><br>
+    Men had cash in pockets. <span class="b2">///</span><br>
+    They spent it. <span class="b1">//</span> Shops opened. <span class="b1">//</span> People found jobs. <span class="b2">///</span><br>
+    The stock of that monopoly <span class="b1">//</span> exploded thousands of times above base value. <span class="b2">///</span><br>
+    The capital felt like a boom town. <span class="b2">///</span><br><br>
+    Now look at what common folks did not see: <span class="b2">///</span><br>
+    Cantillon, <span class="b1">//</span> an astute banking mind allied with John Law&hellip; <span class="b1">//</span><br>
+    Quietly bought solid physical assets <span class="b1">//</span> using unspent cash at old tags. <span class="b2">///</span><br>
+    Land. <span class="b1">//</span> Gold. <span class="b1">//</span> Tangible goods. <span class="b2">///</span><br>
+    All ahead of the moment when the public saw banknotes flooding town. <span class="b2">///</span>
+    </div>
+    <div class="kt">CANTILLON EFFECT: WHO TOUCHES IT FIRST?</div>
+    <div class="ln">
+    By the time that newly stamped cash <span class="b1">//</span> leaked down to common folks&hellip; <span class="b1">//</span><br>
+    Costs had multiplied. <span class="b1">//</span> Doubled. <span class="b1">//</span> Leaped tenfold. <span class="b2">///</span><br><br>
+    Common men held heaps of fiat notes&hellip; <span class="b1">//</span><br>
+    Yet could buy less food. <span class="b2">///</span><br>
+    The few men closest to the issuing desk <span class="b1">//</span> bought solid assets at low tags. <span class="b2">///</span><br>
+    Wealth accumulated in few hands. <span class="b2">///</span><br><br>
+    When the bubble popped in seventeen-twenty&hellip; <span class="b1">//</span><br>
+    John Law fled in disguise. <span class="b2">///</span><br>
+    Cantillon was wealthy. <span class="b2">///</span><br>
+    And common folk? <span class="b2">///</span><br>
+    Holding piles of dead fiat slips. <span class="b2">///</span><br>
+    Unable to buy a simple meal. <span class="b2">///</span>
+    </div>
+    <div class="kt">SAME CON. DIFFERENT MILLENNIUM.</div>
+    <div class="ln">
+    Ancient coins diluted with tin. <span class="b1">//</span> New banknotes stamped on pulp. <span class="b2">///</span><br>
+    Distinct tools. <span class="b1">//</span> Identical outcome. <span class="b2">///</span><br>
+    Elite minds at the top scoop up solid assets ahead of inflation. <span class="b2">///</span><br>
+    The humble base accepts diluted tokens <span class="b1">//</span> when all goods become costly. <span class="b2">///</span>
+    </div>
+    <div class="sdiv"></div>
+  </div>
+</div>
+
+<div class="act" data-act="4">
+  <div class="ah a4"><span class="dot"></span>ACT 4 &mdash; THE MODERN MACHINERY (THE BODY)</div>
+  <div class="ab">
+    <div class="vc">2D Vector Illustration: Hyper-modern server racks, green data streams flowing</div>
+    <div class="ln">
+    Now you see the ancient logic. <span class="b2">///</span><br>
+    Behold the exact same play <span class="b1">//</span> unfolding at this moment. <span class="b2">///</span><br>
+    Using silicon chips instead of cheap tin. <span class="b2">///</span><br><br>
+    In twenty-twenty&hellip; <span class="b1">//</span> when the pandemic hit&hellip; <span class="b1">//</span><br>
+    The Fed held a sudden weekend session. <span class="b2">///</span><br>
+    They made a move <span class="b1">//</span> unmatched in all human annals. <span class="b2">///</span><br>
+    Thousands of billions of new digital bucks. <span class="b1">//</span> Minted in months. <span class="b2">///</span><br>
+    Not stamped on cotton slips. <span class="b1">//</span> Typed onto glowing displays. <span class="b2">///</span><br>
+    That is the new coin. <span class="b1">//</span> That is the new mint. <span class="b2">///</span>
+    </div>
+    <div class="kt">TRILLIONS CREATED FROM NOTHING</div>
+    <div class="ln">
+    At the exact same moment, <span class="b1">//</span> India pushed giant sums of cash. <span class="b2">///</span><br>
+    All top state banks on the globe <span class="b1">//</span> did the same thing. <span class="b2">///</span><br>
+    Japan. <span class="b1">//</span> China. <span class="b1">//</span> The EU. <span class="b2">///</span><br>
+    All of them typed new money into existence. <span class="b2">///</span><br><br>
+    Now the essential question: <span class="b1">//</span><br>
+    Into what pocket did that cash flow? <span class="b2">///</span>
+    </div>
+    <div class="vc">2D Minimalist Animation: Central bank vault → digital lines → Wall St &amp; Monopolies</div>
+    <div class="ln">
+    The Fed pushes new money to big lending houses. <span class="b2">///</span><br>
+    Those lending houses get told: <span class="b1">//</span> push it out fast. <span class="b1">//</span> Get it moving. <span class="b2">///</span><br><br>
+    Lending houses do not hand that cash <span class="b1">//</span><br>
+    To a humble technician in Mumbai <span class="b1">//</span> who might lose his job. <span class="b2">///</span><br>
+    They do not give it to a small shop in Texas <span class="b1">//</span> that might fold next week. <span class="b2">///</span><br>
+    That looks unsafe to them. <span class="b2">///</span><br><br>
+    They lend to established mega-funds and monopolies. <span class="b2">///</span><br>
+    At almost nil cost in holding fees. <span class="b2">///</span>
+    </div>
+    <div class="kt">CHEAP CASH FLOWS UP. INFLATION FLOWS DOWN.</div>
+    <div class="ln">
+    In the US, <span class="b1">//</span> massive buyout funds&hellip; <span class="b1">//</span><br>
+    Tapped that cheap liquidity to buy out thousands of family homes <span class="b1">//</span><br>
+    In twenty-twenty-one alone. <span class="b2">///</span><br>
+    Common families seeking a modest house <span class="b1">//</span><br>
+    Stood no chance against institutional buying machines. <span class="b2">///</span><br>
+    Outbid. <span class="b1">//</span> Beaten. <span class="b1">//</span> Time and time again. <span class="b2">///</span><br><br>
+    In India, <span class="b1">//</span> elite business giants moved fast. <span class="b2">///</span><br>
+    One dominant business titan <span class="b1">//</span> bought up multiple failing companies. <span class="b2">///</span><br>
+    Medical apps. <span class="b1">//</span> Daily milk supply lines. <span class="b1">//</span> Whole sales chains. <span class="b2">///</span><br>
+    Bought at discounted tags <span class="b1">//</span> while small shop bosses closed up shop. <span class="b2">///</span>
+    </div>
+    <div class="vc">2D Vector Illustration: Tech pitch desk, money flooding in, EV fleet</div>
+    <div class="ln">
+    Then came the next stage: <span class="b1">//</span> speculative tech teams. <span class="b2">///</span><br>
+    Big banks had to place capital <span class="b1">//</span> into shiny new concepts. <span class="b2">///</span><br>
+    So plug-in autos, <span class="b1">//</span> sun and wind tech, <span class="b1">//</span> and dispatch apps <span class="b1">//</span><br>
+    Found bottomless funding. <span class="b2">///</span><br><br>
+    See how this plays out: <span class="b2">///</span><br>
+    A tech team takes loans of immense scale at nil holding fees. <span class="b2">///</span><br>
+    That cash flows into a massive assembly plant <span class="b1">//</span> as a huge bulk buy. <span class="b2">///</span><br>
+    The assembly plant locks in incoming cash. <span class="b1">//</span><br>
+    And uses it to expand its massive facilities. <span class="b2">///</span><br>
+    The tech team blows its loan. <span class="b1">//</span> Then shuts down. <span class="b2">///</span><br>
+    The assembly plant keeps the physical machines. <span class="b2">///</span><br>
+    And the tech team bosses? <span class="b2">///</span><br>
+    They set up an LLC. <span class="b2">///</span><br>
+    They pay themselves consulting fees. <span class="b1">//</span> Legally. <span class="b2">///</span><br>
+    They buy solid assets ahead of the incoming inflation wave. <span class="b2">///</span><br>
+    Penthouses in Mumbai. <span class="b1">//</span> High-end condos in Manhattan. <span class="b2">///</span>
+    </div>
+    <div class="kt">THE TECH OUTFIT DIES. THE PLANT WINS.</div>
+    <div class="ln">
+    You see it now. <span class="b2">///</span><br>
+    This is not a flaw. <span class="b1">//</span> This is the machine functioning as planned. <span class="b2">///</span><br>
+    Ancient Italy melted coins. <span class="b1">//</span> The old kingdom stamped notes. <span class="b2">///</span><br>
+    Today we type digits onto glowing displays. <span class="b2">///</span><br>
+    The pipeline is identical. <span class="b2">///</span>
+    </div>
+    <div class="sdiv"></div>
+  </div>
+</div>
+
+<div class="act" data-act="5">
+  <div class="ah a5"><span class="dot"></span>ACT 5 &mdash; THE INDIVIDUAL RESOLUTION</div>
+  <div class="ab">
+    <div class="vc">2D Owl Avatar at podcast desk, leaning in closer</div>
+    <div class="ln">
+    So what does this mean to you and me? <span class="b2">///</span><br>
+    Look back at dads and moms <span class="b1">//</span> decades ago. <span class="b2">///</span><br><br>
+    In the nineteen-seventies in the US&hellip; <span class="b1">//</span><br>
+    A single middle-class income <span class="b1">//</span> easily bought a family home on a quiet lane. <span class="b2">///</span><br>
+    In India, <span class="b1">//</span> decades back&hellip; <span class="b1">//</span><br>
+    A dad with a modest desk job <span class="b1">//</span> bought a quiet plot of soil. <span class="b2">///</span><br>
+    And paid local masons to build a home. <span class="b2">///</span><br><br>
+    Can today&rsquo;s top coding talent in Austin&hellip; <span class="b1">//</span><br>
+    And elite tech minds in Delhi&hellip; <span class="b1">//</span><br>
+    Buy that same physical soil on a base wage? <span class="b2">///</span><br>
+    Almost impossible. <span class="b2">///</span><br><br>
+    You hold diplomas, <span class="b1">//</span> you spend long days and nights&hellip; <span class="b1">//</span><br>
+    Yet you slide behind. <span class="b2">///</span><br>
+    We get told that the whole globe is booming. <span class="b2">///</span><br>
+    Yet one solid unit of human sweat&hellip; <span class="b1">//</span><br>
+    Buys less physical stuff <span class="b1">//</span> than decades ago. <span class="b2">///</span>
+    </div>
+    <div class="kt">OWN TANGIBLE ASSETS</div>
+    <div class="ln">
+    That is why a lavish penthouse in Mumbai&hellip; <span class="b1">//</span><br>
+    And a tall glass building in Manhattan&hellip; <span class="b1">//</span><br>
+    Cost fifteen million bucks. <span class="b2">///</span><br>
+    That is the basin into which all diluted cash pools. <span class="b2">///</span><br><br>
+    If you leave saved funds in a checking account&hellip; <span class="b1">//</span><br>
+    The system quietly melts it down. <span class="b2">///</span><br>
+    Officials use those melting savings <span class="b1">//</span> to pay off unpayable public debt. <span class="b2">///</span><br><br>
+    The only solid move <span class="b1">//</span> is owning tangible assets. <span class="b2">///</span><br>
+    Equity in cash-positive companies <span class="b1">//</span> that lift tags with inflation. <span class="b2">///</span><br>
+    Housing and land <span class="b1">//</span> whose debt melts as time flows by. <span class="b2">///</span>
+    </div>
+    <div class="kt">STOP SWIMMING. BUILD A BOAT.</div>
+    <div class="ln">
+    Stop fighting a massive ocean tide. <span class="b2">///</span><br>
+    The tide wins each single time. <span class="b2">///</span><br>
+    Stop swimming. <span class="b1">//</span> Build a boat. <span class="b2">///</span>
+    </div>
+    <p class="outro">See you next time.</p>
+  </div>
+</div>
+</main>
+
+<div id="leg">
+  <span class="b1">//</span> Short pause (breath)<br>
+  <span class="b2">///</span> Full stop (beat + reset)<br>
+  <span style="color:#F59E0B">Gold text</span> = emphasis<br>
+  <span style="color:#5eead4">Teal block</span> = visual cue<br>
+  <span style="color:#F59E0B">&#9889; block</span> = kinetic text
+</div>
+
+<script>
+window.addEventListener('scroll',()=>{
+  const e=document.documentElement;
+  document.getElementById('pg').style.width=(e.scrollTop/(e.scrollHeight-e.clientHeight)*100)+'%';
+  let c='-';
+  document.querySelectorAll('.act').forEach(b=>{if(b.getBoundingClientRect().top<window.innerHeight*.35)c=b.dataset.act;});
+  document.getElementById('albl').textContent='ACT '+c+' / 5';
+});
+let on=false,iv=null;
+function tog(){
+  on=!on;
+  const b=document.getElementById('sb');
+  if(on){b.textContent='\u23F8 Pause';b.classList.add('on');iv=setInterval(()=>window.scrollBy(0,1.5),30);}
+  else{b.textContent='\u25B6 Auto-Scroll';b.classList.remove('on');clearInterval(iv);}
+}
+document.addEventListener('keydown',e=>{if(e.code==='Space'&&e.target.tagName!=='BUTTON'){e.preventDefault();tog();}});
+function cfs(d){const r=document.documentElement;r.style.setProperty('--fs',(parseInt(getComputedStyle(r).getPropertyValue('--fs'))+d)+'px');}
+</script>
+</body>
+</html>

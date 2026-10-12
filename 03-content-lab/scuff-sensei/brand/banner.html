@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800;900&family=Rajdhani:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 2560px;
+    height: 1440px;
+    background: #06090F;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bg-glow-center {
+    position: absolute;
+    width: 1800px;
+    height: 900px;
+    background: radial-gradient(ellipse at 50% 50%, rgba(0, 240, 255, 0.16) 0%, rgba(245, 158, 11, 0.08) 45%, transparent 70%);
+  }
+
+  .grid-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: 
+      linear-gradient(rgba(0, 240, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 240, 255, 0.04) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  .laser-bar-top {
+    position: absolute;
+    top: 508px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 5%, rgba(0, 240, 255, 0.5) 25%, rgba(245, 158, 11, 0.6) 75%, transparent 95%);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+  }
+  .laser-bar-bottom {
+    position: absolute;
+    top: 931px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 5%, rgba(245, 158, 11, 0.5) 25%, rgba(0, 240, 255, 0.6) 75%, transparent 95%);
+    box-shadow: 0 0 15px rgba(245, 158, 11, 0.4);
+  }
+
+  /* Safe Area (1546 x 423 px) Centered Exactly */
+  .safe-area {
+    width: 1546px;
+    height: 423px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  /* Left Side: Avatar / Mascot Crest */
+  .hero-crest {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .crest-box {
+    width: 240px;
+    height: 240px;
+    border-radius: 40px;
+    background: linear-gradient(135deg, rgba(20, 30, 48, 0.95) 0%, rgba(10, 16, 28, 0.98) 100%);
+    border: 3px solid rgba(0, 240, 255, 0.7);
+    box-shadow: 0 0 70px rgba(0, 240, 255, 0.4), inset 0 0 40px rgba(0, 240, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  .crest-top-tag {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #F59E0B;
+    letter-spacing: 5px;
+    text-shadow: 0 0 15px rgba(245, 158, 11, 0.8);
+    margin-bottom: 2px;
+  }
+
+  .crest-initials {
+    font-size: 96px;
+    font-weight: 900;
+    color: #FFFFFF;
+    text-shadow: 0 0 35px rgba(0, 240, 255, 1);
+    letter-spacing: 4px;
+    line-height: 0.95;
+  }
+
+  /* Brand Typography */
+  .brand-text-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tag-sup {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    color: #00F0FF;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-shadow: 0 0 15px rgba(0, 240, 255, 0.6);
+  }
+  .tag-sup::before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: #F59E0B;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #F59E0B;
+  }
+
+  .main-title {
+    font-size: 105px;
+    font-weight: 900;
+    color: #FFFFFF;
+    line-height: 0.95;
+    letter-spacing: 4px;
+    text-shadow: 0 0 50px rgba(0, 240, 255, 0.5), 0 8px 25px rgba(0,0,0,0.9);
+  }
+
+  .main-title span {
+    color: #F59E0B;
+    text-shadow: 0 0 45px rgba(245, 158, 11, 0.7);
+  }
+
+  .subtitle {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #CBD5E1;
+    margin-top: 16px;
+    letter-spacing: 2px;
+  }
+
+  /* Right Side Tactical Badges */
+  .meta-pills {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-end;
+    flex-shrink: 0;
+  }
+
+  .pill {
+    padding: 12px 26px;
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 30px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 21px;
+    font-weight: 800;
+    color: #F1F5F9;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.6);
+  }
+
+  .pill-accent {
+    border-color: rgba(0, 240, 255, 0.5);
+    color: #00F0FF;
+    background: rgba(0, 240, 255, 0.12);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
+  }
+  .pill-gold {
+    border-color: rgba(245, 158, 11, 0.5);
+    color: #F59E0B;
+    background: rgba(245, 158, 11, 0.12);
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.25);
+  }
+</style>
+</head>
+<body>
+  <div class="grid-pattern"></div>
+  <div class="bg-glow-center"></div>
+  <div class="laser-bar-top"></div>
+  <div class="laser-bar-bottom"></div>
+
+  <div class="safe-area">
+    <div class="hero-crest">
+      <div class="crest-box">
+        <div class="crest-top-tag">TACTICAL</div>
+        <div class="crest-initials">SS</div>
+      </div>
+      <div class="brand-text-col">
+        <div class="tag-sup">The Unscripted Journey</div>
+        <div class="main-title">SCUFF <span>SENSEI</span></div>
+        <div class="subtitle">UNPOLISHED PC WALKTHROUGHS · ZERO SWEAT · PURE BACKLOG</div>
+      </div>
+    </div>
+
+    <div class="meta-pills">
+      <div class="pill pill-accent">● 4K 60FPS MASTER PC</div>
+      <div class="pill pill-gold">● THE LAST OF US · RDR 2</div>
+      <div class="pill">● ZERO EDITING · RAW ACTION</div>
+    </div>
+  </div>
+</body>
+</html>

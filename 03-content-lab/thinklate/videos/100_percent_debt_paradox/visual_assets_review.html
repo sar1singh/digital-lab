@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThinkLate Video 2 — Visual Assets Gallery & Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #080C14;
+      --card: #0F1626;
+      --border: #1E2C48;
+      --text: #F1F5F9;
+      --muted: #94A3B8;
+      --gold: #F59E0B;
+      --cyan: #06B6D4;
+      --red: #EF4444;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      padding: 40px;
+      line-height: 1.6;
+    }
+    header {
+      max-width: 1400px;
+      margin: 0 auto 40px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    h1 { font-size: 32px; font-weight: 800; color: var(--gold); letter-spacing: -0.02em; }
+    p.sub { color: var(--muted); font-size: 14px; font-family: 'JetBrains Mono', monospace; }
+    .badge {
+      background: rgba(6, 182, 212, 0.1);
+      border: 1px solid var(--cyan);
+      color: var(--cyan);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .section-title {
+      max-width: 1400px;
+      margin: 40px auto 20px;
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--cyan);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-left: 4px solid var(--cyan);
+      padding-left: 14px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+      gap: 28px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .asset-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .asset-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold);
+    }
+    .asset-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: contain;
+      background: #05080E;
+      display: block;
+      border-bottom: 1px solid var(--border);
+    }
+    .asset-info {
+      padding: 16px 20px;
+    }
+    .asset-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      font-family: 'JetBrains Mono', monospace;
+      margin-bottom: 4px;
+    }
+    .asset-desc {
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-top: 8px;
+      text-transform: uppercase;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .tag.scene { background: rgba(245, 158, 11, 0.15); color: var(--gold); }
+    .tag.card { background: rgba(6, 182, 212, 0.15); color: var(--cyan); }
+    .tag.kt { background: rgba(239, 68, 68, 0.15); color: var(--red); }
+    .tag.thumb { background: rgba(139, 92, 246, 0.15); color: #C084FC; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>ThinkLate Video 2 — Visual & Audio Suite</h1>
+      <p class="sub">Audio Track: 10:50 (650s) | The 100% Debt Paradox | Full Mix + 26 Visual Assets</p>
+    </div>
+    <div class="badge">MIX & ASSET SUITE READY</div>
+  </header>
+
+  <!-- Audio Player Section -->
+  <div style="max-width: 1400px; margin: 0 auto 30px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 24px;">
+    <div style="font-size: 18px; font-weight: 800; color: var(--gold); margin-bottom: 6px;">🎧 Master Audio Previews (Balanced Voice + Royalty-Free Ambient Bed)</div>
+    <p style="color: var(--muted); font-size: 13px; margin-bottom: 20px;">The voiceover volume was reduced by 3.5 dB (to -18.5 LUFS) so it sits smoothly and naturally over the background music without ear fatigue.</p>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+      <div style="background: rgba(8,12,20,0.6); padding: 16px; border-radius: 10px; border: 1px solid var(--border);">
+        <div style="font-size: 14px; font-weight: 700; color: var(--cyan); margin-bottom: 8px;">Option A: Full Mix with "Ambiment" (Deep Ambient Drone, 432Hz vibe)</div>
+        <audio controls style="width: 100%;">
+          <source src="audio_takes/full_mix_ambiment_drone.wav" type="audio/wav">
+          Your browser does not support audio.
+        </audio>
+      </div>
+
+      <div style="background: rgba(8,12,20,0.6); padding: 16px; border-radius: 10px; border: 1px solid var(--border);">
+        <div style="font-size: 14px; font-weight: 700; color: var(--gold); margin-bottom: 8px;">Option B: Full Mix with "Dark Fog" (Moody Investigative Suspense)</div>
+        <audio controls style="width: 100%;">
+          <source src="audio_takes/full_mix_voice_and_ambient.wav" type="audio/wav">
+          Your browser does not support audio.
+        </audio>
+      </div>
+    </div>
+  </div>
+
+  <!-- MASTER VIDEO PLAYER -->
+  <div style="max-width: 1400px; margin: 0 auto 40px; background: #0F1626; border: 2px solid var(--gold); border-radius: 16px; padding: 24px; box-shadow: 0 16px 36px rgba(0,0,0,0.5);">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+      <div>
+        <h2 style="color: var(--gold); font-size: 22px; font-weight: 800; display: flex; align-items: center; gap: 10px;">
+          <span>🎬</span> MASTER VIDEO RENDER: THE 100% DEBT PARADOX
+        </h2>
+        <p style="color: var(--muted); font-size: 13px; font-family: 'JetBrains Mono', monospace; margin-top: 4px;">
+          10:50 Broadcast Cut &bull; 1080p 30fps &bull; H.264 (NVENC) + AAC 320k &bull; 184.9 MB &bull; Real-Audio Synced (24 Scenes) &bull; QC: 100/100 PASS
+        </p>
+      </div>
+      <span class="badge" style="border-color: #22C55E; color: #22C55E; background: rgba(34,197,94,0.1);">QC 100/100 PASSED</span>
+    </div>
+    
+    <video controls style="width: 100%; max-height: 700px; border-radius: 12px; background: #000; border: 1px solid var(--border);" preload="metadata">
+      <source src="ThinkLate_Video02_The_100_Percent_Debt_Paradox.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    <div style="display: flex; gap: 24px; margin-top: 14px; font-size: 13px; color: var(--muted); font-family: 'JetBrains Mono', monospace; flex-wrap: wrap;">
+      <div><strong style="color: var(--cyan);">Track 1:</strong> Balanced Voiceover + Ambiment 432Hz Ducked Bed</div>
+      <div><strong style="color: var(--cyan);">Track 2:</strong> 24 Scenes Synced to Speech Timecodes (Whisper AI)</div>
+      <div><strong style="color: var(--cyan);">Track 3:</strong> 17 Evidence Cards & Kinetic Text Overlays</div>
+      <div><strong style="color: var(--cyan);">Track 4:</strong> 35+ Synchronized SFX Cues (Sub-Booms, Whooshes, Blips)</div>
+      <div><strong style="color: #22C55E;">Sync Drift:</strong> 22ms (&lt; 100ms threshold)</div>
+    </div>
+  </div>
+
+  <div class="section-title">01. YouTube High-CTR Thumbnail</div>
+  <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));">
+    <div class="asset-card">
+      <img src="assets/thumbnail_video02_40t_debt.png" style="height: 220px; object-fit: cover;" alt="Thumbnail Variant A">
+      <div class="asset-info">
+        <div class="asset-name">Variant A: $40.1T Debt Shock</div>
+        <div class="asset-desc">Owl Avatar + Crimson $40.1T Debt Counter. High-stakes macro hook.</div>
+        <span class="tag thumb" style="border-color: #EF4444; color: #EF4444;">Angle: Macro Shock</span>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="assets/thumbnail_variant_b_housing_paradox.png" style="height: 220px; object-fit: cover;" alt="Thumbnail Variant B">
+      <div class="asset-info">
+        <div class="asset-name">Variant B: $15M Castle or Condo?</div>
+        <div class="asset-desc">Owl Avatar + Cyan/Gold Contrast. Curiosity gap & real estate absurdity.</div>
+        <span class="tag thumb" style="border-color: #06B6D4; color: #06B6D4;">Angle: Curiosity Contrast</span>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="assets/thumbnail_variant_c_cantillon_con.png" style="height: 220px; object-fit: cover;" alt="Thumbnail Variant C">
+      <div class="asset-info">
+        <div class="asset-name">Variant C: Who Gets It First?</div>
+        <div class="asset-desc">Owl Avatar + Warning Glow. Mechanism focus on how savings melt down.</div>
+        <span class="tag thumb" style="border-color: #F59E0B; color: #F59E0B;">Angle: The Mechanism</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">02. Cinematic 16:9 Scene B-Roll Plates (Track 2)</div>
+  <div class="grid">
+    <div class="asset-card">
+      <img src="assets/scene01_city_debt_ticker.jpg" alt="Scene 01">
+      <div class="asset-info">
+        <div class="asset-name">scene01_city_debt_ticker.jpg</div>
+        <div class="asset-desc">Act 1 Opening Hook: 2D Dark Academic Cityscape at night with colossal glowing $40.1T digital ticker ascending into the stormy clouds.</div>
+        <span class="tag scene">Act 1 Plate</span>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="assets/scene02_medieval_castle.jpg" alt="Scene 02">
+      <div class="asset-info">
+        <div class="asset-name">scene02_medieval_castle.jpg</div>
+        <div class="asset-desc">Act 1 Asset Contrast: 500-year-old stone castle in misty European valley with water moat and drawbridge ($15M contrast).</div>
+        <span class="tag scene">Act 1 Plate</span>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="assets/scene07_two_apples_inflation.jpg" alt="Scene 07">
+      <div class="asset-info">
+        <div class="asset-name">scene07_two_apples_inflation.jpg</div>
+        <div class="asset-desc">Act 2 Inflation Model: Two crisp red apples on rustic wooden table with glowing currency banknotes multiplying into the dark air.</div>
+        <span class="tag scene">Act 2 Plate</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">03. High-DPI Evidence Cards (Track 4 Overlays)</div>
+  <div class="grid">
+    <div class="asset-card">
+      <img src="assets/card_act1_realestate_paradox.png" alt="Card Act 1">
+      <div class="asset-info">
+        <div class="asset-name">card_act1_realestate_paradox.png</div>
+        <div class="asset-desc">The Housing Paradox: Gurgaon/Manhattan Condos vs 500-yr old European Chateaux at $15M.</div>
+        <span class="tag card">Evidence Card</span>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="assets/card_act2_debt_benchmarks.png" alt="Card Act 2">
+      <div class="asset-info">
+        <div class="asset-name">card_act2_debt_benchmarks.png</div>
+        <div class="asset-desc">The Global Debt Ledger: $365T Global Debt | $40.1T US Debt | $1T/yr Net Interest exceeding Defense.</div>
+        <span class="tag card">Evidence Card</span>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="assets/card_act3_denarius_purity.png" alt="Card Act 3">
+      <div class="asset-info">
+        <div class="asset-name">card_act3_denarius_purity.png</div>
+        <div class="asset-desc">Roman Debasement Curve: Denarius silver purity collapsing from 90% down to less than 5%.</div>
+        <span class="tag card">Evidence Card</span>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="assets/card_act4_institutional_housing.png" alt="Card Act 4">
+      <div class="asset-info">
+        <div class="asset-name">card_act4_institutional_housing.png</div>
+        <div class="asset-desc">The Institutional Land Grab: 300,000+ homes acquired by buyout funds using cheap Fed credit.</div>
+        <span class="tag card">Evidence Card</span>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="assets/card_act5_median_home_vs_income.png" alt="Card Act 5">
+      <div class="asset-info">
+        <div class="asset-name">card_act5_median_home_vs_income.png</div>
+        <div class="asset-desc">The Generational Divide: Home price to income ratio surging from 3.2x (1970) to 7.8x (2026).</div>
+        <span class="tag card">Evidence Card</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">04. Kinetic Typography Plates (Track 4 Punchlines)</div>
+  <div class="grid">
+    <div class="asset-card">
+      <img src="assets/kt_act1_what_if_nation.png" alt="KT Act 1">
+      <div class="asset-info">
+        <div class="asset-name">kt_act1_what_if_nation.png</div>
+        <div class="asset-desc">"BUT WHAT HAPPENS WHEN A NATION DOES IT?"</div>
+        <span class="tag kt">Kinetic Text</span>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="assets/kt_act2_villain_dilution.png" alt="KT Act 2">
+      <div class="asset-info">
+        <div class="asset-name">kt_act2_villain_dilution.png</div>
+        <div class="asset-desc">"THE VILLAIN IS DILUTION."</div>
+        <span class="tag kt">Kinetic Text</span>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="assets/kt_act2_who_touches_first.png" alt="KT Act 2">
+      <div class="asset-info">
+        <div class="asset-name">kt_act2_who_touches_first.png</div>
+        <div class="asset-desc">"WHO TOUCHES THE MONEY FIRST?"</div>
+        <span class="tag kt">Kinetic Text</span>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="assets/kt_act3_same_coins_half_meal.png" alt="KT Act 3">
+      <div class="asset-info">
+        <div class="asset-name">kt_act3_same_coins_half_meal.png</div>
+        <div class="asset-desc">"SAME COUNT OF COINS. HALF THE MEAL."</div>
+        <span class="tag kt">Kinetic Text</span>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="assets/kt_act3_cantillon_effect.png" alt="KT Act 3">
+      <div class="asset-info">
+        <div class="asset-name">kt_act3_cantillon_effect.png</div>
+        <div class="asset-desc">"CANTILLON EFFECT: WHO GETS IT FIRST?"</div>
+        <span class="tag kt">Kinetic Text</span>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="assets/kt_act5_build_a_boat.png" alt="KT Act 5">
+      <div class="asset-info">
+        <div class="asset-name">kt_act5_build_a_boat.png</div>
+        <div class="asset-desc">"STOP SWIMMING. BUILD A BOAT."</div>
+        <span class="tag kt">Kinetic Text</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

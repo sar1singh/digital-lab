@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800;900&family=Rajdhani:wght@700;800&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle at 50% 45%, #151D2F 0%, #0A0E17 75%, #05070B 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .grid {
+    position: absolute;
+    inset: 0;
+    background-image: 
+      linear-gradient(rgba(0, 240, 255, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 240, 255, 0.06) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+  
+  .glow-ring {
+    position: absolute;
+    width: 680px;
+    height: 680px;
+    border-radius: 50%;
+    border: 2px dashed rgba(0, 240, 255, 0.4);
+  }
+  
+  .inner-ring {
+    position: absolute;
+    width: 610px;
+    height: 610px;
+    border-radius: 50%;
+    border: 3px solid rgba(245, 158, 11, 0.6);
+    box-shadow: 0 0 60px rgba(0, 240, 255, 0.3), inset 0 0 50px rgba(245, 158, 11, 0.2);
+  }
+
+  .badge-container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top-label {
+    font-size: 20px;
+    color: #F59E0B;
+    text-shadow: 0 0 20px rgba(245, 158, 11, 0.9);
+    letter-spacing: 10px;
+    margin-bottom: 2px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 800;
+  }
+
+  .emblem {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 4px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headset-arch {
+    position: absolute;
+    width: 270px;
+    height: 200px;
+    border: 15px solid #00F0FF;
+    border-bottom: none;
+    border-radius: 150px 150px 0 0;
+    top: 20px;
+    box-shadow: 0 -5px 30px rgba(0, 240, 255, 0.7);
+  }
+
+  .earcup-l, .earcup-r {
+    position: absolute;
+    width: 44px;
+    height: 105px;
+    background: #0F172A;
+    border: 4px solid #F59E0B;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(245, 158, 11, 0.6);
+    top: 100px;
+  }
+  .earcup-l { left: 8px; transform: rotate(-5deg); }
+  .earcup-r { right: 8px; transform: rotate(5deg); }
+
+  .mask {
+    position: absolute;
+    width: 190px;
+    height: 155px;
+    background: linear-gradient(180deg, #1E293B 0%, #0B1120 100%);
+    border: 4px solid #00F0FF;
+    clip-path: polygon(15% 0%, 85% 0%, 100% 70%, 50% 100%, 0% 70%);
+    top: 92px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+  }
+
+  .visor {
+    width: 140px;
+    height: 42px;
+    background: #00F0FF;
+    border-radius: 8px;
+    box-shadow: 0 0 30px #00F0FF;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .crack {
+    position: absolute;
+    width: 4px;
+    height: 48px;
+    background: #0B1120;
+    left: 52px;
+    top: -5px;
+    transform: rotate(25deg);
+  }
+  .crack::after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 4px;
+    background: #0B1120;
+    top: 20px;
+    left: 0;
+    transform: rotate(-45deg);
+  }
+
+  .monogram {
+    font-size: 72px;
+    font-weight: 900;
+    color: #FFFFFF;
+    letter-spacing: 5px;
+    text-shadow: 0 0 35px rgba(0, 240, 255, 0.9), 0 5px 15px rgba(0,0,0,0.9);
+    margin-top: 10px;
+  }
+
+  .sub-tag {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: #F59E0B;
+    letter-spacing: 14px;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px rgba(245, 158, 11, 0.7);
+    margin-top: 2px;
+  }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="glow-ring"></div>
+  <div class="inner-ring"></div>
+  
+  <div class="badge-container">
+    <div class="top-label">// UNFILTERED //</div>
+    <div class="emblem">
+      <div class="headset-arch"></div>
+      <div class="earcup-l"></div>
+      <div class="earcup-r"></div>
+      <div class="mask">
+        <div class="visor">
+          <div class="crack"></div>
+        </div>
+      </div>
+    </div>
+    <div class="monogram">SCUFF</div>
+    <div class="sub-tag">SENSEI</div>
+  </div>
+</body>
+</html>

@@ -41,6 +41,17 @@ The analysis shows that **your voice does not fumble when you speak naturally**.
 * **Vocal Result:** Words blur together slightly in the first 15 seconds.
 * **Rule for Recording:** **Take a full belly breath before pressing Record.** Deliver the first sentence like you're leaning over a coffee table telling a friend a secret, not reading a teleprompter countdown.
 
+### 🚫 Trap 4: The Esoteric Vocabulary Tongue-Twister (Video 2 Finding)
+* **What broke:** Esoteric historical/economic terms like "bullion", "Cantillon", "denarius", "seigniorage", "debasement".
+* **Vocal Result:** Vocal stumble, awkward pronunciation, loss of conversational momentum, and repeated retakes in Audacity.
+* **Rule for Scripting (The Everyday English Law):**
+  - **BANNED.** Translate all academic concepts into everyday spoken language:
+    - *Bad:* `"The bullion standard was replaced by debased denarii."`
+    - *Good:* `"The government melted down the gold bars and watered down the silver coins."`
+    - *Bad:* `"The Cantillon effect ensures institutional seigniorage."`
+    - *Good:* `"Whoever touches the freshly printed cash first gets rich before prices go up."`
+  - If a historical proper name is unavoidable, provide an explicit phonetic badge in `recording_deck.html` (e.g. `[CAN-tee-yon]`).
+
 ---
 
 ## 🎙️ 3. Your Natural Vocal Strengths (What Shone in Video 1)

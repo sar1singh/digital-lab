@@ -5,8 +5,11 @@
 *.wav
 temp_segments/
 audio_takes/
+render_cache/
+*.tmp
 
 # Python & OS
+
 __pycache__/
 *.py[cod]
 .DS_Store

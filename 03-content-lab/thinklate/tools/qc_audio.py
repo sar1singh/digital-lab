@@ -11,19 +11,30 @@ import wave
 import array
 import math
 import argparse
+import subprocess
 
 def analyze_take(wav_path, word_count=None):
     if not os.path.exists(wav_path):
         print(f"Error: File not found: {wav_path}")
         return None
 
-    with wave.open(wav_path, "rb") as wf:
-        sr = wf.getframerate()
-        ch = wf.getnchannels()
-        nframes = wf.getnframes()
+    try:
+        with wave.open(wav_path, "rb") as wf:
+            sr = wf.getframerate()
+            ch = wf.getnchannels()
+            nframes = wf.getnframes()
+            dur = nframes / float(sr)
+            raw = wf.readframes(nframes)
+    except Exception:
+        # Fallback to ffmpeg to decode cleanly to raw PCM s16le mono 44100
+        cmd = ["ffmpeg", "-v", "quiet", "-i", wav_path, "-f", "s16le", "-ac", "1", "-ar", "44100", "-"]
+        proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        raw = proc.stdout
+        sr = 44100
+        ch = 1
+        nframes = len(raw) // 2
         dur = nframes / float(sr)
-        raw = wf.readframes(nframes)
-        
+
     # Ultra-fast unpack with array
     samples = array.array("h")
     samples.frombytes(raw)
