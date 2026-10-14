@@ -28,7 +28,10 @@ def process_audio(input_file, output_file=None):
     filter_chain = (
         "highpass=f=80,"
         "speechnorm=p=0.9:e=3.5:c=2.5:r=0.001:f=0.002,"
-        "equalizer=f=4200:t=q:w=1.5:g=2.5,"
+        "equalizer=f=300:t=q:w=1.5:g=-2.5,"      # Clear chest mud & congestion
+        "equalizer=f=950:t=q:w=1.8:g=-3.0,"      # Remove nasal resonance / boxy nose tone
+        "equalizer=f=4000:t=q:w=1.5:g=2.0,"     # Crisp speech presence & vocal articulation
+        "equalizer=f=6200:t=q:w=2.5:g=-2.0,"     # Tame dry-mouth saliva clicks & sibilance
         "acompressor=threshold=-18dB:ratio=2.5:attack=25:release=140,"
         "loudnorm=I=-15.0:TP=-1.5:LRA=9,"
         "alimiter=level=false:limit=0.841"

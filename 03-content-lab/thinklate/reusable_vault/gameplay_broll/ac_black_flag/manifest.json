@@ -1,0 +1,41 @@
+{
+  "game": "Assassin's Creed IV: Black Flag",
+  "source_recording": "C:\\Users\\sar1s\\Videos\\obs\\2026-10-12 22-44-03.mkv",
+  "source_resolution": "1280x720@60fps",
+  "target_resolution": "1920x1080@60fps",
+  "vault_directory": "reusable_vault/gameplay_broll/ac_black_flag",
+  "clips": [
+    {
+      "filename": "blackflag_naval_night_combat_v36.mp4",
+      "timestamp_in": "00:04:55",
+      "duration_sec": 8.0,
+      "tags": ["naval_combat", "night", "cannons", "jackdaw", "galleon"],
+      "video_cues": ["V36"],
+      "description": "Jackdaw aiming and maneuvering in night high-seas combat against enemy Spanish ship with cannon fire arcs."
+    },
+    {
+      "filename": "blackflag_panoramic_havana_dock_view.mp4",
+      "timestamp_in": "00:24:45",
+      "duration_sec": 10.0,
+      "tags": ["cinematic", "panoramic", "viewpoint_sync", "no_hud", "havana", "fortress", "caribbean_sea"],
+      "video_cues": ["reusable_scenic"],
+      "description": "Clean 360 viewpoint synchronization panoramic camera sweep over Havana town, Spanish stone fortress, and blue Caribbean waters. Zero HUD."
+    },
+    {
+      "filename": "blackflag_havana_docks_walk_v47.mp4",
+      "timestamp_in": "00:35:05",
+      "duration_sec": 8.0,
+      "tags": ["exploration", "docks", "boardwalk", "market", "edward_kenway", "daytime"],
+      "video_cues": ["V47"],
+      "description": "Edward Kenway walking across wooden boardwalks and vibrant daytime street market stalls in Havana."
+    },
+    {
+      "filename": "blackflag_jackdaw_broadside_fire_v55.mp4",
+      "timestamp_in": "00:06:20",
+      "duration_sec": 8.0,
+      "tags": ["naval_combat", "broadside", "cannons", "explosions", "jackdaw"],
+      "video_cues": ["V55"],
+      "description": "Heavy cannon fire and naval engagement with sea spray and explosions during night mission."
+    }
+  ]
+}

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThinkLate Video 03 — Master Visual Storyboard & Prompt Cockpit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #080C14;
+      --card: #0F1626;
+      --border: #1E2C48;
+      --text: #F1F5F9;
+      --muted: #94A3B8;
+      --gold: #F59E0B;
+      --cyan: #06B6D4;
+      --red: #EF4444;
+      --green: #10B981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      padding: 30px;
+      line-height: 1.6;
+    }
+    header {
+      max-width: 1400px;
+      margin: 0 auto 30px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .title-group h1 { font-size: 28px; font-weight: 800; color: var(--gold); letter-spacing: -0.02em; }
+    .title-group p { color: var(--muted); font-size: 14px; font-family: 'JetBrains Mono', monospace; margin-top: 4px; }
+    .status-badge {
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid var(--green);
+      color: var(--green);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .filter-bar {
+      max-width: 1400px;
+      margin: 0 auto 30px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--border);
+      color: var(--text);
+      border-color: var(--cyan);
+    }
+    .section-header {
+      max-width: 1400px;
+      margin: 35px auto 18px;
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--cyan);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-left: 4px solid var(--cyan);
+      padding-left: 14px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+      gap: 24px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .story-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .screen-preview {
+      width: 100%;
+      height: 220px;
+      background: #05080E;
+      position: relative;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      overflow: hidden;
+    }
+    .screen-tag {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(8, 12, 20, 0.85);
+      border: 1px solid var(--border);
+      color: var(--gold);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      z-index: 10;
+    }
+    .screen-time {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(8, 12, 20, 0.85);
+      border: 1px solid var(--border);
+      color: var(--cyan);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      z-index: 10;
+    }
+    .mock-visual {
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      font-weight: 700;
+      position: relative;
+    }
+    .mock-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      height: 100%;
+      gap: 8px;
+    }
+    .mock-split-half {
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .mock-card-overlay {
+      position: absolute;
+      right: 12px;
+      width: 48%;
+      height: 80%;
+      background: rgba(15, 22, 38, 0.95);
+      border: 1px solid var(--cyan);
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+      font-size: 11px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+    .card-body {
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex-grow: 1;
+    }
+    .audio-block {
+      background: rgba(8, 12, 20, 0.6);
+      border-left: 3px solid var(--gold);
+      padding: 8px 12px;
+      border-radius: 0 6px 6px 0;
+      font-size: 13px;
+      color: #E2E8F0;
+    }
+    .audio-label {
+      font-size: 10px;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+    .prompt-box {
+      background: #05080E;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px 12px;
+      position: relative;
+    }
+    .prompt-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+    .platform-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--cyan);
+    }
+    .copy-btn {
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 11px;
+      font-family: 'JetBrains Mono', monospace;
+      padding: 2px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .copy-btn:hover {
+      background: var(--cyan);
+      color: #000;
+    }
+    .prompt-text {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.5;
+      max-height: 80px;
+      overflow-y: auto;
+    }
+    .qc-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 8px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      font-size: 11px;
+      color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .qc-pass {
+      color: var(--green);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="title-group">
+      <h1>ThinkLate Video 03 — Storyboard & Visual Prompt Cockpit</h1>
+      <p>EPISODE: "You Don't Own What You Buy." | DURATION: ~10:00 | ASSET POOL: 23 CORE VISUAL NODES (60–90 CUTS)</p>
+    </div>
+    <div class="status-badge">✓ DESIGN QC & AGENTS GROUNDED</div>
+  </header>
+
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterClass('all')">All Assets</button>
+    <button class="filter-btn" onclick="filterClass('class1')">2D Art Plates (Gemini Nano)</button>
+    <button class="filter-btn" onclick="filterClass('class2')">AI Motion Video (Luma/Kling)</button>
+    <button class="filter-btn" onclick="filterClass('class3')">Gameplay B-Roll</button>
+    <button class="filter-btn" onclick="filterClass('class4')">Primary Evidence Cards</button>
+    <button class="filter-btn" onclick="filterClass('class5')">Kinetic Typography</button>
+  </div>
+
+  <!-- ACT 1 -->
+  <div class="section-header">ACT 1: THE TANGIBLE ABSURDITY & THE $80 HOOK (00:00 – 02:00)</div>
+  <div class="grid">
+
+    <!-- V01 -->
+    <div class="story-card" data-class="class1">
+      <div class="screen-preview">
+        <span class="screen-tag">V01 · 2D ART PLATE</span>
+        <span class="screen-time">00:00 – 00:05</span>
+        <div class="mock-visual" style="background: radial-gradient(circle, #1E1B4B 0%, #080C14 100%); border: 1px solid #4338CA;">
+          <div style="color: #EF4444; text-shadow: 0 0 12px rgba(239,68,68,0.6);">
+            💿 SHATTERED BLU-RAY DISC<br>
+            <span style="color: #94A3B8; font-size: 11px;">Exposing Glowing Red Binary Circuitry</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="audio-block">
+          <div class="audio-label">Spoken Dialogue Hook</div>
+          "You paid eighty dollars for a brand new game... but what did you actually buy?"
+        </div>
+        <div class="prompt-box">
+          <div class="prompt-header">
+            <span class="platform-pill">GEMINI NANO / MIDJOURNEY</span>
+            <button class="copy-btn" onclick="copyPrompt('p1')">Copy</button>
+          </div>
+          <div class="prompt-text" id="p1">Ultra-detailed cinematic macro photograph of a shiny Blu-ray video game disc snapped cleanly in half on a dark slate table. Inside the fracture line, glowing red digital binary code and circuit traces are exposed. Dramatic studio rim lighting, deep navy background #0F1626, warm amber accents, 35mm film grain, 16:9 widescreen, 8k.</div>
+        </div>
+        <div class="qc-footer">
+          <span>Dual Coding: Physical vs Digital</span>
+          <span class="qc-pass">✓ [QC: PASS]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- V02 -->
+    <div class="story-card" data-class="class2">
+      <div class="screen-preview">
+        <span class="screen-tag">V02 · AI LIVING VIDEO</span>
+        <span class="screen-time">00:05 – 00:11</span>
+        <div class="mock-visual" style="background: #0B1120; border: 1px solid #1E293B;">
+          <div style="color: #F59E0B;">
+            📦 OPEN STEELBOOK UNBOXING<br>
+            <span style="color: #E2E8F0; font-size: 11px;">Empty Tray Holding Tiny Paper Code Slip</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="audio-block">
+          <div class="audio-label">Spoken Dialogue</div>
+          "You open the collector's box... and there is no disc. Just an empty plastic tray and a slip of paper."
+        </div>
+        <div class="prompt-box">
+          <div class="prompt-header">
+            <span class="platform-pill">LUMA DREAM MACHINE / KLING AI</span>
+            <button class="copy-btn" onclick="copyPrompt('p2')">Copy</button>
+          </div>
+          <div class="prompt-text" id="p2">Slow smooth camera push forward, shallow depth of field. A collector video game case sits open on a dark oak desk. Inside, instead of a game disc, there is an empty circular plastic hub holding a single white paper voucher with a printed digital code. Atmospheric haze, volumetric lighting, 24fps.</div>
+        </div>
+        <div class="qc-footer">
+          <span>Atmospheric Motion Push</span>
+          <span class="qc-pass">✓ [QC: PASS]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- V03 -->
+    <div class="story-card" data-class="class4">
+      <div class="screen-preview">
+        <span class="screen-tag">V03 · PRIMARY EVIDENCE</span>
+        <span class="screen-time">00:11 – 00:18</span>
+        <div class="mock-visual" style="background: #020617;">
+          <div style="opacity: 0.3; font-size: 11px;">[BACKGROUND DARK STUDIO VIDEO]</div>
+          <div class="mock-card-overlay">
+            <div style="color: #94A3B8; font-size: 9px;">PLAYSTATION DIRECT</div>
+            <div style="color: #F1F5F9; font-weight:800; font-size:11px;">PS5 Pro: $699.99</div>
+            <div style="color: #EF4444; font-weight:800; font-size:11px; margin-top:4px;">Disc Drive: $79.99 [SOLD OUT]</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="audio-block">
+          <div class="audio-label">Spoken Dialogue</div>
+          "Sony launches a seven-hundred-dollar console with no disc drive. Want to play discs you own? Pay eighty dollars extra."
+        </div>
+        <div class="prompt-box">
+          <div class="prompt-header">
+            <span class="platform-pill">OBS SCREEN CAPTURE / FIGMA</span>
+            <button class="copy-btn" onclick="copyPrompt('p3')">Copy</button>
+          </div>
+          <div class="prompt-text" id="p3">Capture direct from direct.playstation.com. Clean 150% crop of PS5 Pro checkout configuration showing $699 base console and $79.99 Disc Drive accessory with Out of Stock banner. Composite onto Right 45% floating card over living dark studio B-roll.</div>
+        </div>
+        <div class="qc-footer">
+          <span>Empirical Proof: Hardware Squeeze</span>
+          <span class="qc-pass">✓ [QC: PASS]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- V05 -->
+    <div class="story-card" data-class="class5">
+      <div class="screen-preview">
+        <span class="screen-tag">V05 · KINETIC TYPOGRAPHY</span>
+        <span class="screen-time">00:26 – 00:34</span>
+        <div class="mock-visual" style="background: #080C14; border: 1px solid #1E293B;">
+          <div>
+            <div style="font-size: 16px; color: #F1F5F9; font-weight: 800;">YOU PAID $80.</div>
+            <div style="font-size: 24px; color: #EF4444; font-weight: 900; letter-spacing: 1px; margin-top: 4px;">YOU OWN 0%.</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="audio-block">
+          <div class="audio-label">Spoken Dialogue</div>
+          "You paid eighty dollars of your hard-earned money. But under corporate law, you own zero percent of it."
+        </div>
+        <div class="prompt-box">
+          <div class="prompt-header">
+            <span class="platform-pill">PYTHON / MOVIEPY ENGINE</span>
+            <button class="copy-btn" onclick="copyPrompt('p5')">Copy</button>
+          </div>
+          <div class="prompt-text" id="p5">High-contrast Kinetic Typography slam. Background #080C14. Bebas Neue font. "YOU PAID $80" scales 95% -> 100% over 0.2s in #F1F5F9. Sub-bass drop triggers "YOU OWN 0%" slam in electric crimson #EF4444. Hold 4.0s. Clean fade out.</div>
+        </div>
+        <div class="qc-footer">
+          <span>Unjust Paradox Slam</span>
+          <span class="qc-pass">✓ [QC: PASS]</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ACT 2 -->
+  <div class="section-header">ACT 2: CALIFORNIA AB 2426 & THE STEAM REVELATION (02:00 – 04:30)</div>
+  <div class="grid">
+
+    <!-- V08 -->
+    <div class="story-card" data-class="class4">
+      <div class="screen-preview">
+        <span class="screen-tag">V08 · LEGAL EVIDENCE</span>
+        <span class="screen-time">02:15 – 02:23</span>
+        <div class="mock-visual" style="background: #020617;">
+          <div class="mock-card-overlay" style="width: 70%; right: 15%;">
+            <div style="color: #94A3B8; font-size: 9px;">STATE OF CALIFORNIA · AB 2426</div>
+            <div style="color: #F59E0B; font-size: 10px; margin: 4px 0;">"Prohibits advertising digital goods with 'BUY' or 'PURCHASE' unless consumer receives permanent ownership."</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="audio-block">
+          <div class="audio-label">Spoken Dialogue</div>
+          "California just passed Assembly Bill 2426. It makes it illegal to use the word 'BUY' for digital games."
+        </div>
+        <div class="prompt-box">
+          <div class="prompt-header">
+            <span class="platform-pill">WEB BROWSER CAPTURE</span>
+            <button class="copy-btn" onclick="copyPrompt('p8')">Copy</button>
+          </div>
+          <div class="prompt-text" id="p8">Source: leginfo.legislature.ca.gov. High-DPI 150% zoom on Assembly Bill No. 2426 Chapter 658 text. Yellow animated highlighter line sweeping across the operative clause in Section 17500.5.</div>
+        </div>
+        <div class="qc-footer">
+          <span>Legal Grounding Anchor</span>
+          <span class="qc-pass">✓ [QC: PASS]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- V09 -->
+    <div class="story-card" data-class="class4">
+      <div class="screen-preview">
+        <span class="screen-tag">V09 · STOREFRONT WARNING</span>
+        <span class="screen-time">02:23 – 02:31</span>
+        <div class="mock-visual" style="background: #171A21; border: 1px solid #2A475E;">
+          <div style="text-align: left; padding: 10px;">
+            <div style="color: #66C0F4; font-size: 11px; font-weight:800;">VALVE STEAM CHECKOUT</div>
+            <div style="color: #F1F5F9; font-size: 10px; border-left: 2px solid #66C0F4; padding-left: 6px; margin-top:4px;">"A purchase of a digital product grants a license for the product on Steam."</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="audio-block">
+          <div class="audio-label">Spoken Dialogue</div>
+          "And Steam responded immediately. They added a warning right in your checkout cart: you are only buying a license."
+        </div>
+        <div class="prompt-box">
+          <div class="prompt-header">
+            <span class="platform-pill">STEAM CLIENT OBS CAPTURE</span>
+            <button class="copy-btn" onclick="copyPrompt('p9')">Copy</button>
+          </div>
+          <div class="prompt-text" id="p9">Direct screen capture from Steam cart checkout on desktop. High-contrast zoom on the bottom checkout notice. Highlight cyan border around the license disclaimer sentence.</div>
+        </div>
+        <div class="qc-footer">
+          <span>Pop-Culture Anchor</span>
+          <span class="qc-pass">✓ [QC: PASS]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- V10 -->
+    <div class="story-card" data-class="class1">
+      <div class="screen-preview">
+        <span class="screen-tag">V10 · 2D ART PLATE</span>
+        <span class="screen-time">02:31 – 02:39</span>
+        <div class="mock-visual" style="background: radial-gradient(circle, #2E1065 0%, #080C14 100%);">
+          <div style="color: #C084FC;">
+            🕹️ THE VALVE FOUNDER WORKSHOP<br>
+            <span style="color: #E2E8F0; font-size: 11px;">Warm Amber Light & Open Steam Deck Hardware</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="audio-block">
+          <div class="audio-label">Spoken Dialogue</div>
+          "Gamers love Steam because Gabe Newell understood one rule: Piracy is a service problem, not a pricing problem."
+        </div>
+        <div class="prompt-box">
+          <div class="prompt-header">
+            <span class="platform-pill">GEMINI NANO / MIDJOURNEY</span>
+            <button class="copy-btn" onclick="copyPrompt('p10')">Copy</button>
+          </div>
+          <div class="prompt-text" id="p10">Cinematic anime illustration of a friendly bearded tech visionary in glasses wearing a polo shirt, standing in an open high-tech workshop filled with portable handheld gaming PCs and open-source circuit boards. Warm amber lighting, dark navy shadows, thoughtful confident smile, subtle steam rising from a coffee mug, 16:9.</div>
+        </div>
+        <div class="qc-footer">
+          <span>Character Archetype Anchor</span>
+          <span class="qc-pass">✓ [QC: PASS]</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ACT 3 -->
+  <div class="section-header">ACT 3: THE CORPORATE SQUEEZE & INDIA DUAL-ANCHOR (04:30 – 07:15)</div>
+  <div class="grid">
+
+    <!-- V14 -->
+    <div class="story-card" data-class="class5">
+      <div class="screen-preview">
+        <span class="screen-tag">V14 · ANIMATED DATA CHART</span>
+        <span class="screen-time">04:30 – 04:40</span>
+        <div class="mock-visual" style="background: #080C14;">
+          <div style="width: 80%;">
+            <div style="display:flex; justify-content:space-between; font-size:10px; color:#94A3B8;">
+              <span>2004: 90% PHYSICAL</span>
+              <span style="color:#F59E0B;">2026: 92% DIGITAL</span>
+            </div>
+            <div style="height: 12px; background: #1E293B; border-radius: 6px; overflow: hidden; margin-top: 6px; display: flex;">
+              <div style="width: 8%; background: #3B82F6;"></div>
+              <div style="width: 92%; background: #F59E0B;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="audio-block">
+          <div class="audio-label">Spoken Dialogue</div>
+          "In twenty years, the industry completely flipped. Discs didn't die naturally; publishers suffocated them."
+        </div>
+        <div class="prompt-box">
+          <div class="prompt-header">
+            <span class="platform-pill">PYTHON / MATPLOTLIB SVG</span>
+            <button class="copy-btn" onclick="copyPrompt('p14')">Copy</button>
+          </div>
+          <div class="prompt-text" id="p14">Animated diverging line chart. Industry software revenue split from 2004 to 2026. Blue line (Physical Sales) collapsing from 90% to 8%. Amber line (Digital / Subscription) rocketing from 10% to 92%. Clear title-safe typography.</div>
+        </div>
+        <div class="qc-footer">
+          <span>Macro Transition Proof</span>
+          <span class="qc-pass">✓ [QC: PASS]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- V17 -->
+    <div class="story-card" data-class="class2">
+      <div class="screen-preview">
+        <span class="screen-tag">V17 · AI LIVING VIDEO</span>
+        <span class="screen-time">05:00 – 05:12</span>
+        <div class="mock-visual" style="background: #18181B;">
+          <div style="color: #F59E0B;">
+            🇮🇳 INDIAN ELECTRONICS MARKET<br>
+            <span style="color: #E2E8F0; font-size: 11px;">Second-Hand Console Discs & Trading Lifeline</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="audio-block">
+          <div class="audio-label">Spoken Dialogue</div>
+          "In India, console gaming survived because of the second-hand disc market. Middle class kids swapped discs to afford games."
+        </div>
+        <div class="prompt-box">
+          <div class="prompt-header">
+            <span class="platform-pill">KLING AI / HAILUO</span>
+            <button class="copy-btn" onclick="copyPrompt('p17')">Copy</button>
+          </div>
+          <div class="prompt-text" id="p17">Documentary tracking shot through a lively Indian electronics market alley in Mumbai or Nehru Place Delhi. Small open storefronts with shelves of video game discs, young gamers browsing second-hand cases, natural daylight, authentic urban texture, 35mm film grain, 16:9.</div>
+        </div>
+        <div class="qc-footer">
+          <span>Global Dual-Anchor Rule</span>
+          <span class="qc-pass">✓ [QC: PASS]</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function filterClass(cls) {
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+      const cards = document.querySelectorAll('.story-card');
+      cards.forEach(card => {
+        if (cls === 'all' || card.getAttribute('data-class') === cls) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function copyPrompt(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = event.target;
+        btn.innerText = 'Copied!';
+        btn.style.background = '#10B981';
+        btn.style.color = '#fff';
+        setTimeout(() => {
+          btn.innerText = 'Copy';
+          btn.style.background = '';
+          btn.style.color = '';
+        }, 2000);
+      });
+    }
+  </script>
+
+</body>
+</html>

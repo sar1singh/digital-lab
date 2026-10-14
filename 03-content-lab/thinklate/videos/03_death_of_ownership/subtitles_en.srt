@@ -1,0 +1,887 @@
+1
+00:00:00,000 --> 00:00:02,720
+You paid $80 for the brand new game.
+
+2
+00:00:02,720 --> 00:00:06,639
+You work on Unboxed-A-Collector case and there is no disk.
+
+3
+00:00:06,639 --> 00:00:11,519
+Just an empty plastic circle and a tiny paper slip with a printed code.
+
+4
+00:00:11,519 --> 00:00:14,480
+Sony just launched the console for $700.
+
+5
+00:00:14,480 --> 00:00:16,559
+It has a no-disk drive.
+
+6
+00:00:16,559 --> 00:00:19,440
+Want to play the physical games you already on?
+
+7
+00:00:19,440 --> 00:00:22,559
+Pay another $80 for the snap on plastic drive.
+
+8
+00:00:22,559 --> 00:00:25,760
+Assuming scalpers didn't buy them all first.
+
+9
+00:00:25,839 --> 00:00:30,960
+At the exact same time, the TL giants like best-by-wived physical games of store shelves.
+
+10
+00:00:31,679 --> 00:00:35,119
+Over 90% of all games sales are now completely digital.
+
+11
+00:00:36,399 --> 00:00:37,679
+Here is the uncomfortable truth.
+
+12
+00:00:38,479 --> 00:00:40,479
+You worked 40 hours this week.
+
+13
+00:00:40,479 --> 00:00:41,600
+You paid $80.
+
+14
+00:00:42,320 --> 00:00:44,079
+You hit the big green buy button.
+
+15
+00:00:44,799 --> 00:00:48,240
+Under corporate law, you won 0% of that purchase.
+
+16
+00:00:49,520 --> 00:00:50,960
+You did not buy a game.
+
+17
+00:00:50,960 --> 00:00:52,399
+You then did a temporary pass.
+
+18
+00:00:52,960 --> 00:00:54,320
+That can disappear tomorrow.
+
+19
+00:00:55,280 --> 00:00:56,640
+Think that is an exaggeration.
+
+20
+00:00:57,520 --> 00:01:01,280
+In 2024, Ubisoft shut down servers for the club.
+
+21
+00:01:02,320 --> 00:01:04,799
+They did not just end online multiplayer.
+
+22
+00:01:04,799 --> 00:01:09,680
+They remotely reached into 12 million clear libraries and deleted the game files.
+
+23
+00:01:10,640 --> 00:01:12,560
+12 million people paid full price.
+
+24
+00:01:13,200 --> 00:01:14,640
+Every single copy vanished.
+
+25
+00:01:16,000 --> 00:01:17,680
+Sony did the exact same thing.
+
+26
+00:01:17,920 --> 00:01:20,000
+With 1300 digital TV episodes,
+
+27
+00:01:20,719 --> 00:01:22,560
+people bought entire seasons.
+
+28
+00:01:22,560 --> 00:01:27,439
+Sony announced they were erasing them because licensing contracts expired.
+
+29
+00:01:28,159 --> 00:01:33,120
+Public rage forced Sony to back down, but the legal precedent was clear.
+
+30
+00:01:33,120 --> 00:01:36,079
+When you buy digital goods, you are standing on quicksand.
+
+31
+00:01:36,799 --> 00:01:41,120
+The company holds the remote switch and they can pull the plug whenever they want.
+
+32
+00:01:41,120 --> 00:01:46,319
+The biggest game in history, Grand Theft Auto 6, is lending at $80.
+
+33
+00:01:46,959 --> 00:01:51,680
+Physical retail copies are shipping as download codes in empty plastic boxes.
+
+34
+00:01:52,239 --> 00:01:55,920
+We traded physical boxes for modern convenience.
+
+35
+00:01:55,920 --> 00:01:59,120
+And in that trade, we accidentally gave up property rights.
+
+36
+00:01:59,680 --> 00:02:01,120
+That took centuries to build.
+
+37
+00:02:01,840 --> 00:02:04,799
+To understand how absurd this is, imagine buying a house.
+
+38
+00:02:05,280 --> 00:02:08,479
+The builder asks for $400,000.
+
+39
+00:02:08,479 --> 00:02:12,879
+You pay in full, move your couch in and unpack your kitchen.
+
+40
+00:02:12,879 --> 00:02:16,000
+Three years later, the builder walks up to your front door
+
+41
+00:02:16,000 --> 00:02:17,919
+and changes the digital lock.
+
+42
+00:02:18,719 --> 00:02:21,520
+They point to page 47 of a tiny paper contract.
+
+43
+00:02:22,159 --> 00:02:24,319
+It turns out you never bought a home.
+
+44
+00:02:24,319 --> 00:02:27,759
+You bought a tamzaji groom pass and the builder decided
+
+45
+00:02:27,759 --> 00:02:29,439
+hitting course were too high.
+
+46
+00:02:30,000 --> 00:02:32,719
+In real estate, that would be illegal fraud.
+
+47
+00:02:32,719 --> 00:02:36,159
+In tech, we call it the end user license agreement.
+
+48
+00:02:36,159 --> 00:02:39,680
+Every time you click i-agree, you sign a way through ownership.
+
+49
+00:02:40,639 --> 00:02:42,560
+It was not always like this.
+
+50
+00:02:42,639 --> 00:02:46,639
+Over 100 years ago, the United States Supreme Court
+
+51
+00:02:46,639 --> 00:02:48,400
+Hurdall landmark publishing case.
+
+52
+00:02:49,199 --> 00:02:52,960
+A publisher tried to dictate the sale price of a printed book.
+
+53
+00:02:52,960 --> 00:02:56,319
+The Supreme Court created a simple rule, the first sale doctrine.
+
+54
+00:02:57,039 --> 00:03:01,199
+Once you buy a physical book, record or painting, it belongs to you.
+
+55
+00:03:02,159 --> 00:03:06,800
+You can lend it to a friend, resell it for cash or burn it in your backyard.
+
+56
+00:03:07,759 --> 00:03:11,599
+Publishers could never touch it again, until software came along.
+
+57
+00:03:12,319 --> 00:03:16,080
+In 1998, digital copyright laws changed everything.
+
+58
+00:03:16,080 --> 00:03:19,680
+If software had digital encryption locks, companies claimed
+
+59
+00:03:19,680 --> 00:03:20,960
+you never bought property.
+
+60
+00:03:21,840 --> 00:03:23,439
+You merely granted a license.
+
+61
+00:03:24,159 --> 00:03:28,080
+This scam became so blatant that California just stepped in.
+
+62
+00:03:28,080 --> 00:03:31,039
+They passed assembly bill 2426.
+
+63
+00:03:32,159 --> 00:03:37,120
+Under California state law, it is now illegal for storefronts to use the words
+
+64
+00:03:37,120 --> 00:03:38,080
+by or purchase.
+
+65
+00:03:38,719 --> 00:03:40,719
+Without an explicit license warning.
+
+66
+00:03:41,360 --> 00:03:43,199
+Politicians finally admitted that truth.
+
+67
+00:03:43,840 --> 00:03:46,000
+Storefronts were deceiving consumers.
+
+68
+00:03:46,000 --> 00:03:47,680
+And the response was immediate.
+
+69
+00:03:47,680 --> 00:03:48,400
+Look at a steam.
+
+70
+00:03:48,960 --> 00:03:52,240
+Open your checkout cart right now and you will see the fresh warning.
+
+71
+00:03:53,039 --> 00:03:57,919
+It says clearly, a purchase of a digital product grants a license on a steam,
+
+72
+00:03:57,919 --> 00:03:58,879
+not ownership.
+
+73
+00:03:58,879 --> 00:04:00,479
+Just a license.
+
+74
+00:04:00,479 --> 00:04:02,960
+Now gamers actually love steam and for good reason.
+
+75
+00:04:03,759 --> 00:04:07,599
+Valve built deep customers trust over 20 long years.
+
+76
+00:04:08,400 --> 00:04:12,560
+Valve founder gave new well, famously gave us the golden road.
+
+77
+00:04:12,560 --> 00:04:16,079
+Pirecy is almost always a service problem, not a pricing problem.
+
+78
+00:04:16,720 --> 00:04:20,319
+Valve gave players instant downloads, automated cloud sales,
+
+79
+00:04:20,319 --> 00:04:23,199
+seamless family sharing and easy to our refunds.
+
+80
+00:04:23,920 --> 00:04:27,199
+With the steam deck, they gave us an open handheld computer.
+
+81
+00:04:28,160 --> 00:04:29,600
+You can install other stores,
+
+82
+00:04:30,240 --> 00:04:32,560
+run custom tools and use it freely.
+
+83
+00:04:33,439 --> 00:04:36,319
+Valve treats gamers like intelligent adults.
+
+84
+00:04:36,319 --> 00:04:39,600
+They've been loyalty through great service, not digital handcuffs.
+
+85
+00:04:40,160 --> 00:04:41,040
+But here is the catch.
+
+86
+00:04:41,839 --> 00:04:43,839
+Even Valve cannot change the law.
+
+87
+00:04:43,839 --> 00:04:45,519
+When you buy a game on a steam,
+
+88
+00:04:45,519 --> 00:04:48,560
+publishers like electronic cards or Ubisoft
+
+89
+00:04:48,560 --> 00:04:50,560
+still retain full legal control.
+
+90
+00:04:50,560 --> 00:04:52,720
+If a publisher decides to delete a game,
+
+91
+00:04:52,720 --> 00:04:54,480
+even a steam cannot save it.
+
+92
+00:04:54,480 --> 00:04:58,399
+The entire digital gaming world is built on rented ground.
+
+93
+00:04:58,399 --> 00:05:01,439
+Via Sony and Microsoft pushing so hard to kill the disk.
+
+94
+00:05:02,079 --> 00:05:04,000
+It has nothing to do with saving trees
+
+95
+00:05:04,079 --> 00:05:06,639
+and it has nothing to do with download speeds.
+
+96
+00:05:06,639 --> 00:05:09,759
+It is about killing the used game market forever.
+
+97
+00:05:10,319 --> 00:05:15,040
+Think back to 20 years ago, you bought Hello2 or Grand Theft Auto
+
+98
+00:05:15,040 --> 00:05:16,160
+San Andreas on disk.
+
+99
+00:05:16,720 --> 00:05:18,399
+You beat the store in two weeks,
+
+100
+00:05:18,399 --> 00:05:20,639
+then you sold that physical disk to a friend.
+
+101
+00:05:20,639 --> 00:05:21,920
+For $30.
+
+102
+00:05:21,920 --> 00:05:23,519
+Your friend got a great deal.
+
+103
+00:05:23,519 --> 00:05:25,120
+You got cash in your pocket.
+
+104
+00:05:25,120 --> 00:05:28,800
+And how much money did Sony or publishers make on that second transaction?
+
+105
+00:05:29,360 --> 00:05:30,720
+Exactly $0.
+
+106
+00:05:30,720 --> 00:05:33,120
+Publishers hated the second hand market.
+
+107
+00:05:33,199 --> 00:05:35,199
+With an absolute burning passion,
+
+108
+00:05:35,199 --> 00:05:36,399
+four decades,
+
+109
+00:05:36,399 --> 00:05:38,959
+physical disk gave power to consumers.
+
+110
+00:05:38,959 --> 00:05:40,079
+Look at this chart.
+
+111
+00:05:40,079 --> 00:05:40,879
+In 20 years,
+
+112
+00:05:41,680 --> 00:05:42,879
+the entire industry flipped.
+
+113
+00:05:43,519 --> 00:05:47,839
+Physical sales collapsed from 90% down to less than 8%.
+
+114
+00:05:47,839 --> 00:05:50,480
+Once the disk drive is removed from your console,
+
+115
+00:05:50,720 --> 00:05:52,959
+competition completely disappears.
+
+116
+00:05:52,959 --> 00:05:55,439
+You cannot buy a cheap used copy on eBay.
+
+117
+00:05:55,439 --> 00:05:57,360
+You cannot bother a game from your cousin.
+
+118
+00:05:58,160 --> 00:06:00,319
+You are trapped inside one single digital store.
+
+119
+00:06:00,879 --> 00:06:02,879
+Sony and Microsoft set the price.
+
+120
+00:06:03,439 --> 00:06:06,240
+A 25-year-old digital game can sit at full price.
+
+121
+00:06:07,040 --> 00:06:08,800
+And you have zero alternatives.
+
+122
+00:06:08,800 --> 00:06:10,879
+And then comes the subscription squeeze.
+
+123
+00:06:11,519 --> 00:06:13,519
+You paid $80 for the game.
+
+124
+00:06:13,519 --> 00:06:15,600
+Now you must pay $80 a year.
+
+125
+00:06:16,560 --> 00:06:18,240
+Just for online multiplayer.
+
+126
+00:06:18,240 --> 00:06:20,800
+And this is not just an American problem.
+
+127
+00:06:20,800 --> 00:06:23,439
+Look at what this does to emerging markets.
+
+128
+00:06:23,439 --> 00:06:25,040
+Let's talk about India.
+
+129
+00:06:25,040 --> 00:06:26,000
+In India,
+
+130
+00:06:26,000 --> 00:06:27,759
+console gaming never grew.
+
+131
+00:06:27,759 --> 00:06:29,839
+Through expensive digital pre-orders,
+
+132
+00:06:29,839 --> 00:06:32,160
+it grew on the second hand disk lifeline.
+
+133
+00:06:32,160 --> 00:06:34,800
+Gamers in Mumbai, Delhi and Bangalore,
+
+134
+00:06:34,800 --> 00:06:36,480
+swapped disks with friends.
+
+135
+00:06:36,480 --> 00:06:39,040
+They bought pre-owned copies on trade sites,
+
+136
+00:06:39,040 --> 00:06:40,560
+played them and sold them back.
+
+137
+00:06:41,120 --> 00:06:43,519
+That secondary market was the only way.
+
+138
+00:06:43,519 --> 00:06:45,839
+Middle-class kids could afford this hobby.
+
+139
+00:06:45,839 --> 00:06:48,160
+Now look at Grand Theft Auto 6.
+
+140
+00:06:48,160 --> 00:06:51,920
+The standard addition is launching around 6,000 rupees.
+
+141
+00:06:51,920 --> 00:06:54,720
+If that game ships as a digital only code,
+
+142
+00:06:54,720 --> 00:06:56,879
+that money is logged in a world forever.
+
+143
+00:06:56,879 --> 00:06:58,319
+You cannot sell it back.
+
+144
+00:06:58,399 --> 00:06:59,920
+You cannot recover the single rupees.
+
+145
+00:07:00,560 --> 00:07:02,639
+When hardware makers killed the disk,
+
+146
+00:07:02,639 --> 00:07:04,240
+they killed the economic engine.
+
+147
+00:07:04,240 --> 00:07:07,120
+That kept the gaming alive in developing countries.
+
+148
+00:07:07,120 --> 00:07:09,439
+And gaming is just the testing route.
+
+149
+00:07:09,439 --> 00:07:11,680
+This digital rental model is spreading
+
+150
+00:07:11,680 --> 00:07:13,360
+into every single product we buy.
+
+151
+00:07:14,399 --> 00:07:16,639
+BMW tried putting heated seats
+
+152
+00:07:17,360 --> 00:07:19,920
+behind an $18 monthly subscription.
+
+153
+00:07:19,920 --> 00:07:22,720
+The physical heaters were already built inside the car.
+
+154
+00:07:23,360 --> 00:07:24,480
+You paid for the car.
+
+155
+00:07:25,120 --> 00:07:26,480
+They just logged the software.
+
+156
+00:07:27,199 --> 00:07:31,120
+Electric scooters in India are paywalling hillhold
+
+157
+00:07:31,120 --> 00:07:33,600
+and cruise control behind software packs.
+
+158
+00:07:34,160 --> 00:07:35,519
+The motors exist.
+
+159
+00:07:35,519 --> 00:07:36,879
+The battery exist.
+
+160
+00:07:36,879 --> 00:07:38,399
+The core demands are credit card.
+
+161
+00:07:39,120 --> 00:07:40,879
+This is the modern corporate playbook.
+
+162
+00:07:41,519 --> 00:07:43,199
+Sell you the physical shell.
+
+163
+00:07:43,199 --> 00:07:46,319
+Then charge you rent forever for the permission to turn it on.
+
+164
+00:07:47,360 --> 00:07:48,879
+So where does this end?
+
+165
+00:07:48,879 --> 00:07:52,720
+Do we just accept digital foodilism and keep renting forever?
+
+166
+00:07:52,720 --> 00:07:54,319
+The pushback has already started.
+
+167
+00:07:54,959 --> 00:07:57,680
+Look at the stopkilling games movement in Ulock.
+
+168
+00:07:58,399 --> 00:08:01,040
+Started by consumer advocates and gamers.
+
+169
+00:08:01,040 --> 00:08:04,079
+It gathered over 1 million official petition signatures.
+
+170
+00:08:04,800 --> 00:08:07,040
+Their demand is simple and reasonable.
+
+171
+00:08:07,040 --> 00:08:09,360
+If a publisher stops supporting a game,
+
+172
+00:08:09,360 --> 00:08:11,839
+they must release a clean offline path.
+
+173
+00:08:11,839 --> 00:08:14,480
+Let consumers run private servers.
+
+174
+00:08:14,480 --> 00:08:17,120
+Do not turn working software into digital garbage.
+
+175
+00:08:17,120 --> 00:08:19,120
+Because when legal alternatives fail,
+
+176
+00:08:19,759 --> 00:08:21,040
+consumers find their own way.
+
+177
+00:08:21,759 --> 00:08:23,519
+Just look at retro game emolitions.
+
+178
+00:08:24,160 --> 00:08:26,079
+Thousands of vintage console games
+
+179
+00:08:26,079 --> 00:08:27,839
+survive today only because
+
+180
+00:08:27,839 --> 00:08:29,519
+communities ribbed offline backups.
+
+181
+00:08:29,519 --> 00:08:30,879
+If you want to protect your wallet
+
+182
+00:08:31,519 --> 00:08:32,879
+and your digital life right now,
+
+183
+00:08:33,519 --> 00:08:35,519
+you have to build your own safety net.
+
+184
+00:08:35,519 --> 00:08:38,240
+Here are the three rules of digital survival.
+
+185
+00:08:38,720 --> 00:08:39,519
+Rule number one.
+
+186
+00:08:40,240 --> 00:08:42,960
+Support DRM-free platforms.
+
+187
+00:08:42,960 --> 00:08:45,279
+Look at storefronts like GOG,
+
+188
+00:08:45,279 --> 00:08:47,120
+where you buy a game on GOG.
+
+189
+00:08:47,120 --> 00:08:49,519
+You download a standalone offline installer file
+
+190
+00:08:50,080 --> 00:08:52,080
+and actual offline installer.
+
+191
+00:08:52,080 --> 00:08:54,480
+Save that file on an external hard drive
+
+192
+00:08:54,480 --> 00:08:55,919
+and it is yours forever.
+
+193
+00:08:56,879 --> 00:08:58,960
+GOG could go bankrupt tomorrow
+
+194
+00:08:58,960 --> 00:09:00,480
+and that file will still long
+
+195
+00:09:00,480 --> 00:09:02,240
+on your computer 50 years from now.
+
+196
+00:09:03,679 --> 00:09:04,320
+Rule number two.
+
+197
+00:09:05,519 --> 00:09:07,919
+Choose open hardware over logged ecosystems.
+
+198
+00:09:08,639 --> 00:09:11,360
+A personal computer or then open handheld
+
+199
+00:09:11,360 --> 00:09:12,399
+like the Steam Deck
+
+200
+00:09:13,039 --> 00:09:14,799
+lets you control your operating system.
+
+201
+00:09:15,519 --> 00:09:17,919
+You are not logged into one single corporate store.
+
+202
+00:09:19,039 --> 00:09:20,000
+And rule number three.
+
+203
+00:09:20,799 --> 00:09:22,399
+For creators and entrepreneurs,
+
+204
+00:09:23,519 --> 00:09:26,879
+never build your entire life on rented digital land.
+
+205
+00:09:26,879 --> 00:09:29,840
+If your business lives entirely inside an algorithm
+
+206
+00:09:29,840 --> 00:09:31,840
+and app store or the cloud service,
+
+207
+00:09:32,399 --> 00:09:34,080
+you are just a digital tenant.
+
+208
+00:09:34,080 --> 00:09:35,120
+Build an email list.
+
+209
+00:09:35,679 --> 00:09:38,080
+Keep local backups of your source code.
+
+210
+00:09:38,080 --> 00:09:40,399
+Keep offline copies of your creative work
+
+211
+00:09:40,399 --> 00:09:43,919
+because corporate terms of service can change overnight.
+
+212
+00:09:43,919 --> 00:09:46,320
+Think back to that empty plastic game case
+
+213
+00:09:46,320 --> 00:09:47,679
+we opened at the start.
+
+214
+00:09:47,679 --> 00:09:48,799
+In the 20th century,
+
+215
+00:09:49,440 --> 00:09:52,159
+freedom meant having physical property in your hands.
+
+216
+00:09:52,559 --> 00:09:53,919
+In 21st century,
+
+217
+00:09:54,720 --> 00:09:57,519
+freedom is having the offline files on your hard drive.
+
+218
+00:09:58,240 --> 00:10:00,080
+If you need an active internet connection,
+
+219
+00:10:00,799 --> 00:10:02,639
+just to ask for permission to open it,
+
+220
+00:10:03,200 --> 00:10:03,919
+you never bought it.
+
+221
+00:10:04,480 --> 00:10:05,919
+You are just paying rent.
+
+222
+00:10:05,919 --> 00:10:06,639
+See you next time.

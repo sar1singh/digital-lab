@@ -39,6 +39,11 @@ def cleanup_video(slug, auto_git=False):
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     target_dir = os.path.join(base_dir, "videos", slug)
 
+    # Permanent protection: Never touch reusable vault, templates, or brand directories
+    if any(p in slug.lower() for p in ["reusable_vault", "templates", "brand", "tools"]):
+        print(f"[!] Protection Error: '{slug}' is a permanent workspace repository and cannot be cleaned.")
+        return False
+
     if not os.path.exists(target_dir):
         print(f"[!] Error: Target video directory not found: {target_dir}")
         return False

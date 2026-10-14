@@ -37,5 +37,17 @@
 | **Videokits** | Titles and Transitions | High-quality, free drag-and-drop templates compatible with both the free and Studio versions of Resolve. | [Videokits](https://videokits.io/) |
 
 ---
+
+## 4. The Gameplay Canvas Framework (The Fast-Assembly Spine)
+*Eliminates the grueling bottleneck of hunting dozens of third-party stock B-rolls and waiting for AI video generations.*
+
+| Component | Timeline Track | How It Operates | Visual / Editing Effect |
+| :--- | :--- | :--- | :--- |
+| **Spine Video** | **Track 1** | Single high-fidelity 1080p60 gameplay session (*Assassin's Creed Black Flag*, *RDR2*, *Cyberpunk*). | Zoom `1.15x` to crop HUD/minimap. Curated action only (naval combat, viewpoint pans, parkour; zero aimless street jogging). |
+| **Focus Pull** | **Track 2** | Adjustment Clip with **Gaussian Blur (`0.18`)** + **Opacity (`80%`)**. | Placed **ONLY** when foreground assets are on screen. The rest of the time, gameplay runs in vibrant 100% full color. |
+| **Foreground Action** | **Tracks 3 & 4** | Primary Evidence Cards, Kinetic Typography (Bebas Neue), Data Charts. | Instant readability against the dimmed gameplay backdrop. |
+| **Character Avatar** | *Disabled* | **Avatar is OPTIONAL / PAUSED**. | Do not waste time placing avatars on every screen; focus 100% on gameplay + data + kinetic typography. |
+
 **The "Jugaad" Strategy for Faceless Channels:**
-Combine these tools. Use **Datawrapper** for the numbers, **Runway** for a cinematic 3-second hook, and a **Video Editor Studio** title template in DaVinci to tie it all together. This ensures your video never looks like cheap, mass-produced AI spam.
+Combine curated gameplay with targeted evidence. Let the gameplay drive the visual motion and eye engagement, use **Datawrapper** for charts, **Windows Snipping Tool** with 150% browser zoom for primary evidence crops, and **Bebas Neue** animated typography slams in DaVinci. This yields broadcast-grade retention with 80% faster turnaround time.
+

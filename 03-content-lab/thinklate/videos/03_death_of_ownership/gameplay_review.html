@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThinkLate — Assassin's Creed Black Flag Gameplay Vault Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #080C14;
+      --card: #0F1626;
+      --card-hover: #162035;
+      --border: #1E2C48;
+      --text: #F1F5F9;
+      --muted: #94A3B8;
+      --gold: #F59E0B;
+      --cyan: #06B6D4;
+      --green: #10B981;
+      --red: #EF4444;
+      --purple: #8B5CF6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      padding: 30px 40px;
+      line-height: 1.6;
+    }
+    header {
+      max-width: 1500px;
+      margin: 0 auto 30px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .title-group h1 { font-size: 28px; font-weight: 800; color: var(--gold); letter-spacing: -0.02em; }
+    .title-group p { color: var(--muted); font-size: 13px; font-family: 'JetBrains Mono', monospace; margin-top: 4px; }
+    .status-badge {
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid var(--green);
+      color: var(--green);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .section-title {
+      max-width: 1500px;
+      margin: 40px auto 16px;
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--cyan);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-left: 4px solid var(--cyan);
+      padding-left: 14px;
+    }
+    .vault-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 24px;
+      max-width: 1500px;
+      margin: 0 auto 40px;
+    }
+    .vault-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .vault-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--gold);
+    }
+    .video-container {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #000;
+    }
+    .video-container video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .vault-card-body {
+      padding: 16px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex-grow: 1;
+    }
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .cue-pill {
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 800;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .meta-tag {
+      font-size: 11px;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--muted);
+    }
+    .clip-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .clip-desc {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .timeline-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+      max-width: 1500px;
+      margin: 0 auto 50px;
+    }
+    .thumb-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.2s;
+    }
+    .thumb-card:hover {
+      border-color: var(--cyan);
+      transform: scale(1.02);
+      z-index: 2;
+    }
+    .thumb-card img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      display: block;
+    }
+    .thumb-info {
+      padding: 8px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0B1120;
+    }
+    .thumb-time {
+      font-size: 12px;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--cyan);
+    }
+    .thumb-badge {
+      font-size: 10px;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .badge-naval { background: rgba(239, 68, 68, 0.2); color: var(--red); border: 1px solid rgba(239, 68, 68, 0.4); }
+    .badge-pan { background: rgba(6, 182, 212, 0.2); color: var(--cyan); border: 1px solid rgba(6, 182, 212, 0.4); }
+    .badge-dock { background: rgba(245, 158, 11, 0.2); color: var(--gold); border: 1px solid rgba(245, 158, 11, 0.4); }
+    .badge-combat { background: rgba(139, 92, 246, 0.2); color: var(--purple); border: 1px solid rgba(139, 92, 246, 0.4); }
+    
+    /* Lightbox Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; width: 100vw; height: 100vh;
+      background: rgba(0,0,0,0.92);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+    .modal.active { display: flex; }
+    .modal img {
+      max-width: 90vw;
+      max-height: 80vh;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+    }
+    .modal-caption {
+      margin-top: 14px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      color: var(--gold);
+    }
+    .modal-close {
+      position: absolute;
+      top: 25px;
+      right: 35px;
+      font-size: 32px;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="title-group">
+      <h1>Assassin's Creed: Black Flag — Gameplay B-Roll Vault</h1>
+      <p>RECORDING: C:\Users\sar1s\Videos\obs\2026-10-12 22-44-03.mkv | DURATION: 01:13:05 | 60 FPS | 1080p LANCZOS UPSCALE</p>
+    </div>
+    <div class="status-badge">✓ 4 CLIPS ARCHIVED TO REUSABLE VAULT</div>
+  </header>
+
+  <!-- SECTION 1: EXTRACTED CLIPS -->
+  <div class="section-title">
+    <span>1. EXTRACTED TIMELINE CLIPS (READY FOR DAVINCI RESOLVE)</span>
+  </div>
+  <div class="vault-grid">
+
+    <!-- CLIP 1 (V36) -->
+    <div class="vault-card">
+      <div class="video-container">
+        <video controls preload="metadata">
+          <source src="../../reusable_vault/gameplay_broll/ac_black_flag/blackflag_naval_night_combat_v36.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vault-card-body">
+        <div class="card-top">
+          <span class="cue-pill">ASSIGNED: V36</span>
+          <span class="meta-tag">00:04:55 · 8.0s · 1080p60</span>
+        </div>
+        <div class="clip-title">Night Naval Galleon Combat</div>
+        <div class="clip-desc">The Jackdaw aiming cannon fire arcs into an enemy Spanish galleon at night under stormy seas. Used in Act 3 during the $30 used game reselling dialogue.</div>
+      </div>
+    </div>
+
+    <!-- CLIP 2 (PANORAMIC) -->
+    <div class="vault-card">
+      <div class="video-container">
+        <video controls preload="metadata">
+          <source src="../../reusable_vault/gameplay_broll/ac_black_flag/blackflag_panoramic_havana_dock_view.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vault-card-body">
+        <div class="card-top">
+          <span class="cue-pill" style="border-color: var(--cyan); color: var(--cyan); background: rgba(6,182,212,0.15);">REUSABLE SCENIC</span>
+          <span class="meta-tag">00:24:45 · 10.0s · 1080p60</span>
+        </div>
+        <div class="clip-title">Havana Viewpoint 360° Pan (ZERO HUD)</div>
+        <div class="clip-desc">Pure cinematic viewpoint synchronization sweeping across Havana rooftops, the stone fortress, and Caribbean ocean. Clean B-roll with zero UI elements.</div>
+      </div>
+    </div>
+
+    <!-- CLIP 3 (V47) -->
+    <div class="vault-card">
+      <div class="video-container">
+        <video controls preload="metadata">
+          <source src="../../reusable_vault/gameplay_broll/ac_black_flag/blackflag_havana_docks_walk_v47.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vault-card-body">
+        <div class="card-top">
+          <span class="cue-pill">ASSIGNED: V47</span>
+          <span class="meta-tag">00:35:05 · 8.0s · 1080p60</span>
+        </div>
+        <div class="clip-title">Havana Boardwalk & Market Walk</div>
+        <div class="clip-desc">Edward Kenway strolling past wooden boardwalks and vibrant Caribbean market stalls. Matched to dialogue discussing Indian secondary game markets and local disc trading.</div>
+      </div>
+    </div>
+
+    <!-- CLIP 4 (V55) -->
+    <div class="vault-card">
+      <div class="video-container">
+        <video controls preload="metadata">
+          <source src="../../reusable_vault/gameplay_broll/ac_black_flag/blackflag_jackdaw_broadside_fire_v55.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vault-card-body">
+        <div class="card-top">
+          <span class="cue-pill">ASSIGNED: V55</span>
+          <span class="meta-tag">00:06:20 · 8.0s · 1080p60</span>
+        </div>
+        <div class="clip-title">Jackdaw Broadside Cannon Fire</div>
+        <div class="clip-desc">Intense close-quarters cannon fire explosion and high-seas naval clash. Matches the dialogue on consumer emulation and pirate preservation.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SECTION 2: 73-MINUTE TIMELINE SCRUBBER -->
+  <div class="section-title">
+    <span>2. FULL 73-MINUTE TIMELINE INDEX (CLICK ANY THUMBNAIL TO ZOOM)</span>
+  </div>
+  <div class="timeline-grid" id="timelineGrid"></div>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="modal" id="modal" onclick="closeModal()">
+    <span class="modal-close">&times;</span>
+    <img id="modalImg" src="" alt="Zoomed Frame">
+    <div class="modal-caption" id="modalCaption"></div>
+  </div>
+
+  <script>
+    const frames = [
+      { min: "01", tag: "Naval Start", cls: "badge-naval" },
+      { min: "03", tag: "Night Seas", cls: "badge-naval" },
+      { min: "05", tag: "V36 Combat ★", cls: "badge-naval" },
+      { min: "07", tag: "V55 Cannons ★", cls: "badge-naval" },
+      { min: "09", tag: "Sea Victory", cls: "badge-naval" },
+      { min: "11", tag: "Loading / Port", cls: "" },
+      { min: "13", tag: "Arrival Havana", cls: "badge-dock" },
+      { min: "15", tag: "Town Square", cls: "badge-dock" },
+      { min: "17", tag: "Alley Stealth", cls: "badge-dock" },
+      { min: "19", tag: "Cobblestone Run", cls: "badge-dock" },
+      { min: "21", tag: "Church Approach", cls: "badge-dock" },
+      { min: "23", tag: "Tower Climb", cls: "badge-pan" },
+      { min: "25", tag: "Panoramic Pan ★", cls: "badge-pan" },
+      { min: "27", tag: "Haystack Leap", cls: "badge-dock" },
+      { min: "29", tag: "Street Crowd", cls: "badge-dock" },
+      { min: "31", tag: "Archway Stroll", cls: "badge-dock" },
+      { min: "33", tag: "Dock Approach", cls: "badge-dock" },
+      { min: "35", tag: "V47 Docks Walk ★", cls: "badge-dock" },
+      { min: "37", tag: "Market Pursuit", cls: "badge-dock" },
+      { min: "39", tag: "Harbor Promenade", cls: "badge-dock" },
+      { min: "41", tag: "Palace Walls", cls: "badge-dock" },
+      { min: "43", tag: "Guard Patrol", cls: "badge-combat" },
+      { min: "45", tag: "Sword Duel", cls: "badge-combat" },
+      { min: "47", tag: "Finisher Move", cls: "badge-combat" },
+      { min: "49", tag: "Villa Escape", cls: "badge-combat" },
+      { min: "51", tag: "Tropical Flora", cls: "badge-dock" },
+      { min: "53", tag: "Tavern District", cls: "badge-dock" },
+      { min: "55", tag: "Pirate Scoundrels", cls: "badge-dock" },
+      { min: "57", tag: "Dockside Talk", cls: "badge-dock" },
+      { min: "59", tag: "Nightfall Streets", cls: "badge-dock" },
+      { min: "61", tag: "Starlit Plaza", cls: "badge-dock" },
+      { min: "63", tag: "Tile Roof Walk", cls: "badge-dock" },
+      { min: "65", tag: "Rooftop Parkour", cls: "badge-pan" },
+      { min: "67", tag: "Chimney Perch", cls: "badge-pan" },
+      { min: "69", tag: "Courtyard Drop", cls: "badge-combat" },
+      { min: "71", tag: "Assassination", cls: "badge-combat" }
+    ];
+
+    const grid = document.getElementById('timelineGrid');
+    frames.forEach(f => {
+      const card = document.createElement('div');
+      card.className = 'thumb-card';
+      card.onclick = () => openModal(`gameplay_frames/frame_${f.min}m.jpg`, `${f.min}:00 — ${f.tag}`);
+      card.innerHTML = `
+        <img src="gameplay_frames/frame_${f.min}m.jpg" alt="Frame ${f.min}m" loading="lazy">
+        <div class="thumb-info">
+          <span class="thumb-time">${f.min}:00</span>
+          ${f.tag ? `<span class="thumb-badge ${f.cls}">${f.tag}</span>` : ''}
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+
+    function openModal(src, caption) {
+      document.getElementById('modalImg').src = src;
+      document.getElementById('modalCaption').innerText = caption;
+      document.getElementById('modal').classList.add('active');
+    }
+
+    function closeModal() {
+      document.getElementById('modal').classList.remove('active');
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recording Deck &mdash; You Don't Own What You Buy | ThinkLate</title>
+  <meta name="description" content="ThinkLate studio teleprompter deck for Video 03. Spoken script with 12-word breath markers, visual cues, and kinetic text callouts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #080C14;
+      --surf: #0F1626;
+      --card: #141D30;
+      --bdr: #1E2C48;
+      --txt: #F1F5F9;
+      --muted: #64748B;
+      --dim: #94A3B8;
+      --gold: #F59E0B;
+      --cyan: #06B6D4;
+      --red: #EF4444;
+      --grn: #10B981;
+      --purp: #8B5CF6;
+      --fs: 30px;
+      --lh: 1.9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--txt);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: var(--fs);
+      line-height: var(--lh);
+      padding-bottom: 340px;
+      scroll-behavior: smooth;
+    }
+    #pgwrap { position: fixed; top: 0; left: 0; width: 100%; height: 5px; background: rgba(255,255,255,.05); z-index: 200; }
+    #pg { height: 100%; width: 0%; background: linear-gradient(90deg, var(--cyan), var(--gold)); transition: width .1s; }
+    nav {
+      position: fixed;
+      top: 5px;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 32px;
+      background: rgba(8,12,20,.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--bdr);
+    }
+    .brand { font-size: 13px; font-weight: 800; color: var(--gold); letter-spacing: .14em; text-transform: uppercase; }
+    .ctrl { display: flex; gap: 10px; align-items: center; }
+    button {
+      background: var(--card);
+      border: 1px solid var(--bdr);
+      color: var(--dim);
+      padding: 7px 18px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all .18s;
+    }
+    button:hover { background: var(--bdr); color: var(--txt); }
+    button.on { background: var(--cyan); color: #000; border-color: var(--cyan); }
+    #albl { font-size: 12px; color: var(--muted); font-family: 'JetBrains Mono', monospace; min-width: 90px; }
+    #fsc button { padding: 6px 14px; font-size: 16px; }
+    main { max-width: 940px; margin: 0 auto; padding: 120px 40px 60px; }
+    .act { margin-bottom: 64px; border: 1px solid var(--bdr); border-radius: 18px; overflow: hidden; }
+    .ah {
+      padding: 16px 30px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .ah.a1 { background: linear-gradient(135deg, #0f1a35, #1a0f35); color: var(--cyan); border-bottom: 1px solid #1E2C48; }
+    .ah.a2 { background: linear-gradient(135deg, #1a1005, #251505); color: var(--gold); border-bottom: 1px solid #2a1f05; }
+    .ah.a3 { background: linear-gradient(135deg, #150a0a, #2a0f0f); color: var(--red); border-bottom: 1px solid #2a1010; }
+    .ah.a4 { background: linear-gradient(135deg, #0a150a, #0f2a0f); color: var(--grn); border-bottom: 1px solid #102a10; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; background: currentColor; flex-shrink: 0; }
+    .ab { padding: 34px 38px; display: flex; flex-direction: column; gap: 26px; }
+    .vc {
+      background: rgba(6,182,212,.04);
+      border: 1px dashed rgba(6,182,212,.28);
+      border-radius: 10px;
+      padding: 10px 18px;
+      font-size: 13px;
+      font-family: 'JetBrains Mono', monospace;
+      color: #5eead4;
+      transition: opacity .2s;
+    }
+    .vc::before { content: '\1F3AC  VISUAL: '; opacity: .65; }
+    .kt {
+      background: rgba(245,158,11,.06);
+      border: 1px solid rgba(245,158,11,.32);
+      border-radius: 10px;
+      padding: 12px 22px;
+      font-size: 13px;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--gold);
+      letter-spacing: .04em;
+      font-weight: 800;
+    }
+    .kt::before { content: '\26A1  KT: '; opacity: .6; }
+    .ln { font-size: var(--fs); line-height: var(--lh); font-weight: 600; color: var(--txt); }
+    .em { color: var(--gold); font-weight: 800; }
+    .b1 { color: var(--cyan); font-size: .68em; vertical-align: super; margin: 0 2px; font-weight: 800; }
+    .b2 { color: var(--red); font-size: .68em; vertical-align: super; margin: 0 2px; font-weight: 800; }
+    .sdiv { height: 1px; background: linear-gradient(90deg, transparent, var(--bdr), transparent); margin: 4px 0; }
+    #leg {
+      position: fixed;
+      bottom: 24px;
+      right: 28px;
+      background: var(--card);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 14px 20px;
+      font-size: 12px;
+      font-family: 'JetBrains Mono', monospace;
+      line-height: 2;
+      color: var(--dim);
+      z-index: 100;
+    }
+    .hide-vc .vc { display: none; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--bdr); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+  </style>
+</head>
+<body>
+<div id="pgwrap"><div id="pg"></div></div>
+
+<nav>
+  <div class="brand">&#127908; ThinkLate &middot; Recording Deck v3</div>
+  <div class="ctrl">
+    <span id="albl">ACT &mdash; / 4</span>
+    <button id="tvc" onclick="togVC()">👁️ Toggle Visuals</button>
+    <div id="fsc" style="display:flex;gap:6px;">
+      <button onclick="cfs(-2)">A&minus;</button>
+      <button onclick="cfs(2)">A+</button>
+    </div>
+    <button id="sb" onclick="tog()">&#9654; Auto-Scroll</button>
+  </div>
+</nav>
+
+<main id="script-container">
+
+  <!-- ACT 1 -->
+  <div class="act" data-act="1">
+    <div class="ah a1"><span class="dot"></span>ACT 1 &mdash; THE TANGIBLE ABSURDITY &amp; THE $80 BOX</div>
+    <div class="ab">
+      
+      <div class="vc">V01: 2D Plate &mdash; Cinematic macro of shattered Blu-ray disc with glowing red circuitry inside crack</div>
+      <div class="ln">
+        You paid eighty dollars for a brand new game. <span class="b1">//</span><br>
+        <span style="font-size: 0.8em; color: var(--gold); font-style: italic;">(Vocal Delivery: Intimate, close mic proximity)</span> <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V02: AI Video &mdash; Smooth camera push forward into unboxed steelbook case with empty plastic tray and paper code</div>
+      <div class="ln">
+        You walk home, <span class="b1">//</span> unbox the collector case, <span class="b1">//</span> and there is no disc. <span class="b2">///</span><br>
+        Just an empty plastic circle <span class="b1">//</span> and a tiny paper slip <span class="b1">//</span> with a printed code. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V03: UI Card &mdash; PlayStation Direct store showing PS5 Pro $699.99 &amp; Detachable Disc Drive $79.99 Out of Stock</div>
+      <div class="ln">
+        Sony just launched a console for seven hundred dollars. <span class="b1">//</span><br>
+        <span style="font-size: 0.8em; color: var(--cyan); font-style: italic;">(Deadpan delivery)</span> <span class="b2">///</span><br>
+        It has no disc drive. <span class="b1">//</span><br>
+        Want to play the physical games you already own? <span class="b1">//</span> <span class="b2">///</span>
+      </div>
+
+      <div class="kt">V04: $80 EXTRA. JUST TO PLAY YOUR DISCS.</div>
+      <div class="ln">
+        Pay another eighty dollars <span class="b1">//</span> for a snap-on plastic drive. <span class="b1">//</span><br>
+        Assuming scalpers didn't buy them all first. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V05: Gameplay B-Roll &mdash; Edward Kenway sailing the Jackdaw into open waters in Assassin's Creed Black Flag, cinematic letterbox</div>
+      <div class="ln">
+        At the exact same time, <span class="b1">//</span> retail giants like Best Buy <span class="b1">//</span> wiped physical games off store shelves. <span class="b2">///</span><br>
+        Over ninety percent of all game sales <span class="b1">//</span> are now completely digital. <span class="b2">///</span>
+      </div>
+
+      <div class="kt">V06: YOU PAID $80. YOU OWN 0%. (SUB-BASS HIT)</div>
+      <div class="ln">
+        Here is the uncomfortable truth: <span class="b1">//</span><br>
+        You worked forty hours this week. <span class="b1">//</span><br>
+        You paid eighty dollars. <span class="b1">//</span><br>
+        You hit the big green BUY button. <span class="b1">//</span> <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V07: Avatar Reaction &mdash; Owl Avatar P5 arms crossed entering bottom-right PiP with 3px float</div>
+      <div class="ln">
+        Under corporate law, <span class="b1">//</span> you own zero percent of that purchase. <span class="b2">///</span><br>
+        You did not buy a game. <span class="b1">//</span><br>
+        You rented a temporary pass <span class="b1">//</span> that can disappear tomorrow. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V08: UI Card &mdash; Ubisoft logo &amp; Northern California Federal Class Action Lawsuit filing</div>
+      <div class="ln">
+        Think that is an exaggeration? <span class="b1">//</span><br>
+        In twenty twenty-four, <span class="b1">//</span> Ubisoft shut down servers for The Crew. <span class="b1">//</span> <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V09: 2D Plate &mdash; 12 million game icons greyed out behind giant digital padlock</div>
+      <div class="ln">
+        They did not just end online multiplayer. <span class="b1">//</span><br>
+        They remotely reached into twelve million player libraries <span class="b1">//</span> and deleted the game files. <span class="b2">///</span><br>
+        Twelve million people paid full price. <span class="b1">//</span><br>
+        Every single copy vanished. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V10: UI Card &mdash; PlayStation Store notice removing 1,300 Discovery episodes from accounts</div>
+      <div class="ln">
+        Sony did the exact same thing <span class="b1">//</span> with thirteen hundred digital TV episodes. <span class="b1">//</span><br>
+        People bought entire seasons. <span class="b1">//</span><br>
+        Sony announced they were erasing them <span class="b1">//</span> because licensing contracts expired. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V11: AI Video &mdash; Slow dolly shot down endless dark server rack with cold blue LEDs</div>
+      <div class="ln">
+        Public rage forced Sony to back down. <span class="b1">//</span><br>
+        But the legal precedent was clear. <span class="b1">//</span> <span class="b2">///</span>
+      </div>
+
+      <div class="kt">V12: WHEN SERVERS DIE, YOUR PURCHASES DIE TOO.</div>
+      <div class="ln">
+        When you buy digital goods today, <span class="b1">//</span> you are standing on quicksand. <span class="b2">///</span><br>
+        The company holds the remote switch. <span class="b1">//</span><br>
+        And they can pull the plug whenever they want. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V13: AI Video &mdash; Cinematic tracking shot behind sports car on neon coastal boulevard at dusk (GTA VI aesthetic)</div>
+      <div class="ln">
+        The biggest game in history, <span class="b1">//</span> Grand Theft Auto Six, <span class="b1">//</span> is landing at eighty dollars. <span class="b2">///</span><br>
+        Physical retail copies are shipping <span class="b1">//</span> as download codes in empty plastic boxes. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V14: 2D Plate &mdash; 1990s kid with cartridge vs 2026 gamer staring at empty plastic case</div>
+      <div class="ln">
+        We traded physical boxes <span class="b1">//</span> for modern convenience. <span class="b1">//</span> <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V15: Avatar Reaction &mdash; Owl Avatar P4 thinking chin floating gently</div>
+      <div class="ln">
+        And in that trade, <span class="b1">//</span> we accidentally gave up property rights <span class="b1">//</span> that took centuries to build. <span class="b2">///</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ACT 2 -->
+  <div class="act" data-act="2">
+    <div class="ah a2"><span class="dot"></span>ACT 2 &mdash; THE HOTEL ROOM WITH A MORTGAGE PRICE TAG</div>
+    <div class="ab">
+
+      <div class="vc">V16: 2D Plate &mdash; Luxury penthouse door with digital keypad and red eviction lock</div>
+      <div class="ln">
+        To understand how absurd this is, <span class="b1">//</span> imagine buying a house. <span class="b1">//</span><br>
+        <span style="font-size: 0.8em; color: var(--gold); font-style: italic;">(Vocal Delivery: Warm conversational tone)</span> <span class="b2">///</span><br>
+        The builder asks for four hundred thousand dollars. <span class="b1">//</span><br>
+        You pay in full, <span class="b1">//</span> move your couch in, <span class="b1">//</span> and unpack your kitchen. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V17: AI Video &mdash; Camera glides past 40-page contract with microscopic legal fine print</div>
+      <div class="ln">
+        Three years later, <span class="b1">//</span> the builder walks up to your front door <span class="b1">//</span> and changes the digital lock. <span class="b2">///</span><br>
+        They point to page forty-seven <span class="b1">//</span> of a tiny paper contract. <span class="b1">//</span> <span class="b2">///</span>
+      </div>
+
+      <div class="kt">V18: A HOTEL PASS WITH A FULL PRICE TAG.</div>
+      <div class="ln">
+        It turns out, <span class="b1">//</span> you never bought a home. <span class="b1">//</span><br>
+        You bought a temporary room pass. <span class="b1">//</span><br>
+        And the builder decided <span class="b1">//</span> heating costs were too high. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V19: Avatar Reaction &mdash; Owl Avatar P1 adjusting glasses with head tilt</div>
+      <div class="ln">
+        In real estate, <span class="b1">//</span> that would be illegal fraud. <span class="b1">//</span><br>
+        In tech, <span class="b1">//</span> we call it the End User License Agreement. <span class="b2">///</span><br>
+        Every time you click I AGREE, <span class="b1">//</span> you sign away true ownership. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V20: UI Card &mdash; 1908 Supreme Court Bobbs-Merrill v. Straus document parchment</div>
+      <div class="ln">
+        It was not always like this. <span class="b1">//</span><br>
+        Over one hundred years ago, <span class="b1">//</span> the United States Supreme Court <span class="b1">//</span> heard a landmark publishing case. <span class="b2">///</span><br>
+        A publisher tried to dictate <span class="b1">//</span> the resale price of a printed book. <span class="b2">///</span>
+      </div>
+
+      <div class="kt">V21: THE FIRST SALE DOCTRINE (1908)</div>
+      <div class="ln">
+        The Supreme Court created a simple rule: <span class="b1">//</span> The First Sale Doctrine. <span class="b1">//</span><br>
+        Once you buy a physical book, <span class="b1">//</span> record, <span class="b1">//</span> or painting, <span class="b1">//</span> it belongs to you. <span class="b2">///</span><br>
+        You can lend it to a friend, <span class="b1">//</span> resell it for cash, <span class="b1">//</span> or burn it in your backyard. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V22: 2D Plate &mdash; 1990s computer room with green digital encryption locks sealing floppy drives</div>
+      <div class="ln">
+        Publishers could never touch it again. <span class="b1">//</span><br>
+        Until software came along. <span class="b1">//</span> <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V23: UI Card &mdash; Digital Millennium Copyright Act 1998 Section 1201 legal text</div>
+      <div class="ln">
+        In nineteen ninety-eight, <span class="b1">//</span> digital copyright laws changed everything. <span class="b1">//</span><br>
+        If software had digital encryption locks, <span class="b1">//</span> companies claimed you never bought property. <span class="b1">//</span><br>
+        You were merely granted a license. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V24: UI Card &mdash; California Assembly Bill 2426 Chapter 513 Section 17500.6 text</div>
+      <div class="ln">
+        This scam became so blatant <span class="b1">//</span> that California just stepped in. <span class="b1">//</span><br>
+        They passed Assembly Bill twenty-four twenty-six. <span class="b1">//</span> <span class="b2">///</span>
+      </div>
+
+      <div class="kt">V25: BANNED: USING 'BUY' FOR DIGITAL LICENSES</div>
+      <div class="ln">
+        Under California state law, <span class="b1">//</span> it is now illegal for storefronts <span class="b1">//</span> to use the words BUY or PURCHASE <span class="b1">//</span> without an explicit license warning. <span class="b2">///</span><br>
+        Politicians finally admitted the truth: <span class="b1">//</span> storefronts were deceiving consumers. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V26: UI Card &mdash; Steam Client Desktop Checkout Cart with live warning in cyan box</div>
+      <div class="ln">
+        And the response was immediate. <span class="b1">//</span><br>
+        Look at Steam. <span class="b1">//</span><br>
+        Open your checkout cart right now, <span class="b1">//</span> and you will see a fresh warning. <span class="b1">//</span> <span class="b2">///</span>
+      </div>
+
+      <div class="kt">V27: 'A PURCHASE GRANTS A LICENSE ON STEAM'</div>
+      <div class="ln">
+        It says clearly: <span class="b1">//</span> A purchase of a digital product <span class="b1">//</span> grants a license on Steam. <span class="b1">//</span><br>
+        Not ownership. <span class="b1">//</span> Just a license. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V28: 2D Plate &mdash; Gabe Newell archetype in workshop surrounded by open handheld gaming PCs</div>
+      <div class="ln">
+        Now, <span class="b1">//</span> gamers actually love Steam. <span class="b1">//</span><br>
+        And for good reason. <span class="b1">//</span><br>
+        Valve built deep customer trust <span class="b1">//</span> over twenty long years. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V29: Gameplay B-Roll &mdash; Edward Kenway steering Jackdaw across ocean waves in AC Black Flag</div>
+      <div class="ln">
+        Valve founder Gabe Newell <span class="b1">//</span> famously gave us the golden rule: <span class="b1">//</span><br>
+        Piracy is almost always a service problem, <span class="b1">//</span> not a pricing problem. <span class="b2">///</span><br>
+        <span style="font-size: 0.8em; color: var(--gold); font-style: italic;">(Smooth ocean waves, cinematic sailing)</span> <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V30: AI Video &mdash; Steam Deck OLED booting open-source software in dark room</div>
+      <div class="ln">
+        Valve gave players instant downloads, <span class="b1">//</span> automated cloud saves, <span class="b1">//</span> seamless family sharing, <span class="b1">//</span> and easy two-hour refunds. <span class="b1">//</span><br>
+        With the Steam Deck, <span class="b1">//</span> they gave us an open handheld computer. <span class="b2">///</span><br>
+        You can install other stores, <span class="b1">//</span> run custom tools, <span class="b1">//</span> and use it freely. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V31: Avatar Reaction &mdash; Owl Avatar P3 explaining hands in PiP</div>
+      <div class="ln">
+        Valve treats gamers like intelligent adults. <span class="b1">//</span><br>
+        They win loyalty through great service, <span class="b1">//</span> not digital handcuffs. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V32: 2D Plate &mdash; Giant padlock hanging over PlayStation &amp; Xbox console chassis</div>
+      <div class="ln">
+        But here is the catch. <span class="b1">//</span><br>
+        Even Valve cannot change the law. <span class="b1">//</span><br>
+        When you buy a game on Steam, <span class="b1">//</span> publishers like Electronic Arts or Ubisoft <span class="b1">//</span> still retain full legal control. <span class="b2">///</span>
+      </div>
+
+      <div class="kt">V33: EVEN GABE CANNOT SAVE A DEAD SERVER.</div>
+      <div class="ln">
+        If a publisher decides to delete a game, <span class="b1">//</span> even Steam cannot save it. <span class="b1">//</span><br>
+        The entire digital gaming world <span class="b1">//</span> is built on rented ground. <span class="b2">///</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ACT 3 -->
+  <div class="act" data-act="3">
+    <div class="ah a3"><span class="dot"></span>ACT 3 &mdash; THE CORPORATE SQUEEZE &amp; THE USED GAME HIT</div>
+    <div class="ab">
+
+      <div class="vc">V34: 2D Plate &mdash; Boardroom watching miniature GameStop store crumbling into dust</div>
+      <div class="ln">
+        Why are Sony and Microsoft <span class="b1">//</span> pushing so hard to kill the disc? <span class="b1">//</span><br>
+        <span style="font-size: 0.8em; color: var(--gold); font-style: italic;">(Tone shifts to investigative friend)</span> <span class="b2">///</span><br>
+        It has nothing to do with saving trees. <span class="b1">//</span><br>
+        And it has nothing to do with download speeds. <span class="b2">///</span>
+      </div>
+
+      <div class="kt">V35: FOLLOW THE MONEY. (SUB-BASS BRAAM)</div>
+      <div class="ln">
+        It is about killing the used game market. <span class="b1">//</span><br>
+        Forever. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V36: Gameplay B-Roll &mdash; High-seas naval combat and broadside cannon fire in Assassin's Creed Black Flag</div>
+      <div class="ln">
+        Think back to twenty years ago. <span class="b1">//</span><br>
+        You bought Halo Two <span class="b1">//</span> or Grand Theft Auto San Andreas on disc. <span class="b1">//</span><br>
+        You beat the story in two weeks. <span class="b1">//</span><br>
+        Then you sold that physical disc to a friend <span class="b1">//</span> for thirty dollars. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V37: UI Card &mdash; Split Card: Physical Disc ($30 Resale, $0 Corp Cut) vs Digital Store ($0 Resale, 100% Corp Cut)</div>
+      <div class="ln">
+        Your friend got a great deal. <span class="b1">//</span><br>
+        You got cash in your pocket. <span class="b1">//</span><br>
+        And how much money did Sony or the publisher make <span class="b1">//</span> on that second transaction? <span class="b1">//</span> <span class="b2">///</span>
+      </div>
+
+      <div class="kt">V38: ZERO DOLLARS.</div>
+      <div class="ln">
+        Exactly zero dollars. <span class="b1">//</span><br>
+        Publishers hated the second-hand market <span class="b1">//</span> with an absolute burning passion. <span class="b2">///</span><br>
+        For decades, <span class="b1">//</span> physical discs gave power to consumers. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V39: Animated Chart &mdash; Physical sales collapsing 90% -> 8%, Digital surging 10% -> 92%</div>
+      <div class="ln">
+        Look at this chart. <span class="b1">//</span><br>
+        In twenty years, <span class="b1">//</span> the entire industry flipped. <span class="b1">//</span><br>
+        Physical sales collapsed from ninety percent <span class="b1">//</span> down to less than eight percent. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V40: AI Video &mdash; Camera tracks across empty retail store game shelves with discount tags</div>
+      <div class="ln">
+        Once the disc drive is removed from your console, <span class="b1">//</span> competition completely disappears. <span class="b1">//</span><br>
+        You cannot buy a cheap used copy on eBay. <span class="b1">//</span><br>
+        You cannot borrow a game from your cousin. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V41: UI Card &mdash; PlayStation Store 5-year-old digital game locked at full $59.99</div>
+      <div class="ln">
+        You are trapped inside one single digital store. <span class="b1">//</span><br>
+        Sony and Microsoft set the price. <span class="b1">//</span><br>
+        A five-year-old digital game can sit at full price, <span class="b1">//</span> and you have zero alternatives. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V42: 2D Plate &mdash; Subscription cash meter ticking money out of a gamer's digital wallet</div>
+      <div class="ln">
+        And then comes the subscription squeeze. <span class="b1">//</span><br>
+        You paid eighty dollars for a game. <span class="b1">//</span><br>
+        Now you must pay eighty dollars a year <span class="b1">//</span> just for online multiplayer. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V43: Avatar Reaction &mdash; Owl Avatar P2 presenting right toward animated chart</div>
+      <div class="ln">
+        And this is not just an American problem. <span class="b1">//</span><br>
+        Look at what this does to emerging markets. <span class="b1">//</span><br>
+        Let's talk about India. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V44: AI Video &mdash; Documentary tracking shot through Nehru Place Delhi electronics market</div>
+      <div class="ln">
+        In India, <span class="b1">//</span> console gaming never grew <span class="b1">//</span> through expensive digital pre-orders. <span class="b1">//</span><br>
+        It grew on the second-hand disc lifeline. <span class="b2">///</span><br>
+        Gamers in Mumbai, <span class="b1">//</span> Delhi, <span class="b1">//</span> and Bangalore <span class="b1">//</span> swapped discs with friends. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V45: UI Card &mdash; Gameloot / CEX India portal showing console disc buyback values</div>
+      <div class="ln">
+        They bought pre-owned copies on trade sites, <span class="b1">//</span> played them, <span class="b1">//</span> and sold them back. <span class="b1">//</span><br>
+        That secondary market was the only way <span class="b1">//</span> middle-class kids could afford this hobby. <span class="b2">///</span>
+      </div>
+
+      <div class="kt">V46: 6,000 RUPEES FOR ZERO RESALE VALUE.</div>
+      <div class="ln">
+        Now look at Grand Theft Auto Six. <span class="b1">//</span><br>
+        The standard edition is launching around six thousand rupees. <span class="b1">//</span><br>
+        If that game ships as a digital-only code, <span class="b1">//</span> that money is locked in a vault forever. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V47: Gameplay B-Roll &mdash; Edward Kenway walking through bustling Caribbean pirate docks in Nassau, Assassin's Creed Black Flag</div>
+      <div class="ln">
+        You cannot sell it back. <span class="b1">//</span><br>
+        You cannot recover a single rupee. <span class="b1">//</span><br>
+        When hardware makers kill the disc, <span class="b1">//</span> they kill the economic engine <span class="b1">//</span> that kept gaming alive in developing countries. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V48: 2D Plate &mdash; Sports car on highway with digital lock symbol over steering wheel</div>
+      <div class="ln">
+        And gaming is just the testing ground. <span class="b1">//</span><br>
+        This digital rental model <span class="b1">//</span> is spreading into every single product we buy. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V49: UI Card &mdash; BMW ConnectedDrive store: Heated Seats $18/month subscription</div>
+      <div class="ln">
+        BMW tried putting heated seats <span class="b1">//</span> behind an eighteen dollar monthly subscription. <span class="b1">//</span><br>
+        The physical heaters were already built inside the car. <span class="b1">//</span><br>
+        You paid for the car. <span class="b1">//</span><br>
+        They just locked the software. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V50: AI Video &mdash; Electric vehicle on rainy night highway, glowing touchscreen dashboard</div>
+      <div class="ln">
+        Electric scooters in India <span class="b1">//</span> are paywalling hill-hold and cruise control <span class="b1">//</span> behind software packs. <span class="b1">//</span><br>
+        The motors exist. <span class="b1">//</span><br>
+        The battery exists. <span class="b1">//</span><br>
+        The code demands a credit card. <span class="b2">///</span>
+      </div>
+
+      <div class="kt">V51: YOU OWN THE HARDWARE. THEY OWN THE PERMISSION.</div>
+      <div class="ln">
+        This is the modern corporate playbook: <span class="b1">//</span><br>
+        Sell you the physical shell. <span class="b1">//</span><br>
+        Then charge you rent forever <span class="b1">//</span> for the permission to turn it on. <span class="b2">///</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ACT 4 -->
+  <div class="act" data-act="4">
+    <div class="ah a4"><span class="dot"></span>ACT 4 &mdash; THE DIGITAL RESISTANCE &amp; TRUE OWNERSHIP</div>
+    <div class="ab">
+
+      <div class="vc">V52: 2D Plate &mdash; Citizen voices converging on glowing European Parliament building</div>
+      <div class="ln">
+        So where does this end? <span class="b1">//</span><br>
+        Do we just accept digital feudalism <span class="b1">//</span> and keep renting forever? <span class="b1">//</span><br>
+        <span style="font-size: 0.8em; color: var(--gold); font-style: italic;">(Vocal Delivery: Direct, intense cadence)</span> <span class="b2">///</span><br>
+        The pushback has already started. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V53: UI Card &mdash; European Commission portal Stop Killing Games initiative with signature counter</div>
+      <div class="ln">
+        Look at the Stop Killing Games movement in Europe. <span class="b1">//</span><br>
+        Started by consumer advocates and gamers, <span class="b1">//</span> it gathered over one million official petition signatures. <span class="b2">///</span><br>
+        Their demand is simple and reasonable: <span class="b1">//</span> <span class="b2">///</span>
+      </div>
+
+      <div class="kt">V54: MANDATE OFFLINE PATCHES WHEN SERVERS DIE.</div>
+      <div class="ln">
+        If a publisher stops supporting a game, <span class="b1">//</span> they must release a clean offline patch. <span class="b1">//</span><br>
+        Let consumers run private servers. <span class="b1">//</span><br>
+        Do not turn working software into digital garbage. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V55: Gameplay B-Roll &mdash; AC Black Flag Jackdaw firing broadside cannons in stormy seas</div>
+      <div class="ln">
+        Because when legal alternatives fail, <span class="b1">//</span> consumers find their own way. <span class="b1">//</span><br>
+        Just look at retro game emulation. <span class="b1">//</span><br>
+        Thousands of vintage console games <span class="b1">//</span> survive today only because communities ripped offline backups. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V56: 2D Plate &mdash; Modern study desk with external brushed-metal hard drive stack glowing in amber light</div>
+      <div class="ln">
+        If you want to protect your wallet <span class="b1">//</span> and your digital life right now, <span class="b1">//</span> you have to build your own safety net. <span class="b2">///</span><br>
+        Here are the three rules of digital survival. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V57: UI Card &mdash; GOG.com website showing DRM-FREE banner &amp; offline installer download button</div>
+      <div class="ln">
+        Rule number one: <span class="b1">//</span> Support DRM-free platforms. <span class="b1">//</span><br>
+        Look at storefronts like G-O-G. <span class="b1">//</span><br>
+        When you buy a game on G-O-G, <span class="b1">//</span> you download a standalone offline installer file. <span class="b1">//</span><br>
+        An actual offline installer. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V58: AI Video &mdash; Hand plugging external SSD drive into sleek desktop PC</div>
+      <div class="ln">
+        Save that file on an external hard drive, <span class="b1">//</span> and it is yours forever. <span class="b1">//</span><br>
+        G-O-G could go bankrupt tomorrow, <span class="b1">//</span> and that file will still launch <span class="b1">//</span> on your computer fifty years from now. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V59: Gameplay B-Roll &mdash; Over-the-shoulder video of gamer browsing custom Linux desktop on Steam Deck</div>
+      <div class="ln">
+        Rule number two: <span class="b1">//</span> Choose open hardware over locked ecosystems. <span class="b1">//</span><br>
+        A personal computer or an open handheld like the Steam Deck <span class="b1">//</span> lets you control your operating system. <span class="b2">///</span><br>
+        You are not locked into one single corporate store. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V60: 2D Plate &mdash; Creator standing before solid bridge leading to independent servers</div>
+      <div class="ln">
+        And rule number three <span class="b1">//</span> for creators and entrepreneurs: <span class="b1">//</span><br>
+        Never build your entire life on rented digital land. <span class="b1">//</span><br>
+        If your business lives entirely inside an algorithm, <span class="b1">//</span> an app store, <span class="b1">//</span> or a cloud service, <span class="b1">//</span> you are just a digital tenant. <span class="b2">///</span>
+      </div>
+
+      <div class="kt">V61: OWN YOUR AUDIENCE. OWN YOUR DISTRIBUTION.</div>
+      <div class="ln">
+        Build an email list. <span class="b1">//</span><br>
+        Keep local backups of your source code. <span class="b1">//</span><br>
+        Keep offline copies of your creative work. <span class="b1">//</span><br>
+        Because corporate terms of service <span class="b1">//</span> can change overnight. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V62: 2D Plate &mdash; Repaired Blu-ray disc with Japanese golden kintsugi seams glowing in confident hand</div>
+      <div class="ln">
+        Think back to that empty plastic game case <span class="b1">//</span> we opened at the start. <span class="b1">//</span><br>
+        <span style="font-size: 0.8em; color: var(--gold); font-style: italic;">(Quiet, reflective pause)</span> <span class="b2">///</span><br>
+        In the twentieth century, <span class="b1">//</span> freedom meant having physical property in your hands. <span class="b2">///</span>
+      </div>
+
+      <div class="kt">V63: IN THE 21ST CENTURY, FREEDOM IS AN OFFLINE FILE.</div>
+      <div class="ln">
+        In the twenty-first century, <span class="b1">//</span> freedom is having the offline files on your own hard drive. <span class="b2">///</span><br>
+        If you need an active internet connection <span class="b1">//</span> just to ask for permission to open it, <span class="b1">//</span> you never bought it. <span class="b2">///</span>
+      </div>
+
+      <div class="vc">V64: Avatar Reaction &mdash; Owl Avatar P5 arms crossed holding center screen for 3 seconds</div>
+      <div class="ln">
+        You are just paying rent. <span class="b1">//</span><br>
+        See you next time. <span class="b2">///</span><br>
+        <span style="font-size: 0.8em; color: var(--muted); font-style: italic;">(Clean fade to black)</span>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<div id="leg">
+  <div><span class="b1">//</span> &nbsp; Half-beat catch-breath</div>
+  <div><span class="b2">///</span> &nbsp; Full stop &amp; pitch drop</div>
+  <div style="color:var(--gold);margin-top:4px;">Target: 135 WPM</div>
+  <div style="color:var(--muted);font-size:11px;">Space: Auto-scroll &middot; T: Reset top</div>
+</div>
+
+<script>
+  let sc = false;
+  let spd = 1.3;
+  let st;
+
+  function tog() {
+    sc = !sc;
+    const b = document.getElementById('sb');
+    if (sc) {
+      b.classList.add('on');
+      b.innerHTML = '&#10074;&#10074; Pause';
+      loop();
+    } else {
+      b.classList.remove('on');
+      b.innerHTML = '&#9654; Auto-Scroll';
+      cancelAnimationFrame(st);
+    }
+  }
+
+  function loop() {
+    if (!sc) return;
+    window.scrollBy(0, spd);
+    upd();
+    st = requestAnimationFrame(loop);
+  }
+
+  function upd() {
+    const d = document.documentElement;
+    const t = d.scrollTop || document.body.scrollTop;
+    const h = d.scrollHeight - d.clientHeight;
+    const p = (t / h) * 100;
+    document.getElementById('pg').style.width = p + '%';
+
+    const acts = document.querySelectorAll('.act');
+    acts.forEach(a => {
+      const r = a.getBoundingClientRect();
+      if (r.top <= 200 && r.bottom >= 200) {
+        document.getElementById('albl').innerText = 'ACT ' + a.getAttribute('data-act') + ' / 4';
+      }
+    });
+  }
+
+  window.addEventListener('scroll', upd);
+
+  function cfs(delta) {
+    let root = document.documentElement;
+    let cur = parseInt(getComputedStyle(root).getPropertyValue('--fs')) || 30;
+    let n = Math.max(20, Math.min(48, cur + delta));
+    root.style.setProperty('--fs', n + 'px');
+  }
+
+  function togVC() {
+    document.body.classList.toggle('hide-vc');
+    const btn = document.getElementById('tvc');
+    btn.classList.toggle('on');
+  }
+
+  window.addEventListener('keydown', (e) => {
+    if (e.code === 'Space') {
+      e.preventDefault();
+      tog();
+    }
+    if (e.key === 't' || e.key === 'T') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  });
+</script>
+
+</body>
+</html>

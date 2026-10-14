@@ -1,0 +1,1778 @@
+[
+  {
+    "id": 1,
+    "start": 0.0,
+    "end": 2.72,
+    "duration": 2.72,
+    "timecode": "00:00 - 00:02",
+    "text": "You paid $80 for the brand new game."
+  },
+  {
+    "id": 2,
+    "start": 2.72,
+    "end": 6.64,
+    "duration": 3.92,
+    "timecode": "00:02 - 00:06",
+    "text": "You work on Unboxed-A-Collector case and there is no disk."
+  },
+  {
+    "id": 3,
+    "start": 6.64,
+    "end": 11.52,
+    "duration": 4.88,
+    "timecode": "00:06 - 00:11",
+    "text": "Just an empty plastic circle and a tiny paper slip with a printed code."
+  },
+  {
+    "id": 4,
+    "start": 11.52,
+    "end": 14.48,
+    "duration": 2.96,
+    "timecode": "00:11 - 00:14",
+    "text": "Sony just launched the console for $700."
+  },
+  {
+    "id": 5,
+    "start": 14.48,
+    "end": 16.56,
+    "duration": 2.08,
+    "timecode": "00:14 - 00:16",
+    "text": "It has a no-disk drive."
+  },
+  {
+    "id": 6,
+    "start": 16.56,
+    "end": 19.44,
+    "duration": 2.88,
+    "timecode": "00:16 - 00:19",
+    "text": "Want to play the physical games you already on?"
+  },
+  {
+    "id": 7,
+    "start": 19.44,
+    "end": 22.56,
+    "duration": 3.12,
+    "timecode": "00:19 - 00:22",
+    "text": "Pay another $80 for the snap on plastic drive."
+  },
+  {
+    "id": 8,
+    "start": 22.56,
+    "end": 25.76,
+    "duration": 3.2,
+    "timecode": "00:22 - 00:25",
+    "text": "Assuming scalpers didn't buy them all first."
+  },
+  {
+    "id": 9,
+    "start": 25.84,
+    "end": 30.96,
+    "duration": 5.12,
+    "timecode": "00:25 - 00:30",
+    "text": "At the exact same time, the TL giants like best-by-wived physical games of store shelves."
+  },
+  {
+    "id": 10,
+    "start": 31.68,
+    "end": 35.12,
+    "duration": 3.44,
+    "timecode": "00:31 - 00:35",
+    "text": "Over 90% of all games sales are now completely digital."
+  },
+  {
+    "id": 11,
+    "start": 36.4,
+    "end": 37.68,
+    "duration": 1.28,
+    "timecode": "00:36 - 00:37",
+    "text": "Here is the uncomfortable truth."
+  },
+  {
+    "id": 12,
+    "start": 38.48,
+    "end": 40.48,
+    "duration": 2.0,
+    "timecode": "00:38 - 00:40",
+    "text": "You worked 40 hours this week."
+  },
+  {
+    "id": 13,
+    "start": 40.48,
+    "end": 41.6,
+    "duration": 1.12,
+    "timecode": "00:40 - 00:41",
+    "text": "You paid $80."
+  },
+  {
+    "id": 14,
+    "start": 42.32,
+    "end": 44.08,
+    "duration": 1.76,
+    "timecode": "00:42 - 00:44",
+    "text": "You hit the big green buy button."
+  },
+  {
+    "id": 15,
+    "start": 44.8,
+    "end": 48.24,
+    "duration": 3.44,
+    "timecode": "00:44 - 00:48",
+    "text": "Under corporate law, you won 0% of that purchase."
+  },
+  {
+    "id": 16,
+    "start": 49.52,
+    "end": 50.96,
+    "duration": 1.44,
+    "timecode": "00:49 - 00:50",
+    "text": "You did not buy a game."
+  },
+  {
+    "id": 17,
+    "start": 50.96,
+    "end": 52.4,
+    "duration": 1.44,
+    "timecode": "00:50 - 00:52",
+    "text": "You then did a temporary pass."
+  },
+  {
+    "id": 18,
+    "start": 52.96,
+    "end": 54.32,
+    "duration": 1.36,
+    "timecode": "00:52 - 00:54",
+    "text": "That can disappear tomorrow."
+  },
+  {
+    "id": 19,
+    "start": 55.28,
+    "end": 56.64,
+    "duration": 1.36,
+    "timecode": "00:55 - 00:56",
+    "text": "Think that is an exaggeration."
+  },
+  {
+    "id": 20,
+    "start": 57.52,
+    "end": 61.28,
+    "duration": 3.76,
+    "timecode": "00:57 - 01:01",
+    "text": "In 2024, Ubisoft shut down servers for the club."
+  },
+  {
+    "id": 21,
+    "start": 62.32,
+    "end": 64.8,
+    "duration": 2.48,
+    "timecode": "01:02 - 01:04",
+    "text": "They did not just end online multiplayer."
+  },
+  {
+    "id": 22,
+    "start": 64.8,
+    "end": 69.68,
+    "duration": 4.88,
+    "timecode": "01:04 - 01:09",
+    "text": "They remotely reached into 12 million clear libraries and deleted the game files."
+  },
+  {
+    "id": 23,
+    "start": 70.64,
+    "end": 72.56,
+    "duration": 1.92,
+    "timecode": "01:10 - 01:12",
+    "text": "12 million people paid full price."
+  },
+  {
+    "id": 24,
+    "start": 73.2,
+    "end": 74.64,
+    "duration": 1.44,
+    "timecode": "01:13 - 01:14",
+    "text": "Every single copy vanished."
+  },
+  {
+    "id": 25,
+    "start": 76.0,
+    "end": 77.68,
+    "duration": 1.68,
+    "timecode": "01:16 - 01:17",
+    "text": "Sony did the exact same thing."
+  },
+  {
+    "id": 26,
+    "start": 77.92,
+    "end": 80.0,
+    "duration": 2.08,
+    "timecode": "01:17 - 01:20",
+    "text": "With 1300 digital TV episodes,"
+  },
+  {
+    "id": 27,
+    "start": 80.72,
+    "end": 82.56,
+    "duration": 1.84,
+    "timecode": "01:20 - 01:22",
+    "text": "people bought entire seasons."
+  },
+  {
+    "id": 28,
+    "start": 82.56,
+    "end": 87.44,
+    "duration": 4.88,
+    "timecode": "01:22 - 01:27",
+    "text": "Sony announced they were erasing them because licensing contracts expired."
+  },
+  {
+    "id": 29,
+    "start": 88.16,
+    "end": 93.12,
+    "duration": 4.96,
+    "timecode": "01:28 - 01:33",
+    "text": "Public rage forced Sony to back down, but the legal precedent was clear."
+  },
+  {
+    "id": 30,
+    "start": 93.12,
+    "end": 96.08,
+    "duration": 2.96,
+    "timecode": "01:33 - 01:36",
+    "text": "When you buy digital goods, you are standing on quicksand."
+  },
+  {
+    "id": 31,
+    "start": 96.8,
+    "end": 101.12,
+    "duration": 4.32,
+    "timecode": "01:36 - 01:41",
+    "text": "The company holds the remote switch and they can pull the plug whenever they want."
+  },
+  {
+    "id": 32,
+    "start": 101.12,
+    "end": 106.32,
+    "duration": 5.2,
+    "timecode": "01:41 - 01:46",
+    "text": "The biggest game in history, Grand Theft Auto 6, is lending at $80."
+  },
+  {
+    "id": 33,
+    "start": 106.96,
+    "end": 111.68,
+    "duration": 4.72,
+    "timecode": "01:46 - 01:51",
+    "text": "Physical retail copies are shipping as download codes in empty plastic boxes."
+  },
+  {
+    "id": 34,
+    "start": 112.24,
+    "end": 115.92,
+    "duration": 3.68,
+    "timecode": "01:52 - 01:55",
+    "text": "We traded physical boxes for modern convenience."
+  },
+  {
+    "id": 35,
+    "start": 115.92,
+    "end": 119.12,
+    "duration": 3.2,
+    "timecode": "01:55 - 01:59",
+    "text": "And in that trade, we accidentally gave up property rights."
+  },
+  {
+    "id": 36,
+    "start": 119.68,
+    "end": 121.12,
+    "duration": 1.44,
+    "timecode": "01:59 - 02:01",
+    "text": "That took centuries to build."
+  },
+  {
+    "id": 37,
+    "start": 121.84,
+    "end": 124.8,
+    "duration": 2.96,
+    "timecode": "02:01 - 02:04",
+    "text": "To understand how absurd this is, imagine buying a house."
+  },
+  {
+    "id": 38,
+    "start": 125.28,
+    "end": 128.48,
+    "duration": 3.2,
+    "timecode": "02:05 - 02:08",
+    "text": "The builder asks for $400,000."
+  },
+  {
+    "id": 39,
+    "start": 128.48,
+    "end": 132.88,
+    "duration": 4.4,
+    "timecode": "02:08 - 02:12",
+    "text": "You pay in full, move your couch in and unpack your kitchen."
+  },
+  {
+    "id": 40,
+    "start": 132.88,
+    "end": 136.0,
+    "duration": 3.12,
+    "timecode": "02:12 - 02:16",
+    "text": "Three years later, the builder walks up to your front door"
+  },
+  {
+    "id": 41,
+    "start": 136.0,
+    "end": 137.92,
+    "duration": 1.92,
+    "timecode": "02:16 - 02:17",
+    "text": "and changes the digital lock."
+  },
+  {
+    "id": 42,
+    "start": 138.72,
+    "end": 141.52,
+    "duration": 2.8,
+    "timecode": "02:18 - 02:21",
+    "text": "They point to page 47 of a tiny paper contract."
+  },
+  {
+    "id": 43,
+    "start": 142.16,
+    "end": 144.32,
+    "duration": 2.16,
+    "timecode": "02:22 - 02:24",
+    "text": "It turns out you never bought a home."
+  },
+  {
+    "id": 44,
+    "start": 144.32,
+    "end": 147.76,
+    "duration": 3.44,
+    "timecode": "02:24 - 02:27",
+    "text": "You bought a tamzaji groom pass and the builder decided"
+  },
+  {
+    "id": 45,
+    "start": 147.76,
+    "end": 149.44,
+    "duration": 1.68,
+    "timecode": "02:27 - 02:29",
+    "text": "hitting course were too high."
+  },
+  {
+    "id": 46,
+    "start": 150.0,
+    "end": 152.72,
+    "duration": 2.72,
+    "timecode": "02:30 - 02:32",
+    "text": "In real estate, that would be illegal fraud."
+  },
+  {
+    "id": 47,
+    "start": 152.72,
+    "end": 156.16,
+    "duration": 3.44,
+    "timecode": "02:32 - 02:36",
+    "text": "In tech, we call it the end user license agreement."
+  },
+  {
+    "id": 48,
+    "start": 156.16,
+    "end": 159.68,
+    "duration": 3.52,
+    "timecode": "02:36 - 02:39",
+    "text": "Every time you click i-agree, you sign a way through ownership."
+  },
+  {
+    "id": 49,
+    "start": 160.64,
+    "end": 162.56,
+    "duration": 1.92,
+    "timecode": "02:40 - 02:42",
+    "text": "It was not always like this."
+  },
+  {
+    "id": 50,
+    "start": 162.64,
+    "end": 166.64,
+    "duration": 4.0,
+    "timecode": "02:42 - 02:46",
+    "text": "Over 100 years ago, the United States Supreme Court"
+  },
+  {
+    "id": 51,
+    "start": 166.64,
+    "end": 168.4,
+    "duration": 1.76,
+    "timecode": "02:46 - 02:48",
+    "text": "Hurdall landmark publishing case."
+  },
+  {
+    "id": 52,
+    "start": 169.2,
+    "end": 172.96,
+    "duration": 3.76,
+    "timecode": "02:49 - 02:52",
+    "text": "A publisher tried to dictate the sale price of a printed book."
+  },
+  {
+    "id": 53,
+    "start": 172.96,
+    "end": 176.32,
+    "duration": 3.36,
+    "timecode": "02:52 - 02:56",
+    "text": "The Supreme Court created a simple rule, the first sale doctrine."
+  },
+  {
+    "id": 54,
+    "start": 177.04,
+    "end": 181.2,
+    "duration": 4.16,
+    "timecode": "02:57 - 03:01",
+    "text": "Once you buy a physical book, record or painting, it belongs to you."
+  },
+  {
+    "id": 55,
+    "start": 182.16,
+    "end": 186.8,
+    "duration": 4.64,
+    "timecode": "03:02 - 03:06",
+    "text": "You can lend it to a friend, resell it for cash or burn it in your backyard."
+  },
+  {
+    "id": 56,
+    "start": 187.76,
+    "end": 191.6,
+    "duration": 3.84,
+    "timecode": "03:07 - 03:11",
+    "text": "Publishers could never touch it again, until software came along."
+  },
+  {
+    "id": 57,
+    "start": 192.32,
+    "end": 196.08,
+    "duration": 3.76,
+    "timecode": "03:12 - 03:16",
+    "text": "In 1998, digital copyright laws changed everything."
+  },
+  {
+    "id": 58,
+    "start": 196.08,
+    "end": 199.68,
+    "duration": 3.6,
+    "timecode": "03:16 - 03:19",
+    "text": "If software had digital encryption locks, companies claimed"
+  },
+  {
+    "id": 59,
+    "start": 199.68,
+    "end": 200.96,
+    "duration": 1.28,
+    "timecode": "03:19 - 03:20",
+    "text": "you never bought property."
+  },
+  {
+    "id": 60,
+    "start": 201.84,
+    "end": 203.44,
+    "duration": 1.6,
+    "timecode": "03:21 - 03:23",
+    "text": "You merely granted a license."
+  },
+  {
+    "id": 61,
+    "start": 204.16,
+    "end": 208.08,
+    "duration": 3.92,
+    "timecode": "03:24 - 03:28",
+    "text": "This scam became so blatant that California just stepped in."
+  },
+  {
+    "id": 62,
+    "start": 208.08,
+    "end": 211.04,
+    "duration": 2.96,
+    "timecode": "03:28 - 03:31",
+    "text": "They passed assembly bill 2426."
+  },
+  {
+    "id": 63,
+    "start": 212.16,
+    "end": 217.12,
+    "duration": 4.96,
+    "timecode": "03:32 - 03:37",
+    "text": "Under California state law, it is now illegal for storefronts to use the words"
+  },
+  {
+    "id": 64,
+    "start": 217.12,
+    "end": 218.08,
+    "duration": 0.96,
+    "timecode": "03:37 - 03:38",
+    "text": "by or purchase."
+  },
+  {
+    "id": 65,
+    "start": 218.72,
+    "end": 220.72,
+    "duration": 2.0,
+    "timecode": "03:38 - 03:40",
+    "text": "Without an explicit license warning."
+  },
+  {
+    "id": 66,
+    "start": 221.36,
+    "end": 223.2,
+    "duration": 1.84,
+    "timecode": "03:41 - 03:43",
+    "text": "Politicians finally admitted that truth."
+  },
+  {
+    "id": 67,
+    "start": 223.84,
+    "end": 226.0,
+    "duration": 2.16,
+    "timecode": "03:43 - 03:46",
+    "text": "Storefronts were deceiving consumers."
+  },
+  {
+    "id": 68,
+    "start": 226.0,
+    "end": 227.68,
+    "duration": 1.68,
+    "timecode": "03:46 - 03:47",
+    "text": "And the response was immediate."
+  },
+  {
+    "id": 69,
+    "start": 227.68,
+    "end": 228.4,
+    "duration": 0.72,
+    "timecode": "03:47 - 03:48",
+    "text": "Look at a steam."
+  },
+  {
+    "id": 70,
+    "start": 228.96,
+    "end": 232.24,
+    "duration": 3.28,
+    "timecode": "03:48 - 03:52",
+    "text": "Open your checkout cart right now and you will see the fresh warning."
+  },
+  {
+    "id": 71,
+    "start": 233.04,
+    "end": 237.92,
+    "duration": 4.88,
+    "timecode": "03:53 - 03:57",
+    "text": "It says clearly, a purchase of a digital product grants a license on a steam,"
+  },
+  {
+    "id": 72,
+    "start": 237.92,
+    "end": 238.88,
+    "duration": 0.96,
+    "timecode": "03:57 - 03:58",
+    "text": "not ownership."
+  },
+  {
+    "id": 73,
+    "start": 238.88,
+    "end": 240.48,
+    "duration": 1.6,
+    "timecode": "03:58 - 04:00",
+    "text": "Just a license."
+  },
+  {
+    "id": 74,
+    "start": 240.48,
+    "end": 242.96,
+    "duration": 2.48,
+    "timecode": "04:00 - 04:02",
+    "text": "Now gamers actually love steam and for good reason."
+  },
+  {
+    "id": 75,
+    "start": 243.76,
+    "end": 247.6,
+    "duration": 3.84,
+    "timecode": "04:03 - 04:07",
+    "text": "Valve built deep customers trust over 20 long years."
+  },
+  {
+    "id": 76,
+    "start": 248.4,
+    "end": 252.56,
+    "duration": 4.16,
+    "timecode": "04:08 - 04:12",
+    "text": "Valve founder gave new well, famously gave us the golden road."
+  },
+  {
+    "id": 77,
+    "start": 252.56,
+    "end": 256.08,
+    "duration": 3.52,
+    "timecode": "04:12 - 04:16",
+    "text": "Pirecy is almost always a service problem, not a pricing problem."
+  },
+  {
+    "id": 78,
+    "start": 256.72,
+    "end": 260.32,
+    "duration": 3.6,
+    "timecode": "04:16 - 04:20",
+    "text": "Valve gave players instant downloads, automated cloud sales,"
+  },
+  {
+    "id": 79,
+    "start": 260.32,
+    "end": 263.2,
+    "duration": 2.88,
+    "timecode": "04:20 - 04:23",
+    "text": "seamless family sharing and easy to our refunds."
+  },
+  {
+    "id": 80,
+    "start": 263.92,
+    "end": 267.2,
+    "duration": 3.28,
+    "timecode": "04:23 - 04:27",
+    "text": "With the steam deck, they gave us an open handheld computer."
+  },
+  {
+    "id": 81,
+    "start": 268.16,
+    "end": 269.6,
+    "duration": 1.44,
+    "timecode": "04:28 - 04:29",
+    "text": "You can install other stores,"
+  },
+  {
+    "id": 82,
+    "start": 270.24,
+    "end": 272.56,
+    "duration": 2.32,
+    "timecode": "04:30 - 04:32",
+    "text": "run custom tools and use it freely."
+  },
+  {
+    "id": 83,
+    "start": 273.44,
+    "end": 276.32,
+    "duration": 2.88,
+    "timecode": "04:33 - 04:36",
+    "text": "Valve treats gamers like intelligent adults."
+  },
+  {
+    "id": 84,
+    "start": 276.32,
+    "end": 279.6,
+    "duration": 3.28,
+    "timecode": "04:36 - 04:39",
+    "text": "They've been loyalty through great service, not digital handcuffs."
+  },
+  {
+    "id": 85,
+    "start": 280.16,
+    "end": 281.04,
+    "duration": 0.88,
+    "timecode": "04:40 - 04:41",
+    "text": "But here is the catch."
+  },
+  {
+    "id": 86,
+    "start": 281.84,
+    "end": 283.84,
+    "duration": 2.0,
+    "timecode": "04:41 - 04:43",
+    "text": "Even Valve cannot change the law."
+  },
+  {
+    "id": 87,
+    "start": 283.84,
+    "end": 285.52,
+    "duration": 1.68,
+    "timecode": "04:43 - 04:45",
+    "text": "When you buy a game on a steam,"
+  },
+  {
+    "id": 88,
+    "start": 285.52,
+    "end": 288.56,
+    "duration": 3.04,
+    "timecode": "04:45 - 04:48",
+    "text": "publishers like electronic cards or Ubisoft"
+  },
+  {
+    "id": 89,
+    "start": 288.56,
+    "end": 290.56,
+    "duration": 2.0,
+    "timecode": "04:48 - 04:50",
+    "text": "still retain full legal control."
+  },
+  {
+    "id": 90,
+    "start": 290.56,
+    "end": 292.72,
+    "duration": 2.16,
+    "timecode": "04:50 - 04:52",
+    "text": "If a publisher decides to delete a game,"
+  },
+  {
+    "id": 91,
+    "start": 292.72,
+    "end": 294.48,
+    "duration": 1.76,
+    "timecode": "04:52 - 04:54",
+    "text": "even a steam cannot save it."
+  },
+  {
+    "id": 92,
+    "start": 294.48,
+    "end": 298.4,
+    "duration": 3.92,
+    "timecode": "04:54 - 04:58",
+    "text": "The entire digital gaming world is built on rented ground."
+  },
+  {
+    "id": 93,
+    "start": 298.4,
+    "end": 301.44,
+    "duration": 3.04,
+    "timecode": "04:58 - 05:01",
+    "text": "Via Sony and Microsoft pushing so hard to kill the disk."
+  },
+  {
+    "id": 94,
+    "start": 302.08,
+    "end": 304.0,
+    "duration": 1.92,
+    "timecode": "05:02 - 05:04",
+    "text": "It has nothing to do with saving trees"
+  },
+  {
+    "id": 95,
+    "start": 304.08,
+    "end": 306.64,
+    "duration": 2.56,
+    "timecode": "05:04 - 05:06",
+    "text": "and it has nothing to do with download speeds."
+  },
+  {
+    "id": 96,
+    "start": 306.64,
+    "end": 309.76,
+    "duration": 3.12,
+    "timecode": "05:06 - 05:09",
+    "text": "It is about killing the used game market forever."
+  },
+  {
+    "id": 97,
+    "start": 310.32,
+    "end": 315.04,
+    "duration": 4.72,
+    "timecode": "05:10 - 05:15",
+    "text": "Think back to 20 years ago, you bought Hello2 or Grand Theft Auto"
+  },
+  {
+    "id": 98,
+    "start": 315.04,
+    "end": 316.16,
+    "duration": 1.12,
+    "timecode": "05:15 - 05:16",
+    "text": "San Andreas on disk."
+  },
+  {
+    "id": 99,
+    "start": 316.72,
+    "end": 318.4,
+    "duration": 1.68,
+    "timecode": "05:16 - 05:18",
+    "text": "You beat the store in two weeks,"
+  },
+  {
+    "id": 100,
+    "start": 318.4,
+    "end": 320.64,
+    "duration": 2.24,
+    "timecode": "05:18 - 05:20",
+    "text": "then you sold that physical disk to a friend."
+  },
+  {
+    "id": 101,
+    "start": 320.64,
+    "end": 321.92,
+    "duration": 1.28,
+    "timecode": "05:20 - 05:21",
+    "text": "For $30."
+  },
+  {
+    "id": 102,
+    "start": 321.92,
+    "end": 323.52,
+    "duration": 1.6,
+    "timecode": "05:21 - 05:23",
+    "text": "Your friend got a great deal."
+  },
+  {
+    "id": 103,
+    "start": 323.52,
+    "end": 325.12,
+    "duration": 1.6,
+    "timecode": "05:23 - 05:25",
+    "text": "You got cash in your pocket."
+  },
+  {
+    "id": 104,
+    "start": 325.12,
+    "end": 328.8,
+    "duration": 3.68,
+    "timecode": "05:25 - 05:28",
+    "text": "And how much money did Sony or publishers make on that second transaction?"
+  },
+  {
+    "id": 105,
+    "start": 329.36,
+    "end": 330.72,
+    "duration": 1.36,
+    "timecode": "05:29 - 05:30",
+    "text": "Exactly $0."
+  },
+  {
+    "id": 106,
+    "start": 330.72,
+    "end": 333.12,
+    "duration": 2.4,
+    "timecode": "05:30 - 05:33",
+    "text": "Publishers hated the second hand market."
+  },
+  {
+    "id": 107,
+    "start": 333.2,
+    "end": 335.2,
+    "duration": 2.0,
+    "timecode": "05:33 - 05:35",
+    "text": "With an absolute burning passion,"
+  },
+  {
+    "id": 108,
+    "start": 335.2,
+    "end": 336.4,
+    "duration": 1.2,
+    "timecode": "05:35 - 05:36",
+    "text": "four decades,"
+  },
+  {
+    "id": 109,
+    "start": 336.4,
+    "end": 338.96,
+    "duration": 2.56,
+    "timecode": "05:36 - 05:38",
+    "text": "physical disk gave power to consumers."
+  },
+  {
+    "id": 110,
+    "start": 338.96,
+    "end": 340.08,
+    "duration": 1.12,
+    "timecode": "05:38 - 05:40",
+    "text": "Look at this chart."
+  },
+  {
+    "id": 111,
+    "start": 340.08,
+    "end": 340.88,
+    "duration": 0.8,
+    "timecode": "05:40 - 05:40",
+    "text": "In 20 years,"
+  },
+  {
+    "id": 112,
+    "start": 341.68,
+    "end": 342.88,
+    "duration": 1.2,
+    "timecode": "05:41 - 05:42",
+    "text": "the entire industry flipped."
+  },
+  {
+    "id": 113,
+    "start": 343.52,
+    "end": 347.84,
+    "duration": 4.32,
+    "timecode": "05:43 - 05:47",
+    "text": "Physical sales collapsed from 90% down to less than 8%."
+  },
+  {
+    "id": 114,
+    "start": 347.84,
+    "end": 350.48,
+    "duration": 2.64,
+    "timecode": "05:47 - 05:50",
+    "text": "Once the disk drive is removed from your console,"
+  },
+  {
+    "id": 115,
+    "start": 350.72,
+    "end": 352.96,
+    "duration": 2.24,
+    "timecode": "05:50 - 05:52",
+    "text": "competition completely disappears."
+  },
+  {
+    "id": 116,
+    "start": 352.96,
+    "end": 355.44,
+    "duration": 2.48,
+    "timecode": "05:52 - 05:55",
+    "text": "You cannot buy a cheap used copy on eBay."
+  },
+  {
+    "id": 117,
+    "start": 355.44,
+    "end": 357.36,
+    "duration": 1.92,
+    "timecode": "05:55 - 05:57",
+    "text": "You cannot bother a game from your cousin."
+  },
+  {
+    "id": 118,
+    "start": 358.16,
+    "end": 360.32,
+    "duration": 2.16,
+    "timecode": "05:58 - 06:00",
+    "text": "You are trapped inside one single digital store."
+  },
+  {
+    "id": 119,
+    "start": 360.88,
+    "end": 362.88,
+    "duration": 2.0,
+    "timecode": "06:00 - 06:02",
+    "text": "Sony and Microsoft set the price."
+  },
+  {
+    "id": 120,
+    "start": 363.44,
+    "end": 366.24,
+    "duration": 2.8,
+    "timecode": "06:03 - 06:06",
+    "text": "A 25-year-old digital game can sit at full price."
+  },
+  {
+    "id": 121,
+    "start": 367.04,
+    "end": 368.8,
+    "duration": 1.76,
+    "timecode": "06:07 - 06:08",
+    "text": "And you have zero alternatives."
+  },
+  {
+    "id": 122,
+    "start": 368.8,
+    "end": 370.88,
+    "duration": 2.08,
+    "timecode": "06:08 - 06:10",
+    "text": "And then comes the subscription squeeze."
+  },
+  {
+    "id": 123,
+    "start": 371.52,
+    "end": 373.52,
+    "duration": 2.0,
+    "timecode": "06:11 - 06:13",
+    "text": "You paid $80 for the game."
+  },
+  {
+    "id": 124,
+    "start": 373.52,
+    "end": 375.6,
+    "duration": 2.08,
+    "timecode": "06:13 - 06:15",
+    "text": "Now you must pay $80 a year."
+  },
+  {
+    "id": 125,
+    "start": 376.56,
+    "end": 378.24,
+    "duration": 1.68,
+    "timecode": "06:16 - 06:18",
+    "text": "Just for online multiplayer."
+  },
+  {
+    "id": 126,
+    "start": 378.24,
+    "end": 380.8,
+    "duration": 2.56,
+    "timecode": "06:18 - 06:20",
+    "text": "And this is not just an American problem."
+  },
+  {
+    "id": 127,
+    "start": 380.8,
+    "end": 383.44,
+    "duration": 2.64,
+    "timecode": "06:20 - 06:23",
+    "text": "Look at what this does to emerging markets."
+  },
+  {
+    "id": 128,
+    "start": 383.44,
+    "end": 385.04,
+    "duration": 1.6,
+    "timecode": "06:23 - 06:25",
+    "text": "Let's talk about India."
+  },
+  {
+    "id": 129,
+    "start": 385.04,
+    "end": 386.0,
+    "duration": 0.96,
+    "timecode": "06:25 - 06:26",
+    "text": "In India,"
+  },
+  {
+    "id": 130,
+    "start": 386.0,
+    "end": 387.76,
+    "duration": 1.76,
+    "timecode": "06:26 - 06:27",
+    "text": "console gaming never grew."
+  },
+  {
+    "id": 131,
+    "start": 387.76,
+    "end": 389.84,
+    "duration": 2.08,
+    "timecode": "06:27 - 06:29",
+    "text": "Through expensive digital pre-orders,"
+  },
+  {
+    "id": 132,
+    "start": 389.84,
+    "end": 392.16,
+    "duration": 2.32,
+    "timecode": "06:29 - 06:32",
+    "text": "it grew on the second hand disk lifeline."
+  },
+  {
+    "id": 133,
+    "start": 392.16,
+    "end": 394.8,
+    "duration": 2.64,
+    "timecode": "06:32 - 06:34",
+    "text": "Gamers in Mumbai, Delhi and Bangalore,"
+  },
+  {
+    "id": 134,
+    "start": 394.8,
+    "end": 396.48,
+    "duration": 1.68,
+    "timecode": "06:34 - 06:36",
+    "text": "swapped disks with friends."
+  },
+  {
+    "id": 135,
+    "start": 396.48,
+    "end": 399.04,
+    "duration": 2.56,
+    "timecode": "06:36 - 06:39",
+    "text": "They bought pre-owned copies on trade sites,"
+  },
+  {
+    "id": 136,
+    "start": 399.04,
+    "end": 400.56,
+    "duration": 1.52,
+    "timecode": "06:39 - 06:40",
+    "text": "played them and sold them back."
+  },
+  {
+    "id": 137,
+    "start": 401.12,
+    "end": 403.52,
+    "duration": 2.4,
+    "timecode": "06:41 - 06:43",
+    "text": "That secondary market was the only way."
+  },
+  {
+    "id": 138,
+    "start": 403.52,
+    "end": 405.84,
+    "duration": 2.32,
+    "timecode": "06:43 - 06:45",
+    "text": "Middle-class kids could afford this hobby."
+  },
+  {
+    "id": 139,
+    "start": 405.84,
+    "end": 408.16,
+    "duration": 2.32,
+    "timecode": "06:45 - 06:48",
+    "text": "Now look at Grand Theft Auto 6."
+  },
+  {
+    "id": 140,
+    "start": 408.16,
+    "end": 411.92,
+    "duration": 3.76,
+    "timecode": "06:48 - 06:51",
+    "text": "The standard addition is launching around 6,000 rupees."
+  },
+  {
+    "id": 141,
+    "start": 411.92,
+    "end": 414.72,
+    "duration": 2.8,
+    "timecode": "06:51 - 06:54",
+    "text": "If that game ships as a digital only code,"
+  },
+  {
+    "id": 142,
+    "start": 414.72,
+    "end": 416.88,
+    "duration": 2.16,
+    "timecode": "06:54 - 06:56",
+    "text": "that money is logged in a world forever."
+  },
+  {
+    "id": 143,
+    "start": 416.88,
+    "end": 418.32,
+    "duration": 1.44,
+    "timecode": "06:56 - 06:58",
+    "text": "You cannot sell it back."
+  },
+  {
+    "id": 144,
+    "start": 418.4,
+    "end": 419.92,
+    "duration": 1.52,
+    "timecode": "06:58 - 06:59",
+    "text": "You cannot recover the single rupees."
+  },
+  {
+    "id": 145,
+    "start": 420.56,
+    "end": 422.64,
+    "duration": 2.08,
+    "timecode": "07:00 - 07:02",
+    "text": "When hardware makers killed the disk,"
+  },
+  {
+    "id": 146,
+    "start": 422.64,
+    "end": 424.24,
+    "duration": 1.6,
+    "timecode": "07:02 - 07:04",
+    "text": "they killed the economic engine."
+  },
+  {
+    "id": 147,
+    "start": 424.24,
+    "end": 427.12,
+    "duration": 2.88,
+    "timecode": "07:04 - 07:07",
+    "text": "That kept the gaming alive in developing countries."
+  },
+  {
+    "id": 148,
+    "start": 427.12,
+    "end": 429.44,
+    "duration": 2.32,
+    "timecode": "07:07 - 07:09",
+    "text": "And gaming is just the testing route."
+  },
+  {
+    "id": 149,
+    "start": 429.44,
+    "end": 431.68,
+    "duration": 2.24,
+    "timecode": "07:09 - 07:11",
+    "text": "This digital rental model is spreading"
+  },
+  {
+    "id": 150,
+    "start": 431.68,
+    "end": 433.36,
+    "duration": 1.68,
+    "timecode": "07:11 - 07:13",
+    "text": "into every single product we buy."
+  },
+  {
+    "id": 151,
+    "start": 434.4,
+    "end": 436.64,
+    "duration": 2.24,
+    "timecode": "07:14 - 07:16",
+    "text": "BMW tried putting heated seats"
+  },
+  {
+    "id": 152,
+    "start": 437.36,
+    "end": 439.92,
+    "duration": 2.56,
+    "timecode": "07:17 - 07:19",
+    "text": "behind an $18 monthly subscription."
+  },
+  {
+    "id": 153,
+    "start": 439.92,
+    "end": 442.72,
+    "duration": 2.8,
+    "timecode": "07:19 - 07:22",
+    "text": "The physical heaters were already built inside the car."
+  },
+  {
+    "id": 154,
+    "start": 443.36,
+    "end": 444.48,
+    "duration": 1.12,
+    "timecode": "07:23 - 07:24",
+    "text": "You paid for the car."
+  },
+  {
+    "id": 155,
+    "start": 445.12,
+    "end": 446.48,
+    "duration": 1.36,
+    "timecode": "07:25 - 07:26",
+    "text": "They just logged the software."
+  },
+  {
+    "id": 156,
+    "start": 447.2,
+    "end": 451.12,
+    "duration": 3.92,
+    "timecode": "07:27 - 07:31",
+    "text": "Electric scooters in India are paywalling hillhold"
+  },
+  {
+    "id": 157,
+    "start": 451.12,
+    "end": 453.6,
+    "duration": 2.48,
+    "timecode": "07:31 - 07:33",
+    "text": "and cruise control behind software packs."
+  },
+  {
+    "id": 158,
+    "start": 454.16,
+    "end": 455.52,
+    "duration": 1.36,
+    "timecode": "07:34 - 07:35",
+    "text": "The motors exist."
+  },
+  {
+    "id": 159,
+    "start": 455.52,
+    "end": 456.88,
+    "duration": 1.36,
+    "timecode": "07:35 - 07:36",
+    "text": "The battery exist."
+  },
+  {
+    "id": 160,
+    "start": 456.88,
+    "end": 458.4,
+    "duration": 1.52,
+    "timecode": "07:36 - 07:38",
+    "text": "The core demands are credit card."
+  },
+  {
+    "id": 161,
+    "start": 459.12,
+    "end": 460.88,
+    "duration": 1.76,
+    "timecode": "07:39 - 07:40",
+    "text": "This is the modern corporate playbook."
+  },
+  {
+    "id": 162,
+    "start": 461.52,
+    "end": 463.2,
+    "duration": 1.68,
+    "timecode": "07:41 - 07:43",
+    "text": "Sell you the physical shell."
+  },
+  {
+    "id": 163,
+    "start": 463.2,
+    "end": 466.32,
+    "duration": 3.12,
+    "timecode": "07:43 - 07:46",
+    "text": "Then charge you rent forever for the permission to turn it on."
+  },
+  {
+    "id": 164,
+    "start": 467.36,
+    "end": 468.88,
+    "duration": 1.52,
+    "timecode": "07:47 - 07:48",
+    "text": "So where does this end?"
+  },
+  {
+    "id": 165,
+    "start": 468.88,
+    "end": 472.72,
+    "duration": 3.84,
+    "timecode": "07:48 - 07:52",
+    "text": "Do we just accept digital foodilism and keep renting forever?"
+  },
+  {
+    "id": 166,
+    "start": 472.72,
+    "end": 474.32,
+    "duration": 1.6,
+    "timecode": "07:52 - 07:54",
+    "text": "The pushback has already started."
+  },
+  {
+    "id": 167,
+    "start": 474.96,
+    "end": 477.68,
+    "duration": 2.72,
+    "timecode": "07:54 - 07:57",
+    "text": "Look at the stopkilling games movement in Ulock."
+  },
+  {
+    "id": 168,
+    "start": 478.4,
+    "end": 481.04,
+    "duration": 2.64,
+    "timecode": "07:58 - 08:01",
+    "text": "Started by consumer advocates and gamers."
+  },
+  {
+    "id": 169,
+    "start": 481.04,
+    "end": 484.08,
+    "duration": 3.04,
+    "timecode": "08:01 - 08:04",
+    "text": "It gathered over 1 million official petition signatures."
+  },
+  {
+    "id": 170,
+    "start": 484.8,
+    "end": 487.04,
+    "duration": 2.24,
+    "timecode": "08:04 - 08:07",
+    "text": "Their demand is simple and reasonable."
+  },
+  {
+    "id": 171,
+    "start": 487.04,
+    "end": 489.36,
+    "duration": 2.32,
+    "timecode": "08:07 - 08:09",
+    "text": "If a publisher stops supporting a game,"
+  },
+  {
+    "id": 172,
+    "start": 489.36,
+    "end": 491.84,
+    "duration": 2.48,
+    "timecode": "08:09 - 08:11",
+    "text": "they must release a clean offline path."
+  },
+  {
+    "id": 173,
+    "start": 491.84,
+    "end": 494.48,
+    "duration": 2.64,
+    "timecode": "08:11 - 08:14",
+    "text": "Let consumers run private servers."
+  },
+  {
+    "id": 174,
+    "start": 494.48,
+    "end": 497.12,
+    "duration": 2.64,
+    "timecode": "08:14 - 08:17",
+    "text": "Do not turn working software into digital garbage."
+  },
+  {
+    "id": 175,
+    "start": 497.12,
+    "end": 499.12,
+    "duration": 2.0,
+    "timecode": "08:17 - 08:19",
+    "text": "Because when legal alternatives fail,"
+  },
+  {
+    "id": 176,
+    "start": 499.76,
+    "end": 501.04,
+    "duration": 1.28,
+    "timecode": "08:19 - 08:21",
+    "text": "consumers find their own way."
+  },
+  {
+    "id": 177,
+    "start": 501.76,
+    "end": 503.52,
+    "duration": 1.76,
+    "timecode": "08:21 - 08:23",
+    "text": "Just look at retro game emolitions."
+  },
+  {
+    "id": 178,
+    "start": 504.16,
+    "end": 506.08,
+    "duration": 1.92,
+    "timecode": "08:24 - 08:26",
+    "text": "Thousands of vintage console games"
+  },
+  {
+    "id": 179,
+    "start": 506.08,
+    "end": 507.84,
+    "duration": 1.76,
+    "timecode": "08:26 - 08:27",
+    "text": "survive today only because"
+  },
+  {
+    "id": 180,
+    "start": 507.84,
+    "end": 509.52,
+    "duration": 1.68,
+    "timecode": "08:27 - 08:29",
+    "text": "communities ribbed offline backups."
+  },
+  {
+    "id": 181,
+    "start": 509.52,
+    "end": 510.88,
+    "duration": 1.36,
+    "timecode": "08:29 - 08:30",
+    "text": "If you want to protect your wallet"
+  },
+  {
+    "id": 182,
+    "start": 511.52,
+    "end": 512.88,
+    "duration": 1.36,
+    "timecode": "08:31 - 08:32",
+    "text": "and your digital life right now,"
+  },
+  {
+    "id": 183,
+    "start": 513.52,
+    "end": 515.52,
+    "duration": 2.0,
+    "timecode": "08:33 - 08:35",
+    "text": "you have to build your own safety net."
+  },
+  {
+    "id": 184,
+    "start": 515.52,
+    "end": 518.24,
+    "duration": 2.72,
+    "timecode": "08:35 - 08:38",
+    "text": "Here are the three rules of digital survival."
+  },
+  {
+    "id": 185,
+    "start": 518.72,
+    "end": 519.52,
+    "duration": 0.8,
+    "timecode": "08:38 - 08:39",
+    "text": "Rule number one."
+  },
+  {
+    "id": 186,
+    "start": 520.24,
+    "end": 522.96,
+    "duration": 2.72,
+    "timecode": "08:40 - 08:42",
+    "text": "Support DRM-free platforms."
+  },
+  {
+    "id": 187,
+    "start": 522.96,
+    "end": 525.28,
+    "duration": 2.32,
+    "timecode": "08:42 - 08:45",
+    "text": "Look at storefronts like GOG,"
+  },
+  {
+    "id": 188,
+    "start": 525.28,
+    "end": 527.12,
+    "duration": 1.84,
+    "timecode": "08:45 - 08:47",
+    "text": "where you buy a game on GOG."
+  },
+  {
+    "id": 189,
+    "start": 527.12,
+    "end": 529.52,
+    "duration": 2.4,
+    "timecode": "08:47 - 08:49",
+    "text": "You download a standalone offline installer file"
+  },
+  {
+    "id": 190,
+    "start": 530.08,
+    "end": 532.08,
+    "duration": 2.0,
+    "timecode": "08:50 - 08:52",
+    "text": "and actual offline installer."
+  },
+  {
+    "id": 191,
+    "start": 532.08,
+    "end": 534.48,
+    "duration": 2.4,
+    "timecode": "08:52 - 08:54",
+    "text": "Save that file on an external hard drive"
+  },
+  {
+    "id": 192,
+    "start": 534.48,
+    "end": 535.92,
+    "duration": 1.44,
+    "timecode": "08:54 - 08:55",
+    "text": "and it is yours forever."
+  },
+  {
+    "id": 193,
+    "start": 536.88,
+    "end": 538.96,
+    "duration": 2.08,
+    "timecode": "08:56 - 08:58",
+    "text": "GOG could go bankrupt tomorrow"
+  },
+  {
+    "id": 194,
+    "start": 538.96,
+    "end": 540.48,
+    "duration": 1.52,
+    "timecode": "08:58 - 09:00",
+    "text": "and that file will still long"
+  },
+  {
+    "id": 195,
+    "start": 540.48,
+    "end": 542.24,
+    "duration": 1.76,
+    "timecode": "09:00 - 09:02",
+    "text": "on your computer 50 years from now."
+  },
+  {
+    "id": 196,
+    "start": 543.68,
+    "end": 544.32,
+    "duration": 0.64,
+    "timecode": "09:03 - 09:04",
+    "text": "Rule number two."
+  },
+  {
+    "id": 197,
+    "start": 545.52,
+    "end": 547.92,
+    "duration": 2.4,
+    "timecode": "09:05 - 09:07",
+    "text": "Choose open hardware over logged ecosystems."
+  },
+  {
+    "id": 198,
+    "start": 548.64,
+    "end": 551.36,
+    "duration": 2.72,
+    "timecode": "09:08 - 09:11",
+    "text": "A personal computer or then open handheld"
+  },
+  {
+    "id": 199,
+    "start": 551.36,
+    "end": 552.4,
+    "duration": 1.04,
+    "timecode": "09:11 - 09:12",
+    "text": "like the Steam Deck"
+  },
+  {
+    "id": 200,
+    "start": 553.04,
+    "end": 554.8,
+    "duration": 1.76,
+    "timecode": "09:13 - 09:14",
+    "text": "lets you control your operating system."
+  },
+  {
+    "id": 201,
+    "start": 555.52,
+    "end": 557.92,
+    "duration": 2.4,
+    "timecode": "09:15 - 09:17",
+    "text": "You are not logged into one single corporate store."
+  },
+  {
+    "id": 202,
+    "start": 559.04,
+    "end": 560.0,
+    "duration": 0.96,
+    "timecode": "09:19 - 09:20",
+    "text": "And rule number three."
+  },
+  {
+    "id": 203,
+    "start": 560.8,
+    "end": 562.4,
+    "duration": 1.6,
+    "timecode": "09:20 - 09:22",
+    "text": "For creators and entrepreneurs,"
+  },
+  {
+    "id": 204,
+    "start": 563.52,
+    "end": 566.88,
+    "duration": 3.36,
+    "timecode": "09:23 - 09:26",
+    "text": "never build your entire life on rented digital land."
+  },
+  {
+    "id": 205,
+    "start": 566.88,
+    "end": 569.84,
+    "duration": 2.96,
+    "timecode": "09:26 - 09:29",
+    "text": "If your business lives entirely inside an algorithm"
+  },
+  {
+    "id": 206,
+    "start": 569.84,
+    "end": 571.84,
+    "duration": 2.0,
+    "timecode": "09:29 - 09:31",
+    "text": "and app store or the cloud service,"
+  },
+  {
+    "id": 207,
+    "start": 572.4,
+    "end": 574.08,
+    "duration": 1.68,
+    "timecode": "09:32 - 09:34",
+    "text": "you are just a digital tenant."
+  },
+  {
+    "id": 208,
+    "start": 574.08,
+    "end": 575.12,
+    "duration": 1.04,
+    "timecode": "09:34 - 09:35",
+    "text": "Build an email list."
+  },
+  {
+    "id": 209,
+    "start": 575.68,
+    "end": 578.08,
+    "duration": 2.4,
+    "timecode": "09:35 - 09:38",
+    "text": "Keep local backups of your source code."
+  },
+  {
+    "id": 210,
+    "start": 578.08,
+    "end": 580.4,
+    "duration": 2.32,
+    "timecode": "09:38 - 09:40",
+    "text": "Keep offline copies of your creative work"
+  },
+  {
+    "id": 211,
+    "start": 580.4,
+    "end": 583.92,
+    "duration": 3.52,
+    "timecode": "09:40 - 09:43",
+    "text": "because corporate terms of service can change overnight."
+  },
+  {
+    "id": 212,
+    "start": 583.92,
+    "end": 586.32,
+    "duration": 2.4,
+    "timecode": "09:43 - 09:46",
+    "text": "Think back to that empty plastic game case"
+  },
+  {
+    "id": 213,
+    "start": 586.32,
+    "end": 587.68,
+    "duration": 1.36,
+    "timecode": "09:46 - 09:47",
+    "text": "we opened at the start."
+  },
+  {
+    "id": 214,
+    "start": 587.68,
+    "end": 588.8,
+    "duration": 1.12,
+    "timecode": "09:47 - 09:48",
+    "text": "In the 20th century,"
+  },
+  {
+    "id": 215,
+    "start": 589.44,
+    "end": 592.16,
+    "duration": 2.72,
+    "timecode": "09:49 - 09:52",
+    "text": "freedom meant having physical property in your hands."
+  },
+  {
+    "id": 216,
+    "start": 592.56,
+    "end": 593.92,
+    "duration": 1.36,
+    "timecode": "09:52 - 09:53",
+    "text": "In 21st century,"
+  },
+  {
+    "id": 217,
+    "start": 594.72,
+    "end": 597.52,
+    "duration": 2.8,
+    "timecode": "09:54 - 09:57",
+    "text": "freedom is having the offline files on your hard drive."
+  },
+  {
+    "id": 218,
+    "start": 598.24,
+    "end": 600.08,
+    "duration": 1.84,
+    "timecode": "09:58 - 10:00",
+    "text": "If you need an active internet connection,"
+  },
+  {
+    "id": 219,
+    "start": 600.8,
+    "end": 602.64,
+    "duration": 1.84,
+    "timecode": "10:00 - 10:02",
+    "text": "just to ask for permission to open it,"
+  },
+  {
+    "id": 220,
+    "start": 603.2,
+    "end": 603.92,
+    "duration": 0.72,
+    "timecode": "10:03 - 10:03",
+    "text": "you never bought it."
+  },
+  {
+    "id": 221,
+    "start": 604.48,
+    "end": 605.92,
+    "duration": 1.44,
+    "timecode": "10:04 - 10:05",
+    "text": "You are just paying rent."
+  },
+  {
+    "id": 222,
+    "start": 605.92,
+    "end": 606.64,
+    "duration": 0.72,
+    "timecode": "10:05 - 10:06",
+    "text": "See you next time."
+  }
+]
