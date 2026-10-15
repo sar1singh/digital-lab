@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThinkLate Ep 03 — Evidence Capture Cockpit & Step-by-Step Protocol</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #070B14;
+      --card-bg: #0F172A;
+      --card-border: #1E293B;
+      --card-hover: #334155;
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --gold: #F59E0B;
+      --gold-dark: #B45309;
+      --cyan: #06B6D4;
+      --cyan-dark: #0E7490;
+      --crimson: #EF4444;
+      --emerald: #10B981;
+      --purple: #8B5CF6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      padding: 30px 20px 80px;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    header {
+      background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+    .header-left h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .header-left p {
+      color: var(--text-muted);
+      margin-top: 6px;
+      font-size: 14px;
+    }
+    .progress-box {
+      background: #0B1120;
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      min-width: 260px;
+    }
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .progress-bar-bg {
+      height: 10px;
+      background: #1E293B;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--gold) 0%, var(--emerald) 100%);
+      width: 17%;
+      transition: width 0.3s ease;
+    }
+
+    /* MASTER WORKFLOW GUIDE BOX */
+    .workflow-guide-box {
+      background: #0B1120;
+      border: 1px solid #1E293B;
+      border-left: 4px solid var(--cyan);
+      border-radius: 16px;
+      padding: 26px 30px;
+      margin-bottom: 34px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    .workflow-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .workflow-header h2 {
+      font-size: 20px;
+      font-weight: 800;
+      color: #E0F2FE;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .workflow-header p {
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .step-card {
+      background: #0F172A;
+      border: 1px solid #1E293B;
+      border-radius: 12px;
+      padding: 18px;
+      position: relative;
+    }
+    .step-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gold);
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      padding: 2px 8px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    .step-card h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+    .step-card p {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    kbd {
+      background: #1E293B;
+      border: 1px solid #334155;
+      color: var(--cyan);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+
+    /* DaVinci Tip Banner */
+    .davinci-tip-banner {
+      background: rgba(139, 92, 246, 0.08);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 10px;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 13px;
+      color: #E2E8F0;
+      flex-wrap: wrap;
+    }
+    .tip-badge {
+      background: rgba(139, 92, 246, 0.2);
+      border: 1px solid var(--purple);
+      color: #DDD6FE;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+
+    /* Section Titles */
+    .section-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin: 40px 0 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-left: 4px solid var(--gold);
+      padding-left: 12px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+      gap: 24px;
+    }
+
+    /* Evidence Card */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+      position: relative;
+    }
+    .card:hover {
+      border-color: #334155;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.3);
+    }
+    .card.completed {
+      border-color: rgba(16, 185, 129, 0.4);
+      background: linear-gradient(180deg, rgba(16, 185, 129, 0.04) 0%, var(--card-bg) 100%);
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+    .card-id {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--gold);
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .card-id.emerald {
+      color: var(--emerald);
+      background: rgba(16, 185, 129, 0.12);
+      border-color: rgba(16, 185, 129, 0.3);
+    }
+    .card-id.cyan {
+      color: var(--cyan);
+      background: rgba(6, 182, 212, 0.12);
+      border-color: rgba(6, 182, 212, 0.3);
+    }
+
+    .checkbox-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .checkbox-wrap input {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--emerald);
+      cursor: pointer;
+    }
+    .checkbox-wrap span {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+    .card .proves {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      min-height: 38px;
+    }
+
+    /* STEP-BY-STEP INSTRUCTIONS BOX INSIDE CARD */
+    .how-to-box {
+      background: #070B14;
+      border: 1px solid #1E293B;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+    }
+    .how-to-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gold);
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .how-to-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .how-to-list li {
+      font-size: 12px;
+      color: #CBD5E1;
+      margin-bottom: 6px;
+      position: relative;
+      padding-left: 20px;
+      line-height: 1.4;
+    }
+    .how-to-list li:last-child { margin-bottom: 0; }
+    .how-to-list li::before {
+      content: "▸";
+      position: absolute;
+      left: 4px;
+      color: var(--cyan);
+      font-weight: bold;
+    }
+    .how-to-list li strong {
+      color: #FFF;
+    }
+
+    /* Target specs */
+    .specs-box {
+      background: #0B1120;
+      border: 1px solid #1E293B;
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 14px;
+      font-size: 13px;
+    }
+    .specs-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+    .specs-row:last-child { margin-bottom: 0; }
+    .specs-label {
+      color: #64748B;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+    }
+    .specs-val {
+      color: #CBD5E1;
+      font-weight: 600;
+      text-align: right;
+    }
+    .specs-val.code {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--cyan);
+      font-size: 11px;
+    }
+
+    /* Highlight Quote snippet */
+    .quote-box {
+      background: rgba(245, 158, 11, 0.05);
+      border-left: 3px solid var(--gold);
+      padding: 10px 12px;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 16px;
+      font-size: 12px;
+      color: #E2E8F0;
+      font-style: italic;
+      position: relative;
+    }
+    .quote-box.cyan {
+      border-left-color: var(--cyan);
+      background: rgba(6, 182, 212, 0.05);
+    }
+    .copy-btn {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      background: #1E293B;
+      border: 1px solid #334155;
+      color: #94A3B8;
+      font-size: 10px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .copy-btn:hover {
+      color: var(--text-main);
+      background: #334155;
+    }
+
+    /* Preview thumbnail if ready */
+    .preview-thumb {
+      width: 100%;
+      height: 150px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid #334155;
+      margin-bottom: 14px;
+      background: #020617;
+    }
+
+    /* Action Buttons */
+    .action-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      flex: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: none;
+      font-family: inherit;
+    }
+    .btn-primary {
+      background: var(--gold);
+      color: #000;
+    }
+    .btn-primary:hover {
+      background: #FBBF24;
+      transform: translateY(-1px);
+    }
+    .btn-secondary {
+      background: #1E293B;
+      color: var(--text-main);
+      border: 1px solid #334155;
+    }
+    .btn-secondary:hover {
+      background: #334155;
+    }
+    .btn.done {
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--emerald);
+      border: 1px solid var(--emerald);
+      pointer-events: none;
+    }
+
+    /* Toast notification */
+    #toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #0F172A;
+      color: var(--emerald);
+      border: 1px solid var(--emerald);
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.2s ease;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      z-index: 999;
+    }
+    #toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <h1>🎬 ThinkLate Ep 03 — Evidence Capture Cockpit</h1>
+      <p>Target Episode: <em>"You Don't Own What You Buy"</em> • Visual Overlay Asset Pipeline</p>
+    </div>
+    <div class="progress-box">
+      <div class="progress-label">
+        <span>ASSETS READY</span>
+        <span id="progress-text">3 / 12 (25%)</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" id="progress-fill" style="width: 25%;"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 5-STEP EVIDENCE CAPTURE PROTOCOL GUIDE -->
+  <div class="workflow-guide-box">
+    <div class="workflow-header">
+      <h2>⚡ The 5-Step Broadcast Evidence Capture Protocol</h2>
+      <p>Follow these 5 exact steps for each card to produce sharp, broadcast-grade evidence crops:</p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <span class="step-num">STEP 01</span>
+        <h4>Set Browser Zoom</h4>
+        <p>Before taking any screenshot, press <kbd>Ctrl</kbd> + <kbd>+</kbd> twice in your browser to set zoom to <strong>125% or 150%</strong>. This guarantees crisp, high-DPI text on 1080p and 4K screens without blurry edges.</p>
+      </div>
+
+      <div class="step-card">
+        <span class="step-num">STEP 02</span>
+        <h4>Open & Locate Quote</h4>
+        <p>Click the gold <strong>"🌐 Open Website"</strong> button. Then click <strong>"COPY"</strong> on the quote box and press <kbd>Ctrl</kbd> + <kbd>F</kbd> on the website to jump straight to the exact paragraph or price tag.</p>
+      </div>
+
+      <div class="step-card">
+        <span class="step-num">STEP 03</span>
+        <h4>Highlighting Style</h4>
+        <p><strong>Two choices:</strong><br>
+        • <em>Fast:</em> Drag mouse cursor over text to highlight before snipping.<br>
+        • <em>Pro (Vox Style):</em> Snip clean text, and let DaVinci do the animated yellow highlighter sweep in 15 seconds.</p>
+      </div>
+
+      <div class="step-card">
+        <span class="step-num">STEP 04</span>
+        <h4>Snip with Win + Shift + S</h4>
+        <p>Press <kbd>Win</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd>. Drag a rectangle around the element. <strong>Rule:</strong> Leave 20–30px breathing padding around the text so it never feels crammed.</p>
+      </div>
+
+      <div class="step-card">
+        <span class="step-num">STEP 05</span>
+        <h4>Save into Assets Folder</h4>
+        <p>Click <strong>"📋 Copy Name"</strong> on the card below. Paste the filename and save into:<br>
+        <code>videos/03_death_of_ownership/assets/</code></p>
+      </div>
+    </div>
+
+    <div class="davinci-tip-banner">
+      <span class="tip-badge">🎬 30-SEC DAVINCI RESOLVE TRICK</span>
+      <span>In DaVinci Resolve, place your screenshot on <strong>Track 3</strong> over the blurred gameplay. Drop a <strong>Solid Color (Amber/Yellow #F59E0B)</strong> on Track 4, set Composite Mode to <strong>Multiply</strong>, and animate Crop Right to create an instant animated marker highlight!</span>
+    </div>
+  </div>
+
+  <!-- SECTION 1: PRIMARY EVIDENCE (ACTS 1 - 3) -->
+  <div class="section-title">⚖️ PRIMARY EVIDENCE (Indisputable Legal & Storefront Documents)</div>
+  <div class="grid">
+
+    <!-- EVID 01: California AB 2426 (READY) -->
+    <div class="card completed" id="card-evid-01">
+      <div>
+        <div class="card-top">
+          <span class="card-id emerald">EVID 01 • READY</span>
+          <label class="checkbox-wrap">
+            <input type="checkbox" checked onchange="toggleItem('evid-01', this.checked)">
+            <span>CAPTURED</span>
+          </label>
+        </div>
+        <h3>California Assembly Bill 2426</h3>
+        <p class="proves">Banned digital storefronts from using "BUY" or "PURCHASE" without explicit license disclaimers.</p>
+        
+        <img src="assets/EVID_01_CA_AB2426_composite_card.png" class="preview-thumb" alt="AB 2426 Composite Card">
+
+        <div class="how-to-box">
+          <div class="how-to-title">📋 HOW THIS WAS CAPTURED:</div>
+          <ul class="how-to-list">
+            <li>Tier 1: Website header crop (California Capitol dome + AB-2426 Bill Title).</li>
+            <li>Tier 2: Zoomed crop of Section 17500.6(a) prohibiting the words "BUY" or "PURCHASE".</li>
+            <li>Status: Already assembled into composite card in <code>assets/</code>.</li>
+          </ul>
+        </div>
+
+        <div class="specs-box">
+          <div class="specs-row">
+            <span class="specs-label">Target File</span>
+            <span class="specs-val code">assets/EVID_01_CA_AB2426_composite_card.png</span>
+          </div>
+          <div class="specs-row">
+            <span class="specs-label">Timeline Mark</span>
+            <span class="specs-val">Act 2 • 03:24 – 03:46 (22s)</span>
+          </div>
+        </div>
+      </div>
+      <div class="action-row">
+        <a class="btn done">✅ Asset Compiled in Assets/</a>
+      </div>
+    </div>
+
+    <!-- EVID 02: Steam Cart Checkout Warning (READY) -->
+    <div class="card completed" id="card-evid-02">
+      <div>
+        <div class="card-top">
+          <span class="card-id emerald">EVID 02 • READY</span>
+          <label class="checkbox-wrap">
+            <input type="checkbox" checked onchange="toggleItem('evid-02', this.checked)">
+            <span>CAPTURED</span>
+          </label>
+        </div>
+        <h3>Steam Cart Checkout License Warning</h3>
+        <p class="proves">Proves Valve legally defines all digital purchases as temporary licenses, not ownership.</p>
+
+        <img src="assets/EVID_02_STEAM_CART_composite_card.png" class="preview-thumb" alt="Steam Cart Composite Card">
+
+        <div class="how-to-box">
+          <div class="how-to-title">🎯 FOUND & EXTRACTED FROM YOUR STEAM CAPTURE:</div>
+          <ul class="how-to-list">
+            <li><strong>Location in Steam:</strong> Right-hand checkout column, directly under the desktop monitor graphic!</li>
+            <li><strong>Captured Game:</strong> <em>Black Myth: Wukong</em> (₹3,599.00) in Indian Rupees.</li>
+            <li><strong>Status:</strong> Broadcast card compiled in <code>assets/</code> with glowing cyan highlight box.</li>
+          </ul>
+        </div>
+
+        <div class="quote-box cyan">
+          <button class="copy-btn" onclick="copyQuote('A purchase of a digital product grants a license for the product on Steam.')">COPY</button>
+          "A purchase of a digital product grants a license for the product on Steam."
+        </div>
+
+        <div class="specs-box">
+          <div class="specs-row">
+            <span class="specs-label">Target File</span>
+            <span class="specs-val code">assets/EVID_02_STEAM_CART_composite_card.png</span>
+          </div>
+          <div class="specs-row">
+            <span class="specs-label">Timeline Mark</span>
+            <span class="specs-val">Act 2 • 03:47 – 04:00 (13s)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-row">
+        <a class="btn done">✅ Asset Compiled in Assets/</a>
+      </div>
+    </div>
+
+    <!-- EVID 03: PS5 Pro + Disc Drive -->
+    <div class="card" id="card-evid-03">
+      <div>
+        <div class="card-top">
+          <span class="card-id">EVID 03 • ACT 1 HOOK</span>
+          <label class="checkbox-wrap">
+            <input type="checkbox" onchange="toggleItem('evid-03', this.checked)">
+            <span>DONE</span>
+          </label>
+        </div>
+        <h3>PlayStation 5 Pro: $700 Console + $80 Disc Drive</h3>
+        <p class="proves">Sony sells a $700 flagship with no disc drive and paywalls physical game playback behind a sold-out $79.99 accessory.</p>
+
+        <div class="how-to-box">
+          <div class="how-to-title">📸 EXACT CAPTURE STEPS (WORKING GLOBAL LINKS):</div>
+          <ul class="how-to-list">
+            <li><strong>Note:</strong> Sony's direct US store blocks non-US IPs (Access Denied). Use the official PS Blog, Amazon US listing, or The Verge below:</li>
+            <li><strong>Option A (PS Blog):</strong> Search for <em>"PS5 Pro is available as a disc-less console"</em> and snip the paragraph.</li>
+            <li><strong>Option B (Amazon / The Verge):</strong> Snip the hero section showing the $79.99 Disc Drive price tag or "Currently Unavailable".</li>
+            <li><strong>Step 3:</strong> Save as <code>assets/EVID_03_PS5_PRO_DISC_DRIVE.png</code>.</li>
+          </ul>
+        </div>
+
+        <div class="quote-box">
+          <button class="copy-btn" onclick="copyQuote('Disc Drive for PS5 Digital Edition Consoles $79.99')">COPY</button>
+          "PS5 Pro is available as a disc-less console, with the option to purchase the Disc Drive separately ($79.99)."
+        </div>
+
+        <div class="specs-box">
+          <div class="specs-row">
+            <span class="specs-label">Target File</span>
+            <span class="specs-val code">assets/EVID_03_PS5_PRO_DISC_DRIVE.png</span>
+          </div>
+          <div class="specs-row">
+            <span class="specs-label">Timeline Mark</span>
+            <span class="specs-val">Act 1 • 00:16 – 00:25 (9s)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-row">
+        <a href="https://blog.playstation.com/2024/09/10/welcome-playstation-5-pro-the-most-visually-impressive-way-to-play-games-on-playstation/" target="_blank" class="btn btn-primary">🌐 PS Blog (Official)</a>
+        <a href="https://www.amazon.com/dp/B0CL5KNB9M" target="_blank" class="btn btn-secondary">🌐 Amazon ($79.99 Drive)</a>
+        <a href="https://www.theverge.com/2024/9/10/24240751/sony-ps5-pro-disc-drive-stand-separate-purchase" target="_blank" class="btn btn-secondary">🌐 The Verge Report</a>
+        <button class="btn btn-secondary" onclick="copyFilename('EVID_03_PS5_PRO_DISC_DRIVE.png')">📋 Copy Name</button>
+      </div>
+    </div>
+
+    <!-- EVID 04: Ubisoft The Crew Lawsuit -->
+    <div class="card" id="card-evid-04">
+      <div>
+        <div class="card-top">
+          <span class="card-id">EVID 04 • ACT 1 PROOF</span>
+          <label class="checkbox-wrap">
+            <input type="checkbox" onchange="toggleItem('evid-04', this.checked)">
+            <span>DONE</span>
+          </label>
+        </div>
+        <h3>Ubisoft Sued Over 'The Crew' License Wipe</h3>
+        <p class="proves">California class action lawsuit after Ubisoft remotely revoked 12M purchased copies and argued players never owned them.</p>
+
+        <div class="how-to-box">
+          <div class="how-to-title">📸 EXACT CAPTURE STEPS (UNBLOCKED MIRRORS):</div>
+          <ul class="how-to-list">
+            <li><strong>Step 1:</strong> Click <em>"🌐 IGN Lawsuit News"</em> or <em>"🌐 PC Gamer"</em> below (both 100% accessible worldwide).</li>
+            <li><strong>Step 2:</strong> Set zoom to <strong>125%</strong>. Press <kbd>Ctrl + F</kbd> and search for <em>"duped"</em> or <em>"limited license"</em>.</li>
+            <li><strong>Step 3:</strong> Snip the headline: <em>"Ubisoft's defense: You don't actually own your games"</em>.</li>
+            <li><strong>Step 4:</strong> Save as <code>assets/EVID_04_UBISOFT_CREW_LAWSUIT.png</code>.</li>
+          </ul>
+        </div>
+
+        <div class="quote-box">
+          <button class="copy-btn" onclick="copyQuote('Ubisofts defense against The Crew lawsuit: You dont actually own your games')">COPY</button>
+          "Ubisoft's defense against The Crew lawsuit doubles down: You don't actually own your games."
+        </div>
+
+        <div class="specs-box">
+          <div class="specs-row">
+            <span class="specs-label">Target File</span>
+            <span class="specs-val code">assets/EVID_04_UBISOFT_CREW_LAWSUIT.png</span>
+          </div>
+          <div class="specs-row">
+            <span class="specs-label">Timeline Mark</span>
+            <span class="specs-val">Act 1 • 00:57 – 01:14 (17s)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-row">
+        <a href="https://www.ign.com/articles/ubisoft-faces-lawsuit-for-shutting-down-the-crew" target="_blank" class="btn btn-primary">🌐 IGN News Lawsuit</a>
+        <a href="https://www.pcgamer.com/games/racing/ubisofts-defense-against-the-crew-lawsuit-doubles-down-on-a-point-weve-heard-many-times-before-you-dont-actually-own-your-games/" target="_blank" class="btn btn-secondary">🌐 PC Gamer Report</a>
+        <button class="btn btn-secondary" onclick="copyFilename('EVID_04_UBISOFT_CREW_LAWSUIT.png')">📋 Copy Name</button>
+      </div>
+    </div>
+
+    <!-- EVID 05: India Game Resale Lifeline -->
+    <div class="card" id="card-evid-05">
+      <div>
+        <div class="card-top">
+          <span class="card-id">EVID 05 • ACT 3 INDIA</span>
+          <label class="checkbox-wrap">
+            <input type="checkbox" onchange="toggleItem('evid-05', this.checked)">
+            <span>DONE</span>
+          </label>
+        </div>
+        <h3>India Pre-Owned Game Resale Lifeline (CeX & Gameloot)</h3>
+        <p class="proves">Console gaming in India survives on buyback/resale. Digital-only completely wipes this economic engine.</p>
+
+        <div class="how-to-box">
+          <div class="how-to-title">📸 EXACT CAPTURE STEPS (INDIA DIRECT SITES):</div>
+          <ul class="how-to-list">
+            <li><strong>Option A (CeX India - Guaranteed):</strong> Click <em>"🌐 CeX India (Webuy)"</em> below. Look at any PS5 game showing <strong>WeSell (₹2,400)</strong> vs <strong>WeBuy Cash (₹1,800)</strong>.</li>
+            <li><strong>Option B (Gameloot):</strong> Click <em>"🌐 Gameloot India"</em>. Snip Buy Pre-Owned vs Sell Back price.</li>
+            <li><strong>Step 3:</strong> Save as <code>assets/EVID_05_INDIA_DISC_RESALE.png</code>.</li>
+          </ul>
+        </div>
+
+        <div class="quote-box">
+          <button class="copy-btn" onclick="copyQuote('PS5 Pre-Owned Games Buy and Sell India CeX Gameloot')">COPY</button>
+          "PS5 Pre-Owned • Buy: ₹2,400 • Sell Back: ₹1,800 • Net Cost to Play: ₹600"
+        </div>
+
+        <div class="specs-box">
+          <div class="specs-row">
+            <span class="specs-label">Target File</span>
+            <span class="specs-val code">assets/EVID_05_INDIA_DISC_RESALE.png</span>
+          </div>
+          <div class="specs-row">
+            <span class="specs-label">Timeline Mark</span>
+            <span class="specs-val">Act 3 • 06:45 – 07:00 (15s)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-row">
+        <a href="https://in.webuy.com/search?categoryIds=1004&categoryFriendlyName=playstation5-software" target="_blank" class="btn btn-primary">🌐 CeX India (Webuy)</a>
+        <a href="https://gameloot.in/?s=ps5+pre-owned&post_type=product" target="_blank" class="btn btn-secondary">🌐 Gameloot India</a>
+        <button class="btn btn-secondary" onclick="copyFilename('EVID_05_INDIA_DISC_RESALE.png')">📋 Copy Name</button>
+      </div>
+    </div>
+
+    <!-- EVID 06: BMW Heated Seat Subscription -->
+    <div class="card" id="card-evid-06">
+      <div>
+        <div class="card-top">
+          <span class="card-id">EVID 06 • ACT 3 EXPANSION</span>
+          <label class="checkbox-wrap">
+            <input type="checkbox" onchange="toggleItem('evid-06', this.checked)">
+            <span>DONE</span>
+          </label>
+        </div>
+        <h3>BMW ConnectedDrive: Heated Seat Subscription</h3>
+        <p class="proves">Hardware rental spreading to cars: heaters already installed inside seats, but software demands $18/month rent.</p>
+
+        <div class="how-to-box">
+          <div class="how-to-title">📸 EXACT CAPTURE STEPS (VERIFIED UNBLOCKED):</div>
+          <ul class="how-to-list">
+            <li><strong>Note:</strong> BMW's UK website redirects non-UK visitors to local portals. Use The Verge's investigative feature article below:</li>
+            <li><strong>Step 1:</strong> Click <em>"🌐 The Verge (App Screenshots)"</em> below.</li>
+            <li><strong>Step 2:</strong> Set zoom to <strong>125%</strong>. Scroll to the screenshot of the ConnectedDrive store showing: <em>"Front seat heating — 1 month £15 / 1 year £150 / Unlimited £350"</em>.</li>
+            <li><strong>Step 3:</strong> Snip with <kbd>Win + Shift + S</kbd> and save as <code>assets/EVID_06_BMW_HEATED_SEATS.png</code>.</li>
+          </ul>
+        </div>
+
+        <div class="quote-box">
+          <button class="copy-btn" onclick="copyQuote('BMW starts selling heated seat subscriptions for 18 dollars a month')">COPY</button>
+          "BMW starts selling heated seat subscriptions for $18 a month: £15/mo • £150/yr • £350 unlimited."
+        </div>
+
+        <div class="specs-box">
+          <div class="specs-row">
+            <span class="specs-label">Target File</span>
+            <span class="specs-val code">assets/EVID_06_BMW_HEATED_SEATS.png</span>
+          </div>
+          <div class="specs-row">
+            <span class="specs-label">Timeline Mark</span>
+            <span class="specs-val">Act 3 • 07:14 – 07:26 (12s)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-row">
+        <a href="https://www.theverge.com/2022/7/12/23204950/bmw-subscriptions-microtransactions-heated-seats-feature" target="_blank" class="btn btn-primary">🌐 The Verge (App Screenshots)</a>
+        <a href="https://www.bbc.com/news/technology-62143137" target="_blank" class="btn btn-secondary">🌐 BBC News</a>
+        <button class="btn btn-secondary" onclick="copyFilename('EVID_06_BMW_HEATED_SEATS.png')">📋 Copy Name</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SECTION 2: DATA CHARTS & CAMPAIGN CARDS -->
+  <div class="section-title">📊 DATA CHARTS & RESISTANCE CARDS</div>
+  <div class="grid">
+
+    <!-- CHART 01: 20-Year Sales Collapse (READY) -->
+    <div class="card completed" id="card-chart-01">
+      <div>
+        <div class="card-top">
+          <span class="card-id emerald">CHART 01 • READY</span>
+          <label class="checkbox-wrap">
+            <input type="checkbox" checked onchange="toggleItem('chart-01', this.checked)">
+            <span>COMPILED</span>
+          </label>
+        </div>
+        <h3>The 20-Year Extinction of Physical Media</h3>
+        <p class="proves">Broadcast chart proving physical sales collapsed from 90% down to 8% while digital soared to 92%.</p>
+
+        <img src="assets/CHART_SALES_COLLAPSE_transparent.png" class="preview-thumb" alt="Chart Sales Collapse">
+
+        <div class="how-to-box">
+          <div class="how-to-title">📋 HOW THIS WAS GENERATED:</div>
+          <ul class="how-to-list">
+            <li>Rendered automatically using <code>render_sales_chart.py</code>.</li>
+            <li>Created 3 variants: 1080p full slate, 1080p transparent floating card, and 4K master.</li>
+            <li>Status: Ready to drag into DaVinci Resolve on Track 3.</li>
+          </ul>
+        </div>
+
+        <div class="specs-box">
+          <div class="specs-row">
+            <span class="specs-label">Target File</span>
+            <span class="specs-val code">assets/CHART_SALES_COLLAPSE_transparent.png</span>
+          </div>
+          <div class="specs-row">
+            <span class="specs-label">Timeline Mark</span>
+            <span class="specs-val">Act 3 • 05:38 – 05:52 (14s)</span>
+          </div>
+        </div>
+      </div>
+      <div class="action-row">
+        <a class="btn done">✅ Rendered via Python Script</a>
+      </div>
+    </div>
+
+    <!-- CARD 04: Stop Killing Games EU -->
+    <div class="card" id="card-stop-killing-games">
+      <div>
+        <div class="card-top">
+          <span class="card-id cyan">CAMPAIGN • ACT 4</span>
+          <label class="checkbox-wrap">
+            <input type="checkbox" onchange="toggleItem('stop-killing-games', this.checked)">
+            <span>DONE</span>
+          </label>
+        </div>
+        <h3>Stop Killing Games (EU Citizens' Initiative)</h3>
+        <p class="proves">Over 1,000,000 citizens demanding legislation to mandate offline patches when servers shut down.</p>
+
+        <div class="how-to-box">
+          <div class="how-to-title">📸 EXACT CAPTURE STEPS:</div>
+          <ul class="how-to-list">
+            <li><strong>Step 1:</strong> Open the official European Commission portal below.</li>
+            <li><strong>Step 2:</strong> Set zoom to <strong>125%</strong>.</li>
+            <li><strong>Step 3:</strong> Snip the header banner showing the initiative title and the progress bar crossing <strong>1,000,000 signatures</strong>.</li>
+            <li><strong>Step 4:</strong> Save as <code>assets/CARD_STOP_KILLING_GAMES.png</code>.</li>
+          </ul>
+        </div>
+
+        <div class="quote-box">
+          <button class="copy-btn" onclick="copyQuote('Stop Killing Games European Citizens Initiative')">COPY</button>
+          "Require publishers that sell videogames... to leave the videogame in a functional (playable) state when support is discontinued."
+        </div>
+
+        <div class="specs-box">
+          <div class="specs-row">
+            <span class="specs-label">Target File</span>
+            <span class="specs-val code">assets/CARD_STOP_KILLING_GAMES.png</span>
+          </div>
+          <div class="specs-row">
+            <span class="specs-label">Timeline Mark</span>
+            <span class="specs-val">Act 4 • 07:49 – 08:14 (25s)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-row">
+        <a href="https://www.stopkillinggames.com/eci" target="_blank" class="btn btn-primary">🌐 StopKillingGames.com</a>
+        <a href="https://citizens-initiative.europa.eu/initiatives/details/2024/000007_en" target="_blank" class="btn btn-secondary">🌐 EU Commission Portal</a>
+        <button class="btn btn-secondary" onclick="copyFilename('CARD_STOP_KILLING_GAMES.png')">📋 Copy Name</button>
+      </div>
+    </div>
+
+    <!-- CARD 05: GOG DRM-Free Solution -->
+    <div class="card" id="card-gog">
+      <div>
+        <div class="card-top">
+          <span class="card-id cyan">SOLUTION • ACT 4</span>
+          <label class="checkbox-wrap">
+            <input type="checkbox" onchange="toggleItem('gog', this.checked)">
+            <span>DONE</span>
+          </label>
+        </div>
+        <h3>GOG.com DRM-Free Offline Installer</h3>
+        <p class="proves">Rule 1 of Digital Sovereignty: True permanent ownership via standalone offline installer files (.exe).</p>
+
+        <div class="how-to-box">
+          <div class="how-to-title">📸 EXACT CAPTURE STEPS:</div>
+          <ul class="how-to-list">
+            <li><strong>Step 1:</strong> Open GOG.com on your browser or client.</li>
+            <li><strong>Step 2:</strong> Open any game in your library or product page showing the <strong>DRM-FREE</strong> guarantee.</li>
+            <li><strong>Step 3:</strong> Snip the button that says: <em>"DOWNLOAD OFFLINE BACKUP GAME INSTALLERS (.EXE)"</em>.</li>
+            <li><strong>Step 4:</strong> Save as <code>assets/CARD_RULE1_GOG.png</code>.</li>
+          </ul>
+        </div>
+
+        <div class="quote-box cyan">
+          <button class="copy-btn" onclick="copyQuote('Download Offline Backup Game Installers GOG')">COPY</button>
+          "DRM-FREE • Download Offline Backup Game Installers • Launch 50 years from now"
+        </div>
+
+        <div class="specs-box">
+          <div class="specs-row">
+            <span class="specs-label">Target File</span>
+            <span class="specs-val code">assets/CARD_RULE1_GOG.png</span>
+          </div>
+          <div class="specs-row">
+            <span class="specs-label">Timeline Mark</span>
+            <span class="specs-val">Act 4 • 08:38 – 08:56 (18s)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-row">
+        <a href="https://www.gog.com" target="_blank" class="btn btn-primary">🌐 Open GOG.com</a>
+        <button class="btn btn-secondary" onclick="copyFilename('CARD_RULE1_GOG.png')">📋 Copy Name</button>
+      </div>
+    </div>
+
+    <!-- CARD 02: 1908 First Sale Doctrine -->
+    <div class="card" id="card-first-sale">
+      <div>
+        <div class="card-top">
+          <span class="card-id">LEGAL HISTORY • ACT 2</span>
+          <label class="checkbox-wrap">
+            <input type="checkbox" onchange="toggleItem('first-sale', this.checked)">
+            <span>DONE</span>
+          </label>
+        </div>
+        <h3>1908 Supreme Court 'First Sale Doctrine'</h3>
+        <p class="proves">Historical precedent: Once you buy physical media, the publisher legally loses all right to control resale.</p>
+
+        <div class="how-to-box">
+          <div class="how-to-title">📸 EXACT CAPTURE STEPS:</div>
+          <ul class="how-to-list">
+            <li><strong>Step 1:</strong> Open Wikipedia or Justia Law link below.</li>
+            <li><strong>Step 2:</strong> Press <kbd>Ctrl + F</kbd> and search for: <em>"right to resell it at such price"</em>.</li>
+            <li><strong>Step 3:</strong> Highlight Justice Day's famous ruling quote.</li>
+            <li><strong>Step 4:</strong> Save as <code>assets/CARD_FIRST_SALE_1908.png</code>.</li>
+          </ul>
+        </div>
+
+        <div class="quote-box">
+          <button class="copy-btn" onclick="copyQuote('The purchaser of a book... has the right to resell it at such price as he sees fit')">COPY</button>
+          "The purchaser of a book... has the right to resell it at such price as he sees fit, notwithstanding notice from the publisher."
+        </div>
+
+        <div class="specs-box">
+          <div class="specs-row">
+            <span class="specs-label">Target File</span>
+            <span class="specs-val code">assets/CARD_FIRST_SALE_1908.png</span>
+          </div>
+          <div class="specs-row">
+            <span class="specs-label">Timeline Mark</span>
+            <span class="specs-val">Act 2 • 02:40 – 03:12 (32s)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-row">
+        <a href="https://en.wikipedia.org/wiki/Bobbs-Merrill_Co._v._Straus" target="_blank" class="btn btn-primary">🌐 Wikipedia Case</a>
+        <a href="https://supreme.justia.com/cases/federal/us/210/339/" target="_blank" class="btn btn-secondary">🌐 Justia US Court</a>
+        <button class="btn btn-secondary" onclick="copyFilename('CARD_FIRST_SALE_1908.png')">📋 Copy Name</button>
+      </div>
+    </div>
+
+    <!-- CARD 03: Sony Deleting Discovery Episodes -->
+    <div class="card" id="card-sony-discovery">
+      <div>
+        <div class="card-top">
+          <span class="card-id">NEWS • ACT 1</span>
+          <label class="checkbox-wrap">
+            <input type="checkbox" onchange="toggleItem('sony-discovery', this.checked)">
+            <span>DONE</span>
+          </label>
+        </div>
+        <h3>Sony Deletes 1,300 Discovery TV Shows</h3>
+        <p class="proves">Proof of corporate deletion: Sony notified users that already-purchased TV seasons would be erased overnight.</p>
+
+        <div class="how-to-box">
+          <div class="how-to-title">📸 EXACT CAPTURE STEPS:</div>
+          <ul class="how-to-list">
+            <li><strong>Step 1:</strong> Open Variety or IGN article below. Set zoom to <strong>125%</strong>.</li>
+            <li><strong>Step 2:</strong> Snip the headline and Sony notice showing 1,300 Discovery episodes being removed.</li>
+            <li><strong>Step 3:</strong> Save as <code>assets/CARD_SONY_DISCOVERY.png</code>.</li>
+          </ul>
+        </div>
+
+        <div class="quote-box">
+          <button class="copy-btn" onclick="copyQuote('Sony is removing 1300 Discovery shows from PlayStation libraries even if you paid for them')">COPY</button>
+          "Sony Is Removing 1,300+ Discovery Shows From PlayStation Libraries, Even If You Paid for Them."
+        </div>
+
+        <div class="specs-box">
+          <div class="specs-row">
+            <span class="specs-label">Target File</span>
+            <span class="specs-val code">assets/CARD_SONY_DISCOVERY.png</span>
+          </div>
+          <div class="specs-row">
+            <span class="specs-label">Timeline Mark</span>
+            <span class="specs-val">Act 1 • 01:21 – 01:36 (15s)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-row">
+        <a href="https://variety.com/2023/digital/news/playstation-discovery-content-removed-warner-bros-discovery-1235818987/" target="_blank" class="btn btn-primary">🌐 Variety News</a>
+        <a href="https://www.ign.com/articles/sony-removing-1300-discovery-shows-from-playstation-libraries" target="_blank" class="btn btn-secondary">🌐 IGN News</a>
+        <button class="btn btn-secondary" onclick="copyFilename('CARD_SONY_DISCOVERY.png')">📋 Copy Name</button>
+      </div>
+    </div>
+
+    <!-- CARD 06: Indian EV Scooter Software Paywall -->
+    <div class="card" id="card-ev-scooter">
+      <div>
+        <div class="card-top">
+          <span class="card-id">INDUSTRY • ACT 3</span>
+          <label class="checkbox-wrap">
+            <input type="checkbox" onchange="toggleItem('ev-scooter', this.checked)">
+            <span>DONE</span>
+          </label>
+        </div>
+        <h3>Indian EV Scooter Software Paywalls</h3>
+        <p class="proves">Hardware rental in transport: Electric scooters paywalling hill-hold and cruise control behind software packs.</p>
+
+        <div class="how-to-box">
+          <div class="how-to-title">📸 EXACT CAPTURE STEPS:</div>
+          <ul class="how-to-list">
+            <li><strong>Step 1:</strong> Click <em>"🌐 Autocar India"</em> below.</li>
+            <li><strong>Step 2:</strong> Snip the headline or feature list showing built-in features (Hill-Hold / Cruise Control) locked behind software subscriptions.</li>
+            <li><strong>Step 3:</strong> Save as <code>assets/CARD_EV_SCOOTER_OTA.png</code>.</li>
+          </ul>
+        </div>
+
+        <div class="quote-box">
+          <button class="copy-btn" onclick="copyQuote('Electric scooters paywalling hardware features software subscription')">COPY</button>
+          "The motors exist. The battery exists. The code demands a credit card."
+        </div>
+
+        <div class="specs-box">
+          <div class="specs-row">
+            <span class="specs-label">Target File</span>
+            <span class="specs-val code">assets/CARD_EV_SCOOTER_OTA.png</span>
+          </div>
+          <div class="specs-row">
+            <span class="specs-label">Timeline Mark</span>
+            <span class="specs-val">Act 3 • 07:27 – 07:38 (11s)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-row">
+        <a href="https://www.autocarindia.com/bike-news/ather-launches-atherstack-50-software-update-426915" target="_blank" class="btn btn-primary">🌐 Autocar India</a>
+        <a href="https://www.google.com/search?q=ola+electric+moveos+paywall+features" target="_blank" class="btn btn-secondary">🌐 Search EV Paywall</a>
+        <button class="btn btn-secondary" onclick="copyFilename('CARD_EV_SCOOTER_OTA.png')">📋 Copy Name</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div id="toast">Quote copied to clipboard!</div>
+
+<script>
+  // Persistent progress via localStorage
+  const totalItems = 12;
+
+  function loadProgress() {
+    const saved = JSON.parse(localStorage.getItem('thinklate_evidence_checks') || '{}');
+    saved['evid-01'] = true;
+    saved['evid-02'] = true;
+    saved['chart-01'] = true;
+
+    for (const [id, checked] of Object.entries(saved)) {
+      const card = document.getElementById('card-' + id);
+      if (card) {
+        const cb = card.querySelector('input[type="checkbox"]');
+        if (cb) cb.checked = checked;
+        if (checked) card.classList.add('completed');
+        else card.classList.remove('completed');
+      }
+    }
+    updateProgressUI();
+  }
+
+  function toggleItem(id, isChecked) {
+    const saved = JSON.parse(localStorage.getItem('thinklate_evidence_checks') || '{}');
+    saved[id] = isChecked;
+    localStorage.setItem('thinklate_evidence_checks', JSON.stringify(saved));
+
+    const card = document.getElementById('card-' + id);
+    if (card) {
+      if (isChecked) card.classList.add('completed');
+      else card.classList.remove('completed');
+    }
+    updateProgressUI();
+    showToast(isChecked ? 'Item marked complete!' : 'Item marked pending');
+  }
+
+  function updateProgressUI() {
+    let completedCount = 0;
+    document.querySelectorAll('.card input[type="checkbox"]').forEach(cb => {
+      if (cb.checked) completedCount++;
+    });
+
+    const pct = Math.round((completedCount / totalItems) * 100);
+    document.getElementById('progress-text').innerText = `${completedCount} / ${totalItems} (${pct}%)`;
+    document.getElementById('progress-fill').style.width = pct + '%';
+  }
+
+  function copyQuote(text) {
+    navigator.clipboard.writeText(text);
+    showToast('Quote copied! Press Ctrl+F on page to find.');
+  }
+
+  function copyFilename(text) {
+    navigator.clipboard.writeText(text);
+    showToast('Filename copied to clipboard!');
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('toast');
+    toast.innerText = msg;
+    toast.classList.add('show');
+    setTimeout(() => { toast.classList.remove('show'); }, 2200);
+  }
+
+  window.addEventListener('DOMContentLoaded', loadProgress);
+</script>
+
+</body>
+</html>
