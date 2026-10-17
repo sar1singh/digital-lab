@@ -3,9 +3,12 @@
 **Channel Name:** `Off Script`  
 **Live Channel URL:** [youtube.com/channel/UCjjaciOfUho7gs30GgZBZEA](https://www.youtube.com/channel/UCjjaciOfUho7gs30GgZBZEA)  
 **Studio Customization Direct Link:** [studio.youtube.com/channel/UCjjaciOfUho7gs30GgZBZEA/editing](https://studio.youtube.com/channel/UCjjaciOfUho7gs30GgZBZEA/editing)  
-**Handle:** `@OffScriptEddy`  
+**Handle:** `@OffScriptEddy` *(Temporary: `@sarwansenpai` during YouTube's 14-day cooldown)*  
 **Host Persona:** Eddy (The Unfiltered Developer / Gamer)  
 **Niche:** Unedited 4K PC gameplay archives, politically incorrect reality checks, Anand Ranganathan empirical fact-roasts, Deadpool 4th-wall commentary  
+
+> [!NOTE]
+> **Handle Cooldown:** YouTube limits handle changes to twice every 14 days. The channel currently sits on `@sarwansenpai` and will switch to `@OffScriptEddy` as soon as the cooldown lifts. All channel display naming, branding, banners, and video titles operate strictly under **Off Script** immediately.
 
 ---
 
