@@ -1,8 +1,10 @@
 # Content Lab
 
 ## Status
-- **Active Project:** [ThinkLate (@wethinklate)](thinklate/START-HERE.md) — Long-form economics, geopolitics, and technology explainer YouTube channel & media company.
-- **General Content Lab (niche sites, random newsletters, generic social):** Parked. Execution focus is on ThinkLate and Product Factory.
+- **Active Projects:**
+  - [ThinkLate (@wethinklate)](thinklate/START-HERE.md) — Long-form economics, geopolitics, and technology explainer YouTube channel & media company.
+  - [Off Script (@OffScriptEddy)](off-script/CHANNEL_SETUP.md) — Unedited 4K gaming archive, unfiltered reality checks & ThinkLate B-roll engine.
+- **General Content Lab (niche sites, random newsletters, generic social):** Parked. Execution focus is on ThinkLate, Off Script, and Product Factory.
 
 ## ThinkLate Workspace
 - Operating Folder: `03-content-lab/thinklate/`
