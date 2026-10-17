@@ -35,6 +35,14 @@
 
 ---
 
+## 2.5. The Dual-Upload Asymmetric Flywheel (1 Recording = 2 Assets)
+
+Every single gameplay recording session yields **TWO separate uploads**:
+1. **Upload 1 (The Full Walkthrough — 60 to 120 mins):** Full, unedited/basic-cut gameplay published directly as an aesthetic long-play archive, freeing up local SSD space.
+2. **Upload 2 (The Off Script Deep-Dive — 10 to 15 mins):** Eddy pulls a 10-15 min slice from that exact same gameplay run, lays down the voiceover in Audacity, and the agent overlays rapid-fire 3-second news headlines, memes, tweets, and citations.
+
+---
+
 ## 3. The 3 Audio & Visual Production Laws
 
 1. **Law 1: The Lo-Fi Gameplay Canvas Rule:**
