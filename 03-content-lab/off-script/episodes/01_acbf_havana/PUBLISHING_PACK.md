@@ -2,31 +2,31 @@
 > **Channel:** Off Script (`@OffScriptEddy`)  
 > **Host:** Eddy  
 > **Source Video:** `C:\Users\sar1s\Documents\MyWork\YOUTUBE\#final_videos\ACBF_Full_GamePlay_1.mp4`  
-> **Specs:** 2048x1152 (2K/4K Upscale), 60 FPS, Duration: 01:01:11  
+> **Specs:** HD Gameplay, Duration: 01:01:11  
 
 ---
 
 ## 1. 3-Way Title A/B/C Test Suite (<60 Characters)
 
 * **Title A (Thematic Commentary & Anti-Clickbait - Recommended):**  
-  `The Identity Crisis Nobody Talks About [AC Black Flag 4K60]` (58 chars)  
-  *CTR Hypothesis:* Blends the deep conversational hook with unmistakable game context. Zero bait, high curiosity.
+  `The Identity Crisis Nobody Talks About [AC Black Flag]` (54 chars)  
+  *CTR Hypothesis:* Blends the deep conversational hook with clear game context. Zero tech fluff, pure curiosity.
 
-* **Title B (Nostalgic Benchmark Hook):**  
-  `Playing AC Black Flag in 2026 Hits Completely Different [4K60]` (59 chars)  
+* **Title B (Nostalgic Classic Benchmark):**  
+  `Playing AC Black Flag in 2026 Hits Completely Different` (55 chars)  
   *CTR Hypothesis:* Captures nostalgic gamers revisiting an all-time classic 12 years after release.
 
 * **Title C (Walkthrough & Immersion Intent):**  
-  `Off Script | AC Black Flag — Havana Storm & Naval Battle | 4K60` (59 chars)  
-  *CTR Hypothesis:* Captures purist walkthrough searches while establishing the Off Script brand.
+  `Off Script | AC Black Flag — Havana Storm & Naval Battle` (55 chars)  
+  *CTR Hypothesis:* Captures authentic walkthrough searches while establishing the Off Script brand.
 
 ---
 
 ## 2. 3-Way Thumbnail Suite (Evaluated Assets in `brand/`)
 
-### Variant 1 (Recommended — Balanced Gameplay & Brand Anchor):
-* **File:** [`brand/thumbnail_v2_blackflag2026.jpg`](file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/off-script/brand/thumbnail_v2_blackflag2026.jpg)
-* **Visual:** Edward Kenway in hooded gear with twin swords and flintlocks, rocky coast, Spanish galleon in lightning storm.
+### Variant 1 (Active & Selected — Balanced Gameplay & Brand Anchor):
+* **File:** [`brand/thumbnail_ep01.jpg`](file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/off-script/brand/thumbnail_ep01.jpg) (also saved as `thumbnail_v2_blackflag2026.jpg`)
+* **Visual:** Edward Kenway in hooded gear with twin cutlasses and flintlocks, rocky coast, Spanish galleon in lightning storm.
 * **Text Punch:** `OFF SCRIPT` (amber/cyan) + `BLACK FLAG in 2026` (distressed stark white).
 * **Verdict:** 100% transparent. Tells the viewer immediately: this is Off Script playing Black Flag in 2026.
 
@@ -37,7 +37,7 @@
 * **Verdict:** High emotional tension. Matches the identity crisis / global anarchy discussion.
 
 ### Variant 3 (Minimalist Noir Comic Inking):
-* **File:** [`brand/thumbnail_ep01.jpg`](file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/off-script/brand/thumbnail_ep01.jpg)
+* **File:** [`brand/thumbnail_v1_noscript.jpg`](file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/off-script/brand/thumbnail_v1_noscript.jpg)
 * **Visual:** Silhouette assassin pirate on ship deck under driving rain.
 * **Text Punch:** `NO SCRIPT.` (hazard amber).
 * **Verdict:** Stylistic, but lower context. Best when paired with Title A or B.
@@ -48,7 +48,7 @@
 
 ### Video Description:
 ```text
-Unedited 2K 60FPS gameplay capture of Assassin's Creed IV: Black Flag on PC. No corporate script, no filler. 
+Unedited gameplay capture of Assassin's Creed IV: Black Flag on PC. No corporate script, no filter. 
 
 Captured and played by Eddy.
 
@@ -60,22 +60,21 @@ TIMESTAMPS:
 38:45 - Havana Rooftop Parkour & Firing Squad Rescue
 52:15 - Fortress Breach, Combat & 360 Caribbean Viewpoint
 
-Settings: Native Max Settings (PC)
 Gamer Tag: OffScriptEddy
 
-#ACBlackFlag #Gaming #Walkthrough #4K60 #OffScript #AssassinsCreed
+#ACBlackFlag #Gaming #Walkthrough #OffScript #AssassinsCreed
 ```
 
 ### Pinned Comment (Post from @OffScriptEddy):
 ```text
-First raw archive drop on the channel. Pristine 60FPS on PC. 
+First raw archive drop on the channel. 
 
-Unscripted voiceover rants and politically incorrect reality checks kicking off in upcoming episodes. 
+Unscripted voiceover rants and reality checks kicking off in upcoming episodes. 
 
 Drop a comment below with which game you want to see next: Red Dead Redemption 2 or Cyberpunk 2077?
 ```
 
 ### Video Keywords / Tags:
 ```text
-Off Script, OffScriptEddy, AC Black Flag 4K, Assassins Creed Black Flag PC, AC Black Flag Walkthrough, Havana Infiltration, Jackdaw Naval Combat, No Commentary Walkthrough, 4K 60FPS Gameplay, Eddy Off Script, Black Flag 2026
+Off Script, OffScriptEddy, AC Black Flag, Assassins Creed Black Flag PC, AC Black Flag Walkthrough, Havana Infiltration, Jackdaw Naval Combat, AC Black Flag Gameplay, Eddy Off Script, Black Flag 2026
 ```
