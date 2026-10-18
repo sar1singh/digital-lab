@@ -1,7 +1,7 @@
 # Off Script Episode 01 — 60-Minute Recording Outline & Prompter
 > **Host:** Eddy  
 > **Game:** Assassin's Creed IV: Black Flag (PC Gameplay)  
-> **Source Video:** [ACBF_Full_GamePlay_1.mp4](../../../../../../YOUTUBE/#final_videos/ACBF_Full_GamePlay_1.mp4) (Duration: 01:01:11)  
+> **Source Video:** <a href="../../../../../../YOUTUBE/#final_videos/ACBF_Full_GamePlay_1.mp4" target="_blank">ACBF_Full_GamePlay_1.mp4 ↗</a> (Duration: 01:01:11)  
 > **Style:** Unscripted, Raw, Conversational, Zero Corporate Filter  
 > **Rules for Eddy:** Speak at your natural pace. Don't rush. If you stumble, laugh it off or say *"Arre ruko, point bhool gaya"* — that's literally why it's called Off Script!
 

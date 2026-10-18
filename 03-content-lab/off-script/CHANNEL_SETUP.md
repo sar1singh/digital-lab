@@ -14,13 +14,15 @@
 
 ## 1. Brand Assets
 
-All assets are located in [brand/](brand/):
+All assets are located in <a href="brand/" target="_blank">brand/ ↗</a>:
 
-1. **Profile Picture / Logo Mark:** [brand/avatar.jpg](brand/avatar.jpg) & [brand/emblem.jpg](brand/emblem.jpg)
+1. **Profile Picture / Logo Mark:** <a href="brand/avatar.jpg" target="_blank">brand/avatar.jpg ↗</a> & <a href="brand/emblem.jpg" target="_blank">brand/emblem.jpg ↗</a>  
+   <a href="brand/avatar.jpg" target="_blank"><img src="brand/avatar.jpg" width="160" alt="Avatar" style="border-radius: 50%; margin: 8px 0;" /></a>
    - Dark Noir / Graphic Novel style: Bold black inking, halftone dots, hazard amber banner with electric cyan slash.
    - Zero mascot maintenance, 100% scalable icon.
-2. **Channel Banner (2560x1440):** [brand/banner.jpg](brand/banner.jpg) *(Centered safe zone for mobile and desktop)*
-3. **Video Watermark (150x150):** [brand/emblem.jpg](brand/emblem.jpg)
+2. **Channel Banner (2560x1440):** <a href="brand/banner.jpg" target="_blank">brand/banner.jpg ↗</a> *(Centered safe zone for mobile and desktop)*  
+   <a href="brand/banner.jpg" target="_blank"><img src="brand/banner.jpg" width="460" alt="Banner" style="border-radius: 6px; margin: 8px 0;" /></a>
+3. **Video Watermark (150x150):** <a href="brand/emblem.jpg" target="_blank">brand/emblem.jpg ↗</a>
 
 ---
 
