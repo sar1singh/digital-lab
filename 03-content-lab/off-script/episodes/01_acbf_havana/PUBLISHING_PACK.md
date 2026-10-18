@@ -8,32 +8,39 @@
 
 ## 1. 3-Way Title A/B/C Test Suite (<60 Characters)
 
-* **Title A (Atmospheric & Branded):**  
-  `Off Script | AC Black Flag — Havana Infiltration & Sea Battle | 4K60` (69 chars -> optimized to 58 chars below)  
-  `Off Script | AC Black Flag — Havana Storm & Naval Battle | 4K60` (59 chars)
+* **Title A (Thematic Commentary & Anti-Clickbait - Recommended):**  
+  `The Identity Crisis Nobody Talks About [AC Black Flag 4K60]` (58 chars)  
+  *CTR Hypothesis:* Blends the deep conversational hook with unmistakable game context. Zero bait, high curiosity.
 
-* **Title B (Nostalgic Curiosity Gap - Recommended for High CTR):**  
-  `Playing AC Black Flag in 2026 Hits Completely Different [4K60]` (59 chars)
+* **Title B (Nostalgic Benchmark Hook):**  
+  `Playing AC Black Flag in 2026 Hits Completely Different [4K60]` (59 chars)  
+  *CTR Hypothesis:* Captures nostalgic gamers revisiting an all-time classic 12 years after release.
 
-* **Title C (Pure Search / Walkthrough Intent):**  
-  `AC IV: Black Flag — Havana Infiltration & Galleon Hunt | 4K60` (58 chars)
+* **Title C (Walkthrough & Immersion Intent):**  
+  `Off Script | AC Black Flag — Havana Storm & Naval Battle | 4K60` (59 chars)  
+  *CTR Hypothesis:* Captures purist walkthrough searches while establishing the Off Script brand.
 
 ---
 
-## 2. 3-Way Thumbnail Suite (Dark Noir Graphic Novel Aesthetic)
+## 2. 3-Way Thumbnail Suite (Evaluated Assets in `brand/`)
 
-### Variant A (Generated & Ready to Upload):
+### Variant 1 (Recommended — Balanced Gameplay & Brand Anchor):
+* **File:** [`brand/thumbnail_v2_blackflag2026.jpg`](file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/off-script/brand/thumbnail_v2_blackflag2026.jpg)
+* **Visual:** Edward Kenway in hooded gear with twin swords and flintlocks, rocky coast, Spanish galleon in lightning storm.
+* **Text Punch:** `OFF SCRIPT` (amber/cyan) + `BLACK FLAG in 2026` (distressed stark white).
+* **Verdict:** 100% transparent. Tells the viewer immediately: this is Off Script playing Black Flag in 2026.
+
+### Variant 2 (Thematic / Intellectual Curiosity Hook):
+* **File:** [`brand/thumbnail_v3_realitycheck.jpg`](file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/off-script/brand/thumbnail_v3_realitycheck.jpg)
+* **Visual:** Edward Kenway gripping the helm of the Jackdaw in towering ocean waves and thunder.
+* **Text Punch:** `OFF SCRIPT` (top-left) + `REALITY CHECK` (bottom-left).
+* **Verdict:** High emotional tension. Matches the identity crisis / global anarchy discussion.
+
+### Variant 3 (Minimalist Noir Comic Inking):
 * **File:** [`brand/thumbnail_ep01.jpg`](file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/off-script/brand/thumbnail_ep01.jpg)
-* **Visual:** Hooded Assassin pirate standing silhouetted on a stormy ship deck under lightning and driving rain. Heavy comic black ink lines, halftone dot textures.
-* **Text Punch:** `NO SCRIPT.` in hazard amber (`#F59E0B`) with neon cyan outline glow.
-
-### Variant B (Havana Rooftop Stealth - Generative Prompt):
-* **Prompt:**  
-  `A cinematic YouTube thumbnail (16:9 widescreen) in the Off Script dark noir graphic novel comic style. An Assassin in a hooded coat crouched on the edge of a Spanish colonial cathedral rooftop overlooking Havana at twilight. Heavy black ink linework, dramatic chiaroscuro lighting, comic halftone dot textures. Bold graphic typography reading 'OFF SCRIPT.' in sharp hazard amber with electric cyan edge glow. High contrast, gritty, premium creator thumbnail.`
-
-### Variant C (Clean Plate for Custom Typography):
-* **Prompt:**  
-  `A wide cinematic 16:9 background plate in dark noir graphic novel comic style. A stormy Caribbean sea with an old Spanish galleon sailing through towering waves and lightning. Heavy black comic inks, halftone textures, generous negative space on the left side for overlaying text. Obsidian dark palette with subtle amber lantern glow.`
+* **Visual:** Silhouette assassin pirate on ship deck under driving rain.
+* **Text Punch:** `NO SCRIPT.` (hazard amber).
+* **Verdict:** Stylistic, but lower context. Best when paired with Title A or B.
 
 ---
 
