@@ -1,7 +1,7 @@
 # Off Script Episode 01 — YouTube Publishing Pack
 > **Channel:** Off Script (`@OffScriptEddy`)  
 > **Host:** Eddy  
-> **Source Video:** [ACBF_Full_GamePlay_1.mp4](file:///C:/Users/sar1s/Documents/MyWork/YOUTUBE/%23final_videos/ACBF_Full_GamePlay_1.mp4)  
+> **Source Video:** [ACBF_Full_GamePlay_1.mp4](../../../../../../YOUTUBE/#final_videos/ACBF_Full_GamePlay_1.mp4)  
 > **Specs:** HD Gameplay, Duration: 01:01:11  
 
 ---
@@ -25,19 +25,19 @@
 ## 2. 3-Way Thumbnail Suite (Evaluated Assets in `brand/`)
 
 ### Variant 1 (Active & Selected — Balanced Gameplay & Brand Anchor):
-* **File:** [brand/thumbnail_ep01.jpg](file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/off-script/brand/thumbnail_ep01.jpg) (also saved as [brand/thumbnail_v2_blackflag2026.jpg](file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/off-script/brand/thumbnail_v2_blackflag2026.jpg))
+* **File:** [thumbnail_ep01.jpg](../../brand/thumbnail_ep01.jpg) (also saved as [thumbnail_v2_blackflag2026.jpg](../../brand/thumbnail_v2_blackflag2026.jpg))
 * **Visual:** Edward Kenway in hooded gear with twin cutlasses and flintlocks, rocky coast, Spanish galleon in lightning storm.
 * **Text Punch:** `OFF SCRIPT` (amber/cyan) + `BLACK FLAG in 2026` (distressed stark white).
 * **Verdict:** 100% transparent. Tells the viewer immediately: this is Off Script playing Black Flag in 2026.
 
 ### Variant 2 (Thematic / Intellectual Curiosity Hook):
-* **File:** [brand/thumbnail_v3_realitycheck.jpg](file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/off-script/brand/thumbnail_v3_realitycheck.jpg)
+* **File:** [thumbnail_v3_realitycheck.jpg](../../brand/thumbnail_v3_realitycheck.jpg)
 * **Visual:** Edward Kenway gripping the helm of the Jackdaw in towering ocean waves and thunder.
 * **Text Punch:** `OFF SCRIPT` (top-left) + `REALITY CHECK` (bottom-left).
 * **Verdict:** High emotional tension. Matches the identity crisis / global anarchy discussion.
 
 ### Variant 3 (Minimalist Noir Comic Inking):
-* **File:** [brand/thumbnail_v1_noscript.jpg](file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/off-script/brand/thumbnail_v1_noscript.jpg)
+* **File:** [thumbnail_v1_noscript.jpg](../../brand/thumbnail_v1_noscript.jpg)
 * **Visual:** Silhouette assassin pirate on ship deck under driving rain.
 * **Text Punch:** `NO SCRIPT.` (hazard amber).
 * **Verdict:** Stylistic, but lower context. Best when paired with Title A or B.
