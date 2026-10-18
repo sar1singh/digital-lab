@@ -16,11 +16,11 @@
 
 All assets are located in [`brand/`](file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/off-script/brand/):
 
-1. **Profile Picture / Logo Mark (Emblem):** [`brand/emblem.jpg`](file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/off-script/brand/emblem.jpg)
+1. **Profile Picture / Logo Mark:** [brand/avatar.jpg](file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/off-script/brand/avatar.jpg) & [brand/emblem.jpg](file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/off-script/brand/emblem.jpg)
    - Dark Noir / Graphic Novel style: Bold black inking, halftone dots, hazard amber banner with electric cyan slash.
    - Zero mascot maintenance, 100% scalable icon.
-2. **Channel Banner (2560x1440):** [`brand/banner.png`](file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/off-script/brand/banner.png) *(Centered safe zone for mobile and desktop)*
-3. **Video Watermark (150x150):** Transparent emblem badge.
+2. **Channel Banner (2560x1440):** [brand/banner.jpg](file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/off-script/brand/banner.jpg) *(Centered safe zone for mobile and desktop)*
+3. **Video Watermark (150x150):** [brand/emblem.jpg](file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/off-script/brand/emblem.jpg)
 
 ---
 
