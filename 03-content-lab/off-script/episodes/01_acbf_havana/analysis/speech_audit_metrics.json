@@ -1,0 +1,177 @@
+{
+  "audio_file": "03-content-lab\\off-script\\episodes\\01_acbf_havana\\audio\\take1.mp3",
+  "total_duration_sec": 3954.09,
+  "formatted_duration": "01:05:54",
+  "detected_language": "hi",
+  "language_confidence": 0.947,
+  "total_segments": 908,
+  "total_speech_duration_sec": 1869.57,
+  "speech_ratio": 0.4728,
+  "total_silence_duration_sec": 2084.52,
+  "pause_statistics": {
+    "total_pauses_over_3s": 28,
+    "hesitations_3_to_6s_count": 1,
+    "breathers_6_to_15s_count": 2,
+    "major_silence_over_15s_count": 25,
+    "major_silences": [
+      {
+        "start": 57.02,
+        "end": 148.59,
+        "duration": 91.57,
+        "timecode": "00:57 - 02:28"
+      },
+      {
+        "start": 173.59,
+        "end": 264.3,
+        "duration": 90.71,
+        "timecode": "02:53 - 04:24"
+      },
+      {
+        "start": 419.09,
+        "end": 450.85,
+        "duration": 31.76,
+        "timecode": "06:59 - 07:30"
+      },
+      {
+        "start": 615.52,
+        "end": 645.59,
+        "duration": 30.07,
+        "timecode": "10:15 - 10:45"
+      },
+      {
+        "start": 669.09,
+        "end": 699.79,
+        "duration": 30.7,
+        "timecode": "11:09 - 11:39"
+      },
+      {
+        "start": 771.31,
+        "end": 803.33,
+        "duration": 32.02,
+        "timecode": "12:51 - 13:23"
+      },
+      {
+        "start": 826.74,
+        "end": 857.13,
+        "duration": 30.39,
+        "timecode": "13:46 - 14:17"
+      },
+      {
+        "start": 877.9,
+        "end": 911.19,
+        "duration": 33.29,
+        "timecode": "14:37 - 15:11"
+      },
+      {
+        "start": 941.92,
+        "end": 1179.64,
+        "duration": 237.72,
+        "timecode": "15:41 - 19:39"
+      },
+      {
+        "start": 1210.71,
+        "end": 1354.01,
+        "duration": 143.3,
+        "timecode": "20:10 - 22:34"
+      },
+      {
+        "start": 1413.51,
+        "end": 1486.76,
+        "duration": 73.25,
+        "timecode": "23:33 - 24:46"
+      },
+      {
+        "start": 1558.43,
+        "end": 1627.98,
+        "duration": 69.55,
+        "timecode": "25:58 - 27:07"
+      },
+      {
+        "start": 1697.32,
+        "end": 1958.22,
+        "duration": 260.9,
+        "timecode": "28:17 - 32:38"
+      },
+      {
+        "start": 2046.3,
+        "end": 2084.04,
+        "duration": 37.74,
+        "timecode": "34:06 - 34:44"
+      },
+      {
+        "start": 2158.84,
+        "end": 2227.76,
+        "duration": 68.92,
+        "timecode": "35:58 - 37:07"
+      },
+      {
+        "start": 2378.14,
+        "end": 2445.08,
+        "duration": 66.94,
+        "timecode": "39:38 - 40:45"
+      },
+      {
+        "start": 2518.34,
+        "end": 2583.52,
+        "duration": 65.18,
+        "timecode": "41:58 - 43:03"
+      },
+      {
+        "start": 2627.16,
+        "end": 2657.64,
+        "duration": 30.48,
+        "timecode": "43:47 - 44:17"
+      },
+      {
+        "start": 2679.02,
+        "end": 2717.26,
+        "duration": 38.24,
+        "timecode": "44:39 - 45:17"
+      },
+      {
+        "start": 2737.46,
+        "end": 2769.86,
+        "duration": 32.4,
+        "timecode": "45:37 - 46:09"
+      },
+      {
+        "start": 2867.57,
+        "end": 3075.28,
+        "duration": 207.71,
+        "timecode": "47:47 - 51:15"
+      },
+      {
+        "start": 3131.82,
+        "end": 3239.97,
+        "duration": 108.15,
+        "timecode": "52:11 - 53:59"
+      },
+      {
+        "start": 3269.92,
+        "end": 3309.77,
+        "duration": 39.85,
+        "timecode": "54:29 - 55:09"
+      },
+      {
+        "start": 3667.24,
+        "end": 3698.52,
+        "duration": 31.28,
+        "timecode": "01:01:07 - 01:01:38"
+      },
+      {
+        "start": 3792.45,
+        "end": 3895.66,
+        "duration": 103.21,
+        "timecode": "01:03:12 - 01:04:55"
+      }
+    ],
+    "hesitations_sample": [
+      {
+        "start": 477.69,
+        "end": 481.04,
+        "duration": 3.35,
+        "timecode": "07:57 - 08:01"
+      }
+    ]
+  }
+}

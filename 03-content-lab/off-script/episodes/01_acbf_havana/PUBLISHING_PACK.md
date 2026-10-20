@@ -1,8 +1,9 @@
 # Off Script Episode 01 — YouTube Publishing Pack
 > **Channel:** Off Script (`@OffScriptEddy`)  
-> **Host:** Eddy  
-> **Source Video:** <a href="../../../../../../YOUTUBE/#final_videos/ACBF_Full_GamePlay_1.mp4" target="_blank">ACBF_Full_GamePlay_1.mp4 ↗</a>  
-> **Specs:** HD Gameplay, Duration: 01:01:11  
+> **Host:** Eddy (The Unfiltered Developer / Gamer)  
+> **Game:** Assassin's Creed IV: Black Flag (PC Gameplay)  
+> **Audio Track:** <a href="audio/take1.mp3" target="_blank">take1.mp3 ↗</a> (Duration: 01:05:54)  
+> **Gameplay Footage:** <a href="../../../../../../YOUTUBE/#final_videos/ACBF_Full_GamePlay_1.mp4" target="_blank">ACBF_Full_GamePlay_1.mp4 ↗</a>  
 
 ---
 
@@ -17,7 +18,7 @@
   *CTR Hypothesis:* Captures nostalgic gamers revisiting an all-time classic 12 years after release.
 
 * **Title C (Walkthrough & Immersion Intent):**  
-  `Off Script | AC Black Flag — Havana Storm & Naval Battle` (55 chars)  
+  `Off Script | AC Black Flag — Havana Storm & Real Talk` (52 chars)  
   *CTR Hypothesis:* Captures authentic walkthrough searches while establishing the Off Script brand.
 
 ---
@@ -57,37 +58,52 @@
 
 ---
 
-## 3. YouTube Video Metadata (Copy-Paste)
+## 3. YouTube Video Metadata (Derived Autonomously from Spoken Take)
 
-### Video Description:
+### Video Description (Copy-Paste Ready):
 ```text
-Unedited gameplay capture of Assassin's Creed IV: Black Flag on PC. No corporate script, no filter. 
+Raw PC gameplay of Assassin's Creed IV: Black Flag paired with an unfiltered conversation about identity crisis, childhood bullying, the corporate rat race, and civilizational memory. 
 
-Captured and played by Eddy.
+No corporate script. No PR filter. Just real thoughts while sailing the Caribbean.
 
 TIMESTAMPS:
-00:00 - Night Naval Combat & Galleon Mortar Hunt
-07:35 - Havana Docks Arrival & Port Infiltration
-14:20 - Street Stalking & Hidden Blade Assassinations
-24:10 - Unlicensed Dealer: Plantation Stealth
-38:45 - Havana Rooftop Parkour & Firing Squad Rescue
-52:15 - Fortress Breach, Combat & 360 Caribbean Viewpoint
+00:00 - The 3 Tiers of Identity Crisis (Personal, Societal, Civilizational)
+02:28 - School Bullying: The Scars Nobody Talks About
+04:24 - Arcade Era Nostalgia: Tekken 3, Mustafa & 8-Bit Cartridges
+07:30 - AC Black Flag in 2026 vs Modern Gaming (One Piece Soul)
+09:20 - The 1:30 AM WhatsApp Chat: Why Corporate Jobs Can't Free You
+10:45 - The Unspoken Reality: Expelled from School Assembly for Fees
+12:10 - Bullying Below the Poverty Line & Fetching Balls from Gutters
+15:10 - Childhood Trauma as the Root of Modern Adult Crisis
+24:46 - The Corporate Rat Race, Office Gossip & Illusions of Friendship
+27:07 - Why Absolute Freedom Doesn't Exist in 2026
+32:38 - Doflamingo's Law: "Whoever Wins Becomes Justice"
+34:44 - Carrying Water Buckets & Sacrifices of Middle-Class Parents
+37:37 - Civilizational Trauma: Invasions & The British "Mental Slavery" Model
+41:35 - Macaulay's 1835 Minute on Education: Brown Skin, British Minds
+44:17 - Manufactured Social Divisions & The Ellora Kailasa Temple Truth
+46:10 - The Erosion of Indigenous Philosophy: Dharma, Karma & Moksha
+55:09 - The Professional Riot & Mob Outrage Industry
+57:00 - Who Truly Pays the Bill? The Auto Driver & Honest Taxpayer
+58:20 - Desh Sabse Pehle (Nation First)
+01:01:38 - Human Consciousness vs Animal Instincts
+01:04:55 - The Viewpoint & Off Script Sign-Off
 
-Gamer Tag: OffScriptEddy
+Gameplay & Commentary by Eddy (@OffScriptEddy)
 
-#ACBlackFlag #Gaming #Walkthrough #OffScript #AssassinsCreed
+#ACBlackFlag #OffScript #Gaming #BlackFlag2026 #IdentityCrisis #RealTalk
 ```
 
 ### Pinned Comment (Post from @OffScriptEddy):
 ```text
-First raw archive drop on the channel. 
+First unscripted drop on Off Script. 
 
-Unscripted voiceover rants and reality checks kicking off in upcoming episodes. 
+From Tekken 3 and childhood arcade days to getting kicked out of school assembly for unpaid fees, corporate burnouts, and why "Nation First" is the only true anchor left.
 
-Drop a comment below with which game you want to see next: Red Dead Redemption 2 or Cyberpunk 2077?
+Drop a comment below with your thoughts — what's your take on identity and this rat race we're all caught in?
 ```
 
 ### Video Keywords / Tags:
 ```text
-Off Script, OffScriptEddy, AC Black Flag, Assassins Creed Black Flag PC, AC Black Flag Walkthrough, Havana Infiltration, Jackdaw Naval Combat, AC Black Flag Gameplay, Eddy Off Script, Black Flag 2026
+Off Script, OffScriptEddy, AC Black Flag, Assassins Creed Black Flag PC, AC Black Flag Walkthrough, Havana Infiltration, Jackdaw Naval Combat, AC Black Flag Gameplay, Eddy Off Script, Black Flag 2026, Identity Crisis, Corporate Burnout, Tekken 3 Nostalgia, Doflamingo Justice Speech, Macaulay 1835 Education
 ```
