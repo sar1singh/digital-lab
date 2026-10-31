@@ -87,19 +87,16 @@ def composite_layers(background_path, primary_path, secondary_path, output_path,
             inputs.extend(["-i", secondary_path])
 
     # Filter graph construction:
-    # [0:v] scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,gblur=sigma=12[bg];
-    # [bg][1:v]overlay=0:0[tmp];
-    # [tmp][2:v]overlay=0:0[out]
     filter_parts = [
         f"[0:v]scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,gblur=sigma={blur_sigma}[bg]"
     ]
 
     if secondary_path and os.path.exists(secondary_path):
-        filter_parts.append("[bg][1:v]overlay=0:0[layer1]")
-        filter_parts.append("[layer1][2:v]overlay=0:0[outv]")
+        filter_parts.append("[bg][1:v]overlay=0:0:shortest=1[layer1]")
+        filter_parts.append("[layer1][2:v]overlay=0:0:shortest=1[outv]")
         map_out = "[outv]"
     else:
-        filter_parts.append("[bg][1:v]overlay=0:0[outv]")
+        filter_parts.append("[bg][1:v]overlay=0:0:shortest=1[outv]")
         map_out = "[outv]"
 
     filter_complex = ";".join(filter_parts)
@@ -149,15 +146,19 @@ def main():
     temp_dir = os.path.join(SCRIPT_DIR, ".tmp_composite")
     os.makedirs(temp_dir, exist_ok=True)
 
+    is_video = args.out.lower().endswith((".mp4", ".mov", ".mkv"))
+    layer_ext = ".mov" if is_video else ".png"
+    layer_frame = None if is_video else 45
+
     try:
         p_props = json.loads(args.primary_props)
     except Exception:
         p_props = {}
     p_props["channel"] = args.channel
 
-    primary_tmp = os.path.join(temp_dir, f"primary_{args.primary}.png")
-    print(f"Rendering Primary Layer: {args.primary}...")
-    if not render_remotion_element(args.primary, p_props, primary_tmp, frame=45):
+    primary_tmp = os.path.join(temp_dir, f"primary_{args.primary}{layer_ext}")
+    print(f"Rendering Primary Layer: {args.primary} ({'Animated ProRes 4444' if is_video else 'Still Frame'})...")
+    if not render_remotion_element(args.primary, p_props, primary_tmp, frame=layer_frame):
         print(f"Failed to render primary layer {args.primary}")
         sys.exit(1)
 
@@ -168,9 +169,9 @@ def main():
         except Exception:
             s_props = {}
         s_props["channel"] = args.channel
-        secondary_tmp = os.path.join(temp_dir, f"secondary_{args.secondary}.png")
-        print(f"Rendering Secondary Layer: {args.secondary}...")
-        if not render_remotion_element(args.secondary, s_props, secondary_tmp, frame=35):
+        secondary_tmp = os.path.join(temp_dir, f"secondary_{args.secondary}{layer_ext}")
+        print(f"Rendering Secondary Layer: {args.secondary} ({'Animated ProRes 4444' if is_video else 'Still Frame'})...")
+        if not render_remotion_element(args.secondary, s_props, secondary_tmp, frame=layer_frame):
             print(f"Failed to render secondary layer {args.secondary}")
             sys.exit(1)
 

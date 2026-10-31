@@ -73,6 +73,14 @@ def render_motion_card(template_id, props_dict, output_path, frame=None):
         cmd.extend(["still", ENTRY_FILE, template_id, output_path, f"--frame={target_frame}"])
     else:
         cmd.extend(["render", ENTRY_FILE, template_id, output_path])
+        if output_path.lower().endswith(".mov"):
+            # ProRes 4444 with 100% transparent alpha channel
+            cmd.extend([
+                "--codec=prores",
+                "--prores-profile=4444",
+                "--image-format=png",
+                "--pixel-format=yuva444p10le"
+            ])
         
     cmd.append(f"--props={props_json}")
 
