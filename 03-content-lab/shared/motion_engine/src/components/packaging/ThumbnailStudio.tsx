@@ -329,3 +329,4 @@ export const ThumbnailStudio: React.FC<ThumbnailStudioProps> = ({
     </div>
   );
 };
+
