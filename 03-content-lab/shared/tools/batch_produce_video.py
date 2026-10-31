@@ -245,9 +245,10 @@ def build_multitrack_ffmpeg_command(
         st = cue_meta["start_sec"]
         et = st + cue_meta["duration"]
         
-        # Smooth alpha fade in (0.3s) and fade out (0.3s)
+        # Delay presentation timestamps to scheduled start time (st)
+        # Smooth alpha fade in (0.3s) and fade out (0.3s) based on global presentation time
         filter_chains.append(
-            f"[{input_idx}:v]format=yuva444p,fade=t=in:st=0:d=0.3:alpha=1,fade=t=out:st={cue_meta['duration'] - 0.3:.2f}:d=0.3:alpha=1[card_{i}]"
+            f"[{input_idx}:v]setpts=PTS-STARTPTS+{st:.2f}/TB,format=yuva444p,fade=t=in:st={st:.2f}:d=0.3:alpha=1,fade=t=out:st={et - 0.3:.2f}:d=0.3:alpha=1[card_{i}]"
         )
         filter_chains.append(
             f"{last_v_tag}[card_{i}]overlay=0:0:enable='between(t,{st:.2f},{et:.2f})':eof_action=pass{next_v_tag}"
@@ -417,3 +418,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
