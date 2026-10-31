@@ -4,50 +4,65 @@ import { THEME } from "../styles/theme";
 
 export interface ComparisonSplitCardProps {
   badgeText?: string;
+  leftTag?: string;
+  leftStat?: string;
+  leftStatUnit?: string;
   leftTitle: string;
-  leftSubtitle?: string;
   leftItems: string[];
+  rightTag?: string;
+  rightStat?: string;
+  rightStatUnit?: string;
   rightTitle: string;
-  rightSubtitle?: string;
   rightItems: string[];
   footerNote?: string;
 }
 
 export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
   badgeText = "FORENSIC CONTRAST // THE REALITY GAP",
-  leftTitle,
-  leftSubtitle,
-  leftItems,
-  rightTitle,
-  rightSubtitle,
-  rightItems,
-  footerNote,
+  leftTag = "RIGID MONOPOLY",
+  leftStat = "$280",
+  leftStatUnit = "/ night",
+  leftTitle = "THE HOTEL CARTEL",
+  leftItems = [
+    "Standard room rate during design conference",
+    "100% sold-out citywide capacity in 48 hours",
+    "Mandatory $45 resort fees + parking overhead"
+  ],
+  rightTag = "SYSTEM ARBITRAGE",
+  rightStat = "$80",
+  rightStatUnit = "/ night",
+  rightTitle = "THE AIRBED EXPERIMENT",
+  rightItems = [
+    "Inflatable air mattress on living room rug",
+    "Free Wi-Fi + homemade breakfast pop-tarts",
+    "Zero hotel infrastructure, instant cash flow"
+  ],
+  footerNote = "SPREAD: 71.4% DISCOUNT FOR GUESTS  ✦  $240 CASH REVENUE FOR FOUNDERS",
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // Entrance spring
-  const scale = spring({
+  // Entrance springs
+  const leftSlide = spring({
     frame,
     fps,
-    config: { damping: 14, mass: 0.8, stiffness: 100 },
+    config: { damping: 15, mass: 0.8, stiffness: 110 },
+  });
+
+  const rightSlide = spring({
+    frame: Math.max(0, frame - 4),
+    fps,
+    config: { damping: 15, mass: 0.8, stiffness: 110 },
+  });
+
+  const centerPop = spring({
+    frame: Math.max(0, frame - 8),
+    fps,
+    config: { damping: 12, mass: 0.6, stiffness: 140 },
   });
 
   const opacity = interpolate(frame, [0, 10], [0, 1], {
     extrapolateRight: "clamp",
-  });
-
-  // Staggered columns
-  const leftSlide = spring({
-    frame: Math.max(0, frame - 5),
-    fps,
-    config: { damping: 15, mass: 0.7, stiffness: 120 },
-  });
-
-  const rightSlide = spring({
-    frame: Math.max(0, frame - 12),
-    fps,
-    config: { damping: 15, mass: 0.7, stiffness: 120 },
   });
 
   return (
@@ -56,249 +71,344 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
         width: "100%",
         height: "100%",
         display: "flex",
+        flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
         fontFamily: THEME.fonts.sans,
         backgroundColor: "transparent",
+        gap: "28px",
       }}
     >
+      {/* Top Floating Category Badge */}
       <div
         style={{
-          width: "1560px",
-          backgroundColor: THEME.colors.bgGlass,
-          backdropFilter: "blur(24px)",
-          borderRadius: "24px",
-          border: `1px solid ${THEME.colors.borderGlass}`,
-          boxShadow: THEME.shadows.glass,
-          padding: "48px 56px",
-          transform: `scale(${scale})`,
           opacity,
+          transform: `translateY(${(1 - opacity) * -15}px)`,
+          backgroundColor: THEME.colors.bgGlass,
+          backdropFilter: "blur(20px)",
+          border: `1px solid ${THEME.colors.borderAccent}`,
+          borderRadius: "999px",
+          padding: "8px 24px",
+          fontFamily: THEME.fonts.mono,
+          fontSize: "12px",
+          fontWeight: 700,
+          letterSpacing: "0.22em",
+          color: THEME.colors.acidLime,
+          boxShadow: THEME.shadows.glowLime,
           display: "flex",
-          flexDirection: "column",
-          gap: "28px",
-          position: "relative",
-          overflow: "hidden",
+          alignItems: "center",
+          gap: "10px",
+          textTransform: "uppercase",
         }}
       >
-        {/* Top reflection line */}
-        <div
+        <span
           style={{
-            position: "absolute",
-            top: 0,
-            left: "10%",
-            right: "10%",
-            height: "2px",
-            background: `linear-gradient(90deg, transparent, ${THEME.colors.acidLime}, transparent)`,
-            opacity: 0.8,
+            width: "6px",
+            height: "6px",
+            borderRadius: "50%",
+            backgroundColor: THEME.colors.acidLime,
           }}
         />
+        {badgeText}
+      </div>
 
-        {/* Header badge */}
+      {/* Main 2-Card Split Deck */}
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "32px",
+          width: "1580px",
+          position: "relative",
+        }}
+      >
+        {/* LEFT CARD: THE INCUMBENT / OLD MODEL */}
         <div
           style={{
+            flex: 1,
+            backgroundColor: THEME.colors.bgGlass,
+            backdropFilter: "blur(24px)",
+            borderRadius: "24px",
+            border: `1px solid ${THEME.colors.borderCrimson}`,
+            boxShadow: THEME.shadows.glass,
+            padding: "40px 44px",
+            transform: `translateX(${(1 - leftSlide) * -60}px)`,
+            opacity: leftSlide,
             display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            borderBottom: `1px solid rgba(255, 255, 255, 0.08)`,
-            paddingBottom: "18px",
-          }}
-        >
-          <div
-            style={{
-              fontFamily: THEME.fonts.mono,
-              fontSize: "13px",
-              fontWeight: 700,
-              letterSpacing: "0.22em",
-              textTransform: "uppercase",
-              color: THEME.colors.acidLime,
-              display: "flex",
-              alignItems: "center",
-              gap: "10px",
-            }}
-          >
-            <span
-              style={{
-                width: "8px",
-                height: "8px",
-                borderRadius: "50%",
-                backgroundColor: THEME.colors.acidLime,
-                boxShadow: THEME.shadows.glowLime,
-              }}
-            />
-            {badgeText}
-          </div>
-          <div
-            style={{
-              fontFamily: THEME.fonts.mono,
-              fontSize: "12px",
-              color: THEME.colors.textDim,
-              letterSpacing: "0.15em",
-            }}
-          >
-            AUDIT BENCHMARK
-          </div>
-        </div>
-
-        {/* 2-Column Split Content */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: "36px",
+            flexDirection: "column",
+            gap: "20px",
             position: "relative",
+            overflow: "hidden",
           }}
         >
-          {/* Vertical Divider Line */}
+          {/* Top subtle line */}
           <div
             style={{
               position: "absolute",
               top: 0,
-              bottom: 0,
-              left: "50%",
-              width: "1px",
-              backgroundColor: "rgba(255, 255, 255, 0.1)",
-              transform: "translateX(-50%)",
+              left: "15%",
+              right: "15%",
+              height: "2px",
+              background: `linear-gradient(90deg, transparent, ${THEME.colors.crimsonRed}, transparent)`,
+              opacity: 0.6,
             }}
           />
 
-          {/* Left Column (Old World / Corporate / Problem) */}
-          <div
-            style={{
-              transform: `translateY(${(1 - leftSlide) * 20}px)`,
-              opacity: leftSlide,
-              display: "flex",
-              flexDirection: "column",
-              gap: "20px",
-              paddingRight: "20px",
-            }}
-          >
-            <div>
-              <div
-                style={{
-                  fontFamily: THEME.fonts.mono,
-                  fontSize: "12px",
-                  fontWeight: 700,
-                  color: THEME.colors.crimsonRed,
-                  letterSpacing: "0.18em",
-                  marginBottom: "6px",
-                  textTransform: "uppercase",
-                }}
-              >
-                ● {leftSubtitle || "ESTABLISHED INCUMBENT"}
-              </div>
-              <h3
-                style={{
-                  fontSize: "30px",
-                  fontWeight: 900,
-                  color: THEME.colors.textWhite,
-                  letterSpacing: "-0.02em",
-                  margin: 0,
-                }}
-              >
-                {leftTitle}
-              </h3>
-            </div>
-
-            <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-              {leftItems.map((item, idx) => (
-                <div
-                  key={idx}
-                  style={{
-                    backgroundColor: "rgba(239, 68, 68, 0.08)",
-                    borderLeft: `3px solid ${THEME.colors.crimsonRed}`,
-                    padding: "14px 18px",
-                    borderRadius: "0 10px 10px 0",
-                    fontSize: "18px",
-                    color: THEME.colors.textMuted,
-                    lineHeight: 1.4,
-                  }}
-                >
-                  {item}
-                </div>
-              ))}
-            </div>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <span
+              style={{
+                fontFamily: THEME.fonts.mono,
+                fontSize: "11px",
+                fontWeight: 700,
+                letterSpacing: "0.2em",
+                color: THEME.colors.crimsonRed,
+                backgroundColor: "rgba(239, 68, 68, 0.12)",
+                padding: "4px 12px",
+                borderRadius: "999px",
+                border: "1px solid rgba(239, 68, 68, 0.25)",
+              }}
+            >
+              ● {leftTag}
+            </span>
           </div>
 
-          {/* Right Column (Disruption / Reality / Winning Play) */}
-          <div
-            style={{
-              transform: `translateY(${(1 - rightSlide) * 20}px)`,
-              opacity: rightSlide,
-              display: "flex",
-              flexDirection: "column",
-              gap: "20px",
-              paddingLeft: "20px",
-            }}
-          >
-            <div>
-              <div
+          <div>
+            <div style={{ display: "flex", alignItems: "baseline", gap: "8px", margin: "4px 0" }}>
+              <span
+                style={{
+                  fontSize: "58px",
+                  fontWeight: 900,
+                  letterSpacing: "-0.04em",
+                  color: THEME.colors.textWhite,
+                  lineHeight: 1,
+                }}
+              >
+                {leftStat}
+              </span>
+              <span
                 style={{
                   fontFamily: THEME.fonts.mono,
-                  fontSize: "12px",
-                  fontWeight: 700,
-                  color: THEME.colors.acidLime,
-                  letterSpacing: "0.18em",
-                  marginBottom: "6px",
-                  textTransform: "uppercase",
+                  fontSize: "18px",
+                  color: THEME.colors.textDim,
                 }}
               >
-                ✦ {rightSubtitle || "SYSTEM ARBITRAGE"}
-              </div>
-              <h3
-                style={{
-                  fontSize: "30px",
-                  fontWeight: 900,
-                  color: THEME.colors.acidLime,
-                  letterSpacing: "-0.02em",
-                  margin: 0,
-                  textShadow: THEME.shadows.glowLime,
-                }}
-              >
-                {rightTitle}
-              </h3>
+                {leftStatUnit}
+              </span>
             </div>
+            <h3
+              style={{
+                fontSize: "22px",
+                fontWeight: 800,
+                color: THEME.colors.textMuted,
+                margin: "4px 0 0 0",
+                letterSpacing: "-0.01em",
+              }}
+            >
+              {leftTitle}
+            </h3>
+          </div>
 
-            <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-              {rightItems.map((item, idx) => (
-                <div
-                  key={idx}
+          {/* Minimalist Items */}
+          <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginTop: "8px" }}>
+            {leftItems.map((item, idx) => (
+              <div
+                key={idx}
+                style={{
+                  display: "flex",
+                  alignItems: "flex-start",
+                  gap: "12px",
+                  fontSize: "17px",
+                  color: THEME.colors.textMuted,
+                  lineHeight: 1.4,
+                }}
+              >
+                <span
                   style={{
-                    backgroundColor: "rgba(226, 255, 0, 0.08)",
-                    borderLeft: `3px solid ${THEME.colors.acidLime}`,
-                    padding: "14px 18px",
-                    borderRadius: "0 10px 10px 0",
-                    fontSize: "18px",
-                    fontWeight: 600,
-                    color: THEME.colors.textWhite,
-                    lineHeight: 1.4,
+                    color: THEME.colors.crimsonRed,
+                    fontWeight: 900,
+                    fontSize: "16px",
+                    marginTop: "2px",
                   }}
                 >
-                  {item}
-                </div>
-              ))}
-            </div>
+                  ✕
+                </span>
+                <span>{item}</span>
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* Footer Note */}
-        {footerNote && (
+        {/* CENTER VS BADGE */}
+        <div
+          style={{
+            position: "absolute",
+            left: "50%",
+            transform: `translate(-50%, -50%) scale(${centerPop})`,
+            top: "50%",
+            zIndex: 10,
+            width: "56px",
+            height: "56px",
+            borderRadius: "50%",
+            backgroundColor: "rgba(10, 15, 26, 0.85)",
+            backdropFilter: "blur(20px)",
+            border: `2px solid ${THEME.colors.acidLime}`,
+            boxShadow: THEME.shadows.glowLime,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            fontFamily: THEME.fonts.mono,
+            fontWeight: 900,
+            fontSize: "15px",
+            color: THEME.colors.acidLime,
+          }}
+        >
+          VS
+        </div>
+
+        {/* RIGHT CARD: SYSTEM ARBITRAGE / DISRUPTOR */}
+        <div
+          style={{
+            flex: 1,
+            backgroundColor: THEME.colors.bgGlass,
+            backdropFilter: "blur(24px)",
+            borderRadius: "24px",
+            border: `1px solid ${THEME.colors.borderAccent}`,
+            boxShadow: `${THEME.shadows.glass}, ${THEME.shadows.glowLime}`,
+            padding: "40px 44px",
+            transform: `translateX(${(1 - rightSlide) * 60}px)`,
+            opacity: rightSlide,
+            display: "flex",
+            flexDirection: "column",
+            gap: "20px",
+            position: "relative",
+            overflow: "hidden",
+          }}
+        >
+          {/* Top Lime reflection line */}
           <div
             style={{
-              borderTop: `1px solid rgba(255, 255, 255, 0.08)`,
-              paddingTop: "16px",
-              fontFamily: THEME.fonts.mono,
-              fontSize: "13px",
-              color: THEME.colors.textDim,
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
+              position: "absolute",
+              top: 0,
+              left: "15%",
+              right: "15%",
+              height: "2px",
+              background: `linear-gradient(90deg, transparent, ${THEME.colors.acidLime}, transparent)`,
+              opacity: 0.9,
             }}
-          >
-            <span>{footerNote}</span>
-            <span style={{ color: THEME.colors.acidLime }}>VERIFIED SPREAD</span>
+          />
+
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <span
+              style={{
+                fontFamily: THEME.fonts.mono,
+                fontSize: "11px",
+                fontWeight: 700,
+                letterSpacing: "0.2em",
+                color: THEME.colors.acidLime,
+                backgroundColor: "rgba(226, 255, 0, 0.12)",
+                padding: "4px 12px",
+                borderRadius: "999px",
+                border: "1px solid rgba(226, 255, 0, 0.35)",
+              }}
+            >
+              ✦ {rightTag}
+            </span>
           </div>
-        )}
+
+          <div>
+            <div style={{ display: "flex", alignItems: "baseline", gap: "8px", margin: "4px 0" }}>
+              <span
+                style={{
+                  fontSize: "58px",
+                  fontWeight: 900,
+                  letterSpacing: "-0.04em",
+                  color: THEME.colors.acidLime,
+                  textShadow: THEME.shadows.glowLime,
+                  lineHeight: 1,
+                }}
+              >
+                {rightStat}
+              </span>
+              <span
+                style={{
+                  fontFamily: THEME.fonts.mono,
+                  fontSize: "18px",
+                  color: THEME.colors.textWhite,
+                }}
+              >
+                {rightStatUnit}
+              </span>
+            </div>
+            <h3
+              style={{
+                fontSize: "22px",
+                fontWeight: 800,
+                color: THEME.colors.textWhite,
+                margin: "4px 0 0 0",
+                letterSpacing: "-0.01em",
+              }}
+            >
+              {rightTitle}
+            </h3>
+          </div>
+
+          {/* Minimalist Items */}
+          <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginTop: "8px" }}>
+            {rightItems.map((item, idx) => (
+              <div
+                key={idx}
+                style={{
+                  display: "flex",
+                  alignItems: "flex-start",
+                  gap: "12px",
+                  fontSize: "17px",
+                  color: THEME.colors.textWhite,
+                  lineHeight: 1.4,
+                  fontWeight: 500,
+                }}
+              >
+                <span
+                  style={{
+                    color: THEME.colors.acidLime,
+                    fontWeight: 900,
+                    fontSize: "16px",
+                    marginTop: "2px",
+                  }}
+                >
+                  ✓
+                </span>
+                <span>{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
+
+      {/* Bottom Floating Spread Banner */}
+      {footerNote && (
+        <div
+          style={{
+            opacity,
+            transform: `translateY(${(1 - opacity) * 15}px)`,
+            backgroundColor: THEME.colors.bgGlass,
+            backdropFilter: "blur(20px)",
+            border: `1px solid rgba(255, 255, 255, 0.12)`,
+            borderRadius: "14px",
+            padding: "12px 32px",
+            fontFamily: THEME.fonts.mono,
+            fontSize: "13px",
+            fontWeight: 700,
+            letterSpacing: "0.15em",
+            color: THEME.colors.textMuted,
+            display: "flex",
+            alignItems: "center",
+            gap: "12px",
+          }}
+        >
+          <span>{footerNote}</span>
+        </div>
+      )}
     </div>
   );
 };
