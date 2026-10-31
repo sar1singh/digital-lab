@@ -93,7 +93,7 @@ def render_motion_card(template_id, props_dict, output_path, frame=None):
 
 def main():
     parser = argparse.ArgumentParser(description="ThinkLate Remotion Motion Graphics Bridge")
-    parser.add_argument("--template", required=True, choices=["EvidenceCard", "MetricCounter", "TypographySlam"], help="Remotion Composition ID")
+    parser.add_argument("--template", required=True, choices=["EvidenceCard", "MetricCounter", "TypographySlam", "ComparisonSplit", "ForensicHeadline"], help="Remotion Composition ID")
     parser.add_argument("--props", default="{}", help="JSON string of component props")
     parser.add_argument("--out", required=True, help="Output file path (.png, .mp4)")
     parser.add_argument("--frame", type=int, default=None, help="Frame number for still image render (default: 45)")
