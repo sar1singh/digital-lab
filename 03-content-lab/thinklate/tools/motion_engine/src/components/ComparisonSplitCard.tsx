@@ -17,12 +17,24 @@ export interface ComparisonSplitCardProps {
   footerNote?: string;
 }
 
+// Utility to parse numeric value and formatting from a string like "$280" or "14.5x"
+function parseStatString(statStr: string) {
+  const match = statStr.match(/^([^0-9.-]*)([0-9,.]+)([^0-9.-]*)$/);
+  if (!match) {
+    return { prefix: "", num: 0, suffix: statStr, isNumeric: false };
+  }
+  const prefix = match[1] || "";
+  const num = parseFloat(match[2].replace(/,/g, "")) || 0;
+  const suffix = match[3] || "";
+  return { prefix, num, suffix, isNumeric: true };
+}
+
 export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
   badgeText = "FORENSIC CONTRAST // THE REALITY GAP",
   leftTag = "RIGID MONOPOLY",
   leftStat = "$280",
   leftStatUnit = "/ night",
-  leftTitle = "THE HOTEL CARTEL",
+  leftTitle = "THE SAN FRANCISCO HOTEL CARTEL",
   leftItems = [
     "Standard room rate during design conference",
     "100% sold-out citywide capacity in 48 hours",
@@ -31,18 +43,18 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
   rightTag = "SYSTEM ARBITRAGE",
   rightStat = "$80",
   rightStatUnit = "/ night",
-  rightTitle = "THE AIRBED EXPERIMENT",
+  rightTitle = "THE $80 AIRBED EXPERIMENT",
   rightItems = [
     "Inflatable air mattress on living room rug",
     "Free Wi-Fi + homemade breakfast pop-tarts",
     "Zero hotel infrastructure, instant cash flow"
   ],
-  footerNote = "SPREAD: 71.4% DISCOUNT FOR GUESTS  ✦  $240 CASH REVENUE FOR FOUNDERS",
+  footerNote = "PRICE SPREAD: 71.4% DISCOUNT FOR ATTENDEES  ✦  $240 CASH REVENUE FOR FOUNDERS",
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // Entrance springs
+  // Entrance springs for the outer containers
   const leftSlide = spring({
     frame,
     fps,
@@ -63,6 +75,34 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
 
   const opacity = interpolate(frame, [0, 10], [0, 1], {
     extrapolateRight: "clamp",
+  });
+
+  // Dynamic Numeric Count-Up Animations
+  const leftParsed = parseStatString(leftStat);
+  const leftCountSpring = spring({
+    frame: Math.max(0, frame - 8),
+    fps,
+    config: { damping: 14, mass: 0.7, stiffness: 95 },
+  });
+  const currentLeftVal = leftParsed.isNumeric
+    ? Math.round(leftCountSpring * leftParsed.num)
+    : leftStat;
+
+  const rightParsed = parseStatString(rightStat);
+  const rightCountSpring = spring({
+    frame: Math.max(0, frame - 12),
+    fps,
+    config: { damping: 14, mass: 0.7, stiffness: 95 },
+  });
+  const currentRightVal = rightParsed.isNumeric
+    ? Math.round(rightCountSpring * rightParsed.num)
+    : rightStat;
+
+  // Bottom Footer Spread reveal at frame 46
+  const footerSpring = spring({
+    frame: Math.max(0, frame - 46),
+    fps,
+    config: { damping: 12, mass: 0.6, stiffness: 130 },
   });
 
   return (
@@ -174,6 +214,7 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
           </div>
 
           <div>
+            {/* Dynamic Animated Number */}
             <div style={{ display: "flex", alignItems: "baseline", gap: "8px", margin: "4px 0" }}>
               <span
                 style={{
@@ -182,9 +223,12 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
                   letterSpacing: "-0.04em",
                   color: THEME.colors.textWhite,
                   lineHeight: 1,
+                  fontVariantNumeric: "tabular-nums",
                 }}
               >
-                {leftStat}
+                {leftParsed.isNumeric
+                  ? `${leftParsed.prefix}${currentLeftVal}${leftParsed.suffix}`
+                  : leftStat}
               </span>
               <span
                 style={{
@@ -209,33 +253,50 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
             </h3>
           </div>
 
-          {/* Minimalist Items */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginTop: "8px" }}>
-            {leftItems.map((item, idx) => (
-              <div
-                key={idx}
-                style={{
-                  display: "flex",
-                  alignItems: "flex-start",
-                  gap: "12px",
-                  fontSize: "17px",
-                  color: THEME.colors.textMuted,
-                  lineHeight: 1.4,
-                }}
-              >
-                <span
+          {/* Staggered Bullet Points (One after the other) */}
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "8px" }}>
+            {leftItems.map((item, idx) => {
+              // Left bullets pop at frame 16, 26, 36
+              const startF = 16 + idx * 10;
+              const bSpring = spring({
+                frame: Math.max(0, frame - startF),
+                fps,
+                config: { damping: 12, mass: 0.5, stiffness: 150 },
+              });
+              const bOpacity = interpolate(frame, [startF, startF + 5], [0, 1], {
+                extrapolateLeft: "clamp",
+                extrapolateRight: "clamp",
+              });
+
+              return (
+                <div
+                  key={idx}
                   style={{
-                    color: THEME.colors.crimsonRed,
-                    fontWeight: 900,
-                    fontSize: "16px",
-                    marginTop: "2px",
+                    display: "flex",
+                    alignItems: "flex-start",
+                    gap: "12px",
+                    fontSize: "17px",
+                    color: THEME.colors.textMuted,
+                    lineHeight: 1.4,
+                    transform: `translateX(${(1 - bSpring) * -18}px)`,
+                    opacity: bOpacity,
                   }}
                 >
-                  ✕
-                </span>
-                <span>{item}</span>
-              </div>
-            ))}
+                  <span
+                    style={{
+                      color: THEME.colors.crimsonRed,
+                      fontWeight: 900,
+                      fontSize: "16px",
+                      marginTop: "2px",
+                      transform: `scale(${bSpring})`,
+                    }}
+                  >
+                    ✕
+                  </span>
+                  <span>{item}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
 
@@ -317,6 +378,7 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
           </div>
 
           <div>
+            {/* Dynamic Animated Number */}
             <div style={{ display: "flex", alignItems: "baseline", gap: "8px", margin: "4px 0" }}>
               <span
                 style={{
@@ -326,9 +388,12 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
                   color: THEME.colors.acidLime,
                   textShadow: THEME.shadows.glowLime,
                   lineHeight: 1,
+                  fontVariantNumeric: "tabular-nums",
                 }}
               >
-                {rightStat}
+                {rightParsed.isNumeric
+                  ? `${rightParsed.prefix}${currentRightVal}${rightParsed.suffix}`
+                  : rightStat}
               </span>
               <span
                 style={{
@@ -353,47 +418,64 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
             </h3>
           </div>
 
-          {/* Minimalist Items */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginTop: "8px" }}>
-            {rightItems.map((item, idx) => (
-              <div
-                key={idx}
-                style={{
-                  display: "flex",
-                  alignItems: "flex-start",
-                  gap: "12px",
-                  fontSize: "17px",
-                  color: THEME.colors.textWhite,
-                  lineHeight: 1.4,
-                  fontWeight: 500,
-                }}
-              >
-                <span
+          {/* Staggered Bullet Points (Ping-pong offset: frame 21, 31, 41) */}
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "8px" }}>
+            {rightItems.map((item, idx) => {
+              // Right bullets pop at frame 21, 31, 41
+              const startF = 21 + idx * 10;
+              const bSpring = spring({
+                frame: Math.max(0, frame - startF),
+                fps,
+                config: { damping: 12, mass: 0.5, stiffness: 150 },
+              });
+              const bOpacity = interpolate(frame, [startF, startF + 5], [0, 1], {
+                extrapolateLeft: "clamp",
+                extrapolateRight: "clamp",
+              });
+
+              return (
+                <div
+                  key={idx}
                   style={{
-                    color: THEME.colors.acidLime,
-                    fontWeight: 900,
-                    fontSize: "16px",
-                    marginTop: "2px",
+                    display: "flex",
+                    alignItems: "flex-start",
+                    gap: "12px",
+                    fontSize: "17px",
+                    color: THEME.colors.textWhite,
+                    lineHeight: 1.4,
+                    fontWeight: 500,
+                    transform: `translateX(${(1 - bSpring) * 18}px)`,
+                    opacity: bOpacity,
                   }}
                 >
-                  ✓
-                </span>
-                <span>{item}</span>
-              </div>
-            ))}
+                  <span
+                    style={{
+                      color: THEME.colors.acidLime,
+                      fontWeight: 900,
+                      fontSize: "16px",
+                      marginTop: "2px",
+                      transform: `scale(${bSpring})`,
+                    }}
+                  >
+                    ✓
+                  </span>
+                  <span>{item}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
 
-      {/* Bottom Floating Spread Banner */}
+      {/* Bottom Floating Spread Banner (Reveals after bullets at frame 46) */}
       {footerNote && (
         <div
           style={{
-            opacity,
-            transform: `translateY(${(1 - opacity) * 15}px)`,
+            transform: `scale(${footerSpring}) translateY(${(1 - footerSpring) * 20}px)`,
+            opacity: footerSpring,
             backgroundColor: THEME.colors.bgGlass,
             backdropFilter: "blur(20px)",
-            border: `1px solid rgba(255, 255, 255, 0.12)`,
+            border: `1px solid rgba(255, 255, 255, 0.14)`,
             borderRadius: "14px",
             padding: "12px 32px",
             fontFamily: THEME.fonts.mono,
@@ -404,6 +486,7 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
             display: "flex",
             alignItems: "center",
             gap: "12px",
+            boxShadow: THEME.shadows.glass,
           }}
         >
           <span>{footerNote}</span>
