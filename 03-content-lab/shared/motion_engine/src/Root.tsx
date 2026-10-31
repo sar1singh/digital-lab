@@ -18,6 +18,10 @@ import { TimelineMilestoneFlow } from "./components/evidence/TimelineMilestoneFl
 import { AudioWaveformCard } from "./components/evidence/AudioWaveformCard";
 import { MapLocusRadar } from "./components/evidence/MapLocusRadar";
 import { PhotoPolaroidPin } from "./components/evidence/PhotoPolaroidPin";
+import { MagnifyingGlassDoc } from "./components/evidence/MagnifyingGlassDoc";
+import { CharacterProfileCard } from "./components/evidence/CharacterProfileCard";
+import { RankedListicleCard } from "./components/evidence/RankedListicleCard";
+import { ConspiracyPinBoard } from "./components/evidence/ConspiracyPinBoard";
 
 // Kinetic Typography Suite
 import { KineticTypographySlam } from "./components/KineticTypographySlam";
@@ -536,6 +540,94 @@ export const RemotionRoot: React.FC = () => {
           dateStr: "OCTOBER 19, 2007",
           stampText: "AUTHENTICATED RECORD",
           tiltDeg: -2.5,
+        }}
+      />
+
+      {/* Documentary & Elite Explainer Compositions (Nitish Rajput, Alux, Vox, Infographics) */}
+      <Composition
+        id="MagnifyingGlassDoc"
+        component={MagnifyingGlassDoc as any}
+        durationInFrames={120}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          channel: "thinklate",
+          documentTitle: "MUNICIPAL HOUSING REGULATION // SECTION 402(B)",
+          docketNo: "SAN FRANCISCO HOUSING AUTHORITY // DOCKET #07-8891",
+          preambleText: "It is strictly unlawful for any tenant to sublease residential space without written consent, and specifically, ",
+          magnifiedText: "charging nightly accommodation fees without a commercial hotel license constitutes an immediate misdemeanor",
+          postambleText: ", subjecting all primary occupants to emergency eviction within seventy-two hours of notice.",
+          stampText: "REGULATORY VIOLATION",
+          footerNote: "OFFICIAL RECORD // CITY & COUNTY OF SAN FRANCISCO HOUSING CODE",
+        }}
+      />
+
+      <Composition
+        id="CharacterProfileCard"
+        component={CharacterProfileCard as any}
+        durationInFrames={120}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          channel: "thinklate",
+          characterName: "BRIAN CHESKY",
+          designation: "CO-FOUNDER & CEO // AIRBNB",
+          photoUrl: "",
+          statusBadge: "SUBJECT DOSSIER // ASYMMETRIC FOUNDER",
+          stats: [
+            { label: "OCTOBER 2007 RENT", value: "$1,150 (OVERDUE)", color: "#EF4444" },
+            { label: "FIRST REVENUE", value: "$240 (3 AIRBEDS)", color: "#00F0FF" },
+            { label: "CEREAL SEED CAPITAL", value: "$30,000 CASH", color: "#F59E0B" },
+            { label: "PEAK VALUATION", value: "$100,000,000,000", color: "#10B981" },
+          ],
+          stampTag: "DISRUPTION PROVEN",
+          quoteSnippet: "\"If we can't pay rent, we make rent our product.\"",
+        }}
+      />
+
+      <Composition
+        id="RankedListicleCard"
+        component={RankedListicleCard as any}
+        durationInFrames={120}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          channel: "thinklate",
+          rankNumber: "01",
+          categoryTag: "RULE #01 // THE SYSTEM ARBITRAGE",
+          headline: "THE ASSET-LIGHT ADVANTAGE",
+          subExplanation: "Traditional hotel empires spent $100M per tower on concrete, staff, and debt. Airbnb scaled to 100,000 rooms with $0 spent on physical real estate.",
+          footerMetric: "CAPITAL EFFICIENCY RATIO: 416X MULTIPLIER",
+        }}
+      />
+
+      <Composition
+        id="ConspiracyPinBoard"
+        component={ConspiracyPinBoard as any}
+        durationInFrames={120}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          channel: "thinklate",
+          boardTitle: "FORENSIC CONNECTION // ASYMMETRIC VALUE TRAIL",
+          leftEntity: {
+            name: "THE $80 AIRBED RUG",
+            tag: "BOOTSTRAP PROTOTYPE // SFO",
+            detail: "3 Living room mattresses funded founder rent in October 2007",
+            icon: "🛏️",
+          },
+          rightEntity: {
+            name: "HILTON & MARRIOTT CARTEL",
+            tag: "LEGACY MONOPOLY // $140B",
+            detail: "Overpriced room rates during SFO design conference created artificial bottleneck",
+            icon: "🏨",
+          },
+          connectionLabel: "71.4% VALUE ARBITRAGE EXPLOITED",
+          evidenceNote: "EVIDENCE CORRELATION: DIRECT SYSTEM ARBITRAGE CONFIRMED BY TRANSACTION MANIFEST",
         }}
       />
 
