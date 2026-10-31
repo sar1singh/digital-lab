@@ -38,7 +38,7 @@ export const TornPaperReceipt: React.FC<TornPaperReceiptProps> = ({
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // Receipt drops in with physical paper bounce & slight rotation
+  // Motion 1: Receipt drops in with physical paper bounce & slight rotation
   const dropSpring = spring({
     frame,
     fps,
@@ -47,8 +47,9 @@ export const TornPaperReceipt: React.FC<TornPaperReceiptProps> = ({
 
   const opacity = interpolate(frame, [0, 8], [0, 1], { extrapolateRight: "clamp" });
 
+  // Motion 4: Stamp slams at frame 44
   const stampSpring = spring({
-    frame: Math.max(0, frame - 16),
+    frame: Math.max(0, frame - 44),
     fps,
     config: { damping: 10, mass: 0.5, stiffness: 170 },
   });
@@ -67,7 +68,7 @@ export const TornPaperReceipt: React.FC<TornPaperReceiptProps> = ({
     >
       <div
         style={{
-          width: "720px",
+          width: "740px",
           backgroundColor: "#FDFBF7",
           color: "#0F172A",
           boxShadow: "0 30px 80px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(255, 255, 255, 0.2)",
@@ -88,23 +89,38 @@ export const TornPaperReceipt: React.FC<TornPaperReceiptProps> = ({
           <div style={{ fontSize: "11px", color: "#94A3B8", marginTop: "4px" }}>{dateStr}</div>
         </div>
 
-        {/* Line Items */}
+        {/* Motion 2: Staggered Line Items (One after the other) */}
         <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginBottom: "20px" }}>
-          {lineItems.map((item, idx) => (
-            <div
-              key={idx}
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                fontSize: "15px",
-                color: item.isJunkFee ? "#DC2626" : "#1E293B",
-                fontWeight: item.isJunkFee ? 800 : 500,
-              }}
-            >
-              <span>{item.isJunkFee ? `⚠️ ${item.name}` : item.name}</span>
-              <span>{item.amount}</span>
-            </div>
-          ))}
+          {lineItems.map((item, idx) => {
+            const itemStart = 14 + idx * 6;
+            const itemSpring = spring({
+              frame: Math.max(0, frame - itemStart),
+              fps,
+              config: { damping: 12, mass: 0.5, stiffness: 150 },
+            });
+            const itemOpacity = interpolate(frame, [itemStart, itemStart + 4], [0, 1], {
+              extrapolateLeft: "clamp",
+              extrapolateRight: "clamp",
+            });
+
+            return (
+              <div
+                key={idx}
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  fontSize: "15px",
+                  color: item.isJunkFee ? "#DC2626" : "#1E293B",
+                  fontWeight: item.isJunkFee ? 800 : 500,
+                  transform: `translateX(${(1 - itemSpring) * -16}px)`,
+                  opacity: itemOpacity,
+                }}
+              >
+                <span>{item.isJunkFee ? `⚠️ ${item.name}` : item.name}</span>
+                <span>{item.amount}</span>
+              </div>
+            );
+          })}
         </div>
 
         {/* Subtotal & Total */}
@@ -124,7 +140,7 @@ export const TornPaperReceipt: React.FC<TornPaperReceiptProps> = ({
           {footerMessage}
         </div>
 
-        {/* Physical Ink Stamp */}
+        {/* Motion 4: Physical Ink Stamp */}
         <div
           style={{
             position: "absolute",

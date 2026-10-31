@@ -5,7 +5,8 @@ import { THEME } from "../../styles/theme";
 export interface BarItem {
   label: string;
   value: number;
-  displayValue?: string;
+  suffix?: string;
+  prefix?: string;
   highlight?: boolean;
   color?: string;
 }
@@ -23,17 +24,17 @@ export const AnimatedBarChart: React.FC<AnimatedBarChartProps> = ({
   title = "VALUATION REVENUE MULTIPLES",
   subtitle = "Public Hotel Operators vs Solo Airbed Platform",
   bars = [
-    { label: "Marriott Int.", value: 1.8, displayValue: "1.8x", highlight: false },
-    { label: "Hilton Worldwide", value: 2.1, displayValue: "2.1x", highlight: false },
-    { label: "Hyatt Hotels", value: 1.5, displayValue: "1.5x", highlight: false },
-    { label: "Airbnb (Peak)", value: 14.5, displayValue: "14.5x", highlight: true, color: THEME.colors.acidLime },
+    { label: "Marriott Int.", value: 1.8, suffix: "x", highlight: false },
+    { label: "Hilton Worldwide", value: 2.1, suffix: "x", highlight: false },
+    { label: "Hyatt Hotels", value: 1.5, suffix: "x", highlight: false },
+    { label: "Airbnb (Peak)", value: 14.5, suffix: "x", highlight: true, color: THEME.colors.acidLime },
   ],
   footerNote = "SOURCE: SEC FORM 10-K & BLOOMBERG MARKET BENCHMARKS",
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // Master card entrance
+  // Motion 1: Master card entrance
   const cardScale = spring({
     frame,
     fps,
@@ -130,17 +131,24 @@ export const AnimatedBarChart: React.FC<AnimatedBarChartProps> = ({
           <div style={{ position: "absolute", top: "75%", left: 0, right: 0, height: "1px", backgroundColor: "rgba(255, 255, 255, 0.05)" }} />
 
           {bars.map((bar, idx) => {
-            // Staggered bar rise
+            // Motion 2: Staggered bar rise
+            const barStart = 10 + idx * 5;
             const barSpring = spring({
-              frame: Math.max(0, frame - 10 - idx * 4),
+              frame: Math.max(0, frame - barStart),
               fps,
               config: { damping: 14, mass: 0.6, stiffness: 120 },
             });
+
+            // Motion 3: Dynamic numeric roll-up
+            const currentVal = (barSpring * bar.value).toFixed(1);
 
             const targetHeightPct = (bar.value / maxValue) * 100;
             const currentHeight = targetHeightPct * barSpring;
             const isHighlight = bar.highlight;
             const barColor = isHighlight ? (bar.color || THEME.colors.acidLime) : "rgba(255, 255, 255, 0.25)";
+
+            // Motion 4: Ambient glow pulse on the highlight bar
+            const glowPulse = isHighlight ? 1 + Math.sin((frame / fps) * 4) * 0.15 : 1;
 
             return (
               <div
@@ -154,20 +162,21 @@ export const AnimatedBarChart: React.FC<AnimatedBarChartProps> = ({
                   height: "100%",
                 }}
               >
-                {/* Value Pill above bar */}
+                {/* Dynamic Value Label above bar */}
                 <div
                   style={{
                     opacity: barSpring,
-                    transform: `translateY(${(1 - barSpring) * 15}px)`,
+                    transform: `translateY(${(1 - barSpring) * 15}px) scale(${isHighlight ? glowPulse : 1})`,
                     marginBottom: "12px",
                     fontFamily: THEME.fonts.mono,
-                    fontSize: isHighlight ? "24px" : "18px",
+                    fontSize: isHighlight ? "26px" : "18px",
                     fontWeight: 900,
                     color: isHighlight ? THEME.colors.acidLime : THEME.colors.textWhite,
                     textShadow: isHighlight ? THEME.shadows.glowLime : "none",
+                    fontVariantNumeric: "tabular-nums",
                   }}
                 >
-                  {bar.displayValue || bar.value}
+                  {bar.prefix || ""}{currentVal}{bar.suffix || "x"}
                 </div>
 
                 {/* The Bar Pillar */}
@@ -179,10 +188,9 @@ export const AnimatedBarChart: React.FC<AnimatedBarChartProps> = ({
                     borderRadius: "8px 8px 0 0",
                     boxShadow: isHighlight ? THEME.shadows.glowLime : "none",
                     position: "relative",
-                    transition: "height 0.1s ease",
                   }}
                 >
-                  {/* Subtle top edge gleam */}
+                  {/* Top edge gleam */}
                   <div
                     style={{
                       position: "absolute",
