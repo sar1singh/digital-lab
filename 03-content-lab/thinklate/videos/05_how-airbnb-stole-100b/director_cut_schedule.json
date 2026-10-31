@@ -1,0 +1,426 @@
+[
+  [
+    0.0,
+    6.32,
+    "CARD",
+    "assets/evidence_cards/card_01_eviction_and_airbed.png",
+    "Rent is $1,100, 3 days from eviction, bank account empty",
+    "OCTOBER 2007: 72 HOURS FROM EVICTION"
+  ],
+  [
+    6.32,
+    12.56,
+    "PHOTO",
+    "assets/documentary_broll/brian_chesky_archive.jpg",
+    "Brian Chesky & Joe Gebbia sharing apartment",
+    "BRIAN CHESKY & JOE GEBBIA"
+  ],
+  [
+    12.56,
+    17.44,
+    "GAMEPLAY",
+    null,
+    "Two broke design school graduates, completely unemployed",
+    "UNEMPLOYED & BROKE"
+  ],
+  [
+    17.44,
+    23.04,
+    "GAMEPLAY",
+    null,
+    "Scrambling for any quick cash just to survive the weekend",
+    "SURVIVING THE WEEKEND"
+  ],
+  [
+    23.04,
+    33.12,
+    "CARD",
+    "assets/evidence_cards/card_01_eviction_and_airbed.png",
+    "IDSA design conference in town, hotels 100% sold out",
+    "HOTELS 100% SOLD OUT (0 ROOMS)"
+  ],
+  [
+    33.12,
+    44.88,
+    "ART",
+    "assets/thumbnail_option_a.jpg",
+    "Ran to Target, bought 3 blue air mattresses, $80 a night",
+    "3 AIR MATTRESSES @ $80/NIGHT"
+  ],
+  [
+    44.88,
+    56.72,
+    "PHOTO",
+    "assets/documentary_broll/san_francisco_exterior.jpg",
+    "Pop-Tarts in the morning... 18 years later a $100B empire",
+    "$80 AIRBED -> $100B EMPIRE"
+  ],
+  [
+    56.72,
+    68.0,
+    "GAMEPLAY",
+    null,
+    "Blueprint for solo builders with zero cash",
+    "THE SOLO-BUILDER BLUEPRINT"
+  ],
+  [
+    68.0,
+    80.56,
+    "GAMEPLAY",
+    null,
+    "Three tactical survival moves & fatal scaling trap to avoid",
+    "3 BRUTAL SURVIVAL MOVES"
+  ],
+  [
+    80.56,
+    92.4,
+    "PHOTO",
+    "assets/documentary_broll/brian_chesky_archive.jpg",
+    "First weekend worked: 3 designers paid $240 cash, rent paid",
+    "$240 CASH -> RENT PAID"
+  ],
+  [
+    92.4,
+    108.0,
+    "GAMEPLAY",
+    null,
+    "What if complete strangers could do this in every city?",
+    "WHAT IF ANYONE COULD HOST?"
+  ],
+  [
+    108.0,
+    125.0,
+    "PHOTO",
+    "assets/documentary_broll/san_francisco_exterior.jpg",
+    "Neither knew code; convinced roommate Nate Blecharczyk",
+    "NATE BLECHARCZYK (CTO)"
+  ],
+  [
+    125.0,
+    142.0,
+    "GAMEPLAY",
+    null,
+    "Built primitive website: Airbed and Breakfast",
+    "AIRBEDANDBREAKFAST.COM"
+  ],
+  [
+    142.0,
+    164.16,
+    "ART",
+    "assets/thumbnail_option_a.jpg",
+    "The system doesn't reward vision; it rewards leverage",
+    "THE SYSTEM REWARDS LEVERAGE"
+  ],
+  [
+    164.16,
+    185.0,
+    "CARD",
+    "assets/evidence_cards/card_02_cereal_arbitrage.png",
+    "$20,000 in credit card debt, baseball card binders",
+    "$20,000 CREDIT CARD DEBT"
+  ],
+  [
+    185.0,
+    202.0,
+    "GAMEPLAY",
+    null,
+    "Rejected by 7 venture capital firms in Silicon Valley",
+    "REJECTED BY 7 TOP VCS"
+  ],
+  [
+    202.0,
+    218.0,
+    "GAMEPLAY",
+    null,
+    "Summer 2008: Denver DNC convention, 100,000 visitors",
+    "DENVER DNC: 100,000 VISITORS"
+  ],
+  [
+    218.0,
+    235.0,
+    "CARD",
+    "assets/evidence_cards/card_02_cereal_arbitrage.png",
+    "Hand-glued 1,000 boxes: Obama O's & Cap'n McCain's",
+    "1,000 BOXES HAND-GLUED"
+  ],
+  [
+    235.0,
+    250.0,
+    "CARD",
+    "assets/evidence_cards/card_02_cereal_arbitrage.png",
+    "$4 production cost, sold for $40 as collector items",
+    "COST $4 -> SOLD FOR $40 (10X)"
+  ],
+  [
+    250.0,
+    259.52,
+    "GAMEPLAY",
+    null,
+    "$30,000 pure cash profit: funded the startup runway",
+    "$30,000 PURE CASH RUNWAY"
+  ],
+  [
+    259.52,
+    280.0,
+    "PHOTO",
+    "assets/documentary_broll/paul_graham_archive.jpg",
+    "January 2009: Y Combinator interview with Paul Graham",
+    "PAUL GRAHAM // Y COMBINATOR"
+  ],
+  [
+    280.0,
+    298.0,
+    "GAMEPLAY",
+    null,
+    "Pitch was failing: investors thought airbeds on floor crazy",
+    "INVESTORS: 'AIRBEDS ARE CRAZY'"
+  ],
+  [
+    298.0,
+    318.0,
+    "CARD",
+    "assets/evidence_cards/card_02_cereal_arbitrage.png",
+    "Pulled out the Obama O's cereal box from their backpack",
+    "THE CEREAL BOX COUNTER-MOVE"
+  ],
+  [
+    318.0,
+    335.0,
+    "PHOTO",
+    "assets/documentary_broll/paul_graham_archive.jpg",
+    "Paul Graham: 'If you can sell $40 cereal, you can survive'",
+    "'IF YOU CAN SELL $40 CEREAL, YOU'RE IN'"
+  ],
+  [
+    335.0,
+    350.0,
+    "GAMEPLAY",
+    null,
+    "$20,000 seed check & accepted into Y Combinator",
+    "$20,000 SEED INVESTMENT"
+  ],
+  [
+    350.0,
+    367.12,
+    "GAMEPLAY",
+    null,
+    "The Trough of Sorrow: 100 weeks making only $200 a week",
+    "TROUGH OF SORROW: $200/WEEK"
+  ],
+  [
+    367.2,
+    385.0,
+    "CARD",
+    "assets/evidence_cards/card_03_brooklyn_photography.png",
+    "Do things that don't scale: flip-phone photos crime scene",
+    "DO THINGS THAT DON'T SCALE"
+  ],
+  [
+    385.0,
+    405.0,
+    "PHOTO",
+    "assets/documentary_broll/brooklyn_apartments.jpg",
+    "Flew to Brooklyn with $500 DSLR camera, knocked on doors",
+    "FLYING TO BROOKLYN WITH $500 DSLR"
+  ],
+  [
+    405.0,
+    425.0,
+    "GAMEPLAY",
+    null,
+    "Sat in host kitchens, shot free wide-angle photos",
+    "FREE PROFESSIONAL PHOTOGRAPHY"
+  ],
+  [
+    425.0,
+    435.0,
+    "CARD",
+    "assets/evidence_cards/card_03_brooklyn_photography.png",
+    "Bookings instantly tripled (300% spike), revenue doubled",
+    "BOOKINGS TRIPLED (300% SPIKE)"
+  ],
+  [
+    435.0,
+    445.52,
+    "GAMEPLAY",
+    null,
+    "The answers are never in your code; they are in the kitchen",
+    "ANSWERS ARE IN THE KITCHEN"
+  ],
+  [
+    445.52,
+    470.0,
+    "CARD",
+    "assets/evidence_cards/card_04_craigslist_hijack.png",
+    "Rule: Never build distribution when you can borrow it",
+    "RULE: BORROW DISTRIBUTION"
+  ],
+  [
+    470.0,
+    495.0,
+    "GAMEPLAY",
+    null,
+    "Craigslist had 50 million monthly rental searchers",
+    "CRAIGSLIST: 50M USERS FOR $0"
+  ],
+  [
+    495.0,
+    520.0,
+    "CARD",
+    "assets/evidence_cards/card_04_craigslist_hijack.png",
+    "Reverse-engineered web forms: auto-crossposting Airbnb",
+    "REVERSE-ENGINEERED WEB FORMS"
+  ],
+  [
+    520.0,
+    545.0,
+    "CARD",
+    "assets/evidence_cards/card_07_valuation_multiples.png",
+    "Valuation Arbitrage: Hardware 1.8x vs SaaS 6.7x vs Mkt 18.5x",
+    "THE 18.5X MARKETPLACE MULTIPLE"
+  ],
+  [
+    545.0,
+    567.2,
+    "CHART",
+    "assets/CHART_VALUATION_ARBITRAGE.png",
+    "Zero real estate owned, taking 17% cut on other's homes",
+    "ZERO BUILDINGS // $100B EMPIRE"
+  ],
+  [
+    567.2,
+    590.0,
+    "CARD",
+    "assets/evidence_cards/card_08_covid_collapse.png",
+    "March 2020: 80% of business wiped out in 14 days",
+    "MARCH 2020: 80% REVENUE WIPED"
+  ],
+  [
+    590.0,
+    615.0,
+    "GAMEPLAY",
+    null,
+    "$1 Billion in customer refunds, emergency debt financing",
+    "$1,000,000,000 CASH REFUNDS"
+  ],
+  [
+    615.0,
+    638.0,
+    "CARD",
+    "assets/evidence_cards/card_08_covid_collapse.png",
+    "Remote work pivot: people fleeing to rural mountain cabins",
+    "THE RURAL CABIN RECOVERY"
+  ],
+  [
+    638.0,
+    655.0,
+    "PHOTO",
+    "assets/documentary_broll/nasdaq_times_square_billboards.jpg",
+    "December 2020: NASDAQ opening bell ringing",
+    "DEC 10, 2020: NASDAQ IPO"
+  ],
+  [
+    655.0,
+    671.68,
+    "CARD",
+    "assets/evidence_cards/card_09_dec_2020_ipo.png",
+    "Day 1: $100.8B market cap, beats Marriott + Hilton + Hyatt",
+    "$100.8 BILLION MARKET CAP"
+  ],
+  [
+    671.68,
+    700.0,
+    "CARD",
+    "assets/evidence_cards/card_05_chore_fee_breakdown.png",
+    "$120 room balloons to $380 with $180 cleaning fee + tax",
+    "$120 ROOM -> $380 FINAL BILL"
+  ],
+  [
+    700.0,
+    730.0,
+    "CARD",
+    "assets/evidence_cards/card_05_chore_fee_breakdown.png",
+    "Laminated chore lists: strip beds, wash dishes, mow lawn",
+    "CHORE LIST: WASH SHEETS, MOW LAWN"
+  ],
+  [
+    730.0,
+    760.0,
+    "GAMEPLAY",
+    null,
+    "Host greed replaces authentic hospitality with profit-chasing",
+    "WHEN PLATFORMS LOSE THEIR SOUL"
+  ],
+  [
+    760.0,
+    795.0,
+    "PHOTO",
+    "assets/documentary_broll/barcelona_housing_protest.jpg",
+    "Local residents priced out: protests erupt across the globe",
+    "GLOBAL ANTI-TOURISM PROTESTS"
+  ],
+  [
+    795.0,
+    835.0,
+    "CARD",
+    "assets/evidence_cards/card_06_regulatory_bans.png",
+    "NYC Local Law 18: 85% of short-term listings wiped out",
+    "NYC LOCAL LAW 18: -85% SUPPLY"
+  ],
+  [
+    835.0,
+    884.08,
+    "CARD",
+    "assets/evidence_cards/card_06_regulatory_bans.png",
+    "Barcelona 2028: Total ban on 10,000 tourist apartments",
+    "BARCELONA: TOTAL BAN BY 2028"
+  ],
+  [
+    884.08,
+    915.0,
+    "CARD",
+    "assets/evidence_cards/card_10_the_three_rules.png",
+    "Rule 1: Borrow distribution before you build it",
+    "RULE 1: BORROW DISTRIBUTION"
+  ],
+  [
+    915.0,
+    945.0,
+    "CARD",
+    "assets/evidence_cards/card_10_the_three_rules.png",
+    "Rule 2: The answer is in the kitchen, not your code",
+    "RULE 2: TALK TO YOUR CUSTOMERS"
+  ],
+  [
+    945.0,
+    975.0,
+    "CARD",
+    "assets/evidence_cards/card_10_the_three_rules.png",
+    "Rule 3: Never optimize the soul out of the product",
+    "RULE 3: PRESERVE THE PRODUCT'S SOUL"
+  ],
+  [
+    975.0,
+    1005.0,
+    "GAMEPLAY",
+    null,
+    "The ultimate irony: Chesky pivoting back to boutique hotels",
+    "PIVOTING TO BOUTIQUE HOTELS"
+  ],
+  [
+    1005.0,
+    1030.0,
+    "ART",
+    "assets/thumbnail_option_a.jpg",
+    "From $80 airbed on the floor to $100B empire",
+    "AN $80 AIRBED -> $100B REALITY"
+  ],
+  [
+    1030.0,
+    1046.0,
+    "ART",
+    "assets/thumbnail_option_a.jpg",
+    "Stay curious. See you in the next one.",
+    "STAY CURIOUS. // THINKLATE"
+  ]
+]

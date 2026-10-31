@@ -1,0 +1,1178 @@
+[
+  {
+    "id": 1,
+    "scene": "Scene 01: Cold Open & The Eviction Hook",
+    "start": 0.0,
+    "end": 12.56,
+    "dur": 12.56,
+    "v1_clip": "scene1_01_city_apartments.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "OCTOBER 2007: 72 HOURS FROM EVICTION",
+    "sfx": [
+      "sfx_sub_boom.wav",
+      0.0,
+      -12.0
+    ]
+  },
+  {
+    "id": 2,
+    "scene": "Scene 01: Cold Open & The Eviction Hook",
+    "start": 12.56,
+    "end": 23.04,
+    "dur": 10.479999999999999,
+    "v1_clip": "san_francisco_exterior.jpg",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 3,
+    "scene": "Scene 01: Cold Open & The Eviction Hook",
+    "start": 23.04,
+    "end": 33.12,
+    "dur": 10.079999999999998,
+    "v1_clip": "scene1_02_apartment_keys.mp4",
+    "v2_blur": true,
+    "v3_anchor": "thumbnail_option_a.jpg",
+    "v4_text": "RENT: $1,150 // CASH IN BANK: $0",
+    "sfx": null
+  },
+  {
+    "id": 4,
+    "scene": "Scene 01: Cold Open & The Eviction Hook",
+    "start": 33.12,
+    "end": 44.88,
+    "dur": 11.760000000000005,
+    "v1_clip": "scene1_03_clock_ticking.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": [
+      "sfx_whoosh.wav",
+      33.12,
+      -16.0
+    ]
+  },
+  {
+    "id": 5,
+    "scene": "Scene 01: Cold Open & The Eviction Hook",
+    "start": 44.88,
+    "end": 56.72,
+    "dur": 11.839999999999996,
+    "v1_clip": "scene1_04_moving_boxes.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "THE DESIGN CONFERENCE: ALL HOTELS SOLD OUT",
+    "sfx": null
+  },
+  {
+    "id": 6,
+    "scene": "Scene 01: Cold Open & The Eviction Hook",
+    "start": 56.72,
+    "end": 68.0,
+    "dur": 11.280000000000001,
+    "v1_clip": "thumbnail_option_a.jpg",
+    "v2_blur": false,
+    "v3_anchor": "thumbnail_option_a.jpg",
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 7,
+    "scene": "Scene 01: Cold Open & The Eviction Hook",
+    "start": 68.0,
+    "end": 80.56,
+    "dur": 12.560000000000002,
+    "v1_clip": "scene1_01_city_apartments.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "3 BLUE AIR MATTRESSES ON BARE WOOD",
+    "sfx": [
+      "sfx_data_blip.wav",
+      68.0,
+      -16.0
+    ]
+  },
+  {
+    "id": 8,
+    "scene": "Scene 01: Cold Open & The Eviction Hook",
+    "start": 80.56,
+    "end": 93.52,
+    "dur": 12.959999999999994,
+    "v1_clip": "san_francisco_exterior.jpg",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 9,
+    "scene": "Scene 01: Cold Open & The Eviction Hook",
+    "start": 93.52,
+    "end": 103.84,
+    "dur": 10.320000000000007,
+    "v1_clip": "scene1_02_apartment_keys.mp4",
+    "v2_blur": true,
+    "v3_anchor": "thumbnail_option_a.jpg",
+    "v4_text": "$80 A NIGHT + HOMEMADE POP-TARTS = SURVIVAL",
+    "sfx": null
+  },
+  {
+    "id": 10,
+    "scene": "Scene 01: Cold Open & The Eviction Hook",
+    "start": 103.84,
+    "end": 116.0,
+    "dur": 12.159999999999997,
+    "v1_clip": "scene1_03_clock_ticking.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": [
+      "sfx_sub_boom.wav",
+      103.84,
+      -12.0
+    ]
+  },
+  {
+    "id": 11,
+    "scene": "Scene 01: Cold Open & The Eviction Hook",
+    "start": 116.0,
+    "end": 128.64,
+    "dur": 12.639999999999986,
+    "v1_clip": "scene1_04_moving_boxes.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "AIRBED & BREAKFAST IS BORN",
+    "sfx": null
+  },
+  {
+    "id": 12,
+    "scene": "Scene 01: Cold Open & The Eviction Hook",
+    "start": 128.64,
+    "end": 139.84,
+    "dur": 11.200000000000017,
+    "v1_clip": "thumbnail_option_a.jpg",
+    "v2_blur": false,
+    "v3_anchor": "thumbnail_option_a.jpg",
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 13,
+    "scene": "Scene 01: Cold Open & The Eviction Hook",
+    "start": 139.84,
+    "end": 151.36,
+    "dur": 11.52000000000001,
+    "v1_clip": "scene1_01_city_apartments.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "THE SYSTEM DOESN'T REWARD VISION; IT REWARDS LEVERAGE",
+    "sfx": [
+      "sfx_whoosh.wav",
+      139.84,
+      -16.0
+    ]
+  },
+  {
+    "id": 14,
+    "scene": "Scene 01: Cold Open & The Eviction Hook",
+    "start": 151.36,
+    "end": 164.16,
+    "dur": 12.799999999999983,
+    "v1_clip": "san_francisco_exterior.jpg",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 15,
+    "scene": "Scene 02: $20K Debt & The Novelty Cereal Stunt",
+    "start": 164.16,
+    "end": 176.56,
+    "dur": 12.400000000000006,
+    "v1_clip": "scene2_01_credit_card_debt.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "SUMMER 2008: $20,000 IN CREDIT CARD DEBT",
+    "sfx": null
+  },
+  {
+    "id": 16,
+    "scene": "Scene 02: $20K Debt & The Novelty Cereal Stunt",
+    "start": 176.56,
+    "end": 187.44,
+    "dur": 10.879999999999995,
+    "v1_clip": "brian_chesky_archive.jpg",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": [
+      "sfx_whoosh.wav",
+      176.56,
+      -16.0
+    ]
+  },
+  {
+    "id": 17,
+    "scene": "Scene 02: $20K Debt & The Novelty Cereal Stunt",
+    "start": 187.44,
+    "end": 201.2,
+    "dur": 13.759999999999991,
+    "v1_clip": "scene2_02_convention_crowd.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "THE BASEBALL CARD BINDER OF MAXED PLASTIC",
+    "sfx": null
+  },
+  {
+    "id": 18,
+    "scene": "Scene 02: $20K Debt & The Novelty Cereal Stunt",
+    "start": 201.2,
+    "end": 212.56,
+    "dur": 11.360000000000014,
+    "v1_clip": "scene2_03_printing_press.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 19,
+    "scene": "Scene 02: $20K Debt & The Novelty Cereal Stunt",
+    "start": 212.56,
+    "end": 223.04,
+    "dur": 10.47999999999999,
+    "v1_clip": "scene2_04_dollar_bills.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "DENVER DNC: 100,000 VISITORS & ZERO ROOMS",
+    "sfx": [
+      "sfx_sub_boom.wav",
+      212.56,
+      -12.0
+    ]
+  },
+  {
+    "id": 20,
+    "scene": "Scene 02: $20K Debt & The Novelty Cereal Stunt",
+    "start": 223.04,
+    "end": 235.44,
+    "dur": 12.400000000000006,
+    "v1_clip": "scene2_01_credit_card_debt.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 21,
+    "scene": "Scene 02: $20K Debt & The Novelty Cereal Stunt",
+    "start": 235.44,
+    "end": 247.04,
+    "dur": 11.599999999999994,
+    "v1_clip": "brian_chesky_archive.jpg",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "1,000 BOXES OF 'OBAMA O's' & 'CAP'N MCCAIN'S'",
+    "sfx": null
+  },
+  {
+    "id": 22,
+    "scene": "Scene 02: $20K Debt & The Novelty Cereal Stunt",
+    "start": 247.04,
+    "end": 259.52,
+    "dur": 12.47999999999999,
+    "v1_clip": "scene2_02_convention_crowd.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": [
+      "sfx_data_blip.wav",
+      247.04,
+      -16.0
+    ]
+  },
+  {
+    "id": 23,
+    "scene": "Scene 03: Y Combinator Crucible & Paul Graham Pitch",
+    "start": 259.52,
+    "end": 271.2,
+    "dur": 11.680000000000007,
+    "v1_clip": "scene3_01_venture_meeting.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "JANUARY 2009: THE Y COMBINATOR INTERVIEW",
+    "sfx": null
+  },
+  {
+    "id": 24,
+    "scene": "Scene 03: Y Combinator Crucible & Paul Graham Pitch",
+    "start": 271.2,
+    "end": 282.8,
+    "dur": 11.600000000000023,
+    "v1_clip": "paul_graham_archive.jpg",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 25,
+    "scene": "Scene 03: Y Combinator Crucible & Paul Graham Pitch",
+    "start": 282.8,
+    "end": 294.48,
+    "dur": 11.680000000000007,
+    "v1_clip": "scene3_02_partnership_deal.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "THE INVESTOR VERDICT: 'AN AIRBED ON A FLOOR IS CRAZY'",
+    "sfx": [
+      "sfx_sub_boom.wav",
+      282.8,
+      -12.0
+    ]
+  },
+  {
+    "id": 26,
+    "scene": "Scene 03: Y Combinator Crucible & Paul Graham Pitch",
+    "start": 294.48,
+    "end": 305.12,
+    "dur": 10.639999999999986,
+    "v1_clip": "scene3_03_business_contract.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 27,
+    "scene": "Scene 03: Y Combinator Crucible & Paul Graham Pitch",
+    "start": 305.12,
+    "end": 318.56,
+    "dur": 13.439999999999998,
+    "v1_clip": "scene3_04_whiteboard_strategy.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "THE UNEXPECTED COUNTER: THE CEREAL BOX",
+    "sfx": null
+  },
+  {
+    "id": 28,
+    "scene": "Scene 03: Y Combinator Crucible & Paul Graham Pitch",
+    "start": 318.56,
+    "end": 332.24,
+    "dur": 13.680000000000007,
+    "v1_clip": "scene3_01_venture_meeting.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": [
+      "sfx_whoosh.wav",
+      318.56,
+      -16.0
+    ]
+  },
+  {
+    "id": 29,
+    "scene": "Scene 03: Y Combinator Crucible & Paul Graham Pitch",
+    "start": 332.24,
+    "end": 344.24,
+    "dur": 12.0,
+    "v1_clip": "paul_graham_archive.jpg",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "PAUL GRAHAM: 'IF YOU CAN SELL $40 CEREAL, YOU CAN SURVIVE'",
+    "sfx": null
+  },
+  {
+    "id": 30,
+    "scene": "Scene 03: Y Combinator Crucible & Paul Graham Pitch",
+    "start": 344.24,
+    "end": 355.52,
+    "dur": 11.279999999999973,
+    "v1_clip": "scene3_02_partnership_deal.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 31,
+    "scene": "Scene 03: Y Combinator Crucible & Paul Graham Pitch",
+    "start": 355.52,
+    "end": 367.12,
+    "dur": 11.600000000000023,
+    "v1_clip": "scene3_03_business_contract.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "THE $20,000 SEED CHECK",
+    "sfx": [
+      "sfx_data_blip.wav",
+      355.52,
+      -16.0
+    ]
+  },
+  {
+    "id": 32,
+    "scene": "Scene 04: Brooklyn Photography Ground War",
+    "start": 367.2,
+    "end": 376.64,
+    "dur": 9.439999999999998,
+    "v1_clip": "scene4_01_dslr_camera.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 33,
+    "scene": "Scene 04: Brooklyn Photography Ground War",
+    "start": 376.64,
+    "end": 388.08,
+    "dur": 11.439999999999998,
+    "v1_clip": "brooklyn_apartments.jpg",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "RULE OF SURVIVAL: DO THINGS THAT DON'T SCALE",
+    "sfx": null
+  },
+  {
+    "id": 34,
+    "scene": "Scene 04: Brooklyn Photography Ground War",
+    "start": 388.08,
+    "end": 400.4,
+    "dur": 12.319999999999993,
+    "v1_clip": "scene4_02_bright_interior.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": [
+      "sfx_data_blip.wav",
+      388.08,
+      -16.0
+    ]
+  },
+  {
+    "id": 35,
+    "scene": "Scene 04: Brooklyn Photography Ground War",
+    "start": 400.4,
+    "end": 411.92,
+    "dur": 11.520000000000039,
+    "v1_clip": "scene4_03_photo_studio.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "THE FLIP-PHONE CRIME SCENE PROBLEM",
+    "sfx": null
+  },
+  {
+    "id": 36,
+    "scene": "Scene 04: Brooklyn Photography Ground War",
+    "start": 411.92,
+    "end": 422.56,
+    "dur": 10.639999999999986,
+    "v1_clip": "scene4_04_doorway_entry.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 37,
+    "scene": "Scene 04: Brooklyn Photography Ground War",
+    "start": 422.56,
+    "end": 433.28,
+    "dur": 10.71999999999997,
+    "v1_clip": "scene4_01_dslr_camera.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "FLYING TO BROOKLYN WITH A $500 DSLR",
+    "sfx": [
+      "sfx_whoosh.wav",
+      422.56,
+      -16.0
+    ]
+  },
+  {
+    "id": 38,
+    "scene": "Scene 04: Brooklyn Photography Ground War",
+    "start": 433.28,
+    "end": 445.52,
+    "dur": 12.240000000000009,
+    "v1_clip": "brooklyn_apartments.jpg",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 39,
+    "scene": "Scene 05: Craigslist Hijack Growth Hack",
+    "start": 445.52,
+    "end": 458.24,
+    "dur": 12.720000000000027,
+    "v1_clip": "scene5_01_python_coding.mp4",
+    "v2_blur": true,
+    "v3_anchor": "CHART_VALUATION_ARBITRAGE.png",
+    "v4_text": "2010: NEVER BUILD DISTRIBUTION WHEN YOU CAN BORROW IT",
+    "sfx": null
+  },
+  {
+    "id": 40,
+    "scene": "Scene 05: Craigslist Hijack Growth Hack",
+    "start": 458.24,
+    "end": 469.76,
+    "dur": 11.519999999999982,
+    "v1_clip": "scene5_02_laptop_terminal.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": [
+      "sfx_whoosh.wav",
+      458.24,
+      -16.0
+    ]
+  },
+  {
+    "id": 41,
+    "scene": "Scene 05: Craigslist Hijack Growth Hack",
+    "start": 469.76,
+    "end": 482.16,
+    "dur": 12.400000000000034,
+    "v1_clip": "scene5_03_server_datacenter.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "CRAIGSLIST: 50 MILLION MONTHLY RENTAL USERS",
+    "sfx": null
+  },
+  {
+    "id": 42,
+    "scene": "Scene 05: Craigslist Hijack Growth Hack",
+    "start": 482.16,
+    "end": 495.76,
+    "dur": 13.599999999999966,
+    "v1_clip": "scene5_04_web_browsing.mp4",
+    "v2_blur": false,
+    "v3_anchor": "CHART_VALUATION_ARBITRAGE.png",
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 43,
+    "scene": "Scene 05: Craigslist Hijack Growth Hack",
+    "start": 495.76,
+    "end": 508.32,
+    "dur": 12.560000000000002,
+    "v1_clip": "scene5_01_python_coding.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "THE TECHNICAL HEIST: REVERSE-ENGINEERED WEB FORMS",
+    "sfx": [
+      "sfx_sub_boom.wav",
+      495.76,
+      -12.0
+    ]
+  },
+  {
+    "id": 44,
+    "scene": "Scene 05: Craigslist Hijack Growth Hack",
+    "start": 508.32,
+    "end": 523.12,
+    "dur": 14.800000000000011,
+    "v1_clip": "scene5_02_laptop_terminal.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 45,
+    "scene": "Scene 05: Craigslist Hijack Growth Hack",
+    "start": 523.12,
+    "end": 535.6,
+    "dur": 12.480000000000018,
+    "v1_clip": "scene5_03_server_datacenter.mp4",
+    "v2_blur": true,
+    "v3_anchor": "CHART_VALUATION_ARBITRAGE.png",
+    "v4_text": "ONE CLICK: CROSS-POST AIRBNB TO CRAIGSLIST",
+    "sfx": null
+  },
+  {
+    "id": 46,
+    "scene": "Scene 05: Craigslist Hijack Growth Hack",
+    "start": 535.6,
+    "end": 547.12,
+    "dur": 11.519999999999982,
+    "v1_clip": "scene5_04_web_browsing.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": [
+      "sfx_data_blip.wav",
+      535.6,
+      -16.0
+    ]
+  },
+  {
+    "id": 47,
+    "scene": "Scene 05: Craigslist Hijack Growth Hack",
+    "start": 547.12,
+    "end": 561.36,
+    "dur": 14.240000000000009,
+    "v1_clip": "scene5_01_python_coding.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "HIJACKING 50M USERS FOR EXACTLY $0",
+    "sfx": null
+  },
+  {
+    "id": 48,
+    "scene": "Scene 05: Craigslist Hijack Growth Hack",
+    "start": 561.36,
+    "end": 567.2,
+    "dur": 5.840000000000032,
+    "v1_clip": "scene5_02_laptop_terminal.mp4",
+    "v2_blur": false,
+    "v3_anchor": "CHART_VALUATION_ARBITRAGE.png",
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 49,
+    "scene": "Scene 06: COVID-19 Near Death & The $100B IPO",
+    "start": 567.2,
+    "end": 581.76,
+    "dur": 14.559999999999945,
+    "v1_clip": "scene6_01_empty_airport.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "MARCH 2020: 80% OF BUSINESS VANISHES IN 14 DAYS",
+    "sfx": [
+      "sfx_sub_boom.wav",
+      567.2,
+      -12.0
+    ]
+  },
+  {
+    "id": 50,
+    "scene": "Scene 06: COVID-19 Near Death & The $100B IPO",
+    "start": 581.76,
+    "end": 593.68,
+    "dur": 11.919999999999959,
+    "v1_clip": "scene6_02_wall_street_ticker.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 51,
+    "scene": "Scene 06: COVID-19 Near Death & The $100B IPO",
+    "start": 593.68,
+    "end": 604.72,
+    "dur": 11.040000000000077,
+    "v1_clip": "scene6_03_airplane_tarmac.mp4",
+    "v2_blur": true,
+    "v3_anchor": "CHART_AIRBNB_REVENUE_GROWTH.png",
+    "v4_text": "1 BILLION DOLLARS IN CUSTOMER REFUNDS",
+    "sfx": null
+  },
+  {
+    "id": 52,
+    "scene": "Scene 06: COVID-19 Near Death & The $100B IPO",
+    "start": 604.72,
+    "end": 616.8,
+    "dur": 12.079999999999927,
+    "v1_clip": "scene6_04_financial_trading.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": [
+      "sfx_whoosh.wav",
+      604.72,
+      -16.0
+    ]
+  },
+  {
+    "id": 53,
+    "scene": "Scene 06: COVID-19 Near Death & The $100B IPO",
+    "start": 616.8,
+    "end": 629.28,
+    "dur": 12.480000000000018,
+    "v1_clip": "nasdaq_times_square_billboards.jpg",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "EMERGENCY DEBT FINANCING AT 10% INTEREST",
+    "sfx": null
+  },
+  {
+    "id": 54,
+    "scene": "Scene 06: COVID-19 Near Death & The $100B IPO",
+    "start": 629.28,
+    "end": 641.28,
+    "dur": 12.0,
+    "v1_clip": "scene6_01_empty_airport.mp4",
+    "v2_blur": false,
+    "v3_anchor": "CHART_AIRBNB_REVENUE_GROWTH.png",
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 55,
+    "scene": "Scene 06: COVID-19 Near Death & The $100B IPO",
+    "start": 641.28,
+    "end": 653.2,
+    "dur": 11.920000000000073,
+    "v1_clip": "scene6_02_wall_street_ticker.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "THE REMOTE WORK RURAL HOUSING PIVOT",
+    "sfx": [
+      "sfx_data_blip.wav",
+      641.28,
+      -16.0
+    ]
+  },
+  {
+    "id": 56,
+    "scene": "Scene 06: COVID-19 Near Death & The $100B IPO",
+    "start": 653.2,
+    "end": 665.76,
+    "dur": 12.559999999999945,
+    "v1_clip": "scene6_03_airplane_tarmac.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 57,
+    "scene": "Scene 06: COVID-19 Near Death & The $100B IPO",
+    "start": 665.76,
+    "end": 671.68,
+    "dur": 5.919999999999959,
+    "v1_clip": "scene6_04_financial_trading.mp4",
+    "v2_blur": true,
+    "v3_anchor": "CHART_AIRBNB_REVENUE_GROWTH.png",
+    "v4_text": "DECEMBER 2020: THE NASDAQ OPENING BELL",
+    "sfx": null
+  },
+  {
+    "id": 58,
+    "scene": "Scene 07: The Corporate Greed Trap & City Bans",
+    "start": 671.68,
+    "end": 684.56,
+    "dur": 12.879999999999995,
+    "v1_clip": "scene7_01_house_chores.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": [
+      "sfx_sub_boom.wav",
+      671.68,
+      -12.0
+    ]
+  },
+  {
+    "id": 59,
+    "scene": "Scene 07: The Corporate Greed Trap & City Bans",
+    "start": 684.88,
+    "end": 693.68,
+    "dur": 8.799999999999955,
+    "v1_clip": "scene7_02_city_protest.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "THE GREED TRAP: WALL STREET MULTIPLES DEMAND GROWTH",
+    "sfx": null
+  },
+  {
+    "id": 60,
+    "scene": "Scene 07: The Corporate Greed Trap & City Bans",
+    "start": 693.68,
+    "end": 708.0,
+    "dur": 14.32000000000005,
+    "v1_clip": "scene7_03_cleaning_chores.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 61,
+    "scene": "Scene 07: The Corporate Greed Trap & City Bans",
+    "start": 708.0,
+    "end": 719.04,
+    "dur": 11.039999999999964,
+    "v1_clip": "scene7_04_city_protest_street.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "$120 NIGHTLY ROOM -> $380 FINAL BILL",
+    "sfx": [
+      "sfx_data_blip.wav",
+      708.0,
+      -16.0
+    ]
+  },
+  {
+    "id": 62,
+    "scene": "Scene 07: The Corporate Greed Trap & City Bans",
+    "start": 719.04,
+    "end": 731.44,
+    "dur": 12.400000000000091,
+    "v1_clip": "barcelona_housing_protest.jpg",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 63,
+    "scene": "Scene 07: The Corporate Greed Trap & City Bans",
+    "start": 731.44,
+    "end": 744.64,
+    "dur": 13.199999999999932,
+    "v1_clip": "scene7_01_house_chores.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "THE $180 CLEANING FEE + CHORE LIST TAX",
+    "sfx": null
+  },
+  {
+    "id": 64,
+    "scene": "Scene 07: The Corporate Greed Trap & City Bans",
+    "start": 744.64,
+    "end": 756.56,
+    "dur": 11.919999999999959,
+    "v1_clip": "scene7_02_city_protest.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": [
+      "sfx_whoosh.wav",
+      744.64,
+      -16.0
+    ]
+  },
+  {
+    "id": 65,
+    "scene": "Scene 07: The Corporate Greed Trap & City Bans",
+    "start": 756.56,
+    "end": 768.24,
+    "dur": 11.680000000000064,
+    "v1_clip": "scene7_03_cleaning_chores.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "'STRIP THE BEDS, WASH THE LINENS, MOW THE LAWN'",
+    "sfx": null
+  },
+  {
+    "id": 66,
+    "scene": "Scene 07: The Corporate Greed Trap & City Bans",
+    "start": 768.96,
+    "end": 781.68,
+    "dur": 12.719999999999914,
+    "v1_clip": "scene7_04_city_protest_street.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 67,
+    "scene": "Scene 07: The Corporate Greed Trap & City Bans",
+    "start": 781.68,
+    "end": 794.72,
+    "dur": 13.040000000000077,
+    "v1_clip": "barcelona_housing_protest.jpg",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "THE HOUSING SHORTAGE & SURGING LOCAL RENTS",
+    "sfx": [
+      "sfx_sub_boom.wav",
+      781.68,
+      -12.0
+    ]
+  },
+  {
+    "id": 68,
+    "scene": "Scene 07: The Corporate Greed Trap & City Bans",
+    "start": 794.72,
+    "end": 807.52,
+    "dur": 12.799999999999955,
+    "v1_clip": "scene7_01_house_chores.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 69,
+    "scene": "Scene 07: The Corporate Greed Trap & City Bans",
+    "start": 807.52,
+    "end": 821.36,
+    "dur": 13.840000000000032,
+    "v1_clip": "scene7_02_city_protest.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "NYC LOCAL LAW 18: 85% OF LISTINGS WIPED OUT",
+    "sfx": null
+  },
+  {
+    "id": 70,
+    "scene": "Scene 07: The Corporate Greed Trap & City Bans",
+    "start": 821.36,
+    "end": 833.6,
+    "dur": 12.240000000000009,
+    "v1_clip": "scene7_03_cleaning_chores.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": [
+      "sfx_data_blip.wav",
+      821.36,
+      -16.0
+    ]
+  },
+  {
+    "id": 71,
+    "scene": "Scene 07: The Corporate Greed Trap & City Bans",
+    "start": 833.6,
+    "end": 847.04,
+    "dur": 13.43999999999994,
+    "v1_clip": "scene7_04_city_protest_street.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "BARCELONA: TOTAL BAN ON 10,000 TOURIST APARTMENTS BY 2028",
+    "sfx": null
+  },
+  {
+    "id": 72,
+    "scene": "Scene 07: The Corporate Greed Trap & City Bans",
+    "start": 847.04,
+    "end": 859.28,
+    "dur": 12.240000000000009,
+    "v1_clip": "barcelona_housing_protest.jpg",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 73,
+    "scene": "Scene 07: The Corporate Greed Trap & City Bans",
+    "start": 859.28,
+    "end": 872.72,
+    "dur": 13.440000000000055,
+    "v1_clip": "scene7_01_house_chores.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "WHEN A PLATFORM LOSES ITS SOUL, REGULATION ARRIVES",
+    "sfx": [
+      "sfx_whoosh.wav",
+      859.28,
+      -16.0
+    ]
+  },
+  {
+    "id": 74,
+    "scene": "Scene 07: The Corporate Greed Trap & City Bans",
+    "start": 872.72,
+    "end": 884.08,
+    "dur": 11.360000000000014,
+    "v1_clip": "scene7_02_city_protest.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 75,
+    "scene": "Scene 08: 3 Brutal Entrepreneur Rules & Outro",
+    "start": 884.08,
+    "end": 896.72,
+    "dur": 12.639999999999986,
+    "v1_clip": "scene8_01_boutique_hotel.mp4",
+    "v2_blur": true,
+    "v3_anchor": "CHART_AIRBNB_REVENUE_GROWTH.png",
+    "v4_text": "THE 3 BRUTAL RULES OF BUILDING",
+    "sfx": null
+  },
+  {
+    "id": 76,
+    "scene": "Scene 08: 3 Brutal Entrepreneur Rules & Outro",
+    "start": 897.44,
+    "end": 907.92,
+    "dur": 10.479999999999905,
+    "v1_clip": "scene8_02_luggage_journey.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": [
+      "sfx_whoosh.wav",
+      897.44,
+      -16.0
+    ]
+  },
+  {
+    "id": 77,
+    "scene": "Scene 08: 3 Brutal Entrepreneur Rules & Outro",
+    "start": 907.92,
+    "end": 919.28,
+    "dur": 11.360000000000014,
+    "v1_clip": "scene8_03_conference_keynote.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "RULE 1: BORROW DISTRIBUTION BEFORE YOU BUILD IT",
+    "sfx": null
+  },
+  {
+    "id": 78,
+    "scene": "Scene 08: 3 Brutal Entrepreneur Rules & Outro",
+    "start": 919.28,
+    "end": 932.0,
+    "dur": 12.720000000000027,
+    "v1_clip": "scene8_04_travel_passport.mp4",
+    "v2_blur": false,
+    "v3_anchor": "CHART_AIRBNB_REVENUE_GROWTH.png",
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 79,
+    "scene": "Scene 08: 3 Brutal Entrepreneur Rules & Outro",
+    "start": 932.0,
+    "end": 946.0,
+    "dur": 14.0,
+    "v1_clip": "nasdaq_times_square_billboards.jpg",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "RULE 2: THE ANSWER IS IN THE KITCHEN, NOT YOUR CODE",
+    "sfx": [
+      "sfx_sub_boom.wav",
+      932.0,
+      -12.0
+    ]
+  },
+  {
+    "id": 80,
+    "scene": "Scene 08: 3 Brutal Entrepreneur Rules & Outro",
+    "start": 946.0,
+    "end": 957.68,
+    "dur": 11.67999999999995,
+    "v1_clip": "scene8_01_boutique_hotel.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 81,
+    "scene": "Scene 08: 3 Brutal Entrepreneur Rules & Outro",
+    "start": 957.68,
+    "end": 970.16,
+    "dur": 12.480000000000018,
+    "v1_clip": "scene8_02_luggage_journey.mp4",
+    "v2_blur": true,
+    "v3_anchor": "CHART_AIRBNB_REVENUE_GROWTH.png",
+    "v4_text": "RULE 3: NEVER OPTIMIZE THE SOUL OUT OF THE PRODUCT",
+    "sfx": null
+  },
+  {
+    "id": 82,
+    "scene": "Scene 08: 3 Brutal Entrepreneur Rules & Outro",
+    "start": 970.16,
+    "end": 982.16,
+    "dur": 12.0,
+    "v1_clip": "scene8_03_conference_keynote.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": [
+      "sfx_data_blip.wav",
+      970.16,
+      -16.0
+    ]
+  },
+  {
+    "id": 83,
+    "scene": "Scene 08: 3 Brutal Entrepreneur Rules & Outro",
+    "start": 982.16,
+    "end": 993.76,
+    "dur": 11.600000000000023,
+    "v1_clip": "scene8_04_travel_passport.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "THE ULTIMATE IRONY: PIVOTING BACK TO BOUTIQUE HOTELS",
+    "sfx": null
+  },
+  {
+    "id": 84,
+    "scene": "Scene 08: 3 Brutal Entrepreneur Rules & Outro",
+    "start": 993.76,
+    "end": 1005.44,
+    "dur": 11.680000000000064,
+    "v1_clip": "nasdaq_times_square_billboards.jpg",
+    "v2_blur": false,
+    "v3_anchor": "CHART_AIRBNB_REVENUE_GROWTH.png",
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 85,
+    "scene": "Scene 08: 3 Brutal Entrepreneur Rules & Outro",
+    "start": 1005.44,
+    "end": 1017.44,
+    "dur": 12.0,
+    "v1_clip": "scene8_01_boutique_hotel.mp4",
+    "v2_blur": true,
+    "v3_anchor": null,
+    "v4_text": "EVERY MONOPOLY DIGITIZES AN ANCIENT HUMAN DESIRE",
+    "sfx": [
+      "sfx_whoosh.wav",
+      1005.44,
+      -16.0
+    ]
+  },
+  {
+    "id": 86,
+    "scene": "Scene 08: 3 Brutal Entrepreneur Rules & Outro",
+    "start": 1017.44,
+    "end": 1028.4,
+    "dur": 10.960000000000036,
+    "v1_clip": "scene8_02_luggage_journey.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": null
+  },
+  {
+    "id": 87,
+    "scene": "Scene 08: 3 Brutal Entrepreneur Rules & Outro",
+    "start": 1028.4,
+    "end": 1040.16,
+    "dur": 11.759999999999991,
+    "v1_clip": "scene8_03_conference_keynote.mp4",
+    "v2_blur": true,
+    "v3_anchor": "CHART_AIRBNB_REVENUE_GROWTH.png",
+    "v4_text": "STAY CURIOUS. SEE YOU IN THE NEXT ONE.",
+    "sfx": null
+  },
+  {
+    "id": 88,
+    "scene": "Scene 08: 3 Brutal Entrepreneur Rules & Outro",
+    "start": 1040.16,
+    "end": 1046.0,
+    "dur": 5.839999999999918,
+    "v1_clip": "scene8_04_travel_passport.mp4",
+    "v2_blur": false,
+    "v3_anchor": null,
+    "v4_text": null,
+    "sfx": [
+      "sfx_sub_boom.wav",
+      1040.16,
+      -12.0
+    ]
+  }
+]

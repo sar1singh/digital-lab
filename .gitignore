@@ -8,9 +8,13 @@ temp_segments/
 audio_takes/
 render_cache/
 render_segments/
-*.ts
+temp_segments/*.ts
 *.tmp
 **/analysis/*.jpg
+
+# Dependencies & Node
+node_modules/
+.remotion/
 
 # Python & OS
 .env

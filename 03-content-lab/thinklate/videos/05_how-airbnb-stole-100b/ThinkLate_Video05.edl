@@ -1,0 +1,428 @@
+TITLE: ThinkLate_Video05_High_Retention_Assembly
+FCM: NON-DROP FRAME
+
+001  AX001      V     C        00:00:00:00 00:00:12:17 00:00:00:00 00:00:12:17
+* FROM CLIP NAME: scene1_01_city_apartments.mp4
+* COMMENT: SCENE = Scene 01: Cold Open & The Eviction Hook
+* COMMENT: V4 TEXT = OCTOBER 2007: 72 HOURS FROM EVICTION
+* COMMENT: SFX = sfx_sub_boom.wav at 0.00s (-12.0dB)
+
+002  AX002      V     C        00:00:00:00 00:00:10:14 00:00:12:17 00:00:23:01
+* FROM CLIP NAME: san_francisco_exterior.jpg
+* COMMENT: SCENE = Scene 01: Cold Open & The Eviction Hook
+
+003  AX003      V     C        00:00:00:00 00:00:10:02 00:00:23:01 00:00:33:04
+* FROM CLIP NAME: thumbnail_option_a.jpg
+* COMMENT: SCENE = Scene 01: Cold Open & The Eviction Hook
+* COMMENT: V4 TEXT = RENT: $1,150 // CASH IN BANK: $0
+
+004  AX004      V     C        00:00:00:00 00:00:11:23 00:00:33:04 00:00:44:26
+* FROM CLIP NAME: scene1_03_clock_ticking.mp4
+* COMMENT: SCENE = Scene 01: Cold Open & The Eviction Hook
+* COMMENT: SFX = sfx_whoosh.wav at 33.12s (-16.0dB)
+
+005  AX005      V     C        00:00:00:00 00:00:11:25 00:00:44:26 00:00:56:22
+* FROM CLIP NAME: scene1_04_moving_boxes.mp4
+* COMMENT: SCENE = Scene 01: Cold Open & The Eviction Hook
+* COMMENT: V4 TEXT = THE DESIGN CONFERENCE: ALL HOTELS SOLD OUT
+
+006  AX006      V     C        00:00:00:00 00:00:11:08 00:00:56:22 00:01:08:00
+* FROM CLIP NAME: thumbnail_option_a.jpg
+* COMMENT: SCENE = Scene 01: Cold Open & The Eviction Hook
+
+007  AX007      V     C        00:00:00:00 00:00:12:17 00:01:08:00 00:01:20:17
+* FROM CLIP NAME: scene1_01_city_apartments.mp4
+* COMMENT: SCENE = Scene 01: Cold Open & The Eviction Hook
+* COMMENT: V4 TEXT = 3 BLUE AIR MATTRESSES ON BARE WOOD
+* COMMENT: SFX = sfx_data_blip.wav at 68.00s (-16.0dB)
+
+008  AX008      V     C        00:00:00:00 00:00:12:29 00:01:20:17 00:01:33:16
+* FROM CLIP NAME: san_francisco_exterior.jpg
+* COMMENT: SCENE = Scene 01: Cold Open & The Eviction Hook
+
+009  AX009      V     C        00:00:00:00 00:00:10:10 00:01:33:16 00:01:43:25
+* FROM CLIP NAME: thumbnail_option_a.jpg
+* COMMENT: SCENE = Scene 01: Cold Open & The Eviction Hook
+* COMMENT: V4 TEXT = $80 A NIGHT + HOMEMADE POP-TARTS = SURVIVAL
+
+010  AX010      V     C        00:00:00:00 00:00:12:05 00:01:43:25 00:01:56:00
+* FROM CLIP NAME: scene1_03_clock_ticking.mp4
+* COMMENT: SCENE = Scene 01: Cold Open & The Eviction Hook
+* COMMENT: SFX = sfx_sub_boom.wav at 103.84s (-12.0dB)
+
+011  AX011      V     C        00:00:00:00 00:00:12:19 00:01:56:00 00:02:08:19
+* FROM CLIP NAME: scene1_04_moving_boxes.mp4
+* COMMENT: SCENE = Scene 01: Cold Open & The Eviction Hook
+* COMMENT: V4 TEXT = AIRBED & BREAKFAST IS BORN
+
+012  AX012      V     C        00:00:00:00 00:00:11:06 00:02:08:19 00:02:19:25
+* FROM CLIP NAME: thumbnail_option_a.jpg
+* COMMENT: SCENE = Scene 01: Cold Open & The Eviction Hook
+
+013  AX013      V     C        00:00:00:00 00:00:11:16 00:02:19:25 00:02:31:11
+* FROM CLIP NAME: scene1_01_city_apartments.mp4
+* COMMENT: SCENE = Scene 01: Cold Open & The Eviction Hook
+* COMMENT: V4 TEXT = THE SYSTEM DOESN'T REWARD VISION; IT REWARDS LEVERAGE
+* COMMENT: SFX = sfx_whoosh.wav at 139.84s (-16.0dB)
+
+014  AX014      V     C        00:00:00:00 00:00:12:24 00:02:31:11 00:02:44:05
+* FROM CLIP NAME: san_francisco_exterior.jpg
+* COMMENT: SCENE = Scene 01: Cold Open & The Eviction Hook
+
+015  AX015      V     C        00:00:00:00 00:00:12:12 00:02:44:05 00:02:56:17
+* FROM CLIP NAME: scene2_01_credit_card_debt.mp4
+* COMMENT: SCENE = Scene 02: $20K Debt & The Novelty Cereal Stunt
+* COMMENT: V4 TEXT = SUMMER 2008: $20,000 IN CREDIT CARD DEBT
+
+016  AX016      V     C        00:00:00:00 00:00:10:26 00:02:56:17 00:03:07:13
+* FROM CLIP NAME: brian_chesky_archive.jpg
+* COMMENT: SCENE = Scene 02: $20K Debt & The Novelty Cereal Stunt
+* COMMENT: SFX = sfx_whoosh.wav at 176.56s (-16.0dB)
+
+017  AX017      V     C        00:00:00:00 00:00:13:23 00:03:07:13 00:03:21:06
+* FROM CLIP NAME: scene2_02_convention_crowd.mp4
+* COMMENT: SCENE = Scene 02: $20K Debt & The Novelty Cereal Stunt
+* COMMENT: V4 TEXT = THE BASEBALL CARD BINDER OF MAXED PLASTIC
+
+018  AX018      V     C        00:00:00:00 00:00:11:11 00:03:21:06 00:03:32:17
+* FROM CLIP NAME: scene2_03_printing_press.mp4
+* COMMENT: SCENE = Scene 02: $20K Debt & The Novelty Cereal Stunt
+
+019  AX019      V     C        00:00:00:00 00:00:10:14 00:03:32:17 00:03:43:01
+* FROM CLIP NAME: scene2_04_dollar_bills.mp4
+* COMMENT: SCENE = Scene 02: $20K Debt & The Novelty Cereal Stunt
+* COMMENT: V4 TEXT = DENVER DNC: 100,000 VISITORS & ZERO ROOMS
+* COMMENT: SFX = sfx_sub_boom.wav at 212.56s (-12.0dB)
+
+020  AX020      V     C        00:00:00:00 00:00:12:12 00:03:43:01 00:03:55:13
+* FROM CLIP NAME: scene2_01_credit_card_debt.mp4
+* COMMENT: SCENE = Scene 02: $20K Debt & The Novelty Cereal Stunt
+
+021  AX021      V     C        00:00:00:00 00:00:11:18 00:03:55:13 00:04:07:01
+* FROM CLIP NAME: brian_chesky_archive.jpg
+* COMMENT: SCENE = Scene 02: $20K Debt & The Novelty Cereal Stunt
+* COMMENT: V4 TEXT = 1,000 BOXES OF 'OBAMA O's' & 'CAP'N MCCAIN'S'
+
+022  AX022      V     C        00:00:00:00 00:00:12:14 00:04:07:01 00:04:19:16
+* FROM CLIP NAME: scene2_02_convention_crowd.mp4
+* COMMENT: SCENE = Scene 02: $20K Debt & The Novelty Cereal Stunt
+* COMMENT: SFX = sfx_data_blip.wav at 247.04s (-16.0dB)
+
+023  AX023      V     C        00:00:00:00 00:00:11:20 00:04:19:16 00:04:31:06
+* FROM CLIP NAME: scene3_01_venture_meeting.mp4
+* COMMENT: SCENE = Scene 03: Y Combinator Crucible & Paul Graham Pitch
+* COMMENT: V4 TEXT = JANUARY 2009: THE Y COMBINATOR INTERVIEW
+
+024  AX024      V     C        00:00:00:00 00:00:11:18 00:04:31:06 00:04:42:24
+* FROM CLIP NAME: paul_graham_archive.jpg
+* COMMENT: SCENE = Scene 03: Y Combinator Crucible & Paul Graham Pitch
+
+025  AX025      V     C        00:00:00:00 00:00:11:20 00:04:42:24 00:04:54:14
+* FROM CLIP NAME: scene3_02_partnership_deal.mp4
+* COMMENT: SCENE = Scene 03: Y Combinator Crucible & Paul Graham Pitch
+* COMMENT: V4 TEXT = THE INVESTOR VERDICT: 'AN AIRBED ON A FLOOR IS CRAZY'
+* COMMENT: SFX = sfx_sub_boom.wav at 282.80s (-12.0dB)
+
+026  AX026      V     C        00:00:00:00 00:00:10:19 00:04:54:14 00:05:05:04
+* FROM CLIP NAME: scene3_03_business_contract.mp4
+* COMMENT: SCENE = Scene 03: Y Combinator Crucible & Paul Graham Pitch
+
+027  AX027      V     C        00:00:00:00 00:00:13:13 00:05:05:04 00:05:18:17
+* FROM CLIP NAME: scene3_04_whiteboard_strategy.mp4
+* COMMENT: SCENE = Scene 03: Y Combinator Crucible & Paul Graham Pitch
+* COMMENT: V4 TEXT = THE UNEXPECTED COUNTER: THE CEREAL BOX
+
+028  AX028      V     C        00:00:00:00 00:00:13:20 00:05:18:17 00:05:32:07
+* FROM CLIP NAME: scene3_01_venture_meeting.mp4
+* COMMENT: SCENE = Scene 03: Y Combinator Crucible & Paul Graham Pitch
+* COMMENT: SFX = sfx_whoosh.wav at 318.56s (-16.0dB)
+
+029  AX029      V     C        00:00:00:00 00:00:12:00 00:05:32:07 00:05:44:07
+* FROM CLIP NAME: paul_graham_archive.jpg
+* COMMENT: SCENE = Scene 03: Y Combinator Crucible & Paul Graham Pitch
+* COMMENT: V4 TEXT = PAUL GRAHAM: 'IF YOU CAN SELL $40 CEREAL, YOU CAN SURVIVE'
+
+030  AX030      V     C        00:00:00:00 00:00:11:08 00:05:44:07 00:05:55:16
+* FROM CLIP NAME: scene3_02_partnership_deal.mp4
+* COMMENT: SCENE = Scene 03: Y Combinator Crucible & Paul Graham Pitch
+
+031  AX031      V     C        00:00:00:00 00:00:11:18 00:05:55:16 00:06:07:04
+* FROM CLIP NAME: scene3_03_business_contract.mp4
+* COMMENT: SCENE = Scene 03: Y Combinator Crucible & Paul Graham Pitch
+* COMMENT: V4 TEXT = THE $20,000 SEED CHECK
+* COMMENT: SFX = sfx_data_blip.wav at 355.52s (-16.0dB)
+
+032  AX032      V     C        00:00:00:00 00:00:09:13 00:06:07:06 00:06:16:19
+* FROM CLIP NAME: scene4_01_dslr_camera.mp4
+* COMMENT: SCENE = Scene 04: Brooklyn Photography Ground War
+
+033  AX033      V     C        00:00:00:00 00:00:11:13 00:06:16:19 00:06:28:02
+* FROM CLIP NAME: brooklyn_apartments.jpg
+* COMMENT: SCENE = Scene 04: Brooklyn Photography Ground War
+* COMMENT: V4 TEXT = RULE OF SURVIVAL: DO THINGS THAT DON'T SCALE
+
+034  AX034      V     C        00:00:00:00 00:00:12:10 00:06:28:02 00:06:40:12
+* FROM CLIP NAME: scene4_02_bright_interior.mp4
+* COMMENT: SCENE = Scene 04: Brooklyn Photography Ground War
+* COMMENT: SFX = sfx_data_blip.wav at 388.08s (-16.0dB)
+
+035  AX035      V     C        00:00:00:00 00:00:11:16 00:06:40:12 00:06:51:28
+* FROM CLIP NAME: scene4_03_photo_studio.mp4
+* COMMENT: SCENE = Scene 04: Brooklyn Photography Ground War
+* COMMENT: V4 TEXT = THE FLIP-PHONE CRIME SCENE PROBLEM
+
+036  AX036      V     C        00:00:00:00 00:00:10:19 00:06:51:28 00:07:02:17
+* FROM CLIP NAME: scene4_04_doorway_entry.mp4
+* COMMENT: SCENE = Scene 04: Brooklyn Photography Ground War
+
+037  AX037      V     C        00:00:00:00 00:00:10:22 00:07:02:17 00:07:13:08
+* FROM CLIP NAME: scene4_01_dslr_camera.mp4
+* COMMENT: SCENE = Scene 04: Brooklyn Photography Ground War
+* COMMENT: V4 TEXT = FLYING TO BROOKLYN WITH A $500 DSLR
+* COMMENT: SFX = sfx_whoosh.wav at 422.56s (-16.0dB)
+
+038  AX038      V     C        00:00:00:00 00:00:12:07 00:07:13:08 00:07:25:16
+* FROM CLIP NAME: brooklyn_apartments.jpg
+* COMMENT: SCENE = Scene 04: Brooklyn Photography Ground War
+
+039  AX039      V     C        00:00:00:00 00:00:12:22 00:07:25:16 00:07:38:07
+* FROM CLIP NAME: CHART_VALUATION_ARBITRAGE.png
+* COMMENT: SCENE = Scene 05: Craigslist Hijack Growth Hack
+* COMMENT: V4 TEXT = 2010: NEVER BUILD DISTRIBUTION WHEN YOU CAN BORROW IT
+
+040  AX040      V     C        00:00:00:00 00:00:11:16 00:07:38:07 00:07:49:23
+* FROM CLIP NAME: scene5_02_laptop_terminal.mp4
+* COMMENT: SCENE = Scene 05: Craigslist Hijack Growth Hack
+* COMMENT: SFX = sfx_whoosh.wav at 458.24s (-16.0dB)
+
+041  AX041      V     C        00:00:00:00 00:00:12:12 00:07:49:23 00:08:02:05
+* FROM CLIP NAME: scene5_03_server_datacenter.mp4
+* COMMENT: SCENE = Scene 05: Craigslist Hijack Growth Hack
+* COMMENT: V4 TEXT = CRAIGSLIST: 50 MILLION MONTHLY RENTAL USERS
+
+042  AX042      V     C        00:00:00:00 00:00:13:18 00:08:02:05 00:08:15:23
+* FROM CLIP NAME: CHART_VALUATION_ARBITRAGE.png
+* COMMENT: SCENE = Scene 05: Craigslist Hijack Growth Hack
+
+043  AX043      V     C        00:00:00:00 00:00:12:17 00:08:15:23 00:08:28:10
+* FROM CLIP NAME: scene5_01_python_coding.mp4
+* COMMENT: SCENE = Scene 05: Craigslist Hijack Growth Hack
+* COMMENT: V4 TEXT = THE TECHNICAL HEIST: REVERSE-ENGINEERED WEB FORMS
+* COMMENT: SFX = sfx_sub_boom.wav at 495.76s (-12.0dB)
+
+044  AX044      V     C        00:00:00:00 00:00:14:24 00:08:28:10 00:08:43:04
+* FROM CLIP NAME: scene5_02_laptop_terminal.mp4
+* COMMENT: SCENE = Scene 05: Craigslist Hijack Growth Hack
+
+045  AX045      V     C        00:00:00:00 00:00:12:14 00:08:43:04 00:08:55:18
+* FROM CLIP NAME: CHART_VALUATION_ARBITRAGE.png
+* COMMENT: SCENE = Scene 05: Craigslist Hijack Growth Hack
+* COMMENT: V4 TEXT = ONE CLICK: CROSS-POST AIRBNB TO CRAIGSLIST
+
+046  AX046      V     C        00:00:00:00 00:00:11:16 00:08:55:18 00:09:07:04
+* FROM CLIP NAME: scene5_04_web_browsing.mp4
+* COMMENT: SCENE = Scene 05: Craigslist Hijack Growth Hack
+* COMMENT: SFX = sfx_data_blip.wav at 535.60s (-16.0dB)
+
+047  AX047      V     C        00:00:00:00 00:00:14:07 00:09:07:04 00:09:21:11
+* FROM CLIP NAME: scene5_01_python_coding.mp4
+* COMMENT: SCENE = Scene 05: Craigslist Hijack Growth Hack
+* COMMENT: V4 TEXT = HIJACKING 50M USERS FOR EXACTLY $0
+
+048  AX048      V     C        00:00:00:00 00:00:05:25 00:09:21:11 00:09:27:06
+* FROM CLIP NAME: CHART_VALUATION_ARBITRAGE.png
+* COMMENT: SCENE = Scene 05: Craigslist Hijack Growth Hack
+
+049  AX049      V     C        00:00:00:00 00:00:14:17 00:09:27:06 00:09:41:23
+* FROM CLIP NAME: scene6_01_empty_airport.mp4
+* COMMENT: SCENE = Scene 06: COVID-19 Near Death & The $100B IPO
+* COMMENT: V4 TEXT = MARCH 2020: 80% OF BUSINESS VANISHES IN 14 DAYS
+* COMMENT: SFX = sfx_sub_boom.wav at 567.20s (-12.0dB)
+
+050  AX050      V     C        00:00:00:00 00:00:11:28 00:09:41:23 00:09:53:20
+* FROM CLIP NAME: scene6_02_wall_street_ticker.mp4
+* COMMENT: SCENE = Scene 06: COVID-19 Near Death & The $100B IPO
+
+051  AX051      V     C        00:00:00:00 00:00:11:01 00:09:53:20 00:10:04:22
+* FROM CLIP NAME: CHART_AIRBNB_REVENUE_GROWTH.png
+* COMMENT: SCENE = Scene 06: COVID-19 Near Death & The $100B IPO
+* COMMENT: V4 TEXT = 1 BILLION DOLLARS IN CUSTOMER REFUNDS
+
+052  AX052      V     C        00:00:00:00 00:00:12:02 00:10:04:22 00:10:16:24
+* FROM CLIP NAME: scene6_04_financial_trading.mp4
+* COMMENT: SCENE = Scene 06: COVID-19 Near Death & The $100B IPO
+* COMMENT: SFX = sfx_whoosh.wav at 604.72s (-16.0dB)
+
+053  AX053      V     C        00:00:00:00 00:00:12:14 00:10:16:24 00:10:29:08
+* FROM CLIP NAME: nasdaq_times_square_billboards.jpg
+* COMMENT: SCENE = Scene 06: COVID-19 Near Death & The $100B IPO
+* COMMENT: V4 TEXT = EMERGENCY DEBT FINANCING AT 10% INTEREST
+
+054  AX054      V     C        00:00:00:00 00:00:12:00 00:10:29:08 00:10:41:08
+* FROM CLIP NAME: CHART_AIRBNB_REVENUE_GROWTH.png
+* COMMENT: SCENE = Scene 06: COVID-19 Near Death & The $100B IPO
+
+055  AX055      V     C        00:00:00:00 00:00:11:28 00:10:41:08 00:10:53:06
+* FROM CLIP NAME: scene6_02_wall_street_ticker.mp4
+* COMMENT: SCENE = Scene 06: COVID-19 Near Death & The $100B IPO
+* COMMENT: V4 TEXT = THE REMOTE WORK RURAL HOUSING PIVOT
+* COMMENT: SFX = sfx_data_blip.wav at 641.28s (-16.0dB)
+
+056  AX056      V     C        00:00:00:00 00:00:12:17 00:10:53:06 00:11:05:23
+* FROM CLIP NAME: scene6_03_airplane_tarmac.mp4
+* COMMENT: SCENE = Scene 06: COVID-19 Near Death & The $100B IPO
+
+057  AX057      V     C        00:00:00:00 00:00:05:28 00:11:05:23 00:11:11:20
+* FROM CLIP NAME: CHART_AIRBNB_REVENUE_GROWTH.png
+* COMMENT: SCENE = Scene 06: COVID-19 Near Death & The $100B IPO
+* COMMENT: V4 TEXT = DECEMBER 2020: THE NASDAQ OPENING BELL
+
+058  AX058      V     C        00:00:00:00 00:00:12:26 00:11:11:20 00:11:24:17
+* FROM CLIP NAME: scene7_01_house_chores.mp4
+* COMMENT: SCENE = Scene 07: The Corporate Greed Trap & City Bans
+* COMMENT: SFX = sfx_sub_boom.wav at 671.68s (-12.0dB)
+
+059  AX059      V     C        00:00:00:00 00:00:08:24 00:11:24:26 00:11:33:20
+* FROM CLIP NAME: scene7_02_city_protest.mp4
+* COMMENT: SCENE = Scene 07: The Corporate Greed Trap & City Bans
+* COMMENT: V4 TEXT = THE GREED TRAP: WALL STREET MULTIPLES DEMAND GROWTH
+
+060  AX060      V     C        00:00:00:00 00:00:14:10 00:11:33:20 00:11:48:00
+* FROM CLIP NAME: scene7_03_cleaning_chores.mp4
+* COMMENT: SCENE = Scene 07: The Corporate Greed Trap & City Bans
+
+061  AX061      V     C        00:00:00:00 00:00:11:01 00:11:48:00 00:11:59:01
+* FROM CLIP NAME: scene7_04_city_protest_street.mp4
+* COMMENT: SCENE = Scene 07: The Corporate Greed Trap & City Bans
+* COMMENT: V4 TEXT = $120 NIGHTLY ROOM -> $380 FINAL BILL
+* COMMENT: SFX = sfx_data_blip.wav at 708.00s (-16.0dB)
+
+062  AX062      V     C        00:00:00:00 00:00:12:12 00:11:59:01 00:12:11:13
+* FROM CLIP NAME: barcelona_housing_protest.jpg
+* COMMENT: SCENE = Scene 07: The Corporate Greed Trap & City Bans
+
+063  AX063      V     C        00:00:00:00 00:00:13:06 00:12:11:13 00:12:24:19
+* FROM CLIP NAME: scene7_01_house_chores.mp4
+* COMMENT: SCENE = Scene 07: The Corporate Greed Trap & City Bans
+* COMMENT: V4 TEXT = THE $180 CLEANING FEE + CHORE LIST TAX
+
+064  AX064      V     C        00:00:00:00 00:00:11:28 00:12:24:19 00:12:36:17
+* FROM CLIP NAME: scene7_02_city_protest.mp4
+* COMMENT: SCENE = Scene 07: The Corporate Greed Trap & City Bans
+* COMMENT: SFX = sfx_whoosh.wav at 744.64s (-16.0dB)
+
+065  AX065      V     C        00:00:00:00 00:00:11:20 00:12:36:17 00:12:48:07
+* FROM CLIP NAME: scene7_03_cleaning_chores.mp4
+* COMMENT: SCENE = Scene 07: The Corporate Greed Trap & City Bans
+* COMMENT: V4 TEXT = 'STRIP THE BEDS, WASH THE LINENS, MOW THE LAWN'
+
+066  AX066      V     C        00:00:00:00 00:00:12:22 00:12:48:29 00:13:01:20
+* FROM CLIP NAME: scene7_04_city_protest_street.mp4
+* COMMENT: SCENE = Scene 07: The Corporate Greed Trap & City Bans
+
+067  AX067      V     C        00:00:00:00 00:00:13:01 00:13:01:20 00:13:14:22
+* FROM CLIP NAME: barcelona_housing_protest.jpg
+* COMMENT: SCENE = Scene 07: The Corporate Greed Trap & City Bans
+* COMMENT: V4 TEXT = THE HOUSING SHORTAGE & SURGING LOCAL RENTS
+* COMMENT: SFX = sfx_sub_boom.wav at 781.68s (-12.0dB)
+
+068  AX068      V     C        00:00:00:00 00:00:12:24 00:13:14:22 00:13:27:16
+* FROM CLIP NAME: scene7_01_house_chores.mp4
+* COMMENT: SCENE = Scene 07: The Corporate Greed Trap & City Bans
+
+069  AX069      V     C        00:00:00:00 00:00:13:25 00:13:27:16 00:13:41:11
+* FROM CLIP NAME: scene7_02_city_protest.mp4
+* COMMENT: SCENE = Scene 07: The Corporate Greed Trap & City Bans
+* COMMENT: V4 TEXT = NYC LOCAL LAW 18: 85% OF LISTINGS WIPED OUT
+
+070  AX070      V     C        00:00:00:00 00:00:12:07 00:13:41:11 00:13:53:18
+* FROM CLIP NAME: scene7_03_cleaning_chores.mp4
+* COMMENT: SCENE = Scene 07: The Corporate Greed Trap & City Bans
+* COMMENT: SFX = sfx_data_blip.wav at 821.36s (-16.0dB)
+
+071  AX071      V     C        00:00:00:00 00:00:13:13 00:13:53:18 00:14:07:01
+* FROM CLIP NAME: scene7_04_city_protest_street.mp4
+* COMMENT: SCENE = Scene 07: The Corporate Greed Trap & City Bans
+* COMMENT: V4 TEXT = BARCELONA: TOTAL BAN ON 10,000 TOURIST APARTMENTS BY 2028
+
+072  AX072      V     C        00:00:00:00 00:00:12:07 00:14:07:01 00:14:19:08
+* FROM CLIP NAME: barcelona_housing_protest.jpg
+* COMMENT: SCENE = Scene 07: The Corporate Greed Trap & City Bans
+
+073  AX073      V     C        00:00:00:00 00:00:13:13 00:14:19:08 00:14:32:22
+* FROM CLIP NAME: scene7_01_house_chores.mp4
+* COMMENT: SCENE = Scene 07: The Corporate Greed Trap & City Bans
+* COMMENT: V4 TEXT = WHEN A PLATFORM LOSES ITS SOUL, REGULATION ARRIVES
+* COMMENT: SFX = sfx_whoosh.wav at 859.28s (-16.0dB)
+
+074  AX074      V     C        00:00:00:00 00:00:11:11 00:14:32:22 00:14:44:02
+* FROM CLIP NAME: scene7_02_city_protest.mp4
+* COMMENT: SCENE = Scene 07: The Corporate Greed Trap & City Bans
+
+075  AX075      V     C        00:00:00:00 00:00:12:19 00:14:44:02 00:14:56:22
+* FROM CLIP NAME: CHART_AIRBNB_REVENUE_GROWTH.png
+* COMMENT: SCENE = Scene 08: 3 Brutal Entrepreneur Rules & Outro
+* COMMENT: V4 TEXT = THE 3 BRUTAL RULES OF BUILDING
+
+076  AX076      V     C        00:00:00:00 00:00:10:14 00:14:57:13 00:15:07:28
+* FROM CLIP NAME: scene8_02_luggage_journey.mp4
+* COMMENT: SCENE = Scene 08: 3 Brutal Entrepreneur Rules & Outro
+* COMMENT: SFX = sfx_whoosh.wav at 897.44s (-16.0dB)
+
+077  AX077      V     C        00:00:00:00 00:00:11:11 00:15:07:28 00:15:19:08
+* FROM CLIP NAME: scene8_03_conference_keynote.mp4
+* COMMENT: SCENE = Scene 08: 3 Brutal Entrepreneur Rules & Outro
+* COMMENT: V4 TEXT = RULE 1: BORROW DISTRIBUTION BEFORE YOU BUILD IT
+
+078  AX078      V     C        00:00:00:00 00:00:12:22 00:15:19:08 00:15:32:00
+* FROM CLIP NAME: CHART_AIRBNB_REVENUE_GROWTH.png
+* COMMENT: SCENE = Scene 08: 3 Brutal Entrepreneur Rules & Outro
+
+079  AX079      V     C        00:00:00:00 00:00:14:00 00:15:32:00 00:15:46:00
+* FROM CLIP NAME: nasdaq_times_square_billboards.jpg
+* COMMENT: SCENE = Scene 08: 3 Brutal Entrepreneur Rules & Outro
+* COMMENT: V4 TEXT = RULE 2: THE ANSWER IS IN THE KITCHEN, NOT YOUR CODE
+* COMMENT: SFX = sfx_sub_boom.wav at 932.00s (-12.0dB)
+
+080  AX080      V     C        00:00:00:00 00:00:11:20 00:15:46:00 00:15:57:20
+* FROM CLIP NAME: scene8_01_boutique_hotel.mp4
+* COMMENT: SCENE = Scene 08: 3 Brutal Entrepreneur Rules & Outro
+
+081  AX081      V     C        00:00:00:00 00:00:12:14 00:15:57:20 00:16:10:05
+* FROM CLIP NAME: CHART_AIRBNB_REVENUE_GROWTH.png
+* COMMENT: SCENE = Scene 08: 3 Brutal Entrepreneur Rules & Outro
+* COMMENT: V4 TEXT = RULE 3: NEVER OPTIMIZE THE SOUL OUT OF THE PRODUCT
+
+082  AX082      V     C        00:00:00:00 00:00:12:00 00:16:10:05 00:16:22:05
+* FROM CLIP NAME: scene8_03_conference_keynote.mp4
+* COMMENT: SCENE = Scene 08: 3 Brutal Entrepreneur Rules & Outro
+* COMMENT: SFX = sfx_data_blip.wav at 970.16s (-16.0dB)
+
+083  AX083      V     C        00:00:00:00 00:00:11:18 00:16:22:05 00:16:33:23
+* FROM CLIP NAME: scene8_04_travel_passport.mp4
+* COMMENT: SCENE = Scene 08: 3 Brutal Entrepreneur Rules & Outro
+* COMMENT: V4 TEXT = THE ULTIMATE IRONY: PIVOTING BACK TO BOUTIQUE HOTELS
+
+084  AX084      V     C        00:00:00:00 00:00:11:20 00:16:33:23 00:16:45:13
+* FROM CLIP NAME: CHART_AIRBNB_REVENUE_GROWTH.png
+* COMMENT: SCENE = Scene 08: 3 Brutal Entrepreneur Rules & Outro
+
+085  AX085      V     C        00:00:00:00 00:00:12:00 00:16:45:13 00:16:57:13
+* FROM CLIP NAME: scene8_01_boutique_hotel.mp4
+* COMMENT: SCENE = Scene 08: 3 Brutal Entrepreneur Rules & Outro
+* COMMENT: V4 TEXT = EVERY MONOPOLY DIGITIZES AN ANCIENT HUMAN DESIRE
+* COMMENT: SFX = sfx_whoosh.wav at 1005.44s (-16.0dB)
+
+086  AX086      V     C        00:00:00:00 00:00:10:29 00:16:57:13 00:17:08:12
+* FROM CLIP NAME: scene8_02_luggage_journey.mp4
+* COMMENT: SCENE = Scene 08: 3 Brutal Entrepreneur Rules & Outro
+
+087  AX087      V     C        00:00:00:00 00:00:11:23 00:17:08:12 00:17:20:05
+* FROM CLIP NAME: CHART_AIRBNB_REVENUE_GROWTH.png
+* COMMENT: SCENE = Scene 08: 3 Brutal Entrepreneur Rules & Outro
+* COMMENT: V4 TEXT = STAY CURIOUS. SEE YOU IN THE NEXT ONE.
+
+088  AX088      V     C        00:00:00:00 00:00:05:25 00:17:20:05 00:17:26:00
+* FROM CLIP NAME: scene8_04_travel_passport.mp4
+* COMMENT: SCENE = Scene 08: 3 Brutal Entrepreneur Rules & Outro
+* COMMENT: SFX = sfx_sub_boom.wav at 1040.16s (-12.0dB)

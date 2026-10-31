@@ -1,0 +1,283 @@
+<?xml version="1.0" ?>
+<fcpxml version="1.8">
+  <resources>
+    <format id="r1" name="FFVideoFormat1080p30" frameDuration="1/30s" width="1920" height="1080"/>
+    <asset id="r_audio" name="voice_mastered" src="file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/thinklate/videos/05_how-airbnb-stole-100b/audio_takes/voice_mastered.wav" duration="31380/30s" hasAudio="1"/>
+    <asset id="r_bgm" name="ambient_bed_track" src="file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/thinklate/videos/05_how-airbnb-stole-100b/audio_takes/ambient_bed_track.wav" duration="31380/30s" hasAudio="1"/>
+  </resources>
+  <library>
+    <event name="ThinkLate_Video05_Granular_Event">
+      <project name="ThinkLate_Video05_High_Retention_Cut">
+        <sequence format="r1" duration="31380/30s">
+          <spine>
+            <clip name="scene1_01_city_apartments.mp4" offset="0/30s" duration="377/30s" start="0/1s">
+              <marker start="0/1s" duration="377/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="357/30s" value="V4_TEXT: OCTOBER 2007: 72 HOURS FROM EVICTION"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol -12.0dB)"/>
+            </clip>
+            <clip name="san_francisco_exterior.jpg" offset="377/30s" duration="314/30s" start="0/1s"/>
+            <clip name="thumbnail_option_a.jpg" offset="691/30s" duration="302/30s" start="0/1s">
+              <marker start="0/1s" duration="302/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="282/30s" value="V4_TEXT: RENT: $1,150 // CASH IN BANK: $0"/>
+            </clip>
+            <clip name="scene1_03_clock_ticking.mp4" offset="994/30s" duration="353/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol -16.0dB)"/>
+            </clip>
+            <clip name="scene1_04_moving_boxes.mp4" offset="1346/30s" duration="355/30s" start="0/1s">
+              <marker start="0/1s" duration="355/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="335/30s" value="V4_TEXT: THE DESIGN CONFERENCE: ALL HOTELS SOLD OUT"/>
+            </clip>
+            <clip name="thumbnail_option_a.jpg" offset="1702/30s" duration="338/30s" start="0/1s"/>
+            <clip name="scene1_01_city_apartments.mp4" offset="2040/30s" duration="377/30s" start="0/1s">
+              <marker start="0/1s" duration="377/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="357/30s" value="V4_TEXT: 3 BLUE AIR MATTRESSES ON BARE WOOD"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_data_blip.wav (vol -16.0dB)"/>
+            </clip>
+            <clip name="san_francisco_exterior.jpg" offset="2417/30s" duration="389/30s" start="0/1s"/>
+            <clip name="thumbnail_option_a.jpg" offset="2806/30s" duration="310/30s" start="0/1s">
+              <marker start="0/1s" duration="310/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="290/30s" value="V4_TEXT: $80 A NIGHT + HOMEMADE POP-TARTS = SURVIVAL"/>
+            </clip>
+            <clip name="scene1_03_clock_ticking.mp4" offset="3115/30s" duration="365/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol -12.0dB)"/>
+            </clip>
+            <clip name="scene1_04_moving_boxes.mp4" offset="3480/30s" duration="379/30s" start="0/1s">
+              <marker start="0/1s" duration="379/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="359/30s" value="V4_TEXT: AIRBED &amp; BREAKFAST IS BORN"/>
+            </clip>
+            <clip name="thumbnail_option_a.jpg" offset="3859/30s" duration="336/30s" start="0/1s"/>
+            <clip name="scene1_01_city_apartments.mp4" offset="4195/30s" duration="346/30s" start="0/1s">
+              <marker start="0/1s" duration="346/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="326/30s" value="V4_TEXT: THE SYSTEM DOESN'T REWARD VISION; IT REWARDS LEVERAGE"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol -16.0dB)"/>
+            </clip>
+            <clip name="san_francisco_exterior.jpg" offset="4541/30s" duration="384/30s" start="0/1s"/>
+            <clip name="scene2_01_credit_card_debt.mp4" offset="4925/30s" duration="372/30s" start="0/1s">
+              <marker start="0/1s" duration="372/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="352/30s" value="V4_TEXT: SUMMER 2008: $20,000 IN CREDIT CARD DEBT"/>
+            </clip>
+            <clip name="brian_chesky_archive.jpg" offset="5297/30s" duration="326/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol -16.0dB)"/>
+            </clip>
+            <clip name="scene2_02_convention_crowd.mp4" offset="5623/30s" duration="413/30s" start="0/1s">
+              <marker start="0/1s" duration="413/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="393/30s" value="V4_TEXT: THE BASEBALL CARD BINDER OF MAXED PLASTIC"/>
+            </clip>
+            <clip name="scene2_03_printing_press.mp4" offset="6036/30s" duration="341/30s" start="0/1s"/>
+            <clip name="scene2_04_dollar_bills.mp4" offset="6377/30s" duration="314/30s" start="0/1s">
+              <marker start="0/1s" duration="314/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="294/30s" value="V4_TEXT: DENVER DNC: 100,000 VISITORS &amp; ZERO ROOMS"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol -12.0dB)"/>
+            </clip>
+            <clip name="scene2_01_credit_card_debt.mp4" offset="6691/30s" duration="372/30s" start="0/1s"/>
+            <clip name="brian_chesky_archive.jpg" offset="7063/30s" duration="348/30s" start="0/1s">
+              <marker start="0/1s" duration="348/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="328/30s" value="V4_TEXT: 1,000 BOXES OF 'OBAMA O's' &amp; 'CAP'N MCCAIN'S'"/>
+            </clip>
+            <clip name="scene2_02_convention_crowd.mp4" offset="7411/30s" duration="374/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_data_blip.wav (vol -16.0dB)"/>
+            </clip>
+            <clip name="scene3_01_venture_meeting.mp4" offset="7786/30s" duration="350/30s" start="0/1s">
+              <marker start="0/1s" duration="350/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="330/30s" value="V4_TEXT: JANUARY 2009: THE Y COMBINATOR INTERVIEW"/>
+            </clip>
+            <clip name="paul_graham_archive.jpg" offset="8136/30s" duration="348/30s" start="0/1s"/>
+            <clip name="scene3_02_partnership_deal.mp4" offset="8484/30s" duration="350/30s" start="0/1s">
+              <marker start="0/1s" duration="350/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="330/30s" value="V4_TEXT: THE INVESTOR VERDICT: 'AN AIRBED ON A FLOOR IS CRAZY'"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol -12.0dB)"/>
+            </clip>
+            <clip name="scene3_03_business_contract.mp4" offset="8834/30s" duration="319/30s" start="0/1s"/>
+            <clip name="scene3_04_whiteboard_strategy.mp4" offset="9154/30s" duration="403/30s" start="0/1s">
+              <marker start="0/1s" duration="403/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="383/30s" value="V4_TEXT: THE UNEXPECTED COUNTER: THE CEREAL BOX"/>
+            </clip>
+            <clip name="scene3_01_venture_meeting.mp4" offset="9557/30s" duration="410/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol -16.0dB)"/>
+            </clip>
+            <clip name="paul_graham_archive.jpg" offset="9967/30s" duration="360/30s" start="0/1s">
+              <marker start="0/1s" duration="360/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="340/30s" value="V4_TEXT: PAUL GRAHAM: 'IF YOU CAN SELL $40 CEREAL, YOU CAN SURVIVE'"/>
+            </clip>
+            <clip name="scene3_02_partnership_deal.mp4" offset="10327/30s" duration="338/30s" start="0/1s"/>
+            <clip name="scene3_03_business_contract.mp4" offset="10666/30s" duration="348/30s" start="0/1s">
+              <marker start="0/1s" duration="348/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="328/30s" value="V4_TEXT: THE $20,000 SEED CHECK"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_data_blip.wav (vol -16.0dB)"/>
+            </clip>
+            <clip name="scene4_01_dslr_camera.mp4" offset="11016/30s" duration="283/30s" start="0/1s"/>
+            <clip name="brooklyn_apartments.jpg" offset="11299/30s" duration="343/30s" start="0/1s">
+              <marker start="0/1s" duration="343/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="323/30s" value="V4_TEXT: RULE OF SURVIVAL: DO THINGS THAT DON'T SCALE"/>
+            </clip>
+            <clip name="scene4_02_bright_interior.mp4" offset="11642/30s" duration="370/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_data_blip.wav (vol -16.0dB)"/>
+            </clip>
+            <clip name="scene4_03_photo_studio.mp4" offset="12012/30s" duration="346/30s" start="0/1s">
+              <marker start="0/1s" duration="346/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="326/30s" value="V4_TEXT: THE FLIP-PHONE CRIME SCENE PROBLEM"/>
+            </clip>
+            <clip name="scene4_04_doorway_entry.mp4" offset="12358/30s" duration="319/30s" start="0/1s"/>
+            <clip name="scene4_01_dslr_camera.mp4" offset="12677/30s" duration="322/30s" start="0/1s">
+              <marker start="0/1s" duration="322/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="302/30s" value="V4_TEXT: FLYING TO BROOKLYN WITH A $500 DSLR"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol -16.0dB)"/>
+            </clip>
+            <clip name="brooklyn_apartments.jpg" offset="12998/30s" duration="367/30s" start="0/1s"/>
+            <clip name="CHART_VALUATION_ARBITRAGE.png" offset="13366/30s" duration="382/30s" start="0/1s">
+              <marker start="0/1s" duration="382/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="362/30s" value="V4_TEXT: 2010: NEVER BUILD DISTRIBUTION WHEN YOU CAN BORROW IT"/>
+            </clip>
+            <clip name="scene5_02_laptop_terminal.mp4" offset="13747/30s" duration="346/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol -16.0dB)"/>
+            </clip>
+            <clip name="scene5_03_server_datacenter.mp4" offset="14093/30s" duration="372/30s" start="0/1s">
+              <marker start="0/1s" duration="372/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="352/30s" value="V4_TEXT: CRAIGSLIST: 50 MILLION MONTHLY RENTAL USERS"/>
+            </clip>
+            <clip name="CHART_VALUATION_ARBITRAGE.png" offset="14465/30s" duration="408/30s" start="0/1s"/>
+            <clip name="scene5_01_python_coding.mp4" offset="14873/30s" duration="377/30s" start="0/1s">
+              <marker start="0/1s" duration="377/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="357/30s" value="V4_TEXT: THE TECHNICAL HEIST: REVERSE-ENGINEERED WEB FORMS"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol -12.0dB)"/>
+            </clip>
+            <clip name="scene5_02_laptop_terminal.mp4" offset="15250/30s" duration="444/30s" start="0/1s"/>
+            <clip name="CHART_VALUATION_ARBITRAGE.png" offset="15694/30s" duration="374/30s" start="0/1s">
+              <marker start="0/1s" duration="374/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="354/30s" value="V4_TEXT: ONE CLICK: CROSS-POST AIRBNB TO CRAIGSLIST"/>
+            </clip>
+            <clip name="scene5_04_web_browsing.mp4" offset="16068/30s" duration="346/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_data_blip.wav (vol -16.0dB)"/>
+            </clip>
+            <clip name="scene5_01_python_coding.mp4" offset="16414/30s" duration="427/30s" start="0/1s">
+              <marker start="0/1s" duration="427/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="407/30s" value="V4_TEXT: HIJACKING 50M USERS FOR EXACTLY $0"/>
+            </clip>
+            <clip name="CHART_VALUATION_ARBITRAGE.png" offset="16841/30s" duration="175/30s" start="0/1s"/>
+            <clip name="scene6_01_empty_airport.mp4" offset="17016/30s" duration="437/30s" start="0/1s">
+              <marker start="0/1s" duration="437/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="417/30s" value="V4_TEXT: MARCH 2020: 80% OF BUSINESS VANISHES IN 14 DAYS"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol -12.0dB)"/>
+            </clip>
+            <clip name="scene6_02_wall_street_ticker.mp4" offset="17453/30s" duration="358/30s" start="0/1s"/>
+            <clip name="CHART_AIRBNB_REVENUE_GROWTH.png" offset="17810/30s" duration="331/30s" start="0/1s">
+              <marker start="0/1s" duration="331/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="311/30s" value="V4_TEXT: 1 BILLION DOLLARS IN CUSTOMER REFUNDS"/>
+            </clip>
+            <clip name="scene6_04_financial_trading.mp4" offset="18142/30s" duration="362/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol -16.0dB)"/>
+            </clip>
+            <clip name="nasdaq_times_square_billboards.jpg" offset="18504/30s" duration="374/30s" start="0/1s">
+              <marker start="0/1s" duration="374/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="354/30s" value="V4_TEXT: EMERGENCY DEBT FINANCING AT 10% INTEREST"/>
+            </clip>
+            <clip name="CHART_AIRBNB_REVENUE_GROWTH.png" offset="18878/30s" duration="360/30s" start="0/1s"/>
+            <clip name="scene6_02_wall_street_ticker.mp4" offset="19238/30s" duration="358/30s" start="0/1s">
+              <marker start="0/1s" duration="358/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="338/30s" value="V4_TEXT: THE REMOTE WORK RURAL HOUSING PIVOT"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_data_blip.wav (vol -16.0dB)"/>
+            </clip>
+            <clip name="scene6_03_airplane_tarmac.mp4" offset="19596/30s" duration="377/30s" start="0/1s"/>
+            <clip name="CHART_AIRBNB_REVENUE_GROWTH.png" offset="19973/30s" duration="178/30s" start="0/1s">
+              <marker start="0/1s" duration="178/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="158/30s" value="V4_TEXT: DECEMBER 2020: THE NASDAQ OPENING BELL"/>
+            </clip>
+            <clip name="scene7_01_house_chores.mp4" offset="20150/30s" duration="386/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol -12.0dB)"/>
+            </clip>
+            <clip name="scene7_02_city_protest.mp4" offset="20546/30s" duration="264/30s" start="0/1s">
+              <marker start="0/1s" duration="264/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="244/30s" value="V4_TEXT: THE GREED TRAP: WALL STREET MULTIPLES DEMAND GROWTH"/>
+            </clip>
+            <clip name="scene7_03_cleaning_chores.mp4" offset="20810/30s" duration="430/30s" start="0/1s"/>
+            <clip name="scene7_04_city_protest_street.mp4" offset="21240/30s" duration="331/30s" start="0/1s">
+              <marker start="0/1s" duration="331/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="311/30s" value="V4_TEXT: $120 NIGHTLY ROOM -&gt; $380 FINAL BILL"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_data_blip.wav (vol -16.0dB)"/>
+            </clip>
+            <clip name="barcelona_housing_protest.jpg" offset="21571/30s" duration="372/30s" start="0/1s"/>
+            <clip name="scene7_01_house_chores.mp4" offset="21943/30s" duration="396/30s" start="0/1s">
+              <marker start="0/1s" duration="396/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="376/30s" value="V4_TEXT: THE $180 CLEANING FEE + CHORE LIST TAX"/>
+            </clip>
+            <clip name="scene7_02_city_protest.mp4" offset="22339/30s" duration="358/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol -16.0dB)"/>
+            </clip>
+            <clip name="scene7_03_cleaning_chores.mp4" offset="22697/30s" duration="350/30s" start="0/1s">
+              <marker start="0/1s" duration="350/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="330/30s" value="V4_TEXT: 'STRIP THE BEDS, WASH THE LINENS, MOW THE LAWN'"/>
+            </clip>
+            <clip name="scene7_04_city_protest_street.mp4" offset="23069/30s" duration="382/30s" start="0/1s"/>
+            <clip name="barcelona_housing_protest.jpg" offset="23450/30s" duration="391/30s" start="0/1s">
+              <marker start="0/1s" duration="391/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="371/30s" value="V4_TEXT: THE HOUSING SHORTAGE &amp; SURGING LOCAL RENTS"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol -12.0dB)"/>
+            </clip>
+            <clip name="scene7_01_house_chores.mp4" offset="23842/30s" duration="384/30s" start="0/1s"/>
+            <clip name="scene7_02_city_protest.mp4" offset="24226/30s" duration="415/30s" start="0/1s">
+              <marker start="0/1s" duration="415/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="395/30s" value="V4_TEXT: NYC LOCAL LAW 18: 85% OF LISTINGS WIPED OUT"/>
+            </clip>
+            <clip name="scene7_03_cleaning_chores.mp4" offset="24641/30s" duration="367/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_data_blip.wav (vol -16.0dB)"/>
+            </clip>
+            <clip name="scene7_04_city_protest_street.mp4" offset="25008/30s" duration="403/30s" start="0/1s">
+              <marker start="0/1s" duration="403/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="383/30s" value="V4_TEXT: BARCELONA: TOTAL BAN ON 10,000 TOURIST APARTMENTS BY 2028"/>
+            </clip>
+            <clip name="barcelona_housing_protest.jpg" offset="25411/30s" duration="367/30s" start="0/1s"/>
+            <clip name="scene7_01_house_chores.mp4" offset="25778/30s" duration="403/30s" start="0/1s">
+              <marker start="0/1s" duration="403/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="383/30s" value="V4_TEXT: WHEN A PLATFORM LOSES ITS SOUL, REGULATION ARRIVES"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol -16.0dB)"/>
+            </clip>
+            <clip name="scene7_02_city_protest.mp4" offset="26182/30s" duration="341/30s" start="0/1s"/>
+            <clip name="CHART_AIRBNB_REVENUE_GROWTH.png" offset="26522/30s" duration="379/30s" start="0/1s">
+              <marker start="0/1s" duration="379/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="359/30s" value="V4_TEXT: THE 3 BRUTAL RULES OF BUILDING"/>
+            </clip>
+            <clip name="scene8_02_luggage_journey.mp4" offset="26923/30s" duration="314/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol -16.0dB)"/>
+            </clip>
+            <clip name="scene8_03_conference_keynote.mp4" offset="27238/30s" duration="341/30s" start="0/1s">
+              <marker start="0/1s" duration="341/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="321/30s" value="V4_TEXT: RULE 1: BORROW DISTRIBUTION BEFORE YOU BUILD IT"/>
+            </clip>
+            <clip name="CHART_AIRBNB_REVENUE_GROWTH.png" offset="27578/30s" duration="382/30s" start="0/1s"/>
+            <clip name="nasdaq_times_square_billboards.jpg" offset="27960/30s" duration="420/30s" start="0/1s">
+              <marker start="0/1s" duration="420/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="400/30s" value="V4_TEXT: RULE 2: THE ANSWER IS IN THE KITCHEN, NOT YOUR CODE"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol -12.0dB)"/>
+            </clip>
+            <clip name="scene8_01_boutique_hotel.mp4" offset="28380/30s" duration="350/30s" start="0/1s"/>
+            <clip name="CHART_AIRBNB_REVENUE_GROWTH.png" offset="28730/30s" duration="374/30s" start="0/1s">
+              <marker start="0/1s" duration="374/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="354/30s" value="V4_TEXT: RULE 3: NEVER OPTIMIZE THE SOUL OUT OF THE PRODUCT"/>
+            </clip>
+            <clip name="scene8_03_conference_keynote.mp4" offset="29105/30s" duration="360/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_data_blip.wav (vol -16.0dB)"/>
+            </clip>
+            <clip name="scene8_04_travel_passport.mp4" offset="29465/30s" duration="348/30s" start="0/1s">
+              <marker start="0/1s" duration="348/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="328/30s" value="V4_TEXT: THE ULTIMATE IRONY: PIVOTING BACK TO BOUTIQUE HOTELS"/>
+            </clip>
+            <clip name="CHART_AIRBNB_REVENUE_GROWTH.png" offset="29813/30s" duration="350/30s" start="0/1s"/>
+            <clip name="scene8_01_boutique_hotel.mp4" offset="30163/30s" duration="360/30s" start="0/1s">
+              <marker start="0/1s" duration="360/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="340/30s" value="V4_TEXT: EVERY MONOPOLY DIGITIZES AN ANCIENT HUMAN DESIRE"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol -16.0dB)"/>
+            </clip>
+            <clip name="scene8_02_luggage_journey.mp4" offset="30523/30s" duration="329/30s" start="0/1s"/>
+            <clip name="CHART_AIRBNB_REVENUE_GROWTH.png" offset="30852/30s" duration="353/30s" start="0/1s">
+              <marker start="0/1s" duration="353/30s" value="V2_SCOPED_BLUR"/>
+              <marker start="10/30s" duration="333/30s" value="V4_TEXT: STAY CURIOUS. SEE YOU IN THE NEXT ONE."/>
+            </clip>
+            <clip name="scene8_04_travel_passport.mp4" offset="31205/30s" duration="175/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol -12.0dB)"/>
+            </clip>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>

@@ -112,6 +112,47 @@ def audit_story_script(filepath):
     if foley_count < 3:
         violations.append(f"Sound Design Violation: Only {foley_count} [SFX: ...] cues found. Must have at least 3 diegetic Foley cues.")
 
+    # 7. 10-Minute Pacing Clock & Word Count Check (1,350 - 1,450 words)
+    # Allows legacy override if filename contains legacy/archive/05
+    is_legacy = any(k in os.path.basename(filepath) for k in ["01_", "02_", "03_", "04_", "05_", "archive", "legacy"])
+    if not is_legacy:
+        if total_spoken_words < 1250:
+            violations.append(f"Pacing Clock Violation: Script is too short ({total_spoken_words} words). Target 1,350-1,450 words for 10-minute engagement.")
+        elif total_spoken_words > 1550:
+            violations.append(f"Retention Risk Violation: Script is too long ({total_spoken_words} words). Long scripts trigger 1-5% retention cliffs. Cap at 1,450 words.")
+
+    # 8. Tagged Shorts Splice Gates Check
+    shorts_splices = re.findall(r'<!--\s*SHORTS_SPLICE_START:\s*([A-Za-z0-9_-]+)\s*-->(.*?)<!--\s*SHORTS_SPLICE_END:\s*\1\s*-->', raw_text, re.DOTALL)
+    if not is_legacy and len(shorts_splices) < 3:
+        violations.append(f"Shorts Splice Violation: Found {len(shorts_splices)}/3 tagged Shorts splices. Must tag 3 standalone micro-arcs: <!-- SHORTS_SPLICE_START: <TAG> -->.")
+
+    # Check for zero backward referencing in splices
+    backward_refs = ["as we said earlier", "like mentioned earlier", "as i said earlier", "in the last section", "earlier we saw"]
+    for tag, splice_text in shorts_splices:
+        splice_lower = splice_text.lower()
+        for ref in backward_refs:
+            if ref in splice_lower:
+                violations.append(f"Shorts Splice [{tag}] Violation: Found backward-referencing phrase '{ref}'. Shorts must be 100% self-contained.")
+
+    # 9. Dual-Voice Speaker Ping-Pong Check (Speakers must alternate every <= 35s)
+    voice_cues = re.findall(r'\[VOICE:\s*([A-Za-z0-9_-]+)\]', raw_text)
+    if not is_legacy and len(voice_cues) >= 2:
+        # Check alternating cadence
+        consecutive_same = 0
+        for i in range(1, len(voice_cues)):
+            if voice_cues[i] == voice_cues[i-1]:
+                consecutive_same += 1
+        if consecutive_same > 3:
+            violations.append(f"Dual-Voice Cadence Violation: Speaker spoke consecutively {consecutive_same} times. Ping-pong speakers every 15-30s.")
+
+    # 10. 20-Year Senior Script Editor & Plot-Hole Gates
+    try:
+        from script_editor_qc import audit_script_editor_internal
+        editor_violations = audit_script_editor_internal(raw_lines, raw_text)
+        violations.extend(editor_violations)
+    except ImportError:
+        pass
+
     # Print Results
     print(f"\nAUDIT FINDINGS: {len(violations)} violation(s)")
     if violations:
