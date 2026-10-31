@@ -22,6 +22,9 @@ import { MagnifyingGlassDoc } from "./components/evidence/MagnifyingGlassDoc";
 import { CharacterProfileCard } from "./components/evidence/CharacterProfileCard";
 import { RankedListicleCard } from "./components/evidence/RankedListicleCard";
 import { ConspiracyPinBoard } from "./components/evidence/ConspiracyPinBoard";
+import { WatchMojoCountdown } from "./components/evidence/WatchMojoCountdown";
+import { RoughSketchChart } from "./components/evidence/RoughSketchChart";
+import { LottieAnimationCard } from "./components/evidence/LottieAnimationCard";
 
 // Kinetic Typography Suite
 import { KineticTypographySlam } from "./components/KineticTypographySlam";
@@ -628,6 +631,62 @@ export const RemotionRoot: React.FC = () => {
           },
           connectionLabel: "71.4% VALUE ARBITRAGE EXPLOITED",
           evidenceNote: "EVIDENCE CORRELATION: DIRECT SYSTEM ARBITRAGE CONFIRMED BY TRANSACTION MANIFEST",
+        }}
+      />
+
+      <Composition
+        id="WatchMojoCountdown"
+        component={WatchMojoCountdown as any}
+        durationInFrames={120}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          channel: "thinklate",
+          rank: "#01",
+          title: "THE ASSET-LIGHT ARBITRAGE",
+          subtitle: "AIRBNB DEFEATS THE 100-YEAR HOTEL CARTEL",
+          category: "GREATEST MARKET DISRUPTIONS OF ALL TIME",
+          iconName: "trophy",
+          statHighlight: "416X CAPITAL EFFICIENCY",
+        }}
+      />
+
+      <Composition
+        id="RoughSketchChart"
+        component={RoughSketchChart as any}
+        durationInFrames={120}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          channel: "thinklate",
+          title: "THE ASSET OVERHEAD DISPARITY",
+          subtitle: "PHYSICAL CONCRETE CAPITAL VS ZERO-ASSET CODEBASE",
+          leftLabel: "MARRIOTT + HILTON (100 YEARS)",
+          leftAmount: "$140 BILLION (DEBT + BUILDINGS)",
+          leftHeightPercent: 85,
+          rightLabel: "AIRBED & BREAKFAST (LINES OF CODE)",
+          rightAmount: "$100 BILLION (ZERO PROPERTY)",
+          rightHeightPercent: 65,
+          handwrittenNote: "✦ 0 Physical Real Estate Owned. 100% Platform Margin.",
+        }}
+      />
+
+      <Composition
+        id="LottieAnimationCard"
+        component={LottieAnimationCard as any}
+        durationInFrames={120}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          channel: "thinklate",
+          badgeText: "VECTOR MOTION GRAPHIC // SYSTEM RESOLUTION",
+          headline: "THE ASYMMETRIC FLYWHEEL ACTIVATED",
+          explanation: "When supply acquisition cost drops to near zero, growth compounds without physical friction.",
+          statValue: "0% CAPITAL DEBT",
+          statLabel: "PHYSICAL PROPERTY RATIO",
         }}
       />
 
