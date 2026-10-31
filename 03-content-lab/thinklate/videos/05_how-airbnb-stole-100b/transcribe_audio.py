@@ -15,7 +15,7 @@ if sys.stdout.encoding != 'utf-8':
         pass
 
 VIDEO_DIR = os.path.dirname(os.path.abspath(__file__))
-AUDIO_PATH = os.path.join(VIDEO_DIR, "audio_takes", "dual_voice_mastered.wav")
+AUDIO_PATH = os.path.join(VIDEO_DIR, "audio_takes", "dual_voice_mastered_plus15.wav")
 OUT_JSON   = os.path.join(VIDEO_DIR, "transcription_timestamps.json")
 OUT_MD     = os.path.join(VIDEO_DIR, "transcription_timestamps.md")
 OUT_SRT    = os.path.join(VIDEO_DIR, "subtitles_en.srt")

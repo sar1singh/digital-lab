@@ -1,8 +1,9 @@
 import React from "react";
 import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
-import { THEME } from "../styles/theme";
+import { getChannelTheme } from "../styles/theme";
 
 export interface KineticTypographySlamProps {
+  channel?: string;
   line1?: string;
   line2?: string;
   line1Color?: string;
@@ -11,24 +12,34 @@ export interface KineticTypographySlamProps {
 }
 
 export const KineticTypographySlam: React.FC<KineticTypographySlamProps> = ({
+  channel = "thinklate",
   line1 = "OCTOBER 2007: $1,150 OVERDUE RENT",
   line2 = "3 AIRBEDS ON A LIVING ROOM RUG",
-  line1Color = THEME.colors.textWhite,
-  line2Color = THEME.colors.acidLime,
+  line1Color,
+  line2Color,
   subtext = "THE EMBARRASSING DESPERATE HUSTLE THAT HIJACKED AN INDUSTRY",
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // Violent, punchy spring impact (0 to 1 in ~8 frames)
+  const theme = getChannelTheme(channel);
+
+  // Channel-adapted spring physics
   const impact = spring({
     frame,
     fps,
-    config: { damping: 12, mass: 0.5, stiffness: 180 },
+    config: {
+      damping: theme.motion.damping,
+      mass: theme.motion.mass,
+      stiffness: theme.motion.stiffness,
+    },
   });
 
-  const scale = interpolate(impact, [0, 1], [1.3, 1]);
+  const scale = interpolate(impact, [0, 1], [1.35, 1]);
   const opacity = interpolate(impact, [0, 1], [0, 1]);
+
+  const activeLine1Color = line1Color || theme.colors.textWhite;
+  const activeLine2Color = line2Color || theme.colors.accent;
 
   return (
     <div
@@ -39,10 +50,11 @@ export const KineticTypographySlam: React.FC<KineticTypographySlamProps> = ({
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        fontFamily: THEME.fonts.sans,
+        fontFamily: theme.fonts.sans,
         textAlign: "center",
         padding: "0 80px",
         boxSizing: "border-box",
+        backgroundColor: "transparent",
       }}
     >
       <div
@@ -51,56 +63,76 @@ export const KineticTypographySlam: React.FC<KineticTypographySlamProps> = ({
           opacity,
           display: "flex",
           flexDirection: "column",
-          gap: "8px",
+          gap: "10px",
           alignItems: "center",
+          backgroundColor: theme.colors.bgGlass,
+          backdropFilter: "blur(24px)",
+          border: `1.5px solid ${theme.colors.borderAccent}`,
+          borderRadius: "28px",
+          boxShadow: `${theme.shadows.glass}, ${theme.shadows.glowAccent}`,
+          padding: "56px 72px",
+          maxWidth: "1540px",
         }}
       >
-        {/* Line 1: Ultra-bold Chalk White */}
+        {/* Channel Indicator Badge */}
+        <div
+          style={{
+            fontFamily: theme.fonts.mono,
+            fontSize: "12px",
+            fontWeight: 800,
+            letterSpacing: "0.22em",
+            color: theme.colors.accent,
+            textTransform: "uppercase",
+            marginBottom: "4px",
+          }}
+        >
+          ✦ {theme.name}
+        </div>
+
+        {/* Line 1: Ultra-bold Primary Heading */}
         <div
           style={{
             fontSize: "64px",
             fontWeight: 900,
-            color: line1Color,
-            letterSpacing: "-1px",
-            lineHeight: 1.1,
+            lineHeight: 1.05,
+            letterSpacing: "-0.03em",
+            color: activeLine1Color,
             textTransform: "uppercase",
-            textShadow: "0 10px 30px rgba(0,0,0,0.8)",
+            textShadow: "0 10px 30px rgba(0, 0, 0, 0.8)",
           }}
         >
           {line1}
         </div>
 
-        {/* Line 2: High-Voltage Acid Lime */}
+        {/* Line 2: Brand Accent Punchline */}
         <div
           style={{
-            fontSize: "72px",
+            fontSize: "76px",
             fontWeight: 900,
-            color: line2Color,
-            letterSpacing: "-1.5px",
-            lineHeight: 1.1,
+            lineHeight: 1.05,
+            letterSpacing: "-0.03em",
+            color: activeLine2Color,
             textTransform: "uppercase",
-            textShadow: `0 10px 30px rgba(0,0,0,0.8), 0 0 40px ${line2Color}40`,
+            textShadow: `0 10px 40px rgba(0, 0, 0, 0.9), ${theme.shadows.glowAccent}`,
           }}
         >
           {line2}
         </div>
 
-        {/* Supporting Subtext Pill */}
+        {/* Subtext */}
         {subtext && (
           <div
             style={{
-              marginTop: "24px",
-              padding: "10px 24px",
-              borderRadius: "100px",
-              backgroundColor: "rgba(10, 15, 26, 0.75)",
-              backdropFilter: "blur(16px)",
-              border: `1px solid ${THEME.colors.borderGlass}`,
-              color: THEME.colors.textMuted,
+              fontFamily: theme.fonts.mono,
               fontSize: "15px",
               fontWeight: 700,
-              letterSpacing: "1.5px",
-              fontFamily: THEME.fonts.mono,
+              letterSpacing: "0.18em",
+              color: theme.colors.textMuted,
+              marginTop: "16px",
               textTransform: "uppercase",
+              borderTop: `1px solid rgba(255, 255, 255, 0.12)`,
+              paddingTop: "14px",
+              width: "100%",
             }}
           >
             {subtext}

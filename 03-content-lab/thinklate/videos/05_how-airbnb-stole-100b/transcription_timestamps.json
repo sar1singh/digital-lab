@@ -2,2710 +2,2857 @@
   {
     "id": 1,
     "start": 0.0,
-    "end": 2.32,
+    "end": 2.04,
     "timecode": "00:00 - 00:02",
     "text": "Your rent is $1,100."
   },
   {
     "id": 2,
-    "start": 2.32,
-    "end": 5.2,
-    "timecode": "00:02 - 00:05",
-    "text": "You have three days before your landlord kicks you out,"
+    "start": 2.04,
+    "end": 4.52,
+    "timecode": "00:02 - 00:04",
+    "text": "You have three days before your landlord kicks you out"
   },
   {
     "id": 3,
-    "start": 5.2,
-    "end": 7.08,
-    "timecode": "00:05 - 00:07",
+    "start": 4.52,
+    "end": 6.16,
+    "timecode": "00:04 - 00:06",
     "text": "and your bank account is empty."
   },
   {
     "id": 4,
-    "start": 7.08,
-    "end": 8.56,
-    "timecode": "00:07 - 00:08",
+    "start": 6.16,
+    "end": 7.44,
+    "timecode": "00:06 - 00:07",
     "text": "What do you do?"
   },
   {
     "id": 5,
-    "start": 8.56,
-    "end": 12.08,
-    "timecode": "00:08 - 00:12",
+    "start": 7.44,
+    "end": 10.52,
+    "timecode": "00:07 - 00:10",
     "text": "In October 2007, that wasn't a hypothetical question"
   },
   {
     "id": 6,
-    "start": 12.08,
-    "end": 15.52,
-    "timecode": "00:12 - 00:15",
+    "start": 10.52,
+    "end": 13.48,
+    "timecode": "00:10 - 00:13",
     "text": "for Brian Chesky and his roommate, Joe Gebier."
   },
   {
     "id": 7,
-    "start": 15.52,
-    "end": 17.68,
-    "timecode": "00:15 - 00:17",
+    "start": 13.48,
+    "end": 15.36,
+    "timecode": "00:13 - 00:15",
     "text": "They were two broke design school graduates"
   },
   {
     "id": 8,
-    "start": 17.68,
-    "end": 20.44,
-    "timecode": "00:17 - 00:20",
-    "text": "sharing an apartment, completely unemployed,"
+    "start": 15.36,
+    "end": 17.76,
+    "timecode": "00:15 - 00:17",
+    "text": "sharing an apartment, completely unemployed"
   },
   {
     "id": 9,
-    "start": 20.44,
-    "end": 22.28,
-    "timecode": "00:20 - 00:22",
+    "start": 17.76,
+    "end": 19.36,
+    "timecode": "00:17 - 00:19",
     "text": "and scrambling for any quick cash"
   },
   {
     "id": 10,
-    "start": 22.28,
-    "end": 24.2,
-    "timecode": "00:22 - 00:24",
+    "start": 19.36,
+    "end": 21.04,
+    "timecode": "00:19 - 00:21",
     "text": "just to survive the weekend."
   },
   {
     "id": 11,
-    "start": 24.2,
-    "end": 27.0,
-    "timecode": "00:24 - 00:27",
+    "start": 21.04,
+    "end": 23.48,
+    "timecode": "00:21 - 00:23",
     "text": "Then pure luck handed them an opening."
   },
   {
     "id": 12,
-    "start": 27.0,
-    "end": 29.24,
-    "timecode": "00:27 - 00:29",
-    "text": "A massive international design conference"
+    "start": 23.48,
+    "end": 25.92,
+    "timecode": "00:23 - 00:25",
+    "text": "A massive international design conference was flooding"
   },
   {
     "id": 13,
-    "start": 29.24,
-    "end": 32.0,
-    "timecode": "00:29 - 00:32",
-    "text": "was flooding into town, and every single hotel room"
+    "start": 25.92,
+    "end": 28.36,
+    "timecode": "00:25 - 00:28",
+    "text": "into town and every single hotel room in the city"
   },
   {
     "id": 14,
-    "start": 32.0,
-    "end": 34.68,
-    "timecode": "00:32 - 00:34",
-    "text": "in the city was completely sold out."
+    "start": 28.36,
+    "end": 30.16,
+    "timecode": "00:28 - 00:30",
+    "text": "was completely sold out."
   },
   {
     "id": 15,
-    "start": 34.68,
-    "end": 37.6,
-    "timecode": "00:34 - 00:37",
+    "start": 30.16,
+    "end": 32.68,
+    "timecode": "00:30 - 00:32",
     "text": "Tourists had nowhere to sleep, so Brian and Joe"
   },
   {
     "id": 16,
-    "start": 37.6,
-    "end": 40.28,
-    "timecode": "00:37 - 00:40",
+    "start": 32.68,
+    "end": 35.0,
+    "timecode": "00:32 - 00:35",
     "text": "looked at their empty floor, ran to target,"
   },
   {
     "id": 17,
-    "start": 40.28,
-    "end": 42.56,
-    "timecode": "00:40 - 00:42",
-    "text": "bought three cheap blue air mattresses,"
+    "start": 35.0,
+    "end": 37.0,
+    "timecode": "00:35 - 00:37",
+    "text": "bought three cheap blue air mattresses"
   },
   {
     "id": 18,
-    "start": 42.56,
-    "end": 45.12,
-    "timecode": "00:42 - 00:45",
+    "start": 37.0,
+    "end": 39.24,
+    "timecode": "00:37 - 00:39",
     "text": "and charged desperate designers 80 bucks a night"
   },
   {
     "id": 19,
-    "start": 45.12,
-    "end": 48.2,
-    "timecode": "00:45 - 00:48",
+    "start": 39.24,
+    "end": 41.92,
+    "timecode": "00:39 - 00:41",
     "text": "to sleep on their rug, throwing in a box of pop tarts"
   },
   {
     "id": 20,
-    "start": 48.2,
-    "end": 49.44,
-    "timecode": "00:48 - 00:49",
+    "start": 41.92,
+    "end": 42.96,
+    "timecode": "00:41 - 00:42",
     "text": "in the morning."
   },
   {
     "id": 21,
-    "start": 49.44,
-    "end": 52.6,
-    "timecode": "00:49 - 00:52",
+    "start": 42.96,
+    "end": 45.72,
+    "timecode": "00:42 - 00:45",
     "text": "18 years later, that embarrassing emergency hustle"
   },
   {
     "id": 22,
-    "start": 52.6,
-    "end": 56.0,
-    "timecode": "00:52 - 00:56",
+    "start": 45.72,
+    "end": 48.68,
+    "timecode": "00:45 - 00:48",
     "text": "on the floor became a $100 billion empire."
   },
   {
     "id": 23,
-    "start": 56.0,
-    "end": 58.48,
-    "timecode": "00:56 - 00:58",
-    "text": "And if you are an entrepreneur or solo builder,"
+    "start": 48.68,
+    "end": 50.84,
+    "timecode": "00:48 - 00:50",
+    "text": "And if you are an entrepreneur or solo builder"
   },
   {
     "id": 24,
-    "start": 58.48,
-    "end": 61.4,
-    "timecode": "00:58 - 01:01",
+    "start": 50.84,
+    "end": 53.36,
+    "timecode": "00:50 - 00:53",
     "text": "trying to start something with zero cash today,"
   },
   {
     "id": 25,
-    "start": 61.4,
-    "end": 64.12,
-    "timecode": "01:01 - 01:04",
+    "start": 53.36,
+    "end": 55.76,
+    "timecode": "00:53 - 00:55",
     "text": "this journey holds the ultimate blueprint."
   },
   {
     "id": 26,
-    "start": 64.12,
-    "end": 65.84,
-    "timecode": "01:04 - 01:05",
+    "start": 55.76,
+    "end": 57.24,
+    "timecode": "00:55 - 00:57",
     "text": "Because by the end of this video,"
   },
   {
     "id": 27,
-    "start": 65.84,
-    "end": 68.84,
-    "timecode": "01:05 - 01:08",
+    "start": 57.24,
+    "end": 59.88,
+    "timecode": "00:57 - 00:59",
     "text": "you are going to see the three uncensored tactical survival"
   },
   {
     "id": 28,
-    "start": 68.84,
-    "end": 72.0,
-    "timecode": "01:08 - 01:12",
-    "text": "moves Brian used to hijack an entire industry,"
+    "start": 59.88,
+    "end": 62.6,
+    "timecode": "00:59 - 01:02",
+    "text": "moves Brian used to hijack an entire industry"
   },
   {
     "id": 29,
-    "start": 72.0,
-    "end": 74.44,
-    "timecode": "01:12 - 01:14",
+    "start": 62.6,
+    "end": 64.72,
+    "timecode": "01:02 - 01:04",
     "text": "and the fatal scaling trap you must avoid"
   },
   {
     "id": 30,
-    "start": 74.44,
-    "end": 77.88,
-    "timecode": "01:14 - 01:17",
+    "start": 64.72,
+    "end": 67.72,
+    "timecode": "01:04 - 01:07",
     "text": "so your business doesn't destroy itself once it wins."
   },
   {
     "id": 31,
-    "start": 77.88,
-    "end": 80.76,
-    "timecode": "01:17 - 01:20",
+    "start": 67.72,
+    "end": 70.2,
+    "timecode": "01:07 - 01:10",
     "text": "That first weekend actually worked."
   },
   {
     "id": 32,
-    "start": 80.76,
-    "end": 84.4,
-    "timecode": "01:20 - 01:24",
-    "text": "The three designers handed over $240 in cash,"
+    "start": 70.2,
+    "end": 73.36,
+    "timecode": "01:10 - 01:13",
+    "text": "The three designers handed over $240 in cash"
   },
   {
     "id": 33,
-    "start": 84.4,
-    "end": 86.32,
-    "timecode": "01:24 - 01:26",
+    "start": 73.36,
+    "end": 75.08,
+    "timecode": "01:13 - 01:15",
     "text": "and the rent was paid."
   },
   {
     "id": 34,
-    "start": 86.32,
-    "end": 89.08,
-    "timecode": "01:26 - 01:29",
+    "start": 75.08,
+    "end": 77.48,
+    "timecode": "01:15 - 01:17",
     "text": "Brian and Joe looked at the deflated air mattresses"
   },
   {
     "id": 35,
-    "start": 89.08,
-    "end": 93.16,
-    "timecode": "01:29 - 01:33",
+    "start": 77.48,
+    "end": 81.0,
+    "timecode": "01:17 - 01:21",
     "text": "on the floor and realized, wait, if complete strangers"
   },
   {
     "id": 36,
-    "start": 93.16,
-    "end": 95.16,
-    "timecode": "01:33 - 01:35",
+    "start": 81.0,
+    "end": 82.76,
+    "timecode": "01:21 - 01:22",
     "text": "are willing to sleep in our living room,"
   },
   {
     "id": 37,
-    "start": 95.16,
-    "end": 98.4,
-    "timecode": "01:35 - 01:38",
+    "start": 82.76,
+    "end": 85.56,
+    "timecode": "01:22 - 01:25",
     "text": "what if people could do this in every city on earth?"
   },
   {
     "id": 38,
-    "start": 98.4,
-    "end": 100.12,
-    "timecode": "01:38 - 01:40",
+    "start": 85.56,
+    "end": 87.08,
+    "timecode": "01:25 - 01:27",
     "text": "There was only one problem."
   },
   {
     "id": 39,
-    "start": 100.12,
-    "end": 102.68,
-    "timecode": "01:40 - 01:42",
+    "start": 87.08,
+    "end": 89.32,
+    "timecode": "01:27 - 01:29",
     "text": "Neither of them knew how to write software code."
   },
   {
     "id": 40,
-    "start": 102.68,
-    "end": 105.24,
-    "timecode": "01:42 - 01:45",
+    "start": 89.32,
+    "end": 91.52,
+    "timecode": "01:29 - 01:31",
     "text": "They were industrial designers who drew sketches,"
   },
   {
     "id": 41,
-    "start": 105.24,
-    "end": 106.64,
-    "timecode": "01:45 - 01:46",
+    "start": 91.52,
+    "end": 92.8,
+    "timecode": "01:31 - 01:32",
     "text": "not programmers."
   },
   {
     "id": 42,
-    "start": 106.64,
-    "end": 110.0,
-    "timecode": "01:46 - 01:50",
-    "text": "So they called up their former roommate, Nate Blaschartick,"
+    "start": 92.8,
+    "end": 95.68,
+    "timecode": "01:32 - 01:35",
+    "text": "So they called up their former roommate Nate Blasciac,"
   },
   {
     "id": 43,
-    "start": 110.0,
-    "end": 111.92,
-    "timecode": "01:50 - 01:51",
-    "text": "a gifted software engineer,"
+    "start": 95.68,
+    "end": 98.0,
+    "timecode": "01:35 - 01:38",
+    "text": "a gifted software engineer, and convinced him"
   },
   {
     "id": 44,
-    "start": 111.92,
-    "end": 114.36,
-    "timecode": "01:51 - 01:54",
-    "text": "and convinced him to build a primitive website"
+    "start": 98.0,
+    "end": 101.28,
+    "timecode": "01:38 - 01:41",
+    "text": "to build a primitive website called Air Bed and Breakfast."
   },
   {
     "id": 45,
-    "start": 114.36,
-    "end": 116.48,
-    "timecode": "01:54 - 01:56",
-    "text": "called Air Bed and Breakfast."
-  },
-  {
-    "id": 46,
-    "start": 116.48,
-    "end": 119.04,
-    "timecode": "01:56 - 01:59",
+    "start": 101.28,
+    "end": 103.52,
+    "timecode": "01:41 - 01:43",
     "text": "The idea was simple, turn everyday homes"
   },
   {
-    "id": 47,
-    "start": 119.04,
-    "end": 121.28,
-    "timecode": "01:59 - 02:01",
+    "id": 46,
+    "start": 103.52,
+    "end": 105.44,
+    "timecode": "01:43 - 01:45",
     "text": "into mini bed and breakfasts."
   },
   {
-    "id": 48,
-    "start": 121.28,
-    "end": 124.32,
-    "timecode": "02:01 - 02:04",
+    "id": 47,
+    "start": 105.44,
+    "end": 108.08,
+    "timecode": "01:45 - 01:48",
     "text": "Once the website was live in early 2008,"
   },
   {
-    "id": 49,
-    "start": 124.32,
-    "end": 126.72,
-    "timecode": "02:04 - 02:06",
+    "id": 48,
+    "start": 108.08,
+    "end": 110.2,
+    "timecode": "01:48 - 01:50",
     "text": "they thought the hardest part was over."
   },
   {
-    "id": 50,
-    "start": 126.72,
-    "end": 129.08,
-    "timecode": "02:06 - 02:09",
+    "id": 49,
+    "start": 110.2,
+    "end": 112.24,
+    "timecode": "01:50 - 01:52",
     "text": "They needed cash to keep the servers running"
   },
   {
-    "id": 51,
-    "start": 129.08,
-    "end": 131.08,
-    "timecode": "02:09 - 02:11",
+    "id": 50,
+    "start": 112.24,
+    "end": 114.0,
+    "timecode": "01:52 - 01:54",
     "text": "so they took their brand new website"
   },
   {
-    "id": 52,
-    "start": 131.08,
-    "end": 133.96,
-    "timecode": "02:11 - 02:13",
+    "id": 51,
+    "start": 114.0,
+    "end": 116.48,
+    "timecode": "01:54 - 01:56",
     "text": "to top Silicon Valley venture capitalists."
   },
   {
-    "id": 53,
-    "start": 133.96,
-    "end": 136.52,
-    "timecode": "02:13 - 02:16",
+    "id": 52,
+    "start": 116.48,
+    "end": 118.68,
+    "timecode": "01:56 - 01:58",
     "text": "The meetings were an absolute disaster."
   },
   {
-    "id": 54,
-    "start": 136.52,
-    "end": 139.16,
-    "timecode": "02:16 - 02:19",
+    "id": 53,
+    "start": 118.68,
+    "end": 121.0,
+    "timecode": "01:58 - 02:01",
     "text": "Investors literally laughed in their faces,"
   },
   {
+    "id": 54,
+    "start": 121.0,
+    "end": 122.48,
+    "timecode": "02:01 - 02:02",
+    "text": "renowned venture capitalists,"
+  },
+  {
     "id": 55,
-    "start": 139.16,
-    "end": 142.44,
-    "timecode": "02:19 - 02:22",
-    "text": "renowned venture capitalists walked out of coffee shops"
+    "start": 122.48,
+    "end": 124.56,
+    "timecode": "02:02 - 02:04",
+    "text": "walked out of coffee shops or stared at them"
   },
   {
     "id": 56,
-    "start": 142.44,
-    "end": 145.48,
-    "timecode": "02:22 - 02:25",
-    "text": "or stared at them like they were completely insane."
+    "start": 124.56,
+    "end": 126.48,
+    "timecode": "02:04 - 02:06",
+    "text": "like they were completely insane."
   },
   {
     "id": 57,
-    "start": 145.48,
-    "end": 148.88,
-    "timecode": "02:25 - 02:28",
+    "start": 126.48,
+    "end": 129.44,
+    "timecode": "02:06 - 02:09",
     "text": "Why on earth would anyone invest in an app for strangers"
   },
   {
     "id": 58,
-    "start": 148.88,
-    "end": 152.0,
-    "timecode": "02:28 - 02:32",
+    "start": 129.44,
+    "end": 132.16,
+    "timecode": "02:09 - 02:12",
     "text": "to sleep on air mattresses on dirty floors?"
   },
   {
     "id": 59,
-    "start": 152.0,
-    "end": 156.48,
-    "timecode": "02:32 - 02:36",
-    "text": "Every single investor said no, air mattresses on dirty floors."
-  },
-  {
-    "id": 60,
-    "start": 156.48,
-    "end": 158.4,
-    "timecode": "02:36 - 02:38",
+    "start": 132.16,
+    "end": 134.2,
+    "timecode": "02:12 - 02:14",
     "text": "Every single investor said no."
   },
   {
-    "id": 61,
-    "start": 158.4,
-    "end": 162.76,
-    "timecode": "02:38 - 02:42",
-    "text": "They had a live website, zero funding and zero users."
+    "id": 60,
+    "start": 134.2,
+    "end": 136.68,
+    "timecode": "02:14 - 02:16",
+    "text": "Zero funding and zero users."
   },
   {
-    "id": 62,
-    "start": 162.76,
-    "end": 166.32,
-    "timecode": "02:42 - 02:46",
+    "id": 61,
+    "start": 136.68,
+    "end": 139.8,
+    "timecode": "02:16 - 02:19",
     "text": "Over the next 10 months, the business completely flatlined."
   },
   {
+    "id": 62,
+    "start": 139.8,
+    "end": 141.56,
+    "timecode": "02:19 - 02:21",
+    "text": "At the South Byte Southwest Festival,"
+  },
+  {
     "id": 63,
-    "start": 166.32,
-    "end": 168.36,
-    "timecode": "02:46 - 02:48",
-    "text": "At the South by Southwest Festival,"
+    "start": 141.56,
+    "end": 143.64,
+    "timecode": "02:21 - 02:23",
+    "text": "they got exactly two bookings"
   },
   {
     "id": 64,
-    "start": 168.36,
-    "end": 170.72,
-    "timecode": "02:48 - 02:50",
-    "text": "they got exactly two bookings."
+    "start": 143.64,
+    "end": 145.32,
+    "timecode": "02:23 - 02:25",
+    "text": "and one of them was Brian himself."
   },
   {
     "id": 65,
-    "start": 170.72,
-    "end": 172.64,
-    "timecode": "02:50 - 02:52",
-    "text": "And one of them was Brian himself."
-  },
-  {
-    "id": 66,
-    "start": 172.64,
-    "end": 175.52,
-    "timecode": "02:52 - 02:55",
+    "start": 145.32,
+    "end": 147.84,
+    "timecode": "02:25 - 02:27",
     "text": "Now, the three founders were completely broke"
   },
   {
-    "id": 67,
-    "start": 175.52,
-    "end": 177.08,
-    "timecode": "02:55 - 02:57",
+    "id": 66,
+    "start": 147.84,
+    "end": 149.2,
+    "timecode": "02:27 - 02:29",
     "text": "and drowning in death."
   },
   {
-    "id": 68,
-    "start": 177.08,
-    "end": 179.44,
-    "timecode": "02:57 - 02:59",
+    "id": 67,
+    "start": 149.2,
+    "end": 151.28,
+    "timecode": "02:29 - 02:31",
     "text": "Not one credit card, not two cards,"
   },
   {
-    "id": 69,
-    "start": 179.44,
-    "end": 181.6,
-    "timecode": "02:59 - 03:01",
+    "id": 68,
+    "start": 151.28,
+    "end": 153.16,
+    "timecode": "02:31 - 02:33",
     "text": "but entire baseball card binder albums"
   },
   {
-    "id": 70,
-    "start": 181.6,
-    "end": 183.68,
-    "timecode": "03:01 - 03:03",
+    "id": 69,
+    "start": 153.16,
+    "end": 154.96,
+    "timecode": "02:33 - 02:34",
     "text": "filled with maxed out plastic."
   },
   {
-    "id": 71,
-    "start": 183.68,
-    "end": 187.76,
-    "timecode": "03:03 - 03:07",
-    "text": "$20,000 in high interest debt, no revenue coming in"
+    "id": 70,
+    "start": 154.96,
+    "end": 158.52,
+    "timecode": "02:34 - 02:38",
+    "text": "$20,000 in high interest debt, no revenue coming in,"
   },
   {
-    "id": 72,
-    "start": 187.76,
-    "end": 190.96,
-    "timecode": "03:07 - 03:10",
+    "id": 71,
+    "start": 158.52,
+    "end": 161.32,
+    "timecode": "02:38 - 02:41",
     "text": "and collection agencies calling them every single afternoon."
   },
   {
-    "id": 73,
-    "start": 190.96,
-    "end": 192.88,
-    "timecode": "03:10 - 03:12",
+    "id": 72,
+    "start": 161.32,
+    "end": 163.0,
+    "timecode": "02:41 - 02:43",
     "text": "How do you keep a website alive"
   },
   {
-    "id": 74,
-    "start": 192.88,
-    "end": 194.68,
-    "timecode": "03:12 - 03:14",
+    "id": 73,
+    "start": 163.0,
+    "end": 164.56,
+    "timecode": "02:43 - 02:44",
     "text": "when you can't even afford groceries?"
   },
   {
-    "id": 75,
-    "start": 194.68,
-    "end": 197.16,
-    "timecode": "03:14 - 03:17",
+    "id": 74,
+    "start": 164.56,
+    "end": 166.72,
+    "timecode": "02:44 - 02:46",
     "text": "Then came August 2008,"
   },
   {
-    "id": 76,
-    "start": 197.16,
-    "end": 199.92,
-    "timecode": "03:17 - 03:19",
+    "id": 75,
+    "start": 166.72,
+    "end": 169.16,
+    "timecode": "02:46 - 02:49",
     "text": "the Democratic National Convention in Denver."
   },
   {
-    "id": 77,
-    "start": 199.92,
-    "end": 202.16,
-    "timecode": "03:19 - 03:22",
-    "text": "A hundred thousand people were showing up"
+    "id": 76,
+    "start": 169.16,
+    "end": 171.12,
+    "timecode": "02:49 - 02:51",
+    "text": "A hundred thousand people were showing up,"
   },
   {
-    "id": 78,
-    "start": 202.16,
-    "end": 206.88,
-    "timecode": "03:22 - 03:26",
+    "id": 77,
+    "start": 171.12,
+    "end": 175.24,
+    "timecode": "02:51 - 02:55",
     "text": "and there were only 17,000 hotel rooms in the entire city."
   },
   {
-    "id": 79,
-    "start": 206.88,
-    "end": 209.52,
-    "timecode": "03:26 - 03:29",
+    "id": 78,
+    "start": 175.24,
+    "end": 177.56,
+    "timecode": "02:55 - 02:57",
     "text": "It was the exact same hotel crisis"
   },
   {
-    "id": 80,
-    "start": 209.52,
-    "end": 212.76,
-    "timecode": "03:29 - 03:32",
+    "id": 79,
+    "start": 177.56,
+    "end": 180.36,
+    "timecode": "02:57 - 03:00",
     "text": "that saved them the first time, but 50 times bigger."
   },
   {
-    "id": 81,
-    "start": 212.76,
-    "end": 216.28,
-    "timecode": "03:32 - 03:36",
+    "id": 80,
+    "start": 180.36,
+    "end": 183.44,
+    "timecode": "03:00 - 03:03",
     "text": "The founders had zero cash left to keep their servers online."
   },
   {
-    "id": 82,
-    "start": 216.28,
-    "end": 219.36,
-    "timecode": "03:36 - 03:39",
+    "id": 81,
+    "start": 183.44,
+    "end": 186.16,
+    "timecode": "03:03 - 03:06",
     "text": "So they did what any rational tech founder does."
   },
   {
-    "id": 83,
-    "start": 219.36,
-    "end": 221.6,
-    "timecode": "03:39 - 03:41",
+    "id": 82,
+    "start": 186.16,
+    "end": 188.12,
+    "timecode": "03:06 - 03:08",
     "text": "They went into the breakfast cereal business."
   },
   {
-    "id": 84,
-    "start": 221.6,
-    "end": 224.12,
-    "timecode": "03:41 - 03:44",
+    "id": 83,
+    "start": 188.12,
+    "end": 190.32,
+    "timecode": "03:08 - 03:10",
     "text": "They convinced a college student in Rhode Island"
   },
   {
-    "id": 85,
-    "start": 224.12,
-    "end": 227.64,
-    "timecode": "03:44 - 03:47",
+    "id": 84,
+    "start": 190.32,
+    "end": 193.36,
+    "timecode": "03:10 - 03:13",
     "text": "to print 1,000 custom cardboard boxes on credit."
   },
   {
-    "id": 86,
-    "start": 227.64,
-    "end": 229.68,
-    "timecode": "03:47 - 03:49",
+    "id": 85,
+    "start": 193.36,
+    "end": 195.16,
+    "timecode": "03:13 - 03:15",
     "text": "They folded them by hand in their kitchen,"
   },
   {
-    "id": 87,
-    "start": 229.68,
-    "end": 231.6,
-    "timecode": "03:49 - 03:51",
-    "text": "glued them with hot glue guns"
+    "id": 86,
+    "start": 195.16,
+    "end": 196.84,
+    "timecode": "03:15 - 03:16",
+    "text": "glued them with hot glue guns,"
   },
   {
-    "id": 88,
-    "start": 231.6,
-    "end": 233.4,
-    "timecode": "03:51 - 03:53",
+    "id": 87,
+    "start": 196.84,
+    "end": 198.44,
+    "timecode": "03:16 - 03:18",
     "text": "and filled them with cheap bulk cereal"
   },
   {
-    "id": 89,
-    "start": 233.4,
-    "end": 236.56,
-    "timecode": "03:53 - 03:56",
+    "id": 88,
+    "start": 198.44,
+    "end": 201.16,
+    "timecode": "03:18 - 03:21",
     "text": "called Obama O's and Captain McCain's."
   },
   {
-    "id": 90,
-    "start": 236.56,
-    "end": 241.08,
-    "timecode": "03:56 - 04:01",
+    "id": 89,
+    "start": 201.16,
+    "end": 205.12,
+    "timecode": "03:21 - 03:25",
     "text": "At $40 a box, people thought it was a brilliant political stunt,"
   },
   {
-    "id": 91,
-    "start": 241.08,
-    "end": 242.44,
-    "timecode": "04:01 - 04:02",
+    "id": 90,
+    "start": 205.12,
+    "end": 206.32,
+    "timecode": "03:25 - 03:26",
     "text": "but it wasn't a stunt at all."
   },
   {
-    "id": 92,
-    "start": 242.44,
-    "end": 244.24,
-    "timecode": "04:02 - 04:04",
+    "id": 91,
+    "start": 206.32,
+    "end": 207.88,
+    "timecode": "03:26 - 03:27",
     "text": "It was pure grocery money."
   },
   {
-    "id": 93,
-    "start": 244.24,
-    "end": 247.12,
-    "timecode": "04:04 - 04:07",
+    "id": 92,
+    "start": 207.88,
+    "end": 210.36,
+    "timecode": "03:27 - 03:30",
     "text": "They sold $30,000 worth of cereal,"
   },
   {
-    "id": 94,
-    "start": 247.12,
-    "end": 249.0,
-    "timecode": "04:07 - 04:09",
-    "text": "paid off their credit card interest"
+    "id": 93,
+    "start": 210.36,
+    "end": 212.04,
+    "timecode": "03:30 - 03:32",
+    "text": "paid off their credit card interest,"
   },
   {
-    "id": 95,
-    "start": 249.0,
-    "end": 252.0,
-    "timecode": "04:09 - 04:12",
+    "id": 94,
+    "start": 212.04,
+    "end": 214.64,
+    "timecode": "03:32 - 03:34",
     "text": "and bought themselves four more months of life."
   },
   {
-    "id": 96,
-    "start": 252.0,
-    "end": 256.0,
-    "timecode": "04:12 - 04:16",
+    "id": 95,
+    "start": 214.64,
+    "end": 218.16,
+    "timecode": "03:34 - 03:38",
     "text": "The $30,000 from cereal bought them four months of runway,"
   },
   {
-    "id": 97,
-    "start": 256.0,
-    "end": 258.44,
-    "timecode": "04:16 - 04:18",
+    "id": 96,
+    "start": 218.16,
+    "end": 220.28,
+    "timecode": "03:38 - 03:40",
     "text": "but their website was still flatlined."
   },
   {
+    "id": 97,
+    "start": 220.28,
+    "end": 222.92,
+    "timecode": "03:40 - 03:42",
+    "text": "In January 2009, they walked into an interview"
+  },
+  {
     "id": 98,
-    "start": 258.44,
-    "end": 262.68,
-    "timecode": "04:18 - 04:22",
-    "text": "In January 2009, they walked into an interview at Y Combinator,"
+    "start": 222.92,
+    "end": 225.92,
+    "timecode": "03:42 - 03:45",
+    "text": "at Y Combinator, the most prestigious startup accelerator"
   },
   {
     "id": 99,
-    "start": 262.68,
-    "end": 266.16,
-    "timecode": "04:22 - 04:26",
-    "text": "the most prestigious startup accelerator in Silicon Valley."
+    "start": 225.92,
+    "end": 227.04,
+    "timecode": "03:45 - 03:47",
+    "text": "in Silicon Valley."
   },
   {
     "id": 100,
-    "start": 266.16,
-    "end": 269.28,
-    "timecode": "04:26 - 04:29",
+    "start": 227.04,
+    "end": 229.76,
+    "timecode": "03:47 - 03:49",
     "text": "The interview with founder Paul Graham was a disaster."
   },
   {
     "id": 101,
-    "start": 269.28,
-    "end": 271.96,
-    "timecode": "04:29 - 04:31",
+    "start": 229.76,
+    "end": 232.12,
+    "timecode": "03:49 - 03:52",
     "text": "Graham listened to the pitch about random strangers"
   },
   {
     "id": 102,
-    "start": 271.96,
-    "end": 276.28,
-    "timecode": "04:31 - 04:36",
-    "text": "sleeping on air mattresses in private apartments and hated it."
+    "start": 232.12,
+    "end": 234.96,
+    "timecode": "03:52 - 03:54",
+    "text": "sleeping on air mattresses in private apartments,"
   },
   {
     "id": 103,
-    "start": 276.28,
-    "end": 279.72,
-    "timecode": "04:36 - 04:39",
-    "text": "He told him flat out, the idea is terrible."
+    "start": 234.96,
+    "end": 235.84,
+    "timecode": "03:54 - 03:55",
+    "text": "and hated it."
   },
   {
     "id": 104,
-    "start": 279.72,
-    "end": 281.04,
-    "timecode": "04:39 - 04:41",
-    "text": "People are going to get robbed."
+    "start": 235.84,
+    "end": 238.88,
+    "timecode": "03:55 - 03:58",
+    "text": "He told him flat out, the idea is terrible."
   },
   {
     "id": 105,
-    "start": 281.04,
-    "end": 282.56,
-    "timecode": "04:41 - 04:42",
-    "text": "People are going to get murdered"
+    "start": 238.88,
+    "end": 240.0,
+    "timecode": "03:58 - 04:00",
+    "text": "People gonna get robbed,"
   },
   {
     "id": 106,
-    "start": 282.56,
-    "end": 284.92,
-    "timecode": "04:42 - 04:44",
-    "text": "and nobody will ever pay for this."
+    "start": 240.0,
+    "end": 241.36,
+    "timecode": "04:00 - 04:01",
+    "text": "people are gonna get murdered,"
   },
   {
     "id": 107,
-    "start": 284.92,
-    "end": 286.72,
-    "timecode": "04:44 - 04:46",
-    "text": "As they were packing up to leave,"
+    "start": 241.36,
+    "end": 243.4,
+    "timecode": "04:01 - 04:03",
+    "text": "and nobody will ever pay for this."
   },
   {
     "id": 108,
-    "start": 286.72,
-    "end": 288.56,
-    "timecode": "04:46 - 04:48",
-    "text": "Brian reached into his backpack,"
+    "start": 243.4,
+    "end": 244.96,
+    "timecode": "04:03 - 04:04",
+    "text": "As they were packing up to leave,"
   },
   {
     "id": 109,
-    "start": 288.56,
-    "end": 291.72,
-    "timecode": "04:48 - 04:51",
-    "text": "pulled out an authentic box of Obama O's cereal"
+    "start": 244.96,
+    "end": 246.6,
+    "timecode": "04:04 - 04:06",
+    "text": "Brian reached into his backpack,"
   },
   {
     "id": 110,
-    "start": 291.72,
-    "end": 293.4,
-    "timecode": "04:51 - 04:53",
-    "text": "and handed it across the table."
+    "start": 246.6,
+    "end": 249.36,
+    "timecode": "04:06 - 04:09",
+    "text": "pulled out an authentic box of Obama O's cereal,"
   },
   {
     "id": 111,
-    "start": 293.4,
-    "end": 296.48,
-    "timecode": "04:53 - 04:56",
-    "text": "He explained that when venture capitalists laughed at them"
+    "start": 249.36,
+    "end": 250.84,
+    "timecode": "04:09 - 04:10",
+    "text": "and handed it across the table."
   },
   {
     "id": 112,
-    "start": 296.48,
-    "end": 298.72,
-    "timecode": "04:56 - 04:58",
-    "text": "and their bank accounts hit zero,"
+    "start": 250.84,
+    "end": 253.52,
+    "timecode": "04:10 - 04:13",
+    "text": "He explained that when venture capitalists laughed at them"
   },
   {
     "id": 113,
-    "start": 298.72,
-    "end": 302.64,
-    "timecode": "04:58 - 05:02",
-    "text": "they hand folded and glued 1,000 boxes in their kitchen"
+    "start": 253.52,
+    "end": 255.44,
+    "timecode": "04:13 - 04:15",
+    "text": "and their bank accounts hit zero,"
   },
   {
     "id": 114,
-    "start": 302.64,
-    "end": 304.04,
-    "timecode": "05:02 - 05:04",
-    "text": "just to keep the lights on."
+    "start": 255.44,
+    "end": 258.88,
+    "timecode": "04:15 - 04:18",
+    "text": "they hand folded and glued 1,000 boxes in their kitchen,"
   },
   {
     "id": 115,
-    "start": 304.04,
-    "end": 306.68,
-    "timecode": "05:04 - 05:06",
-    "text": "Paul Graham looked down at the cereal box,"
+    "start": 258.88,
+    "end": 260.12,
+    "timecode": "04:18 - 04:20",
+    "text": "just to keep the lights on."
   },
   {
     "id": 116,
-    "start": 306.68,
-    "end": 309.6,
-    "timecode": "05:06 - 05:09",
-    "text": "looked up at the three exhausted founders"
+    "start": 260.12,
+    "end": 262.4,
+    "timecode": "04:20 - 04:22",
+    "text": "Paul Graham looked down at the cereal box,"
   },
   {
     "id": 117,
-    "start": 309.6,
-    "end": 312.0,
-    "timecode": "05:09 - 05:12",
-    "text": "and said something that changed startup history."
+    "start": 262.4,
+    "end": 264.94,
+    "timecode": "04:22 - 04:24",
+    "text": "looked up at the three exhausted founders."
   },
   {
     "id": 118,
-    "start": 312.0,
-    "end": 316.52,
-    "timecode": "05:12 - 05:16",
-    "text": "If you can convince people to pay $40 for a $4 box of cereal,"
+    "start": 264.94,
+    "end": 267.06,
+    "timecode": "04:24 - 04:27",
+    "text": "And said something that changed startup history."
   },
   {
     "id": 119,
-    "start": 316.52,
-    "end": 319.4,
-    "timecode": "05:16 - 05:19",
-    "text": "you can convince people to sleep on air beds."
+    "start": 267.06,
+    "end": 270.98,
+    "timecode": "04:27 - 04:30",
+    "text": "If you can convince people to pay $40 for a $4 box of cereal,"
   },
   {
     "id": 120,
-    "start": 319.4,
-    "end": 320.24,
-    "timecode": "05:19 - 05:20",
-    "text": "You're in."
+    "start": 270.98,
+    "end": 273.5,
+    "timecode": "04:30 - 04:33",
+    "text": "you can convince people to sleep on air beds."
   },
   {
     "id": 121,
-    "start": 320.24,
-    "end": 322.72,
-    "timecode": "05:20 - 05:22",
-    "text": "They got $20,000 in seed funding,"
+    "start": 273.5,
+    "end": 276.42,
+    "timecode": "04:33 - 04:36",
+    "text": "You're in, they got $20,000 in seed funding,"
   },
   {
     "id": 122,
-    "start": 322.72,
-    "end": 326.4,
-    "timecode": "05:22 - 05:26",
-    "text": "but getting into why combinator didn't magically save them."
+    "start": 276.42,
+    "end": 279.62,
+    "timecode": "04:36 - 04:39",
+    "text": "but getting into Y Combinator didn't magically save them."
   },
   {
     "id": 123,
-    "start": 326.4,
-    "end": 328.24,
-    "timecode": "05:26 - 05:28",
+    "start": 279.62,
+    "end": 281.22,
+    "timecode": "04:39 - 04:41",
     "text": "Right here in March 2009,"
   },
   {
     "id": 124,
-    "start": 328.24,
-    "end": 331.68,
-    "timecode": "05:28 - 05:31",
+    "start": 281.22,
+    "end": 284.22,
+    "timecode": "04:41 - 04:44",
     "text": "they made the smartest strategic pivot of their lives."
   },
   {
     "id": 125,
-    "start": 331.68,
-    "end": 334.48,
-    "timecode": "05:31 - 05:34",
+    "start": 284.22,
+    "end": 286.7,
+    "timecode": "04:44 - 04:46",
     "text": "The original name, air bed and breakfast,"
   },
   {
     "id": 126,
-    "start": 334.48,
-    "end": 337.08,
-    "timecode": "05:34 - 05:37",
+    "start": 286.7,
+    "end": 288.94,
+    "timecode": "04:46 - 04:48",
     "text": "was actively suffocating the business."
   },
   {
     "id": 127,
-    "start": 337.08,
-    "end": 339.12,
-    "timecode": "05:37 - 05:39",
+    "start": 288.94,
+    "end": 290.74,
+    "timecode": "04:48 - 04:50",
     "text": "Travelers assumed they would be sleeping"
   },
   {
     "id": 128,
-    "start": 339.12,
-    "end": 343.36,
-    "timecode": "05:39 - 05:43",
-    "text": "on squeaky rubber pool mattresses in a stranger's living room"
+    "start": 290.74,
+    "end": 292.66,
+    "timecode": "04:50 - 04:52",
+    "text": "on squeaky rubber pole mattresses"
   },
   {
     "id": 129,
-    "start": 343.36,
-    "end": 345.92,
-    "timecode": "05:43 - 05:45",
-    "text": "and hosts with beautiful spare bedrooms"
+    "start": 292.66,
+    "end": 294.42,
+    "timecode": "04:52 - 04:54",
+    "text": "in a stranger's living room."
   },
   {
     "id": 130,
-    "start": 345.92,
-    "end": 349.0,
-    "timecode": "05:45 - 05:49",
-    "text": "or empty apartments refused to list on a site"
+    "start": 294.42,
+    "end": 296.66,
+    "timecode": "04:54 - 04:56",
+    "text": "And hosts with beautiful spare bedrooms"
   },
   {
     "id": 131,
-    "start": 349.0,
-    "end": 352.0,
-    "timecode": "05:49 - 05:52",
-    "text": "that literally had the word air bed in the title."
+    "start": 296.66,
+    "end": 299.34,
+    "timecode": "04:56 - 04:59",
+    "text": "or empty apartments refused to list on a site"
   },
   {
     "id": 132,
-    "start": 352.0,
-    "end": 353.68,
-    "timecode": "05:52 - 05:53",
-    "text": "So in the middle of why combinator,"
+    "start": 299.34,
+    "end": 301.98,
+    "timecode": "04:59 - 05:01",
+    "text": "that literally had the word air bed in the title."
   },
   {
     "id": 133,
-    "start": 353.68,
-    "end": 355.48,
-    "timecode": "05:53 - 05:55",
-    "text": "they officially bought the domain"
+    "start": 301.98,
+    "end": 303.46,
+    "timecode": "05:01 - 05:03",
+    "text": "So in the middle of Y Combinator,"
   },
   {
     "id": 134,
-    "start": 355.48,
-    "end": 358.24,
-    "timecode": "05:55 - 05:58",
-    "text": "and shortened the name down to just three letters."
+    "start": 303.46,
+    "end": 305.06,
+    "timecode": "05:03 - 05:05",
+    "text": "they officially bought the domain"
   },
   {
     "id": 135,
-    "start": 358.24,
-    "end": 360.2,
-    "timecode": "05:58 - 06:00",
-    "text": "Airbnb.com."
+    "start": 305.06,
+    "end": 307.42,
+    "timecode": "05:05 - 05:07",
+    "text": "and shortened the name down to just three letters."
   },
   {
     "id": 136,
-    "start": 360.2,
-    "end": 362.92,
-    "timecode": "06:00 - 06:02",
-    "text": "Dropping the words air bed and breakfast"
+    "start": 307.42,
+    "end": 309.14,
+    "timecode": "05:07 - 05:09",
+    "text": "Airbnb.com."
   },
   {
     "id": 137,
-    "start": 362.92,
-    "end": 365.12,
-    "timecode": "06:02 - 06:05",
-    "text": "was the psychological masterstroke"
+    "start": 309.14,
+    "end": 311.5,
+    "timecode": "05:09 - 05:11",
+    "text": "Dropping the words air bed and breakfast"
   },
   {
     "id": 138,
-    "start": 365.12,
-    "end": 366.88,
-    "timecode": "06:05 - 06:06",
-    "text": "that transformed them from eccentric,"
+    "start": 311.5,
+    "end": 313.46,
+    "timecode": "05:11 - 05:13",
+    "text": "was the psychological masterstroke"
   },
   {
     "id": 139,
-    "start": 366.88,
-    "end": 370.88,
-    "timecode": "06:06 - 06:10",
-    "text": "florental gimmick into a real marketplace for actual homes."
+    "start": 313.46,
+    "end": 314.98,
+    "timecode": "05:13 - 05:14",
+    "text": "that transformed them from an eccentric,"
   },
   {
     "id": 140,
-    "start": 370.88,
-    "end": 372.32,
-    "timecode": "06:10 - 06:12",
-    "text": "Yet even with the new name,"
+    "start": 314.98,
+    "end": 318.46,
+    "timecode": "05:14 - 05:18",
+    "text": "florental gimmick into a real marketplace for actual homes."
   },
   {
     "id": 141,
-    "start": 372.32,
-    "end": 374.16,
-    "timecode": "06:12 - 06:14",
-    "text": "growth refused a budge."
+    "start": 318.46,
+    "end": 321.34,
+    "timecode": "05:18 - 05:21",
+    "text": "Yet even with the new name, growth refused a bunch."
   },
   {
     "id": 142,
-    "start": 374.16,
-    "end": 377.76,
-    "timecode": "06:14 - 06:17",
+    "start": 321.34,
+    "end": 324.5,
+    "timecode": "05:21 - 05:24",
     "text": "By June 2009, the accelerator was ending"
   },
   {
     "id": 143,
-    "start": 377.76,
-    "end": 381.8,
-    "timecode": "06:17 - 06:21",
+    "start": 324.5,
+    "end": 328.02,
+    "timecode": "05:24 - 05:28",
     "text": "and their weekly revenue was stuck at barely $200 a week."
   },
   {
     "id": 144,
-    "start": 381.8,
-    "end": 384.2,
-    "timecode": "06:21 - 06:24",
-    "text": "They were living in a windowless office,"
+    "start": 328.02,
+    "end": 330.14,
+    "timecode": "05:28 - 05:30",
+    "text": "They were living in a windowless office"
   },
   {
     "id": 145,
-    "start": 384.2,
-    "end": 386.44,
-    "timecode": "06:24 - 06:26",
+    "start": 330.14,
+    "end": 332.1,
+    "timecode": "05:30 - 05:32",
     "text": "surviving on instant noodles"
   },
   {
     "id": 146,
-    "start": 386.44,
-    "end": 390.76,
-    "timecode": "06:26 - 06:30",
+    "start": 332.1,
+    "end": 335.86,
+    "timecode": "05:32 - 05:35",
     "text": "and staring at a growth chart as flat as a dead man's pulse."
   },
   {
     "id": 147,
-    "start": 390.76,
-    "end": 393.08,
-    "timecode": "06:30 - 06:33",
+    "start": 335.86,
+    "end": 337.9,
+    "timecode": "05:35 - 05:37",
     "text": "Paul Graham pulled Brian and Joe aside"
   },
   {
     "id": 148,
-    "start": 393.08,
-    "end": 394.76,
-    "timecode": "06:33 - 06:34",
+    "start": 337.9,
+    "end": 339.34,
+    "timecode": "05:37 - 05:39",
     "text": "and asked a simple question,"
   },
   {
     "id": 149,
-    "start": 394.76,
-    "end": 397.0,
-    "timecode": "06:34 - 06:37",
+    "start": 339.34,
+    "end": 341.3,
+    "timecode": "05:39 - 05:41",
     "text": "where are your few actual customers?"
   },
   {
     "id": 150,
-    "start": 397.0,
-    "end": 400.24,
-    "timecode": "06:37 - 06:40",
+    "start": 341.3,
+    "end": 344.18,
+    "timecode": "05:41 - 05:44",
     "text": "Brian answered that 30 of their 40 active listings"
   },
   {
     "id": 151,
-    "start": 400.24,
-    "end": 401.56,
-    "timecode": "06:40 - 06:41",
+    "start": 344.18,
+    "end": 345.3,
+    "timecode": "05:44 - 05:45",
     "text": "were in New York City."
   },
   {
     "id": 152,
-    "start": 401.56,
-    "end": 404.72,
-    "timecode": "06:41 - 06:44",
+    "start": 345.3,
+    "end": 348.06,
+    "timecode": "05:45 - 05:48",
     "text": "That was when Graham gave them the single piece of advice"
   },
   {
     "id": 153,
-    "start": 404.72,
-    "end": 406.68,
-    "timecode": "06:44 - 06:46",
+    "start": 348.06,
+    "end": 349.78,
+    "timecode": "05:48 - 05:49",
     "text": "that became Silicon Valley law."
   },
   {
     "id": 154,
-    "start": 406.68,
-    "end": 408.16,
-    "timecode": "06:46 - 06:48",
+    "start": 349.78,
+    "end": 351.06,
+    "timecode": "05:49 - 05:51",
     "text": "Do things that don't scale."
   },
   {
     "id": 155,
-    "start": 408.16,
-    "end": 409.92,
-    "timecode": "06:48 - 06:49",
+    "start": 351.1,
+    "end": 352.58,
+    "timecode": "05:51 - 05:52",
     "text": "Get on a plane to New York right now."
   },
   {
     "id": 156,
-    "start": 409.92,
-    "end": 412.4,
-    "timecode": "06:49 - 06:52",
+    "start": 352.58,
+    "end": 354.78,
+    "timecode": "05:52 - 05:54",
     "text": "Go knock on every single host door."
   },
   {
     "id": 157,
-    "start": 412.4,
-    "end": 415.64,
-    "timecode": "06:52 - 06:55",
-    "text": "Brian and Joe didn't have money for plane tickets."
+    "start": 354.78,
+    "end": 357.62,
+    "timecode": "05:54 - 05:57",
+    "text": "Brian and Joe didn't have money for playing tickets."
   },
   {
     "id": 158,
-    "start": 415.64,
-    "end": 417.48,
-    "timecode": "06:55 - 06:57",
+    "start": 357.62,
+    "end": 359.22,
+    "timecode": "05:57 - 05:59",
     "text": "So they put them on another credit card."
   },
   {
     "id": 159,
-    "start": 417.48,
-    "end": 420.76,
-    "timecode": "06:57 - 07:00",
+    "start": 359.22,
+    "end": 362.1,
+    "timecode": "05:59 - 06:02",
     "text": "They flew to Brooklyn, rented a $500 camera"
   },
   {
     "id": 160,
-    "start": 420.76,
-    "end": 422.72,
-    "timecode": "07:00 - 07:02",
+    "start": 362.1,
+    "end": 363.78,
+    "timecode": "06:02 - 06:03",
     "text": "and literally walked down the streets"
   },
   {
     "id": 161,
-    "start": 422.72,
-    "end": 424.76,
-    "timecode": "07:02 - 07:04",
-    "text": "knocking on their user's doors."
+    "start": 363.78,
+    "end": 365.54,
+    "timecode": "06:03 - 06:05",
+    "text": "knocking on their users' doors."
   },
   {
     "id": 162,
-    "start": 424.76,
-    "end": 426.2,
-    "timecode": "07:04 - 07:06",
+    "start": 365.54,
+    "end": 366.82,
+    "timecode": "06:05 - 06:06",
     "text": "They didn't try to sell anything."
   },
   {
     "id": 163,
-    "start": 426.2,
-    "end": 429.2,
-    "timecode": "07:06 - 07:09",
+    "start": 366.82,
+    "end": 369.46,
+    "timecode": "06:06 - 06:09",
     "text": "They asked hosts if they could take professional photos"
   },
   {
     "id": 164,
-    "start": 429.2,
-    "end": 430.8,
-    "timecode": "07:09 - 07:10",
+    "start": 369.46,
+    "end": 370.82,
+    "timecode": "06:09 - 06:10",
     "text": "of their apartments for free."
   },
   {
     "id": 165,
-    "start": 430.8,
-    "end": 433.64,
-    "timecode": "07:10 - 07:13",
+    "start": 370.82,
+    "end": 373.3,
+    "timecode": "06:10 - 06:13",
     "text": "They sat in their kitchens, drank tea with them"
   },
   {
     "id": 166,
-    "start": 433.64,
-    "end": 436.04,
-    "timecode": "07:13 - 07:16",
+    "start": 373.3,
+    "end": 375.38,
+    "timecode": "06:13 - 06:15",
     "text": "and asked what sucked about using the website."
   },
   {
     "id": 167,
-    "start": 436.04,
-    "end": 439.08,
-    "timecode": "07:16 - 07:19",
-    "text": "And right there in a tiny apartment in New York,"
+    "start": 375.38,
+    "end": 378.06,
+    "timecode": "06:15 - 06:18",
+    "text": "And right there, in a tiny apartment in New York,"
   },
   {
     "id": 168,
-    "start": 439.08,
-    "end": 441.64,
-    "timecode": "07:19 - 07:21",
+    "start": 378.06,
+    "end": 380.26,
+    "timecode": "06:18 - 06:20",
     "text": "the founders discovered the dirty secret"
   },
   {
     "id": 169,
-    "start": 441.64,
-    "end": 443.92,
-    "timecode": "07:21 - 07:23",
+    "start": 380.26,
+    "end": 382.26,
+    "timecode": "06:20 - 06:22",
     "text": "behind why their company was failing."
   },
   {
     "id": 170,
-    "start": 443.92,
-    "end": 446.2,
-    "timecode": "07:23 - 07:26",
+    "start": 382.26,
+    "end": 384.26,
+    "timecode": "06:22 - 06:24",
     "text": "Their website didn't have a tech problem."
   },
   {
     "id": 171,
-    "start": 446.2,
-    "end": 447.92,
-    "timecode": "07:26 - 07:27",
+    "start": 384.26,
+    "end": 385.74,
+    "timecode": "06:24 - 06:25",
     "text": "It had a visual problem."
   },
   {
     "id": 172,
-    "start": 447.92,
-    "end": 449.88,
-    "timecode": "07:27 - 07:29",
+    "start": 385.74,
+    "end": 387.46,
+    "timecode": "06:25 - 06:27",
     "text": "Every listing on the site was shot"
   },
   {
     "id": 173,
-    "start": 449.88,
-    "end": 452.56,
-    "timecode": "07:29 - 07:32",
+    "start": 387.46,
+    "end": 389.78,
+    "timecode": "06:27 - 06:29",
     "text": "on cheap 2008 flip phones."
   },
   {
     "id": 174,
-    "start": 452.56,
-    "end": 456.36,
-    "timecode": "07:32 - 07:36",
+    "start": 389.78,
+    "end": 393.1,
+    "timecode": "06:29 - 06:33",
     "text": "The rooms were dark, blurry and looked like crime scenes."
   },
   {
     "id": 175,
-    "start": 456.36,
-    "end": 458.16,
-    "timecode": "07:36 - 07:38",
+    "start": 393.1,
+    "end": 394.7,
+    "timecode": "06:33 - 06:34",
     "text": "Nobody wanted to stay in a room"
   },
   {
     "id": 176,
-    "start": 458.16,
-    "end": 460.32,
-    "timecode": "07:38 - 07:40",
+    "start": 394.7,
+    "end": 396.58,
+    "timecode": "06:34 - 06:36",
     "text": "that looked like a basement hostage video."
   },
   {
     "id": 177,
-    "start": 460.32,
-    "end": 462.44,
-    "timecode": "07:40 - 07:42",
+    "start": 396.58,
+    "end": 398.42,
+    "timecode": "06:36 - 06:38",
     "text": "Brian took professional, bright,"
   },
   {
     "id": 178,
-    "start": 462.44,
-    "end": 465.96,
-    "timecode": "07:42 - 07:45",
+    "start": 398.42,
+    "end": 401.5,
+    "timecode": "06:38 - 06:41",
     "text": "wide-angle interior photos, uploaded them that evening."
   },
   {
     "id": 179,
-    "start": 465.96,
-    "end": 469.16,
-    "timecode": "07:45 - 07:49",
+    "start": 401.5,
+    "end": 404.34,
+    "timecode": "06:41 - 06:44",
     "text": "And within 30 days, bookings in New York doubled."
   },
   {
     "id": 180,
-    "start": 469.16,
-    "end": 470.2,
-    "timecode": "07:49 - 07:50",
+    "start": 404.34,
+    "end": 405.22,
+    "timecode": "06:44 - 06:45",
     "text": "Then they tripled."
   },
   {
     "id": 181,
-    "start": 470.2,
-    "end": 472.04,
-    "timecode": "07:50 - 07:52",
+    "start": 405.22,
+    "end": 406.82,
+    "timecode": "06:45 - 06:46",
     "text": "For the first time in two years,"
   },
   {
     "id": 182,
-    "start": 472.04,
-    "end": 474.16,
-    "timecode": "07:52 - 07:54",
+    "start": 406.82,
+    "end": 408.66,
+    "timecode": "06:46 - 06:48",
     "text": "revenue started rocketing up."
   },
   {
     "id": 183,
-    "start": 474.16,
-    "end": 475.72,
-    "timecode": "07:54 - 07:55",
+    "start": 408.66,
+    "end": 410.06,
+    "timecode": "06:48 - 06:50",
     "text": "The New York photography hack"
   },
   {
     "id": 184,
-    "start": 475.72,
-    "end": 478.28,
-    "timecode": "07:55 - 07:58",
+    "start": 410.06,
+    "end": 412.3,
+    "timecode": "06:50 - 06:52",
     "text": "proved people actually wanted to book unique homes,"
   },
   {
     "id": 185,
-    "start": 478.28,
-    "end": 479.96,
-    "timecode": "07:58 - 07:59",
+    "start": 412.3,
+    "end": 413.74,
+    "timecode": "06:52 - 06:53",
     "text": "but now they hit a new wall."
   },
   {
     "id": 186,
-    "start": 479.96,
-    "end": 483.12,
-    "timecode": "07:59 - 08:03",
+    "start": 413.74,
+    "end": 416.5,
+    "timecode": "06:53 - 06:56",
     "text": "They had no money to market the company nationwide."
   },
   {
     "id": 187,
-    "start": 483.12,
-    "end": 485.96,
-    "timecode": "08:03 - 08:05",
+    "start": 416.5,
+    "end": 418.98,
+    "timecode": "06:56 - 06:58",
     "text": "They couldn't afford expensive Google search ads"
   },
   {
     "id": 188,
-    "start": 485.96,
-    "end": 488.8,
-    "timecode": "08:05 - 08:08",
+    "start": 418.98,
+    "end": 421.46,
+    "timecode": "06:58 - 07:01",
     "text": "and billboard companies wouldn't even return their calls."
   },
   {
     "id": 189,
-    "start": 488.8,
-    "end": 491.52,
-    "timecode": "08:08 - 08:11",
-    "text": "So the founders looked at the biggest online real estate"
+    "start": 421.46,
+    "end": 422.9,
+    "timecode": "07:01 - 07:02",
+    "text": "So the founders looked at the biggest"
   },
   {
     "id": 190,
-    "start": 491.52,
-    "end": 493.92,
-    "timecode": "08:11 - 08:13",
-    "text": "classified site on the planet."
+    "start": 422.9,
+    "end": 425.94,
+    "timecode": "07:02 - 07:05",
+    "text": "online real estate classified site on a planet."
   },
   {
     "id": 191,
-    "start": 493.92,
-    "end": 498.16,
-    "timecode": "08:13 - 08:18",
+    "start": 425.94,
+    "end": 429.66,
+    "timecode": "07:05 - 07:09",
     "text": "Craigslist, in 2010, Craigslist had over 50 million"
   },
   {
     "id": 192,
-    "start": 498.16,
-    "end": 501.92,
-    "timecode": "08:18 - 08:21",
+    "start": 429.66,
+    "end": 432.94,
+    "timecode": "07:09 - 07:12",
     "text": "active visitors looking for housing every single month."
   },
   {
     "id": 193,
-    "start": 501.92,
-    "end": 504.28,
-    "timecode": "08:21 - 08:24",
+    "start": 432.94,
+    "end": 434.98,
+    "timecode": "07:12 - 07:14",
     "text": "But they had zero public API."
   },
   {
     "id": 194,
-    "start": 504.28,
-    "end": 506.68,
-    "timecode": "08:24 - 08:26",
+    "start": 434.98,
+    "end": 437.14,
+    "timecode": "07:14 - 07:17",
     "text": "There was no official way to plug another company"
   },
   {
     "id": 195,
-    "start": 506.68,
-    "end": 507.88,
-    "timecode": "08:26 - 08:27",
+    "start": 437.14,
+    "end": 438.14,
+    "timecode": "07:17 - 07:18",
     "text": "into their system."
   },
   {
     "id": 196,
-    "start": 507.88,
-    "end": 510.44,
-    "timecode": "08:27 - 08:30",
+    "start": 438.14,
+    "end": 440.38,
+    "timecode": "07:18 - 07:20",
     "text": "So Airbnb's technical team pulled off"
   },
   {
     "id": 197,
-    "start": 510.44,
-    "end": 514.24,
-    "timecode": "08:30 - 08:34",
-    "text": "one of the most audacious, legally great growth hacks"
+    "start": 440.38,
+    "end": 443.7,
+    "timecode": "07:20 - 07:23",
+    "text": "one of the most audacious, legally gray growth hacks"
   },
   {
     "id": 198,
-    "start": 514.24,
-    "end": 515.56,
-    "timecode": "08:34 - 08:35",
+    "start": 443.7,
+    "end": 444.82,
+    "timecode": "07:23 - 07:24",
     "text": "in internet history."
   },
   {
     "id": 199,
-    "start": 515.56,
-    "end": 519.16,
-    "timecode": "08:35 - 08:39",
+    "start": 444.82,
+    "end": 447.98,
+    "timecode": "07:24 - 07:27",
     "text": "They reverse engineered Craigslist form submissions."
   },
   {
     "id": 200,
-    "start": 519.16,
-    "end": 521.8,
-    "timecode": "08:39 - 08:41",
+    "start": 447.98,
+    "end": 450.3,
+    "timecode": "07:27 - 07:30",
     "text": "Whenever a host created a listing on Airbnb,"
   },
   {
     "id": 201,
-    "start": 521.8,
-    "end": 524.0,
-    "timecode": "08:41 - 08:44",
+    "start": 450.3,
+    "end": 452.22,
+    "timecode": "07:30 - 07:32",
     "text": "a simple checkbox popped up."
   },
   {
     "id": 202,
-    "start": 524.0,
-    "end": 526.88,
-    "timecode": "08:44 - 08:46",
+    "start": 452.22,
+    "end": 454.7,
+    "timecode": "07:32 - 07:34",
     "text": "Would you also like to post this listing to Craigslist?"
   },
   {
     "id": 203,
-    "start": 526.88,
-    "end": 528.44,
-    "timecode": "08:46 - 08:48",
+    "start": 454.7,
+    "end": 456.1,
+    "timecode": "07:34 - 07:36",
     "text": "If the host clicked yes,"
   },
   {
     "id": 204,
-    "start": 528.44,
-    "end": 531.56,
-    "timecode": "08:48 - 08:51",
+    "start": 456.1,
+    "end": 458.78,
+    "timecode": "07:36 - 07:38",
     "text": "a custom script automatically formatted the listing,"
   },
   {
     "id": 205,
-    "start": 531.56,
-    "end": 534.36,
-    "timecode": "08:51 - 08:54",
-    "text": "bypass Craigslist anti-spam filters,"
+    "start": 458.78,
+    "end": 461.26,
+    "timecode": "07:38 - 07:41",
+    "text": "bypass Craigslist's anti-spam filters,"
   },
   {
     "id": 206,
-    "start": 534.36,
-    "end": 537.72,
-    "timecode": "08:54 - 08:57",
+    "start": 461.26,
+    "end": 464.18,
+    "timecode": "07:41 - 07:44",
     "text": "published it to millions of Craigslist department hunters,"
   },
   {
     "id": 207,
-    "start": 537.72,
-    "end": 540.48,
-    "timecode": "08:57 - 09:00",
-    "text": "and inserted a clean clickable link reading."
+    "start": 464.18,
+    "end": 466.62,
+    "timecode": "07:44 - 07:46",
+    "text": "and inserted a clean, clickable link reading."
   },
   {
     "id": 208,
-    "start": 540.48,
-    "end": 544.48,
-    "timecode": "09:00 - 09:04",
+    "start": 466.62,
+    "end": 470.06,
+    "timecode": "07:46 - 07:50",
     "text": "Check availability and book securely on Airbnb."
   },
   {
     "id": 209,
-    "start": 544.48,
-    "end": 545.48,
-    "timecode": "09:04 - 09:05",
+    "start": 470.06,
+    "end": 470.94,
+    "timecode": "07:50 - 07:50",
     "text": "It was brilliant."
   },
   {
     "id": 210,
-    "start": 545.48,
-    "end": 547.8,
-    "timecode": "09:05 - 09:07",
-    "text": "It was completely unauthorized."
+    "start": 470.94,
+    "end": 472.98,
+    "timecode": "07:50 - 07:52",
+    "text": "It was completely unauthorized,"
   },
   {
     "id": 211,
-    "start": 547.8,
-    "end": 550.88,
-    "timecode": "09:07 - 09:10",
-    "text": "And it siphoned millions of high intent travelers."
+    "start": 472.98,
+    "end": 475.66,
+    "timecode": "07:52 - 07:55",
+    "text": "and it siphoned millions of high intent travelers."
   },
   {
     "id": 212,
-    "start": 550.88,
-    "end": 554.32,
-    "timecode": "09:10 - 09:14",
+    "start": 475.66,
+    "end": 478.7,
+    "timecode": "07:55 - 07:58",
     "text": "Directly off Craigslist servers for exactly $0"
   },
   {
     "id": 213,
-    "start": 554.32,
-    "end": 555.72,
-    "timecode": "09:14 - 09:15",
+    "start": 478.7,
+    "end": 479.9,
+    "timecode": "07:58 - 07:59",
     "text": "in marketing spend."
   },
   {
     "id": 214,
-    "start": 555.72,
-    "end": 559.6,
-    "timecode": "09:15 - 09:19",
+    "start": 479.9,
+    "end": 483.3,
+    "timecode": "07:59 - 08:03",
     "text": "By the time Craigslist realized their classified section"
   },
   {
     "id": 215,
-    "start": 559.6,
-    "end": 562.6,
-    "timecode": "09:19 - 09:22",
+    "start": 483.3,
+    "end": 485.9,
+    "timecode": "08:03 - 08:05",
     "text": "was being used as a free customer acquisition funnel"
   },
   {
     "id": 216,
-    "start": 562.6,
-    "end": 565.0,
-    "timecode": "09:22 - 09:25",
+    "start": 485.9,
+    "end": 488.06,
+    "timecode": "08:05 - 08:08",
     "text": "and shut it down, Airbnb was already"
   },
   {
     "id": 217,
-    "start": 565.0,
-    "end": 567.52,
-    "timecode": "09:25 - 09:27",
+    "start": 488.06,
+    "end": 490.22,
+    "timecode": "08:08 - 08:10",
     "text": "an unstoppable global juggernaut."
   },
   {
     "id": 218,
-    "start": 567.52,
-    "end": 571.36,
-    "timecode": "09:27 - 09:31",
+    "start": 490.22,
+    "end": 493.58,
+    "timecode": "08:10 - 08:13",
     "text": "Over the next decade, from 2011 to 2019,"
   },
   {
     "id": 219,
-    "start": 571.36,
-    "end": 573.2,
-    "timecode": "09:31 - 09:33",
+    "start": 493.58,
+    "end": 495.18,
+    "timecode": "08:13 - 08:15",
     "text": "nothing could slow them down."
   },
   {
     "id": 220,
-    "start": 573.2,
-    "end": 576.6,
-    "timecode": "09:33 - 09:36",
-    "text": "Venture capital giants like Sequoia poured in hundreds"
+    "start": 495.18,
+    "end": 497.46,
+    "timecode": "08:15 - 08:17",
+    "text": "Venture capital giants like Sequoia poured"
   },
   {
     "id": 221,
-    "start": 576.6,
-    "end": 578.32,
-    "timecode": "09:36 - 09:38",
-    "text": "of millions of dollars."
+    "start": 497.46,
+    "end": 499.66,
+    "timecode": "08:17 - 08:19",
+    "text": "in hundreds of millions of dollars."
   },
   {
     "id": 222,
-    "start": 578.32,
-    "end": 581.92,
-    "timecode": "09:38 - 09:41",
+    "start": 499.66,
+    "end": 502.78,
+    "timecode": "08:19 - 08:22",
     "text": "The platform exploded from an air bed in San Francisco"
   },
   {
     "id": 223,
-    "start": 581.92,
-    "end": 586.08,
-    "timecode": "09:41 - 09:46",
+    "start": 502.78,
+    "end": 506.42,
+    "timecode": "08:22 - 08:26",
     "text": "to seven million listings across 80,000 cities worldwide."
   },
   {
     "id": 224,
-    "start": 586.08,
-    "end": 589.52,
-    "timecode": "09:46 - 09:49",
+    "start": 506.42,
+    "end": 509.46,
+    "timecode": "08:26 - 08:29",
     "text": "Traditional hotel chains with their sterile lobbies,"
   },
   {
     "id": 225,
-    "start": 589.52,
-    "end": 592.76,
-    "timecode": "09:49 - 09:52",
+    "start": 509.46,
+    "end": 512.26,
+    "timecode": "08:29 - 08:32",
     "text": "expensive room service, and stiff front desks"
   },
   {
     "id": 226,
-    "start": 592.76,
-    "end": 594.12,
-    "timecode": "09:52 - 09:54",
+    "start": 512.26,
+    "end": 513.42,
+    "timecode": "08:32 - 08:33",
     "text": "were getting slaughtered."
   },
   {
     "id": 227,
-    "start": 594.12,
-    "end": 597.6,
-    "timecode": "09:54 - 09:57",
+    "start": 513.42,
+    "end": 516.5,
+    "timecode": "08:33 - 08:36",
     "text": "By two design grads who let people stay in private villas,"
   },
   {
     "id": 228,
-    "start": 597.6,
-    "end": 600.48,
-    "timecode": "09:57 - 10:00",
+    "start": 516.5,
+    "end": 519.02,
+    "timecode": "08:36 - 08:39",
     "text": "rustic tree houses, and beach front-offs,"
   },
   {
     "id": 229,
-    "start": 600.48,
-    "end": 602.44,
-    "timecode": "10:00 - 10:02",
+    "start": 519.02,
+    "end": 520.74,
+    "timecode": "08:39 - 08:40",
     "text": "the founders had conquered the world."
   },
   {
     "id": 230,
-    "start": 602.44,
-    "end": 604.88,
-    "timecode": "10:02 - 10:04",
+    "start": 520.74,
+    "end": 522.86,
+    "timecode": "08:40 - 08:42",
     "text": "And then March 2020 arrived."
   },
   {
     "id": 231,
-    "start": 604.88,
-    "end": 609.24,
-    "timecode": "10:04 - 10:09",
+    "start": 522.86,
+    "end": 526.66,
+    "timecode": "08:42 - 08:46",
     "text": "In literally eight weeks, the entire global travel industry"
   },
   {
     "id": 232,
-    "start": 609.24,
-    "end": 611.68,
-    "timecode": "10:09 - 10:11",
+    "start": 526.66,
+    "end": 528.78,
+    "timecode": "08:46 - 08:48",
     "text": "vanished off the face of the earth."
   },
   {
     "id": 233,
-    "start": 611.68,
-    "end": 614.88,
-    "timecode": "10:11 - 10:14",
+    "start": 528.78,
+    "end": 531.58,
+    "timecode": "08:48 - 08:51",
     "text": "Airbnb's bookings collapsed by 80%."
   },
   {
     "id": 234,
-    "start": 614.88,
-    "end": 618.36,
-    "timecode": "10:14 - 10:18",
+    "start": 531.58,
+    "end": 534.62,
+    "timecode": "08:51 - 08:54",
     "text": "The company was forced to issue over $1 billion"
   },
   {
     "id": 235,
-    "start": 618.36,
-    "end": 622.64,
-    "timecode": "10:18 - 10:22",
+    "start": 534.62,
+    "end": 538.34,
+    "timecode": "08:54 - 08:58",
     "text": "in cash refunds to furious travelers out of its own reserves."
   },
   {
     "id": 236,
-    "start": 622.64,
-    "end": 627.36,
-    "timecode": "10:22 - 10:27",
+    "start": 538.34,
+    "end": 542.46,
+    "timecode": "08:58 - 09:02",
     "text": "On May 5, 2020, Brian Cheskey had a hold back tears"
   },
   {
     "id": 237,
-    "start": 627.36,
-    "end": 629.16,
-    "timecode": "10:27 - 10:29",
+    "start": 542.46,
+    "end": 544.02,
+    "timecode": "09:02 - 09:04",
     "text": "on a company wide video call."
   },
   {
     "id": 238,
-    "start": 629.16,
-    "end": 634.04,
-    "timecode": "10:29 - 10:34",
-    "text": "In layoff 1900 people, 25% of his workforce,"
+    "start": 544.02,
+    "end": 548.3,
+    "timecode": "09:04 - 09:08",
+    "text": "And lay off 1900 people, 25% of his workforce."
   },
   {
     "id": 239,
-    "start": 634.04,
-    "end": 637.32,
-    "timecode": "10:34 - 10:37",
+    "start": 548.3,
+    "end": 551.18,
+    "timecode": "09:08 - 09:11",
     "text": "Wall Street analysts declared the company dead in the water."
   },
   {
     "id": 240,
-    "start": 637.32,
-    "end": 640.44,
-    "timecode": "10:37 - 10:40",
+    "start": 551.18,
+    "end": 553.9,
+    "timecode": "09:11 - 09:13",
     "text": "Most founders would have declared bankruptcy right there."
   },
   {
     "id": 241,
-    "start": 640.44,
-    "end": 644.28,
-    "timecode": "10:40 - 10:44",
-    "text": "Instead, Cheskey stripped the company down to its bare metal."
+    "start": 553.9,
+    "end": 556.14,
+    "timecode": "09:13 - 09:16",
+    "text": "Instead, Cheskey stripped the company down"
   },
   {
     "id": 242,
-    "start": 644.28,
-    "end": 647.08,
-    "timecode": "10:44 - 10:47",
-    "text": "He killed expensive moonshot divisions,"
+    "start": 556.14,
+    "end": 557.26,
+    "timecode": "09:16 - 09:17",
+    "text": "to its bare metal."
   },
   {
     "id": 243,
-    "start": 647.08,
-    "end": 650.64,
-    "timecode": "10:47 - 10:50",
-    "text": "slash corporate overhead, and noticed something fascinating"
+    "start": 557.26,
+    "end": 559.7,
+    "timecode": "09:17 - 09:19",
+    "text": "He killed expensive moonshot divisions,"
   },
   {
     "id": 244,
-    "start": 650.64,
-    "end": 651.96,
-    "timecode": "10:50 - 10:51",
-    "text": "in the booking data."
+    "start": 559.7,
+    "end": 561.26,
+    "timecode": "09:19 - 09:21",
+    "text": "slash corporate overhead."
   },
   {
     "id": 245,
-    "start": 651.96,
-    "end": 654.68,
-    "timecode": "10:51 - 10:54",
-    "text": "People were terrified of getting on airplanes"
+    "start": 561.26,
+    "end": 563.94,
+    "timecode": "09:21 - 09:23",
+    "text": "And notice something fascinating in the booking data."
   },
   {
     "id": 246,
-    "start": 654.68,
-    "end": 657.56,
-    "timecode": "10:54 - 10:57",
-    "text": "to fly to crowded European capitals."
+    "start": 563.94,
+    "end": 566.34,
+    "timecode": "09:23 - 09:26",
+    "text": "People were terrified of getting on airplanes"
   },
   {
     "id": 247,
-    "start": 657.56,
-    "end": 659.88,
-    "timecode": "10:57 - 10:59",
-    "text": "But they were desperate to get out of their cramped city"
+    "start": 566.34,
+    "end": 568.82,
+    "timecode": "09:26 - 09:28",
+    "text": "to fly to crowded European capitals."
   },
   {
     "id": 248,
-    "start": 659.88,
-    "end": 660.92,
-    "timecode": "10:59 - 11:00",
-    "text": "apartments."
+    "start": 568.82,
+    "end": 570.02,
+    "timecode": "09:28 - 09:30",
+    "text": "But they were desperate to get out"
   },
   {
     "id": 249,
-    "start": 660.92,
-    "end": 664.08,
-    "timecode": "11:00 - 11:04",
-    "text": "Millions of remote workers were packing their cars"
+    "start": 570.02,
+    "end": 571.78,
+    "timecode": "09:30 - 09:31",
+    "text": "of their cramped city apartments."
   },
   {
     "id": 250,
-    "start": 664.08,
-    "end": 666.68,
-    "timecode": "11:04 - 11:06",
-    "text": "and driving two hours into the mountains"
+    "start": 571.78,
+    "end": 574.54,
+    "timecode": "09:31 - 09:34",
+    "text": "Millions of remote workers were packing their cars"
   },
   {
     "id": 251,
-    "start": 666.68,
-    "end": 670.88,
-    "timecode": "11:06 - 11:10",
-    "text": "to rent secluded cabins with fast Wi-Fi for months at a time."
+    "start": 574.54,
+    "end": 576.82,
+    "timecode": "09:34 - 09:36",
+    "text": "and driving two hours into the mountains"
   },
   {
     "id": 252,
-    "start": 670.88,
-    "end": 672.84,
-    "timecode": "11:10 - 11:12",
-    "text": "The staycation boom was born."
+    "start": 576.82,
+    "end": 580.5,
+    "timecode": "09:36 - 09:40",
+    "text": "to rent secluded cabins with fast Wi-Fi for months at a time."
   },
   {
     "id": 253,
-    "start": 672.84,
-    "end": 676.24,
-    "timecode": "11:12 - 11:16",
-    "text": "By the end of the year, Airbnb wasn't just surviving."
+    "start": 580.5,
+    "end": 582.22,
+    "timecode": "09:40 - 09:42",
+    "text": "The stocation boom was born."
   },
   {
     "id": 254,
-    "start": 676.24,
-    "end": 680.76,
-    "timecode": "11:16 - 11:20",
-    "text": "It was posting record cash flow on December 10, 2020,"
+    "start": 582.22,
+    "end": 585.18,
+    "timecode": "09:42 - 09:45",
+    "text": "By the end of the year, Airbnb wasn't just surviving."
   },
   {
     "id": 255,
-    "start": 680.76,
-    "end": 683.08,
-    "timecode": "11:20 - 11:23",
-    "text": "right in the middle of a global crisis."
+    "start": 585.18,
+    "end": 589.1,
+    "timecode": "09:45 - 09:49",
+    "text": "It was posting record cash flow on December 10, 2020,"
   },
   {
     "id": 256,
-    "start": 683.08,
-    "end": 686.44,
-    "timecode": "11:23 - 11:26",
-    "text": "Airbnb pulled off one of the most miraculous Wall Street"
+    "start": 589.1,
+    "end": 591.14,
+    "timecode": "09:49 - 09:51",
+    "text": "right in the middle of a global crisis."
   },
   {
     "id": 257,
-    "start": 686.44,
-    "end": 688.8,
-    "timecode": "11:26 - 11:28",
-    "text": "debuts in financial history."
+    "start": 591.14,
+    "end": 593.46,
+    "timecode": "09:51 - 09:53",
+    "text": "Airbnb pulled off one of the most miraculous"
   },
   {
     "id": 258,
-    "start": 688.8,
-    "end": 690.68,
-    "timecode": "11:28 - 11:30",
-    "text": "The stock opened on the NASDAQ,"
+    "start": 593.46,
+    "end": 596.14,
+    "timecode": "09:53 - 09:56",
+    "text": "Wall Street debuts in financial history."
   },
   {
     "id": 259,
-    "start": 690.68,
-    "end": 692.96,
-    "timecode": "11:30 - 11:32",
-    "text": "doubled on its very first day of trading,"
+    "start": 596.14,
+    "end": 597.78,
+    "timecode": "09:56 - 09:57",
+    "text": "The stock opened on the NASDAQ,"
   },
   {
     "id": 260,
-    "start": 692.96,
-    "end": 697.2,
-    "timecode": "11:32 - 11:37",
-    "text": "and valued the company at over $100 billion."
+    "start": 597.78,
+    "end": 599.78,
+    "timecode": "09:57 - 09:59",
+    "text": "doubled on its very first day of trading,"
   },
   {
     "id": 261,
-    "start": 697.2,
-    "end": 699.4,
-    "timecode": "11:37 - 11:39",
-    "text": "The broke design school graduate, who"
+    "start": 599.78,
+    "end": 603.5,
+    "timecode": "09:59 - 10:03",
+    "text": "and valued the company at over $100 billion."
   },
   {
     "id": 262,
-    "start": 699.4,
-    "end": 702.88,
-    "timecode": "11:39 - 11:42",
-    "text": "is three days from an eviction notice in 2007,"
+    "start": 603.5,
+    "end": 605.3,
+    "timecode": "10:03 - 10:05",
+    "text": "The broke design school graduate,"
   },
   {
     "id": 263,
-    "start": 702.88,
-    "end": 706.76,
-    "timecode": "11:42 - 11:46",
-    "text": "was now running the most valuable travel company on the planet."
+    "start": 605.3,
+    "end": 608.46,
+    "timecode": "10:05 - 10:08",
+    "text": "who is three days from an eviction notice in 2007,"
   },
   {
     "id": 264,
-    "start": 706.76,
-    "end": 710.36,
-    "timecode": "11:46 - 11:50",
-    "text": "This is where the story stops being an inspirational poster"
+    "start": 608.46,
+    "end": 611.78,
+    "timecode": "10:08 - 10:11",
+    "text": "was now running the most valuable travel company on the planet."
   },
   {
     "id": 265,
-    "start": 710.36,
-    "end": 713.32,
-    "timecode": "11:50 - 11:53",
-    "text": "for young entrepreneurs and turns it to a corporate horror"
+    "start": 611.78,
+    "end": 614.94,
+    "timecode": "10:11 - 10:14",
+    "text": "This is where the story stops being an inspirational poster"
   },
   {
     "id": 266,
-    "start": 713.32,
-    "end": 714.16,
-    "timecode": "11:53 - 11:54",
-    "text": "movie."
+    "start": 614.94,
+    "end": 618.26,
+    "timecode": "10:14 - 10:18",
+    "text": "for young entrepreneurs and turns into a corporate horror movie."
   },
   {
     "id": 267,
-    "start": 714.16,
-    "end": 717.36,
-    "timecode": "11:54 - 11:57",
+    "start": 618.26,
+    "end": 621.06,
+    "timecode": "10:18 - 10:21",
     "text": "Because when a company reaches $100 billion,"
   },
   {
     "id": 268,
-    "start": 717.36,
-    "end": 720.68,
-    "timecode": "11:57 - 12:00",
-    "text": "the original incentives warped beyond recognition."
+    "start": 621.06,
+    "end": 623.94,
+    "timecode": "10:21 - 10:23",
+    "text": "the original incentives warp beyond recognition."
   },
   {
     "id": 269,
-    "start": 720.68,
-    "end": 723.4,
-    "timecode": "12:00 - 12:03",
+    "start": 623.94,
+    "end": 626.3,
+    "timecode": "10:23 - 10:26",
     "text": "The everyday people who rented a spare room"
   },
   {
     "id": 270,
-    "start": 723.4,
-    "end": 726.52,
-    "timecode": "12:03 - 12:06",
+    "start": 626.3,
+    "end": 629.02,
+    "timecode": "10:26 - 10:29",
     "text": "to pay their rent or meet travelers from overseas."
   },
   {
     "id": 271,
-    "start": 726.52,
-    "end": 728.32,
-    "timecode": "12:06 - 12:08",
+    "start": 629.02,
+    "end": 630.62,
+    "timecode": "10:29 - 10:30",
     "text": "They got completely pushed out."
   },
   {
     "id": 272,
-    "start": 728.32,
-    "end": 732.92,
-    "timecode": "12:08 - 12:12",
-    "text": "Instead, Wall Street private equity funds and predatory landlords"
+    "start": 630.62,
+    "end": 633.18,
+    "timecode": "10:30 - 10:33",
+    "text": "Instead, Wall Street private equity funds"
   },
   {
     "id": 273,
-    "start": 732.92,
-    "end": 736.16,
-    "timecode": "12:12 - 12:16",
-    "text": "realized they could buy up entire apartment buildings,"
+    "start": 633.18,
+    "end": 635.1,
+    "timecode": "10:33 - 10:35",
+    "text": "and predatory landlords realized"
   },
   {
     "id": 274,
-    "start": 736.16,
-    "end": 740.32,
-    "timecode": "12:16 - 12:20",
-    "text": "kick out local families and run unlicensed commercial shadow"
+    "start": 635.1,
+    "end": 637.46,
+    "timecode": "10:35 - 10:37",
+    "text": "they could buy up entire apartment buildings."
   },
   {
     "id": 275,
-    "start": 740.32,
-    "end": 741.52,
-    "timecode": "12:20 - 12:21",
-    "text": "hotels."
+    "start": 637.46,
+    "end": 640.22,
+    "timecode": "10:37 - 10:40",
+    "text": "Kick out local families and run unlicensed"
   },
   {
     "id": 276,
-    "start": 741.52,
-    "end": 746.36,
-    "timecode": "12:21 - 12:26",
-    "text": "By 2022 and 2023, you would browse Airbnb,"
+    "start": 640.22,
+    "end": 642.18,
+    "timecode": "10:40 - 10:42",
+    "text": "commercial shadow hotels."
   },
   {
     "id": 277,
-    "start": 746.36,
-    "end": 750.16,
-    "timecode": "12:26 - 12:30",
-    "text": "find a nice apartment listed for $150 a night,"
+    "start": 642.18,
+    "end": 646.42,
+    "timecode": "10:42 - 10:46",
+    "text": "By 2022 and 2023, you would browse Airbnb,"
   },
   {
     "id": 278,
-    "start": 750.16,
-    "end": 751.24,
-    "timecode": "12:30 - 12:31",
-    "text": "and click checkout."
+    "start": 646.42,
+    "end": 649.74,
+    "timecode": "10:46 - 10:49",
+    "text": "find a nice apartment listed for $150 a night,"
   },
   {
     "id": 279,
-    "start": 751.24,
-    "end": 754.88,
-    "timecode": "12:31 - 12:34",
-    "text": "Suddenly, the bill exploded to $400."
+    "start": 649.74,
+    "end": 650.66,
+    "timecode": "10:49 - 10:50",
+    "text": "and click checkout."
   },
   {
     "id": 280,
-    "start": 754.88,
-    "end": 759.52,
-    "timecode": "12:34 - 12:39",
-    "text": "$70 in platform service fees, $40 in occupancy taxes,"
+    "start": 650.66,
+    "end": 653.86,
+    "timecode": "10:50 - 10:53",
+    "text": "Suddenly, the bill exploded to $400."
   },
   {
     "id": 281,
-    "start": 759.52,
-    "end": 762.2,
-    "timecode": "12:39 - 12:42",
-    "text": "and a staggering $180 cleaning fee."
+    "start": 653.86,
+    "end": 657.9,
+    "timecode": "10:53 - 10:57",
+    "text": "$70 in platform service fees, $40 in occupancy taxes,"
   },
   {
     "id": 282,
-    "start": 762.2,
-    "end": 765.0,
-    "timecode": "12:42 - 12:45",
-    "text": "In the ultimate punchline, you unlock the front door"
+    "start": 657.9,
+    "end": 660.26,
+    "timecode": "10:57 - 11:00",
+    "text": "and a staggering $180 cleaning fee."
   },
   {
     "id": 283,
-    "start": 765.0,
-    "end": 767.6,
-    "timecode": "12:45 - 12:47",
-    "text": "after an eight-hour flight, and sitting on the kitchen"
+    "start": 660.26,
+    "end": 661.54,
+    "timecode": "11:00 - 11:01",
+    "text": "In the ultimate punchline,"
   },
   {
     "id": 284,
-    "start": 767.6,
-    "end": 770.2,
-    "timecode": "12:47 - 12:50",
-    "text": "counter was a laminated chore list."
+    "start": 661.54,
+    "end": 664.18,
+    "timecode": "11:01 - 11:04",
+    "text": "you unlock the front door after an eight-hour flight,"
   },
   {
     "id": 285,
-    "start": 770.2,
-    "end": 774.32,
-    "timecode": "12:50 - 12:54",
-    "text": "Strip all the bed sheets, wash the linens, run the dishwasher,"
+    "start": 664.18,
+    "end": 667.22,
+    "timecode": "11:04 - 11:07",
+    "text": "and sitting on the kitchen counter was a laminated chore list."
   },
   {
     "id": 286,
-    "start": 774.32,
-    "end": 776.84,
-    "timecode": "12:54 - 12:56",
-    "text": "wipe down the baseboards, take out the trash,"
+    "start": 667.22,
+    "end": 669.74,
+    "timecode": "11:07 - 11:09",
+    "text": "Strip all the bed sheets, wash the linens,"
   },
   {
     "id": 287,
-    "start": 776.84,
-    "end": 779.32,
-    "timecode": "12:56 - 12:59",
-    "text": "and drive your garbage bags four miles away"
+    "start": 669.74,
+    "end": 671.78,
+    "timecode": "11:09 - 11:11",
+    "text": "run the dishwasher, wipe down the baseboards,"
   },
   {
     "id": 288,
-    "start": 779.32,
-    "end": 781.16,
-    "timecode": "12:59 - 13:01",
-    "text": "to the local municipal dump."
+    "start": 671.78,
+    "end": 674.34,
+    "timecode": "11:11 - 11:14",
+    "text": "take out the trash, and drive your garbage bags"
   },
   {
     "id": 289,
-    "start": 781.16,
-    "end": 785.16,
-    "timecode": "13:01 - 13:05",
-    "text": "Guests looked at the $400 bill, looked at the mop in their hands,"
+    "start": 674.34,
+    "end": 676.78,
+    "timecode": "11:14 - 11:16",
+    "text": "four miles away to the local municipal dump."
   },
   {
     "id": 290,
-    "start": 785.16,
-    "end": 787.28,
-    "timecode": "13:05 - 13:07",
-    "text": "and realized the absurd truth."
+    "start": 676.78,
+    "end": 678.42,
+    "timecode": "11:16 - 11:18",
+    "text": "Guess looked at the $400 bill,"
   },
   {
     "id": 291,
-    "start": 787.28,
-    "end": 791.84,
-    "timecode": "13:07 - 13:11",
-    "text": "They were paying luxury hotel prices to do unpaid manual labor"
+    "start": 678.42,
+    "end": 680.26,
+    "timecode": "11:18 - 11:20",
+    "text": "looked at the mop in their hands,"
   },
   {
     "id": 292,
-    "start": 791.84,
-    "end": 795.76,
-    "timecode": "13:11 - 13:15",
-    "text": "for an absentee landlord who wasn't even in the same state."
+    "start": 680.26,
+    "end": 682.1,
+    "timecode": "11:20 - 11:22",
+    "text": "and realized the absurd truth."
   },
   {
     "id": 293,
-    "start": 795.76,
-    "end": 797.6,
-    "timecode": "13:15 - 13:17",
-    "text": "Social media erupted."
+    "start": 682.1,
+    "end": 684.22,
+    "timecode": "11:22 - 11:24",
+    "text": "They were paying luxury hotel prices"
   },
   {
     "id": 294,
-    "start": 797.6,
-    "end": 800.12,
-    "timecode": "13:17 - 13:20",
-    "text": "Millions of viral TikToks and tweets"
+    "start": 684.22,
+    "end": 687.66,
+    "timecode": "11:24 - 11:27",
+    "text": "to do unpaid manual labor for an absentee landlord"
   },
   {
     "id": 295,
-    "start": 800.12,
-    "end": 802.88,
-    "timecode": "13:20 - 13:22",
-    "text": "started posting the exact same headline."
+    "start": 687.66,
+    "end": 689.54,
+    "timecode": "11:27 - 11:29",
+    "text": "who wasn't even in the same state."
   },
   {
     "id": 296,
-    "start": 802.88,
-    "end": 806.72,
-    "timecode": "13:22 - 13:26",
-    "text": "Hotels won because a hotel never hands you a mop,"
+    "start": 689.54,
+    "end": 691.14,
+    "timecode": "11:29 - 11:31",
+    "text": "Social media erupted."
   },
   {
     "id": 297,
-    "start": 806.72,
-    "end": 810.12,
-    "timecode": "13:26 - 13:30",
-    "text": "or charges you a hidden cleaning fee, just to sleep in their bed."
+    "start": 691.14,
+    "end": 693.38,
+    "timecode": "11:31 - 11:33",
+    "text": "Millions of viral TikToks and tweets"
   },
   {
     "id": 298,
-    "start": 810.12,
-    "end": 812.2,
-    "timecode": "13:30 - 13:32",
-    "text": "Then came the government guillotine."
+    "start": 693.38,
+    "end": 695.74,
+    "timecode": "11:33 - 11:35",
+    "text": "started posting the exact same headline."
   },
   {
     "id": 299,
-    "start": 812.2,
-    "end": 816.0,
-    "timecode": "13:32 - 13:36",
-    "text": "Communities blamed short-term rentals for destroying neighborhoods,"
+    "start": 695.74,
+    "end": 699.1,
+    "timecode": "11:35 - 11:39",
+    "text": "Hotels won because a hotel never hands you a mop,"
   },
   {
     "id": 300,
-    "start": 816.0,
-    "end": 818.64,
-    "timecode": "13:36 - 13:38",
-    "text": "and pricing local workers out of housing."
+    "start": 699.1,
+    "end": 700.9,
+    "timecode": "11:39 - 11:40",
+    "text": "or charges you a hidden cleaning fee,"
   },
   {
     "id": 301,
-    "start": 818.64,
-    "end": 823.32,
-    "timecode": "13:38 - 13:43",
-    "text": "In September 2023, New York City dropped a hammer with local lie"
+    "start": 700.9,
+    "end": 702.06,
+    "timecode": "11:40 - 11:42",
+    "text": "just to sleep in their bed."
   },
   {
     "id": 302,
-    "start": 824.32,
-    "end": 827.92,
-    "timecode": "13:44 - 13:47",
-    "text": "making unhosted short-term rentals virtually illegal,"
+    "start": 702.06,
+    "end": 703.86,
+    "timecode": "11:42 - 11:43",
+    "text": "Then came the government guillotine,"
   },
   {
     "id": 303,
-    "start": 827.92,
-    "end": 833.28,
-    "timecode": "13:47 - 13:53",
-    "text": "and wiping out over 80% of Airbnb's New York listings overnight."
+    "start": 703.86,
+    "end": 705.74,
+    "timecode": "11:43 - 11:45",
+    "text": "communities blamed short-term rentals"
   },
   {
     "id": 304,
-    "start": 833.28,
-    "end": 837.96,
-    "timecode": "13:53 - 13:57",
-    "text": "Barcelona went even further announcing that by November 20,"
+    "start": 705.74,
+    "end": 707.22,
+    "timecode": "11:45 - 11:47",
+    "text": "for destroying neighborhoods,"
   },
   {
     "id": 305,
-    "start": 837.96,
-    "end": 840.84,
-    "timecode": "13:57 - 14:00",
-    "text": "all 10,000 tourist departments in the city"
+    "start": 707.22,
+    "end": 709.5,
+    "timecode": "11:47 - 11:49",
+    "text": "and pricing local workers out of housing."
   },
   {
     "id": 306,
-    "start": 840.84,
-    "end": 842.72,
-    "timecode": "14:00 - 14:02",
-    "text": "will be completely wiped out."
+    "start": 709.5,
+    "end": 712.9,
+    "timecode": "11:49 - 11:52",
+    "text": "In September 2023, New York City dropped the hammer"
   },
   {
     "id": 307,
-    "start": 842.72,
-    "end": 845.48,
-    "timecode": "14:02 - 14:05",
-    "text": "Cities from Florence to Berlin slammed down"
+    "start": 712.9,
+    "end": 714.58,
+    "timecode": "11:52 - 11:54",
+    "text": "with local lie-18,"
   },
   {
     "id": 308,
-    "start": 845.48,
-    "end": 848.72,
-    "timecode": "14:05 - 14:08",
-    "text": "aggressive 90-day caps and zoning bands."
+    "start": 714.58,
+    "end": 717.7,
+    "timecode": "11:54 - 11:57",
+    "text": "making unhosted short-term rentals virtually illegal,"
   },
   {
     "id": 309,
-    "start": 848.72,
-    "end": 853.28,
-    "timecode": "14:08 - 14:13",
-    "text": "The company that started because a kid couldn't afford his rent in 2007."
+    "start": 717.7,
+    "end": 722.38,
+    "timecode": "11:57 - 12:02",
+    "text": "and wiping out over 80% of Airbnb's New York listings overnight."
   },
   {
     "id": 310,
-    "start": 853.8,
-    "end": 856.56,
-    "timecode": "14:13 - 14:16",
-    "text": "Was now accused of making rent unaffordable"
+    "start": 722.38,
+    "end": 724.38,
+    "timecode": "12:02 - 12:04",
+    "text": "Barcelona went even further,"
   },
   {
     "id": 311,
-    "start": 856.56,
-    "end": 858.52,
-    "timecode": "14:16 - 14:18",
-    "text": "for an entire generation."
+    "start": 724.38,
+    "end": 726.5,
+    "timecode": "12:04 - 12:06",
+    "text": "announcing that by November, 2028,"
   },
   {
     "id": 312,
-    "start": 858.52,
-    "end": 860.04,
-    "timecode": "14:18 - 14:20",
-    "text": "That brings us to right now."
+    "start": 726.5,
+    "end": 728.98,
+    "timecode": "12:06 - 12:08",
+    "text": "all 10,000 tourist departments in the city"
   },
   {
     "id": 313,
-    "start": 860.04,
-    "end": 863.48,
-    "timecode": "14:20 - 14:23",
-    "text": "Airbnb is still a massive financial machine."
+    "start": 728.98,
+    "end": 730.62,
+    "timecode": "12:08 - 12:10",
+    "text": "will be completely wiped out."
   },
   {
     "id": 314,
-    "start": 863.48,
-    "end": 866.68,
-    "timecode": "14:23 - 14:26",
-    "text": "Pulling in over $12 billion in annual revenue,"
+    "start": 730.62,
+    "end": 732.3,
+    "timecode": "12:10 - 12:12",
+    "text": "Cities from Florence to Berlin,"
   },
   {
     "id": 315,
-    "start": 866.68,
-    "end": 869.36,
-    "timecode": "14:26 - 14:29",
-    "text": "two and a half billion in net profit,"
+    "start": 732.3,
+    "end": 735.86,
+    "timecode": "12:12 - 12:15",
+    "text": "slammed down aggressive 90-day caps and zoning bands."
   },
   {
     "id": 316,
-    "start": 869.36,
-    "end": 873.44,
-    "timecode": "14:29 - 14:33",
-    "text": "and maintaining over 8 million active listings worldwide."
+    "start": 735.86,
+    "end": 737.7,
+    "timecode": "12:15 - 12:17",
+    "text": "The company that started because a kid"
   },
   {
     "id": 317,
-    "start": 873.44,
-    "end": 877.2,
-    "timecode": "14:33 - 14:37",
-    "text": "But the explosive hyper-growth era is officially dead."
+    "start": 737.7,
+    "end": 740.26,
+    "timecode": "12:17 - 12:20",
+    "text": "couldn't afford his rent in 2007,"
   },
   {
     "id": 318,
-    "start": 877.2,
-    "end": 881.12,
-    "timecode": "14:37 - 14:41",
-    "text": "Booking growth in mature markets has cooled to the single digits,"
+    "start": 740.26,
+    "end": 742.66,
+    "timecode": "12:20 - 12:22",
+    "text": "was now accused of making rent unaffordable"
   },
   {
     "id": 319,
-    "start": 881.12,
-    "end": 883.48,
-    "timecode": "14:41 - 14:43",
-    "text": "and the brand spent three straight years,"
+    "start": 742.66,
+    "end": 744.38,
+    "timecode": "12:22 - 12:24",
+    "text": "for an entire generation."
   },
   {
     "id": 320,
-    "start": 883.48,
-    "end": 886.16,
-    "timecode": "14:43 - 14:46",
-    "text": "getting roasted on every corner of the internet."
+    "start": 744.38,
+    "end": 745.7,
+    "timecode": "12:24 - 12:25",
+    "text": "That brings us to right now."
   },
   {
     "id": 321,
-    "start": 886.16,
-    "end": 890.72,
-    "timecode": "14:46 - 14:50",
-    "text": "So how is Brian Cheskey responding in 2025 and 2026?"
+    "start": 745.7,
+    "end": 748.7,
+    "timecode": "12:25 - 12:28",
+    "text": "Airbnb is still a massive financial machine,"
   },
   {
     "id": 322,
-    "start": 890.72,
-    "end": 894.8,
-    "timecode": "14:50 - 14:54",
-    "text": "By doing the one thing no proud founder ever wants to admit,"
+    "start": 748.7,
+    "end": 751.54,
+    "timecode": "12:28 - 12:31",
+    "text": "pulling in over $12 billion in annual revenue,"
   },
   {
     "id": 323,
-    "start": 894.8,
-    "end": 897.48,
-    "timecode": "14:54 - 14:57",
-    "text": "he is desperately fixing his own machine."
+    "start": 751.54,
+    "end": 753.82,
+    "timecode": "12:31 - 12:33",
+    "text": "two and a half billion in net profit,"
   },
   {
     "id": 324,
-    "start": 897.48,
-    "end": 900.28,
-    "timecode": "14:57 - 15:00",
-    "text": "Airbnb rolled out total price display,"
+    "start": 753.82,
+    "end": 757.38,
+    "timecode": "12:33 - 12:37",
+    "text": "and maintaining over 8 million active listings worldwide."
   },
   {
     "id": 325,
-    "start": 900.28,
-    "end": 903.68,
-    "timecode": "15:00 - 15:03",
-    "text": "so hidden cleaning fees can no longer be ambushed to check out."
+    "start": 757.38,
+    "end": 760.66,
+    "timecode": "12:37 - 12:40",
+    "text": "But the explosive hyper-growth era is officially dead."
   },
   {
     "id": 326,
-    "start": 903.68,
-    "end": 907.08,
-    "timecode": "15:03 - 15:07",
-    "text": "They banned hosts from demanding unreasonable chore lists"
+    "start": 760.66,
+    "end": 762.14,
+    "timecode": "12:40 - 12:42",
+    "text": "Looking growth in mature markets"
   },
   {
     "id": 327,
-    "start": 907.08,
-    "end": 909.0,
-    "timecode": "15:07 - 15:09",
-    "text": "like vacuuming and laundry,"
+    "start": 762.14,
+    "end": 764.1,
+    "timecode": "12:42 - 12:44",
+    "text": "has cooled to the single digits,"
   },
   {
     "id": 328,
-    "start": 909.0,
-    "end": 912.52,
-    "timecode": "15:09 - 15:12",
-    "text": "and in the ultimate comedic irony in the history of tech."
+    "start": 764.1,
+    "end": 766.18,
+    "timecode": "12:44 - 12:46",
+    "text": "and the brand spent three straight years,"
   },
   {
     "id": 329,
-    "start": 912.52,
-    "end": 917.52,
-    "timecode": "15:12 - 15:17",
-    "text": "Airbnb's fastest growing category today is boutique hotels."
+    "start": 766.18,
+    "end": 768.5,
+    "timecode": "12:46 - 12:48",
+    "text": "getting roasted on every corner of the internet."
   },
   {
     "id": 330,
-    "start": 917.52,
-    "end": 922.24,
-    "timecode": "15:17 - 15:22",
-    "text": "The very industry the founders set out to destroy 18 years ago,"
+    "start": 768.5,
+    "end": 772.5,
+    "timecode": "12:48 - 12:52",
+    "text": "So how is Brian Chesky responding in 2025 and 2026?"
   },
   {
     "id": 331,
-    "start": 922.24,
-    "end": 925.44,
-    "timecode": "15:22 - 15:25",
-    "text": "with three cheap rubber mattresses on a living room floor,"
+    "start": 772.5,
+    "end": 776.06,
+    "timecode": "12:52 - 12:56",
+    "text": "By doing the one thing no proud founder ever wants to admit,"
   },
   {
     "id": 332,
-    "start": 925.44,
-    "end": 927.72,
-    "timecode": "15:25 - 15:27",
-    "text": "is now the exact thing they're relying on"
+    "start": 776.06,
+    "end": 778.38,
+    "timecode": "12:56 - 12:58",
+    "text": "he is desperately fixing his own machine."
   },
   {
     "id": 333,
-    "start": 927.72,
-    "end": 930.04,
-    "timecode": "15:27 - 15:30",
-    "text": "to keep their business alive."
+    "start": 778.38,
+    "end": 780.86,
+    "timecode": "12:58 - 13:00",
+    "text": "Airbnb rolled out total price display,"
   },
   {
     "id": 334,
-    "start": 930.04,
-    "end": 934.6,
-    "timecode": "15:30 - 15:34",
-    "text": "So what is the real actionable playbook you take from this 18 year war?"
+    "start": 780.86,
+    "end": 783.78,
+    "timecode": "13:00 - 13:03",
+    "text": "so hidden cleaning fees can no longer be ambushed to check out."
   },
   {
     "id": 335,
-    "start": 934.6,
-    "end": 937.12,
-    "timecode": "15:34 - 15:37",
-    "text": "If you strip away the billion dollar headlines"
+    "start": 783.78,
+    "end": 786.82,
+    "timecode": "13:03 - 13:06",
+    "text": "They banned hosts from demanding unreasonable chore lists,"
   },
   {
     "id": 336,
-    "start": 937.12,
-    "end": 941.24,
-    "timecode": "15:37 - 15:41",
-    "text": "and look at how this machine was actually constructed from zero,"
+    "start": 786.82,
+    "end": 788.42,
+    "timecode": "13:06 - 13:08",
+    "text": "like vacuuming and laundry,"
   },
   {
     "id": 337,
-    "start": 941.24,
-    "end": 946.0,
-    "timecode": "15:41 - 15:46",
-    "text": "three brutal rules emerge that every entrepreneur must memorize."
+    "start": 788.42,
+    "end": 791.5,
+    "timecode": "13:08 - 13:11",
+    "text": "and in the ultimate comedic irony in the history of tech."
   },
   {
     "id": 338,
-    "start": 946.0,
-    "end": 949.32,
-    "timecode": "15:46 - 15:49",
-    "text": "First, borrow your distribution until you own it."
+    "start": 791.5,
+    "end": 795.9,
+    "timecode": "13:11 - 13:15",
+    "text": "Airbnb's fastest growing category today is boutique hotels."
   },
   {
     "id": 339,
-    "start": 949.32,
-    "end": 952.96,
-    "timecode": "15:49 - 15:52",
-    "text": "Brian and Joe didn't spend a dime on Facebook or Google ads."
+    "start": 795.9,
+    "end": 798.02,
+    "timecode": "13:15 - 13:18",
+    "text": "The very industry the founders set out"
   },
   {
     "id": 340,
-    "start": 952.96,
-    "end": 957.04,
-    "timecode": "15:52 - 15:57",
-    "text": "They hijacked Craigslist 50 million users with a rogue script,"
+    "start": 798.02,
+    "end": 800.02,
+    "timecode": "13:18 - 13:20",
+    "text": "to destroy 18 years ago,"
   },
   {
     "id": 341,
-    "start": 957.04,
-    "end": 960.84,
-    "timecode": "15:57 - 16:00",
-    "text": "and they turned a sold out conference into their personal billboard."
+    "start": 800.02,
+    "end": 802.82,
+    "timecode": "13:20 - 13:22",
+    "text": "with three cheap rubber mattresses on a living room floor,"
   },
   {
     "id": 342,
-    "start": 960.84,
-    "end": 962.6,
-    "timecode": "16:00 - 16:02",
-    "text": "If you have no marketing budget,"
+    "start": 802.82,
+    "end": 804.82,
+    "timecode": "13:22 - 13:24",
+    "text": "is now the exact thing they're relying on"
   },
   {
     "id": 343,
-    "start": 962.6,
-    "end": 965.28,
-    "timecode": "16:02 - 16:05",
-    "text": "look for where your customers are already congregating,"
+    "start": 804.82,
+    "end": 806.82,
+    "timecode": "13:24 - 13:26",
+    "text": "to keep their business alive."
   },
   {
     "id": 344,
-    "start": 965.28,
-    "end": 968.8,
-    "timecode": "16:05 - 16:08",
-    "text": "and build an ethical bridge to siphon them over."
+    "start": 806.82,
+    "end": 809.18,
+    "timecode": "13:26 - 13:29",
+    "text": "So what is the real actionable playbook?"
   },
   {
     "id": 345,
-    "start": 968.8,
-    "end": 973.24,
-    "timecode": "16:08 - 16:13",
-    "text": "Second, the answer is always in your user's kitchen, not in your code."
+    "start": 809.18,
+    "end": 810.78,
+    "timecode": "13:29 - 13:30",
+    "text": "You take from this 18-year war,"
   },
   {
     "id": 346,
-    "start": 973.24,
-    "end": 976.8,
-    "timecode": "16:13 - 16:16",
-    "text": "When their revenue was flatlined at $200 a week,"
+    "start": 810.78,
+    "end": 813.02,
+    "timecode": "13:30 - 13:33",
+    "text": "if you strip away the billion dollar headlines,"
   },
   {
     "id": 347,
-    "start": 976.8,
-    "end": 980.48,
-    "timecode": "16:16 - 16:20",
-    "text": "they didn't rewrite their algorithm or redesign their logo."
+    "start": 813.02,
+    "end": 816.62,
+    "timecode": "13:33 - 13:36",
+    "text": "and look at how this machine was actually constructed from zero."
   },
   {
     "id": 348,
-    "start": 980.48,
-    "end": 981.8,
-    "timecode": "16:20 - 16:21",
-    "text": "They flew to Brooklyn,"
+    "start": 816.62,
+    "end": 820.78,
+    "timecode": "13:36 - 13:40",
+    "text": "Three brutal rules emerge that every entrepreneur must memorize."
   },
   {
     "id": 349,
-    "start": 981.8,
-    "end": 983.8,
-    "timecode": "16:21 - 16:23",
-    "text": "knocked on doors with a rented camera,"
+    "start": 820.78,
+    "end": 823.66,
+    "timecode": "13:40 - 13:43",
+    "text": "First, borrow your distribution until you own it."
   },
   {
     "id": 350,
-    "start": 983.8,
-    "end": 985.56,
-    "timecode": "16:23 - 16:25",
-    "text": "drank tea with their hosts,"
+    "start": 823.66,
+    "end": 826.82,
+    "timecode": "13:43 - 13:46",
+    "text": "Brian and Joe didn't spend a dime on Facebook or Google Ads."
   },
   {
     "id": 351,
-    "start": 985.56,
-    "end": 988.88,
-    "timecode": "16:25 - 16:28",
-    "text": "and fixed the real friction, terrible photos,"
+    "start": 826.82,
+    "end": 830.42,
+    "timecode": "13:46 - 13:50",
+    "text": "They hijacked Craigslist 50 million users with a rogue script,"
   },
   {
     "id": 352,
-    "start": 988.88,
-    "end": 993.6,
-    "timecode": "16:28 - 16:33",
-    "text": "in the early days of any business, manual, unscalable legwork."
+    "start": 830.42,
+    "end": 832.26,
+    "timecode": "13:50 - 13:52",
+    "text": "and they turned a sold out conference"
   },
   {
     "id": 353,
-    "start": 993.64,
-    "end": 999.08,
-    "timecode": "16:33 - 16:39",
-    "text": "We'll teach you more in 48 hours than six months of staring at Google Analytics."
+    "start": 832.26,
+    "end": 833.7,
+    "timecode": "13:52 - 13:53",
+    "text": "into their personal billboard."
   },
   {
     "id": 354,
-    "start": 999.08,
-    "end": 1002.88,
-    "timecode": "16:39 - 16:42",
-    "text": "And third, never optimize the soul out of your product."
+    "start": 833.7,
+    "end": 835.26,
+    "timecode": "13:53 - 13:55",
+    "text": "If you have no marketing budget,"
   },
   {
     "id": 355,
-    "start": 1002.88,
-    "end": 1006.2,
-    "timecode": "16:42 - 16:46",
-    "text": "Airbnb's genius was that it was cheaper, warmer,"
+    "start": 835.26,
+    "end": 837.62,
+    "timecode": "13:55 - 13:57",
+    "text": "look for where your customers are already congregating,"
   },
   {
     "id": 356,
-    "start": 1006.2,
-    "end": 1007.96,
-    "timecode": "16:46 - 16:47",
-    "text": "and more personal than hotel."
+    "start": 837.62,
+    "end": 840.74,
+    "timecode": "13:57 - 14:00",
+    "text": "and build an ethical bridge to siphon them over."
   },
   {
     "id": 357,
-    "start": 1007.96,
-    "end": 1011.12,
-    "timecode": "16:47 - 16:51",
-    "text": "But as soon as Wall Street demanded infinite growth,"
+    "start": 840.78,
+    "end": 843.66,
+    "timecode": "14:00 - 14:03",
+    "text": "Second, the answer is always in your user's kitchen,"
   },
   {
     "id": 358,
-    "start": 1011.12,
-    "end": 1015.56,
-    "timecode": "16:51 - 16:55",
-    "text": "they allowed corporate hosts to charge $400 bait and switch fees"
+    "start": 843.66,
+    "end": 844.62,
+    "timecode": "14:03 - 14:04",
+    "text": "not in your code."
   },
   {
     "id": 359,
-    "start": 1015.56,
-    "end": 1018.24,
-    "timecode": "16:55 - 16:58",
-    "text": "and hand guests laminated chore lists."
+    "start": 844.62,
+    "end": 847.74,
+    "timecode": "14:04 - 14:07",
+    "text": "When their revenue was flatlined at $200 a week,"
   },
   {
     "id": 360,
-    "start": 1018.24,
-    "end": 1022.92,
-    "timecode": "16:58 - 17:02",
-    "text": "The moment your customer feels like they're being squeezed by a spreadsheet,"
+    "start": 847.74,
+    "end": 849.42,
+    "timecode": "14:07 - 14:09",
+    "text": "they didn't rewrite their algorithm"
   },
   {
     "id": 361,
-    "start": 1022.92,
-    "end": 1025.0,
-    "timecode": "17:02 - 17:05",
-    "text": "instead of served by a human,"
+    "start": 849.42,
+    "end": 850.94,
+    "timecode": "14:09 - 14:10",
+    "text": "or redesign their logo."
   },
   {
     "id": 362,
-    "start": 1025.0,
-    "end": 1028.72,
-    "timecode": "17:05 - 17:08",
-    "text": "you create the exact crack your competitors will use to destroy you."
+    "start": 850.94,
+    "end": 852.82,
+    "timecode": "14:10 - 14:12",
+    "text": "They flew to Brooklyn, knocked on doors"
   },
   {
     "id": 363,
-    "start": 1028.72,
-    "end": 1032.2,
-    "timecode": "17:08 - 17:12",
-    "text": "Brian Cheskey didn't build $100 billion empire"
+    "start": 852.82,
+    "end": 855.42,
+    "timecode": "14:12 - 14:15",
+    "text": "with a rented camera, drank tea with their hosts,"
   },
   {
     "id": 364,
-    "start": 1032.2,
-    "end": 1034.84,
-    "timecode": "17:12 - 17:14",
-    "text": "because he had a visionary master plan."
+    "start": 855.42,
+    "end": 858.3,
+    "timecode": "14:15 - 14:18",
+    "text": "and fixed the real friction, terrible photos."
   },
   {
     "id": 365,
-    "start": 1034.84,
-    "end": 1037.72,
-    "timecode": "17:14 - 17:17",
-    "text": "He built it because he was resourceful enough"
+    "start": 858.3,
+    "end": 860.22,
+    "timecode": "14:18 - 14:20",
+    "text": "In the early days of any business,"
   },
   {
     "id": 366,
-    "start": 1037.72,
-    "end": 1040.68,
-    "timecode": "17:17 - 17:20",
-    "text": "to turn an inflatable mattress into rent money,"
+    "start": 860.22,
+    "end": 862.38,
+    "timecode": "14:20 - 14:22",
+    "text": "manual, unscalable legwork,"
   },
   {
     "id": 367,
-    "start": 1040.68,
-    "end": 1045.24,
-    "timecode": "17:20 - 17:25",
-    "text": "stubborn enough to sell novelty cereal to pay off credit card debt,"
+    "start": 862.38,
+    "end": 864.66,
+    "timecode": "14:22 - 14:24",
+    "text": "we'll teach you more in 48 hours,"
   },
   {
     "id": 368,
-    "start": 1045.24,
-    "end": 1049.72,
-    "timecode": "17:25 - 17:29",
-    "text": "and humble enough to knock on strangers doors when his back was against the wall."
+    "start": 864.66,
+    "end": 867.22,
+    "timecode": "14:24 - 14:27",
+    "text": "than six months of staring at Google Analytics."
   },
   {
     "id": 369,
-    "start": 1049.76,
-    "end": 1053.72,
-    "timecode": "17:29 - 17:33",
-    "text": "You don't need a million dollars in seed capital to start building today."
+    "start": 867.22,
+    "end": 870.5,
+    "timecode": "14:27 - 14:30",
+    "text": "And third, never optimize the soul out of your product."
   },
   {
     "id": 370,
-    "start": 1053.72,
-    "end": 1056.44,
-    "timecode": "17:33 - 17:36",
-    "text": "You just need to find a real, urgent problem."
+    "start": 870.5,
+    "end": 873.42,
+    "timecode": "14:30 - 14:33",
+    "text": "Airbnb's genius was that it was cheaper, warmer,"
   },
   {
     "id": 371,
-    "start": 1056.44,
-    "end": 1058.68,
-    "timecode": "17:36 - 17:38",
-    "text": "Look at the tools you already have in front of you"
+    "start": 873.42,
+    "end": 874.94,
+    "timecode": "14:33 - 14:34",
+    "text": "and more personal than hotel."
   },
   {
     "id": 372,
-    "start": 1058.68,
-    "end": 1063.84,
-    "timecode": "17:38 - 17:43",
-    "text": "and do the unglamorous work that nobody else is willing to do."
+    "start": 874.94,
+    "end": 877.74,
+    "timecode": "14:34 - 14:37",
+    "text": "But as soon as Wall Street demanded infinite growth,"
   },
   {
     "id": 373,
-    "start": 1063.84,
-    "end": 1068.72,
-    "timecode": "17:43 - 17:48",
-    "text": "So the next time you sit there thinking that every great business has already been built,"
+    "start": 877.74,
+    "end": 880.7,
+    "timecode": "14:37 - 14:40",
+    "text": "they allowed corporate hosts to charge $400 bait ants,"
   },
   {
     "id": 374,
-    "start": 1068.72,
-    "end": 1069.8,
-    "timecode": "17:48 - 17:49",
-    "text": "look around the room."
+    "start": 880.7,
+    "end": 883.94,
+    "timecode": "14:40 - 14:43",
+    "text": "which fees, and hand guests laminated shore lists."
   },
   {
     "id": 375,
-    "start": 1069.8,
-    "end": 1073.84,
-    "timecode": "17:49 - 17:53",
-    "text": "Every massive industry is hiding an annoying problem."
+    "start": 883.94,
+    "end": 886.9,
+    "timecode": "14:43 - 14:46",
+    "text": "The moment your customer feels like they are being squeezed"
   },
   {
     "id": 376,
-    "start": 1073.84,
-    "end": 1076.4,
-    "timecode": "17:53 - 17:56",
-    "text": "Someone is desperately waiting for you to solve."
+    "start": 886.9,
+    "end": 889.82,
+    "timecode": "14:46 - 14:49",
+    "text": "by a spreadsheet instead of served by a human."
   },
   {
     "id": 377,
-    "start": 1076.4,
-    "end": 1080.4,
-    "timecode": "17:56 - 18:00",
-    "text": "And if you can't find one sitting at your desk, pack a bag and travel."
+    "start": 889.82,
+    "end": 892.14,
+    "timecode": "14:49 - 14:52",
+    "text": "You create the exact crack your competitors will use"
   },
   {
     "id": 378,
-    "start": 1080.4,
-    "end": 1083.32,
-    "timecode": "18:00 - 18:03",
-    "text": "Step outside your routine, notice what breaks,"
+    "start": 892.14,
+    "end": 893.06,
+    "timecode": "14:52 - 14:53",
+    "text": "to destroy you."
   },
   {
     "id": 379,
-    "start": 1083.32,
-    "end": 1085.04,
-    "timecode": "18:03 - 18:05",
-    "text": "and see what frustrates people."
+    "start": 893.06,
+    "end": 896.14,
+    "timecode": "14:53 - 14:56",
+    "text": "Brian Cheskey didn't build a $100 billion empire"
   },
   {
     "id": 380,
-    "start": 1085.04,
-    "end": 1088.28,
-    "timecode": "18:05 - 18:08",
-    "text": "It doesn't need to start with venture capital or a revolution."
+    "start": 896.14,
+    "end": 898.42,
+    "timecode": "14:56 - 14:58",
+    "text": "because he had a visionary master plan."
   },
   {
     "id": 381,
-    "start": 1088.28,
-    "end": 1091.56,
-    "timecode": "18:08 - 18:11",
-    "text": "It could start with an $80 air bed on a living room rug"
+    "start": 898.42,
+    "end": 900.94,
+    "timecode": "14:58 - 15:00",
+    "text": "He built it because he was resourceful enough"
   },
   {
     "id": 382,
-    "start": 1091.56,
-    "end": 1093.76,
-    "timecode": "18:11 - 18:13",
-    "text": "and turn into $100 billion."
+    "start": 900.94,
+    "end": 903.54,
+    "timecode": "15:00 - 15:03",
+    "text": "to turn an inflatable mattress into rent money,"
   },
   {
     "id": 383,
-    "start": 1093.76,
-    "end": 1095.36,
-    "timecode": "18:13 - 18:15",
-    "text": "What's in everyday annoyance?"
+    "start": 903.54,
+    "end": 905.86,
+    "timecode": "15:03 - 15:05",
+    "text": "stubborn enough to sell novelty cereal"
   },
   {
     "id": 384,
-    "start": 1095.36,
-    "end": 1097.52,
-    "timecode": "18:15 - 18:17",
-    "text": "You think someone should turn into a business right now?"
+    "start": 905.86,
+    "end": 907.54,
+    "timecode": "15:05 - 15:07",
+    "text": "to pay off credit card debt,"
   },
   {
     "id": 385,
-    "start": 1097.52,
-    "end": 1099.32,
-    "timecode": "18:17 - 18:19",
-    "text": "Tell me in the comments down below."
+    "start": 907.54,
+    "end": 909.78,
+    "timecode": "15:07 - 15:09",
+    "text": "and humble enough to knock on stranger's doors"
   },
   {
     "id": 386,
-    "start": 1099.32,
-    "end": 1100.6,
-    "timecode": "18:19 - 18:20",
-    "text": "Stay curious."
+    "start": 909.78,
+    "end": 911.42,
+    "timecode": "15:09 - 15:11",
+    "text": "when his back was against the wall."
   },
   {
     "id": 387,
-    "start": 1100.6,
-    "end": 1101.76,
-    "timecode": "18:20 - 18:21",
+    "start": 911.42,
+    "end": 912.82,
+    "timecode": "15:11 - 15:12",
+    "text": "You don't need a million dollars"
+  },
+  {
+    "id": 388,
+    "start": 912.82,
+    "end": 914.9,
+    "timecode": "15:12 - 15:14",
+    "text": "in seed capital to start building today."
+  },
+  {
+    "id": 389,
+    "start": 914.9,
+    "end": 917.26,
+    "timecode": "15:14 - 15:17",
+    "text": "You just need to find a real, urgent problem."
+  },
+  {
+    "id": 390,
+    "start": 917.26,
+    "end": 919.26,
+    "timecode": "15:17 - 15:19",
+    "text": "Look at the tools you already have in front of you"
+  },
+  {
+    "id": 391,
+    "start": 919.26,
+    "end": 923.74,
+    "timecode": "15:19 - 15:23",
+    "text": "and do the unglamorous work that nobody else is willing to do."
+  },
+  {
+    "id": 392,
+    "start": 923.74,
+    "end": 925.46,
+    "timecode": "15:23 - 15:25",
+    "text": "So the next time you sit there thinking"
+  },
+  {
+    "id": 393,
+    "start": 925.46,
+    "end": 927.98,
+    "timecode": "15:25 - 15:27",
+    "text": "that every great business has already been built,"
+  },
+  {
+    "id": 394,
+    "start": 927.98,
+    "end": 928.94,
+    "timecode": "15:27 - 15:28",
+    "text": "look around a room."
+  },
+  {
+    "id": 395,
+    "start": 928.94,
+    "end": 932.5,
+    "timecode": "15:28 - 15:32",
+    "text": "Every massive industry is hiding an annoying problem."
+  },
+  {
+    "id": 396,
+    "start": 932.5,
+    "end": 934.7,
+    "timecode": "15:32 - 15:34",
+    "text": "Someone is desperately waiting for you to solve."
+  },
+  {
+    "id": 397,
+    "start": 934.7,
+    "end": 936.74,
+    "timecode": "15:34 - 15:36",
+    "text": "And if you can't find one sitting at your desk,"
+  },
+  {
+    "id": 398,
+    "start": 936.74,
+    "end": 938.22,
+    "timecode": "15:36 - 15:38",
+    "text": "pack a bag and travel."
+  },
+  {
+    "id": 399,
+    "start": 938.22,
+    "end": 940.78,
+    "timecode": "15:38 - 15:40",
+    "text": "Step outside your routine, notice what breaks"
+  },
+  {
+    "id": 400,
+    "start": 940.78,
+    "end": 942.26,
+    "timecode": "15:40 - 15:42",
+    "text": "and see what frustrates people."
+  },
+  {
+    "id": 401,
+    "start": 942.26,
+    "end": 945.1,
+    "timecode": "15:42 - 15:45",
+    "text": "It doesn't need to start with venture capital or a revolution."
+  },
+  {
+    "id": 402,
+    "start": 945.1,
+    "end": 947.98,
+    "timecode": "15:45 - 15:47",
+    "text": "It could start with an $80 air bed on a living room rug"
+  },
+  {
+    "id": 403,
+    "start": 947.98,
+    "end": 949.86,
+    "timecode": "15:47 - 15:49",
+    "text": "and turn into $100 billion."
+  },
+  {
+    "id": 404,
+    "start": 949.86,
+    "end": 951.3,
+    "timecode": "15:49 - 15:51",
+    "text": "What's in everyday annoyance?"
+  },
+  {
+    "id": 405,
+    "start": 951.3,
+    "end": 953.18,
+    "timecode": "15:51 - 15:53",
+    "text": "You think someone should turn into a business right now?"
+  },
+  {
+    "id": 406,
+    "start": 953.18,
+    "end": 954.74,
+    "timecode": "15:53 - 15:54",
+    "text": "Tell me in the comments down below."
+  },
+  {
+    "id": 407,
+    "start": 954.74,
+    "end": 955.86,
+    "timecode": "15:54 - 15:55",
+    "text": "Stay curious."
+  },
+  {
+    "id": 408,
+    "start": 955.86,
+    "end": 957.1,
+    "timecode": "15:55 - 15:57",
     "text": "See you in the next one."
   }
 ]
