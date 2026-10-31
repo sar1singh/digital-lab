@@ -12,15 +12,16 @@ This file is not a roadmap. It is the accumulated decision log and strategic con
 
 ## Primary Goal
 
-Current goal: generate first digital revenue outside of salary.
+> [!IMPORTANT] Strategic Pivot & Brand Consolidation (2026-10-30)
+> - **Nivora Brand Retired:** The "Nivora" brand name is permanently retired. All micro-SaaS, digital utilities, and assets will be published under the **ThinkLate** parent brand or agency umbrella.
+> - **Execution Priority Shift:** Digital utilities / spreadsheets are currently stuck/paused. **Priority #1 is to monetize the ThinkLate YouTube channel on auto mode first.**
+> - Once the YouTube channel is automated and monetizing, we will add digital products, micro-SaaS utilities, and affiliate partnerships for secondary compounding income.
+> - **Sister's Venture:** The boutique business belongs strictly to the sister; user assists only with initial setup.
 
-Target: first $50-$100 revenue.
+Current primary execution track: ThinkLate Content Lab (`03-content-lab/thinklate/`).
+Secondary track (paused until channel auto-monetization): Product Factory / Digital Utilities.
 
-Current execution track: Product Factory.
-
-Critical rule: Digital-Lab is not Product Factory. Product Factory is only one execution track inside Digital-Lab.
-
-Customer-facing publishing brand: Nivora
+Customer-facing publishing brand: ThinkLate (or ThinkLate Agency / Umbrella)
 Founder/operator email: workbysar1@gmail.com
 
 Secondary learning goals:

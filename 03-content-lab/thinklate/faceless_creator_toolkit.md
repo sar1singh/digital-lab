@@ -48,6 +48,15 @@
 | **Foreground Action** | **Tracks 3 & 4** | Primary Evidence Cards, Kinetic Typography (Bebas Neue), Data Charts. | Instant readability against the dimmed gameplay backdrop. |
 | **Character Avatar** | *Disabled* | **Avatar is OPTIONAL / PAUSED**. | Do not waste time placing avatars on every screen; focus 100% on gameplay + data + kinetic typography. |
 
+---
+
+## 5. Pre-Production & Timeline Accelerators
+
+| Tool / Practice | Best For | Why It’s Useful | Actionable Strategy |
+| :--- | :--- | :--- | :--- |
+| **Google AI Studio (Gemini Flash / Pro)** | Bulk Regulatory & Financial Research | 1M+ free token context window. Ingests 100-page SEC 10-K filings, antitrust court dockets, and academic papers in seconds. | Dump raw primary sources; prompt for chronological dates, verbatim corporate quotes, and exact dollar amounts for script hooks. |
+| **Scratch-Track Audio Pipeline (Edge-TTS / Kokoro)** | Audio-Slave Editing Decoupling | 100% free, instant local TTS generation. | Generate temporary scratch audio from finalized script to pre-build DaVinci B-roll and data chart timings *before* recording voiceover. Cuts timeline assembly fatigue by 35%. |
+
 **The "Jugaad" Strategy for Faceless Channels:**
 Combine curated gameplay with targeted evidence. Let the gameplay drive the visual motion and eye engagement, use **Datawrapper** for charts, **Windows Snipping Tool** with 150% browser zoom for primary evidence crops, and **Bebas Neue** animated typography slams in DaVinci. This yields broadcast-grade retention with 80% faster turnaround time.
 

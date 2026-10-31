@@ -4,35 +4,20 @@ Current Role:
 Digital-Lab control file for first-revenue execution.
 
 Current Focus:
-- Generate first $50-$100 digital revenue outside salary
-- Use Product Factory as the active execution track
-- Build small operational utility products
-- Publish on Gumroad/Payhip before building infrastructure
-- Avoid analysis paralysis
-- Process hardening complete: 6 new factory standards created from Product #1 learnings
-- Product Factory workflow updated to 10-stage pipeline with 5-review exit criteria
+- **Priority #1:** Monetize the ThinkLate YouTube channel (@wethinklate) on auto mode.
+- Establish an automated, low-friction production pipeline (Whisper transcription, programmatic cards, Text+ kinetic typography).
+- Streamline script generation and autonomous QC verification to release consistently without manual drag.
+- Once channel monetization is automated, expand to micro-SaaS utilities, digital products, and affiliations under the ThinkLate parent umbrella for extra compounding income.
 
-Current Active Task:
-Publish Product #1 (Nivora Budget Planner & Expense Tracker) on Gumroad and Payhip. Do not move to Product #2 until Product #1 is published and URLs recorded.
-
-Next Task:
-Build and publish Invoice Generator & Payment Tracker.
-
-Limit:
-- No SaaS, website, branding, newsletter, or Etsy setup before first sale or 5 products published.
-- Max 1-2 days per product before publishing.
+Current Active Status:
+- **ThinkLate Channel:** Active flagship track in `03-content-lab/thinklate/`. Focus on video shipping and audience monetization.
+- **Digital Utilities / Product Factory:** Paused/stuck. Nivora brand is permanently retired. Digital products will be consolidated and fixed under the ThinkLate parent umbrella after YouTube monetization is on auto mode.
+- **Sister's Boutique Venture:** Dedicated strictly to sister; user role is only initial setup assistance.
 
 Locked Decisions:
-- Product Factory is active (Product #1 Nivora Budget Planner publishing).
-- Content Lab is active on ThinkLate (@wethinklate) in `03-content-lab/thinklate/`.
-- General Content Lab experiments (SEO, random newsletters) are parked.
-- SaaS Lab is parked.
-- Agency Lab is parked.
-- First revenue is more important than innovation.
-- Compete in existing proven markets.
-- Copy successful product formats legally.
-- Improve packaging and execution.
-- Build -> Publish -> Learn -> Repeat.
+- "Nivora" brand is permanently retired. All digital tools and micro-SaaS will live under ThinkLate.
+- ThinkLate YouTube channel auto-monetization takes complete precedence over fragmented digital utilities.
+- Avoid multi-venture fragmentation until the primary media engine is shipping autonomously.
 
 Current Target Products:
 1. Budget Planner & Expense Tracker (active)

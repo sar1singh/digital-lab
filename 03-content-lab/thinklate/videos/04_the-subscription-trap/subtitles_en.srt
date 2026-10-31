@@ -1,0 +1,647 @@
+1
+00:00:00,000 --> 00:00:08,119
+In July 2022, BMW started charging rent on heated seats, not at a shop, not at a dealership,
+
+2
+00:00:08,119 --> 00:00:10,240
+through the car's own screen.
+
+3
+00:00:10,240 --> 00:00:17,440
+South Korea, the United Kingdom, Germany, South Africa, about 15 pounds a month or 150
+
+4
+00:00:17,440 --> 00:00:18,440
+a year.
+
+5
+00:00:18,440 --> 00:00:20,839
+Here is what made people furious.
+
+6
+00:00:20,839 --> 00:00:27,079
+The heating wires were already inside the seat, copper, relays, switches, bolted in at
+
+7
+00:00:27,079 --> 00:00:28,239
+the factory.
+
+8
+00:00:28,239 --> 00:00:32,880
+You had paid for every gram of it, but a software flag said, not unless your car
+
+9
+00:00:32,880 --> 00:00:37,079
+keeps billing, BMW did not forget to install a feature.
+
+10
+00:00:37,079 --> 00:00:40,359
+They installed a hostage in your own front seat.
+
+11
+00:00:40,359 --> 00:00:43,119
+Now, if you are rolling your eyes, fair.
+
+12
+00:00:43,119 --> 00:00:44,560
+It is a seat warmer.
+
+13
+00:00:44,560 --> 00:00:45,560
+Who cares?
+
+14
+00:00:45,560 --> 00:00:47,640
+Except this was not a prank.
+
+15
+00:00:47,640 --> 00:00:51,000
+It was a test, and somebody was taking notes.
+
+16
+00:00:51,000 --> 00:00:56,280
+Because one company had already tried this for years, and it did not start with a car.
+
+17
+00:00:56,280 --> 00:00:57,679
+Meet HP.
+
+18
+00:00:57,679 --> 00:01:01,719
+In 2016, HP pushed a quiet update to its printers.
+
+19
+00:01:01,719 --> 00:01:04,120
+It was called Dynamic Security.
+
+20
+00:01:04,120 --> 00:01:06,079
+Owners woke up to a dead machine.
+
+21
+00:01:06,079 --> 00:01:07,799
+The ink cartridge was full.
+
+22
+00:01:07,799 --> 00:01:10,079
+It just was not made by HP.
+
+23
+00:01:10,079 --> 00:01:13,000
+No warning, no vote, just an update.
+
+24
+00:01:13,000 --> 00:01:14,000
+Overnight.
+
+25
+00:01:14,000 --> 00:01:15,640
+You did not buy a printer.
+
+26
+00:01:15,640 --> 00:01:18,200
+You bought a printer that audits your ink.
+
+27
+00:01:18,200 --> 00:01:22,359
+Italy's competition regulator find HP 10 million euros.
+
+28
+00:01:22,359 --> 00:01:23,920
+That was 2020.
+
+29
+00:01:23,920 --> 00:01:28,239
+Hetergroups in Belgium, Spain, Italy, and Portugal got a settlement.
+
+30
+00:01:28,239 --> 00:01:29,439
+HP paid.
+
+31
+00:01:29,439 --> 00:01:31,239
+The business model stayed.
+
+32
+00:01:31,239 --> 00:01:36,159
+In 2024, HP's own CEO said the quiet part out loud.
+
+33
+00:01:36,159 --> 00:01:40,719
+Every time a customer buys a printer, he said, it is an investment for HP.
+
+34
+00:01:40,719 --> 00:01:46,439
+If that customer does not print enough, or does not use HP supplies, it is a bad investment.
+
+35
+00:01:46,439 --> 00:01:47,840
+Read that slowly.
+
+36
+00:01:47,840 --> 00:01:49,560
+You paid HP.
+
+37
+00:01:49,560 --> 00:01:52,680
+And somehow, you became HP's investment.
+
+38
+00:01:52,680 --> 00:01:56,120
+And the moment you buy cheaper ink, you become a bad one.
+
+39
+00:01:56,120 --> 00:01:58,159
+A cold seat is an insult.
+
+40
+00:01:58,159 --> 00:02:00,400
+A dead printer is an afternoon.
+
+41
+00:02:00,400 --> 00:02:04,400
+But what happens when the locked machine is the one that feeds a family?
+
+42
+00:02:04,400 --> 00:02:08,159
+A hog farmer in Nebraska stood in front of his state lawmakers.
+
+43
+00:02:08,159 --> 00:02:09,319
+2017.
+
+44
+00:02:09,319 --> 00:02:11,120
+His equipment had broken down.
+
+45
+00:02:11,120 --> 00:02:14,360
+He told them there is no time to wait for a dealer.
+
+46
+00:02:14,360 --> 00:02:16,520
+Farmers can often swap apart themselves.
+
+47
+00:02:16,520 --> 00:02:20,520
+But the machine would not accept the new part until a dealer plugged in a laptop and
+
+48
+00:02:20,520 --> 00:02:21,520
+approved it.
+
+49
+00:02:21,520 --> 00:02:22,520
+The price?
+
+50
+00:02:22,520 --> 00:02:24,759
+$230 to show up.
+
+51
+00:02:24,759 --> 00:02:28,520
+Plus $130 an hour to plug in one cable.
+
+52
+00:02:28,520 --> 00:02:29,919
+Whose tractor was it?
+
+53
+00:02:29,919 --> 00:02:32,800
+So farmers did what cornered people always do.
+
+54
+00:02:32,800 --> 00:02:34,599
+They went looking for outlaws.
+
+55
+00:02:34,599 --> 00:02:38,919
+Hackers in Eastern Europe were already selling cracked tractor software.
+
+56
+00:02:38,919 --> 00:02:40,240
+Forums in Ukraine.
+
+57
+00:02:40,240 --> 00:02:41,360
+Pirate firmware.
+
+58
+00:02:41,360 --> 00:02:43,000
+And the tractor wakes up.
+
+59
+00:02:43,000 --> 00:02:45,080
+Think about how backwards that is.
+
+60
+00:02:45,080 --> 00:02:49,960
+An American farmer downloads cracked code so he can fix his own machine.
+
+61
+00:02:49,960 --> 00:02:52,520
+Because the legal route is a dealer's laptop.
+
+62
+00:02:52,520 --> 00:02:57,599
+John Deere's license agreement forbids nearly all repair backed by copyright law.
+
+63
+00:02:57,599 --> 00:03:01,560
+The pirate respects the farmer's ownership more than the company does.
+
+64
+00:03:01,560 --> 00:03:03,719
+So who signed off on all this?
+
+65
+00:03:03,719 --> 00:03:05,080
+Not a villain in a cape.
+
+66
+00:03:05,080 --> 00:03:06,560
+A spreadsheet.
+
+67
+00:03:06,560 --> 00:03:09,759
+Wall Street prices every company with a multiplier.
+
+68
+00:03:09,759 --> 00:03:12,599
+The tractor once and investors get nervous.
+
+69
+00:03:12,599 --> 00:03:14,080
+What if a recession hits?
+
+70
+00:03:14,080 --> 00:03:15,879
+What if nobody buys next year?
+
+71
+00:03:15,879 --> 00:03:20,280
+So that company is worth maybe one or two times its yearly sales.
+
+72
+00:03:20,280 --> 00:03:21,599
+Now watch the trick.
+
+73
+00:03:21,599 --> 00:03:22,800
+Same tractor.
+
+74
+00:03:22,800 --> 00:03:24,039
+Same factory.
+
+75
+00:03:24,039 --> 00:03:25,240
+Same farmer.
+
+76
+00:03:25,240 --> 00:03:28,120
+But now a monthly bill unlocks it.
+
+77
+00:03:28,120 --> 00:03:30,599
+The accountants give the revenue a new name.
+
+78
+00:03:30,599 --> 00:03:31,599
+Recurring.
+
+79
+00:03:31,599 --> 00:03:34,840
+And investors start pricing it like software.
+
+80
+00:03:34,840 --> 00:03:39,039
+Software gets six, seven, sometimes far more times revenue.
+
+81
+00:03:39,039 --> 00:03:40,520
+Not for a better tractor.
+
+82
+00:03:40,520 --> 00:03:43,039
+For a customer who cannot leave.
+
+83
+00:03:43,039 --> 00:03:45,800
+Take a company with one billion in sales.
+
+84
+00:03:45,800 --> 00:03:48,120
+Worth about one and a half billion.
+
+85
+00:03:48,120 --> 00:03:50,599
+Convince investors it is a subscription business.
+
+86
+00:03:50,599 --> 00:03:52,360
+At six and a half times.
+
+87
+00:03:52,360 --> 00:03:54,560
+And it is worth nearly seven.
+
+88
+00:03:54,560 --> 00:03:55,560
+Overnight.
+
+89
+00:03:55,560 --> 00:03:56,560
+No new invention.
+
+90
+00:03:56,560 --> 00:03:57,919
+No new feature.
+
+91
+00:03:57,919 --> 00:03:58,919
+Just a paywall.
+
+92
+00:03:58,919 --> 00:04:00,879
+On something you already own.
+
+93
+00:04:00,879 --> 00:04:02,680
+And the CEO's stock options?
+
+94
+00:04:02,680 --> 00:04:04,400
+Their value jumps.
+
+95
+00:04:04,400 --> 00:04:06,280
+That is not simple greed.
+
+96
+00:04:06,280 --> 00:04:08,120
+Greed would be easier to fight.
+
+97
+00:04:08,120 --> 00:04:12,520
+It is a scoreboard that pays executives to take your ownership away.
+
+98
+00:04:12,520 --> 00:04:15,240
+Because the idea is a hundred years old.
+
+99
+00:04:15,240 --> 00:04:16,240
+Winter.
+
+100
+00:04:16,240 --> 00:04:17,240
+1924.
+
+101
+00:04:17,240 --> 00:04:18,240
+Geneva.
+
+102
+00:04:18,240 --> 00:04:21,600
+A room full of men who sold the world its light.
+
+103
+00:04:21,600 --> 00:04:23,000
+Osrom from Germany.
+
+104
+00:04:23,000 --> 00:04:24,560
+Phillips from Holland.
+
+105
+00:04:24,560 --> 00:04:26,480
+General Electric from America.
+
+106
+00:04:26,480 --> 00:04:27,879
+Rivals on paper.
+
+107
+00:04:27,879 --> 00:04:29,319
+Partners in secret.
+
+108
+00:04:29,319 --> 00:04:30,879
+They had one problem.
+
+109
+00:04:30,879 --> 00:04:33,199
+Their light bulbs were too good.
+
+110
+00:04:33,199 --> 00:04:35,800
+Some burned 2,500 hours.
+
+111
+00:04:35,800 --> 00:04:41,759
+There is one in a California fire station that has glowed almost non-stop since 1901.
+
+112
+00:04:41,759 --> 00:04:42,759
+Great product.
+
+113
+00:04:42,759 --> 00:04:44,399
+Terrible business.
+
+114
+00:04:44,399 --> 00:04:47,199
+Nobody comes back to buy a bulb that never dies.
+
+115
+00:04:47,199 --> 00:04:48,600
+So they signed a pact.
+
+116
+00:04:48,600 --> 00:04:50,600
+They called it Phoebus.
+
+117
+00:04:50,600 --> 00:04:54,199
+Every bulb would be built to die after 1,000 hours.
+
+118
+00:04:54,199 --> 00:04:55,720
+They tested the bulbs.
+
+119
+00:04:55,720 --> 00:04:58,920
+Make a bulb that lasts too long and you were fined.
+
+120
+00:04:58,920 --> 00:05:00,800
+Find for making a better product.
+
+121
+00:05:00,800 --> 00:05:04,560
+A hundred years later, nobody needs a secret meeting in Geneva.
+
+122
+00:05:04,560 --> 00:05:05,680
+No week filament.
+
+123
+00:05:05,680 --> 00:05:07,040
+No cracked plastic.
+
+124
+00:05:07,040 --> 00:05:08,319
+No evidence.
+
+125
+00:05:08,319 --> 00:05:12,519
+Just one line of code and a server that says access revoked.
+
+126
+00:05:12,519 --> 00:05:13,519
+Same incentive.
+
+127
+00:05:13,519 --> 00:05:14,800
+Better paperwork.
+
+128
+00:05:14,800 --> 00:05:19,680
+And if you think this only hurts people with BMWs, go to a small town in India.
+
+129
+00:05:19,680 --> 00:05:23,800
+Take a delivery rider buying a smartphone on easy monthly payments.
+
+130
+00:05:23,800 --> 00:05:26,079
+Phone sold this way can carry a lock.
+
+131
+00:05:26,079 --> 00:05:27,759
+The lender controls it.
+
+132
+00:05:27,759 --> 00:05:29,480
+He is late on one payment.
+
+133
+00:05:29,480 --> 00:05:30,480
+A day.
+
+134
+00:05:30,480 --> 00:05:31,480
+Maybe two.
+
+135
+00:05:31,480 --> 00:05:33,040
+The screen goes dark.
+
+136
+00:05:33,040 --> 00:05:37,199
+His map, his orders, his income behind a padlock.
+
+137
+00:05:37,199 --> 00:05:39,480
+The loan app is not asking for the money.
+
+138
+00:05:39,480 --> 00:05:43,079
+It is holding his job hostage until the money arrives.
+
+139
+00:05:43,079 --> 00:05:46,079
+In America, regulators saw the same pattern.
+
+140
+00:05:46,079 --> 00:05:49,319
+In June 2024, the government sued Adobe.
+
+141
+00:05:49,319 --> 00:05:52,240
+It said customers were stuck in annual plans.
+
+142
+00:05:52,240 --> 00:05:54,800
+Cancel early and pay half of what is left.
+
+143
+00:05:54,800 --> 00:05:56,600
+So what happened to the seat?
+
+144
+00:05:56,600 --> 00:06:00,399
+In September 2023, BMW quietly dropped it.
+
+145
+00:06:00,399 --> 00:06:01,600
+No new conscience.
+
+146
+00:06:01,600 --> 00:06:04,480
+Enough owners said no, loudly.
+
+147
+00:06:04,480 --> 00:06:05,800
+Farmers got a law too.
+
+148
+00:06:05,800 --> 00:06:07,920
+Colorado, 2023.
+
+149
+00:06:07,920 --> 00:06:10,720
+The first date to write one for tractors.
+
+150
+00:06:10,720 --> 00:06:14,720
+Minnesota and California passed their own for phones and laptops.
+
+151
+00:06:14,720 --> 00:06:17,920
+It is the first time a few of them blinked.
+
+152
+00:06:17,920 --> 00:06:20,120
+But look at what they were willing to try.
+
+153
+00:06:20,120 --> 00:06:21,120
+A seat.
+
+154
+00:06:21,120 --> 00:06:22,120
+A printer.
+
+155
+00:06:22,120 --> 00:06:23,120
+A tractor.
+
+156
+00:06:23,120 --> 00:06:24,120
+A phone.
+
+157
+00:06:24,120 --> 00:06:28,439
+Whatever you own is one software update from becoming a lease.
+
+158
+00:06:28,439 --> 00:06:30,160
+The seat is warm again.
+
+159
+00:06:30,160 --> 00:06:32,079
+The question was never the heat.
+
+160
+00:06:32,079 --> 00:06:34,079
+It was who's seat it is.
+
+161
+00:06:34,079 --> 00:06:39,519
+Next time a screen asks for rent on something you own, remember who is holding the key.
+
+162
+00:06:39,519 --> 00:06:40,120
+See you next time.

@@ -13,7 +13,9 @@ render_segments/
 **/analysis/*.jpg
 
 # Python & OS
-
+.env
+*.env
+*.env.*
 __pycache__/
 *.py[cod]
 .DS_Store

@@ -20,7 +20,7 @@
 ```
 digital-lab/
 ├── 00-control/           # Continuity context, decision logs, and overarching venture strategy
-├── 01-product-factory/   # Nivora Brand: Digital utility products, spreadsheets, templates, calculators
+├── 01-product-factory/   # Digital Utilities & Micro-SaaS (under ThinkLate parent umbrella; paused)
 ├── 02-saas-lab/          # Micro-SaaS, web tools, developer utilities
 ├── 03-content-lab/       # All digital media channels & video production engines
 │   ├── thinklate/        # ThinkLate: Infotainment + Animation Studio + Media Agency
@@ -53,12 +53,11 @@ ThinkLate (`@wethinklate`) is structured around **three compounding long-term pi
 
 | Venture Track | Brand / Property | Sub-Folder | Current Focus |
 | :--- | :--- | :--- | :--- |
-| **01. Product Factory** | **Nivora** | `01-product-factory/` | Budget Planner & Expense Tracker (Listing & launch), Invoice Generator (next) |
-| **03. Content Lab** | **ThinkLate** | `03-content-lab/thinklate/` | Pilot Trilogy ("The 100% Debt Paradox"), Anime Owl character system, Teleprompter deck v2.3 |
-| **03. Content Lab** | **Scuff Sensei** | `03-content-lab/scuff-sensei/` | 4K OBS gaming archive harvesting, Whisper.cpp b-roll extraction |
-| **03. Content Lab** | **BooBooTime** | `03-content-lab/` | 432Hz ambient sleep audio tracks, wellness micro-content |
-| **04. Agency Lab** | **ThinkLate Agency** | `04-agency-lab/` | High-retention B2B explainer production playbook & corporate client deck |
-| **02. SaaS Lab** | **Nivora Flow** | `02-saas-lab/` | Standalone browser-based teleprompter & script pacing utility |
+| **03. Content Lab** | **ThinkLate (Flagship)** | `03-content-lab/thinklate/` | **PRIMARY FOCUS: Channel auto-monetization**, production pipeline automation, video releases |
+| **03. Content Lab** | **Off Script** | `03-content-lab/off-script/` | 4K OBS gameplay archive harvesting, Whisper.cpp b-roll extraction |
+| **01. Product Factory** | **ThinkLate Utilities** | `01-product-factory/` | *PAUSED/STUCK*: Consolidating under ThinkLate parent umbrella; to be fixed as part of ThinkLate agency after YouTube monetization |
+| **02. SaaS Lab** | **ThinkLate SaaS** | `02-saas-lab/` | Standalone browser-based teleprompter & script pacing utility (under ThinkLate umbrella) |
+| **04. Agency Lab** | **ThinkLate Agency** | `04-agency-lab/` | B2B high-retention storytelling, digital assets, and corporate client decks |
 
 ---
 

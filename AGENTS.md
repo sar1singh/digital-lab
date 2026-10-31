@@ -4,7 +4,7 @@ You are operating inside a multi-folder workspace containing:
 - `engineering-foundations/` — Core engineering skills, system architecture, patterns, interview prep
 - `lifeos-hq/` — Personal OS (health, fitness, wealth, routines, personal creator tracking)
 - `digital-lab/` — Practical digital business ventures:
-  - `01-product-factory/` — Digital utility products (Nivora brand)
+  - `01-product-factory/` — Digital utility products & micro-SaaS (consolidated under ThinkLate parent umbrella)
   - `03-content-lab/thinklate/` — ThinkLate YouTube channel (@wethinklate) & media company
 - `agent-os/` — Agent OS platform, Hermes context engine, telemetry, fullstack console
 - `paisavault/` — Personal wealth & financial tracker app

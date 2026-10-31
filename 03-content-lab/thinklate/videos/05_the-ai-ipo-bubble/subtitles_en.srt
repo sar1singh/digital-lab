@@ -1,0 +1,371 @@
+1
+00:00:00,000 --> 00:00:04,799
+In the summer of 2026, a company called Anthropic did something unprecedented.
+
+2
+00:00:05,599 --> 00:00:09,199
+They filed paperwork with the SEC to sell shares on Wall Street.
+
+3
+00:00:10,080 --> 00:00:15,519
+The ticker symbol, A&T. The target valuation, up to $2 trillion.
+
+4
+00:00:16,399 --> 00:00:20,079
+$2 trillion, with a T. Remember Anthropic?
+
+5
+00:00:20,960 --> 00:00:24,480
+They were the idealistic researchers who broke away from OpenAI.
+
+6
+00:00:25,359 --> 00:00:28,800
+Because they believed commercializing AI was moving too fast.
+
+7
+00:00:29,679 --> 00:00:31,600
+And too dangerous for humanity.
+
+8
+00:00:32,560 --> 00:00:38,079
+Now, they are rushing to the NASDAQ to sell shares to your dentist before the quarterly electric bill arrives.
+
+9
+00:00:38,960 --> 00:00:42,799
+Because when you open page 48 of their S1 registration statement,
+
+10
+00:00:43,600 --> 00:00:46,479
+the number that jumps off the page is not their revenue.
+
+11
+00:00:47,359 --> 00:00:52,320
+Their revenue looked impressive, $16.3 billion in just the first six months.
+
+12
+00:00:53,200 --> 00:00:55,359
+The number that hits you is the net loss.
+
+13
+00:00:56,320 --> 00:00:58,320
+$80.7 billion.
+
+14
+00:00:59,280 --> 00:01:00,159
+In six months.
+
+15
+00:01:01,200 --> 00:01:02,079
+Read that again.
+
+16
+00:01:03,039 --> 00:01:07,200
+How does a software company lose $80 billion dollars answering text prompts?
+
+17
+00:01:08,079 --> 00:01:11,680
+To understand that $80 billion crater, you have to follow the money.
+
+18
+00:01:12,560 --> 00:01:15,280
+And when you trace the cash, you do not find a business.
+
+19
+00:01:16,239 --> 00:01:17,439
+You find a carousel.
+
+20
+00:01:18,480 --> 00:01:19,840
+Watch how the machine works.
+
+21
+00:01:20,719 --> 00:01:23,280
+Amazon invests billions into Anthropic.
+
+22
+00:01:24,239 --> 00:01:26,959
+Microsoft invests billions into OpenAI.
+
+23
+00:01:27,760 --> 00:01:30,640
+Do you think that cash sits in a corporate checking account?
+
+24
+00:01:31,599 --> 00:01:34,879
+Within 72 hours, that money is wired directly back.
+
+25
+00:01:35,680 --> 00:01:38,560
+To Amazon Web Services and Microsoft Azure.
+
+26
+00:01:39,439 --> 00:01:40,799
+To rent server racks.
+
+27
+00:01:41,680 --> 00:01:44,640
+And what do Amazon and Microsoft do with that cash?
+
+28
+00:01:45,519 --> 00:01:50,079
+They wire it straight to Santa Clara to buy hundreds of thousands of Nvidia GPUs.
+
+29
+00:01:51,040 --> 00:01:52,879
+Nvidia reports record earnings.
+
+30
+00:01:53,840 --> 00:01:56,879
+Wall Street pushes their market cap into the stratosphere.
+
+31
+00:01:57,760 --> 00:02:02,879
+And venture capitalists celebrate because the start-up they funded just booked record revenue.
+
+32
+00:02:03,680 --> 00:02:05,040
+Everyone reports growth.
+
+33
+00:02:06,000 --> 00:02:07,280
+Everyone gets a bonus.
+
+34
+00:02:08,159 --> 00:02:12,719
+And the only thing actually moving is the same $10 billion, spinning in a circle.
+
+35
+00:02:13,599 --> 00:02:15,280
+Like a financial washing machine.
+
+36
+00:02:16,159 --> 00:02:17,599
+There is only one problem.
+
+37
+00:02:18,479 --> 00:02:20,000
+Where is the paying customer?
+
+38
+00:02:20,879 --> 00:02:25,680
+A $20 subscription that writes cover letters does not pay for a nuclear reactor.
+
+39
+00:02:26,560 --> 00:02:30,960
+A partner at Sequoia Capital named David Khan sat down with a calculator.
+
+40
+00:02:31,840 --> 00:02:35,840
+And he asked the question, nobody in Silicon Valley wanted to put on a slide.
+
+41
+00:02:36,800 --> 00:02:37,919
+The math is ruthless.
+
+42
+00:02:38,800 --> 00:02:42,960
+If big tech spends $300 billion, building AI data centers.
+
+43
+00:02:43,919 --> 00:02:45,680
+Those chips do not last forever.
+
+44
+00:02:46,560 --> 00:02:47,360
+They burn out.
+
+45
+00:02:48,319 --> 00:02:50,719
+They become obsolete in four to five years.
+
+46
+00:02:51,599 --> 00:02:54,960
+To pay for the depreciation, the cooling, and the utility bills.
+
+47
+00:02:55,840 --> 00:02:59,919
+The AI industry needs to generate $600 billion in revenue.
+
+48
+00:03:00,879 --> 00:03:01,919
+Every single year.
+
+49
+00:03:02,879 --> 00:03:04,560
+Now look at the entire planet.
+
+50
+00:03:05,439 --> 00:03:09,439
+The total amount of money spent on all business software on Earth last year.
+
+51
+00:03:10,319 --> 00:03:12,800
+Was about $350 billion.
+
+52
+00:03:13,759 --> 00:03:14,719
+Every database.
+
+53
+00:03:15,680 --> 00:03:16,800
+Every CRM.
+
+54
+00:03:17,759 --> 00:03:19,199
+Every operating system.
+
+55
+00:03:20,080 --> 00:03:20,719
+Combined.
+
+56
+00:03:21,520 --> 00:03:25,680
+To justify this bubble, AI would have to replace every software company on Earth.
+
+57
+00:03:26,639 --> 00:03:27,360
+Twice over.
+
+58
+00:03:28,400 --> 00:03:29,039
+Over night.
+
+59
+00:03:30,080 --> 00:03:31,360
+That is not a forecast.
+
+60
+00:03:32,400 --> 00:03:34,000
+That is mathematical fiction.
+
+61
+00:03:34,879 --> 00:03:38,080
+If you think this is brand new, welcome to 1999.
+
+62
+00:03:38,879 --> 00:03:43,360
+Telecom companies like WorldCom and Global Crossing borrowed hundreds of billions.
+
+63
+00:03:44,319 --> 00:03:46,240
+They dug trenches across continents.
+
+64
+00:03:47,120 --> 00:03:51,599
+They laid millions of miles of fiber optic glass cables under every highway in ocean.
+
+65
+00:03:52,479 --> 00:03:56,400
+They told Wall Street that internet traffic was doubling every 90 days.
+
+66
+00:03:57,280 --> 00:03:58,479
+The traffic was real.
+
+67
+00:03:59,360 --> 00:04:01,280
+The business model was a fantasy.
+
+68
+00:04:02,240 --> 00:04:06,240
+In two years, 90% of telecom startups filed for bankruptcy.
+
+69
+00:04:07,120 --> 00:04:10,719
+Trillions of dollars in paper net worth vanished into thin air.
+
+70
+00:04:11,599 --> 00:04:13,919
+But look at what happened when the dust settled.
+
+71
+00:04:14,800 --> 00:04:17,199
+The glass cables were already in the ground.
+
+72
+00:04:18,079 --> 00:04:20,800
+New operators bought them for pennies on the dollar.
+
+73
+00:04:21,680 --> 00:04:25,040
+And 10 years later, that bankrupt dirt cheap infrastructure.
+
+74
+00:04:25,920 --> 00:04:29,199
+Gave birth to Netflix, YouTube and modern cloud computing.
+
+75
+00:04:30,079 --> 00:04:30,959
+The bubble popped.
+
+76
+00:04:31,920 --> 00:04:32,959
+The plumbing stayed.
+
+77
+00:04:33,920 --> 00:04:37,199
+And that brings us right back to Anthropics S1 filing.
+
+78
+00:04:38,079 --> 00:04:40,800
+The founders of these AI labs are not foolish.
+
+79
+00:04:41,680 --> 00:04:43,519
+They are world-class mathematicians.
+
+80
+00:04:44,480 --> 00:04:45,680
+They can see the charts.
+
+81
+00:04:46,639 --> 00:04:50,160
+They know the cost of training models is compounding exponentially.
+
+82
+00:04:51,040 --> 00:04:54,399
+While the price of basic text generation is racing toward zero,
+
+83
+00:04:55,199 --> 00:04:57,680
+the smart money knows the clock is running out.
+
+84
+00:04:58,560 --> 00:05:02,000
+When an AI bubble bursts, you do not bet against the technology.
+
+85
+00:05:02,959 --> 00:05:04,639
+You follow the physical assets.
+
+86
+00:05:05,519 --> 00:05:10,240
+The losers will be the companies burning $80 billion to answer corporate emails.
+
+87
+00:05:11,120 --> 00:05:14,000
+The winners will be the companies that own the power plants.
+
+88
+00:05:14,879 --> 00:05:16,800
+The local data that cannot be scraped.
+
+89
+00:05:17,680 --> 00:05:20,639
+And the sovereign infrastructure that survives the crash.
+
+90
+00:05:21,600 --> 00:05:24,399
+The ticker symbol on the screen might say A&T.
+
+91
+00:05:25,279 --> 00:05:28,399
+Just remember, when the carousel stops,
+
+92
+00:05:29,439 --> 00:05:31,680
+make sure you are not the one holding the bill.
+
+93
+00:05:32,639 --> 00:05:33,600
+See you next time.

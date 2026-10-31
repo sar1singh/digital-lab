@@ -1,0 +1,653 @@
+[
+  {
+    "id": 1,
+    "start": 0.0,
+    "end": 4.8,
+    "timecode": "00:00 - 00:04",
+    "text": "In the summer of 2026, a company called Anthropic did something unprecedented."
+  },
+  {
+    "id": 2,
+    "start": 5.6,
+    "end": 9.2,
+    "timecode": "00:05 - 00:09",
+    "text": "They filed paperwork with the SEC to sell shares on Wall Street."
+  },
+  {
+    "id": 3,
+    "start": 10.08,
+    "end": 15.52,
+    "timecode": "00:10 - 00:15",
+    "text": "The ticker symbol, A&T. The target valuation, up to $2 trillion."
+  },
+  {
+    "id": 4,
+    "start": 16.4,
+    "end": 20.08,
+    "timecode": "00:16 - 00:20",
+    "text": "$2 trillion, with a T. Remember Anthropic?"
+  },
+  {
+    "id": 5,
+    "start": 20.96,
+    "end": 24.48,
+    "timecode": "00:20 - 00:24",
+    "text": "They were the idealistic researchers who broke away from OpenAI."
+  },
+  {
+    "id": 6,
+    "start": 25.36,
+    "end": 28.8,
+    "timecode": "00:25 - 00:28",
+    "text": "Because they believed commercializing AI was moving too fast."
+  },
+  {
+    "id": 7,
+    "start": 29.68,
+    "end": 31.6,
+    "timecode": "00:29 - 00:31",
+    "text": "And too dangerous for humanity."
+  },
+  {
+    "id": 8,
+    "start": 32.56,
+    "end": 38.08,
+    "timecode": "00:32 - 00:38",
+    "text": "Now, they are rushing to the NASDAQ to sell shares to your dentist before the quarterly electric bill arrives."
+  },
+  {
+    "id": 9,
+    "start": 38.96,
+    "end": 42.8,
+    "timecode": "00:38 - 00:42",
+    "text": "Because when you open page 48 of their S1 registration statement,"
+  },
+  {
+    "id": 10,
+    "start": 43.6,
+    "end": 46.48,
+    "timecode": "00:43 - 00:46",
+    "text": "the number that jumps off the page is not their revenue."
+  },
+  {
+    "id": 11,
+    "start": 47.36,
+    "end": 52.32,
+    "timecode": "00:47 - 00:52",
+    "text": "Their revenue looked impressive, $16.3 billion in just the first six months."
+  },
+  {
+    "id": 12,
+    "start": 53.2,
+    "end": 55.36,
+    "timecode": "00:53 - 00:55",
+    "text": "The number that hits you is the net loss."
+  },
+  {
+    "id": 13,
+    "start": 56.32,
+    "end": 58.32,
+    "timecode": "00:56 - 00:58",
+    "text": "$80.7 billion."
+  },
+  {
+    "id": 14,
+    "start": 59.28,
+    "end": 60.16,
+    "timecode": "00:59 - 01:00",
+    "text": "In six months."
+  },
+  {
+    "id": 15,
+    "start": 61.2,
+    "end": 62.08,
+    "timecode": "01:01 - 01:02",
+    "text": "Read that again."
+  },
+  {
+    "id": 16,
+    "start": 63.04,
+    "end": 67.2,
+    "timecode": "01:03 - 01:07",
+    "text": "How does a software company lose $80 billion dollars answering text prompts?"
+  },
+  {
+    "id": 17,
+    "start": 68.08,
+    "end": 71.68,
+    "timecode": "01:08 - 01:11",
+    "text": "To understand that $80 billion crater, you have to follow the money."
+  },
+  {
+    "id": 18,
+    "start": 72.56,
+    "end": 75.28,
+    "timecode": "01:12 - 01:15",
+    "text": "And when you trace the cash, you do not find a business."
+  },
+  {
+    "id": 19,
+    "start": 76.24,
+    "end": 77.44,
+    "timecode": "01:16 - 01:17",
+    "text": "You find a carousel."
+  },
+  {
+    "id": 20,
+    "start": 78.48,
+    "end": 79.84,
+    "timecode": "01:18 - 01:19",
+    "text": "Watch how the machine works."
+  },
+  {
+    "id": 21,
+    "start": 80.72,
+    "end": 83.28,
+    "timecode": "01:20 - 01:23",
+    "text": "Amazon invests billions into Anthropic."
+  },
+  {
+    "id": 22,
+    "start": 84.24,
+    "end": 86.96,
+    "timecode": "01:24 - 01:26",
+    "text": "Microsoft invests billions into OpenAI."
+  },
+  {
+    "id": 23,
+    "start": 87.76,
+    "end": 90.64,
+    "timecode": "01:27 - 01:30",
+    "text": "Do you think that cash sits in a corporate checking account?"
+  },
+  {
+    "id": 24,
+    "start": 91.6,
+    "end": 94.88,
+    "timecode": "01:31 - 01:34",
+    "text": "Within 72 hours, that money is wired directly back."
+  },
+  {
+    "id": 25,
+    "start": 95.68,
+    "end": 98.56,
+    "timecode": "01:35 - 01:38",
+    "text": "To Amazon Web Services and Microsoft Azure."
+  },
+  {
+    "id": 26,
+    "start": 99.44,
+    "end": 100.8,
+    "timecode": "01:39 - 01:40",
+    "text": "To rent server racks."
+  },
+  {
+    "id": 27,
+    "start": 101.68,
+    "end": 104.64,
+    "timecode": "01:41 - 01:44",
+    "text": "And what do Amazon and Microsoft do with that cash?"
+  },
+  {
+    "id": 28,
+    "start": 105.52,
+    "end": 110.08,
+    "timecode": "01:45 - 01:50",
+    "text": "They wire it straight to Santa Clara to buy hundreds of thousands of Nvidia GPUs."
+  },
+  {
+    "id": 29,
+    "start": 111.04,
+    "end": 112.88,
+    "timecode": "01:51 - 01:52",
+    "text": "Nvidia reports record earnings."
+  },
+  {
+    "id": 30,
+    "start": 113.84,
+    "end": 116.88,
+    "timecode": "01:53 - 01:56",
+    "text": "Wall Street pushes their market cap into the stratosphere."
+  },
+  {
+    "id": 31,
+    "start": 117.76,
+    "end": 122.88,
+    "timecode": "01:57 - 02:02",
+    "text": "And venture capitalists celebrate because the start-up they funded just booked record revenue."
+  },
+  {
+    "id": 32,
+    "start": 123.68,
+    "end": 125.04,
+    "timecode": "02:03 - 02:05",
+    "text": "Everyone reports growth."
+  },
+  {
+    "id": 33,
+    "start": 126.0,
+    "end": 127.28,
+    "timecode": "02:06 - 02:07",
+    "text": "Everyone gets a bonus."
+  },
+  {
+    "id": 34,
+    "start": 128.16,
+    "end": 132.72,
+    "timecode": "02:08 - 02:12",
+    "text": "And the only thing actually moving is the same $10 billion, spinning in a circle."
+  },
+  {
+    "id": 35,
+    "start": 133.6,
+    "end": 135.28,
+    "timecode": "02:13 - 02:15",
+    "text": "Like a financial washing machine."
+  },
+  {
+    "id": 36,
+    "start": 136.16,
+    "end": 137.6,
+    "timecode": "02:16 - 02:17",
+    "text": "There is only one problem."
+  },
+  {
+    "id": 37,
+    "start": 138.48,
+    "end": 140.0,
+    "timecode": "02:18 - 02:20",
+    "text": "Where is the paying customer?"
+  },
+  {
+    "id": 38,
+    "start": 140.88,
+    "end": 145.68,
+    "timecode": "02:20 - 02:25",
+    "text": "A $20 subscription that writes cover letters does not pay for a nuclear reactor."
+  },
+  {
+    "id": 39,
+    "start": 146.56,
+    "end": 150.96,
+    "timecode": "02:26 - 02:30",
+    "text": "A partner at Sequoia Capital named David Khan sat down with a calculator."
+  },
+  {
+    "id": 40,
+    "start": 151.84,
+    "end": 155.84,
+    "timecode": "02:31 - 02:35",
+    "text": "And he asked the question, nobody in Silicon Valley wanted to put on a slide."
+  },
+  {
+    "id": 41,
+    "start": 156.8,
+    "end": 157.92,
+    "timecode": "02:36 - 02:37",
+    "text": "The math is ruthless."
+  },
+  {
+    "id": 42,
+    "start": 158.8,
+    "end": 162.96,
+    "timecode": "02:38 - 02:42",
+    "text": "If big tech spends $300 billion, building AI data centers."
+  },
+  {
+    "id": 43,
+    "start": 163.92,
+    "end": 165.68,
+    "timecode": "02:43 - 02:45",
+    "text": "Those chips do not last forever."
+  },
+  {
+    "id": 44,
+    "start": 166.56,
+    "end": 167.36,
+    "timecode": "02:46 - 02:47",
+    "text": "They burn out."
+  },
+  {
+    "id": 45,
+    "start": 168.32,
+    "end": 170.72,
+    "timecode": "02:48 - 02:50",
+    "text": "They become obsolete in four to five years."
+  },
+  {
+    "id": 46,
+    "start": 171.6,
+    "end": 174.96,
+    "timecode": "02:51 - 02:54",
+    "text": "To pay for the depreciation, the cooling, and the utility bills."
+  },
+  {
+    "id": 47,
+    "start": 175.84,
+    "end": 179.92,
+    "timecode": "02:55 - 02:59",
+    "text": "The AI industry needs to generate $600 billion in revenue."
+  },
+  {
+    "id": 48,
+    "start": 180.88,
+    "end": 181.92,
+    "timecode": "03:00 - 03:01",
+    "text": "Every single year."
+  },
+  {
+    "id": 49,
+    "start": 182.88,
+    "end": 184.56,
+    "timecode": "03:02 - 03:04",
+    "text": "Now look at the entire planet."
+  },
+  {
+    "id": 50,
+    "start": 185.44,
+    "end": 189.44,
+    "timecode": "03:05 - 03:09",
+    "text": "The total amount of money spent on all business software on Earth last year."
+  },
+  {
+    "id": 51,
+    "start": 190.32,
+    "end": 192.8,
+    "timecode": "03:10 - 03:12",
+    "text": "Was about $350 billion."
+  },
+  {
+    "id": 52,
+    "start": 193.76,
+    "end": 194.72,
+    "timecode": "03:13 - 03:14",
+    "text": "Every database."
+  },
+  {
+    "id": 53,
+    "start": 195.68,
+    "end": 196.8,
+    "timecode": "03:15 - 03:16",
+    "text": "Every CRM."
+  },
+  {
+    "id": 54,
+    "start": 197.76,
+    "end": 199.2,
+    "timecode": "03:17 - 03:19",
+    "text": "Every operating system."
+  },
+  {
+    "id": 55,
+    "start": 200.08,
+    "end": 200.72,
+    "timecode": "03:20 - 03:20",
+    "text": "Combined."
+  },
+  {
+    "id": 56,
+    "start": 201.52,
+    "end": 205.68,
+    "timecode": "03:21 - 03:25",
+    "text": "To justify this bubble, AI would have to replace every software company on Earth."
+  },
+  {
+    "id": 57,
+    "start": 206.64,
+    "end": 207.36,
+    "timecode": "03:26 - 03:27",
+    "text": "Twice over."
+  },
+  {
+    "id": 58,
+    "start": 208.4,
+    "end": 209.04,
+    "timecode": "03:28 - 03:29",
+    "text": "Over night."
+  },
+  {
+    "id": 59,
+    "start": 210.08,
+    "end": 211.36,
+    "timecode": "03:30 - 03:31",
+    "text": "That is not a forecast."
+  },
+  {
+    "id": 60,
+    "start": 212.4,
+    "end": 214.0,
+    "timecode": "03:32 - 03:34",
+    "text": "That is mathematical fiction."
+  },
+  {
+    "id": 61,
+    "start": 214.88,
+    "end": 218.08,
+    "timecode": "03:34 - 03:38",
+    "text": "If you think this is brand new, welcome to 1999."
+  },
+  {
+    "id": 62,
+    "start": 218.88,
+    "end": 223.36,
+    "timecode": "03:38 - 03:43",
+    "text": "Telecom companies like WorldCom and Global Crossing borrowed hundreds of billions."
+  },
+  {
+    "id": 63,
+    "start": 224.32,
+    "end": 226.24,
+    "timecode": "03:44 - 03:46",
+    "text": "They dug trenches across continents."
+  },
+  {
+    "id": 64,
+    "start": 227.12,
+    "end": 231.6,
+    "timecode": "03:47 - 03:51",
+    "text": "They laid millions of miles of fiber optic glass cables under every highway in ocean."
+  },
+  {
+    "id": 65,
+    "start": 232.48,
+    "end": 236.4,
+    "timecode": "03:52 - 03:56",
+    "text": "They told Wall Street that internet traffic was doubling every 90 days."
+  },
+  {
+    "id": 66,
+    "start": 237.28,
+    "end": 238.48,
+    "timecode": "03:57 - 03:58",
+    "text": "The traffic was real."
+  },
+  {
+    "id": 67,
+    "start": 239.36,
+    "end": 241.28,
+    "timecode": "03:59 - 04:01",
+    "text": "The business model was a fantasy."
+  },
+  {
+    "id": 68,
+    "start": 242.24,
+    "end": 246.24,
+    "timecode": "04:02 - 04:06",
+    "text": "In two years, 90% of telecom startups filed for bankruptcy."
+  },
+  {
+    "id": 69,
+    "start": 247.12,
+    "end": 250.72,
+    "timecode": "04:07 - 04:10",
+    "text": "Trillions of dollars in paper net worth vanished into thin air."
+  },
+  {
+    "id": 70,
+    "start": 251.6,
+    "end": 253.92,
+    "timecode": "04:11 - 04:13",
+    "text": "But look at what happened when the dust settled."
+  },
+  {
+    "id": 71,
+    "start": 254.8,
+    "end": 257.2,
+    "timecode": "04:14 - 04:17",
+    "text": "The glass cables were already in the ground."
+  },
+  {
+    "id": 72,
+    "start": 258.08,
+    "end": 260.8,
+    "timecode": "04:18 - 04:20",
+    "text": "New operators bought them for pennies on the dollar."
+  },
+  {
+    "id": 73,
+    "start": 261.68,
+    "end": 265.04,
+    "timecode": "04:21 - 04:25",
+    "text": "And 10 years later, that bankrupt dirt cheap infrastructure."
+  },
+  {
+    "id": 74,
+    "start": 265.92,
+    "end": 269.2,
+    "timecode": "04:25 - 04:29",
+    "text": "Gave birth to Netflix, YouTube and modern cloud computing."
+  },
+  {
+    "id": 75,
+    "start": 270.08,
+    "end": 270.96,
+    "timecode": "04:30 - 04:30",
+    "text": "The bubble popped."
+  },
+  {
+    "id": 76,
+    "start": 271.92,
+    "end": 272.96,
+    "timecode": "04:31 - 04:32",
+    "text": "The plumbing stayed."
+  },
+  {
+    "id": 77,
+    "start": 273.92,
+    "end": 277.2,
+    "timecode": "04:33 - 04:37",
+    "text": "And that brings us right back to Anthropics S1 filing."
+  },
+  {
+    "id": 78,
+    "start": 278.08,
+    "end": 280.8,
+    "timecode": "04:38 - 04:40",
+    "text": "The founders of these AI labs are not foolish."
+  },
+  {
+    "id": 79,
+    "start": 281.68,
+    "end": 283.52,
+    "timecode": "04:41 - 04:43",
+    "text": "They are world-class mathematicians."
+  },
+  {
+    "id": 80,
+    "start": 284.48,
+    "end": 285.68,
+    "timecode": "04:44 - 04:45",
+    "text": "They can see the charts."
+  },
+  {
+    "id": 81,
+    "start": 286.64,
+    "end": 290.16,
+    "timecode": "04:46 - 04:50",
+    "text": "They know the cost of training models is compounding exponentially."
+  },
+  {
+    "id": 82,
+    "start": 291.04,
+    "end": 294.4,
+    "timecode": "04:51 - 04:54",
+    "text": "While the price of basic text generation is racing toward zero,"
+  },
+  {
+    "id": 83,
+    "start": 295.2,
+    "end": 297.68,
+    "timecode": "04:55 - 04:57",
+    "text": "the smart money knows the clock is running out."
+  },
+  {
+    "id": 84,
+    "start": 298.56,
+    "end": 302.0,
+    "timecode": "04:58 - 05:02",
+    "text": "When an AI bubble bursts, you do not bet against the technology."
+  },
+  {
+    "id": 85,
+    "start": 302.96,
+    "end": 304.64,
+    "timecode": "05:02 - 05:04",
+    "text": "You follow the physical assets."
+  },
+  {
+    "id": 86,
+    "start": 305.52,
+    "end": 310.24,
+    "timecode": "05:05 - 05:10",
+    "text": "The losers will be the companies burning $80 billion to answer corporate emails."
+  },
+  {
+    "id": 87,
+    "start": 311.12,
+    "end": 314.0,
+    "timecode": "05:11 - 05:14",
+    "text": "The winners will be the companies that own the power plants."
+  },
+  {
+    "id": 88,
+    "start": 314.88,
+    "end": 316.8,
+    "timecode": "05:14 - 05:16",
+    "text": "The local data that cannot be scraped."
+  },
+  {
+    "id": 89,
+    "start": 317.68,
+    "end": 320.64,
+    "timecode": "05:17 - 05:20",
+    "text": "And the sovereign infrastructure that survives the crash."
+  },
+  {
+    "id": 90,
+    "start": 321.6,
+    "end": 324.4,
+    "timecode": "05:21 - 05:24",
+    "text": "The ticker symbol on the screen might say A&T."
+  },
+  {
+    "id": 91,
+    "start": 325.28,
+    "end": 328.4,
+    "timecode": "05:25 - 05:28",
+    "text": "Just remember, when the carousel stops,"
+  },
+  {
+    "id": 92,
+    "start": 329.44,
+    "end": 331.68,
+    "timecode": "05:29 - 05:31",
+    "text": "make sure you are not the one holding the bill."
+  },
+  {
+    "id": 93,
+    "start": 332.64,
+    "end": 333.6,
+    "timecode": "05:32 - 05:33",
+    "text": "See you next time."
+  }
+]

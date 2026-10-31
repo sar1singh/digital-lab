@@ -1,0 +1,190 @@
+<?xml version="1.0" ?>
+<fcpxml version="1.8">
+  <resources>
+    <format id="r1" name="FFVideoFormat1080p30" frameDuration="1/30s" width="1920" height="1080"/>
+    <asset id="r_audio" name="voiceover_mastered" src="file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/thinklate/videos/04_the-subscription-trap/assets/audio/voiceover_mastered.mp3" duration="12004/30s" hasAudio="1"/>
+    <asset id="r_bgm" name="ambient_music_dark_fog" src="file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/thinklate/videos/04_the-subscription-trap/assets/audio/ambient_music_dark_fog.mp3" duration="12004/30s" hasAudio="1"/>
+    <asset id="r_sfx_0" name="sfx_sub_boom.wav" src="file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/thinklate/videos/04_the-subscription-trap/assets/sfx/sfx_sub_boom.wav" hasAudio="1"/>
+    <asset id="r_sfx_1" name="sfx_whoosh.wav" src="file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/thinklate/videos/04_the-subscription-trap/assets/sfx/sfx_whoosh.wav" hasAudio="1"/>
+    <asset id="r_sfx_2" name="sfx_data_blip.wav" src="file:///c:/Users/sar1s/Documents/MyWork/Git/digital-lab/03-content-lab/thinklate/videos/04_the-subscription-trap/assets/sfx/sfx_data_blip.wav" hasAudio="1"/>
+  </resources>
+  <library>
+    <event name="ThinkLate_Video04_Event">
+      <project name="ThinkLate_Video04_The_Subscription_Trap">
+        <sequence format="r1" duration="12004/30s">
+          <spine>
+            <clip name="broll_01_bmw_car.mp4" offset="0/30s" duration="307/30s" start="0/1s">
+              <marker start="0/1s" duration="307/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="287/30s" value="V4_TEXT: card_cue01_60k_car.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol 0.4)"/>
+            </clip>
+            <clip name="broll_02_car_driving.mp4" offset="307/30s" duration="246/30s" start="0/1s">
+              <marker start="0/1s" duration="246/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="226/30s" value="V4_TEXT: card_cue02_global_rollout.png"/>
+            </clip>
+            <clip name="anchor_01_frosted_dashboard.jpg" offset="553/30s" duration="259/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_data_blip.wav (vol 0.35)"/>
+            </clip>
+            <clip name="broll_02_car_driving.mp4" offset="812/30s" duration="174/30s" start="0/1s">
+              <marker start="0/1s" duration="174/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="154/30s" value="V4_TEXT: card_cue04_bolted_factory.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol 0.55)"/>
+            </clip>
+            <clip name="broll_01_bmw_car.mp4" offset="986/30s" duration="126/30s" start="0/1s">
+              <marker start="0/1s" duration="126/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="106/30s" value="V4_TEXT: card_cue05_cloud_lock.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_data_blip.wav (vol 0.35)"/>
+            </clip>
+            <clip name="broll_02_car_driving.mp4" offset="1112/30s" duration="181/30s" start="0/1s">
+              <marker start="0/1s" duration="181/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="161/30s" value="V4_TEXT: card_cue06_hostage_seat.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol 0.55)"/>
+            </clip>
+            <clip name="broll_01_bmw_car.mp4" offset="1294/30s" duration="136/30s" start="0/1s"/>
+            <clip name="broll_02_car_driving.mp4" offset="1429/30s" duration="259/30s" start="0/1s">
+              <marker start="0/1s" duration="259/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="239/30s" value="V4_TEXT: card_cue08_not_a_prank.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol 0.5)"/>
+            </clip>
+            <clip name="anchor_02_hp_printer_kill.jpg" offset="1688/30s" duration="235/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol 0.4)"/>
+            </clip>
+            <clip name="broll_04_office_corp.mp4" offset="1924/30s" duration="346/30s" start="0/1s">
+              <marker start="0/1s" duration="346/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="326/30s" value="V4_TEXT: card_cue10_overnight_brick.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_data_blip.wav (vol 0.35)"/>
+            </clip>
+            <clip name="broll_03_hp_printer.mp4" offset="2269/30s" duration="202/30s" start="0/1s">
+              <marker start="0/1s" duration="202/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="182/30s" value="V4_TEXT: card_cue11_audits_ink.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol 0.5)"/>
+            </clip>
+            <clip name="broll_04_office_corp.mp4" offset="2471/30s" duration="266/30s" start="0/1s">
+              <marker start="0/1s" duration="266/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="246/30s" value="V4_TEXT: card_cue12_fine_penalty.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol 0.4)"/>
+            </clip>
+            <clip name="evidence_hp_ceo_quote.jpg" offset="2737/30s" duration="284/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_data_blip.wav (vol 0.35)"/>
+            </clip>
+            <clip name="broll_04_office_corp.mp4" offset="3022/30s" duration="359/30s" start="0/1s">
+              <marker start="0/1s" duration="359/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="339/30s" value="V4_TEXT: card_cue14_hp_investment.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol 0.5)"/>
+            </clip>
+            <clip name="broll_03_hp_printer.mp4" offset="3380/30s" duration="164/30s" start="0/1s">
+              <marker start="0/1s" duration="164/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="144/30s" value="V4_TEXT: card_cue15_cheap_ink_target.png"/>
+            </clip>
+            <clip name="broll_04_office_corp.mp4" offset="3545/30s" duration="187/30s" start="0/1s">
+              <marker start="0/1s" duration="187/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="167/30s" value="V4_TEXT: card_cue16_cold_seat_tractor.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol 0.5)"/>
+            </clip>
+            <clip name="anchor_03_nebraska_combine.jpg" offset="3732/30s" duration="364/30s" start="0/1s">
+              <marker start="10/30s" duration="344/30s" value="V4_TEXT: card_cue17_nebraska_testimony.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol 0.4)"/>
+            </clip>
+            <clip name="broll_06_farm_combine.mp4" offset="4096/30s" duration="360/30s" start="0/1s">
+              <marker start="0/1s" duration="360/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="340/30s" value="V4_TEXT: card_cue18_john_deere_trip.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_data_blip.wav (vol 0.35)"/>
+            </clip>
+            <clip name="broll_05_nebraska_tractor.mp4" offset="4456/30s" duration="182/30s" start="0/1s">
+              <marker start="0/1s" duration="182/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="162/30s" value="V4_TEXT: card_cue19_whose_tractor.png"/>
+            </clip>
+            <clip name="hacker_noir_plate.jpg" offset="4638/30s" duration="314/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol 0.4)"/>
+            </clip>
+            <clip name="broll_08_diagnostic_code.mp4" offset="4952/30s" duration="376/30s" start="0/1s">
+              <marker start="0/1s" duration="376/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="356/30s" value="V4_TEXT: card_cue21_copyright_weapon.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol 0.5)"/>
+            </clip>
+            <clip name="broll_07_hacker_firmware.mp4" offset="5328/30s" duration="269/30s" start="0/1s">
+              <marker start="0/1s" duration="269/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="249/30s" value="V4_TEXT: card_cue22_spreadsheet_villain.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol 0.5)"/>
+            </clip>
+            <clip name="CHART_VALUATION_MULTIPLIER_animated.mp4" offset="5597/30s" duration="451/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_data_blip.wav (vol 0.35)"/>
+            </clip>
+            <clip name="CHART_VALUATION_MULTIPLIER_animated.mp4" offset="6048/30s" duration="397/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol 0.55)"/>
+            </clip>
+            <clip name="broll_09_wall_street_finance.mp4" offset="6445/30s" duration="395/30s" start="0/1s">
+              <marker start="0/1s" duration="395/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="375/30s" value="V4_TEXT: card_cue25_cannot_leave.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol 0.5)"/>
+            </clip>
+            <clip name="broll_10_server_room.mp4" offset="6840/30s" duration="360/30s" start="0/1s">
+              <marker start="0/1s" duration="360/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="340/30s" value="V4_TEXT: card_cue26_valuation_surge.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_data_blip.wav (vol 0.35)"/>
+            </clip>
+            <clip name="broll_09_wall_street_finance.mp4" offset="7200/30s" duration="376/30s" start="0/1s">
+              <marker start="0/1s" duration="376/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="356/30s" value="V4_TEXT: card_cue27_ceo_scoreboard.png"/>
+            </clip>
+            <clip name="anchor_05_geneva_cartel_1924.jpg" offset="7576/30s" duration="551/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol 0.4)"/>
+            </clip>
+            <clip name="broll_11_tungsten_bulb.mp4" offset="8126/30s" duration="274/30s" start="0/1s">
+              <marker start="0/1s" duration="274/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="254/30s" value="V4_TEXT: card_cue29_secret_pact.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol 0.5)"/>
+            </clip>
+            <clip name="centennial_light_1901.jpg" offset="8400/30s" duration="318/30s" start="0/1s">
+              <marker start="10/30s" duration="298/30s" value="V4_TEXT: card_cue30_livermore_bulb.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_data_blip.wav (vol 0.35)"/>
+            </clip>
+            <clip name="broll_11_tungsten_bulb.mp4" offset="8718/30s" duration="342/30s" start="0/1s">
+              <marker start="0/1s" duration="342/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="322/30s" value="V4_TEXT: card_cue31_phoebus_limit.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol 0.5)"/>
+            </clip>
+            <clip name="broll_11_tungsten_bulb.mp4" offset="9060/30s" duration="384/30s" start="0/1s">
+              <marker start="0/1s" duration="384/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="364/30s" value="V4_TEXT: card_cue32_same_incentive.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol 0.4)"/>
+            </clip>
+            <clip name="anchor_06_phone_lock_delivery.jpg" offset="9444/30s" duration="500/30s" start="0/1s">
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol 0.4)"/>
+            </clip>
+            <clip name="broll_13_phone_lock.mp4" offset="9944/30s" duration="376/30s" start="0/1s">
+              <marker start="0/1s" duration="376/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="356/30s" value="V4_TEXT: card_cue34_job_hostage.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol 0.55)"/>
+            </clip>
+            <clip name="broll_13_phone_lock.mp4" offset="10320/30s" duration="330/30s" start="0/1s">
+              <marker start="0/1s" duration="330/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="310/30s" value="V4_TEXT: card_cue35_ftc_lawsuit.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_data_blip.wav (vol 0.35)"/>
+            </clip>
+            <clip name="broll_01_bmw_car.mp4" offset="10650/30s" duration="300/30s" start="0/1s">
+              <marker start="0/1s" duration="300/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="280/30s" value="V4_TEXT: card_cue36_bmw_drops_rent.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol 0.4)"/>
+            </clip>
+            <clip name="broll_05_nebraska_tractor.mp4" offset="10950/30s" duration="300/30s" start="0/1s">
+              <marker start="0/1s" duration="300/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="280/30s" value="V4_TEXT: card_cue37_repair_wins.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_data_blip.wav (vol 0.35)"/>
+            </clip>
+            <clip name="broll_01_bmw_car.mp4" offset="11250/30s" duration="403/30s" start="0/1s">
+              <marker start="0/1s" duration="403/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="383/30s" value="V4_TEXT: card_cue38_one_update_lease.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_sub_boom.wav (vol 0.5)"/>
+            </clip>
+            <clip name="broll_02_car_driving.mp4" offset="11653/30s" duration="350/30s" start="0/1s">
+              <marker start="0/1s" duration="350/30s" value="V2_SCOPED_BLUR: Active under text"/>
+              <marker start="10/30s" duration="330/30s" value="V4_TEXT: card_cue39_holding_key.png"/>
+              <marker start="0/1s" duration="1/1s" value="SFX: sfx_whoosh.wav (vol 0.4)"/>
+            </clip>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>

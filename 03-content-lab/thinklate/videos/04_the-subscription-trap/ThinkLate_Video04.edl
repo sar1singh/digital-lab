@@ -1,0 +1,183 @@
+TITLE: ThinkLate_Video04_The_Subscription_Trap
+FCM: NON-DROP FRAME
+
+001  AX01       V     C        00:00:00:00 00:00:10:07 00:00:00:00 00:00:10:07
+* FROM CLIP NAME: broll_01_bmw_car.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue01_60k_car.png
+* COMMENT: SFX CUE = sfx_whoosh.wav at 0.0s
+
+002  AX02       V     C        00:00:00:00 00:00:08:06 00:00:10:07 00:00:18:13
+* FROM CLIP NAME: broll_02_car_driving.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue02_global_rollout.png
+
+003  AX03       V     C        00:00:00:00 00:00:08:19 00:00:18:13 00:00:27:02
+* FROM CLIP NAME: anchor_01_frosted_dashboard.jpg
+* COMMENT: SFX CUE = sfx_data_blip.wav at 20.0s
+
+004  AX04       V     C        00:00:00:00 00:00:05:24 00:00:27:02 00:00:32:26
+* FROM CLIP NAME: broll_02_car_driving.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue04_bolted_factory.png
+* COMMENT: SFX CUE = sfx_sub_boom.wav at 27.08s
+
+005  AX05       V     C        00:00:00:00 00:00:04:06 00:00:32:26 00:00:37:02
+* FROM CLIP NAME: broll_01_bmw_car.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue05_cloud_lock.png
+* COMMENT: SFX CUE = sfx_data_blip.wav at 33.0s
+
+006  AX06       V     C        00:00:00:00 00:00:06:01 00:00:37:02 00:00:43:04
+* FROM CLIP NAME: broll_02_car_driving.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue06_hostage_seat.png
+* COMMENT: SFX CUE = sfx_sub_boom.wav at 37.08s
+
+007  AX07       V     C        00:00:00:00 00:00:04:16 00:00:43:04 00:00:47:19
+* FROM CLIP NAME: broll_01_bmw_car.mp4
+
+008  AX08       V     C        00:00:00:00 00:00:08:19 00:00:47:19 00:00:56:08
+* FROM CLIP NAME: broll_02_car_driving.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue08_not_a_prank.png
+* COMMENT: SFX CUE = sfx_sub_boom.wav at 47.64s
+
+009  AX09       V     C        00:00:00:00 00:00:07:25 00:00:56:08 00:01:04:04
+* FROM CLIP NAME: anchor_02_hp_printer_kill.jpg
+* COMMENT: SFX CUE = sfx_whoosh.wav at 56.5s
+
+010  AX10       V     C        00:00:00:00 00:00:11:16 00:01:04:04 00:01:15:19
+* FROM CLIP NAME: broll_04_office_corp.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue10_overnight_brick.png
+* COMMENT: SFX CUE = sfx_data_blip.wav at 65.0s
+
+011  AX11       V     C        00:00:00:00 00:00:06:22 00:01:15:19 00:01:22:11
+* FROM CLIP NAME: broll_03_hp_printer.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue11_audits_ink.png
+* COMMENT: SFX CUE = sfx_sub_boom.wav at 76.0s
+
+012  AX12       V     C        00:00:00:00 00:00:08:26 00:01:22:11 00:01:31:07
+* FROM CLIP NAME: broll_04_office_corp.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue12_fine_penalty.png
+* COMMENT: SFX CUE = sfx_whoosh.wav at 83.0s
+
+013  AX13       V     C        00:00:00:00 00:00:09:14 00:01:31:07 00:01:40:22
+* FROM CLIP NAME: evidence_hp_ceo_quote.jpg
+* COMMENT: SFX CUE = sfx_data_blip.wav at 92.0s
+
+014  AX14       V     C        00:00:00:00 00:00:11:29 00:01:40:22 00:01:52:20
+* FROM CLIP NAME: broll_04_office_corp.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue14_hp_investment.png
+* COMMENT: SFX CUE = sfx_sub_boom.wav at 102.0s
+
+015  AX15       V     C        00:00:00:00 00:00:05:14 00:01:52:20 00:01:58:05
+* FROM CLIP NAME: broll_03_hp_printer.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue15_cheap_ink_target.png
+
+016  AX16       V     C        00:00:00:00 00:00:06:07 00:01:58:05 00:02:04:12
+* FROM CLIP NAME: broll_04_office_corp.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue16_cold_seat_tractor.png
+* COMMENT: SFX CUE = sfx_sub_boom.wav at 119.0s
+
+017  AX17       V     C        00:00:00:00 00:00:12:04 00:02:04:12 00:02:16:16
+* FROM CLIP NAME: anchor_03_nebraska_combine.jpg
+* COMMENT: V4 TEXT OVERLAY = card_cue17_nebraska_testimony.png
+* COMMENT: SFX CUE = sfx_whoosh.wav at 125.0s
+
+018  AX18       V     C        00:00:00:00 00:00:12:00 00:02:16:16 00:02:28:16
+* FROM CLIP NAME: broll_06_farm_combine.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue18_john_deere_trip.png
+* COMMENT: SFX CUE = sfx_data_blip.wav at 138.0s
+
+019  AX19       V     C        00:00:00:00 00:00:06:02 00:02:28:16 00:02:34:18
+* FROM CLIP NAME: broll_05_nebraska_tractor.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue19_whose_tractor.png
+
+020  AX20       V     C        00:00:00:00 00:00:10:14 00:02:34:18 00:02:45:02
+* FROM CLIP NAME: hacker_noir_plate.jpg
+* COMMENT: SFX CUE = sfx_whoosh.wav at 155.0s
+
+021  AX21       V     C        00:00:00:00 00:00:12:16 00:02:45:02 00:02:57:18
+* FROM CLIP NAME: broll_08_diagnostic_code.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue21_copyright_weapon.png
+* COMMENT: SFX CUE = sfx_sub_boom.wav at 166.0s
+
+022  AX22       V     C        00:00:00:00 00:00:08:29 00:02:57:18 00:03:06:17
+* FROM CLIP NAME: broll_07_hacker_firmware.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue22_spreadsheet_villain.png
+* COMMENT: SFX CUE = sfx_sub_boom.wav at 178.0s
+
+023  AX23       V     C        00:00:00:00 00:00:15:01 00:03:06:17 00:03:21:18
+* FROM CLIP NAME: CHART_VALUATION_MULTIPLIER_animated.mp4
+* COMMENT: SFX CUE = sfx_data_blip.wav at 188.0s
+
+024  AX24       V     C        00:00:00:00 00:00:13:07 00:03:21:18 00:03:34:25
+* FROM CLIP NAME: CHART_VALUATION_MULTIPLIER_animated.mp4
+* COMMENT: SFX CUE = sfx_sub_boom.wav at 202.0s
+
+025  AX25       V     C        00:00:00:00 00:00:13:05 00:03:34:25 00:03:48:00
+* FROM CLIP NAME: broll_09_wall_street_finance.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue25_cannot_leave.png
+* COMMENT: SFX CUE = sfx_sub_boom.wav at 216.0s
+
+026  AX26       V     C        00:00:00:00 00:00:12:00 00:03:48:00 00:04:00:00
+* FROM CLIP NAME: broll_10_server_room.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue26_valuation_surge.png
+* COMMENT: SFX CUE = sfx_data_blip.wav at 230.0s
+
+027  AX27       V     C        00:00:00:00 00:00:12:16 00:04:00:00 00:04:12:16
+* FROM CLIP NAME: broll_09_wall_street_finance.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue27_ceo_scoreboard.png
+
+028  AX28       V     C        00:00:00:00 00:00:18:11 00:04:12:16 00:04:30:26
+* FROM CLIP NAME: anchor_05_geneva_cartel_1924.jpg
+* COMMENT: SFX CUE = sfx_whoosh.wav at 253.0s
+
+029  AX29       V     C        00:00:00:00 00:00:09:04 00:04:30:26 00:04:40:00
+* FROM CLIP NAME: broll_11_tungsten_bulb.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue29_secret_pact.png
+* COMMENT: SFX CUE = sfx_sub_boom.wav at 272.0s
+
+030  AX30       V     C        00:00:00:00 00:00:10:18 00:04:40:00 00:04:50:18
+* FROM CLIP NAME: centennial_light_1901.jpg
+* COMMENT: V4 TEXT OVERLAY = card_cue30_livermore_bulb.png
+* COMMENT: SFX CUE = sfx_data_blip.wav at 282.0s
+
+031  AX31       V     C        00:00:00:00 00:00:11:12 00:04:50:18 00:05:02:00
+* FROM CLIP NAME: broll_11_tungsten_bulb.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue31_phoebus_limit.png
+* COMMENT: SFX CUE = sfx_sub_boom.wav at 292.0s
+
+032  AX32       V     C        00:00:00:00 00:00:12:24 00:05:02:00 00:05:14:24
+* FROM CLIP NAME: broll_11_tungsten_bulb.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue32_same_incentive.png
+* COMMENT: SFX CUE = sfx_whoosh.wav at 303.0s
+
+033  AX33       V     C        00:00:00:00 00:00:16:20 00:05:14:24 00:05:31:14
+* FROM CLIP NAME: anchor_06_phone_lock_delivery.jpg
+* COMMENT: SFX CUE = sfx_whoosh.wav at 315.0s
+
+034  AX34       V     C        00:00:00:00 00:00:12:16 00:05:31:14 00:05:44:00
+* FROM CLIP NAME: broll_13_phone_lock.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue34_job_hostage.png
+* COMMENT: SFX CUE = sfx_sub_boom.wav at 332.0s
+
+035  AX35       V     C        00:00:00:00 00:00:11:00 00:05:44:00 00:05:55:00
+* FROM CLIP NAME: broll_13_phone_lock.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue35_ftc_lawsuit.png
+* COMMENT: SFX CUE = sfx_data_blip.wav at 346.0s
+
+036  AX36       V     C        00:00:00:00 00:00:10:00 00:05:55:00 00:06:05:00
+* FROM CLIP NAME: broll_01_bmw_car.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue36_bmw_drops_rent.png
+* COMMENT: SFX CUE = sfx_whoosh.wav at 355.5s
+
+037  AX37       V     C        00:00:00:00 00:00:10:00 00:06:05:00 00:06:15:00
+* FROM CLIP NAME: broll_05_nebraska_tractor.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue37_repair_wins.png
+* COMMENT: SFX CUE = sfx_data_blip.wav at 366.0s
+
+038  AX38       V     C        00:00:00:00 00:00:13:13 00:06:15:00 00:06:28:13
+* FROM CLIP NAME: broll_01_bmw_car.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue38_one_update_lease.png
+* COMMENT: SFX CUE = sfx_sub_boom.wav at 376.0s
+
+039  AX39       V     C        00:00:00:00 00:00:11:20 00:06:28:13 00:06:40:04
+* FROM CLIP NAME: broll_02_car_driving.mp4
+* COMMENT: V4 TEXT OVERLAY = card_cue39_holding_key.png
+* COMMENT: SFX CUE = sfx_whoosh.wav at 389.0s
