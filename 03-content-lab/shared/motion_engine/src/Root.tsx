@@ -44,6 +44,9 @@ import { TextTrailOutline } from "./components/typography/TextTrailOutline";
 import { TypographyBackgroundWall } from "./components/typography/TypographyBackgroundWall";
 import { CurtainSwipeReveal } from "./components/typography/CurtainSwipeReveal";
 
+// High-CTR YouTube Thumbnail Suite
+import { ThumbnailStudio } from "./components/packaging/ThumbnailStudio";
+
 export const RemotionRoot: React.FC = () => {
   return (
     <>
@@ -784,6 +787,32 @@ export const RemotionRoot: React.FC = () => {
           heading: "THE FOUNDERS DIDN'T RAISE VC MONEY.",
           punchline: "THEY SOLD BREAKFAST CEREAL.",
           categoryTag: "UNCONVENTIONAL EXECUTION",
+        }}
+      />
+      {/* ============================================================== */}
+      {/* 3. HIGH-CTR PACKAGING SUITE (YouTube Thumbnail Studio 1280x720)*/}
+      {/* ============================================================== */}
+      <Composition
+        id="ThumbnailStudio"
+        component={ThumbnailStudio as any}
+        durationInFrames={30}
+        fps={30}
+        width={1280}
+        height={720}
+        defaultProps={{
+          channel: "thinklate",
+          style: "magnates_brand",
+          headlineTop: "THE INSANE",
+          headlineBottom: "HEIST OF $100B",
+          badgeText: "CRIMINAL EXPOSE",
+          badgeColor: "#FF2A4B",
+          brandLogoType: "airbnb",
+          statPins: [
+            { label: "CLEANING FEE", value: "$300" },
+            { label: "CHORE LIST", value: "8 TASKS" },
+            { label: "HOTEL SAVINGS", value: "$0" }
+          ],
+          accentStamp: "EXPOSED"
         }}
       />
     </>
