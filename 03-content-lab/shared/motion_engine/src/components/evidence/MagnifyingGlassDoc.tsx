@@ -287,3 +287,4 @@ export const MagnifyingGlassDoc: React.FC<MagnifyingGlassDocProps> = ({
     </div>
   );
 };
+

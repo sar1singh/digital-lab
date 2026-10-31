@@ -203,3 +203,4 @@ export const RankedListicleCard: React.FC<RankedListicleCardProps> = ({
     </div>
   );
 };
+
