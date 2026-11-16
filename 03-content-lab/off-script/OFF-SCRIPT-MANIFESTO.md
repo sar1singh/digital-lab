@@ -10,9 +10,10 @@
 
 1. **Anti-Brain-Rot:** Modern social media has reduced human attention to 15-second outrage reels. People form geopolitical and cultural worldviews without knowing 50 years of historical background. *Off Script* restores the missing reality.
 2. **Zero Corporate PR Filter:** Truth does not require political correctness. Whether addressing religious hypocrisy, societal taboos, media bias, or gaming industry greed, if the facts are verified, we say it plainly.
-3. **The Mask of Eddy (The Batman Effect):**
+3. **The Mask of Eddy (The Batman Effect & 3D Avatar):**
    - Eddy is the alter-ego. Eddy does not worry about social anxiety or corporate LinkedIn perceptions.
    - Eddy speaks with street-smart authority, grounded humor, and factual clarity.
+   - *Visual Form:* Optional 3D anime/noir avatar (dark hoodie, headphones, sharp eyes) driven in real time via webcam AI tracking (Warudo + VRoid Studio) over Track 1 gameplay with zero software cost. See `avatar/AVATAR_SETUP_GUIDE.md`.
 
 ---
 

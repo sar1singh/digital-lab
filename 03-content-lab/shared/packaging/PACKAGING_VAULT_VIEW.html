@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Packaging Inspiration & Packaging Concept Vault — ThinkLate Media</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-base: #07090E;
+    --bg-card: #0F1420;
+    --bg-card-hover: #161D2E;
+    --border: #1E293B;
+    --border-highlight: #334155;
+    --accent-lime: #E2FF00;
+    --accent-cyan: #00F0FF;
+    --accent-crimson: #FF2A4B;
+    --accent-orange: #FF5500;
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --text-muted: #64748B;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg-base);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    min-height: 100vh;
+    padding: 32px 40px;
+    line-height: 1.5;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .title-group h1 {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .title-group h1 span.badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(226, 255, 0, 0.12);
+    color: var(--accent-lime);
+    border: 1px solid rgba(226, 255, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .title-group p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  .header-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+  }
+  .btn:hover {
+    border-color: var(--accent-cyan);
+    background: var(--bg-card-hover);
+    color: var(--accent-cyan);
+  }
+  .btn.active {
+    background: var(--accent-lime);
+    color: #000;
+    border-color: var(--accent-lime);
+    font-weight: 700;
+  }
+
+  /* Filter Tabs */
+  .tabs-bar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+  .tab-btn {
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--text-secondary);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .tab-btn:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.04);
+  }
+  .tab-btn.active {
+    background: var(--bg-card);
+    color: var(--text-primary);
+    border-color: var(--border-highlight);
+  }
+
+  /* Grid of Cards */
+  .vault-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+    gap: 28px;
+  }
+
+  .vault-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+  }
+  .vault-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-highlight);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  }
+
+  .card-media {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    overflow: hidden;
+  }
+  .card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+  }
+  .card-media:hover img {
+    transform: scale(1.02);
+  }
+
+  .score-badge-overlay {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--accent-lime);
+    border: 1px solid rgba(226, 255, 0, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .category-pill {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent-cyan);
+    border: 1px solid rgba(0, 240, 255, 0.3);
+  }
+
+  .card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .card-id-source {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+
+  .card-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 14px;
+    line-height: 1.35;
+  }
+
+  /* Score Meters */
+  .score-matrix {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+  }
+  .score-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+  }
+  .score-label {
+    color: var(--text-secondary);
+  }
+  .score-bar-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 55%;
+  }
+  .score-bar {
+    flex: 1;
+    height: 6px;
+    background: #1E293B;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .score-fill {
+    height: 100%;
+    background: var(--accent-lime);
+    border-radius: 3px;
+  }
+  .score-val {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-primary);
+    width: 28px;
+    text-align: right;
+  }
+
+  /* Adaptations */
+  .adaptations-box {
+    margin-top: auto;
+    border-top: 1px solid var(--border);
+    padding-top: 14px;
+  }
+  .adapt-tag {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--accent-lime);
+    margin-bottom: 6px;
+    display: block;
+  }
+  .adapt-text {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.45;
+  }
+
+  /* Mobile Feed Simulator Modal */
+  .feed-sim-container {
+    display: none;
+    margin-top: 24px;
+    padding: 24px;
+    background: #000;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+  }
+  .feed-sim-active {
+    display: block;
+  }
+  .mobile-frame {
+    max-width: 380px;
+    margin: 0 auto;
+    background: #0F0F0F;
+    border-radius: 20px;
+    padding: 16px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    border: 2px solid #222;
+  }
+  .mobile-thumb-wrap {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 12px;
+  }
+  .mobile-thumb-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .mobile-timecode {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    background: rgba(0,0,0,0.8);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .mobile-info {
+    display: flex;
+    gap: 12px;
+  }
+  .mobile-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #E2FF00;
+    flex-shrink: 0;
+  }
+  .mobile-text h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.3;
+    margin-bottom: 4px;
+  }
+  .mobile-text p {
+    font-size: 11px;
+    color: #888;
+  }
+
+  /* Quick Instruction Banner */
+  .guide-box {
+    background: rgba(0, 240, 255, 0.04);
+    border: 1px solid rgba(0, 240, 255, 0.2);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .guide-box p {
+    font-size: 13px;
+    color: var(--text-secondary);
+  }
+  .guide-box strong {
+    color: var(--accent-cyan);
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="title-group">
+      <h1>
+        Packaging Inspiration Vault
+        <span class="badge">Living Intelligence Tracker</span>
+      </h1>
+      <p>Continuous capture, 5-vector evaluation, and production blueprints for ThinkLate, Off Script, and Sarwanology.</p>
+    </div>
+    <div class="header-actions">
+      <button class="btn" id="toggleSimBtn" onclick="toggleFeedSim()">
+        📱 150ms Mobile Feed Simulator
+      </button>
+      <a class="btn" href="../assets/thumbnail_concepts/THUMBNAIL_AUDIT_REPORT.md" target="_blank">
+        📊 Audit Report ↗
+      </a>
+    </div>
+  </header>
+
+  <div class="guide-box">
+    <p>
+      💡 <strong>How to add new inspirations:</strong> Simply drop any image, screenshot, or YouTube link into chat and say <em>"Add this thumbnail to vault"</em>. The agent autonomously archives the image, runs the 5-vector evaluation, and maps adaptations across your channels.
+    </p>
+  </div>
+
+  <!-- Mobile Feed Simulation Area -->
+  <div class="feed-sim-container" id="feedSimArea">
+    <h3 style="text-align: center; font-size: 14px; text-transform: uppercase; color: var(--accent-lime); margin-bottom: 14px; letter-spacing: 1px;">
+      YouTube Mobile App 150ms Feed Test (#0F0F0F Dark Mode)
+    </h3>
+    <div class="mobile-frame">
+      <div class="mobile-thumb-wrap">
+        <img src="../assets/inspiration_vault/mohak_subscription_avalanche.jpg" alt="Feed Sim">
+        <span class="mobile-timecode">13:21</span>
+      </div>
+      <div class="mobile-info">
+        <div class="mobile-avatar"></div>
+        <div class="mobile-text">
+          <h4>How Subscriptions Are Quietly Draining Your Bank Account</h4>
+          <p>ThinkLate Media • 420K views • 2 days ago</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tabs-bar">
+    <button class="tab-btn active">All Inspirations (1)</button>
+    <button class="tab-btn">ThinkLate Adaptations</button>
+    <button class="tab-btn">Off Script Adaptations</button>
+    <button class="tab-btn">Sarwanology Adaptations</button>
+  </div>
+
+  <div class="vault-grid">
+
+    <!-- Card 1: Mohak Subscription Quicksand -->
+    <div class="vault-card">
+      <div class="card-media">
+        <img src="../assets/inspiration_vault/mohak_subscription_avalanche.jpg" alt="Subscription Avalanche">
+        <div class="score-badge-overlay">
+          🔥 92/100
+        </div>
+        <div class="category-pill">
+          Physicalized Parasite / Quicksand
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-id-source">
+          <span>PACK-001</span>
+          <span>Source: Mohak Mangal / Indian Explainer</span>
+        </div>
+        <h2 class="card-title">The Subscription Avalanche (Drowning in Recurring Micro-Debits)</h2>
+
+        <!-- Score Breakdown -->
+        <div class="score-matrix">
+          <div class="score-row">
+            <span class="score-label">1. 150ms Mobile Glance</span>
+            <div class="score-bar-wrap">
+              <div class="score-bar"><div class="score-fill" style="width: 95%;"></div></div>
+              <span class="score-val">19/20</span>
+            </div>
+          </div>
+          <div class="score-row">
+            <span class="score-label">2. Physical Metaphor</span>
+            <div class="score-bar-wrap">
+              <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+              <span class="score-val">25/25</span>
+            </div>
+          </div>
+          <div class="score-row">
+            <span class="score-label">3. Cognitive Tally (₹ Prices)</span>
+            <div class="score-bar-wrap">
+              <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+              <span class="score-val">20/20</span>
+            </div>
+          </div>
+          <div class="score-row">
+            <span class="score-label">4. Z-Depth Foreshortening</span>
+            <div class="score-bar-wrap">
+              <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+              <span class="score-val">15/15</span>
+            </div>
+          </div>
+          <div class="score-row">
+            <span class="score-label">5. Hook Contract</span>
+            <div class="score-bar-wrap">
+              <div class="score-bar"><div class="score-fill" style="width: 90%;"></div></div>
+              <span class="score-val">18/20</span>
+            </div>
+          </div>
+        </div>
+
+        <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 14px; line-height: 1.45;">
+          <strong>Why it converts:</strong> Zero text headline needed—the physical bricks ARE the headline. Real brands (Netflix, Swiggy, JioHotstar, Zepto) with exact Rupee prices force the viewer's brain into instant mental math ("Wait, I pay for 6 of these!"). Mud, grime, and outstretched reaching hand create visceral survival drama.
+        </p>
+
+        <div class="adaptations-box">
+          <span class="adapt-tag">🚀 ThinkLate Blueprint Adaptation</span>
+          <p class="adapt-text">
+            <strong>The AI Token / SaaS Quicksand:</strong> Eddy ThinkLate buried up to his collar in a mountain of glowing server wafers and enterprise bills (<code>AWS $42k/mo</code>, <code>OpenAI $18k</code>, <code>Datadog $9.8k</code>), clutching a broken startup pitch deck with warning crimson rim lights.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleFeedSim() {
+      const el = document.getElementById('feedSimArea');
+      const btn = document.getElementById('toggleSimBtn');
+      if (el.classList.contains('feed-sim-active')) {
+        el.classList.remove('feed-sim-active');
+        btn.classList.remove('active');
+      } else {
+        el.classList.add('feed-sim-active');
+        btn.classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
+

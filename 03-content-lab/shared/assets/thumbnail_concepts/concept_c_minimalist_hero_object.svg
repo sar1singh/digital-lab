@@ -1,0 +1,266 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&amp;family=JetBrains+Mono:wght@700;800&amp;display=swap');
+      .title-text {
+        font-family: 'Montserrat', 'Impact', 'Arial Black', sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+      }
+      .mono-text {
+        font-family: 'JetBrains Mono', 'Courier New', monospace;
+        font-weight: 800;
+      }
+    </style>
+
+    <!-- Moody Chiaroscuro Noir Background -->
+    <radialGradient id="bgNoirC" cx="75%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#141E33"/>
+      <stop offset="45%" stop-color="#080D1A"/>
+      <stop offset="100%" stop-color="#020306"/>
+    </radialGradient>
+
+    <!-- Volumetric Conical Laser Surveillance Cone -->
+    <linearGradient id="laserBeamGrad" x1="100%" y1="50%" x2="0%" y2="50%">
+      <stop offset="0%" stop-color="#FF2A4B" stop-opacity="0.85"/>
+      <stop offset="40%" stop-color="#FF1E40" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#990018" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <!-- Lens Glass Reflection Gradient -->
+    <radialGradient id="lensGlass" cx="35%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.9"/>
+      <stop offset="35%" stop-color="#7000FF" stop-opacity="0.7"/>
+      <stop offset="70%" stop-color="#FF0055" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#050811" stop-opacity="0.95"/>
+    </radialGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="shadowHeavyC" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000000" flood-opacity="0.95"/>
+    </filter>
+
+    <filter id="neonRedGlowC" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="laserGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="14" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- ==================== LAYER 1: CHIAROSCURO NOIR BEDROOM CANVAS ==================== -->
+  <rect width="1920" height="1080" fill="url(#bgNoirC)"/>
+
+  <!-- Bedroom Nightstand Surface Plane -->
+  <polygon points="0,780 1920,780 1920,1080 0,1080" fill="#080C16"/>
+  <line x1="0" y1="780" x2="1920" y2="780" stroke="#1E293B" stroke-width="6"/>
+
+  <!-- Bedroom wall shadow and mood lines -->
+  <line x1="550" y1="0" x2="550" y2="780" stroke="#0F172A" stroke-width="3"/>
+  <line x1="1400" y1="0" x2="1400" y2="780" stroke="#0F172A" stroke-width="3"/>
+
+  <!-- ==================== LAYER 2: THE SURVEILLANCE LASER CONE ==================== -->
+  <!-- Conical beam firing from the clock lens across the entire left half -->
+  <polygon points="1280,510 0,180 0,950 1280,530" fill="url(#laserBeamGrad)" filter="url(#laserGlow)"/>
+
+  <!-- Holographic Target Grid & Telemetry Overlay -->
+  <g stroke="#FF2A4B" stroke-width="2" opacity="0.6">
+    <line x1="1280" y1="520" x2="150" y2="350"/>
+    <line x1="1280" y1="520" x2="150" y2="520"/>
+    <line x1="1280" y1="520" x2="150" y2="690"/>
+    <!-- Concentric radar target circles -->
+    <circle cx="480" cy="520" r="180" fill="none" stroke="#FF2A4B" stroke-width="3" stroke-dasharray="24 16"/>
+    <circle cx="480" cy="520" r="90" fill="none" stroke="#FF2A4B" stroke-width="2"/>
+    <circle cx="480" cy="520" r="6" fill="#FF2A4B"/>
+    <!-- Target crosshair notches -->
+    <line x1="480" y1="310" x2="480" y2="350" stroke="#FF2A4B" stroke-width="4"/>
+    <line x1="480" y1="690" x2="480" y2="730" stroke="#FF2A4B" stroke-width="4"/>
+    <line x1="270" y1="520" x2="310" y2="520" stroke="#FF2A4B" stroke-width="4"/>
+    <line x1="650" y1="520" x2="690" y2="520" stroke="#FF2A4B" stroke-width="4"/>
+  </g>
+
+  <!-- Live Telemetry Readout Box -->
+  <g transform="translate(340, 310)" filter="url(#neonRedGlowC)">
+    <rect x="0" y="0" width="280" height="60" rx="8" fill="rgba(15, 23, 42, 0.85)" stroke="#FF2A4B" stroke-width="3"/>
+    <circle cx="25" cy="30" r="10" fill="#FF2A4B"/>
+    <text x="50" y="28" class="mono-text" font-size="16" fill="#FFFFFF">TARGET: GUEST IN BED</text>
+    <text x="50" y="48" class="mono-text" font-size="14" fill="#FF2A4B">AUDIO CAPTURE: 100%</text>
+  </g>
+
+  <!-- ==================== LAYER 3: MIDGROUND GUEST SILHOUETTE (IN SHOCKED REALIZATION) ==================== -->
+  <g transform="translate(420, 480)" filter="url(#shadowHeavyC)">
+    <!-- Guest turning in bed in terror, illuminated by crimson laser beam -->
+    <!-- Pillows & Bed frame in shadow -->
+    <polygon points="-120,240 180,240 160,300 -140,300" fill="#0B101D" stroke="#000000" stroke-width="5"/>
+    <rect x="-100" y="160" width="140" height="80" rx="10" fill="#1E293B" stroke="#000000" stroke-width="4"/>
+    <!-- Guest Torso Silhouette -->
+    <path d="M -50 180 L -30 60 L 50 60 L 70 180 Z" fill="#0F172A" stroke="#000000" stroke-width="6"/>
+    <!-- Head in Shock -->
+    <circle cx="10" cy="0" r="45" fill="#0F172A" stroke="#000000" stroke-width="6"/>
+    <!-- Wide Cartoon Eyes glowing white in the shadow! -->
+    <ellipse cx="20" cy="-5" rx="14" ry="18" fill="#FFFFFF" stroke="#000000" stroke-width="4"/>
+    <circle cx="24" cy="-5" r="7" fill="#000000"/>
+    <circle cx="26" cy="-8" r="3" fill="#FFFFFF"/>
+    <!-- Agony Eyebrow -->
+    <path d="M 5 -25 Q 20 -35 35 -20" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+    <!-- Laser hit rim light on guest face -->
+    <path d="M 30 -40 C 55 -20, 55 20, 35 40" fill="none" stroke="#FF2A4B" stroke-width="8" stroke-linecap="round" filter="url(#neonRedGlowC)"/>
+  </g>
+
+  <!-- ==================== LAYER 4: THE HERO OBJECT (GIANT SPY ALARM CLOCK - 70% DOMINANCE) ==================== -->
+  <!-- Anchored on Right (x=800 to 1840, y=260 to 920) -->
+  <g id="hero-clock" transform="translate(800, 260)" filter="url(#shadowHeavyC)">
+    <!-- Clock Outer Casing (Modern Sleek Chamfered Beveled Box) -->
+    <rect x="0" y="0" width="1020" height="520" rx="28" fill="#0A0E17" stroke="#000000" stroke-width="10"/>
+    <!-- Inner Bezel Ring -->
+    <rect x="18" y="18" width="984" height="484" rx="20" fill="#030712" stroke="#1E293B" stroke-width="6"/>
+    <!-- Clock Display Smoked Glass Face -->
+    <rect x="36" y="36" width="948" height="448" rx="14" fill="#02040A" stroke="#000000" stroke-width="6"/>
+
+    <!-- Subtle Glass Reflection Diagonal Sheen -->
+    <polygon points="36,36 380,36 220,484 36,484" fill="#FFFFFF" opacity="0.04"/>
+
+    <!-- ================= 7-SEGMENT LED NUMBERS: "02 : 47" ================= -->
+    <!-- Digit 0 -->
+    <g transform="translate(80, 110)" fill="#FF1E40" filter="url(#neonRedGlowC)">
+      <polygon points="15,0 85,0 70,20 30,20"/>
+      <polygon points="0,15 20,30 20,110 0,125"/>
+      <polygon points="100,15 100,125 80,110 80,30"/>
+      <polygon points="0,145 20,160 20,240 0,255"/>
+      <polygon points="100,145 100,255 80,240 80,160"/>
+      <polygon points="15,270 85,270 70,250 30,250"/>
+    </g>
+
+    <!-- Digit 2 -->
+    <g transform="translate(240, 110)" fill="#FF1E40" filter="url(#neonRedGlowC)">
+      <polygon points="15,0 85,0 70,20 30,20"/>
+      <polygon points="100,15 100,125 80,110 80,30"/>
+      <polygon points="15,135 85,135 70,145 30,145"/>
+      <polygon points="0,145 20,160 20,240 0,255"/>
+      <polygon points="15,270 85,270 70,250 30,250"/>
+    </g>
+
+    <!-- ================= THE HIDDEN SPY LENS (CENTERED IN COLON) ================= -->
+    <!-- Positioned right between "02" and "47" at (x=480, y=250) -->
+    <g transform="translate(480, 250)" filter="url(#shadowHeavyC)">
+      <!-- Outer Metal Threaded Lens Barrel -->
+      <circle cx="0" cy="0" r="140" fill="#0F172A" stroke="#000000" stroke-width="10"/>
+      <circle cx="0" cy="0" r="130" fill="none" stroke="#334155" stroke-width="6"/>
+      <circle cx="0" cy="0" r="115" fill="#020617" stroke="#000000" stroke-width="8"/>
+
+      <!-- Optical Lens Elements (Concentric Iridescent Glass) -->
+      <circle cx="0" cy="0" r="95" fill="url(#lensGlass)" stroke="#000000" stroke-width="6"/>
+
+      <!-- Inner Aperture Blades (Mechanical Camera Iris) -->
+      <circle cx="0" cy="0" r="55" fill="#090D16" stroke="#000000" stroke-width="5"/>
+      <!-- Aperture blade lines -->
+      <line x1="-35" y1="-35" x2="25" y2="-45" stroke="#1E293B" stroke-width="4"/>
+      <line x1="25" y1="-45" x2="45" y2="15" stroke="#1E293B" stroke-width="4"/>
+      <line x1="45" y1="15" x2="0" y2="50" stroke="#1E293B" stroke-width="4"/>
+      <line x1="0" y1="50" x2="-45" y2="25" stroke="#1E293B" stroke-width="4"/>
+      <line x1="-45" y1="25" x2="-35" y2="-35" stroke="#1E293B" stroke-width="4"/>
+
+      <!-- Sinister Center Optical Iris Reflection Gleam -->
+      <circle cx="0" cy="0" r="22" fill="#FF1E40" filter="url(#neonRedGlowC)"/>
+      <circle cx="6" cy="-6" r="8" fill="#FFFFFF"/>
+      <circle cx="-6" cy="6" r="4" fill="#00F0FF"/>
+
+      <!-- Precision Optical Tick Marks -->
+      <g stroke="#64748B" stroke-width="3">
+        <line x1="0" y1="-128" x2="0" y2="-118"/>
+        <line x1="128" y1="0" x2="118" y2="0"/>
+        <line x1="0" y1="128" x2="0" y2="118"/>
+        <line x1="-128" y1="0" x2="-118" y2="0"/>
+      </g>
+      <text x="0" y="-100" text-anchor="middle" class="mono-text" font-size="12" fill="#94A3B8">F/1.4 4K</text>
+      <text x="0" y="112" text-anchor="middle" class="mono-text" font-size="12" fill="#FF2A4B">SPY CAM</text>
+
+      <!-- Laser Beam Emission Point Ring -->
+      <circle cx="0" cy="0" r="148" fill="none" stroke="#FF2A4B" stroke-width="4" stroke-dasharray="16 12" filter="url(#neonRedGlowC)"/>
+    </g>
+
+    <!-- Digit 4 -->
+    <g transform="translate(680, 110)" fill="#FF1E40" filter="url(#neonRedGlowC)">
+      <polygon points="0,15 20,30 20,110 0,125"/>
+      <polygon points="100,15 100,125 80,110 80,30"/>
+      <polygon points="15,135 85,135 70,145 30,145"/>
+      <polygon points="100,145 100,255 80,240 80,160"/>
+    </g>
+
+    <!-- Digit 7 -->
+    <g transform="translate(840, 110)" fill="#FF1E40" filter="url(#neonRedGlowC)">
+      <polygon points="15,0 85,0 70,20 30,20"/>
+      <polygon points="100,15 100,255 80,240 80,30"/>
+    </g>
+
+    <!-- Glowing Red REC Indicator Pill (Top Left of Clock Display) -->
+    <g transform="translate(80, 60)" filter="url(#neonRedGlowC)">
+      <circle cx="15" cy="15" r="9" fill="#FF1E40"/>
+      <text x="35" y="22" class="mono-text" font-size="18" fill="#FF1E40" font-weight="900" letter-spacing="2">● REC 1080P</text>
+    </g>
+
+    <!-- AM Indicator -->
+    <text x="890" y="85" class="mono-text" font-size="24" fill="#FF1E40" font-weight="900">AM</text>
+  </g>
+
+  <!-- ==================== LAYER 5: FORENSIC EVIDENCE CLIPBOARD (LEFT FOREGROUND) ==================== -->
+  <g id="forensic-clipboard" transform="translate(140, 520) rotate(-6)" filter="url(#shadowHeavyC)">
+    <!-- Clipboard Wood/Aluminum Base -->
+    <rect x="0" y="0" width="460" height="520" rx="14" fill="#334155" stroke="#000000" stroke-width="8"/>
+    <!-- Top Metal Clamp -->
+    <rect x="130" y="-20" width="200" height="45" rx="6" fill="#94A3B8" stroke="#000000" stroke-width="6"/>
+    <circle cx="230" cy="-2" r="10" fill="#475569" stroke="#000000" stroke-width="4"/>
+
+    <!-- Document Paper -->
+    <rect x="25" y="35" width="410" height="460" fill="#F8FAFC" stroke="#000000" stroke-width="5"/>
+
+    <!-- Header -->
+    <text x="230" y="75" text-anchor="middle" class="title-text" font-size="18" fill="#0F172A" letter-spacing="1">POLICE EVIDENCE REPORT</text>
+    <line x1="50" y1="90" x2="410" y2="90" stroke="#000000" stroke-width="3"/>
+
+    <text x="50" y="125" class="mono-text" font-size="14" fill="#64748B">CASE FILE: #2026-SR-99</text>
+    <text x="50" y="150" class="mono-text" font-size="14" fill="#64748B">LOCATION: MASTER BEDROOM</text>
+
+    <!-- Highlighted Evidence Finding -->
+    <rect x="45" y="175" width="370" height="70" rx="6" fill="#FEF08A" stroke="#000000" stroke-width="3"/>
+    <text x="60" y="210" class="title-text" font-size="20" fill="#B91C1C">HIDDEN CAMERAS FOUND: 4</text>
+    <text x="60" y="235" class="mono-text" font-size="14" fill="#0F172A">HARDWARE: ALARM CLOCK / SHOWER</text>
+
+    <!-- Itemized List -->
+    <text x="50" y="280" class="mono-text" font-size="14" fill="#1E293B">☒ BEDROOM CLOCK (WIRED TO CLOUD)</text>
+    <text x="50" y="310" class="mono-text" font-size="14" fill="#1E293B">☒ SMOKE DETECTOR (PINHOLE LENS)</text>
+    <text x="50" y="340" class="mono-text" font-size="14" fill="#1E293B">☒ SHOWER HEAD (STREAMING AUDIO)</text>
+
+    <!-- Big Red Evidence Stamp -->
+    <g transform="translate(180, 390) rotate(-10)">
+      <rect x="-120" y="-30" width="240" height="60" rx="6" fill="rgba(239, 68, 68, 0.15)" stroke="#EF4444" stroke-width="6"/>
+      <text x="0" y="10" text-anchor="middle" class="title-text" font-size="26" fill="#EF4444" letter-spacing="2">SEIZED EVIDENCE</text>
+    </g>
+  </g>
+
+  <!-- ==================== LAYER 6: TOP BANNER HEADLINE (RULE 15 COMPLIANT) ==================== -->
+  <g transform="translate(960, 45)" filter="url(#shadowHeavyC)">
+    <!-- Category Pill Badge -->
+    <rect x="-160" y="0" width="320" height="40" rx="8" fill="#FFAA00" stroke="#000000" stroke-width="4"/>
+    <text x="0" y="27" text-anchor="middle" class="title-text" font-size="20" fill="#000000" letter-spacing="3">PRIVACY SCANDAL</text>
+
+    <!-- Main Headline: "THEY'RE WATCHING" -->
+    <!-- Solid Black 3D Stroke & Shadow Pass -->
+    <text x="0" y="135" text-anchor="middle" class="title-text" font-size="124" fill="#000000" stroke="#000000" stroke-width="26" stroke-linejoin="round">THEY'RE WATCHING</text>
+    <!-- Crisp White Foreground Text -->
+    <text x="0" y="135" text-anchor="middle" class="title-text" font-size="124" fill="#FFFFFF" stroke="#000000" stroke-width="6" stroke-linejoin="round">THEY'RE WATCHING</text>
+  </g>
+
+  <!-- ==================== LAYER 7: HIGH-CONTRAST OUTER BORDER ==================== -->
+  <rect x="0" y="0" width="1920" height="1080" fill="none" stroke="#FFAA00" stroke-width="8" opacity="0.9"/>
+</svg>

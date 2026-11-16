@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recording Deck — Why You Can't Cancel Anything | ThinkLate L07</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #080C14;
+      --card: #0F1626;
+      --bdr: #1E2C48;
+      --txt: #F1F5F9;
+      --dim: #94A3B8;
+      --cyan: #06B6D4;
+      --amber: #F59E0B;
+      --lime: #E2FF00;
+      --crimson: #FF2A4B;
+      --fs: 32px;
+      --lh: 2.0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--txt);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: var(--fs);
+      line-height: var(--lh);
+      padding-bottom: 300px;
+      -webkit-font-smoothing: antialiased;
+    }
+    #pgwrap { position: fixed; top: 0; left: 0; width: 100%; height: 5px; background: rgba(255,255,255,.05); z-index: 200; }
+    #pg { height: 100%; width: 0%; background: linear-gradient(90deg, var(--cyan), var(--lime)); transition: width .1s ease-out; }
+    nav {
+      position: fixed; top: 5px; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 12px 28px; background: rgba(8, 12, 20, 0.96);
+      backdrop-filter: blur(16px); border-bottom: 1px solid var(--bdr);
+    }
+    .nav-left { display: flex; align-items: center; gap: 14px; }
+    .brand { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 800; color: var(--lime); letter-spacing: 1px; }
+    .nav-tabs { display: flex; gap: 8px; }
+    .act-tab {
+      color: var(--dim); text-decoration: none; font-size: 13px; font-weight: 700;
+      padding: 6px 14px; border-radius: 6px; background: rgba(255,255,255,.04); border: 1px solid transparent;
+      transition: all .2s; font-family: 'JetBrains Mono', monospace;
+    }
+    .act-tab:hover, .act-tab.active { color: #FFF; background: rgba(6, 182, 212, 0.15); border-color: var(--cyan); }
+    .hud { display: flex; align-items: center; gap: 16px; font-family: 'JetBrains Mono', monospace; font-size: 14px; }
+    .timer { color: var(--lime); font-size: 20px; font-weight: 800; }
+    .btn {
+      background: rgba(255,255,255,.08); color: #FFF; border: 1px solid var(--bdr);
+      padding: 6px 12px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 700;
+    }
+    .btn:hover { background: rgba(255,255,255,.15); }
+    main { max-width: 1000px; margin: 90px auto 0; padding: 0 24px; }
+    .beat-card {
+      background: var(--card); border: 1px solid var(--bdr); border-radius: 16px;
+      padding: 36px 42px; margin-bottom: 40px; box-shadow: 0 12px 32px rgba(0,0,0,0.4);
+    }
+    .beat-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .beat-badge { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 800; padding: 4px 10px; border-radius: 4px; display: inline-block; margin-bottom: 8px; }
+    .beat-title { font-size: 26px; font-weight: 800; color: #FFF; line-height: 1.3; }
+    .beat-timing { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--dim); white-space: nowrap; }
+    .sentence { margin-bottom: 24px; color: #F1F5F9; font-weight: 600; }
+    .b-full {
+      display: inline-block; background: rgba(6, 182, 212, 0.2); color: var(--cyan);
+      border: 1px solid var(--cyan); border-radius: 4px; font-family: 'JetBrains Mono', monospace;
+      font-size: 14px; font-weight: 800; padding: 0 6px; margin: 0 4px; vertical-align: middle;
+    }
+    .b-half {
+      display: inline-block; background: rgba(245, 158, 11, 0.2); color: var(--amber);
+      border: 1px solid var(--amber); border-radius: 4px; font-family: 'JetBrains Mono', monospace;
+      font-size: 14px; font-weight: 800; padding: 0 6px; margin: 0 4px; vertical-align: middle;
+    }
+    .vis-pill {
+      background: rgba(148, 163, 184, 0.1); border-left: 4px solid var(--dim);
+      padding: 10px 16px; border-radius: 6px; font-size: 16px; color: var(--dim);
+      margin: 16px 0; font-family: 'JetBrains Mono', monospace;
+    }
+    .vis-tag { color: #FFF; font-weight: 800; margin-right: 6px; }
+    .sfx-pill {
+      background: rgba(226, 255, 0, 0.08); border-left: 4px solid var(--lime);
+      padding: 8px 16px; border-radius: 6px; font-size: 15px; color: var(--lime);
+      margin: 14px 0; font-family: 'JetBrains Mono', monospace;
+    }
+    .sfx-tag { font-weight: 800; margin-right: 6px; }
+    .deadair-pill {
+      background: rgba(255, 42, 75, 0.12); border: 2px dashed var(--crimson);
+      padding: 12px 18px; border-radius: 8px; font-size: 16px; color: var(--crimson);
+      margin: 20px 0; font-family: 'JetBrains Mono', monospace; font-weight: 700; text-align: center;
+    }
+    .hide-vis .vis-pill { display: none !important; }
+  </style>
+</head>
+<body>
+  <div id="pgwrap"><div id="pg"></div></div>
+  <nav>
+    <div class="nav-left">
+      <div class="brand">THINKLATE // L07</div>
+      <div class="nav-tabs">
+        <a href="#b1" class="act-tab active" id="tab1">Q1: Iliad Flow</a><a href="#b2" class="act-tab" id="tab2">Q2: Churn Math</a><a href="#b3" class="act-tab" id="tab3">Q3: The Rule Died</a><a href="#b4" class="act-tab" id="tab4">Q4: India 2FA</a><a href="#b5" class="act-tab" id="tab5">Q5: The Reckoning</a>
+      </div>
+    </div>
+    <div class="hud">
+      <div class="timer" id="timerDisplay">00:00</div>
+      <button class="btn" onclick="toggleTimer()">⏱️ START</button>
+      <button class="btn" onclick="toggleVisuals()">👁️ VISUALS</button>
+      <button class="btn" onclick="adjustFont(2)">A+</button>
+      <button class="btn" onclick="adjustFont(-2)">A-</button>
+    </div>
+  </nav>
+
+  <main id="mainContent">
+    
+        <section class="beat-card" id="b1" style="border-top: 4px solid #06B6D4;">
+            <div class="beat-header">
+                <div>
+                    <span class="beat-badge" style="background: #06B6D420; color: #06B6D4; border: 1px solid #06B6D440;">BEAT 1</span>
+                    <h2 class="beat-title">Why Did Amazon Name Its Cancel Button After a 24-Book War?</h2>
+                </div>
+                <div class="beat-timing">~0m 48s (116 words @ 145 WPM)</div>
+            </div>
+            <div class="beat-body">
+                <div class="vis-pill"><span class="vis-tag">VISUAL</span> FTC Court Docket Exhibit #2: Amazon Iliad Flowchart & 4-Page Wireframe</div>
+<p class="sentence">Signing up for a subscription took one click. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Four seconds. <span class="b-half">//</span> Zero friction. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Cancelling it, <span class="b-half">//</span> according to federal regulators, <span class="b-half">//</span> took an Olympic obstacle course! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<div class="sfx-pill"><span class="sfx-tag">🎧 SFX</span> mouse_click_soft.mp3</div>
+<p class="sentence">When a software engineer tries to cancel Amazon Prime, <span class="b-half">//</span> they hit four pages. <span class="b-half">//</span> Six clicks. <span class="b-half">//</span> And fifteen separate options! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Each screen was engineered <span class="b-half">//</span> to convince you to stay. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">According to the FTC, <span class="b-half">//</span> Amazon engineers had a secret internal codename <span class="b-half">//</span> for that cancellation maze. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">They called it the Iliad Flow. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Yes, <span class="b-half">//</span> named after Homer's epic poem <span class="b-half">//</span> about an agonizing ten-year war! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">By the end of this video, <span class="b-half">//</span> you will see the exact blueprint <span class="b-half">//</span> of how modern companies turned cancellation into a labyrinth, <span class="b-half">//</span> and the psychological trap you must avoid <span class="b-half">//</span> whenever you try to leave. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<div class="sfx-pill"><span class="sfx-tag">🎧 SFX</span> sub_impact_warm_knocking.mp3</div>
+            </div>
+        </section>
+        
+        <section class="beat-card" id="b2" style="border-top: 4px solid #F59E0B;">
+            <div class="beat-header">
+                <div>
+                    <span class="beat-badge" style="background: #F59E0B20; color: #F59E0B; border: 1px solid #F59E0B40;">BEAT 2</span>
+                    <h2 class="beat-title">What Happens to Wall Street Stock Prices If You Click Cancel?</h2>
+                </div>
+                <div class="beat-timing">~1m 54s (277 words @ 145 WPM)</div>
+            </div>
+            <div class="beat-body">
+                <div class="vis-pill"><span class="vis-tag">VISUAL</span> Bloomberg Terminal Churn Gauge vs Net Revenue Retention Curve</div>
+<p class="sentence">The FTC alleged this digital maze <span class="b-half">//</span> was completely deliberate. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Amazon settled the federal case <span class="b-half">//</span> for two and a half billion dollars! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">A legal settlement is not a guilty verdict. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Yet companies do not surrender billions <span class="b-half">//</span> to defend an innocent button. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">So why build a labyrinth in the first place? <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Why would executives pay top developers <span class="b-half">//</span> to make leaving as painful as possible? <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Because on Wall Street, <span class="b-half">//</span> subscription companies are judged by one metric. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Monthly churn. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Churn is the percentage of customers <span class="b-half">//</span> who cancel their subscriptions every month. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Investors track that percentage <span class="b-half">//</span> the way emergency doctors watch a pulse monitor! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Think of a commercial bucket with a hole in the bottom. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">You can pour in new customers, <span class="b-half">//</span> but acquiring them requires millions in marketing. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Or you can simply plug the hole <span class="b-half">//</span> with a broken cancellation page! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Suppose a subscription software company <span class="b-half">//</span> loses three percent of its paying subscribers <span class="b-half">//</span> every thirty days. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Three percent sounds completely harmless, <span class="b-half">//</span> right? <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Yet over twelve months, <span class="b-half">//</span> nearly a third of their total customer base <span class="b-half">//</span> simply evaporates! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Valuations drop. <span class="b-half">//</span> Stock prices fall. <span class="b-half">//</span> Boardrooms panic! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Now look at what happens <span class="b-half">//</span> when you make leaving painful. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">When internal user experience designers <span class="b-half">//</span> begged corporate leadership to simplify the cancel flow, <span class="b-half">//</span> executives refused. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">They said no! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">They laughed at the idea of effortless cancellation! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Why? <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Because every barrier protected millions in free cash flow. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Add a desperate discount pop-up. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Add an 'are you sure' survey. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Add a hidden confirmation checkbox. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Every extra screen you click through <span class="b-half">//</span> is a point where exhausted users surrender! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">The customer churn curve flattens. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">The software didn't improve. <span class="b-half">//</span> Your needs didn't change. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Yet on the corporate balance sheet, <span class="b-half">//</span> the company suddenly looks wildly profitable! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<div class="sfx-pill"><span class="sfx-tag">🎧 SFX</span> cash_register_slam.mp3</div>
+            </div>
+        </section>
+        
+        <section class="beat-card" id="b3" style="border-top: 4px solid #EF4444;">
+            <div class="beat-header">
+                <div>
+                    <span class="beat-badge" style="background: #EF444420; color: #EF4444; border: 1px solid #EF444440;">BEAT 3</span>
+                    <h2 class="beat-title">Why Did a Federal Appeals Court Kill the Click-to-Cancel Rule?</h2>
+                </div>
+                <div class="beat-timing">~1m 58s (286 words @ 145 WPM)</div>
+            </div>
+            <div class="beat-body">
+                <div class="vis-pill"><span class="vis-tag">VISUAL</span> Eighth Circuit Court of Appeals Docket & Federal Negative Option Rule Ruling</div>
+<p class="sentence">Notice that discounted rate <span class="b-half">//</span> that magically appears the moment you try to leave? <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">That lower price existed the entire time! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">They just refused to give it <span class="b-half">//</span> to their most loyal customers. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Every confusing button <span class="b-half">//</span> is a quiet, interest-free loan <span class="b-half">//</span> taken directly from your bank account. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Did you keep the subscription <span class="b-half">//</span> because you loved the service? <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">No! <span class="b-half">//</span> You kept it <span class="b-half">//</span> because life got busy, <span class="b-half">//</span> and you simply gave up. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">So you would assume someone in power <span class="b-half">//</span> would step in and ban this practice, <span class="b-half">//</span> right? <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Regulators tried. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">In twenty twenty-four, <span class="b-half">//</span> the FTC finalized the federal Click-to-Cancel rule. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">The rule was beautifully simple: <span class="b-half">//</span> if you can sign up online with one click, <span class="b-half">//</span> you must be able to cancel online with one click. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Corporate lobbying coalitions immediately filed lawsuits. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">An Eighth Circuit federal appeals court vacated the rule, <span class="b-half">//</span> throwing it straight into the trash! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<div class="deadair-pill"><span class="da-tag">⚠️ DEAD AIR</span> 2 seconds, music and room tone cut to complete silence</div>
+<p class="sentence">So did the corporate maze win? <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Not entirely! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Federal regulators simply pivoted <span class="b-half">//</span> to an older federal consumer law. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">ROSCA. <span class="b-half">//</span> The Restore Online Shoppers' Confidence Act. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">The law mandates that online merchants <span class="b-half">//</span> must provide simple, transparent cancellation mechanisms. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">This fall, <span class="b-half">//</span> the FTC and twenty states <span class="b-half">//</span> filed a massive federal lawsuit against Toast, <span class="b-half">//</span> the dominant restaurant software provider. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Regulators allege Toast locked small restaurants <span class="b-half">//</span> into multi-year contracts with brutal cancellation hurdles, <span class="b-half">//</span> charging early termination penalties <span class="b-half">//</span> up to one hundred fifty dollars per remaining month! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Toast aggressively disputes the lawsuit, <span class="b-half">//</span> arguing that consumer protection statutes <span class="b-half">//</span> do not apply to negotiated business contracts. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Will small businesses get their freedom back? <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">A federal judge will decide the outcome. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Yet while federal rules stall in court, <span class="b-half">//</span> states like California, New York, and Illinois <span class="b-half">//</span> enforce strict automatic renewal statutes. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Which means whether your wallet is protected <span class="b-half">//</span> often depends entirely on your zip code! <span class="b-full"><span class="b-half">//</span>/</span></p>
+            </div>
+        </section>
+        
+        <section class="beat-card" id="b4" style="border-top: 4px solid #10B981;">
+            <div class="beat-header">
+                <div>
+                    <span class="beat-badge" style="background: #10B98120; color: #10B981; border: 1px solid #10B98140;">BEAT 4</span>
+                    <h2 class="beat-title">How Did India's Central Bank Force Big Tech to Ask Permission?</h2>
+                </div>
+                <div class="beat-timing">~0m 52s (128 words @ 145 WPM)</div>
+            </div>
+            <div class="beat-body">
+                <div class="vis-pill"><span class="vis-tag">VISUAL</span> RBI Notification 2019-20/46 & 2FA SMS Authentication Phone Screen</div>
+<p class="sentence">Now look at how other nations <span class="b-half">//</span> solved this exact headache. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">In India, <span class="b-half">//</span> regulators didn't file twenty-year lawsuits. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">They changed the technical plumbing of the banking system! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">The Reserve Bank of India <span class="b-half">//</span> enforced the mandatory e-mandate framework for credit cards. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Banks are required by law <span class="b-half">//</span> to send an SMS alert twenty-four hours <span class="b-half">//</span> before every recurring subscription charge. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">For transactions over fifteen thousand rupees, <span class="b-half">//</span> the bank cannot deduct a single rupee <span class="b-half">//</span> without two-factor authentication. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Global tech giants protested loudly, <span class="b-half">//</span> claiming consumer friction would devastate their subscription businesses. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Yet did commerce collapse? <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Not for a second! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">It destroyed corporate inertia. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">In the United States, <span class="b-half">//</span> the default rule is simple: <span class="b-half">//</span> companies charge first, <span class="b-half">//</span> and you must chase them down. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">In India, <span class="b-half">//</span> the law forced companies to ask permission <span class="b-half">//</span> before touching your money! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<div class="sfx-pill"><span class="sfx-tag">🎧 SFX</span> paper_slide_document.mp3</div>
+            </div>
+        </section>
+        
+        <section class="beat-card" id="b5" style="border-top: 4px solid #E2FF00;">
+            <div class="beat-header">
+                <div>
+                    <span class="beat-badge" style="background: #E2FF0020; color: #E2FF00; border: 1px solid #E2FF0040;">BEAT 5</span>
+                    <h2 class="beat-title">Why Were You Engineered to Give Up on a $12 Charge?</h2>
+                </div>
+                <div class="beat-timing">~1m 05s (159 words @ 145 WPM)</div>
+            </div>
+            <div class="beat-body">
+                <div class="vis-pill"><span class="vis-tag">VISUAL</span> Behavioral Friction Architecture Diagram & Reclaiming Autonomy Master Card</div>
+<p class="sentence">Here is what the forensic paper trail reveals. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">You are not fighting a bad website. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">You are fighting an engineered behavioral trap <span class="b-half">//</span> tuned by rooms full of data scientists! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Sign-up flows are tested down to the millisecond <span class="b-half">//</span> to remove every hesitation. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">And cancellation flows are engineered with friction <span class="b-half">//</span> to break your willpower. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">That twelve-dollar zombie subscription <span class="b-half">//</span> isn't just taking your cash. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">It is extracting cognitive bandwidth— <span class="b-half">//</span> taxing you with monthly guilt and dread <span class="b-half">//</span> every time you look at your statement. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">If you have ever felt exhausted <span class="b-half">//</span> trying to cancel, <span class="b-half">//</span> do not blame yourself. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">You are not lazy! <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Your exhaustion was budgeted into their quarterly earnings. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">The subscription economy never sold you convenience. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">It bought permanent access to your bank account, <span class="b-half">//</span> betting you would be too tired to fight back. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Next time, <span class="b-half">//</span> don't hand over your primary card. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Use single-use virtual limits. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Break the pipeline. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">Because cancelling isn't just saving twelve dollars. <span class="b-full"><span class="b-half">//</span>/</span></p>
+<p class="sentence">It is evicting an algorithm from your wallet. <span class="b-full"><span class="b-half">//</span>/</span></p>
+            </div>
+        </section>
+        
+  </main>
+
+  <script>
+    let fontSz = 32;
+    function adjustFont(delta) {
+      fontSz = Math.max(22, Math.min(48, fontSz + delta));
+      document.body.style.setProperty('--fs', fontSz + 'px');
+    }
+
+    function toggleVisuals() {
+      document.body.classList.toggle('hide-vis');
+    }
+
+    let timerInterval = null;
+    let timerSec = 0;
+    function toggleTimer() {
+      const disp = document.getElementById('timerDisplay');
+      if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+      } else {
+        timerInterval = setInterval(() => {
+          timerSec++;
+          const m = String(Math.floor(timerSec / 60)).padStart(2, '0');
+          const s = String(timerSec % 60).padStart(2, '0');
+          disp.innerText = m + ':' + s;
+        }, 1000);
+      }
+    }
+
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = (window.scrollY / Math.max(1, h)) * 100;
+      document.getElementById('pg').style.width = pct + '%';
+    });
+  </script>
+</body>
+</html>

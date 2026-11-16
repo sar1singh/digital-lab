@@ -16,7 +16,7 @@ export const EvidenceGlassCard: React.FC<EvidenceGlassCardProps> = ({
   badgeText = "PRIMARY EVIDENCE // EVICTION NOTICE",
   badgeType = "warning",
   title = "OCTOBER 2007: 72 HOURS FROM STREET",
-  quote = "Your rent is $1,150. You have three days before your landlord kicks you out and your bank account is empty.",
+  quote = "Your rent is $1,100. You have three days before your landlord kicks you out and your bank account is empty.",
   highlightWords = "three days before your landlord kicks you out",
   sourceDoc = "SAN FRANCISCO RESIDENTIAL TENANCY RECORD #4092",
   dateStr = "OCTOBER 14, 2007",
@@ -74,7 +74,7 @@ export const EvidenceGlassCard: React.FC<EvidenceGlassCardProps> = ({
     >
       <div
         style={{
-          width: "780px",
+          width: "920px",
           backgroundColor: THEME.colors.bgGlass,
           backdropFilter: "blur(24px)",
           borderRadius: "24px",
@@ -111,7 +111,7 @@ export const EvidenceGlassCard: React.FC<EvidenceGlassCardProps> = ({
               backgroundColor: badgeStyle.bg,
               border: `1px solid ${badgeStyle.border}`,
               color: badgeStyle.text,
-              fontSize: "13px",
+              fontSize: "15px",
               fontWeight: 700,
               letterSpacing: "1.2px",
               fontFamily: THEME.fonts.mono,
@@ -135,7 +135,7 @@ export const EvidenceGlassCard: React.FC<EvidenceGlassCardProps> = ({
           <div
             style={{
               fontFamily: THEME.fonts.mono,
-              fontSize: "13px",
+              fontSize: "15px",
               color: THEME.colors.textMuted,
               letterSpacing: "1px",
             }}
@@ -147,7 +147,7 @@ export const EvidenceGlassCard: React.FC<EvidenceGlassCardProps> = ({
         {/* Headline Title */}
         <div
           style={{
-            fontSize: "24px",
+            fontSize: "28px",
             fontWeight: 800,
             color: THEME.colors.textWhite,
             letterSpacing: "-0.5px",
@@ -161,7 +161,7 @@ export const EvidenceGlassCard: React.FC<EvidenceGlassCardProps> = ({
         {/* Quote Content with Highlighter Sweep */}
         <div
           style={{
-            fontSize: "30px",
+            fontSize: "36px",
             fontWeight: 600,
             color: THEME.colors.textWhite,
             lineHeight: 1.45,
@@ -215,7 +215,7 @@ export const EvidenceGlassCard: React.FC<EvidenceGlassCardProps> = ({
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            fontSize: "12px",
+            fontSize: "14px",
             color: THEME.colors.textDim,
             fontFamily: THEME.fonts.mono,
             letterSpacing: "0.8px",

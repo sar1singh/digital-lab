@@ -1,0 +1,1330 @@
+export interface WordToken {
+  word: string;
+  start: number;
+  end: number;
+  speaker: string;
+  beat_id?: string;
+}
+
+export interface BeatTiming {
+  id: number;
+  beat_id: string;
+  speaker: string;
+  start: number;
+  end: number;
+  duration?: number;
+  text: string;
+}
+
+export const BEATS_TIMING: BeatTiming[] = [
+  {
+    "id": 1,
+    "beat_id": "beat_01",
+    "speaker": "Christopher",
+    "start": 0.0,
+    "end": 9.372,
+    "duration": 9.372,
+    "text": "Your electric bill just jumped twenty-two dollars a month. Silicon Valley promised AI would cure cancer and do your taxes\u2014instead, the very first thing it actually did was make your air conditioning unaffordable."
+  },
+  {
+    "id": 2,
+    "beat_id": "beat_02",
+    "speaker": "Christopher",
+    "start": 9.402,
+    "end": 16.471,
+    "duration": 7.069,
+    "text": "You didn't buy a hot tub. You didn't leave the oven on. Down the highway, three windowless concrete bunkers just plugged directly into your town's power substation."
+  },
+  {
+    "id": 3,
+    "beat_id": "beat_03",
+    "speaker": "Christopher",
+    "start": 16.501,
+    "end": 29.209,
+    "duration": 12.708,
+    "text": "Inside are tens of thousands of AI chips burning megawatts like a small city. Here is the heist: tech trillionaires negotiated secret discount rates with your power monopoly, then legally forced the utility to dump the billion-dollar grid upgrade tab directly onto your residential meter."
+  },
+  {
+    "id": 4,
+    "beat_id": "beat_04",
+    "speaker": "Christopher",
+    "start": 29.239,
+    "end": 37.533,
+    "duration": 8.294,
+    "text": "Software scales infinitely, but copper transformers and coal plants don't. Across thirteen states, wholesale power auction prices just exploded eight hundred percent overnight."
+  },
+  {
+    "id": 5,
+    "beat_id": "beat_05",
+    "speaker": "Christopher",
+    "start": 37.983,
+    "end": 46.71,
+    "duration": 8.727,
+    "text": "And today, voters finally snapped. From Texas to Georgia to Virginia, furious towns are putting data center bans directly on the ballot\u2014refusing to subsidize Wall Street's AI casino."
+  },
+  {
+    "id": 6,
+    "beat_id": "beat_06",
+    "speaker": "Christopher",
+    "start": 46.74,
+    "end": 52.016,
+    "duration": 5.276,
+    "text": "Because they realized the truth: Big Tech is pocketing the trillions, while every single AI prompt is running on your paycheck."
+  }
+];
+
+export const WORDS_DATA: WordToken[] = [
+  {
+    "word": "Your",
+    "start": 0.0,
+    "end": 0.1,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "electric",
+    "start": 0.1,
+    "end": 0.4,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "bill",
+    "start": 0.4,
+    "end": 0.64,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "just",
+    "start": 0.64,
+    "end": 0.88,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "jumped",
+    "start": 0.88,
+    "end": 1.12,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "$22",
+    "start": 1.12,
+    "end": 1.64,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "a",
+    "start": 1.64,
+    "end": 2.08,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "month.",
+    "start": 2.08,
+    "end": 2.22,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "Silicon",
+    "start": 2.44,
+    "end": 2.62,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "Valley",
+    "start": 2.62,
+    "end": 2.96,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "promised",
+    "start": 2.96,
+    "end": 3.38,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "AI",
+    "start": 3.38,
+    "end": 3.76,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "would",
+    "start": 3.76,
+    "end": 4.02,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "cure",
+    "start": 4.02,
+    "end": 4.26,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "cancer",
+    "start": 4.26,
+    "end": 4.68,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "and",
+    "start": 4.68,
+    "end": 4.88,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "do",
+    "start": 4.88,
+    "end": 5.0,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "your",
+    "start": 5.0,
+    "end": 5.12,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "taxes.",
+    "start": 5.12,
+    "end": 5.48,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "Instead,",
+    "start": 5.74,
+    "end": 6.06,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "the",
+    "start": 6.26,
+    "end": 6.32,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "very",
+    "start": 6.32,
+    "end": 6.52,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "first",
+    "start": 6.52,
+    "end": 6.86,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "thing",
+    "start": 6.86,
+    "end": 7.0,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "it",
+    "start": 7.0,
+    "end": 7.12,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "actually",
+    "start": 7.12,
+    "end": 7.4,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "did",
+    "start": 7.4,
+    "end": 7.64,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "was",
+    "start": 7.64,
+    "end": 7.82,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "make",
+    "start": 7.82,
+    "end": 7.98,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "your",
+    "start": 7.98,
+    "end": 8.16,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "air",
+    "start": 8.16,
+    "end": 8.28,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "conditioning",
+    "start": 8.28,
+    "end": 8.64,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "unaffordable.",
+    "start": 8.64,
+    "end": 9.3,
+    "speaker": "Christopher",
+    "beat_id": "beat_01"
+  },
+  {
+    "word": "You",
+    "start": 9.402,
+    "end": 9.522,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "didn't",
+    "start": 9.522,
+    "end": 9.722,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "buy",
+    "start": 9.722,
+    "end": 9.822,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "a",
+    "start": 9.822,
+    "end": 9.982,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "hot",
+    "start": 9.982,
+    "end": 10.182,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "tub,",
+    "start": 10.182,
+    "end": 10.362,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "you",
+    "start": 10.542,
+    "end": 10.582,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "didn't",
+    "start": 10.582,
+    "end": 10.802,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "leave",
+    "start": 10.802,
+    "end": 10.942,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "the",
+    "start": 10.942,
+    "end": 11.142,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "oven",
+    "start": 11.142,
+    "end": 11.302,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "on.",
+    "start": 11.302,
+    "end": 11.542,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "Down",
+    "start": 11.702,
+    "end": 11.842,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "the",
+    "start": 11.842,
+    "end": 12.022,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "highway,",
+    "start": 12.022,
+    "end": 12.282,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "three",
+    "start": 12.462,
+    "end": 12.642,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "windalist",
+    "start": 12.642,
+    "end": 13.122,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "concrete",
+    "start": 13.122,
+    "end": 13.462,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "bunkers",
+    "start": 13.462,
+    "end": 13.922,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "just",
+    "start": 13.922,
+    "end": 14.142,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "plugged",
+    "start": 14.142,
+    "end": 14.382,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "directly",
+    "start": 14.382,
+    "end": 14.762,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "into",
+    "start": 14.762,
+    "end": 15.102,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "your",
+    "start": 15.102,
+    "end": 15.242,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "counter",
+    "start": 15.242,
+    "end": 15.342,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "-counds",
+    "start": 15.342,
+    "end": 15.542,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "power",
+    "start": 15.542,
+    "end": 15.822,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "substation.",
+    "start": 15.822,
+    "end": 16.422,
+    "speaker": "Christopher",
+    "beat_id": "beat_02"
+  },
+  {
+    "word": "Inside",
+    "start": 16.501,
+    "end": 16.781,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "are",
+    "start": 16.781,
+    "end": 17.001,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "tens",
+    "start": 17.001,
+    "end": 17.181,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "of",
+    "start": 17.181,
+    "end": 17.401,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "thousands",
+    "start": 17.401,
+    "end": 17.721,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "of",
+    "start": 17.721,
+    "end": 17.961,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "AI",
+    "start": 17.961,
+    "end": 18.101,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "chips",
+    "start": 18.101,
+    "end": 18.521,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "burning",
+    "start": 18.521,
+    "end": 18.841,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "megawatts",
+    "start": 18.841,
+    "end": 19.361,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "like",
+    "start": 19.361,
+    "end": 19.481,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "a",
+    "start": 19.481,
+    "end": 19.621,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "small",
+    "start": 19.621,
+    "end": 19.821,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "city.",
+    "start": 19.821,
+    "end": 20.161,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "Here",
+    "start": 20.281,
+    "end": 20.381,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "is",
+    "start": 20.381,
+    "end": 20.521,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "the",
+    "start": 20.521,
+    "end": 20.641,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "heist.",
+    "start": 20.641,
+    "end": 20.981,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "Tech",
+    "start": 21.081,
+    "end": 21.221,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "Trillionaires",
+    "start": 21.221,
+    "end": 21.721,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "negotiated",
+    "start": 21.721,
+    "end": 22.321,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "secret",
+    "start": 22.321,
+    "end": 22.701,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "discount",
+    "start": 22.701,
+    "end": 23.081,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "rates",
+    "start": 23.081,
+    "end": 23.321,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "with",
+    "start": 23.321,
+    "end": 23.521,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "your",
+    "start": 23.521,
+    "end": 23.621,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "power",
+    "start": 23.621,
+    "end": 23.881,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "monopoly.",
+    "start": 23.881,
+    "end": 24.301,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "Then",
+    "start": 24.521,
+    "end": 24.601,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "legally",
+    "start": 24.601,
+    "end": 24.861,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "force",
+    "start": 24.861,
+    "end": 25.181,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "the",
+    "start": 25.181,
+    "end": 25.381,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "utility",
+    "start": 25.381,
+    "end": 25.781,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "to",
+    "start": 25.781,
+    "end": 26.001,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "dump",
+    "start": 26.001,
+    "end": 26.161,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "the",
+    "start": 26.161,
+    "end": 26.321,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "billion",
+    "start": 26.321,
+    "end": 26.561,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "dollar",
+    "start": 26.561,
+    "end": 26.801,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "grid",
+    "start": 26.801,
+    "end": 27.021,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "upgrade",
+    "start": 27.021,
+    "end": 27.381,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "tab",
+    "start": 27.381,
+    "end": 27.661,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "directly",
+    "start": 27.661,
+    "end": 27.981,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "onto",
+    "start": 27.981,
+    "end": 28.361,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "your",
+    "start": 28.361,
+    "end": 28.501,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "residential",
+    "start": 28.501,
+    "end": 28.881,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "meter.",
+    "start": 28.881,
+    "end": 29.181,
+    "speaker": "Christopher",
+    "beat_id": "beat_03"
+  },
+  {
+    "word": "Software",
+    "start": 29.239,
+    "end": 29.619,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "scales",
+    "start": 29.619,
+    "end": 29.939,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "infinitely,",
+    "start": 29.939,
+    "end": 30.439,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "but",
+    "start": 30.659,
+    "end": 30.739,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "copper",
+    "start": 30.739,
+    "end": 30.979,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "transformers",
+    "start": 30.979,
+    "end": 31.699,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "and",
+    "start": 31.699,
+    "end": 31.839,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "coal",
+    "start": 31.839,
+    "end": 32.019,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "plants",
+    "start": 32.019,
+    "end": 32.359,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "don't.",
+    "start": 32.359,
+    "end": 32.779,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "Across",
+    "start": 32.839,
+    "end": 33.059,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "13",
+    "start": 33.059,
+    "end": 33.539,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "states,",
+    "start": 33.539,
+    "end": 34.079,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "wholesale",
+    "start": 34.199,
+    "end": 34.419,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "power",
+    "start": 34.419,
+    "end": 34.859,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "auction",
+    "start": 34.859,
+    "end": 35.159,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "prices",
+    "start": 35.159,
+    "end": 35.539,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "just",
+    "start": 35.539,
+    "end": 35.819,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "exploded",
+    "start": 35.819,
+    "end": 36.319,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "800",
+    "start": 36.319,
+    "end": 36.719,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "%",
+    "start": 36.719,
+    "end": 37.079,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "overnight.",
+    "start": 37.079,
+    "end": 37.459,
+    "speaker": "Christopher",
+    "beat_id": "beat_04"
+  },
+  {
+    "word": "And",
+    "start": 37.983,
+    "end": 38.083,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "today,",
+    "start": 38.083,
+    "end": 38.363,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "voters",
+    "start": 38.583,
+    "end": 38.823,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "finally",
+    "start": 38.823,
+    "end": 39.283,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "snapped",
+    "start": 39.283,
+    "end": 39.683,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "from",
+    "start": 39.683,
+    "end": 39.943,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "Texas",
+    "start": 39.943,
+    "end": 40.263,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "to",
+    "start": 40.263,
+    "end": 40.503,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "Georgia",
+    "start": 40.503,
+    "end": 40.743,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "to",
+    "start": 40.743,
+    "end": 40.983,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "Virginia.",
+    "start": 40.983,
+    "end": 41.363,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "Furious",
+    "start": 41.483,
+    "end": 41.823,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "towns",
+    "start": 41.823,
+    "end": 42.063,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "are",
+    "start": 42.063,
+    "end": 42.263,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "putting",
+    "start": 42.263,
+    "end": 42.483,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "data",
+    "start": 42.483,
+    "end": 42.683,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "center",
+    "start": 42.683,
+    "end": 43.003,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "bands",
+    "start": 43.003,
+    "end": 43.243,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "directly",
+    "start": 43.243,
+    "end": 43.563,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "on",
+    "start": 43.563,
+    "end": 43.863,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "the",
+    "start": 43.863,
+    "end": 43.943,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "ballot,",
+    "start": 43.943,
+    "end": 44.203,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "refusing",
+    "start": 44.343,
+    "end": 44.623,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "to",
+    "start": 44.623,
+    "end": 44.843,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "subsidize",
+    "start": 44.843,
+    "end": 45.383,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "Wall",
+    "start": 45.383,
+    "end": 45.563,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "Street's",
+    "start": 45.563,
+    "end": 45.963,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "AI",
+    "start": 45.963,
+    "end": 46.163,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "casino.",
+    "start": 46.163,
+    "end": 46.603,
+    "speaker": "Christopher",
+    "beat_id": "beat_05"
+  },
+  {
+    "word": "Because",
+    "start": 46.74,
+    "end": 46.92,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  },
+  {
+    "word": "they",
+    "start": 46.92,
+    "end": 47.1,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  },
+  {
+    "word": "realize",
+    "start": 47.1,
+    "end": 47.44,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  },
+  {
+    "word": "the",
+    "start": 47.44,
+    "end": 47.68,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  },
+  {
+    "word": "true",
+    "start": 47.68,
+    "end": 47.88,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  },
+  {
+    "word": "big",
+    "start": 47.88,
+    "end": 48.18,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  },
+  {
+    "word": "tech",
+    "start": 48.18,
+    "end": 48.38,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  },
+  {
+    "word": "is",
+    "start": 48.38,
+    "end": 48.58,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  },
+  {
+    "word": "pocketing",
+    "start": 48.58,
+    "end": 48.98,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  },
+  {
+    "word": "the",
+    "start": 48.98,
+    "end": 49.1,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  },
+  {
+    "word": "trillions,",
+    "start": 49.1,
+    "end": 49.48,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  },
+  {
+    "word": "while",
+    "start": 49.68,
+    "end": 49.76,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  },
+  {
+    "word": "every",
+    "start": 49.76,
+    "end": 50.0,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  },
+  {
+    "word": "single",
+    "start": 50.0,
+    "end": 50.32,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  },
+  {
+    "word": "AI",
+    "start": 50.32,
+    "end": 50.6,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  },
+  {
+    "word": "prompt",
+    "start": 50.6,
+    "end": 50.96,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  },
+  {
+    "word": "is",
+    "start": 50.96,
+    "end": 51.18,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  },
+  {
+    "word": "running",
+    "start": 51.18,
+    "end": 51.4,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  },
+  {
+    "word": "on",
+    "start": 51.4,
+    "end": 51.56,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  },
+  {
+    "word": "your",
+    "start": 51.56,
+    "end": 51.68,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  },
+  {
+    "word": "picture.",
+    "start": 51.68,
+    "end": 51.96,
+    "speaker": "Christopher",
+    "beat_id": "beat_06"
+  }
+];

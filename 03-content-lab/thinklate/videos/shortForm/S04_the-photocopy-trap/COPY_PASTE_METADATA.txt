@@ -1,0 +1,32 @@
+======================================================================
+THINKLATE VERTICAL SHORT PUBLISHING PACKAGE (S04_the-photocopy-trap)
+======================================================================
+MASTER FILE:       ThinkLate_Short04_The_Photocopy_Trap_1080x1920_MASTER.mp4
+DURATION:          48.28s (1080x1920 @ 30fps, Complete 4-Beat Story + Mic-Drop Climax)
+HOST VOICE:        Eddy Thinklate (Founder & Lead Host)
+YOUTUBE TITLE:     Why Your Childhood Memories Are 25th-Gen Photocopies #Shorts
+
+----------------------------------------------------------------------
+🎙️ FULL STANDALONE SPOKEN SCRIPT (WITH MIC-DROP CLIMAX):
+----------------------------------------------------------------------
+In the year two thousand, neuroscientist Karim Nader proved something that terrified cognitive psychologists: the simple act of remembering your past physically melts the memory you are trying to recall! Whenever you retrieve an old memory, your brain does not perform a safe, read-only playback. Remembering unlocks and destabilizes the protein synthesis bonds holding those neurons together. For three to five hours after you think about an event, that memory turns into malleable liquid clay. If you are anxious, nostalgic, or bragging to friends over drinks, your current mood gets permanently baked into the trace. When you fall asleep that night, your brain synthesizes fresh proteins and saves the edited version right over the original file. You never remember your actual childhood. You only remember the last time you remembered it, adding five percent distortion every single round. By age thirty-five, your favorite childhood memory is a twenty-fifth-generation photocopy of a photocopy: an epic Hollywood screenplay that your own neurons wrote behind your back.
+
+----------------------------------------------------------------------
+🔗 HOW TO ENABLE THE CLICKABLE LONG-VIDEO & TIMESTAMP BRIDGE:
+----------------------------------------------------------------------
+1. In YouTube Studio -> Content -> Shorts -> Edit "Why Your Childhood Memories Are 25th-Gen Photocopies #Shorts":
+   - Scroll to the "Related video" field on the right sidebar.
+   - Select the Long-Form Episode 06 video: "Your Memories Never Happened".
+   - This activates the clickable "▶ Related Video" pill right underneath the
+     animated on-screen "👇 CLICK LINK BELOW • JUMP TO @ 5:01" banner!
+2. Exact Timestamp Deep-Link Mechanics:
+   - The on-screen badge instructs viewers who want the full 7-minute deep dive
+     to jump directly to **5:01** (Chapter 5: What Happens to Your Brain Proteins Every Time You Remember?).
+
+----------------------------------------------------------------------
+📌 COPY-PASTE PINNED COMMENT FOR THIS SHORT:
+----------------------------------------------------------------------
+📌 WATCH THE FULL BREAKDOWN (Tap '▶ Related Video' right below @wethinklate & jump to 5:01!):
+In 2000, neuroscientist Karim Nader proved Memory Reconsolidation: every time you recall a memory, its protein bonds melt for 3 to 5 hours. By age 35, your favorite childhood memory is a 25th-generation photocopy of a photocopy.
+
+👉 Tap the Related Video link above and jump to 5:01 for the full experiment!

@@ -1,0 +1,6 @@
+Video_File,Segment_ID,Scene_Name,Action,Start_Sec,End_Sec,Duration_Sec,Orig_Timecode_Range,Duration_Formatted,Timeline_In,Timeline_Out
+"2026-10-14 00-45-18.mkv",1,"Havana Rooftops, Missions & Street Combat (Part 1)",KEEP,35.00,3328.00,3293.00,"00:35 - 55:28","54:53","00:00","54:53"
+"2026-10-14 00-45-18.mkv",2,"Havana Exploration, Combat & Harbor Docks (Part 2)",KEEP,3433.00,6391.50,2958.50,"57:13 - 01:46:31","49:18","54:53","01:44:11"
+"2026-10-14 21-06-11.mkv",1,"Jackdaw Naval Battles & High Seas Plunder (Part 1)",KEEP,0.00,2822.00,2822.00,"00:00 - 47:02","47:02","00:00","47:02"
+"2026-10-14 21-06-11.mkv",2,"Naval Fleet Travel & Hideout Approach (Part 2)",KEEP,2958.00,4150.00,1192.00,"49:18 - 01:09:10","19:52","47:02","01:06:54"
+"2026-10-14 21-06-11.mkv",3,"Great Inagua Manor & Sunset Ocean Sailing (Part 3)",KEEP,4233.00,8371.50,4138.50,"01:10:33 - 02:19:31","01:08:58","01:06:54","02:15:52"

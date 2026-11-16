@@ -22,14 +22,23 @@ ThinkLate is **conversational infotainment, high-curiosity questioning, pattern 
 
 ## 2. Active Pipeline (Production Status)
 
-| Ep # | Title / Working Title | Pillar / Genre | Niche | Status |
-|:---:|---|---|---|:---:|
-| **01** | *Is AI a Bubble? Ask the Railways* | A: Business History | Technological Revolutions | **PUBLISHED** |
-| **02** | *Why Castle Owners Went Broke (Condo Trap)* | A: Business / Wealth | Real Estate Financialization | **PUBLISHED** |
-| **03** | *Why Gamers Will Rent Their Brains* | A: Business / Tech | Cloud Hardware Rentierism | **PUBLISHED** |
-| **04** | *Why You Will Never Own Anything Again* | A: Business Monopoly | SaaS, Firmware Locks, Cartels | **PUBLISHED** |
-| **05** | *How Airbnb Stole $100 Billion* | A: Business & Platform | Housing Market Extraction | **IN SCRIPTING** |
-| **05-Alt**| *The AI IPO Bubble* | A: Business / Tech | Venture Capital Dumping | Backlog |
+### Long-Form Documentaries (L-Series)
+| ID | Folder Path | Title / Working Title | Pillar / Genre | Niche | Status |
+|:---:|:---|---|---|---|:---:|
+| **L01** | `videos/longForm/L01_is-ai-a-bubble-ask-the-railways` | *Is AI a Bubble? Ask the Railways* | A: Business History | Technological Revolutions | **PUBLISHED** |
+| **L02** | `videos/longForm/L02_100-percent-debt-paradox` | *The 100% Debt Paradox* | A: Business / Wealth | Real Estate Financialization | **PRIVATE (Nov 6)** |
+| **L03** | `videos/longForm/L03_death-of-ownership` | *Death of Ownership* | A: Business / Tech | Cloud Hardware Rentierism | **PRIVATE (Nov 6)** |
+| **L04** | `videos/longForm/L04_the-subscription-trap` | *The Subscription Trap* | A: Business Monopoly | SaaS, Firmware Locks, Cartels | **PUBLISHED** |
+| **L05** | `videos/longForm/L05_how-airbnb-stole-100b` | *How Airbnb Stole $100 Billion* | A: Business & Platform | Housing Market Extraction | **PRIVATE / NOT LIVE** |
+| **L06** | `videos/longForm/L06_the-memory-lie` | *The Memory Lie* | D: Philosophy / Neuroscience | Holographic Memory | **PARKED (finished master, off-franchise, unpublished)** |
+| **L07** | `videos/longForm/L07_why-you-cant-cancel` | *Why You Can't Cancel Anything* | A: Business Monopoly | Consumer Economics / Iliad Flow | **MASTER V2 READY (1080p, 5m 17s, -15.9 LUFS)** |
+| **L05-Alt**| `videos/backlog/L05-alt_the-ai-ipo-bubble` | *The AI IPO Bubble* | A: Business / Tech | Venture Capital Dumping | Backlog |
+
+### Short-Form Vertical Videos (S-Series)
+| ID | Folder Path | Title / Working Title | Linked Long-Form | Duration | Status |
+|:---:|:---|---|:---:|:---:|:---:|
+| **S01** | `videos/shortForm/S01_ai-energy-shock` | *The $22 Tax On Every AI Prompt* | L06 (Splice 1) | 52.50s | **PULLED (silent audio)** |
+| **S05** | `videos/shortForm/S05_the-shelf-price-is-fake` | *The Shelf Price Is Fake* | L07 (The Fine Print) | 41.93s | **MASTER V2 READY (1080x1920, -15.8 LUFS)** |
 
 ---
 
@@ -96,3 +105,61 @@ ThinkLate is **conversational infotainment, high-curiosity questioning, pattern 
 * **Genre:** Astrophysics & Philosophy
 * **Niche:** Cosmic Horizons & Information Theory
 * **Core Hook:** Why the speed of light is not a speed limit for travel, but the cosmic refresh rate of the universe's hardware rendering engine.
+
+---
+
+## 6. Topic Backlog: Pillar E (Declassified Conspiracies & Proven Institutional Cover-Ups)
+*Sourced & verified with primary court dockets, Senate hearings, and peer-reviewed journals (Nov 2026). Full citations in [proven_conspiracies_and_declassified_coverups.md](research/dossiers/pillar_e_declassified_conspiracies/proven_conspiracies_and_declassified_coverups.md).*
+
+### Topic E1: The Phoebus Cartel (The Lightbulb Death Timer)
+* **Working Title:** `Why Lightbulbs Were Made Illegal to Last` (40 chars)
+* **Genre:** Corporate Conspiracy / Consumer Economics
+* **Niche:** Declassified Industrial Cartels & Planned Obsolescence
+* **Core Hook / Paradox:** A hand-blown bulb in Livermore, California has burned continuously since 1901 (125+ years). Why do yours die in 1,000 hours? Because on Dec 23, 1924, GE, Osram, and Philips signed a secret treaty in Geneva (*Phœbus S.A.*) that **fined factories in Swiss Francs if their lightbulbs lasted too long**—proven in *U.S. v. General Electric* (82 F. Supp. 753, 1949).
+* **Companion Short:** `The 1924 Treaty That Broke Your Electronics` (S03)
+
+### Topic E2: Project 226 (How Big Sugar Bought Harvard)
+* **Working Title:** `How Big Sugar Paid Harvard $50,000 to Lie` (41 chars)
+* **Genre:** Medical & Corporate Cover-Up
+* **Niche:** Institutional Capture & Nutritional Science Manipulation
+* **Core Hook / Paradox:** Why did doctors tell your parents for 50 years that butter and eggs cause heart attacks while "0% Fat" sugary snacks were "Heart Healthy"? Because in July 1965, the Sugar Research Foundation secretly launched **Project 226**, paying three Harvard nutritionists ~$50,000 to publish a rigged 1967 *New England Journal of Medicine* review blaming fat and erasing sugar—uncovered in *JAMA Internal Medicine* (Kearns et al., 2016).
+* **Companion Short:** `The $50,000 Check That Framed Butter` (S04)
+
+### Topic E3: The DuPont C8 Forever Chemical Vault
+* **Working Title:** `The 1961 Secret Inside 99% of Human Blood` (41 chars)
+* **Genre:** Corporate Cover-Up / Environmental Forensics
+* **Niche:** Chemical Toxicology Concealment
+* **Core Hook / Paradox:** 99% of humans on earth carry a synthetic molecule called C8 (PFOA) in their bloodstream. Internal DuPont memos from **1961** proved their own chief toxicologist knew Teflon's key chemical enlarged livers, and a secret **1981** employee study found 2 of 7 babies born with eye defects—yet executives voted in May 1984 to keep dumping it into the Ohio River because stopping was *"not economically attractive"* (EPA Docket TSCA-HQ-2004-0016).
+* **Companion Short:** `Why 99% of Blood Has This 1947 Molecule` (S05)
+
+### Topic E4: Operation Sea-Spray (When the US Navy Sprayed San Francisco)
+* **Working Title:** `The Day the Navy Sprayed San Francisco` (38 chars)
+* **Genre:** Declassified Military Operations
+* **Niche:** Cold War Open-Air Biological Testing
+* **Core Hook / Paradox:** In September 1950, a US Navy minesweeper sailed past the Golden Gate Bridge and sprayed giant clouds of *Serratia marcescens* bacteria into the fog for 6 days, exposing all **800,000 residents**. When 11 patients developed rare infections at Stanford Hospital and Edward Nevin died, doctors published a baffled medical paper—while the military secretly used the hospital outbreak to measure their weapon's success (1977 US Senate Hearings).
+* **Companion Short:** `Why the Navy Sprayed Fog on 800,000 Citizens` (S06)
+
+### Topic E5: Project MKUltra & The 20,000 Misfiled Receipts
+* **Working Title:** `The Accounting Error That Exposed MKUltra` (41 chars)
+* **Genre:** Declassified Intelligence History
+* **Niche:** FOIA Forensics & Bureaucratic Cover-Ups
+* **Core Hook / Paradox:** In 1973, CIA Director Richard Helms ordered every file on Project MKUltra burned to ash. The cover-up worked—until 1977, when a FOIA clerk opened a budget warehouse in Franconia, Virginia and found **20,000 pages of expense receipts** that survived because the accountants filed vouchers in a different building than the spies (Aug 3, 1977 Joint Senate Hearing).
+* **Companion Short:** `How an Accountant Exposed the CIA's Darkest Secret` (S07)
+
+### Topic E6: Project SUNSHINE (The Atomic Hunt for Baby Teeth)
+* **Working Title:** `Why the Government Collected 320,000 Teeth` (42 chars)
+* **Genre:** Declassified Nuclear Physics & History
+* **Niche:** Atmospheric Fallout & Citizen Science Counter-Audits
+* **Core Hook / Paradox:** In 1953, to measure how much radioactive Strontium-90 from nuclear bomb tests was entering human bones, the Atomic Energy Commission launched **Project SUNSHINE**—where Nobel chemist Willard Libby literally asked scientists for *"a good job of body snatching"* on deceased infants (RAND Report R-251-AEC). When the public found out, St. Louis mothers fought back by mailing **320,000 baby teeth** to lab scientists, proving 50x radiation spikes and forcing JFK to sign the 1963 Nuclear Test Ban Treaty.
+* **Companion Short:** `Why 320,000 Kids Mailed Their Teeth to Scientists` (S08)
+
+### NEXT UP (planned 2026-11-11, plan approved by founder; franchise = "The Fine Print", see FRANCHISE_SPEC_V1.md)
+| ID | Folder Path | Working Title | Format | Status |
+|:---:|:---|---|:---:|:---:|
+| **L07** | `videos/longForm/L07_why-you-cant-cancel` | *Why You Can't Cancel Anything* | ~6 min / ~900 words | **SCRIPT & DECK READY (899 words, 100/100 QC)** |
+| **S05** | `videos/shortForm/S05_the-shelf-price-is-fake` | *The Shelf Price Is Fake* | ~40 s / ~105 words | **MASTER READY (29.6s, -16.0 LUFS, 11ms drift)** |
+- Parked off-franchise (finished): L06 The Memory Lie (`videos/longForm/L06_the-memory-lie`), S02-S04. Hold until 90-day review gate.
+- **Live public long-form (founder-confirmed 2026-11-11): L01 AI Bubble, L04 Ownership->Rent. Every other L-video is private/unpublished.** Numbering continues: L06 slot = The Memory Lie (parked), new long-form = L07.
+
+
+

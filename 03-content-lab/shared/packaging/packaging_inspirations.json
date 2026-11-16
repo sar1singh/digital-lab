@@ -1,0 +1,30 @@
+[
+  {
+    "id": "PACK-001",
+    "title": "The Subscription Avalanche (Drowning in Recurring Micro-Debits)",
+    "source": "Mohak Mangal / Indian Commentary & Explainer Ecosystem",
+    "category": "Physicalized Parasite / Living Quicksand",
+    "image_path": "C:\\Users\\sar1s\\Documents\\MyWork\\Git\\digital-lab\\03-content-lab\\shared\\assets\\inspiration_vault\\mohak_subscription_avalanche.jpg",
+    "scores": {
+      "mobile_glance": 19,
+      "physical_metaphor": 25,
+      "cognitive_tally": 20,
+      "z_depth": 15,
+      "hook_bridge": 18
+    },
+    "score": 97,
+    "score_notes": {
+      "mobile_glance": "Ultra-saturated primary brand colors (Netflix Red, Spotify Green, Swiggy Orange, JioHotstar Blue) pop violently against dark dirt/quicksand. Zero dark-mode blending.",
+      "physical_metaphor": "Flawless physicalization. Instead of an abstract bank statement, subscriptions are heavy, tangible gold-bar ingots suffocating the human body.",
+      "cognitive_tally": "Real local brands with exact Rupee prices (₹649, ₹149, ₹99, ₹130). Viewer's brain immediately starts mental addition tallying their monthly burn.",
+      "z_depth": "Masterclass 3-tier foreshortening: Desperate reaching hand breaking the 4th wall into extreme foreground, trapped torso in midground, infinite brick mountain in background.",
+      "hook_bridge": "Opens an instant curiosity tension loop: 'How much am I actually losing each month without realizing?'"
+    },
+    "creative_breakdown": "1. **The Inversion of Text Overhead:** Notice that there is ZERO giant headline text ('HOW YOU ARE BEING SCAMMED'). The physical props ARE the headline. This bypasses the viewer's subconscious 'ad/clickbait filter' because the human eye treats it as a photographic narrative tableau rather than a poster.\n2. **The Micro-Tally Psychological Hook:** Every branded brick has an exact localized price badge (`Netflix ₹649`, `Spotify ₹139`, `YouTube Premium ₹149`, `Swiggy One ₹99`, `Zomato Gold ₹149`, `Google One ₹130`, `LinkedIn ₹799`). The viewer cannot look at this without automatically calculating: *'Wait, I have 5 of these right now.'*\n3. **Visceral Mud & Asymmetry:** Adding mud, grime, and sweat on the creator's face and clothes elevates it from a clean graphic render into visceral, suffocating survival drama.\n4. **Breaking the Fourth Wall:** The hand outstretched toward the lens creates immediate spatial immersion, making the viewer feel like they are standing at the edge of the pit looking down at a drowning man.",
+    "channel_adaptations": {
+      "ThinkLate (Business, Big Tech, Physics/Infotainment)": "**Concept: 'The Enterprise SaaS Quicksand' or 'The AI Token Avalanche'**\n- *Visual:* Eddy ThinkLate or a startup founder buried up to his neck under a mountain of glowing server wafers, black terminal screens, and corporate billing dockets (`AWS: $42,500/mo`, `OpenAI API: $18,200`, `Snowflake: $14,000`, `Datadog: $9,800`).\n- *Style:* Flat cel-shaded 2D vector style (Infographics Show / Vox), electric cyan and warning crimson glow, screaming character with sweat drops, top banner: `THE SAAS MAFIA` or `THE $50,000 BILL`.",
+      "Off Script (4K Gaming, Unfiltered Commentary)": "**Concept: 'The $70 Live-Service Grave'**\n- *Visual:* Eddy in pirate/gamer attire buried under an avalanche of glowing neon Battle Pass tokens, cosmetic skin crates, and 'SEASON 04 ACCESS' passes, reaching for a classic offline PS2 game disc sitting just out of reach on dry land.\n- *Hook:* How modern gaming stopped selling complete art and started selling subscription rental passes.",
+      "Sarwanology (Philosophy, Culture, Deep Mind)": "**Concept: 'Drowning in Attention Quicksand'**\n- *Visual:* Thinker buried under an avalanche of bright red notification badges (`99+ Unread`, `Screen Time: 9h 42m`, `Binge Next Episode in 5s`), reaching desperately for an analog book with clean white pages."
+    }
+  }
+]

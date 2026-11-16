@@ -184,18 +184,19 @@ export const TerminalCodeBlock: React.FC<TerminalCodeBlockProps> = ({
                   style={{
                     display: "flex",
                     alignItems: "center",
-                    gap: "14px",
+                    gap: "16px",
                     transform: `translateX(${(1 - lineSpring) * -15}px)`,
                     opacity: lineOpacity,
-                    fontSize: "17px",
+                    fontSize: "21px",
+                    fontWeight: 600,
                   }}
                 >
                   {line.tag && (
                     <span
                       style={{
-                        padding: "3px 9px",
-                        borderRadius: "5px",
-                        fontSize: "11px",
+                        padding: "4px 12px",
+                        borderRadius: "6px",
+                        fontSize: "13px",
                         fontWeight: 900,
                         letterSpacing: "0.08em",
                         backgroundColor: line.color ? `${line.color}22` : "rgba(255,255,255,0.1)",
@@ -206,7 +207,7 @@ export const TerminalCodeBlock: React.FC<TerminalCodeBlockProps> = ({
                       {line.tag}
                     </span>
                   )}
-                  <span style={{ color: line.color || theme.colors.textMuted, letterSpacing: "0.02em" }}>
+                  <span style={{ color: line.color || theme.colors.textWhite, letterSpacing: "0.02em" }}>
                     {line.text}
                   </span>
                 </div>

@@ -47,9 +47,9 @@ export const TornPaperReceipt: React.FC<TornPaperReceiptProps> = ({
 
   const opacity = interpolate(frame, [0, 8], [0, 1], { extrapolateRight: "clamp" });
 
-  // Motion 4: Stamp slams at frame 44
+  // Motion 4: Stamp slams at frame 28
   const stampSpring = spring({
-    frame: Math.max(0, frame - 44),
+    frame: Math.max(0, frame - 28),
     fps,
     config: { damping: 10, mass: 0.5, stiffness: 170 },
   });
@@ -68,12 +68,12 @@ export const TornPaperReceipt: React.FC<TornPaperReceiptProps> = ({
     >
       <div
         style={{
-          width: "740px",
+          width: "980px",
           backgroundColor: "#FDFBF7",
           color: "#0F172A",
           boxShadow: "0 30px 80px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(255, 255, 255, 0.2)",
-          padding: "48px 52px",
-          transform: `translateY(${(1 - dropSpring) * -60}px) rotate(${(1 - dropSpring) * -6 - 2}deg) scale(${dropSpring})`,
+          padding: "54px 64px",
+          transform: `translateY(${(1 - dropSpring) * -60}px) rotate(${(1 - dropSpring) * -4 - 1.5}deg) scale(${dropSpring})`,
           opacity,
           position: "relative",
           clipPath:
@@ -81,18 +81,18 @@ export const TornPaperReceipt: React.FC<TornPaperReceiptProps> = ({
         }}
       >
         {/* Receipt Header */}
-        <div style={{ textAlign: "center", borderBottom: "2px dashed #94A3B8", paddingBottom: "18px", marginBottom: "20px" }}>
-          <h2 style={{ fontSize: "24px", fontWeight: 900, letterSpacing: "0.1em", margin: "0 0 6px 0", textTransform: "uppercase" }}>
+        <div style={{ textAlign: "center", borderBottom: "2px dashed #94A3B8", paddingBottom: "20px", marginBottom: "24px" }}>
+          <h2 style={{ fontSize: "34px", fontWeight: 900, letterSpacing: "0.08em", margin: "0 0 8px 0", textTransform: "uppercase" }}>
             {receiptTitle}
           </h2>
-          <div style={{ fontSize: "12px", color: "#64748B", letterSpacing: "0.15em" }}>{storeLocation}</div>
-          <div style={{ fontSize: "11px", color: "#94A3B8", marginTop: "4px" }}>{dateStr}</div>
+          <div style={{ fontSize: "16px", color: "#475569", fontWeight: 700, letterSpacing: "0.12em" }}>{storeLocation}</div>
+          <div style={{ fontSize: "14px", color: "#64748B", marginTop: "6px", fontFamily: THEME.fonts.mono }}>{dateStr}</div>
         </div>
 
         {/* Motion 2: Staggered Line Items (One after the other) */}
-        <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginBottom: "20px" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginBottom: "26px" }}>
           {lineItems.map((item, idx) => {
-            const itemStart = 14 + idx * 6;
+            const itemStart = 10 + idx * 5;
             const itemSpring = spring({
               frame: Math.max(0, frame - itemStart),
               fps,
@@ -109,34 +109,34 @@ export const TornPaperReceipt: React.FC<TornPaperReceiptProps> = ({
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  fontSize: "15px",
-                  color: item.isJunkFee ? "#DC2626" : "#1E293B",
-                  fontWeight: item.isJunkFee ? 800 : 500,
+                  fontSize: "22px",
+                  color: item.isJunkFee ? "#DC2626" : "#0F172A",
+                  fontWeight: item.isJunkFee ? 900 : 700,
                   transform: `translateX(${(1 - itemSpring) * -16}px)`,
                   opacity: itemOpacity,
                 }}
               >
                 <span>{item.isJunkFee ? `⚠️ ${item.name}` : item.name}</span>
-                <span>{item.amount}</span>
+                <span style={{ fontVariantNumeric: "tabular-nums" }}>{item.amount}</span>
               </div>
             );
           })}
         </div>
 
         {/* Subtotal & Total */}
-        <div style={{ borderTop: "2px dashed #94A3B8", paddingTop: "14px", display: "flex", flexDirection: "column", gap: "6px" }}>
-          <div style={{ display: "flex", justifyContent: "space-between", fontSize: "14px", color: "#64748B" }}>
+        <div style={{ borderTop: "2px dashed #94A3B8", paddingTop: "18px", display: "flex", flexDirection: "column", gap: "8px" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", fontSize: "18px", fontWeight: 700, color: "#475569" }}>
             <span>BASE ADVERTISED RATE</span>
-            <span>{subtotal}</span>
+            <span style={{ fontVariantNumeric: "tabular-nums" }}>{subtotal}</span>
           </div>
-          <div style={{ display: "flex", justifyContent: "space-between", fontSize: "28px", fontWeight: 900, color: "#0F172A", borderTop: "1px solid #CBD5E1", paddingTop: "8px" }}>
-            <span>FINAL TOTAL</span>
-            <span style={{ color: "#DC2626" }}>{total}</span>
+          <div style={{ display: "flex", justifyContent: "space-between", fontSize: "38px", fontWeight: 900, color: "#0F172A", borderTop: "2px solid #CBD5E1", paddingTop: "10px" }}>
+            <span>FINAL CHECKOUT TOTAL</span>
+            <span style={{ color: "#DC2626", fontVariantNumeric: "tabular-nums" }}>{total}</span>
           </div>
         </div>
 
         {/* Footer */}
-        <div style={{ textAlign: "center", marginTop: "24px", fontSize: "11px", color: "#64748B", borderTop: "1px dashed #CBD5E1", paddingTop: "12px" }}>
+        <div style={{ textAlign: "center", marginTop: "24px", fontSize: "15px", fontWeight: 700, color: "#475569", borderTop: "1px dashed #CBD5E1", paddingTop: "14px" }}>
           {footerMessage}
         </div>
 
@@ -145,19 +145,19 @@ export const TornPaperReceipt: React.FC<TornPaperReceiptProps> = ({
           style={{
             position: "absolute",
             top: "45%",
-            right: "24px",
-            transform: `translateY(-50%) rotate(-14deg) scale(${stampSpring})`,
+            right: "32px",
+            transform: `translateY(-50%) rotate(-12deg) scale(${stampSpring})`,
             opacity: stampSpring,
-            border: "4px solid #DC2626",
-            borderRadius: "10px",
-            padding: "8px 20px",
+            border: "5px solid #DC2626",
+            borderRadius: "12px",
+            padding: "12px 28px",
             fontFamily: THEME.fonts.mono,
             fontWeight: 900,
-            fontSize: "18px",
+            fontSize: "24px",
             letterSpacing: "0.15em",
             color: "#DC2626",
             textTransform: "uppercase",
-            boxShadow: "0 0 20px rgba(220, 38, 38, 0.4)",
+            boxShadow: "0 0 25px rgba(220, 38, 38, 0.45)",
             pointerEvents: "none",
           }}
         >

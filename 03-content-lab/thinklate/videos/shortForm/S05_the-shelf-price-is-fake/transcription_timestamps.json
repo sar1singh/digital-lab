@@ -1,0 +1,848 @@
+[
+  {
+    "word": "The",
+    "start": 0.0,
+    "end": 0.08,
+    "probability": 0.934
+  },
+  {
+    "word": "price",
+    "start": 0.08,
+    "end": 0.32,
+    "probability": 0.989
+  },
+  {
+    "word": "printed",
+    "start": 0.32,
+    "end": 0.64,
+    "probability": 0.952
+  },
+  {
+    "word": "on",
+    "start": 0.64,
+    "end": 0.8,
+    "probability": 0.992
+  },
+  {
+    "word": "the",
+    "start": 0.8,
+    "end": 0.92,
+    "probability": 0.82
+  },
+  {
+    "word": "yellow",
+    "start": 0.92,
+    "end": 1.12,
+    "probability": 0.832
+  },
+  {
+    "word": "shelf",
+    "start": 1.12,
+    "end": 1.44,
+    "probability": 0.953
+  },
+  {
+    "word": "tag",
+    "start": 1.44,
+    "end": 1.78,
+    "probability": 0.991
+  },
+  {
+    "word": "is",
+    "start": 1.78,
+    "end": 2.02,
+    "probability": 0.988
+  },
+  {
+    "word": "not",
+    "start": 2.02,
+    "end": 2.18,
+    "probability": 0.972
+  },
+  {
+    "word": "what",
+    "start": 2.18,
+    "end": 2.36,
+    "probability": 0.994
+  },
+  {
+    "word": "you",
+    "start": 2.36,
+    "end": 2.54,
+    "probability": 0.995
+  },
+  {
+    "word": "pay",
+    "start": 2.54,
+    "end": 2.74,
+    "probability": 0.989
+  },
+  {
+    "word": "at",
+    "start": 2.74,
+    "end": 2.88,
+    "probability": 0.984
+  },
+  {
+    "word": "the",
+    "start": 2.88,
+    "end": 2.96,
+    "probability": 0.986
+  },
+  {
+    "word": "register.",
+    "start": 2.96,
+    "end": 3.32,
+    "probability": 0.986
+  },
+  {
+    "word": "In",
+    "start": 3.5,
+    "end": 3.6,
+    "probability": 0.959
+  },
+  {
+    "word": "federal",
+    "start": 3.6,
+    "end": 3.88,
+    "probability": 0.792
+  },
+  {
+    "word": "court,",
+    "start": 3.88,
+    "end": 4.2,
+    "probability": 0.998
+  },
+  {
+    "word": "regulators",
+    "start": 4.42,
+    "end": 4.72,
+    "probability": 0.984
+  },
+  {
+    "word": "caught",
+    "start": 4.72,
+    "end": 5.08,
+    "probability": 0.988
+  },
+  {
+    "word": "discount",
+    "start": 5.08,
+    "end": 5.5,
+    "probability": 0.911
+  },
+  {
+    "word": "giant",
+    "start": 5.5,
+    "end": 5.96,
+    "probability": 0.841
+  },
+  {
+    "word": "dollar",
+    "start": 5.96,
+    "end": 6.2,
+    "probability": 0.704
+  },
+  {
+    "word": "general",
+    "start": 6.2,
+    "end": 6.52,
+    "probability": 0.333
+  },
+  {
+    "word": "quietly",
+    "start": 6.52,
+    "end": 6.98,
+    "probability": 0.955
+  },
+  {
+    "word": "overcharging",
+    "start": 6.98,
+    "end": 7.66,
+    "probability": 0.845
+  },
+  {
+    "word": "customers",
+    "start": 7.66,
+    "end": 8.18,
+    "probability": 0.988
+  },
+  {
+    "word": "at",
+    "start": 8.18,
+    "end": 8.38,
+    "probability": 0.642
+  },
+  {
+    "word": "checkout",
+    "start": 8.38,
+    "end": 8.7,
+    "probability": 0.933
+  },
+  {
+    "word": "across",
+    "start": 8.7,
+    "end": 9.18,
+    "probability": 0.984
+  },
+  {
+    "word": "thousands",
+    "start": 9.18,
+    "end": 9.56,
+    "probability": 0.983
+  },
+  {
+    "word": "of",
+    "start": 9.56,
+    "end": 9.74,
+    "probability": 0.996
+  },
+  {
+    "word": "stores",
+    "start": 9.74,
+    "end": 10.06,
+    "probability": 0.995
+  },
+  {
+    "word": "after",
+    "start": 10.06,
+    "end": 10.42,
+    "probability": 0.955
+  },
+  {
+    "word": "30",
+    "start": 10.42,
+    "end": 10.74,
+    "probability": 0.877
+  },
+  {
+    "word": ",000",
+    "start": 10.74,
+    "end": 11.16,
+    "probability": 0.94
+  },
+  {
+    "word": "complaints.",
+    "start": 11.16,
+    "end": 11.52,
+    "probability": 0.961
+  },
+  {
+    "word": "The",
+    "start": 11.88,
+    "end": 11.94,
+    "probability": 0.987
+  },
+  {
+    "word": "company",
+    "start": 11.94,
+    "end": 12.24,
+    "probability": 0.995
+  },
+  {
+    "word": "blamed",
+    "start": 12.24,
+    "end": 12.68,
+    "probability": 0.989
+  },
+  {
+    "word": "manual",
+    "start": 12.68,
+    "end": 13.06,
+    "probability": 0.95
+  },
+  {
+    "word": "tag",
+    "start": 13.06,
+    "end": 13.42,
+    "probability": 0.974
+  },
+  {
+    "word": "updates,",
+    "start": 13.42,
+    "end": 13.8,
+    "probability": 0.978
+  },
+  {
+    "word": "so",
+    "start": 14.1,
+    "end": 14.2,
+    "probability": 0.987
+  },
+  {
+    "word": "why",
+    "start": 14.2,
+    "end": 14.44,
+    "probability": 0.868
+  },
+  {
+    "word": "did",
+    "start": 14.44,
+    "end": 14.58,
+    "probability": 0.987
+  },
+  {
+    "word": "millions",
+    "start": 14.58,
+    "end": 14.9,
+    "probability": 0.995
+  },
+  {
+    "word": "of",
+    "start": 14.9,
+    "end": 15.16,
+    "probability": 0.999
+  },
+  {
+    "word": "shoppers",
+    "start": 15.16,
+    "end": 15.56,
+    "probability": 0.985
+  },
+  {
+    "word": "never",
+    "start": 15.56,
+    "end": 15.82,
+    "probability": 0.996
+  },
+  {
+    "word": "say",
+    "start": 15.82,
+    "end": 16.08,
+    "probability": 0.997
+  },
+  {
+    "word": "a",
+    "start": 16.08,
+    "end": 16.22,
+    "probability": 0.996
+  },
+  {
+    "word": "word?",
+    "start": 16.22,
+    "end": 16.44,
+    "probability": 0.999
+  },
+  {
+    "word": "Because",
+    "start": 16.56,
+    "end": 16.76,
+    "probability": 0.985
+  },
+  {
+    "word": "when",
+    "start": 16.76,
+    "end": 16.98,
+    "probability": 0.988
+  },
+  {
+    "word": "you",
+    "start": 16.98,
+    "end": 17.1,
+    "probability": 0.996
+  },
+  {
+    "word": "are",
+    "start": 17.1,
+    "end": 17.16,
+    "probability": 0.501
+  },
+  {
+    "word": "standing",
+    "start": 17.16,
+    "end": 17.52,
+    "probability": 0.997
+  },
+  {
+    "word": "at",
+    "start": 17.52,
+    "end": 17.72,
+    "probability": 0.999
+  },
+  {
+    "word": "the",
+    "start": 17.72,
+    "end": 17.82,
+    "probability": 0.994
+  },
+  {
+    "word": "register",
+    "start": 17.82,
+    "end": 18.18,
+    "probability": 0.992
+  },
+  {
+    "word": "with",
+    "start": 18.18,
+    "end": 18.42,
+    "probability": 0.987
+  },
+  {
+    "word": "four",
+    "start": 18.42,
+    "end": 18.66,
+    "probability": 0.901
+  },
+  {
+    "word": "tired",
+    "start": 18.66,
+    "end": 19.04,
+    "probability": 0.964
+  },
+  {
+    "word": "strangers",
+    "start": 19.04,
+    "end": 19.5,
+    "probability": 0.996
+  },
+  {
+    "word": "waiting",
+    "start": 19.5,
+    "end": 19.82,
+    "probability": 0.989
+  },
+  {
+    "word": "behind",
+    "start": 19.82,
+    "end": 20.18,
+    "probability": 0.996
+  },
+  {
+    "word": "you,",
+    "start": 20.18,
+    "end": 20.44,
+    "probability": 0.998
+  },
+  {
+    "word": "you",
+    "start": 20.54,
+    "end": 20.6,
+    "probability": 0.998
+  },
+  {
+    "word": "feel",
+    "start": 20.6,
+    "end": 20.84,
+    "probability": 0.994
+  },
+  {
+    "word": "embarrassed",
+    "start": 20.84,
+    "end": 21.3,
+    "probability": 0.99
+  },
+  {
+    "word": "to",
+    "start": 21.3,
+    "end": 21.52,
+    "probability": 0.998
+  },
+  {
+    "word": "hold",
+    "start": 21.52,
+    "end": 21.7,
+    "probability": 0.997
+  },
+  {
+    "word": "up",
+    "start": 21.7,
+    "end": 21.88,
+    "probability": 0.991
+  },
+  {
+    "word": "the",
+    "start": 21.88,
+    "end": 22.02,
+    "probability": 0.993
+  },
+  {
+    "word": "line",
+    "start": 22.02,
+    "end": 22.24,
+    "probability": 0.998
+  },
+  {
+    "word": "over",
+    "start": 22.24,
+    "end": 22.48,
+    "probability": 0.995
+  },
+  {
+    "word": "35",
+    "start": 22.48,
+    "end": 22.96,
+    "probability": 0.835
+  },
+  {
+    "word": "cents.",
+    "start": 22.96,
+    "end": 23.52,
+    "probability": 0.992
+  },
+  {
+    "word": "Retailers",
+    "start": 23.74,
+    "end": 24.24,
+    "probability": 0.958
+  },
+  {
+    "word": "count",
+    "start": 24.24,
+    "end": 24.44,
+    "probability": 0.98
+  },
+  {
+    "word": "on",
+    "start": 24.44,
+    "end": 24.64,
+    "probability": 0.999
+  },
+  {
+    "word": "that",
+    "start": 24.64,
+    "end": 24.78,
+    "probability": 0.99
+  },
+  {
+    "word": "social",
+    "start": 24.78,
+    "end": 25.12,
+    "probability": 0.993
+  },
+  {
+    "word": "shame.",
+    "start": 25.12,
+    "end": 25.52,
+    "probability": 0.975
+  },
+  {
+    "word": "Nobody",
+    "start": 25.52,
+    "end": 25.96,
+    "probability": 0.721
+  },
+  {
+    "word": "sews",
+    "start": 25.96,
+    "end": 26.4,
+    "probability": 0.748
+  },
+  {
+    "word": "over",
+    "start": 26.4,
+    "end": 26.68,
+    "probability": 0.998
+  },
+  {
+    "word": "a",
+    "start": 26.68,
+    "end": 26.8,
+    "probability": 0.991
+  },
+  {
+    "word": "quarter,",
+    "start": 26.8,
+    "end": 27.1,
+    "probability": 0.993
+  },
+  {
+    "word": "but",
+    "start": 27.22,
+    "end": 27.32,
+    "probability": 0.968
+  },
+  {
+    "word": "when",
+    "start": 27.32,
+    "end": 27.46,
+    "probability": 0.996
+  },
+  {
+    "word": "10",
+    "start": 27.46,
+    "end": 27.76,
+    "probability": 0.838
+  },
+  {
+    "word": "million",
+    "start": 27.76,
+    "end": 28.1,
+    "probability": 0.964
+  },
+  {
+    "word": "polite",
+    "start": 28.1,
+    "end": 28.4,
+    "probability": 0.826
+  },
+  {
+    "word": "shoppers",
+    "start": 28.4,
+    "end": 28.96,
+    "probability": 0.977
+  },
+  {
+    "word": "walk",
+    "start": 28.96,
+    "end": 29.2,
+    "probability": 0.996
+  },
+  {
+    "word": "away",
+    "start": 29.2,
+    "end": 29.52,
+    "probability": 0.996
+  },
+  {
+    "word": "every",
+    "start": 29.52,
+    "end": 29.92,
+    "probability": 0.881
+  },
+  {
+    "word": "day,",
+    "start": 29.92,
+    "end": 30.22,
+    "probability": 0.999
+  },
+  {
+    "word": "30",
+    "start": 30.38,
+    "end": 30.54,
+    "probability": 0.824
+  },
+  {
+    "word": "cents",
+    "start": 30.54,
+    "end": 30.9,
+    "probability": 0.979
+  },
+  {
+    "word": "turns",
+    "start": 30.9,
+    "end": 31.18,
+    "probability": 0.992
+  },
+  {
+    "word": "into",
+    "start": 31.18,
+    "end": 31.48,
+    "probability": 0.992
+  },
+  {
+    "word": "a",
+    "start": 31.48,
+    "end": 31.62,
+    "probability": 0.853
+  },
+  {
+    "word": "hundred",
+    "start": 31.62,
+    "end": 31.86,
+    "probability": 0.501
+  },
+  {
+    "word": "million",
+    "start": 31.86,
+    "end": 32.16,
+    "probability": 0.985
+  },
+  {
+    "word": "dollar",
+    "start": 32.16,
+    "end": 32.46,
+    "probability": 0.948
+  },
+  {
+    "word": "corporate",
+    "start": 32.46,
+    "end": 32.84,
+    "probability": 0.993
+  },
+  {
+    "word": "dividend.",
+    "start": 32.84,
+    "end": 33.26,
+    "probability": 0.991
+  },
+  {
+    "word": "Next",
+    "start": 33.5,
+    "end": 33.68,
+    "probability": 0.975
+  },
+  {
+    "word": "time",
+    "start": 33.68,
+    "end": 33.96,
+    "probability": 0.995
+  },
+  {
+    "word": "that",
+    "start": 33.96,
+    "end": 34.14,
+    "probability": 0.986
+  },
+  {
+    "word": "register",
+    "start": 34.14,
+    "end": 34.42,
+    "probability": 0.819
+  },
+  {
+    "word": "screen",
+    "start": 34.42,
+    "end": 34.86,
+    "probability": 0.947
+  },
+  {
+    "word": "jumps,",
+    "start": 34.86,
+    "end": 35.34,
+    "probability": 0.966
+  },
+  {
+    "word": "do",
+    "start": 35.48,
+    "end": 35.54,
+    "probability": 0.97
+  },
+  {
+    "word": "not",
+    "start": 35.54,
+    "end": 35.72,
+    "probability": 0.996
+  },
+  {
+    "word": "stay",
+    "start": 35.72,
+    "end": 36.02,
+    "probability": 0.991
+  },
+  {
+    "word": "quiet",
+    "start": 36.02,
+    "end": 36.4,
+    "probability": 0.998
+  },
+  {
+    "word": "to",
+    "start": 36.4,
+    "end": 36.56,
+    "probability": 0.996
+  },
+  {
+    "word": "be",
+    "start": 36.56,
+    "end": 36.66,
+    "probability": 0.998
+  },
+  {
+    "word": "polite.",
+    "start": 36.66,
+    "end": 36.96,
+    "probability": 0.999
+  },
+  {
+    "word": "Hold",
+    "start": 37.2,
+    "end": 37.34,
+    "probability": 0.979
+  },
+  {
+    "word": "up",
+    "start": 37.34,
+    "end": 37.52,
+    "probability": 0.992
+  },
+  {
+    "word": "the",
+    "start": 37.52,
+    "end": 37.66,
+    "probability": 0.998
+  },
+  {
+    "word": "line,",
+    "start": 37.66,
+    "end": 37.94,
+    "probability": 0.998
+  },
+  {
+    "word": "because",
+    "start": 38.12,
+    "end": 38.32,
+    "probability": 0.991
+  },
+  {
+    "word": "that",
+    "start": 38.32,
+    "end": 38.54,
+    "probability": 0.998
+  },
+  {
+    "word": "extra",
+    "start": 38.54,
+    "end": 38.88,
+    "probability": 0.99
+  },
+  {
+    "word": "quarter",
+    "start": 38.88,
+    "end": 39.2,
+    "probability": 0.963
+  },
+  {
+    "word": "wasn't",
+    "start": 39.2,
+    "end": 39.58,
+    "probability": 0.952
+  },
+  {
+    "word": "an",
+    "start": 39.58,
+    "end": 39.68,
+    "probability": 0.994
+  },
+  {
+    "word": "honest",
+    "start": 39.68,
+    "end": 39.96,
+    "probability": 0.998
+  },
+  {
+    "word": "mistake.",
+    "start": 39.96,
+    "end": 40.38,
+    "probability": 0.998
+  },
+  {
+    "word": "It",
+    "start": 40.62,
+    "end": 40.72,
+    "probability": 0.985
+  },
+  {
+    "word": "was",
+    "start": 40.72,
+    "end": 40.84,
+    "probability": 0.999
+  },
+  {
+    "word": "your",
+    "start": 40.84,
+    "end": 40.98,
+    "probability": 0.995
+  },
+  {
+    "word": "quiet",
+    "start": 40.98,
+    "end": 41.32,
+    "probability": 0.953
+  },
+  {
+    "word": "surrender.",
+    "start": 41.32,
+    "end": 41.76,
+    "probability": 0.99
+  }
+]

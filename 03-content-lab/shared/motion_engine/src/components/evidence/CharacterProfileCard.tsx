@@ -26,7 +26,7 @@ export const CharacterProfileCard: React.FC<CharacterProfileCardProps> = ({
   photoUrl = "",
   statusBadge = "SUBJECT DOSSIER // ASYMMETRIC FOUNDER",
   stats = [
-    { label: "OCTOBER 2007 RENT", value: "$1,150 (OVERDUE)", color: "#EF4444" },
+    { label: "OCTOBER 2007 RENT", value: "$1,100 (OVERDUE)", color: "#EF4444" },
     { label: "FIRST REVENUE", value: "$240 (3 AIRBEDS)", color: "#00F0FF" },
     { label: "CEREAL SEED CAPITAL", value: "$30,000 CASH", color: "#F59E0B" },
     { label: "PEAK VALUATION", value: "$100,000,000,000", color: "#10B981" },
@@ -55,7 +55,7 @@ export const CharacterProfileCard: React.FC<CharacterProfileCardProps> = ({
 
   // Stamp slam
   const stampSpring = spring({
-    frame: Math.max(0, frame - 40),
+    frame: Math.max(0, frame - 30),
     fps,
     config: { damping: 9, mass: 0.5, stiffness: 180 },
   });
@@ -74,7 +74,7 @@ export const CharacterProfileCard: React.FC<CharacterProfileCardProps> = ({
     >
       <div
         style={{
-          width: "1400px",
+          width: "1480px",
           backgroundColor: theme.colors.bgGlassDark,
           backdropFilter: "blur(28px)",
           borderRadius: "20px",
@@ -84,7 +84,7 @@ export const CharacterProfileCard: React.FC<CharacterProfileCardProps> = ({
           transform: `scale(${cardScale})`,
           opacity,
           display: "grid",
-          gridTemplateColumns: "360px 1fr",
+          gridTemplateColumns: "420px 1fr",
           gap: "44px",
           alignItems: "center",
           position: "relative",
@@ -93,7 +93,7 @@ export const CharacterProfileCard: React.FC<CharacterProfileCardProps> = ({
         {/* Left Column: Portrait Cutout / ID Box */}
         <div
           style={{
-            height: "460px",
+            height: "500px",
             backgroundColor: "rgba(0, 0, 0, 0.4)",
             borderRadius: "14px",
             border: `2px solid ${theme.colors.borderAccent}`,
@@ -108,7 +108,7 @@ export const CharacterProfileCard: React.FC<CharacterProfileCardProps> = ({
           }}
         >
           {photoUrl ? (
-            <img src={photoUrl} alt={characterName} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            <img src={photoUrl} alt={characterName} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
           ) : (
             <div style={{ textAlign: "center", padding: "20px" }}>
               <div style={{ fontSize: "72px", marginBottom: "16px" }}>👤</div>
@@ -192,22 +192,24 @@ export const CharacterProfileCard: React.FC<CharacterProfileCardProps> = ({
           {/* Quote Bar */}
           <div
             style={{
-              padding: "16px 22px",
-              backgroundColor: "rgba(255, 255, 255, 0.04)",
-              borderLeft: `4px solid ${theme.colors.accent}`,
-              borderRadius: "0 10px 10px 0",
-              fontSize: "18px",
+              padding: "18px 26px",
+              backgroundColor: "rgba(255, 255, 255, 0.05)",
+              borderLeft: `5px solid ${theme.colors.accent}`,
+              borderRadius: "0 12px 12px 0",
+              fontSize: "22px",
+              fontWeight: 600,
               fontStyle: "italic",
-              color: theme.colors.textMuted,
+              color: theme.colors.textWhite,
+              lineHeight: 1.45,
             }}
           >
             {quoteSnippet}
           </div>
 
           {/* 4-Stat Metric Grid */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "18px" }}>
             {stats.map((st, idx) => {
-              const rowFrame = 15 + idx * 8;
+              const rowFrame = 12 + idx * 6;
               const rowSpring = spring({
                 frame: Math.max(0, frame - rowFrame),
                 fps,
@@ -218,18 +220,18 @@ export const CharacterProfileCard: React.FC<CharacterProfileCardProps> = ({
                 <div
                   key={idx}
                   style={{
-                    backgroundColor: "rgba(0, 0, 0, 0.35)",
-                    border: `1px solid rgba(255, 255, 255, 0.08)`,
-                    borderRadius: "10px",
-                    padding: "14px 18px",
+                    backgroundColor: "rgba(0, 0, 0, 0.4)",
+                    border: `1px solid rgba(255, 255, 255, 0.12)`,
+                    borderRadius: "12px",
+                    padding: "16px 20px",
                     transform: `translateY(${(1 - rowSpring) * 15}px)`,
                     opacity: interpolate(frame, [rowFrame, rowFrame + 6], [0, 1], { extrapolateRight: "clamp" }),
                   }}
                 >
-                  <div style={{ fontSize: "11px", color: theme.colors.textDim, fontFamily: theme.fonts.mono, letterSpacing: "0.08em" }}>
+                  <div style={{ fontSize: "13px", fontWeight: 800, color: theme.colors.textDim, fontFamily: theme.fonts.mono, letterSpacing: "0.08em" }}>
                     {st.label}
                   </div>
-                  <div style={{ fontSize: "20px", fontWeight: 900, color: st.color || theme.colors.textWhite, marginTop: "4px" }}>
+                  <div style={{ fontSize: "24px", fontWeight: 900, color: st.color || theme.colors.textWhite, marginTop: "6px", fontVariantNumeric: "tabular-nums" }}>
                     {st.value}
                   </div>
                 </div>

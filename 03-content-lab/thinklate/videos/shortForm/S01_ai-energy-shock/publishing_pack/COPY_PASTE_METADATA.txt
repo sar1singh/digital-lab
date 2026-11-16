@@ -1,0 +1,40 @@
+======================================================================
+THINKLATE SHORT 01 (S01) — 1-CLICK YOUTUBE UPLOAD METADATA
+Asset Location: thinklate/videos/shortForm/S01_ai-energy-shock/publishing_pack/
+======================================================================
+
+--- TITLE OPTIONS (Pick ONE) ---
+Why Your Power Bill Just Spiked 800% #Shorts
+The Secret $22 Tax On Every AI Prompt #Shorts
+Big Tech's $1.5T Electric Bill Heist #Shorts
+
+--- VIDEO FILE TO UPLOAD ---
+ThinkLate_S01_AI_Energy_Shock_MASTER.mp4
+
+--- SUBTITLE FILE TO UPLOAD ---
+subtitles_en.srt
+
+--- MOBILE COVER FRAME (Pencil icon during upload) ---
+Use frame at 00:02.10 (Cover Image: cover_frame_01_hook_shock.png)
+Or alternative at 00:50.50 (Cover Image: cover_frame_02_micdrop_climax.png)
+
+--- DESCRIPTION (Copy & paste below) ---
+Your electric bill just went up $22 a month. Big Tech promised AI would cure cancer and do your homework—instead, the very first thing it did was make your air conditioning unaffordable. 
+
+Down the highway, three windowless concrete bunkers just plugged into your town's substation, burning megawatts like an entire city. Here is the dirty secret behind the $1.5 Trillion AI energy heist.
+
+#ThinkLate #AI #Economy #PersonalFinance #TechNews #Shorts #USElections
+
+--- TAGS (Copy & paste below) ---
+thinklate, ai, artificial intelligence, electricity bill, energy crisis, data centers, big tech, chatgpt, nvidia, economics, personal finance, us elections, shorts
+
+--- PINNED COMMENT (Paste & pin immediately after upload) ---
+Big Tech is pocketing trillions in AI market cap, while everyday households are subsidizing the power grid. Check your latest electric bill—did your utility rate spike this month? Tell us which state you're in below 👇 (Full investigative deep dive dropping this weekend on ThinkLate).
+
+--- AUDIENCE SETTINGS ---
+Audience: Not made for kids
+Age restriction: None
+Category: Science & Technology (or News & Politics)
+Shorts Remixing: Allow video and audio remixing
+======================================================================
+

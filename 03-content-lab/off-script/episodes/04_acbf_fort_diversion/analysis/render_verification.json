@@ -1,0 +1,70 @@
+{
+  "expected_duration_sec": 5789.31,
+  "expected_duration_hms": "01:36:29",
+  "audio": {
+    "path": "c:\\Users\\sar1s\\Documents\\MyWork\\Git\\digital-lab\\03-content-lab\\off-script\\episodes\\04_acbf_fort_diversion\\audio\\ep04_voiceover_trimmed.mp3",
+    "exists": true,
+    "size_bytes": 138945069,
+    "size_mb": 132.51,
+    "size_gb": 0.129,
+    "duration_sec": 5789.31,
+    "duration_hms": "01:36:29",
+    "expected_duration_sec": 5789.31,
+    "deviation_sec": 0.0,
+    "within_2s_tolerance": true,
+    "bit_rate": "192002",
+    "streams": [
+      {
+        "index": 0,
+        "codec_type": "audio",
+        "codec_name": "mp3",
+        "width": null,
+        "height": null,
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "sample_rate": "48000",
+        "channels": 1,
+        "bit_rate": "192000"
+      }
+    ]
+  },
+  "video": {
+    "path": "C:\\Users\\sar1s\\Videos\\obs\\edited\\OffScript_Gameplay_04_2026-11-15_Trimmed.mp4",
+    "exists": true,
+    "size_bytes": 20711617223,
+    "size_mb": 19752.14,
+    "size_gb": 19.289,
+    "duration_sec": 5789.376,
+    "duration_hms": "01:36:29",
+    "expected_duration_sec": 5789.31,
+    "deviation_sec": 0.066,
+    "within_2s_tolerance": true,
+    "bit_rate": "28620173",
+    "streams": [
+      {
+        "index": 0,
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "130255875/2171008",
+        "sample_rate": null,
+        "channels": null,
+        "bit_rate": "28410264"
+      },
+      {
+        "index": 1,
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "width": null,
+        "height": null,
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "sample_rate": "48000",
+        "channels": 2,
+        "bit_rate": "194239"
+      }
+    ]
+  }
+}

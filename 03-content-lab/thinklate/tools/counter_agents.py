@@ -116,6 +116,12 @@ class CounterCouncil:
             (r'(?i)adobe', "FTC v. Adobe federal lawsuit (June 2024; early-termination fee)"),
             (r'(?i)colorado|minnesota|california', "Right-to-repair laws (Colorado HB23-1011 farm law + CA SB 244 / MN electronics laws)"),
             (r'(?i)delivery rider|loan app|padlock', "Indian device-lock EMI practice (Google DLC / Knox Guard + RBI 2024 framework)"),
+            (r'(?i)ronald cotton|jennifer thompson|nineteen eighty-four', "State of North Carolina v. Ronald Junior Cotton (1984 conviction / 1995 DNA exoneration)"),
+            (r'(?i)seventy percent|375|innocence project', "Innocence Project DNA exoneration statistics (~70% eyewitness misidentification across 375+ cases)"),
+            (r'(?i)twenty watts|86 billion|100 trillion', "Human brain metabolic power budget (20W across 86B neurons & 100T synapses)"),
+            (r'(?i)dennis gabor|nineteen forty-eight|holograph', "Dennis Gabor optical holography interference physics (Nature 1948 / 1971 Nobel Prize)"),
+            (r'(?i)elizabeth loftus|lost in the mall|twenty-five percent', "Loftus & Pickrell (1995) 'Lost in the Mall' false memory implantation study (25% rate)"),
+            (r'(?i)karim nader|reconsolidation|protein synthesis', "Nader, Schafe & LeDoux (2000) Nature memory reconsolidation & protein destabilization"),
         ]
         
         # Check if SOURCES_VERIFICATION.md exists in the video folder

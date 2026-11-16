@@ -12,7 +12,7 @@ export interface FloatingPillBadgeProps {
 
 export const FloatingPillBadge: React.FC<FloatingPillBadgeProps> = ({
   icon = "✦",
-  pillText = "$1,150 OVERDUE RENT // 72 HOURS TO EVICTION",
+  pillText = "$1,100 OVERDUE RENT // 72 HOURS TO EVICTION",
   subtext = "CRITICAL TURNING POINT",
   variant = "lime",
   position = "center",
@@ -84,7 +84,7 @@ export const FloatingPillBadge: React.FC<FloatingPillBadgeProps> = ({
         <div style={{ display: "flex", flexDirection: "column" }}>
           <span
             style={{
-              fontSize: "24px",
+              fontSize: "30px",
               fontWeight: 900,
               letterSpacing: "0.06em",
               color: THEME.colors.textWhite,
@@ -96,7 +96,7 @@ export const FloatingPillBadge: React.FC<FloatingPillBadgeProps> = ({
           {subtext && (
             <span
               style={{
-                fontSize: "12px",
+                fontSize: "16px",
                 letterSpacing: "0.18em",
                 color: currentTheme.color,
                 fontWeight: 700,

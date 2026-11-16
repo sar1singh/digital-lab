@@ -1,0 +1,151 @@
+{
+  "video_file": "C:\\Users\\sar1s\\Videos\\obs\\2026-11-15 01-16-18.mkv",
+  "audio_file": "C:\\Users\\sar1s\\Documents\\MyWork\\audacity\\ACBF-Gameplay-15-Nov-2026.mp3",
+  "t0_offset_sec": 4.15,
+  "video_duration_sec": 7912.834,
+  "audacity_duration_sec": 7918.96,
+  "formatted_video_duration": "02:11:52",
+  "detected_language": "hi",
+  "language_confidence": 0.9551,
+  "total_segments": 864,
+  "total_speech_duration_sec": 5593.0,
+  "speech_ratio": 0.7068,
+  "total_silence_duration_sec": 2319.83,
+  "intro_silence": {
+    "start": 0.0,
+    "end": 36.41,
+    "audacity_start": 4.15,
+    "audacity_end": 40.56,
+    "duration": 36.41,
+    "timecode": "00:00 - 00:36"
+  },
+  "outro_silence": {
+    "start": 7901.51,
+    "end": 7912.834,
+    "audacity_start": 7905.66,
+    "audacity_end": 7916.98,
+    "duration": 11.32,
+    "timecode": "02:11:41 - 02:11:52"
+  },
+  "pause_statistics": {
+    "total_pauses_over_3s": 14,
+    "hesitations_3_to_6s_count": 2,
+    "breathers_6_to_15s_count": 1,
+    "game_audio_windows_15_to_20s_count": 0,
+    "excess_silences_over_20s_count": 11,
+    "excess_silences_total_sec": 2250.78,
+    "excess_silences_to_trim": [
+      {
+        "start": 189.59,
+        "end": 250.31,
+        "audacity_start": 193.74,
+        "audacity_end": 254.46,
+        "duration": 60.72,
+        "timecode": "03:09 - 04:10",
+        "audacity_timecode": "03:13 - 04:14"
+      },
+      {
+        "start": 580.79,
+        "end": 777.89,
+        "audacity_start": 584.94,
+        "audacity_end": 782.04,
+        "duration": 197.1,
+        "timecode": "09:40 - 12:57",
+        "audacity_timecode": "09:44 - 13:02"
+      },
+      {
+        "start": 952.07,
+        "end": 1355.8,
+        "audacity_start": 956.22,
+        "audacity_end": 1359.95,
+        "duration": 403.73,
+        "timecode": "15:52 - 22:35",
+        "audacity_timecode": "15:56 - 22:39"
+      },
+      {
+        "start": 1501.03,
+        "end": 1673.11,
+        "audacity_start": 1505.18,
+        "audacity_end": 1677.26,
+        "duration": 172.08,
+        "timecode": "25:01 - 27:53",
+        "audacity_timecode": "25:05 - 27:57"
+      },
+      {
+        "start": 2216.63,
+        "end": 2719.86,
+        "audacity_start": 2220.78,
+        "audacity_end": 2724.01,
+        "duration": 503.23,
+        "timecode": "36:56 - 45:19",
+        "audacity_timecode": "37:00 - 45:24"
+      },
+      {
+        "start": 3113.15,
+        "end": 3198.08,
+        "audacity_start": 3117.3,
+        "audacity_end": 3202.23,
+        "duration": 84.93,
+        "timecode": "51:53 - 53:18",
+        "audacity_timecode": "51:57 - 53:22"
+      },
+      {
+        "start": 3902.13,
+        "end": 3946.95,
+        "audacity_start": 3906.28,
+        "audacity_end": 3951.1,
+        "duration": 44.82,
+        "timecode": "01:05:02 - 01:05:46",
+        "audacity_timecode": "01:05:06 - 01:05:51"
+      },
+      {
+        "start": 4048.35,
+        "end": 4139.25,
+        "audacity_start": 4052.5,
+        "audacity_end": 4143.4,
+        "duration": 90.9,
+        "timecode": "01:07:28 - 01:08:59",
+        "audacity_timecode": "01:07:32 - 01:09:03"
+      },
+      {
+        "start": 5674.71,
+        "end": 5771.97,
+        "audacity_start": 5678.86,
+        "audacity_end": 5776.12,
+        "duration": 97.26,
+        "timecode": "01:34:34 - 01:36:11",
+        "audacity_timecode": "01:34:38 - 01:36:16"
+      },
+      {
+        "start": 5938.39,
+        "end": 6146.39,
+        "audacity_start": 5942.54,
+        "audacity_end": 6150.54,
+        "duration": 208.0,
+        "timecode": "01:38:58 - 01:42:26",
+        "audacity_timecode": "01:39:02 - 01:42:30"
+      },
+      {
+        "start": 6885.15,
+        "end": 7273.16,
+        "audacity_start": 6889.3,
+        "audacity_end": 7277.31,
+        "duration": 388.01,
+        "timecode": "01:54:45 - 02:01:13",
+        "audacity_timecode": "01:54:49 - 02:01:17"
+      }
+    ],
+    "game_audio_windows": [],
+    "breathers": [
+      {
+        "start": 7733.4,
+        "end": 7739.55,
+        "audacity_start": 7737.55,
+        "audacity_end": 7743.7,
+        "duration": 6.15,
+        "timecode": "02:08:53 - 02:08:59",
+        "audacity_timecode": "02:08:57 - 02:09:03"
+      }
+    ]
+  }
+}

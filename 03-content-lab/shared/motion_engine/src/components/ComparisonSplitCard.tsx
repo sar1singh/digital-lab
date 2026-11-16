@@ -158,8 +158,8 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          gap: "32px",
-          width: "1580px",
+          gap: "36px",
+          width: "1640px",
           position: "relative",
         }}
       >
@@ -170,14 +170,14 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
             backgroundColor: THEME.colors.bgGlass,
             backdropFilter: "blur(24px)",
             borderRadius: "24px",
-            border: `1px solid ${THEME.colors.borderCrimson}`,
+            border: `1.5px solid ${THEME.colors.borderCrimson}`,
             boxShadow: THEME.shadows.glass,
-            padding: "40px 44px",
+            padding: "44px 48px",
             transform: `translateX(${(1 - leftSlide) * -60}px)`,
             opacity: leftSlide,
             display: "flex",
             flexDirection: "column",
-            gap: "20px",
+            gap: "22px",
             position: "relative",
             overflow: "hidden",
           }}
@@ -199,14 +199,14 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
             <span
               style={{
                 fontFamily: THEME.fonts.mono,
-                fontSize: "11px",
-                fontWeight: 700,
-                letterSpacing: "0.2em",
+                fontSize: "15px",
+                fontWeight: 800,
+                letterSpacing: "0.15em",
                 color: THEME.colors.crimsonRed,
-                backgroundColor: "rgba(239, 68, 68, 0.12)",
-                padding: "4px 12px",
+                backgroundColor: "rgba(239, 68, 68, 0.16)",
+                padding: "6px 16px",
                 borderRadius: "999px",
-                border: "1px solid rgba(239, 68, 68, 0.25)",
+                border: "1px solid rgba(239, 68, 68, 0.35)",
               }}
             >
               ● {leftTag}
@@ -215,10 +215,10 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
 
           <div>
             {/* Dynamic Animated Number */}
-            <div style={{ display: "flex", alignItems: "baseline", gap: "8px", margin: "4px 0" }}>
+            <div style={{ display: "flex", alignItems: "baseline", gap: "10px", margin: "4px 0" }}>
               <span
                 style={{
-                  fontSize: "58px",
+                  fontSize: "64px",
                   fontWeight: 900,
                   letterSpacing: "-0.04em",
                   color: THEME.colors.textWhite,
@@ -233,7 +233,7 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
               <span
                 style={{
                   fontFamily: THEME.fonts.mono,
-                  fontSize: "18px",
+                  fontSize: "20px",
                   color: THEME.colors.textDim,
                 }}
               >
@@ -242,10 +242,10 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
             </div>
             <h3
               style={{
-                fontSize: "22px",
-                fontWeight: 800,
+                fontSize: "26px",
+                fontWeight: 900,
                 color: THEME.colors.textMuted,
-                margin: "4px 0 0 0",
+                margin: "6px 0 0 0",
                 letterSpacing: "-0.01em",
               }}
             >
@@ -254,7 +254,7 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
           </div>
 
           {/* Staggered Bullet Points (One after the other) */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "8px" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginTop: "10px" }}>
             {leftItems.map((item, idx) => {
               // Left bullets pop at frame 16, 26, 36
               const startF = 16 + idx * 10;
@@ -274,10 +274,11 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
                   style={{
                     display: "flex",
                     alignItems: "flex-start",
-                    gap: "12px",
-                    fontSize: "17px",
-                    color: THEME.colors.textMuted,
+                    gap: "14px",
+                    fontSize: "22px",
+                    color: THEME.colors.textWhite,
                     lineHeight: 1.4,
+                    fontWeight: 600,
                     transform: `translateX(${(1 - bSpring) * -18}px)`,
                     opacity: bOpacity,
                   }}
@@ -286,7 +287,7 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
                     style={{
                       color: THEME.colors.crimsonRed,
                       fontWeight: 900,
-                      fontSize: "16px",
+                      fontSize: "20px",
                       marginTop: "2px",
                       transform: `scale(${bSpring})`,
                     }}
@@ -363,14 +364,14 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
             <span
               style={{
                 fontFamily: THEME.fonts.mono,
-                fontSize: "11px",
-                fontWeight: 700,
-                letterSpacing: "0.2em",
+                fontSize: "15px",
+                fontWeight: 800,
+                letterSpacing: "0.15em",
                 color: THEME.colors.acidLime,
-                backgroundColor: "rgba(226, 255, 0, 0.12)",
-                padding: "4px 12px",
+                backgroundColor: "rgba(226, 255, 0, 0.16)",
+                padding: "6px 16px",
                 borderRadius: "999px",
-                border: "1px solid rgba(226, 255, 0, 0.35)",
+                border: "1px solid rgba(226, 255, 0, 0.4)",
               }}
             >
               ✦ {rightTag}
@@ -379,10 +380,10 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
 
           <div>
             {/* Dynamic Animated Number */}
-            <div style={{ display: "flex", alignItems: "baseline", gap: "8px", margin: "4px 0" }}>
+            <div style={{ display: "flex", alignItems: "baseline", gap: "10px", margin: "4px 0" }}>
               <span
                 style={{
-                  fontSize: "58px",
+                  fontSize: "64px",
                   fontWeight: 900,
                   letterSpacing: "-0.04em",
                   color: THEME.colors.acidLime,
@@ -398,7 +399,7 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
               <span
                 style={{
                   fontFamily: THEME.fonts.mono,
-                  fontSize: "18px",
+                  fontSize: "20px",
                   color: THEME.colors.textWhite,
                 }}
               >
@@ -407,10 +408,10 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
             </div>
             <h3
               style={{
-                fontSize: "22px",
-                fontWeight: 800,
+                fontSize: "26px",
+                fontWeight: 900,
                 color: THEME.colors.textWhite,
-                margin: "4px 0 0 0",
+                margin: "6px 0 0 0",
                 letterSpacing: "-0.01em",
               }}
             >
@@ -419,7 +420,7 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
           </div>
 
           {/* Staggered Bullet Points (Ping-pong offset: frame 21, 31, 41) */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "8px" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginTop: "10px" }}>
             {rightItems.map((item, idx) => {
               // Right bullets pop at frame 21, 31, 41
               const startF = 21 + idx * 10;
@@ -439,11 +440,11 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
                   style={{
                     display: "flex",
                     alignItems: "flex-start",
-                    gap: "12px",
-                    fontSize: "17px",
+                    gap: "14px",
+                    fontSize: "22px",
                     color: THEME.colors.textWhite,
                     lineHeight: 1.4,
-                    fontWeight: 500,
+                    fontWeight: 700,
                     transform: `translateX(${(1 - bSpring) * 18}px)`,
                     opacity: bOpacity,
                   }}
@@ -452,7 +453,7 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
                     style={{
                       color: THEME.colors.acidLime,
                       fontWeight: 900,
-                      fontSize: "16px",
+                      fontSize: "20px",
                       marginTop: "2px",
                       transform: `scale(${bSpring})`,
                     }}
@@ -475,17 +476,17 @@ export const ComparisonSplitCard: React.FC<ComparisonSplitCardProps> = ({
             opacity: footerSpring,
             backgroundColor: THEME.colors.bgGlass,
             backdropFilter: "blur(20px)",
-            border: `1px solid rgba(255, 255, 255, 0.14)`,
+            border: `1px solid rgba(255, 255, 255, 0.2)`,
             borderRadius: "14px",
-            padding: "12px 32px",
+            padding: "16px 40px",
             fontFamily: THEME.fonts.mono,
-            fontSize: "13px",
-            fontWeight: 700,
-            letterSpacing: "0.15em",
-            color: THEME.colors.textMuted,
+            fontSize: "17px",
+            fontWeight: 800,
+            letterSpacing: "0.12em",
+            color: THEME.colors.textWhite,
             display: "flex",
             alignItems: "center",
-            gap: "12px",
+            gap: "14px",
             boxShadow: THEME.shadows.glass,
           }}
         >

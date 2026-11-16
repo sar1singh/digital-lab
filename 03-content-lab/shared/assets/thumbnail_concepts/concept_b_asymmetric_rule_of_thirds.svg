@@ -1,0 +1,319 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&amp;family=JetBrains+Mono:wght@700;800&amp;display=swap');
+      .title-text {
+        font-family: 'Montserrat', 'Impact', 'Arial Black', sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+      }
+      .mono-text {
+        font-family: 'JetBrains Mono', 'Courier New', monospace;
+        font-weight: 800;
+      }
+    </style>
+
+    <!-- Stormy Night Metropolis Sky Gradient -->
+    <radialGradient id="bgSkyB" cx="70%" cy="30%" r="85%">
+      <stop offset="0%" stop-color="#2D1B69"/>
+      <stop offset="40%" stop-color="#1E163B"/>
+      <stop offset="70%" stop-color="#0E1220"/>
+      <stop offset="100%" stop-color="#03050A"/>
+    </radialGradient>
+
+    <!-- Crimson Emergency Hazard Glow -->
+    <radialGradient id="hazardGlow" cx="65%" cy="55%" r="60%">
+      <stop offset="0%" stop-color="#FF2A4B" stop-opacity="0.45"/>
+      <stop offset="50%" stop-color="#B91C1C" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Arrow Gradient -->
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B8B"/>
+      <stop offset="50%" stop-color="#FF1E40"/>
+      <stop offset="100%" stop-color="#BE123C"/>
+    </linearGradient>
+
+    <linearGradient id="arrowSideGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9F1239"/>
+      <stop offset="100%" stop-color="#4C0519"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="shadowHeavyB" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000000" flood-opacity="0.95"/>
+    </filter>
+
+    <filter id="neonRedGlowB" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="stampDistress" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000000" flood-opacity="0.95"/>
+    </filter>
+  </defs>
+
+  <!-- ==================== LAYER 1: METROPOLIS NIGHT SKY & CITYSCAPE ==================== -->
+  <rect width="1920" height="1080" fill="url(#bgSkyB)"/>
+  <rect width="1920" height="1080" fill="url(#hazardGlow)"/>
+
+  <!-- Distant Background Skyscraper Silhouettes with Lit Windows -->
+  <g fill="#0D1527" opacity="0.9">
+    <rect x="680" y="290" width="130" height="510"/>
+    <rect x="740" y="240" width="20" height="50"/>
+    <rect x="850" y="360" width="100" height="440"/>
+    <rect x="1560" y="270" width="150" height="530"/>
+    <rect x="1630" y="210" width="15" height="60"/>
+    <rect x="1750" y="340" width="120" height="460"/>
+  </g>
+
+  <!-- Distant window dots -->
+  <g fill="#FDE047" opacity="0.4">
+    <rect x="700" y="340" width="8" height="12"/>
+    <rect x="720" y="340" width="8" height="12"/>
+    <rect x="700" y="380" width="8" height="12"/>
+    <rect x="720" y="420" width="8" height="12"/>
+    <rect x="1590" y="320" width="8" height="12"/>
+    <rect x="1620" y="360" width="8" height="12"/>
+    <rect x="1780" y="390" width="8" height="12"/>
+  </g>
+
+  <!-- City street ground plane with asphalt reflections -->
+  <polygon points="0,800 1920,800 1920,1080 0,1080" fill="#070B14"/>
+  <line x1="0" y1="800" x2="1920" y2="800" stroke="#334155" stroke-width="6"/>
+  <!-- Wet street reflections (Vibrant Crimson emergency reflection) -->
+  <ellipse cx="1250" cy="840" rx="380" ry="25" fill="#FF2A4B" opacity="0.25"/>
+  <ellipse cx="1300" cy="930" rx="460" ry="32" fill="#FF2A4B" opacity="0.18"/>
+
+  <!-- ==================== LAYER 2: THE HERO OBJECT (COLLAPSING LUXURY TOWER) ==================== -->
+  <!-- Dominates Right 65% (x=720 to 1840, y=200 to 880) -->
+  <g id="hero-building" filter="url(#shadowHeavyB)">
+    <!-- Main Tower Structure -->
+    <rect x="850" y="240" width="760" height="600" fill="#243048" stroke="#000000" stroke-width="8"/>
+    <!-- Decorative Roof Cornice -->
+    <rect x="820" y="215" width="820" height="30" fill="#3B4B68" stroke="#000000" stroke-width="6"/>
+    <rect x="840" y="195" width="780" height="22" fill="#4B5E82" stroke="#000000" stroke-width="5"/>
+
+    <!-- Rooftop Rental Condos Signboard (Slashed with Red Hazard Bar) -->
+    <g transform="translate(1080, 140)">
+      <rect x="-140" y="0" width="280" height="55" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="4"/>
+      <text x="0" y="36" text-anchor="middle" class="mono-text" font-size="20" fill="#38BDF8" letter-spacing="3">RENTAL CONDOS</text>
+      <!-- Big red strike-through X -->
+      <line x1="-135" y1="5" x2="135" y2="50" stroke="#FF1E40" stroke-width="8" stroke-linecap="round"/>
+      <line x1="135" y1="5" x2="-135" y2="50" stroke="#FF1E40" stroke-width="8" stroke-linecap="round"/>
+    </g>
+
+    <!-- Grid of Apartment Windows (High-Contrast Golden Lighting) -->
+    <!-- Floor 4 -->
+    <rect x="890" y="280" width="105" height="110" fill="#FEF08A" stroke="#000000" stroke-width="6"/>
+    <rect x="1035" y="280" width="105" height="110" fill="#0F172A" stroke="#000000" stroke-width="6"/>
+    <rect x="1180" y="280" width="105" height="110" fill="#FEF08A" stroke="#000000" stroke-width="6"/>
+    <rect x="1325" y="280" width="105" height="110" fill="#0F172A" stroke="#000000" stroke-width="6"/>
+    <rect x="1470" y="280" width="105" height="110" fill="#FEF08A" stroke="#000000" stroke-width="6"/>
+    <!-- Floor 3 -->
+    <rect x="890" y="420" width="105" height="110" fill="#0F172A" stroke="#000000" stroke-width="6"/>
+    <rect x="1035" y="420" width="105" height="110" fill="#FEF08A" stroke="#000000" stroke-width="6"/>
+    <rect x="1180" y="420" width="105" height="110" fill="#0F172A" stroke="#000000" stroke-width="6"/>
+    <rect x="1325" y="420" width="105" height="110" fill="#FEF08A" stroke="#000000" stroke-width="6"/>
+    <rect x="1470" y="420" width="105" height="110" fill="#0F172A" stroke="#000000" stroke-width="6"/>
+    <!-- Floor 2 -->
+    <rect x="890" y="560" width="105" height="110" fill="#FEF08A" stroke="#000000" stroke-width="6"/>
+    <rect x="1035" y="560" width="105" height="110" fill="#0F172A" stroke="#000000" stroke-width="6"/>
+    <rect x="1180" y="560" width="105" height="110" fill="#FEF08A" stroke="#000000" stroke-width="6"/>
+    <rect x="1325" y="560" width="105" height="110" fill="#0F172A" stroke="#000000" stroke-width="6"/>
+    <rect x="1470" y="560" width="105" height="110" fill="#FEF08A" stroke="#000000" stroke-width="6"/>
+    <!-- Floor 1 / Entrance Lobby -->
+    <rect x="890" y="700" width="160" height="140" fill="#0F172A" stroke="#000000" stroke-width="6"/>
+    <!-- Grand Entrance Glass Door -->
+    <rect x="1150" y="700" width="180" height="140" fill="#38BDF8" opacity="0.35" stroke="#000000" stroke-width="6"/>
+    <rect x="1430" y="700" width="160" height="140" fill="#0F172A" stroke="#000000" stroke-width="6"/>
+
+    <!-- Padlocks / Red Cross on dark rental units -->
+    <g stroke="#FF1E40" stroke-width="7" stroke-linecap="round">
+      <line x1="1040" y1="285" x2="1135" y2="385"/>
+      <line x1="1135" y1="285" x2="1040" y2="385"/>
+      <line x1="1330" y1="285" x2="1425" y2="385"/>
+      <line x1="1425" y1="285" x2="1330" y2="385"/>
+      <line x1="895" y1="425" x2="990" y2="525"/>
+      <line x1="990" y1="425" x2="895" y2="525"/>
+    </g>
+
+    <!-- ================= THE PLUMMETING 3D COLLAPSE ARROW (-$100 BILLION) ================= -->
+    <!-- Piercing diagonally through the building and shattering the ground -->
+    <g transform="translate(1360, 200) rotate(16)" filter="url(#shadowHeavyB)">
+      <!-- 3D Extrusion Side -->
+      <polygon points="50,0 140,0 140,460 250,460 90,660 50,660 50,0" fill="url(#arrowSideGrad)" stroke="#000000" stroke-width="8"/>
+      <!-- Main Arrow Face -->
+      <polygon points="0,0 90,0 90,460 200,460 45,660 -110,460 0,460" fill="url(#arrowGrad)" stroke="#000000" stroke-width="8"/>
+      <!-- Glowing Arrow Highlights -->
+      <line x1="0" y1="12" x2="80" y2="12" stroke="#FFFFFF" stroke-width="8"/>
+      <line x1="45" y1="30" x2="45" y2="440" stroke="#FFFFFF" stroke-width="6" opacity="0.6"/>
+      <!-- Vertical text on arrow: -$100 BILLION -->
+      <text x="45" y="250" text-anchor="middle" class="title-text" font-size="56" fill="#FFFFFF" stroke="#000000" stroke-width="7" transform="rotate(90 45 250)">-$100B</text>
+    </g>
+
+    <!-- Arrow Impact Sparks and Shockwave on Ground -->
+    <g transform="translate(1420, 840)" filter="url(#neonRedGlowB)">
+      <!-- Cracked pavement fissures -->
+      <path d="M 0 0 L -100 35 L -160 18 L -240 55" fill="none" stroke="#FF2A4B" stroke-width="7" stroke-linecap="round"/>
+      <path d="M 0 0 L 80 45 L 170 28 L 260 70" fill="none" stroke="#FF2A4B" stroke-width="7" stroke-linecap="round"/>
+      <path d="M 0 0 L -25 65 L 12 120" fill="none" stroke="#FF2A4B" stroke-width="7" stroke-linecap="round"/>
+      <!-- Explosive rubble rocks -->
+      <polygon points="-45,-15 -25,-40 -10,-10 -35,-5" fill="#475569" stroke="#000000" stroke-width="4"/>
+      <polygon points="40,-30 75,-45 55,-10 25,-15" fill="#475569" stroke="#000000" stroke-width="4"/>
+    </g>
+
+    <!-- ================= THE GIANT "BANNED BY LAW" STAMP ================= -->
+    <!-- Slammed diagonally across the upper building facade (-12 deg) -->
+    <!-- High-Contrast Crimson Background Plaque to ensure instant 140px decipherability -->
+    <g transform="translate(1190, 410) rotate(-12)" filter="url(#stampDistress)">
+      <!-- Solid Bright White Backing for 100% Contrast Punch -->
+      <rect x="-320" y="-85" width="640" height="170" rx="16" fill="#FFFFFF" stroke="#000000" stroke-width="8"/>
+      <!-- Outer Double Distressed Stamp Border -->
+      <rect x="-310" y="-75" width="620" height="150" rx="12" fill="#FFE4E6" stroke="#FF1E40" stroke-width="12" stroke-dasharray="580 18"/>
+      <rect x="-295" y="-60" width="590" height="120" rx="8" fill="none" stroke="#FF1E40" stroke-width="5"/>
+      <!-- Main Stamp Text in High-Voltage Warning Crimson -->
+      <text x="0" y="24" text-anchor="middle" class="title-text" font-size="82" fill="#FF1E40" stroke="#000000" stroke-width="6" letter-spacing="4">BANNED BY LAW</text>
+      <!-- Subtitle -->
+      <text x="0" y="55" text-anchor="middle" class="mono-text" font-size="22" fill="#000000" font-weight="900" letter-spacing="4">NYC • BARCELONA • FLORENCE</text>
+    </g>
+
+    <!-- Municipal Yellow & Black Police Hazard Barrier -->
+    <!-- Stretched across bottom of building (x=800 to 1660, y=820 to 890) -->
+    <g transform="translate(800, 820)" filter="url(#shadowHeavyB)">
+      <polygon points="0,0 860,0 860,50 0,50" fill="#FACC15" stroke="#000000" stroke-width="6"/>
+      <!-- Diagonal black hazard stripes -->
+      <g fill="#000000">
+        <polygon points="20,0 60,0 30,50 -10,50"/>
+        <polygon points="100,0 140,0 110,50 70,50"/>
+        <polygon points="180,0 220,0 190,50 150,50"/>
+        <polygon points="260,0 300,0 270,50 230,50"/>
+        <polygon points="340,0 380,0 350,50 310,50"/>
+        <polygon points="420,0 460,0 430,50 390,50"/>
+        <polygon points="500,0 540,0 510,50 470,50"/>
+        <polygon points="580,0 620,0 590,50 550,50"/>
+        <polygon points="660,0 700,0 670,50 630,50"/>
+        <polygon points="740,0 780,0 750,50 710,50"/>
+        <polygon points="820,0 860,0 830,50 790,50"/>
+      </g>
+      <!-- Warning Text Bar -->
+      <rect x="150" y="10" width="560" height="30" fill="#000000"/>
+      <text x="430" y="32" text-anchor="middle" class="mono-text" font-size="16" fill="#FACC15" letter-spacing="2">POLICE LINE: SHORT-TERM RENTALS SHUT DOWN</text>
+    </g>
+  </g>
+
+  <!-- ==================== LAYER 3: 2D VECTOR CHARACTER (LEFT THIRD ANCHOR) ==================== -->
+  <!-- Tech founder / property investor in absolute panic clutching head -->
+  <g id="panic-character" transform="translate(380, 480)" filter="url(#shadowHeavyB)">
+    <!-- Corporate Suit Shoulders & Torso -->
+    <path d="M -220 540 L -180 200 L 0 150 L 180 200 L 220 540 Z" fill="#1E293B" stroke="#000000" stroke-width="8"/>
+    <!-- Suit Lapels -->
+    <polygon points="-120,200 0,380 0,150" fill="#334155" stroke="#000000" stroke-width="6"/>
+    <polygon points="120,200 0,380 0,150" fill="#334155" stroke="#000000" stroke-width="6"/>
+    <!-- White Collared Shirt -->
+    <polygon points="-60,180 0,280 60,180" fill="#F8FAFC" stroke="#000000" stroke-width="5"/>
+    <!-- Crooked Red Necktie -->
+    <polygon points="-15,240 15,240 25,440 0,470 -25,440" fill="#EF4444" stroke="#000000" stroke-width="5"/>
+
+    <!-- Neck with Cel-Shadow -->
+    <polygon points="-45,70 45,70 55,180 -55,180" fill="#FDBA74" stroke="#000000" stroke-width="7"/>
+    <polygon points="-45,70 45,70 0,140" fill="#EA580C" opacity="0.4"/>
+
+    <!-- Head / Jaw Shape -->
+    <path d="M -95 -70 
+             C -95 -200, 95 -200, 95 -70 
+             C 95 60, 60 110, 0 120 
+             C -60 110, -95 60, -95 -70 Z" 
+          fill="#FED7AA" stroke="#000000" stroke-width="8"/>
+
+    <!-- Ears -->
+    <path d="M -95 -70 C -120 -70, -120 -10, -95 -10 Z" fill="#FDBA74" stroke="#000000" stroke-width="6"/>
+    <path d="M 95 -70 C 120 -70, 120 -10, 95 -10 Z" fill="#FDBA74" stroke="#000000" stroke-width="6"/>
+
+    <!-- Disheveled Tech Founder Hair -->
+    <path d="M -115 -80 
+             C -120 -230, 120 -230, 115 -80 
+             L 125 -30 L 95 -50 L 85 -110 
+             L 40 -160 L 0 -120 L -40 -170 L -80 -120 L -115 -60 Z" 
+          fill="#1E1B4B" stroke="#000000" stroke-width="8" stroke-linejoin="round"/>
+
+    <!-- ================= THE PANIC EYES (BULGING IN HORROR) ================= -->
+    <!-- Left Eye -->
+    <ellipse cx="-45" cy="-65" rx="42" ry="54" fill="#FFFFFF" stroke="#000000" stroke-width="7"/>
+    <!-- Right Eye -->
+    <ellipse cx="45" cy="-65" rx="42" ry="54" fill="#FFFFFF" stroke="#000000" stroke-width="7"/>
+
+    <!-- Tiny pupils trembling in shock looking right at the collapsing tower -->
+    <g transform="translate(16, 2)">
+      <ellipse cx="-45" cy="-65" rx="16" ry="20" fill="#09090B"/>
+      <circle cx="-42" cy="-70" r="5" fill="#FFFFFF"/>
+      <ellipse cx="45" cy="-65" rx="16" ry="20" fill="#09090B"/>
+      <circle cx="48" cy="-70" r="5" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Terrified Arched Eyebrows -->
+    <path d="M -85 -125 Q -40 -160 -10 -130" fill="none" stroke="#000000" stroke-width="9" stroke-linecap="round"/>
+    <path d="M 85 -125 Q 40 -160 10 -130" fill="none" stroke="#000000" stroke-width="9" stroke-linecap="round"/>
+
+    <!-- Nose -->
+    <path d="M 0 -60 L 15 -15 L -10 -10" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Screaming Agony Mouth (Mouth open wide in horror) -->
+    <g transform="translate(0, 45)">
+      <path d="M -45 -10 Q 0 -25 45 -10 Q 40 55 0 60 Q -40 55 -45 -10 Z" fill="#7F1D1D" stroke="#000000" stroke-width="7"/>
+      <!-- Clenched upper teeth -->
+      <path d="M -35 -8 L 35 -8 L 28 8 L -28 8 Z" fill="#FFFFFF" stroke="#000000" stroke-width="4"/>
+      <!-- Shaking tongue -->
+      <path d="M -25 42 Q 0 25 25 42" fill="none" stroke="#F43F5E" stroke-width="6"/>
+    </g>
+
+    <!-- Hands Clutching Head (Both hands on temples) -->
+    <!-- Left Hand -->
+    <g transform="translate(-110, -80)">
+      <circle cx="0" cy="0" r="22" fill="#FED7AA" stroke="#000000" stroke-width="6"/>
+      <path d="M -10 -15 L -10 -40 L 10 -40 L 10 -15" fill="#FED7AA" stroke="#000000" stroke-width="5"/>
+      <path d="M 5 -15 L 15 -42 L 35 -40 L 25 -15" fill="#FED7AA" stroke="#000000" stroke-width="5"/>
+    </g>
+    <!-- Right Hand -->
+    <g transform="translate(110, -80)">
+      <circle cx="0" cy="0" r="22" fill="#FED7AA" stroke="#000000" stroke-width="6"/>
+      <path d="M 10 -15 L 10 -40 L -10 -40 L -10 -15" fill="#FED7AA" stroke="#000000" stroke-width="5"/>
+      <path d="M -5 -15 L -15 -42 L -35 -40 L -25 -15" fill="#FED7AA" stroke="#000000" stroke-width="5"/>
+    </g>
+
+    <!-- Sweat Exploding Off Head in Shock -->
+    <g filter="url(#neonRedGlowB)">
+      <circle cx="-130" cy="-140" r="9" fill="#00F0FF" stroke="#000000" stroke-width="3"/>
+      <circle cx="-160" cy="-160" r="6" fill="#00F0FF" stroke="#000000" stroke-width="2"/>
+      <circle cx="130" cy="-140" r="9" fill="#00F0FF" stroke="#000000" stroke-width="3"/>
+      <circle cx="160" cy="-160" r="6" fill="#00F0FF" stroke="#000000" stroke-width="2"/>
+    </g>
+
+    <!-- Volumetric Rim Light: Warning Crimson (#FF2A4B) 16px on Left Contour -->
+    <path d="M -95 -160 C -125 -100 -125 0 -115 80 L -180 210 L -220 540" 
+          fill="none" stroke="#FF2A4B" stroke-width="16" stroke-linecap="round" opacity="0.95" filter="url(#neonRedGlowB)"/>
+  </g>
+
+  <!-- ==================== LAYER 4: TOP BANNER HEADLINE (RULE 15 COMPLIANT) ==================== -->
+  <!-- Top Center Banner: 2-3 words maximum, Montserrat Black, Chalk White with solid drop shadow -->
+  <g transform="translate(960, 45)" filter="url(#shadowHeavyB)">
+    <!-- Category Pill Badge -->
+    <rect x="-160" y="0" width="320" height="40" rx="8" fill="#FF2A4B" stroke="#000000" stroke-width="4"/>
+    <text x="0" y="27" text-anchor="middle" class="title-text" font-size="20" fill="#FFFFFF" letter-spacing="3">GLOBAL CRACKDOWN</text>
+
+    <!-- Main Headline: "CITIES BAN IT" -->
+    <!-- Solid Black 3D Stroke & Shadow Pass -->
+    <text x="0" y="135" text-anchor="middle" class="title-text" font-size="124" fill="#000000" stroke="#000000" stroke-width="26" stroke-linejoin="round">CITIES BAN IT</text>
+    <!-- Crisp White Foreground Text -->
+    <text x="0" y="135" text-anchor="middle" class="title-text" font-size="124" fill="#FFFFFF" stroke="#000000" stroke-width="6" stroke-linejoin="round">CITIES BAN IT</text>
+  </g>
+
+  <!-- ==================== LAYER 5: HIGH-CONTRAST OUTER BORDER ==================== -->
+  <rect x="0" y="0" width="1920" height="1080" fill="none" stroke="#FF2A4B" stroke-width="8" opacity="0.9"/>
+</svg>

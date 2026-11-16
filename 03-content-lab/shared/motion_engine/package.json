@@ -10,8 +10,13 @@
   "dependencies": {
     "@remotion/cli": "^4.0.240",
     "@remotion/lottie": "^4.0.539",
+    "@remotion/media-utils": "^4.0.540",
+    "@remotion/noise": "^4.0.540",
+    "@remotion/paths": "^4.0.540",
+    "@remotion/transitions": "^4.0.540",
     "@types/d3": "^7.4.3",
     "d3": "^7.9.0",
+    "flubber": "^0.4.2",
     "lottie-web": "^5.13.0",
     "lucide-react": "^1.66.0",
     "react": "^18.3.1",

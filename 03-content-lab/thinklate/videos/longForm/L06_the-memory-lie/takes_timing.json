@@ -1,0 +1,128 @@
+[
+  {
+    "file": "take_01_owl.wav",
+    "start": 0.0,
+    "end": 37.41,
+    "duration": 37.41
+  },
+  {
+    "file": "take_02_falcon.wav",
+    "start": 37.41,
+    "end": 55.65,
+    "duration": 18.24
+  },
+  {
+    "file": "take_03_owl.wav",
+    "start": 55.65,
+    "end": 73.67,
+    "duration": 18.02
+  },
+  {
+    "file": "take_04_falcon.wav",
+    "start": 73.67,
+    "end": 94.41,
+    "duration": 20.75
+  },
+  {
+    "file": "take_05_owl.wav",
+    "start": 94.41,
+    "end": 118.59,
+    "duration": 24.17
+  },
+  {
+    "file": "take_06_falcon.wav",
+    "start": 118.59,
+    "end": 145.42,
+    "duration": 26.83
+  },
+  {
+    "file": "take_07_falcon.wav",
+    "start": 145.42,
+    "end": 180.07,
+    "duration": 34.65
+  },
+  {
+    "file": "take_08_owl.wav",
+    "start": 180.07,
+    "end": 202.34,
+    "duration": 22.27
+  },
+  {
+    "file": "take_09_falcon.wav",
+    "start": 202.34,
+    "end": 218.88,
+    "duration": 16.54
+  },
+  {
+    "file": "take_10_owl.wav",
+    "start": 218.88,
+    "end": 237.66,
+    "duration": 18.79
+  },
+  {
+    "file": "take_11_falcon.wav",
+    "start": 237.66,
+    "end": 255.38,
+    "duration": 17.72
+  },
+  {
+    "file": "take_12_owl.wav",
+    "start": 255.38,
+    "end": 278.72,
+    "duration": 23.34
+  },
+  {
+    "file": "take_13_falcon.wav",
+    "start": 278.72,
+    "end": 294.88,
+    "duration": 16.16
+  },
+  {
+    "file": "take_14_owl.wav",
+    "start": 294.88,
+    "end": 301.6,
+    "duration": 6.72
+  },
+  {
+    "file": "take_15_owl.wav",
+    "start": 301.6,
+    "end": 337.36,
+    "duration": 35.76
+  },
+  {
+    "file": "take_16_falcon.wav",
+    "start": 337.36,
+    "end": 358.43,
+    "duration": 21.07
+  },
+  {
+    "file": "take_17_owl.wav",
+    "start": 358.43,
+    "end": 367.7,
+    "duration": 9.27
+  },
+  {
+    "file": "take_18_falcon.wav",
+    "start": 367.7,
+    "end": 386.17,
+    "duration": 18.47
+  },
+  {
+    "file": "take_19_owl.wav",
+    "start": 386.17,
+    "end": 405.21,
+    "duration": 19.05
+  },
+  {
+    "file": "take_20_falcon.wav",
+    "start": 405.21,
+    "end": 421.04,
+    "duration": 15.83
+  },
+  {
+    "file": "take_21_owl.wav",
+    "start": 421.04,
+    "end": 427.96,
+    "duration": 6.91
+  }
+]

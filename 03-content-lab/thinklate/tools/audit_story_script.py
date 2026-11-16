@@ -49,9 +49,13 @@ def audit_story_script(filepath):
     raw_text = "".join(raw_lines)
 
     # Clean text for speech analysis
-    clean_text = re.sub(r'\[.*?\]', '', raw_text)      # remove stage directions [VISUAL: ...]
-    clean_text = re.sub(r'#.*', '', clean_text)          # remove markdown headers
-    clean_text = re.sub(r'\*[^*]*\*', '', clean_text)    # remove italics notes
+    clean_text = re.sub(r'<!--.*?-->', '', raw_text, flags=re.DOTALL)  # remove HTML comments / splices
+    clean_text = re.sub(r'\[.*?\]', '', clean_text)                    # remove stage directions [VISUAL: ...], [SFX: ...]
+    clean_text = re.sub(r'#.*', '', clean_text)                        # remove markdown headers
+    clean_text = re.sub(r'\*[^*]*\*', '', clean_text)                  # remove italics notes
+    clean_text = re.sub(r'\|.*', '', clean_text)                       # remove markdown tables
+    clean_text = re.sub(r'^---.*$', '', clean_text, flags=re.MULTILINE)# remove divider lines
+    clean_text = re.sub(r'(?i)^\s*[-*]?\s*\**\b(Host|Franchise|Claim tags|Target Word|Title Candidate|Case Reference|Format|Primary Source|Core Retrospection)\b.*$', '', clean_text, flags=re.MULTILINE)
     
     spoken_words = [w for w in clean_text.replace('//', ' ').replace('///', ' ').split() if re.search(r'[a-zA-Z0-9]', w)]
     total_spoken_words = len(spoken_words)
@@ -109,13 +113,26 @@ def audit_story_script(filepath):
 
     # 6. Audio Foley Presence Check
     foley_count = len(re.findall(r'(?i)\[sfx:.*?\]', raw_text))
-    if foley_count < 3:
-        violations.append(f"Sound Design Violation: Only {foley_count} [SFX: ...] cues found. Must have at least 3 diegetic Foley cues.")
+    is_short = any(k in filepath.lower() for k in ["shortform", "short_script", "s01", "s02", "s03", "s04", "s05", "s06", "shorts"])
+    min_foley = 2 if is_short else 3
+    if foley_count < min_foley:
+        violations.append(f"Sound Design Violation: Only {foley_count} [SFX: ...] cues found. Must have at least {min_foley} diegetic Foley cues.")
 
-    # 7. 10-Minute Pacing Clock & Word Count Check (1,350 - 1,450 words)
-    # Allows legacy override if filename contains legacy/archive/05
+    # 7. Pacing Clock & Word Count Check (1,350 - 1,450 words for 10-min, 880-920 words for 6-min Franchise Spec, 90-150 words for Shorts)
     is_legacy = any(k in os.path.basename(filepath) for k in ["01_", "02_", "03_", "04_", "05_", "archive", "legacy"])
-    if not is_legacy:
+    is_franchise = any(k in filepath.lower() for k in ["l07", "franchise", "why-you-cant-cancel", "6min", "6-min"])
+
+    if is_short:
+        if total_spoken_words < 70:
+            violations.append(f"Shorts Pacing Clock Violation: Script is too short ({total_spoken_words} words). Target 90-150 words for 30-55s Short.")
+        elif total_spoken_words > 175:
+            violations.append(f"Shorts Retention Risk Violation: Script is too long ({total_spoken_words} words). Cap at 150 words for 60s Shorts ceiling.")
+    elif is_franchise:
+        if total_spoken_words < 850:
+            violations.append(f"Franchise Pacing Clock Violation: Script is too short ({total_spoken_words} words). Target 880-920 words for 6-minute franchise spec.")
+        elif total_spoken_words > 980:
+            violations.append(f"Franchise Retention Risk Violation: Script is too long ({total_spoken_words} words). Cap at 920 words for 6-minute franchise spec.")
+    elif not is_legacy:
         if total_spoken_words < 1250:
             violations.append(f"Pacing Clock Violation: Script is too short ({total_spoken_words} words). Target 1,350-1,450 words for 10-minute engagement.")
         elif total_spoken_words > 1550:
@@ -123,7 +140,7 @@ def audit_story_script(filepath):
 
     # 8. Tagged Shorts Splice Gates Check
     shorts_splices = re.findall(r'<!--\s*SHORTS_SPLICE_START:\s*([A-Za-z0-9_-]+)\s*-->(.*?)<!--\s*SHORTS_SPLICE_END:\s*\1\s*-->', raw_text, re.DOTALL)
-    if not is_legacy and len(shorts_splices) < 3:
+    if not is_legacy and not is_franchise and not is_short and len(shorts_splices) < 3:
         violations.append(f"Shorts Splice Violation: Found {len(shorts_splices)}/3 tagged Shorts splices. Must tag 3 standalone micro-arcs: <!-- SHORTS_SPLICE_START: <TAG> -->.")
 
     # Check for zero backward referencing in splices
@@ -145,13 +162,14 @@ def audit_story_script(filepath):
         if consecutive_same > 3:
             violations.append(f"Dual-Voice Cadence Violation: Speaker spoke consecutively {consecutive_same} times. Ping-pong speakers every 15-30s.")
 
-    # 10. 20-Year Senior Script Editor & Plot-Hole Gates
-    try:
-        from script_editor_qc import audit_script_editor_internal
-        editor_violations = audit_script_editor_internal(raw_lines, raw_text)
-        violations.extend(editor_violations)
-    except ImportError:
-        pass
+    # 10. 20-Year Senior Script Editor & Plot-Hole Gates (Long-form only)
+    if not is_short:
+        try:
+            from script_editor_qc import audit_script_editor_internal
+            editor_violations = audit_script_editor_internal(raw_lines, raw_text)
+            violations.extend(editor_violations)
+        except ImportError:
+            pass
 
     # Print Results
     print(f"\nAUDIT FINDINGS: {len(violations)} violation(s)")

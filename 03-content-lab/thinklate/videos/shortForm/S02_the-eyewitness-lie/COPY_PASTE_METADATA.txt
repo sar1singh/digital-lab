@@ -1,0 +1,32 @@
+======================================================================
+THINKLATE VERTICAL SHORT PUBLISHING PACKAGE (S02_the-eyewitness-lie)
+======================================================================
+MASTER FILE:       ThinkLate_Short02_The_Eyewitness_Lie_1080x1920_MASTER.mp4
+DURATION:          54.10s (1080x1920 @ 30fps, Complete 4-Beat Story + Mic-Drop Climax)
+HOST VOICE:        Eddy Thinklate (Founder & Lead Host)
+YOUTUBE TITLE:     She Swore on a Bible. She Was 100% Wrong. #Shorts
+
+----------------------------------------------------------------------
+🎙️ FULL STANDALONE SPOKEN SCRIPT (WITH MIC-DROP CLIMAX):
+----------------------------------------------------------------------
+In nineteen eighty-four, a college student named Jennifer Thompson looked straight into the eyes of a judge and swore on a Bible. She was one hundred percent certain she recognized the man who attacked her. She studied his face during the assault, picked Ronald Cotton out of a police lineup, and sent him to prison for life! Eleven years later, modern DNA forensics tested the crime scene evidence. Ronald Cotton was completely innocent. In fact, over seventy percent of wrongful convictions overturned by DNA in America share this exact horrifying flaw: an eyewitness who was calm, totally confident, and dead wrong. Here is the terrifying part: Jennifer Thompson wasn't lying. She passed every polygraph. When police showed her Ronald Cotton's mugshot in a lineup, her twenty-watt brain didn't open a saved video file of the crime scene. It ran a live generative simulation, and permanently overwrote the real attacker's face with the man in the lineup photo. Your skull does not have a hard drive, and your eyes are not a security camera. Every time you swear on your life you remember a face, your brain isn't playing back a recording. It is painting a brand-new suspect from scratch.
+
+----------------------------------------------------------------------
+🔗 HOW TO ENABLE THE CLICKABLE LONG-VIDEO & TIMESTAMP BRIDGE:
+----------------------------------------------------------------------
+1. In YouTube Studio -> Content -> Shorts -> Edit "She Swore on a Bible. She Was 100% Wrong. #Shorts":
+   - Scroll to the "Related video" field on the right sidebar.
+   - Select the Long-Form Episode 06 video: "Your Memories Never Happened".
+   - This activates the clickable "▶ Related Video" pill right underneath the
+     animated on-screen "👇 CLICK LINK BELOW • JUMP TO @ 0:00" banner!
+2. Exact Timestamp Deep-Link Mechanics:
+   - The on-screen badge instructs viewers who want the full 7-minute deep dive
+     to jump directly to **0:00** (Chapter 1: Why Did an Honest Honor Student Send an Innocent Man to Prison?).
+
+----------------------------------------------------------------------
+📌 COPY-PASTE PINNED COMMENT FOR THIS SHORT:
+----------------------------------------------------------------------
+📌 WATCH THE FULL 7-MINUTE INVESTIGATION (Tap '▶ Related Video' right above the title!):
+In 1984, Jennifer Thompson passed every polygraph and swore under oath she recognized her attacker—sending an innocent man, Ronald Cotton, to prison for 11 years.
+
+👉 Tap the Related Video link above to watch the full neuroscience breakdown on @wethinklate!

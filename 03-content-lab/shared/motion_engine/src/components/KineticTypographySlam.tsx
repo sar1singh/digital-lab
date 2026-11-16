@@ -13,7 +13,7 @@ export interface KineticTypographySlamProps {
 
 export const KineticTypographySlam: React.FC<KineticTypographySlamProps> = ({
   channel = "thinklate",
-  line1 = "OCTOBER 2007: $1,150 OVERDUE RENT",
+  line1 = "OCTOBER 2007: $1,100 OVERDUE RENT",
   line2 = "3 AIRBEDS ON A LIVING ROOM RUG",
   line1Color,
   line2Color,
@@ -92,7 +92,7 @@ export const KineticTypographySlam: React.FC<KineticTypographySlamProps> = ({
         {/* Line 1: Ultra-bold Primary Heading */}
         <div
           style={{
-            fontSize: "64px",
+            fontSize: "74px",
             fontWeight: 900,
             lineHeight: 1.05,
             letterSpacing: "-0.03em",
@@ -107,7 +107,7 @@ export const KineticTypographySlam: React.FC<KineticTypographySlamProps> = ({
         {/* Line 2: Brand Accent Punchline */}
         <div
           style={{
-            fontSize: "76px",
+            fontSize: "88px",
             fontWeight: 900,
             lineHeight: 1.05,
             letterSpacing: "-0.03em",
@@ -124,7 +124,7 @@ export const KineticTypographySlam: React.FC<KineticTypographySlamProps> = ({
           <div
             style={{
               fontFamily: theme.fonts.mono,
-              fontSize: "15px",
+              fontSize: "20px",
               fontWeight: 700,
               letterSpacing: "0.18em",
               color: theme.colors.textMuted,

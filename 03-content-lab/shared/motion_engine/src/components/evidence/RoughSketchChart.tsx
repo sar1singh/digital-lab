@@ -192,16 +192,16 @@ export const RoughSketchChart: React.FC<RoughSketchChartProps> = ({
           style={{
             position: "absolute",
             bottom: 90,
-            left: 200,
-            width: 180,
+            left: 170,
+            width: 240,
             textAlign: "center",
             pointerEvents: "none",
           }}
         >
-          <div style={{ fontSize: 13, fontWeight: 900, color: "#EF4444", textShadow: "0 2px 8px rgba(0,0,0,0.8)" }}>
+          <div style={{ fontSize: 24, fontWeight: 900, color: "#EF4444", textShadow: "0 2px 10px rgba(0,0,0,0.9)", letterSpacing: "-0.01em" }}>
             {leftAmount}
           </div>
-          <div style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.7)", marginTop: 4 }}>
+          <div style={{ fontSize: 16, fontWeight: 800, color: "rgba(255,255,255,0.85)", marginTop: 6, textTransform: "uppercase" }}>
             {leftLabel}
           </div>
         </div>
@@ -211,23 +211,24 @@ export const RoughSketchChart: React.FC<RoughSketchChartProps> = ({
           style={{
             position: "absolute",
             bottom: 90,
-            left: 660,
-            width: 180,
+            left: 630,
+            width: 240,
             textAlign: "center",
             pointerEvents: "none",
           }}
         >
           <div
             style={{
-              fontSize: 13,
+              fontSize: 24,
               fontWeight: 900,
               color: accent,
-              textShadow: "0 2px 8px rgba(0,0,0,0.8)",
+              textShadow: "0 2px 10px rgba(0,0,0,0.9)",
+              letterSpacing: "-0.01em",
             }}
           >
             {rightAmount}
           </div>
-          <div style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.7)", marginTop: 4 }}>
+          <div style={{ fontSize: 16, fontWeight: 800, color: "rgba(255,255,255,0.85)", marginTop: 6, textTransform: "uppercase" }}>
             {rightLabel}
           </div>
         </div>
@@ -240,10 +241,10 @@ export const RoughSketchChart: React.FC<RoughSketchChartProps> = ({
             left: 0,
             right: 0,
             textAlign: "center",
-            fontSize: 14,
-            fontWeight: 700,
+            fontFamily: '"Comic Sans MS", "Caveat", cursive, sans-serif',
+            fontSize: 22,
+            fontWeight: 800,
             color: accent,
-            fontFamily: "monospace",
             letterSpacing: 0.5,
           }}
         >

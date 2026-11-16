@@ -1,0 +1,13 @@
+[0:a]atrim=start=38.560:end=203.740,asetpts=PTS-STARTPTS[a0];
+[0:a]atrim=start=244.460:end=594.940,asetpts=PTS-STARTPTS[a1];
+[0:a]atrim=start=772.040:end=966.220,asetpts=PTS-STARTPTS[a2];
+[0:a]atrim=start=1349.950:end=1515.180,asetpts=PTS-STARTPTS[a3];
+[0:a]atrim=start=1667.260:end=2230.780,asetpts=PTS-STARTPTS[a4];
+[0:a]atrim=start=2714.010:end=3127.300,asetpts=PTS-STARTPTS[a5];
+[0:a]atrim=start=3192.230:end=3916.280,asetpts=PTS-STARTPTS[a6];
+[0:a]atrim=start=3941.100:end=4062.500,asetpts=PTS-STARTPTS[a7];
+[0:a]atrim=start=4133.400:end=5688.860,asetpts=PTS-STARTPTS[a8];
+[0:a]atrim=start=5766.120:end=5952.540,asetpts=PTS-STARTPTS[a9];
+[0:a]atrim=start=6140.540:end=6899.300,asetpts=PTS-STARTPTS[a10];
+[0:a]atrim=start=7267.310:end=7858.650,asetpts=PTS-STARTPTS[a11];
+[a0][a1][a2][a3][a4][a5][a6][a7][a8][a9][a10][a11]concat=n=12:v=0:a=1,afade=t=out:st=5788.710:d=0.6[outa]

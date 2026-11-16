@@ -1,0 +1,365 @@
+{
+  "episode": "05_how-airbnb-stole-100b",
+  "channel": "thinklate",
+  "runtime_seconds": 956.83,
+  "motion_cues": [
+    {
+      "cue_id": 1,
+      "timecode": "00:00.0 - 00:06.5",
+      "template": "EvidenceGlassCard",
+      "props": {
+        "channel": "thinklate",
+        "badgeText": "PRIMARY EVIDENCE // EVICTION NOTICE",
+        "badgeType": "warning",
+        "title": "OCTOBER 2007: 72 HOURS FROM STREET",
+        "quote": "Your rent is $1,100. You have three days before your landlord kicks you out and your bank account is empty.",
+        "highlightWords": "Your rent is $1,100",
+        "sourceDoc": "SAN FRANCISCO HOUSING TENANCY DOCKET #07-8891",
+        "dateStr": "OCTOBER 14, 2007"
+      }
+    },
+    {
+      "cue_id": 2,
+      "timecode": "00:06.5 - 00:16.0",
+      "template": "CharacterProfileCard",
+      "props": {
+        "channel": "thinklate",
+        "characterName": "BRIAN CHESKY & JOE GEBBIA",
+        "designation": "BROKE DESIGN GRADUATES // UNEMPLOYED",
+        "photoUrl": "assets/documentary_broll/scene_02_real_founders_archive.jpg",
+        "statusBadge": "SUBJECT DOSSIER // $0 BANK BALANCE",
+        "stats": [
+          { "label": "RENT DUE IN 72H", "value": "$1,100 CASH", "color": "#EF4444" },
+          { "label": "BANK BALANCE", "value": "$0.00 EMPTY", "color": "#F59E0B" },
+          { "label": "EMPLOYMENT STATUS", "value": "UNEMPLOYED", "color": "#06B6D4" },
+          { "label": "SURVIVAL STRATEGY", "value": "INFLATABLE RUG", "color": "#E2FF00" }
+        ],
+        "stampTag": "VERIFIED ARCHIVE",
+        "quoteSnippet": "Two broke design school graduates sharing an apartment, completely unemployed and scrambling for quick cash."
+      }
+    },
+    {
+      "cue_id": 4,
+      "timecode": "00:23.5 - 00:32.0",
+      "template": "ForensicHeadline",
+      "props": {
+        "channel": "thinklate",
+        "publication": "SAN FRANCISCO CHRONICLE",
+        "category": "CONVENTION HOUSING BOTTLENECK",
+        "headline": "Massive Design Conference Floods City: Every Hotel Room 100% Sold Out",
+        "excerpt": "Over 40,000 industrial designers descended upon San Francisco, triggering an artificial supply bottleneck across all commercial lodging.",
+        "highlightWords": "100% Sold Out",
+        "dateStr": "OCTOBER 2007",
+        "authorOrRef": "CITY TOURISM & LODGING RECORDS"
+      }
+    },
+    {
+      "cue_id": 5,
+      "timecode": "00:32.0 - 00:45.0",
+      "template": "ComparisonSplit",
+      "props": {
+        "channel": "thinklate",
+        "badgeText": "MARKET ARBITRAGE // EXPECTATION VS REALITY",
+        "leftTag": "RIGID MONOPOLY",
+        "leftStat": "$280",
+        "leftStatUnit": "/ night",
+        "leftTitle": "THE SAN FRANCISCO HOTEL CARTEL",
+        "leftItems": [
+          "Standard room rate during design conference",
+          "100% sold-out citywide capacity in 48 hours",
+          "Mandatory resort fees + parking overhead"
+        ],
+        "rightTag": "SYSTEM ARBITRAGE",
+        "rightStat": "$80",
+        "rightStatUnit": "/ night",
+        "rightTitle": "THE $80 AIRBED EXPERIMENT",
+        "rightItems": [
+          "Inflatable air mattress on living room rug",
+          "Free Wi-Fi + homemade breakfast pop-tarts",
+          "Zero hotel infrastructure, instant cash flow"
+        ],
+        "footerNote": "PRICE SPREAD: 71.4% DISCOUNT FOR ATTENDEES ✦ $240 CASH SURVIVAL FOR FOUNDERS"
+      }
+    },
+    {
+      "cue_id": 7,
+      "timecode": "00:55.0 - 01:10.0",
+      "template": "TornPaperReceipt",
+      "props": {
+        "channel": "thinklate",
+        "receiptTitle": "AIRBED & BREAKFAST INVOICE #001",
+        "storeLocation": "54 RUSSIAN HILL APARTMENT // SF",
+        "dateStr": "OCTOBER 19, 2007 // 08:30 AM",
+        "lineItems": [
+          { "name": "Guest 1 (Living Room Airbed)", "amount": "$80.00", "isJunkFee": false },
+          { "name": "Guest 2 (Living Room Airbed)", "amount": "$80.00", "isJunkFee": false },
+          { "name": "Guest 3 (Living Room Airbed)", "amount": "$80.00", "isJunkFee": false },
+          { "name": "Homemade Breakfast Pop-Tarts", "amount": "$0.00", "isJunkFee": false },
+          { "name": "Hidden Cleaning / Platform Fees", "amount": "$0.00", "isJunkFee": false }
+        ],
+        "subtotal": "$240.00",
+        "total": "$240.00 CASH",
+        "stampText": "RENT PAID IN CASH",
+        "footerMessage": "FIRST TRANSACTION IN AIRBED HISTORY ✦ 100% REVENUE CONVERTED TO RENT"
+      }
+    },
+    {
+      "cue_id": 9,
+      "timecode": "01:25.0 - 01:40.0",
+      "template": "RoughSketchChart",
+      "props": {
+        "channel": "thinklate",
+        "title": "THE ASSET OVERHEAD DISPARITY",
+        "subtitle": "PHYSICAL CONCRETE TOWERS VS ZERO-ASSET LIVING ROOM CODE",
+        "leftLabel": "TRADITIONAL HOTEL CARTEL",
+        "leftAmount": "$140B (BUILDINGS & DEBT)",
+        "leftHeightPercent": 85,
+        "rightLabel": "AIRBED ARBITRAGE (LINES OF CODE)",
+        "rightAmount": "$100B (ZERO CONCRETE)",
+        "rightHeightPercent": 65,
+        "handwrittenNote": "✦ 0 Buildings Owned. 0 Concrete Debt. 100% Software Leverage."
+      }
+    },
+    {
+      "cue_id": 10,
+      "timecode": "01:40.0 - 01:55.0",
+      "template": "KineticScrollLadder",
+      "props": {
+        "channel": "thinklate",
+        "title": "CREDIT CARD DEBT ESCALATION",
+        "prefix": "$",
+        "steps": [
+          { "label": "MAY 2008", "value": "5,000" },
+          { "label": "JUNE 2008", "value": "12,400" },
+          { "label": "JULY 2008", "value": "18,200" },
+          { "label": "AUGUST 2008 (MAXED)", "value": "20,000" }
+        ],
+        "footerNote": "SUMMER 2008: BINDERS OF MAXED OUT CREDIT CARDS"
+      }
+    },
+    {
+      "cue_id": 14,
+      "timecode": "02:40.0 - 02:55.0",
+      "template": "PhotoPolaroidPin",
+      "props": {
+        "channel": "thinklate",
+        "title": "PRIMARY EXHIBIT: THE $40 CEREAL BOX",
+        "handwrittenNote": "OBAMA O'S & CAP'N MCCAIN'S (DENVER DNC 2008)",
+        "captionText": "1,000 limited edition numbered boxes hand-assembled in their kitchen to fund server costs",
+        "dateStr": "AUGUST 2008",
+        "stampText": "BOOTSTRAP SURVIVAL"
+      }
+    },
+    {
+      "cue_id": 15,
+      "timecode": "02:55.0 - 03:15.0",
+      "template": "MetricCounter",
+      "props": {
+        "channel": "thinklate",
+        "badgeText": "BOOTSTRAP FINANCIAL CAPITAL",
+        "startVal": 0,
+        "endVal": 30000,
+        "prefix": "$",
+        "suffix": " CASH",
+        "label": "NOVELTY CEREAL SEED CAPITAL",
+        "subtext": "1,000 boxes sold at $40/each cleared $30,000 in pure cash with 0% equity dilution"
+      }
+    },
+    {
+      "cue_id": 18,
+      "timecode": "03:45.0 - 04:00.0",
+      "template": "SocialCitation",
+      "props": {
+        "channel": "thinklate",
+        "authorName": "Paul Graham",
+        "authorHandle": "@paulg",
+        "avatarText": "PG",
+        "avatarColor": "#F59E0B",
+        "dateStr": "JANUARY 2009 · Y COMBINATOR W09",
+        "content": "We thought Airbnb was a terrible idea. Who wants to sleep on an air mattress in a stranger's apartment? But we funded them because if you can convince people to buy $40 cereal, you can survive.",
+        "highlightWords": "if you can convince people to buy $40 cereal, you can survive",
+        "reposts": "18.4K",
+        "likes": "94.2K",
+        "views": "5.1M",
+        "footerNote": "Y COMBINATOR SEED INTERVIEW // OFFICIAL RETROSPECTIVE"
+      }
+    },
+    {
+      "cue_id": 22,
+      "timecode": "04:45.0 - 05:05.0",
+      "template": "DocumentRedaction",
+      "props": {
+        "channel": "thinklate",
+        "docketNumber": "CASE #08-VC-ANGELS // SILICON VALLEY SEED ROUND",
+        "classification": "DECLASSIFIED VENTURE MEMO",
+        "title": "CONFIDENTIAL VC PARTNER PASS MEMO",
+        "clausePreamble": "After careful partner review of Airbed & Breakfast, ",
+        "redactedPhrase": "we could not see how airbeds on floors scaled to a venture-scale market",
+        "clausePostamble": ", therefore passing on the $150,000 investment for 10% equity.",
+        "revealText": "FRED WILSON / UNION SQUARE VENTURES (USV ARCHIVES)",
+        "footerNote": "THE GREATEST MISS IN MODERN VENTURE CAPITAL HISTORY"
+      }
+    },
+    {
+      "cue_id": 26,
+      "timecode": "06:00.0 - 06:15.0",
+      "template": "GlitchDecoder",
+      "props": {
+        "channel": "thinklate",
+        "badgeText": "THE CRITICAL OPERATING PRINCIPLE",
+        "scrambledText": "DO THINGS THAT DONT SCALE",
+        "finalText": "DO THINGS THAT DON'T SCALE",
+        "subtext": "Paul Graham's direct command: Fly to New York and fix user friction by hand"
+      }
+    },
+    {
+      "cue_id": 30,
+      "timecode": "07:05.0 - 07:25.0",
+      "template": "TerminalCodeBlock",
+      "props": {
+        "channel": "thinklate",
+        "windowTitle": "bot@airbnb-engine: /scripts/craigslist_cross_post.py",
+        "commands": [
+          "python craigslist_auto_poster.py --city sf --category roo --listing_id 4092",
+          "curl -X POST https://sfbay.craigslist.org/post/create --data-binary @listing_payload.bin"
+        ],
+        "outputLines": [
+          { "text": "[200 OK] Extracted CSRF tokens & form inputs from Craigslist", "tag": "AUTH", "color": "#10B981" },
+          { "text": "POST payload generated: 'Russian Hill Cozy Airbed $80/night + Breakfast'", "tag": "INJECT", "color": "#06B6D4" },
+          { "text": "Injected deep-link to AirbedAndBreakfast.com directly into Craigslist listing body", "tag": "EXPLOIT", "color": "#E2FF00" },
+          { "text": "SUCCESS: 50,000,000 monthly rental visitors hijacked for $0 acquisition cost", "tag": "ARBITRAGE", "color": "#10B981" }
+        ],
+        "statusText": "DISTRIBUTION REVERSE-ENGINEERED // 2010",
+        "executionTime": "12.4ms"
+      }
+    },
+    {
+      "cue_id": 31,
+      "timecode": "07:25.0 - 07:45.0",
+      "template": "AnimatedBarChart",
+      "props": {
+        "channel": "thinklate",
+        "badgeText": "DISTRIBUTION ASYMMETRY // 2010",
+        "title": "MONTHLY ACTIVE RENTAL TRAFFIC",
+        "subtitle": "The Zero-Dollar Distribution Hijack",
+        "bars": [
+          { "label": "Airbnb (Zero Moat)", "value": 0.05, "displayValue": "50K", "highlight": false },
+          { "label": "Craigslist Rental Traffic", "value": 50.0, "displayValue": "50,000,000", "highlight": true }
+        ],
+        "footerNote": "PRINCIPLE: NEVER BUILD DISTRIBUTION WHEN YOU CAN BORROW IT"
+      }
+    },
+    {
+      "cue_id": 36,
+      "timecode": "09:10.0 - 09:35.0",
+      "template": "AnimatedLineChart",
+      "props": {
+        "channel": "thinklate",
+        "badgeText": "CAPITAL MARKET TRAJECTORY // NASDAQ: ABNB",
+        "title": "VALUATION CRASH & $100B IPO SPIKE",
+        "subtitle": "Market Capitalization Trajectory ($ Billions)",
+        "points": [
+          { "xLabel": "2015", "yValue": 25.5 },
+          { "xLabel": "2019", "yValue": 38.0 },
+          { "xLabel": "Mar 2020", "yValue": 18.0 },
+          { "xLabel": "Dec 2020", "yValue": 100.0 },
+          { "xLabel": "2024", "yValue": 88.0 }
+        ],
+        "milestoneText": "DEC 10, 2020: $100B PUBLIC OPENING",
+        "milestoneSubtext": "From $80 floor airbed to larger than Marriott, Hilton, and Hyatt combined",
+        "footerNote": "SOURCE: S&P GLOBAL & SEC FORM 424B4 IPO PROSPECTUS"
+      }
+    },
+    {
+      "cue_id": 39,
+      "timecode": "10:15.0 - 10:45.0",
+      "template": "TornPaperReceipt",
+      "props": {
+        "channel": "thinklate",
+        "receiptTitle": "THE ANATOMY OF CORPORATE GREED",
+        "storeLocation": "AIRBNB CHECKOUT INVOICE // 2-NIGHT STAY",
+        "dateStr": "JULY 18, 2023 // 16:42:10",
+        "lineItems": [
+          { "name": "2 Nights Advertised Stay ($80/night)", "amount": "$160.00", "isJunkFee": false },
+          { "name": "Standard Cleaning Fee (VO GROUND TRUTH)", "amount": "$180.00", "isJunkFee": true },
+          { "name": "Platform Service Fee (14%)", "amount": "$45.00", "isJunkFee": true },
+          { "name": "Mandatory Municipal Occupancy Tax", "amount": "$28.00", "isJunkFee": false }
+        ],
+        "subtotal": "$160.00 BASE",
+        "total": "$413.00 TOTAL",
+        "stampText": "158% JUNK FEE MARKUP",
+        "footerMessage": "ADVERTISED: $80/NIGHT ✦ FINAL CHECKOUT: $206.50/NIGHT + CHORE LIST"
+      }
+    },
+    {
+      "cue_id": 40,
+      "timecode": "10:45.0 - 11:15.0",
+      "template": "MagnifyingGlassDoc",
+      "props": {
+        "channel": "thinklate",
+        "documentTitle": "MUNICIPAL HOUSING CODE // NYC LOCAL LAW 18",
+        "docketNo": "NEW YORK & BARCELONA HOUSING ENFORCEMENT DOCKET",
+        "preambleText": "Under local statutory ordinances, it is strictly unlawful to operate short-term rentals in residential buildings, and specifically, ",
+        "magnifiedText": "banning all unhosted short-term residential stays and imposing fines up to $5,000 per violation",
+        "postambleText": ", to prevent commercial investor cartels from depleting local apartment supply.",
+        "stampText": "TOTAL MUNICIPAL BAN",
+        "footerNote": "BARCELONA ANNOUNCES 100% SHORT-TERM RENTAL ELIMINATION BY 2028"
+      }
+    },
+    {
+      "cue_id": 45,
+      "timecode": "13:30.0 - 14:10.0",
+      "template": "RankedListicleCard",
+      "props": {
+        "channel": "thinklate",
+        "rankNumber": "01",
+        "categoryTag": "SOLO-FOUNDER PLAYBOOK // RULE #01",
+        "headline": "NEVER BUILD WHAT YOU CAN BORROW",
+        "subExplanation": "Airbnb did not spend millions building a search engine or paid ads. They hijacked Craigslist's 50 million monthly rental users for $0 by reverse-engineering simple web forms.",
+        "footerMetric": "ACQUISITION COST: $0 PER CUSTOMER"
+      }
+    },
+    {
+      "cue_id": 46,
+      "timecode": "14:10.0 - 14:45.0",
+      "template": "RankedListicleCard",
+      "props": {
+        "channel": "thinklate",
+        "rankNumber": "02",
+        "categoryTag": "SOLO-FOUNDER PLAYBOOK // RULE #02",
+        "headline": "SOLVE THE UNCOMMERCIAL FRICTION BY HAND",
+        "subExplanation": "When code failed, the founders flew to Brooklyn with a $500 DSLR camera and knocked on doors to take professional photos themselves. Revenue doubled in seven days.",
+        "footerMetric": "CONVERSION LIFT: +102% OVERNIGHT"
+      }
+    },
+    {
+      "cue_id": 47,
+      "timecode": "14:45.0 - 15:20.0",
+      "template": "RankedListicleCard",
+      "props": {
+        "channel": "thinklate",
+        "rankNumber": "03",
+        "categoryTag": "SOLO-FOUNDER PLAYBOOK // RULE #03",
+        "headline": "SURVIVE LONG ENOUGH FOR LUCK TO STRIKE",
+        "subExplanation": "The difference between bankruptcy and a $100 billion company was 1,000 boxes of novelty election cereal that funded their server bills for three critical months.",
+        "footerMetric": "SURVIVAL CAPITAL: $30,000 PURE CASH"
+      }
+    },
+    {
+      "cue_id": 48,
+      "timecode": "15:20.0 - 15:56.8",
+      "template": "TimelineMilestoneFlow",
+      "props": {
+        "channel": "thinklate",
+        "title": "THE 13-YEAR TRANSFORMATION ARCHITECTURE",
+        "milestones": [
+          { "year": "2007", "title": "$80 Airbed", "subtitle": "Living room survival hustle" },
+          { "year": "2008", "title": "Obama O's", "subtitle": "$30,000 cereal seed capital" },
+          { "year": "2010", "title": "Craigslist Hack", "subtitle": "50M borrowed distribution" },
+          { "year": "2020", "title": "$100B Empire", "subtitle": "Blockbuster NASDAQ IPO" }
+        ],
+        "closingStatement": "STAY CURIOUS. THINK LATE."
+      }
+    }
+  ]
+}

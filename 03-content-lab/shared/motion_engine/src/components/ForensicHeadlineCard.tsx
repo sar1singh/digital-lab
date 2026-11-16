@@ -95,7 +95,7 @@ export const ForensicHeadlineCard: React.FC<ForensicHeadlineCardProps> = ({
     >
       <div
         style={{
-          width: "1480px",
+          width: "1560px",
           backgroundColor: THEME.colors.bgGlassDark,
           backdropFilter: "blur(28px)",
           borderRadius: "20px",
@@ -137,7 +137,7 @@ export const ForensicHeadlineCard: React.FC<ForensicHeadlineCardProps> = ({
             <span
               style={{
                 fontFamily: THEME.fonts.sans,
-                fontSize: "24px",
+                fontSize: "30px",
                 fontWeight: 900,
                 letterSpacing: "0.08em",
                 textTransform: "uppercase",
@@ -191,7 +191,7 @@ export const ForensicHeadlineCard: React.FC<ForensicHeadlineCardProps> = ({
             borderLeft: `4px solid ${THEME.colors.acidLime}`,
             borderRadius: "0 12px 12px 0",
             padding: "24px 28px",
-            fontSize: "24px",
+            fontSize: "30px",
             lineHeight: 1.5,
             color: THEME.colors.textMuted,
             fontFamily: THEME.fonts.sans,

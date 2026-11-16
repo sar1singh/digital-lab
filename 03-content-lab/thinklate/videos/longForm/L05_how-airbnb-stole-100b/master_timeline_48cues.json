@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "start": 0.0,
+    "end": 6.5,
+    "dur": 6.5,
+    "clip": "scene_01_eviction_door.jpg",
+    "blur": false,
+    "card": "EvidenceGlassCard",
+    "sfx": "`sfx_sub_boom.wav` (-12dB)"
+  },
+  {
+    "id": 2,
+    "start": 6.5,
+    "end": 16.0,
+    "dur": 9.5,
+    "clip": "scene_02_real_founders_archive.jpg",
+    "blur": true,
+    "card": "CharacterProfileCard",
+    "sfx": "`sfx_whoosh.wav` (-16dB)"
+  },
+  {
+    "id": 3,
+    "start": 16.0,
+    "end": 23.5,
+    "dur": 7.5,
+    "clip": "action_01_sea_sailing.mp4",
+    "blur": false,
+    "card": "None (Pure Action Pace)",
+    "sfx": "None"
+  },
+  {
+    "id": 4,
+    "start": 23.5,
+    "end": 32.0,
+    "dur": 8.5,
+    "clip": "scene_03_hotel_no_vacancy.jpg",
+    "blur": true,
+    "card": "ForensicHeadline",
+    "sfx": "`sfx_data_blip.wav` (-16dB)"
+  },
+  {
+    "id": 5,
+    "start": 32.0,
+    "end": 45.0,
+    "dur": 13.0,
+    "clip": "scene1_01_city_apartments.mp4",
+    "blur": true,
+    "card": "ComparisonSplit",
+    "sfx": "`sfx_sub_boom.wav` (-12dB)"
+  },
+  {
+    "id": 6,
+    "start": 45.0,
+    "end": 55.0,
+    "dur": 10.0,
+    "clip": "action_02_naval_patrol.mp4",
+    "blur": false,
+    "card": "None (Living Canvas Spine)",
+    "sfx": "`sfx_whoosh.wav` (-16dB)"
+  },
+  {
+    "id": 7,
+    "start": 55.0,
+    "end": 70.0,
+    "dur": 15.0,
+    "clip": "action_03_ocean_waves.mp4",
+    "blur": true,
+    "card": "TornPaperReceipt",
+    "sfx": "`sfx_data_blip.wav` (-16dB)"
+  },
+  {
+    "id": 8,
+    "start": 70.0,
+    "end": 85.0,
+    "dur": 15.0,
+    "clip": "action_03_ocean_waves.mp4",
+    "blur": false,
+    "card": "None (Living Canvas Spine)",
+    "sfx": "None"
+  },
+  {
+    "id": 9,
+    "start": 85.0,
+    "end": 100.0,
+    "dur": 15.0,
+    "clip": "action_04_fleet_approach.mp4",
+    "blur": true,
+    "card": "RoughSketchChart",
+    "sfx": "`sfx_sub_boom.wav` (-12dB)"
+  },
+  {
+    "id": 10,
+    "start": 100.0,
+    "end": 115.0,
+    "dur": 15.0,
+    "clip": "action_05_naval_maneuver.mp4",
+    "blur": true,
+    "card": "KineticScrollLadder",
+    "sfx": "`sfx_whoosh.wav` (-16dB)"
+  },
+  {
+    "id": 11,
+    "start": 115.0,
+    "end": 130.0,
+    "dur": 15.0,
+    "clip": "action_06_combat_ready.mp4",
+    "blur": true,
+    "card": "CharacterProfileCard",
+    "sfx": "`sfx_data_blip.wav` (-16dB)"
+  },
+  {
+    "id": 12,
+    "start": 130.0,
+    "end": 145.0,
+    "dur": 15.0,
+    "clip": "action_04_fleet_approach.mp4",
+    "blur": false,
+    "card": "None (Living Canvas Spine)",
+    "sfx": "`sfx_sub_boom.wav` (-12dB)"
+  },
+  {
+    "id": 13,
+    "start": 145.0,
+    "end": 160.0,
+    "dur": 15.0,
+    "clip": "scene2_02_convention_crowd.mp4",
+    "blur": true,
+    "card": "ForensicHeadline",
+    "sfx": "None"
+  },
+  {
+    "id": 14,
+    "start": 160.0,
+    "end": 175.0,
+    "dur": 15.0,
+    "clip": "scene2_03_printing_press.mp4",
+    "blur": true,
+    "card": "PhotoPolaroidPin",
+    "sfx": "`sfx_whoosh.wav` (-16dB)"
+  },
+  {
+    "id": 15,
+    "start": 175.0,
+    "end": 195.0,
+    "dur": 20.0,
+    "clip": "scene2_04_dollar_bills.mp4",
+    "blur": true,
+    "card": "MetricCounter",
+    "sfx": "`cinematic-impact-boom.mp3` (-10dB)"
+  },
+  {
+    "id": 16,
+    "start": 195.0,
+    "end": 210.0,
+    "dur": 15.0,
+    "clip": "action_05_naval_maneuver.mp4",
+    "blur": false,
+    "card": "None (Living Canvas Spine)",
+    "sfx": "`sfx_whoosh.wav` (-16dB)"
+  },
+  {
+    "id": 17,
+    "start": 210.0,
+    "end": 225.0,
+    "dur": 15.0,
+    "clip": "san_francisco_exterior.jpg",
+    "blur": true,
+    "card": "RoughSketchChart",
+    "sfx": "`sfx_data_blip.wav` (-16dB)"
+  },
+  {
+    "id": 18,
+    "start": 225.0,
+    "end": 240.0,
+    "dur": 15.0,
+    "clip": "scene3_01_venture_meeting.mp4",
+    "blur": true,
+    "card": "SocialCitation",
+    "sfx": "`sfx_sub_boom.wav` (-12dB)"
+  },
+  {
+    "id": 19,
+    "start": 240.0,
+    "end": 255.0,
+    "dur": 15.0,
+    "clip": "paul_graham_archive.jpg",
+    "blur": true,
+    "card": "CharacterProfileCard",
+    "sfx": "`sfx_whoosh.wav` (-16dB)"
+  },
+  {
+    "id": 20,
+    "start": 255.0,
+    "end": 270.0,
+    "dur": 15.0,
+    "clip": "action_06_combat_ready.mp4",
+    "blur": false,
+    "card": "None (Living Canvas Spine)",
+    "sfx": "`sfx_data_blip.wav` (-16dB)"
+  },
+  {
+    "id": 21,
+    "start": 270.0,
+    "end": 285.0,
+    "dur": 15.0,
+    "clip": "scene3_02_partnership_deal.mp4",
+    "blur": true,
+    "card": "TimelineMilestoneFlow",
+    "sfx": "`sfx_sub_boom.wav` (-12dB)"
+  },
+  {
+    "id": 22,
+    "start": 285.0,
+    "end": 305.0,
+    "dur": 20.0,
+    "clip": "scene3_03_business_contract.mp4",
+    "blur": true,
+    "card": "DocumentRedaction",
+    "sfx": "`sfx_sub_boom.wav` (-12dB)"
+  },
+  {
+    "id": 23,
+    "start": 305.0,
+    "end": 325.0,
+    "dur": 20.0,
+    "clip": "scene3_04_whiteboard_strategy.mp4",
+    "blur": true,
+    "card": "ForensicHeadline",
+    "sfx": "`sfx_whoosh.wav` (-16dB)"
+  },
+  {
+    "id": 24,
+    "start": 325.0,
+    "end": 345.0,
+    "dur": 20.0,
+    "clip": "action_07_broadside_run.mp4",
+    "blur": false,
+    "card": "None (Living Canvas Spine)",
+    "sfx": "`sfx_data_blip.wav` (-16dB)"
+  },
+  {
+    "id": 25,
+    "start": 345.0,
+    "end": 360.0,
+    "dur": 15.0,
+    "clip": "scene2_01_credit_card_debt.mp4",
+    "blur": true,
+    "card": "StatDonutGauge",
+    "sfx": "`sfx_sub_boom.wav` (-12dB)"
+  },
+  {
+    "id": 26,
+    "start": 360.0,
+    "end": 375.0,
+    "dur": 15.0,
+    "clip": "scene4_01_dslr_camera.mp4",
+    "blur": true,
+    "card": "GlitchDecoder",
+    "sfx": "`sfx_sub_boom.wav` (-12dB)"
+  },
+  {
+    "id": 27,
+    "start": 375.0,
+    "end": 390.0,
+    "dur": 15.0,
+    "clip": "brooklyn_apartments.jpg",
+    "blur": true,
+    "card": "ConspiracyPinBoard",
+    "sfx": "`sfx_whoosh.wav` (-16dB)"
+  },
+  {
+    "id": 28,
+    "start": 390.0,
+    "end": 405.0,
+    "dur": 15.0,
+    "clip": "scene4_02_bright_interior.mp4",
+    "blur": true,
+    "card": "PhotoPolaroidPin",
+    "sfx": "`sfx_data_blip.wav` (-16dB)"
+  },
+  {
+    "id": 29,
+    "start": 405.0,
+    "end": 425.0,
+    "dur": 20.0,
+    "clip": "action_08_cannon_barrage.mp4",
+    "blur": false,
+    "card": "None (Living Canvas Spine)",
+    "sfx": "`cinematic-impact-boom.mp3` (-10dB)"
+  },
+  {
+    "id": 30,
+    "start": 425.0,
+    "end": 445.0,
+    "dur": 20.0,
+    "clip": "scene5_01_python_coding.mp4",
+    "blur": true,
+    "card": "TerminalCodeBlock",
+    "sfx": "`sfx_whoosh.wav` (-16dB)"
+  },
+  {
+    "id": 31,
+    "start": 445.0,
+    "end": 465.0,
+    "dur": 20.0,
+    "clip": "scene5_02_laptop_terminal.mp4",
+    "blur": true,
+    "card": "AnimatedBarChart",
+    "sfx": "`sfx_data_blip.wav` (-16dB)"
+  },
+  {
+    "id": 32,
+    "start": 465.0,
+    "end": 485.0,
+    "dur": 20.0,
+    "clip": "scene5_03_server_datacenter.mp4",
+    "blur": true,
+    "card": "RoughSketchChart",
+    "sfx": "`sfx_sub_boom.wav` (-12dB)"
+  },
+  {
+    "id": 33,
+    "start": 485.0,
+    "end": 510.0,
+    "dur": 25.0,
+    "clip": "action_09_ship_chase.mp4",
+    "blur": false,
+    "card": "None (Living Canvas Spine)",
+    "sfx": "`sfx_whoosh.wav` (-16dB)"
+  },
+  {
+    "id": 34,
+    "start": 510.0,
+    "end": 530.0,
+    "dur": 20.0,
+    "clip": "scene6_01_empty_airport.mp4",
+    "blur": true,
+    "card": "ForensicHeadline",
+    "sfx": "`sfx_sub_boom.wav` (-12dB)"
+  },
+  {
+    "id": 35,
+    "start": 530.0,
+    "end": 550.0,
+    "dur": 20.0,
+    "clip": "scene6_02_wall_street_ticker.mp4",
+    "blur": true,
+    "card": "DocumentRedaction",
+    "sfx": "`sfx_whoosh.wav` (-16dB)"
+  },
+  {
+    "id": 36,
+    "start": 550.0,
+    "end": 575.0,
+    "dur": 25.0,
+    "clip": "nasdaq_times_square_billboards.jpg",
+    "blur": true,
+    "card": "AnimatedLineChart",
+    "sfx": "`cinematic-impact-boom.mp3` (-10dB)"
+  },
+  {
+    "id": 37,
+    "start": 575.0,
+    "end": 595.0,
+    "dur": 20.0,
+    "clip": "scene6_03_airplane_tarmac.mp4",
+    "blur": true,
+    "card": "ComparisonSplit",
+    "sfx": "`sfx_sub_boom.wav` (-12dB)"
+  },
+  {
+    "id": 38,
+    "start": 595.0,
+    "end": 615.0,
+    "dur": 20.0,
+    "clip": "action_10_boarding_prep.mp4",
+    "blur": false,
+    "card": "None (Living Canvas Spine)",
+    "sfx": "`sfx_whoosh.wav` (-16dB)"
+  },
+  {
+    "id": 39,
+    "start": 615.0,
+    "end": 645.0,
+    "dur": 30.0,
+    "clip": "scene7_01_house_chores.mp4",
+    "blur": true,
+    "card": "TornPaperReceipt",
+    "sfx": "`sfx_sub_boom.wav` (-12dB)"
+  },
+  {
+    "id": 40,
+    "start": 645.0,
+    "end": 675.0,
+    "dur": 30.0,
+    "clip": "scene7_02_city_protest.mp4",
+    "blur": true,
+    "card": "MagnifyingGlassDoc",
+    "sfx": "`sfx_whoosh.wav` (-16dB)"
+  },
+  {
+    "id": 41,
+    "start": 675.0,
+    "end": 705.0,
+    "dur": 30.0,
+    "clip": "barcelona_housing_protest.jpg",
+    "blur": true,
+    "card": "StatDonutGauge",
+    "sfx": "`sfx_data_blip.wav` (-16dB)"
+  },
+  {
+    "id": 42,
+    "start": 705.0,
+    "end": 735.0,
+    "dur": 30.0,
+    "clip": "action_11_high_seas_piracy.mp4",
+    "blur": false,
+    "card": "None (Living Canvas Spine)",
+    "sfx": "`sfx_sub_boom.wav` (-12dB)"
+  },
+  {
+    "id": 43,
+    "start": 735.0,
+    "end": 770.0,
+    "dur": 35.0,
+    "clip": "scene7_03_cleaning_chores.mp4",
+    "blur": true,
+    "card": "ComparisonSplit",
+    "sfx": "None"
+  },
+  {
+    "id": 44,
+    "start": 770.0,
+    "end": 810.0,
+    "dur": 40.0,
+    "clip": "action_12_deck_combat.mp4",
+    "blur": false,
+    "card": "None (Living Canvas Spine)",
+    "sfx": "`sfx_whoosh.wav` (-16dB)"
+  },
+  {
+    "id": 45,
+    "start": 810.0,
+    "end": 850.0,
+    "dur": 40.0,
+    "clip": "scene8_01_boutique_hotel.mp4",
+    "blur": true,
+    "card": "RankedListicleCard",
+    "sfx": "`sfx_sub_boom.wav` (-12dB)"
+  },
+  {
+    "id": 46,
+    "start": 850.0,
+    "end": 885.0,
+    "dur": 35.0,
+    "clip": "scene8_02_luggage_journey.mp4",
+    "blur": true,
+    "card": "RankedListicleCard",
+    "sfx": "`sfx_data_blip.wav` (-16dB)"
+  },
+  {
+    "id": 47,
+    "start": 885.0,
+    "end": 920.0,
+    "dur": 35.0,
+    "clip": "scene8_03_conference_keynote.mp4",
+    "blur": true,
+    "card": "RankedListicleCard",
+    "sfx": "`sfx_whoosh.wav` (-16dB)"
+  },
+  {
+    "id": 48,
+    "start": 920.0,
+    "end": 956.8,
+    "dur": 36.8,
+    "clip": "scene8_04_travel_passport.mp4",
+    "blur": true,
+    "card": "TimelineMilestoneFlow",
+    "sfx": "`cinematic-impact-boom.mp3` (-10dB)"
+  }
+]

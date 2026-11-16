@@ -25,7 +25,7 @@ export const TimelineMilestoneFlow: React.FC<TimelineMilestoneFlowProps> = ({
     {
       date: "OCT 2007",
       title: "THE $80 AIRBED",
-      desc: "3 air mattresses on living room floor pays $1,150 rent.",
+      desc: "3 air mattresses on living room floor pays $1,100 rent.",
       active: false,
     },
     {

@@ -35,27 +35,27 @@ export const MagnifyingGlassDoc: React.FC<MagnifyingGlassDocProps> = ({
   });
   const opacity = interpolate(frame, [0, 8], [0, 1], { extrapolateRight: "clamp" });
 
-  // Magnifying glass horizontal sweep (frames 15 to 70)
-  const lensProgress = interpolate(frame, [15, 70], [0, 1], {
+  // Magnifying glass horizontal sweep (frames 10 to 45)
+  const lensProgress = interpolate(frame, [10, 45], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
   const lensX = interpolate(lensProgress, [0, 1], [-180, 240]);
   const lensY = Math.sin(frame / 10) * 8;
 
-  // Yellow highlighter sweep under magnified text (frames 20 to 65)
-  const highlightWidth = interpolate(frame, [20, 65], [0, 100], {
+  // Yellow highlighter sweep under magnified text (frames 14 to 42)
+  const highlightWidth = interpolate(frame, [14, 42], [0, 100], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
 
-  // Forensic stamp slam at frame 55
+  // Forensic stamp slam at frame 34
   const stampSpring = spring({
-    frame: Math.max(0, frame - 55),
+    frame: Math.max(0, frame - 34),
     fps,
     config: { damping: 9, mass: 0.5, stiffness: 180 },
   });
-  const stampOpacity = interpolate(frame, [55, 60], [0, 1], { extrapolateRight: "clamp" });
+  const stampOpacity = interpolate(frame, [34, 38], [0, 1], { extrapolateRight: "clamp" });
 
   return (
     <div
@@ -138,13 +138,13 @@ export const MagnifyingGlassDoc: React.FC<MagnifyingGlassDocProps> = ({
         {/* Legal Document Content Plate */}
         <div
           style={{
-            backgroundColor: "rgba(255, 255, 255, 0.03)",
-            border: "1px solid rgba(255, 255, 255, 0.08)",
-            borderRadius: "14px",
-            padding: "36px 42px",
-            fontSize: "23px",
-            lineHeight: 1.65,
-            color: theme.colors.textMuted,
+            backgroundColor: "rgba(255, 255, 255, 0.04)",
+            border: "1px solid rgba(255, 255, 255, 0.12)",
+            borderRadius: "16px",
+            padding: "40px 48px",
+            fontSize: "27px",
+            lineHeight: 1.6,
+            color: theme.colors.textWhite,
             position: "relative",
           }}
         >

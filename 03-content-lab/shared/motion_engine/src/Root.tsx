@@ -47,6 +47,26 @@ import { CurtainSwipeReveal } from "./components/typography/CurtainSwipeReveal";
 // High-CTR YouTube Thumbnail Suite
 import { ThumbnailStudio } from "./components/packaging/ThumbnailStudio";
 
+// Viral Vertical Shorts Suite
+import { AIEnergyShockShort } from "./compositions/shorts/AIEnergyShockShort";
+import { MagnatesNoirShort } from "./compositions/shorts/MagnatesNoirShort";
+import { MemoryLieShort } from "./compositions/shorts/MemoryLieShort";
+import { L06ForensicOverlay } from "./compositions/L06ForensicOverlay";
+import { L06VerticalShortOverlay } from "./compositions/shorts/L06VerticalShortOverlay";
+
+// Hybrid 2D Doodle Test Suite
+import { HybridDoodleTest } from "./compositions/tests/HybridDoodleTest";
+import { DoodleMultiPositionTest } from "./compositions/tests/DoodleMultiPositionTest";
+import { BenchmarkHybridScene } from "./compositions/tests/BenchmarkHybridScene";
+import { DualCastShowcaseScene } from "./compositions/tests/DualCastShowcaseScene";
+import { OwlCharacterDesignSheet } from "./compositions/doodle/OwlCharacterDesignSheet";
+import { OwlBustIsolated } from "./compositions/doodle/OwlBustIsolated";
+import { UserOwlComparison } from "./compositions/doodle/UserOwlComparison";
+import { ThinkLateCommercialBroadcastScene } from "./compositions/tests/ThinkLateCommercialBroadcastScene";
+import { DoodleCharacterAnimationTest } from "./compositions/tests/DoodleCharacterAnimationTest";
+import { HybridDocumentaryDemoClip } from "./compositions/tests/HybridDocumentaryDemoClip";
+import { CommercialBroadcastSpot8s } from "./compositions/broadcast/CommercialBroadcastSpot8s";
+
 export const RemotionRoot: React.FC = () => {
   return (
     <>
@@ -64,7 +84,7 @@ export const RemotionRoot: React.FC = () => {
           badgeText: "PRIMARY EVIDENCE // EVICTION NOTICE",
           badgeType: "warning",
           title: "OCTOBER 2007: 72 HOURS FROM STREET",
-          quote: "Your rent is $1,150. You have three days before your landlord kicks you out and your bank account is empty.",
+          quote: "Your rent is $1,100. You have three days before your landlord kicks you out and your bank account is empty.",
           highlightWords: "three days before your landlord kicks you out",
           sourceDoc: "SAN FRANCISCO RESIDENTIAL TENANCY RECORD #4092",
           dateStr: "OCTOBER 14, 2007",
@@ -302,7 +322,7 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         defaultProps={{
-          line1: "OCTOBER 2007: $1,150 OVERDUE RENT",
+          line1: "OCTOBER 2007: $1,100 OVERDUE RENT",
           line2: "3 AIRBEDS ON A LIVING ROOM RUG",
           subtext: "THE EMBARRASSING DESPERATE HUSTLE THAT HIJACKED AN INDUSTRY",
         }}
@@ -405,7 +425,7 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
         defaultProps={{
           icon: "✦",
-          pillText: "$1,150 OVERDUE RENT // 72 HOURS TO EVICTION",
+          pillText: "$1,100 OVERDUE RENT // 72 HOURS TO EVICTION",
           subtext: "CRITICAL TURNING POINT",
           variant: "lime",
           position: "center",
@@ -480,7 +500,7 @@ export const RemotionRoot: React.FC = () => {
           badgeText: "HISTORICAL SEQUENCE // CRITICAL TURNING POINTS",
           title: "THE 4-STAGE BOOTSTRAP TO UNICORN VELOCITY",
           milestones: [
-            { date: "OCT 2007", title: "THE $80 AIRBED", desc: "3 air mattresses on living room floor pays $1,150 rent.", active: false },
+            { date: "OCT 2007", title: "THE $80 AIRBED", desc: "3 air mattresses on living room floor pays $1,100 rent.", active: false },
             { date: "AUG 2008", title: "OBAMA O'S CEREAL", desc: "$30K election cereal boxes bootstrap 3 months runway.", active: false },
             { date: "JAN 2009", title: "Y COMBINATOR RESCUE", desc: "Paul Graham: 'If you can sell $40 cereal, you won't die.'", active: true },
             { date: "NOV 2011", title: "$1B VALUATION", desc: "Global disruption of the legacy hotel cartel finalized.", active: false },
@@ -583,7 +603,7 @@ export const RemotionRoot: React.FC = () => {
           photoUrl: "",
           statusBadge: "SUBJECT DOSSIER // ASYMMETRIC FOUNDER",
           stats: [
-            { label: "OCTOBER 2007 RENT", value: "$1,150 (OVERDUE)", color: "#EF4444" },
+            { label: "OCTOBER 2007 RENT", value: "$1,100 (OVERDUE)", color: "#EF4444" },
             { label: "FIRST REVENUE", value: "$240 (3 AIRBEDS)", color: "#00F0FF" },
             { label: "CEREAL SEED CAPITAL", value: "$30,000 CASH", color: "#F59E0B" },
             { label: "PEAK VALUATION", value: "$100,000,000,000", color: "#10B981" },
@@ -790,21 +810,21 @@ export const RemotionRoot: React.FC = () => {
         }}
       />
       {/* ============================================================== */}
-      {/* 3. HIGH-CTR PACKAGING SUITE (YouTube Thumbnail Studio 1280x720)*/}
+      {/* 3. HIGH-CTR PACKAGING SUITE (YouTube Thumbnail Studio 1920x1080)*/}
       {/* ============================================================== */}
       <Composition
         id="ThumbnailStudio"
         component={ThumbnailStudio as any}
         durationInFrames={30}
         fps={30}
-        width={1280}
-        height={720}
+        width={1920}
+        height={1080}
         defaultProps={{
           channel: "thinklate",
           style: "magnates_brand",
-          headlineTop: "THE INSANE",
-          headlineBottom: "HEIST OF $100B",
-          badgeText: "CRIMINAL EXPOSE",
+          headlineTop: "THE $300",
+          headlineBottom: "CHORE",
+          badgeText: "VACATION EXPOSÉ",
           badgeColor: "#FF2A4B",
           brandLogoType: "airbnb",
           statPins: [
@@ -814,6 +834,84 @@ export const RemotionRoot: React.FC = () => {
           ],
           accentStamp: "EXPOSED"
         }}
+      />
+      <Composition
+        id="ThumbnailConceptA"
+        component={ThumbnailStudio as any}
+        durationInFrames={30}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          conceptPreset: "concept_a_center_focal_point"
+        }}
+      />
+      <Composition
+        id="ThumbnailConceptB"
+        component={ThumbnailStudio as any}
+        durationInFrames={30}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          conceptPreset: "concept_b_asymmetric_rule_of_thirds"
+        }}
+      />
+      <Composition
+        id="ThumbnailConceptC"
+        component={ThumbnailStudio as any}
+        durationInFrames={30}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          conceptPreset: "concept_c_minimalist_hero_object"
+        }}
+      />
+      {/* ============================================================== */}
+      {/* 4. VIRAL VERTICAL SHORTS SUITE (9:16 1080x1920)                */}
+      {/* ============================================================== */}
+      <Composition
+        id="MagnatesNoirShort"
+        component={MagnatesNoirShort}
+        durationInFrames={1575}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="AIEnergyShockShort"
+        component={AIEnergyShockShort}
+        durationInFrames={1788}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="MemoryLieShort"
+        component={MemoryLieShort}
+        durationInFrames={1122}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="L06ForensicOverlay"
+        component={L06ForensicOverlay as any}
+        durationInFrames={23}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{}}
+      />
+      <Composition
+        id="L06VerticalShortOverlay"
+        component={L06VerticalShortOverlay as any}
+        durationInFrames={12}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{}}
       />
     </>
   );
