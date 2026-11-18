@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recording Deck — Why 200,000 Tech Workers Really Got Fired | ThinkLate L08</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #080C14; --card: #0F1626; --bdr: #1E2C48; --txt: #F1F5F9; --dim: #94A3B8;
+      --cyan: #06B6D4; --amber: #F59E0B; --lime: #E2FF00; --crimson: #FF2A4B;
+      --fs: 30px; --lh: 1.95;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--txt); font-family: 'Plus Jakarta Sans', sans-serif; font-size: var(--fs); line-height: var(--lh); padding-bottom: 260px; }
+    #pgwrap { position: fixed; top: 0; left: 0; width: 100%; height: 5px; background: rgba(255,255,255,.05); z-index: 200; }
+    #pg { height: 100%; width: 0%; background: linear-gradient(90deg, var(--cyan), var(--lime)); transition: width .1s; }
+    nav { position: fixed; top: 5px; left: 0; right: 0; z-index: 100; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 24px; background: rgba(8,12,20,0.96); backdrop-filter: blur(14px); border-bottom: 1px solid var(--bdr); }
+    .nav-left { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+    .brand { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 800; color: var(--lime); letter-spacing: 1px; }
+    .nav-tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+    .act-tab { color: var(--dim); text-decoration: none; font-size: 12px; font-weight: 700; padding: 5px 11px; border-radius: 6px; background: rgba(255,255,255,.04); font-family: 'JetBrains Mono', monospace; }
+    .act-tab:hover { color: #FFF; background: rgba(6,182,212,.15); }
+    .hud { display: flex; align-items: center; gap: 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+    .timer { color: var(--lime); font-size: 19px; font-weight: 800; }
+    .btn { background: rgba(255,255,255,.08); color: #FFF; border: 1px solid var(--bdr); padding: 6px 11px; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 700; }
+    main { max-width: 980px; margin: 92px auto 0; padding: 0 22px; }
+    .beat-card { background: var(--card); border: 1px solid var(--bdr); border-radius: 16px; padding: 32px 38px; margin-bottom: 34px; box-shadow: 0 12px 32px rgba(0,0,0,0.4); }
+    .beat-title { font-size: 24px; font-weight: 800; color: #FFF; margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .debate-cue { display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 800; padding: 3px 10px; border-radius: 6px; margin: 16px 0 8px; background: rgba(6,182,212,.16); color: var(--cyan); border: 1px solid var(--cyan); }
+    .line { margin-bottom: 12px; color: #F1F5F9; font-weight: 600; }
+    .b-full { display: inline-block; background: rgba(6,182,212,.2); color: var(--cyan); border: 1px solid var(--cyan); border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 800; padding: 0 5px; margin: 0 3px; }
+    .b-half { display: inline-block; background: rgba(245,158,11,.2); color: var(--amber); border: 1px solid var(--amber); border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 800; padding: 0 5px; margin: 0 3px; }
+    .vis-pill { background: rgba(148,163,184,.1); border-left: 4px solid var(--dim); padding: 8px 14px; border-radius: 6px; font-size: 15px; color: var(--dim); margin: 12px 0; font-family: 'JetBrains Mono', monospace; }
+    .sfx-pill { background: rgba(226,255,0,.08); border-left: 4px solid var(--lime); padding: 7px 14px; border-radius: 6px; font-size: 14px; color: var(--lime); margin: 10px 0; font-family: 'JetBrains Mono', monospace; }
+    .deadair-pill { background: rgba(255,42,75,.12); border: 2px dashed var(--crimson); padding: 10px 16px; border-radius: 8px; font-size: 15px; color: var(--crimson); margin: 14px 0; font-family: 'JetBrains Mono', monospace; font-weight: 700; text-align: center; }
+    .hide-vis .vis-pill { display: none !important; }
+  </style>
+</head>
+<body>
+  <div id="pgwrap"><div id="pg"></div></div>
+  <nav>
+    <div class="nav-left">
+      <div class="brand">THINKLATE // L08 SOLO SELF-DEBATE</div>
+      <div class="nav-tabs">
+        <a href="#q1" class="act-tab">Q1: 200K Fired</a>
+        <a href="#q2" class="act-tab">Q2: OpEx vs CapEx</a>
+        <a href="#q3" class="act-tab">Q3: 30% Rehire</a>
+        <a href="#q4" class="act-tab">Q4: $3.5T Risk</a>
+        <a href="#q5" class="act-tab">Q5: Open Loop</a>
+      </div>
+    </div>
+    <div class="hud">
+      <div class="timer" id="timer">00:00</div>
+      <button class="btn" onclick="toggleTimer()">⏱️ START</button>
+      <button class="btn" onclick="toggleVisuals()">👁️ VISUALS</button>
+      <button class="btn" onclick="adjustFont(2)">A+</button>
+      <button class="btn" onclick="adjustFont(-2)">A-</button>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="beat-card" id="q1" style="border-top:4px solid #06B6D4;">
+      <div class="beat-title">Q1: Why Did Profitable Tech Giants Fire 200,000 Workers?</div>
+      <div class="vis-pill"><strong>[VISUAL]</strong> Slack "Account Deactivated" screen next to record corporate profit banner</div>
+      <div class="sfx-pill"><strong>[SFX]</strong> camera_vintage_shutter.mp3</div>
+      <p class="line">Picture a Tuesday morning in Bangalore <span class="b-half">//</span> or Austin, Texas. <span class="b-full">///</span> A senior software developer <span class="b-half">//</span> opens her laptop <span class="b-half">//</span> at seven a.m. <span class="b-full">///</span> Her coffee is still hot. <span class="b-full">///</span> Her company just posted <span class="b-half">//</span> another multi-billion-dollar profit! <span class="b-full">///</span> She clicks Slack... <span class="b-half">//</span> and sees three words. <span class="b-full">///</span> Account deactivated. <span class="b-full">///</span></p>
+      <p class="line">Over the past year, <span class="b-half">//</span> TrueUp tracked <span class="b-half">//</span> over two hundred thousand tech workers <span class="b-half">//</span> swept out the door. <span class="b-full">///</span> Meta. <span class="b-half">//</span> Amazon. <span class="b-half">//</span> Microsoft. <span class="b-half">//</span> Oracle, cutting roughly twenty-one thousand roles <span class="b-half">//</span> while pointing at AI! <span class="b-full">///</span> Even Canva joined in. <span class="b-full">///</span></p>
+      <div class="sfx-pill"><strong>[SFX]</strong> paper_slide_document.mp3</div>
+      <div class="debate-cue">SELF-DEBATE PIVOT (SKEPTIC QUESTION)</div>
+      <p class="line">"Hold on... <span class="b-half">//</span> these companies aren't going broke! <span class="b-full">///</span> Their cloud divisions are booming! <span class="b-full">///</span> Why would profitable giants fire engineers <span class="b-half">//</span> while bragging about record revenue?" <span class="b-full">///</span></p>
+      <p class="line">Fair question! <span class="b-full">///</span> They didn't replace coders <span class="b-half">//</span> with artificial intelligence. <span class="b-full">///</span> They raided human payroll <span class="b-half">//</span> to pay their GPU bill! <span class="b-full">///</span> Stay to the end of this video, <span class="b-half">//</span> because you will see <span class="b-half">//</span> the exact accounting trap <span class="b-half">//</span> you must avoid <span class="b-half">//</span> before companies panic-hire <span class="b-half">//</span> in twenty twenty-nine. <span class="b-full">///</span></p>
+      <div class="sfx-pill"><strong>[SFX]</strong> sub_impact_warm_knocking.mp3</div>
+    </section>
+
+    <section class="beat-card" id="q2" style="border-top:4px solid #F59E0B;">
+      <div class="beat-title">Q2: How Does One Accounting Trick Turn Humans Into GPUs?</div>
+      <div class="vis-pill"><strong>[VISUAL]</strong> Split ledger: Quarterly OpEx Salary Drain vs 5-Year CapEx GPU Depreciation</div>
+      <p class="line">Pay a software engineer <span class="b-half">//</span> one hundred fifty thousand dollars a year. <span class="b-full">///</span> Every dollar of human pay <span class="b-half">//</span> hits this quarter's profit margin <span class="b-half">//</span> immediately! <span class="b-full">///</span></p>
+      <div class="sfx-pill"><strong>[SFX]</strong> paper_slide_document.mp3</div>
+      <div class="debate-cue">SELF-DEBATE PIVOT (THE GPU QUESTION)</div>
+      <p class="line">Now turn around <span class="b-half">//</span> and spend ten billion dollars <span class="b-half">//</span> buying Nvidia server chips! <span class="b-full">///</span> Wait... <span class="b-half">//</span> shouldn't ten billion dollars <span class="b-half">//</span> crush quarterly profits way harder?! <span class="b-full">///</span> Except accountants park data centers <span class="b-half">//</span> under capital expenditures! <span class="b-full">///</span> Stretched quietly across four <span class="b-half">//</span> or five years! <span class="b-full">///</span></p>
+      <p class="line">Harvard Business School analysts <span class="b-half">//</span> even gave this stunt <span class="b-half">//</span> an honest label: <span class="b-half">//</span> AI-washing! <span class="b-full">///</span> Across Silicon Valley, <span class="b-half">//</span> engineering warnings got rejected. <span class="b-full">///</span></p>
+      <div class="sfx-pill"><strong>[SFX]</strong> whoosh_tunnel_smooth.mp3</div>
+    </section>
+
+    <section class="beat-card" id="q3" style="border-top:4px solid #E2FF00;">
+      <div class="beat-title">Q3: Why Will 30% of "AI-Replaced" Workers Be Rehired?</div>
+      <div class="vis-pill"><strong>[VISUAL]</strong> Gartner 2026–2029 Rehire Boomerang Chart + Junior Hiring Freeze Pipeline</div>
+      <div class="debate-cue">SELF-DEBATE PIVOT (DEVIL'S ADVOCATE)</div>
+      <p class="line">"What if AI really CAN <span class="b-half">//</span> replace two hundred thousand developers?!" <span class="b-full">///</span> First, companies quietly froze <span class="b-half">//</span> over one point three million <span class="b-half">//</span> future jobs! <span class="b-full">///</span></p>
+      <div class="sfx-pill"><strong>[SFX]</strong> camera_vintage_shutter.mp3</div>
+      <p class="line">By twenty twenty-nine, <span class="b-half">//</span> thirty percent of workers <span class="b-half">//</span> prematurely replaced by AI <span class="b-half">//</span> will have to be rehired! <span class="b-full">///</span> Often at much higher pay! <span class="b-full">///</span> An autocomplete model doesn't wake up <span class="b-half">//</span> at two a.m. <span class="b-half">//</span> when a payment gateway crashes! <span class="b-full">///</span></p>
+      <p class="line">By twenty-thirty, <span class="b-half">//</span> AI removes eight point nine million roles <span class="b-half">//</span> while creating ten point six million <span class="b-half">//</span> new jobs—a net gain <span class="b-half">//</span> of one point seven million positions! <span class="b-full">///</span></p>
+      <div class="sfx-pill"><strong>[SFX]</strong> sub_impact_warm_knocking.mp3</div>
+    </section>
+
+    <section class="beat-card" id="q4" style="border-top:4px solid #FF2A4B;">
+      <div class="beat-title">Q4: Who Pays for the $3.5 Trillion Data Center Hangover?</div>
+      <div class="vis-pill"><strong>[VISUAL]</strong> Colossal Crimson Data Center Towering Over Cubicles + Gartner $3.5T Ledger</div>
+      <p class="line">Over three point five trillion dollars <span class="b-half">//</span> of AI infrastructure spending <span class="b-half">//</span> could face asset write-downs <span class="b-half">//</span> and impairments by twenty-thirty! <span class="b-full">///</span></p>
+      <div class="sfx-pill"><strong>[SFX]</strong> camera_vintage_shutter.mp3</div>
+      <p class="line">Over eighty percent <span class="b-half">//</span> of independent neocloud providers <span class="b-half">//</span> face existential collapse! <span class="b-full">///</span></p>
+      <div class="deadair-pill">[DEAD AIR: 1.5s COMPLETE SILENCE]</div>
+      <p class="line">If that server rack <span class="b-half">//</span> doesn't print massive cash <span class="b-half">//</span> before it turns obsolete... <span class="b-full">///</span> that hidden capital bill <span class="b-half">//</span> explodes straight back <span class="b-half">//</span> as a write-down disaster! <span class="b-full">///</span></p>
+      <div class="sfx-pill"><strong>[SFX]</strong> paper_slide_document.mp3</div>
+    </section>
+
+    <section class="beat-card" id="q5" style="border-top:4px solid #06B6D4;">
+      <div class="beat-title">Q5: What Happens to Real Builders — &amp; Open Loop to L09</div>
+      <div class="vis-pill"><strong>[VISUAL]</strong> Empty Engineering Desk vs Server Rack + Next-Episode SK Hynix / Micron HBM Lockup Card</div>
+      <p class="line">The developers who kept building <span class="b-half">//</span> real systems, <span class="b-half">//</span> owning messy production architecture, <span class="b-half">//</span> and staying close to paying customers <span class="b-half">//</span> hold every card at the table! <span class="b-full">///</span></p>
+      <div class="debate-cue">OPEN LOOP TO L09 (RAM &amp; GPU PRICES)</div>
+      <div class="sfx-pill"><strong>[SFX]</strong> whoosh_tunnel_smooth.mp3</div>
+      <p class="line">Memory giants like SK Hynix <span class="b-half">//</span> and Micron <span class="b-half">//</span> already locked wafer lines <span class="b-half">//</span> through twenty twenty-eight <span class="b-half">//</span> and twenty twenty-nine! <span class="b-full">///</span> Keep building your own leverage... <span class="b-half">//</span> because nobody in a boardroom <span class="b-half">//</span> is building it for you. <span class="b-full">///</span></p>
+    </section>
+  </main>
+
+  <script>
+    let s = 0, iv = null, fs = 30;
+    function toggleTimer() {
+      if (iv) { clearInterval(iv); iv = null; }
+      else { iv = setInterval(() => { s++; document.getElementById('timer').textContent = String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0'); }, 1000); }
+    }
+    function toggleVisuals() { document.body.classList.toggle('hide-vis'); }
+    function adjustFont(d) { fs = Math.max(18, Math.min(48, fs + d)); document.documentElement.style.setProperty('--fs', fs + 'px'); }
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement.scrollHeight - window.innerHeight;
+      document.getElementById('pg').style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + '%';
+    });
+  </script>
+</body>
+</html>

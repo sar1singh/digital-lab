@@ -1,0 +1,179 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      background: #111318;
+      color: #f8fafc;
+      font-family: "Montserrat", sans-serif;
+      overflow: hidden;
+    }
+    .term-panel {
+      position: absolute;
+      left: 112px;
+      top: 146px;
+      width: 1080px;
+      height: 710px;
+      background: #181c24;
+      border: 3px solid #2b3240;
+      border-radius: 12px;
+      padding: 38px 46px;
+    }
+    .term-top {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 28px;
+      color: #94a3b8;
+      margin-bottom: 26px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px solid #2b3240;
+      padding-bottom: 18px;
+    }
+    .code-line {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 28px;
+      line-height: 1.65;
+      color: #4ade80;
+    }
+    .code-warn {
+      color: #fbbf24;
+    }
+    .code-err {
+      color: #f87171;
+    }
+    .outage-alert {
+      position: absolute;
+      left: 44px;
+      right: 44px;
+      bottom: 44px;
+      background: #d92d20;
+      color: #ffffff;
+      border: 4px solid #ffffff;
+      padding: 28px 34px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+    .alert-h {
+      font-size: 46px;
+      font-weight: 900;
+      letter-spacing: -1px;
+    }
+    .alert-sub {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 28px;
+      margin-top: 8px;
+      color: #fef2f2;
+    }
+    .final-poster {
+      position: absolute;
+      left: 112px;
+      top: 235px;
+      width: 1100px;
+    }
+    .fp-line1 {
+      font-size: 98px;
+      font-weight: 900;
+      letter-spacing: -3.5px;
+      line-height: 1.02;
+      color: #ffffff;
+    }
+    .fp-line2 {
+      font-size: 112px;
+      font-weight: 900;
+      letter-spacing: -4px;
+      line-height: 1.02;
+      color: #ef4444;
+      margin-top: 12px;
+    }
+    .fp-brand {
+      margin-top: 44px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 29px;
+      font-weight: 700;
+      color: #facc15;
+      letter-spacing: 3px;
+    }
+    .eddy-stage {
+      position: absolute;
+      right: 68px;
+      bottom: 58px;
+      width: 650px;
+      height: 800px;
+    }
+  </style>
+
+  <div id="root" data-composition-id="scene_4_outage" data-width="1920" data-height="1080">
+    <!-- Terminal Outage Stage -->
+    <div id="s4-term" class="term-panel clip" data-start="0" data-duration="8.77">
+      <div class="term-top">
+        <span>payment-gateway/checkout.ts</span>
+        <span id="s4-clock">02:00:14 AM</span>
+      </div>
+      <div id="s4-code1" class="code-line">// AI Autocomplete: boilerplate OK (124ms)</div>
+      <div id="s4-code2" class="code-line">export async function chargeCard(req) &#123; return ok; &#125;</div>
+      <div id="s4-code3" class="code-line code-warn">! retryLedgerSync(): stale lock in cluster-b</div>
+      <div id="s4-code4" class="code-line code-err">ERR_502: unhandled race @ tx_commit:442</div>
+
+      <div id="s4-alert" class="outage-alert">
+        <div class="alert-h">502 BAD GATEWAY // PROD DOWN</div>
+        <div class="alert-sub">AUTOCOMPLETE STATUS: CANNOT DEBUG LEGACY STATE @ 02:00 AM</div>
+      </div>
+    </div>
+
+    <!-- Final Stark Poster (>= 2.3s clean hold) -->
+    <div id="s4-poster" class="final-poster clip" data-start="5.55" data-duration="3.22">
+      <div id="s4-fp1" class="fp-line1">THEY FIRED PAYROLL</div>
+      <div id="s4-fp2" class="fp-line2">TO RENT GPUs.</div>
+      <div id="s4-brand" class="fp-brand">THINKLATE // @wethinklate</div>
+    </div>
+
+    <!-- Canonical Black-Ink Eddy inside Studio Spotlight Pad -->
+    <div id="s4-eddy-box" class="eddy-stage clip" data-start="0" data-duration="8.77"></div>
+  </div>
+
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    const eddyRig = window.ThinkLateEddyRig.createEddyRig({
+      container: document.getElementById("s4-eddy-box"),
+      prefix: "s4",
+      darkGround: true,
+      wordWindows: [
+        [0.26,0.60],[0.60,1.64],[1.64,2.34],
+        [2.86,3.50],[3.50,3.94],[3.94,4.40],[4.40,5.08],[5.08,6.10],
+        [6.10,6.72],[6.72,7.20],[7.20,7.84],[7.84,8.74]
+      ],
+      keyframes: [
+        { at: 0.0, pose: "CURIOUS", dur: 0.35 },
+        { at: 2.84, pose: "TERRIFIED", dur: 0.32 },
+        { at: 6.02, pose: "SMUG", dur: 0.38 }
+      ],
+      emotes: [
+        { at: 2.86, end: 5.65, kind: "storm_cloud" },
+        { at: 6.08, end: 8.75, kind: "sparkles" }
+      ],
+      lookTargets: [
+        { at: 0.0, x: -3, y: 0 },
+        { at: 2.86, x: 0, y: 2 },
+        { at: 6.05, x: -3, y: 0 }
+      ]
+    });
+
+    tl.fromTo("#s4-code1", { opacity: 0, x: -16 }, { opacity: 1, x: 0, duration: 0.24, ease: "power3.out" }, 0.22);
+    tl.fromTo("#s4-code2", { opacity: 0, x: -16 }, { opacity: 1, x: 0, duration: 0.24, ease: "power3.out" }, 0.80);
+    tl.fromTo("#s4-code3", { opacity: 0, x: -16 }, { opacity: 1, x: 0, duration: 0.24, ease: "power3.out" }, 1.55);
+    tl.fromTo("#s4-code4", { opacity: 0, x: -16 }, { opacity: 1, x: 0, duration: 0.24, ease: "power3.out" }, 2.25);
+
+    tl.fromTo("#s4-alert", { opacity: 0, y: 24, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.32, ease: "back.out(1.4)" }, 2.86);
+
+    tl.to("#s4-term", { opacity: 0, scale: 0.94, y: -18, duration: 0.24, ease: "power3.in" }, 5.45);
+    tl.fromTo("#s4-fp1", { opacity: 0, y: 20, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.24, ease: "power4.out" }, 5.72);
+    tl.fromTo("#s4-fp2", { opacity: 0, y: 24, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.28, ease: "back.out(1.3)" }, 6.08);
+    tl.fromTo("#s4-brand", { opacity: 0 }, { opacity: 1, duration: 0.26, ease: "power2.out" }, 6.38);
+
+    tl.eventCallback("onUpdate", () => {
+      eddyRig.render(tl.time());
+    });
+
+    window.__timelines["scene_4_outage"] = tl;
+  </script>
+</template>

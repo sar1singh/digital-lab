@@ -1,0 +1,1254 @@
+{
+  "ok": false,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": false,
+    "errorCount": 1,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "audio_src_not_found",
+        "severity": "error",
+        "message": "<audio> element references file(s) not found in the project: assets/sfx/camera_vintage_shutter.mp3, assets/sfx/paper_slide_document.mp3, assets/sfx/sub_impact_warm_knocking.mp3. The rendered video will be silent.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\sar1s\\Documents\\MyWork\\Git\\digital-lab\\03-content-lab\\thinklate\\videos\\shortForm\\S06_30-percent-ai-rehire-trap\\hf_pilot_demo\\project\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add the missing files to the project directory, or update the src attributes to point to existing files."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "This HTML file has 4 timed elements. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\sar1s\\Documents\\MyWork\\Git\\digital-lab\\03-content-lab\\thinklate\\videos\\shortForm\\S06_30-percent-ai-rehire-trap\\hf_pilot_demo\\project\\compositions\\scene_2_ledger.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "This HTML file has 4 timed elements. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\sar1s\\Documents\\MyWork\\Git\\digital-lab\\03-content-lab\\thinklate\\videos\\shortForm\\S06_30-percent-ai-rehire-trap\\hf_pilot_demo\\project\\compositions\\scene_3_gartner.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      }
+    ],
+    "filesScanned": 5
+  },
+  "runtime": {
+    "ok": false,
+    "errorCount": 18,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "http_error",
+        "severity": "error",
+        "message": "404 loading assets/sfx/camera_vintage_shutter.mp3",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "47.37",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:55468/assets/sfx/camera_vintage_shutter.mp3"
+      },
+      {
+        "code": "http_error",
+        "severity": "error",
+        "message": "404 loading assets/sfx/paper_slide_document.mp3",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "47.37",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:55468/assets/sfx/paper_slide_document.mp3"
+      },
+      {
+        "code": "http_error",
+        "severity": "error",
+        "message": "404 loading assets/sfx/sub_impact_warm_knocking.mp3",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "47.37",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:55468/assets/sfx/sub_impact_warm_knocking.mp3"
+      },
+      {
+        "code": "http_error",
+        "severity": "error",
+        "message": "404 loading assets/sfx/camera_vintage_shutter.mp3",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "47.37",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:55468/assets/sfx/camera_vintage_shutter.mp3"
+      },
+      {
+        "code": "http_error",
+        "severity": "error",
+        "message": "404 loading assets/sfx/sub_impact_warm_knocking.mp3",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "47.37",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:55468/assets/sfx/sub_impact_warm_knocking.mp3"
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "5 media element(s) failed to load (sfx-shutter-1, sfx-paper-1, sfx-shutter-2, sfx-impact-1, sfx-impact-2), so their slot vs. source fit was not checked. A longer --timeout will not help: check that the source exists and plays in Chrome.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "47.37",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 0
+      },
+      {
+        "code": "http_error",
+        "severity": "error",
+        "message": "404 loading assets/sfx/paper_slide_document.mp3",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "47.37",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 13.158,
+        "url": "http://127.0.0.1:55468/assets/sfx/paper_slide_document.mp3"
+      },
+      {
+        "code": "http_error",
+        "severity": "error",
+        "message": "404 loading assets/sfx/sub_impact_warm_knocking.mp3",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "47.37",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 44.738,
+        "url": "http://127.0.0.1:55468/assets/sfx/sub_impact_warm_knocking.mp3"
+      },
+      {
+        "code": "http_error",
+        "severity": "error",
+        "message": "404 loading assets/sfx/camera_vintage_shutter.mp3",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "47.37",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 1.375,
+        "url": "http://127.0.0.1:55468/assets/sfx/camera_vintage_shutter.mp3"
+      },
+      {
+        "code": "http_error",
+        "severity": "error",
+        "message": "404 loading assets/sfx/paper_slide_document.mp3",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "47.37",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 12.749,
+        "url": "http://127.0.0.1:55468/assets/sfx/paper_slide_document.mp3"
+      },
+      {
+        "code": "http_error",
+        "severity": "error",
+        "message": "404 loading assets/sfx/camera_vintage_shutter.mp3",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "47.37",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 24.747,
+        "url": "http://127.0.0.1:55468/assets/sfx/camera_vintage_shutter.mp3"
+      },
+      {
+        "code": "http_error",
+        "severity": "error",
+        "message": "404 loading assets/sfx/sub_impact_warm_knocking.mp3",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "47.37",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 31.497,
+        "url": "http://127.0.0.1:55468/assets/sfx/sub_impact_warm_knocking.mp3"
+      },
+      {
+        "code": "http_error",
+        "severity": "error",
+        "message": "404 loading assets/sfx/sub_impact_warm_knocking.mp3",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "47.37",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 44.745,
+        "url": "http://127.0.0.1:55468/assets/sfx/sub_impact_warm_knocking.mp3"
+      },
+      {
+        "code": "http_error",
+        "severity": "error",
+        "message": "404 loading assets/sfx/camera_vintage_shutter.mp3",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "47.37",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 0,
+        "timeRange": [
+          0,
+          1.852
+        ],
+        "url": "http://127.0.0.1:55468/assets/sfx/camera_vintage_shutter.mp3"
+      },
+      {
+        "code": "http_error",
+        "severity": "error",
+        "message": "404 loading assets/sfx/paper_slide_document.mp3",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "47.37",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 12.703,
+        "timeRange": [
+          12.703,
+          14.555
+        ],
+        "url": "http://127.0.0.1:55468/assets/sfx/paper_slide_document.mp3"
+      },
+      {
+        "code": "http_error",
+        "severity": "error",
+        "message": "404 loading assets/sfx/camera_vintage_shutter.mp3",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "47.37",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 23.288,
+        "timeRange": [
+          23.288,
+          25.141
+        ],
+        "url": "http://127.0.0.1:55468/assets/sfx/camera_vintage_shutter.mp3"
+      },
+      {
+        "code": "http_error",
+        "severity": "error",
+        "message": "404 loading assets/sfx/sub_impact_warm_knocking.mp3",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "47.37",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 29.639,
+        "timeRange": [
+          29.639,
+          31.492
+        ],
+        "url": "http://127.0.0.1:55468/assets/sfx/sub_impact_warm_knocking.mp3"
+      },
+      {
+        "code": "http_error",
+        "severity": "error",
+        "message": "404 loading assets/sfx/sub_impact_warm_knocking.mp3",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "47.37",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 44.459,
+        "timeRange": [
+          44.459,
+          46.311
+        ],
+        "url": "http://127.0.0.1:55468/assets/sfx/sub_impact_warm_knocking.mp3"
+      },
+      {
+        "code": "http_error",
+        "severity": "error",
+        "message": "404 loading assets/sfx/sub_impact_warm_knocking.mp3",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "47.37",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 45.4325,
+        "url": "http://127.0.0.1:55468/assets/sfx/sub_impact_warm_knocking.mp3"
+      }
+    ]
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 4,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 2.632,
+        "selector": "#s1-cam",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -12.63,
+          "top": -5.18,
+          "right": 1925.81,
+          "bottom": 1085.18,
+          "width": 1938.43,
+          "height": 1090.37
+        },
+        "containerSelector": "#scene_1_hook > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "left": 12.63,
+          "right": 5.81,
+          "top": 5.18,
+          "bottom": 5.18
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene_1_hook.html",
+        "bbox": {
+          "x": -12.63,
+          "y": -5.18,
+          "width": 1938.43,
+          "height": 1090.37
+        },
+        "firstSeen": 2.632,
+        "lastSeen": 7.895,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          2.632,
+          7.895
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 2.632,
+        "selector": "#s1-eddy-whole",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 1331.78,
+          "top": 321.01,
+          "right": 1941.8,
+          "bottom": 958.31,
+          "width": 610.02,
+          "height": 637.3
+        },
+        "containerSelector": "#s1-eddy-svg",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 1166.59,
+          "top": 192.7,
+          "right": 1832.92,
+          "bottom": 1020.57,
+          "width": 666.34,
+          "height": 827.87
+        },
+        "overflow": {
+          "right": 108.88
+        },
+        "dataAttributes": {
+          "data-hf-svg-reference-aliases": "[{\"name\":\"filter\",\"localName\":\"filter\",\"namespaceURI\":null,\"before\":\"url(#s1-ink-boil)\",\"after\":\"url(#s1-ink-boil)\"}]",
+          "data-svg-origin": "114 22"
+        },
+        "sourceFile": "compositions/scene_1_hook.html",
+        "bbox": {
+          "x": 1331.78,
+          "y": 321.01,
+          "width": 610.02,
+          "height": 637.3
+        },
+        "firstSeen": 2.632,
+        "lastSeen": 7.895,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          2.632,
+          7.895
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 24.611,
+        "selector": "div.capex-big",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 442,
+          "top": 410,
+          "right": 879.7,
+          "bottom": 467,
+          "width": 437.7,
+          "height": 57
+        },
+        "containerSelector": "span.hbs-sub",
+        "text": "$10B NVIDIA GPUs",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply. Decoration nobody needs to read can take data-layout-ignore.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene_2_ledger.html",
+        "bbox": {
+          "x": 442,
+          "y": 410,
+          "width": 437.7,
+          "height": 57
+        },
+        "firstSeen": 24.611,
+        "lastSeen": 24.611,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          24.611
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 24.611,
+        "selector": "div.capex-desc",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 442,
+          "top": 471,
+          "right": 908.2,
+          "bottom": 498,
+          "width": 466.2,
+          "height": 27
+        },
+        "containerSelector": "span.hbs-sub",
+        "text": "SPREAD ACROSS 5 YEARS OF DEPRECIATION",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply. Decoration nobody needs to read can take data-layout-ignore.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene_2_ledger.html",
+        "bbox": {
+          "x": 442,
+          "y": 471,
+          "width": 466.2,
+          "height": 27
+        },
+        "firstSeen": 24.611,
+        "lastSeen": 24.611,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          24.611
+        ]
+      }
+    ],
+    "duration": 47.37,
+    "samples": [
+      2.632,
+      7.895,
+      13.158,
+      18.422,
+      23.685,
+      28.948,
+      34.212,
+      39.475,
+      44.738
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 4,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      2.632,
+      13.158,
+      23.685,
+      34.212,
+      44.738
+    ],
+    "checked": 36,
+    "passed": 36
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 6,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 6 text elements stay under it for 0.5 s or more, the smallest \"07:02 AM // 401 ACCOUNT DEACTIVATED\" at 20 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "07:02 AM // 401 ACCOUNT DEACTIVATED",
+        "selector": "div.slack-meta",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene_1_hook.html",
+        "bbox": {
+          "x": 188.83,
+          "y": 673.66,
+          "width": 418.76,
+          "height": 25.92
+        },
+        "time": 1.375,
+        "times": [
+          0,
+          1.375,
+          1.375,
+          7.124,
+          8.124,
+          8.749
+        ],
+        "fontPx": 19.94,
+        "floorPx": 28,
+        "seconds": 4.499,
+        "elements": [
+          {
+            "selector": "div.slack-meta",
+            "text": "07:02 AM // 401 ACCOUNT DEACTIVATED",
+            "fontPx": 19.94,
+            "time": 1.375,
+            "seconds": 4.499
+          },
+          {
+            "selector": "div.slack-badge",
+            "text": "LOCKED",
+            "fontPx": 19.94,
+            "time": 1.375,
+            "seconds": 4.499
+          },
+          {
+            "selector": "#s1-eyebrow",
+            "text": "TRUEUP TECH TRACKER // 2026",
+            "fontPx": 22,
+            "time": 0,
+            "seconds": 5.874
+          },
+          {
+            "selector": "#slip-meta > span:nth-of-type(2)",
+            "text": "RECORD PROFIT",
+            "fontPx": 26.68,
+            "time": 7.124,
+            "seconds": 5.5
+          },
+          {
+            "selector": "#slip-amzn > span:nth-of-type(2)",
+            "text": "NOT GOING BROKE",
+            "fontPx": 26.78,
+            "time": 8.124,
+            "seconds": 4.5
+          },
+          {
+            "selector": "#slip-msft > span:nth-of-type(2)",
+            "text": "CLOUD BOOMING",
+            "fontPx": 26.84,
+            "time": 8.749,
+            "seconds": 3.875
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 20 text elements stay under it for 0.5 s or more, the smallest \"100% HIT Q1 NOW\" at 9 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "100% HIT Q1 NOW",
+        "selector": "div.col-sub",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene_2_ledger.html",
+        "bbox": {
+          "x": 203,
+          "y": 749.45,
+          "width": 125.5,
+          "height": 9.06
+        },
+        "time": 14.873,
+        "times": [
+          12.624,
+          12.874,
+          12.874,
+          12.874,
+          12.874,
+          12.874,
+          14.873,
+          14.873,
+          18.748,
+          20.998,
+          20.998,
+          21.248,
+          21.248,
+          21.373,
+          21.373,
+          21.623,
+          21.623,
+          21.873,
+          21.873,
+          24.747
+        ],
+        "fontPx": 8.69,
+        "floorPx": 28,
+        "seconds": 3.875,
+        "elements": [
+          {
+            "selector": "div.col-sub",
+            "text": "100% HIT Q1 NOW",
+            "fontPx": 8.69,
+            "time": 14.873,
+            "seconds": 3.875
+          },
+          {
+            "selector": "div.col-tag",
+            "text": "SALARIES (OpEx)",
+            "fontPx": 9.56,
+            "time": 14.873,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#s2-c3",
+            "text": "YR 3",
+            "fontPx": 12.74,
+            "time": 21.373,
+            "seconds": 6.249
+          },
+          {
+            "selector": "#s2-c3 > span:nth-of-type(1)",
+            "text": "20%",
+            "fontPx": 12.74,
+            "time": 21.373,
+            "seconds": 6.249
+          },
+          {
+            "selector": "#s2-c4",
+            "text": "YR 4",
+            "fontPx": 15.01,
+            "time": 21.623,
+            "seconds": 5.999
+          },
+          {
+            "selector": "#s2-c4 > span:nth-of-type(1)",
+            "text": "20%",
+            "fontPx": 15.01,
+            "time": 21.623,
+            "seconds": 5.999
+          },
+          {
+            "selector": "span.hbs-sub",
+            "text": "HARVARD BUSINESS SCHOOL ANALYSTS",
+            "fontPx": 16.96,
+            "time": 24.747,
+            "seconds": 2.875
+          },
+          {
+            "selector": "#s2-c1",
+            "text": "YR 1",
+            "fontPx": 17.93,
+            "time": 20.998,
+            "seconds": 6.624
+          },
+          {
+            "selector": "#s2-c1 > span:nth-of-type(1)",
+            "text": "20%",
+            "fontPx": 17.93,
+            "time": 20.998,
+            "seconds": 6.624
+          },
+          {
+            "selector": "#s2-c5",
+            "text": "YR 5",
+            "fontPx": 19.31,
+            "time": 21.873,
+            "seconds": 5.749
+          },
+          {
+            "selector": "#s2-c5 > span:nth-of-type(1)",
+            "text": "20%",
+            "fontPx": 19.31,
+            "time": 21.873,
+            "seconds": 5.749
+          },
+          {
+            "selector": "#s2-c2",
+            "text": "YR 2",
+            "fontPx": 20.5,
+            "time": 21.248,
+            "seconds": 6.374
+          },
+          {
+            "selector": "#s2-c2 > span:nth-of-type(1)",
+            "text": "20%",
+            "fontPx": 20.5,
+            "time": 21.248,
+            "seconds": 6.374
+          },
+          {
+            "selector": "div.capex-desc",
+            "text": "SPREAD ACROSS 5 YEARS OF DEPRECIATION",
+            "fontPx": 21,
+            "time": 18.748,
+            "seconds": 8.874
+          },
+          {
+            "selector": "span.yr-q1",
+            "text": "YEAR 1 / Q1",
+            "fontPx": 22,
+            "time": 12.874,
+            "seconds": 14.748
+          },
+          {
+            "selector": "div.yr-labels > span:nth-of-type(2)",
+            "text": "YEAR 2",
+            "fontPx": 22,
+            "time": 12.874,
+            "seconds": 14.748
+          },
+          {
+            "selector": "div.yr-labels > span:nth-of-type(3)",
+            "text": "YEAR 3",
+            "fontPx": 22,
+            "time": 12.874,
+            "seconds": 14.748
+          },
+          {
+            "selector": "div.yr-labels > span:nth-of-type(4)",
+            "text": "YEAR 4",
+            "fontPx": 22,
+            "time": 12.874,
+            "seconds": 14.748
+          },
+          {
+            "selector": "div.yr-labels > span:nth-of-type(5)",
+            "text": "YEAR 5",
+            "fontPx": 22,
+            "time": 12.874,
+            "seconds": 14.748
+          },
+          {
+            "selector": "#s2-header",
+            "text": "ACCOUNTING LEDGER // OPEX vs CAPEX",
+            "fontPx": 24,
+            "time": 12.624,
+            "seconds": 14.998
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 3 text elements stay under it for 0.5 s or more, the smallest \"2026 LAYOFFS\" at 22 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "2026 LAYOFFS",
+        "selector": "#s3-chart-card > svg:nth-of-type(1) > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene_3_gartner.html",
+        "bbox": {
+          "x": 232,
+          "y": 766.95,
+          "width": 158.41,
+          "height": 29
+        },
+        "time": 27.872,
+        "times": [
+          27.622,
+          27.872,
+          27.872
+        ],
+        "fontPx": 22,
+        "floorPx": 28,
+        "seconds": 10.749,
+        "elements": [
+          {
+            "selector": "#s3-chart-card > svg:nth-of-type(1) > text:nth-of-type(1)",
+            "text": "2026 LAYOFFS",
+            "fontPx": 22,
+            "time": 27.872,
+            "seconds": 10.749
+          },
+          {
+            "selector": "#s3-eyebrow",
+            "text": "GARTNER STRATEGIC WORKFORCE FORECAST // NOV 2026",
+            "fontPx": 24,
+            "time": 27.622,
+            "seconds": 10.999
+          },
+          {
+            "selector": "#s3-chart-card > svg:nth-of-type(1) > text:nth-of-type(2)",
+            "text": "2029 REHIRE",
+            "fontPx": 24,
+            "time": 27.872,
+            "seconds": 10.749
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 4 text elements stay under it for 0.5 s or more, the smallest \"payment-gateway/checkout.ts\" at 22 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "payment-gateway/checkout.ts",
+        "selector": "div.term-top > span:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene_4_outage.html",
+        "bbox": {
+          "x": 163,
+          "y": 193,
+          "width": 356.41,
+          "height": 29
+        },
+        "time": 38.621,
+        "times": [
+          38.621,
+          38.621,
+          41.621,
+          46.245
+        ],
+        "fontPx": 21.84,
+        "floorPx": 28,
+        "seconds": 6.124,
+        "elements": [
+          {
+            "selector": "div.term-top > span:nth-of-type(1)",
+            "text": "payment-gateway/checkout.ts",
+            "fontPx": 21.84,
+            "time": 38.621,
+            "seconds": 6.124
+          },
+          {
+            "selector": "#s4-clock",
+            "text": "02:00:14 AM",
+            "fontPx": 21.84,
+            "time": 38.621,
+            "seconds": 6.124
+          },
+          {
+            "selector": "div.alert-sub",
+            "text": "AUTOCOMPLETE STATUS: CANNOT DEBUG LEGACY STATE @ 02:00 AM",
+            "fontPx": 23.83,
+            "time": 41.621,
+            "seconds": 3.124
+          },
+          {
+            "selector": "#s4-brand",
+            "text": "THINKLATE // @wethinklate",
+            "fontPx": 26,
+            "time": 46.245,
+            "seconds": 1.125
+          }
+        ]
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "The film's last line \"TO RENT GPUs.\" (3 words) is on screen 1.90 s (±0.01 s), under the 2.00 s a closing line needs: hold it about 0.5 s + 0.3 s a word and at least 2 s before the film ends; see references/motion.md.",
+        "text": "TO RENT GPUs.",
+        "selector": "#s4-fp2",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene_4_outage.html",
+        "bbox": {
+          "x": 112,
+          "y": 337.26,
+          "width": 840.44,
+          "height": 134
+        },
+        "time": 45.472,
+        "words": 3,
+        "seconds": 1.902,
+        "floorSeconds": 2,
+        "measured": [
+          {
+            "time": 45.12,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 45.245,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 45.37,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 45.495,
+            "opacity": 0.74,
+            "heightPx": 134
+          },
+          {
+            "time": 45.62,
+            "opacity": 1,
+            "heightPx": 134
+          },
+          {
+            "time": 45.745,
+            "opacity": 1,
+            "heightPx": 134
+          },
+          {
+            "time": 45.87,
+            "opacity": 1,
+            "heightPx": 134
+          },
+          {
+            "time": 46.87,
+            "opacity": 1,
+            "heightPx": 134
+          },
+          {
+            "time": 46.995,
+            "opacity": 1,
+            "heightPx": 134
+          },
+          {
+            "time": 47.12,
+            "opacity": 1,
+            "heightPx": 134
+          },
+          {
+            "time": 47.245,
+            "opacity": 1,
+            "heightPx": 134
+          }
+        ]
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "The film's last line \"THINKLATE // @wethinklate\" (2 words) is on screen 1.21 s (±0.01 s), under the 2.00 s a closing line needs: hold it about 0.5 s + 0.3 s a word and at least 2 s before the film ends; see references/motion.md.",
+        "text": "THINKLATE // @wethinklate",
+        "selector": "#s4-brand",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene_4_outage.html",
+        "bbox": {
+          "x": 112,
+          "y": 498.14,
+          "width": 465,
+          "height": 35
+        },
+        "time": 46.167,
+        "words": 2,
+        "seconds": 1.207,
+        "floorSeconds": 2,
+        "measured": [
+          {
+            "time": 45.87,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 45.995,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 46.12,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 46.245,
+            "opacity": 0.83,
+            "heightPx": 35
+          },
+          {
+            "time": 46.37,
+            "opacity": 1,
+            "heightPx": 35
+          },
+          {
+            "time": 46.495,
+            "opacity": 1,
+            "heightPx": 35
+          },
+          {
+            "time": 46.62,
+            "opacity": 1,
+            "heightPx": 35
+          },
+          {
+            "time": 46.87,
+            "opacity": 1,
+            "heightPx": 35
+          },
+          {
+            "time": 46.995,
+            "opacity": 1,
+            "heightPx": 35
+          },
+          {
+            "time": 47.12,
+            "opacity": 1,
+            "heightPx": 35
+          },
+          {
+            "time": 47.245,
+            "opacity": 1,
+            "heightPx": 35
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 379
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

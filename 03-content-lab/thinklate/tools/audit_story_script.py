@@ -120,7 +120,7 @@ def audit_story_script(filepath):
 
     # 7. Pacing Clock & Word Count Check (1,350 - 1,450 words for 10-min, 880-920 words for 6-min Franchise Spec, 90-150 words for Shorts)
     is_legacy = any(k in os.path.basename(filepath) for k in ["01_", "02_", "03_", "04_", "05_", "archive", "legacy"])
-    is_franchise = any(k in filepath.lower() for k in ["l07", "franchise", "why-you-cant-cancel", "6min", "6-min"])
+    is_franchise = any(k in filepath.lower() for k in ["l07", "franchise", "why-you-cant-cancel", "6min", "6-min"]) or ("format: 6-min" in raw_text.lower())
 
     if is_short:
         if total_spoken_words < 70:
@@ -140,7 +140,8 @@ def audit_story_script(filepath):
 
     # 8. Tagged Shorts Splice Gates Check
     shorts_splices = re.findall(r'<!--\s*SHORTS_SPLICE_START:\s*([A-Za-z0-9_-]+)\s*-->(.*?)<!--\s*SHORTS_SPLICE_END:\s*\1\s*-->', raw_text, re.DOTALL)
-    if not is_legacy and not is_franchise and not is_short and len(shorts_splices) < 3:
+    is_l07 = "l07" in filepath.lower() or "why-you-cant-cancel" in filepath.lower()
+    if not is_legacy and not is_l07 and not is_short and len(shorts_splices) < 3:
         violations.append(f"Shorts Splice Violation: Found {len(shorts_splices)}/3 tagged Shorts splices. Must tag 3 standalone micro-arcs: <!-- SHORTS_SPLICE_START: <TAG> -->.")
 
     # Check for zero backward referencing in splices
@@ -151,16 +152,10 @@ def audit_story_script(filepath):
             if ref in splice_lower:
                 violations.append(f"Shorts Splice [{tag}] Violation: Found backward-referencing phrase '{ref}'. Shorts must be 100% self-contained.")
 
-    # 9. Dual-Voice Speaker Ping-Pong Check (Speakers must alternate every <= 35s)
+    # 9. Voice Cue Presence Check (Single-Host Self-Debate Mode — Dual-Voice Dropped)
     voice_cues = re.findall(r'\[VOICE:\s*([A-Za-z0-9_-]+)\]', raw_text)
-    if not is_legacy and len(voice_cues) >= 2:
-        # Check alternating cadence
-        consecutive_same = 0
-        for i in range(1, len(voice_cues)):
-            if voice_cues[i] == voice_cues[i-1]:
-                consecutive_same += 1
-        if consecutive_same > 3:
-            violations.append(f"Dual-Voice Cadence Violation: Speaker spoke consecutively {consecutive_same} times. Ping-pong speakers every 15-30s.")
+    if not is_legacy and not is_short and len(voice_cues) < 1:
+        violations.append("Voice Tag Missing: Expected at least one [VOICE: EDDY] tag for host synthesis routing.")
 
     # 10. 20-Year Senior Script Editor & Plot-Hole Gates (Long-form only)
     if not is_short:

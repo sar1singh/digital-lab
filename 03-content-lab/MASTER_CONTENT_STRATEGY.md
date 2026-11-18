@@ -1,7 +1,7 @@
 # MASTER CONTENT STRATEGY & PRODUCTION CODEX
 > **Scope:** Universal across ALL YouTube channels and digital media ventures under the **ThinkLate** parent holding umbrella (`thinklate`, `off-script`, `sarwanology`).  
 > **Status:** Live & Session-Persistent. Binding on all autonomous agents, subagents, and editors.  
-> **Last Synthesis:** November 6, 2026.
+> **Last Synthesis:** November 17, 2026 (Re-Indexed across 7-Video Corpus, 6-Gate Topic Vault, Dual Google Flow + HyperFrames Engine & Locked 4-Style Matrices).
 
 ---
 
@@ -113,25 +113,29 @@ Every video folder must contain a dedicated `publishing_pack/` with:
 All ThinkLate voiceover production is standardized on `synthesize_thinklate_voice.py` (`digital-lab/03-content-lab/shared/tools/`):
 
 ```bash
-# Eddy Thinklate (Founder & Lead Host — Gemini 'Charon')
+# Eddy Thinklate (Default Custom Voice Design: voice_x5l6j0ub25m1; Male Backup: Charon)
 python digital-lab/03-content-lab/shared/tools/synthesize_thinklate_voice.py --speaker owl --text "..." --out <path.wav>
 
-# Vera Vance (Forensic Investigator — Gemini 'Kore')
+# Vera Vance (Female Lead: Gemini 'Kore')
 python digital-lab/03-content-lab/shared/tools/synthesize_thinklate_voice.py --speaker falcon --text "..." --out <path.wav>
+
+# Optional Shorts-Only ElevenLabs Override ('Liam' TX3LPaxmHKxFdv7VOQHJ — other EL voices retired)
+python digital-lab/03-content-lab/shared/tools/synthesize_thinklate_voice.py --engine elevenlabs --speaker owl --text "..." --out <path.wav>
 ```
 
-### The Two-Phase Workflow:
-1. **Phase 1 (Primary Engine — Google Gemini 2.5 Flash Preview TTS via `v1alpha`):**
-   * Natural human breathing, emotional acting, and zero robotic cadence (`owl` / Eddy: `Charon` voice with warm documentary host style direction; `falcon` / Vera: `Kore` voice with sharp investigative style direction).
-   * **Gentle Broadcast Mastering:** Clamps awkward pauses >350ms while preserving natural micro-breaths, mastered to 48kHz stereo, `-16 LUFS`, true peak `-1.0 dB`.
-   * **Automatic Fallback (`--engine edge`):** Edge-TTS (`ChristopherNeural` / `AvaNeural` with <65ms silence compression) runs automatically only if `GEMINI_API_KEY` is unavailable or quota-limited.
-2. **Phase 2 (Optional Founder Voice Clone):**
-   * Local reference clones or recorded narration referencing `public/audio/owl_executive_hook.wav` and `falcon_investigation.wav`.
-   * Seamless drop-in replacement with automatic Whisper timestamp alignment.
+### The Locked Voiceover Hierarchy (Nov 17, 2026):
+1. **Primary Engine — Google Gemini 3.8 Flash TTS (`v1beta` Interactions + Voice Design):**
+   * **Primary Default Male (`owl` / Eddy):** **`voice_x5l6j0ub25m1`** (Eddy Custom Voice Design persona — grounded 35yo software engineer & late-night storyteller).
+   * **Secondary Male Backup:** **`Charon`** (automatic backup if custom voice fails).
+   * **Female Co-Host (`falcon` / Vera):** **`Kore`**.
+   * **Natural Breath Mastering:** Only trims leading/trailing silence (`start_periods=1`) and masters to `-16 LUFS`, `-1.5 dB` true peak, preserving natural `LRA=11` dynamics and human breaths. Silent fallback to Edge-TTS is permanently disabled.
+2. **Optional Shorts-Only ElevenLabs (`--engine elevenlabs`):**
+   * Strictly **Liam** (`TX3LPaxmHKxFdv7VOQHJ`) retained for short-form quota conservation; all other ElevenLabs catalog voices retired.
+3. **Optional Founder Voice Replication:**
+   * Clean Hinglish/English vocal reference extracted to `shared/assets/characters/founder_hinglish_ref_20s.wav` for Gemini 3.8 Voice Replication or Chatterbox TTS auditioning.
 
-### Alternating Shorts vs. Rotational Long-Form:
-* **Shorts (60s):** Single host per short. Odd Shorts (S01, S03...) hosted by Mr. Owl; Even Shorts (S02, S04...) hosted by The Falcon.
-* **Long-Form (6–8 min):** Ping-ponging dual-anchor dialogue every 20–30 seconds. Mr. Owl opens executive macro traps; The Falcon audits forensic evidence cards.
+### Single-Host Self-Debate Format (Dual-Voice Dropped Nov 17, 2026):
+* **Shorts (50–60s) & Long-Form (6–8 min):** Single host (**Eddy Thinklate**, `voice_x5l6j0ub25m1`) narrates start-to-finish, voicing both sides of the debate himself (asking the skeptical question / corporate counter-argument and immediately dissecting it in conversational self-dialogue). Dual-voice ping-pong is dropped unless explicitly re-enabled later.
 
 ---
 
@@ -159,3 +163,15 @@ python digital-lab/03-content-lab/shared/tools/synthesize_thinklate_voice.py --s
 | **Motion Pipeline** | Manual keyframing in After Effects (40–80 hours/video). | **Centralized Remotion Suite (`shared/motion_engine`):** 39 broadcast templates rendered via GPU in 90 seconds. |
 | **Turnaround** | 7–14 days per video due to internal approvals. | **24–48 hours.** Rapid topic turnaround on breaking news. |
 | **Editorial Tone** | Sanitized to protect corporate agency clients (YAAS) and course sponsors. | **Unfiltered, satirical, cynical, and intellectually fearless.** |
+
+---
+
+## 8. Master Index of Canonical Strategy & Vault Files (Re-Indexed Nov 17, 2026)
+
+- **7-Video Corpus Laws & Studio Diagnostics:** [CORPUS_PLAYBOOK_UNIVERSAL_VS_EXPERIMENTS.md](shared/CORPUS_PLAYBOOK_UNIVERSAL_VS_EXPERIMENTS.md) *(Tier 1 Mandatory Laws U1–U8, Tier 2 Experimentation Lab, and U8Rv32ApRHc APV/CTR diagnostic tree)*
+- **ThinkLate 6-Gate Topic Vault & Pipeline:** [TOPIC_IDEA_VAULT.md](thinklate/research/TOPIC_IDEA_VAULT.md) *(5/6 gate + mandatory live search validation)* & [TOPIC_PIPELINE.md](thinklate/TOPIC_PIPELINE.md) *(Active L08/S06 queue)*
+- **ThinkLate Multi-Disciplinary Research & Visual Evidence:** [INDEX.md](thinklate/research/INDEX.md) *(5 Knowledge Pillars A–E)* & [MEDIA_LEDGER.md](thinklate/research/visual_evidence/MEDIA_LEDGER.md) *(Primary filings, patents, historical plates)*
+- **ThinkLate Brand, DNA & Franchise Blueprints:** [BRAND_DOC.md](thinklate/BRAND_DOC.md), [CONTENT_DNA.md](thinklate/CONTENT_DNA.md), [CONTENT_MAP.md](thinklate/CONTENT_MAP.md), [FRANCHISE_SPEC_V1.md](thinklate/FRANCHISE_SPEC_V1.md), [RETROSPECTIVE_EVOLUTION_LEDGER.md](thinklate/RETROSPECTIVE_EVOLUTION_LEDGER.md)
+- **Canonical Character & Google Flow Guide:** [CHARACTER_STYLE_GUIDE.md](shared/CHARACTER_STYLE_GUIDE.md) *(Eddy Owl 2D stickman anchor & 1,000-credit Veo camera-lock protocol)*
+- **Cross-Channel Packaging Vault & Locked 4-Style Matrices:** [PACKAGING_VAULT.md](shared/packaging/PACKAGING_VAULT.md) *(5-pillar scoring + ThinkLate TL-1..TL-4 & Off Script OS-1..OS-4 100% Textless + Canva system)*
+- **Off Script Pre-Recording Runbook & Refresher Pods:** [OFFSCRIPT_TOPIC_AND_OUTLINE_VAULT.md](off-script/OFFSCRIPT_TOPIC_AND_OUTLINE_VAULT.md) *(Zero-blank OBS workflow + 10 modular Hinglish/English pods)*

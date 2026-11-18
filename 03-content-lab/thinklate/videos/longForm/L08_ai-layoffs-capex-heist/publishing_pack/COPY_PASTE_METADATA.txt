@@ -1,0 +1,32 @@
+TITLE (41 chars):
+Why 200,000 Tech Workers Really Got Fired
+
+CANVA THUMBNAIL TEXT (Add manually to the 100% textless PNG in publishing_pack/):
+- Primary Ready (thumb_L08_primary_TL3_textless.png): IT WASN'T AI.  (Upper-left dark slate space, White + Acid Lime #E2FF00)
+- Alternative Prompt (Style TL-1 Eddy Owl — paste prompt from PUBLISHING_PACKAGE.md into Gemini Web / Flow while API image quota resets): PAYROLL -> GPUS?!  (or IT WASN'T AI., top-left space)
+
+DESCRIPTION:
+TrueUp tracked over 200,000 tech workers laid off while profitable giants like Meta, Amazon, Microsoft, and Oracle reported strong earnings. Why cut engineers when the business isn't going broke?
+
+Because on a corporate balance sheet, human salaries hit quarterly profits immediately, while $10 billion in Nvidia GPU infrastructure hides under multi-year Capital Expenditure schedules. Harvard analysts call it "AI-washing"—and Gartner now warns 30% of workers prematurely replaced by AI will have to be rehired by 2029, while $3.5 trillion in AI data center spending faces impairment risk by 2030.
+
+TIMESTAMPS:
+00:00 - Why Profitable Tech Giants Fired 200,000 Workers
+01:12 - The Balance Sheet Trick: OpEx Salaries vs CapEx GPUs
+03:18 - Why 30% of "AI-Replaced" Workers Will Be Rehired by 2029
+05:25 - The $3.5 Trillion Data Center Impairment Hangover
+07:10 - What Real Builders Should Watch Next (And Why GPUs Stay Expensive)
+
+SOURCES & VERIFICATION:
+- TrueUp Global Tech Layoffs Tracker (200,000+ impacted)
+- Gartner Workforce & Infrastructure Impairment Forecasts (Nov 2026)
+- Corporate CapEx vs OpEx Disclosures & HBS AI-Washing Analysis
+
+TAGS:
+tech layoffs 2026, why tech companies are firing engineers, AI washing layoffs, gartner 30 percent AI rehire 2029, AI data center bubble, big tech capex vs payroll, software engineering jobs 2026, ThinkLate
+
+PINNED COMMENT:
+Did your team cut junior hiring while buying more GPU credits this year? Drop what you're seeing inside tech right now (Bangalore, Gurgaon, Silicon Valley, or remote).
+
+CATEGORY: Education / Science & Technology
+MADE FOR KIDS: No

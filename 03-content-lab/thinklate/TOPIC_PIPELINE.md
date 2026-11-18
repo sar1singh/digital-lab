@@ -1,6 +1,6 @@
 # ThinkLate Video & Topic Pipeline
 *Structured backlog by Genre, Niche, and Core Paradox. Session-persistent.*
-*Last Updated: 2026-10-31*
+*Last Updated: 2026-11-17 (Synced with 6-Gate Topic Vault & 7-Video Corpus Laws)*
 
 ---
 
@@ -15,7 +15,10 @@ ThinkLate is **conversational infotainment, high-curiosity questioning, pattern 
    ├─────────────────────────────────┼─────────────────────────────────┤
    │  C: Space & Cosmic Reality      │  D: Philosophy & Mind Traps     │
    │  (Astrophysics, limits of know) │  (Questioning dogmas, memory)   │
-   └─────────────────────────────────┴─────────────────────────────────┘
+   ├─────────────────────────────────┴─────────────────────────────────┤
+   │  E: Declassified Conspiracies & Proven Institutional Cover-Ups    │
+   │  (FOIA dockets, corporate collusion memos, Senate hearings)       │
+   └─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -32,13 +35,16 @@ ThinkLate is **conversational infotainment, high-curiosity questioning, pattern 
 | **L05** | `videos/longForm/L05_how-airbnb-stole-100b` | *How Airbnb Stole $100 Billion* | A: Business & Platform | Housing Market Extraction | **PRIVATE / NOT LIVE** |
 | **L06** | `videos/longForm/L06_the-memory-lie` | *The Memory Lie* | D: Philosophy / Neuroscience | Holographic Memory | **PARKED (finished master, off-franchise, unpublished)** |
 | **L07** | `videos/longForm/L07_why-you-cant-cancel` | *Why You Can't Cancel Anything* | A: Business Monopoly | Consumer Economics / Iliad Flow | **MASTER V2 READY (1080p, 5m 17s, -15.9 LUFS)** |
+| **L08** | `videos/longForm/L08_ai-layoffs-capex-heist` | *Why 200,000 Tech Workers Really Got Fired* (`A6`) | A: Business & Tech | AI Capex vs Payroll (`6/6` Gate Winner) | **SCRIPT & QC PASSED (1,288w, 0 violations) + DUAL THUMBNAILS + AUDIO AUDITIONS READY** |
 | **L05-Alt**| `videos/backlog/L05-alt_the-ai-ipo-bubble` | *The AI IPO Bubble* | A: Business / Tech | Venture Capital Dumping | Backlog |
 
 ### Short-Form Vertical Videos (S-Series)
 | ID | Folder Path | Title / Working Title | Linked Long-Form | Duration | Status |
 |:---:|:---|---|:---:|:---:|:---:|
 | **S01** | `videos/shortForm/S01_ai-energy-shock` | *The $22 Tax On Every AI Prompt* | L06 (Splice 1) | 52.50s | **PULLED (silent audio)** |
+| **S02–S04** | `videos/shortForm/S02_the-eyewitness-lie` (`S03`/`S04`) | *The Eyewitness Lie / Holographic Shard / Photocopy Trap* | L06 (Standalone Climax Shorts) | 48s–57s | **PARKED (Rendered Nov 8)** |
 | **S05** | `videos/shortForm/S05_the-shelf-price-is-fake` | *The Shelf Price Is Fake* | L07 (The Fine Print) | 41.93s | **MASTER V2 READY (1080x1920, -15.8 LUFS)** |
+| **S06** | `videos/shortForm/S06_30-percent-ai-rehire-trap` | *Why 30% of "AI-Replaced" Workers Will Be Rehired* (`A6` Splice) | L08 | 50–55s | **SCRIPT & QC PASSED (121w, 0 violations) — Awaiting Audio Pick** |
 
 ---
 
@@ -153,13 +159,17 @@ ThinkLate is **conversational infotainment, high-curiosity questioning, pattern 
 * **Core Hook / Paradox:** In 1953, to measure how much radioactive Strontium-90 from nuclear bomb tests was entering human bones, the Atomic Energy Commission launched **Project SUNSHINE**—where Nobel chemist Willard Libby literally asked scientists for *"a good job of body snatching"* on deceased infants (RAND Report R-251-AEC). When the public found out, St. Louis mothers fought back by mailing **320,000 baby teeth** to lab scientists, proving 50x radiation spikes and forcing JFK to sign the 1963 Nuclear Test Ban Treaty.
 * **Companion Short:** `Why 320,000 Kids Mailed Their Teeth to Scientists` (S08)
 
-### NEXT UP (planned 2026-11-11, plan approved by founder; franchise = "The Fine Print", see FRANCHISE_SPEC_V1.md)
-| ID | Folder Path | Working Title | Format | Status |
-|:---:|:---|---|:---:|:---:|
-| **L07** | `videos/longForm/L07_why-you-cant-cancel` | *Why You Can't Cancel Anything* | ~6 min / ~900 words | **SCRIPT & DECK READY (899 words, 100/100 QC)** |
-| **S05** | `videos/shortForm/S05_the-shelf-price-is-fake` | *The Shelf Price Is Fake* | ~40 s / ~105 words | **MASTER READY (29.6s, -16.0 LUFS, 11ms drift)** |
-- Parked off-franchise (finished): L06 The Memory Lie (`videos/longForm/L06_the-memory-lie`), S02-S04. Hold until 90-day review gate.
-- **Live public long-form (founder-confirmed 2026-11-11): L01 AI Bubble, L04 Ownership->Rent. Every other L-video is private/unpublished.** Numbering continues: L06 slot = The Memory Lie (parked), new long-form = L07.
+### NEXT UP — 2026-11-17 Production Queue (6/6 Gate-Verified Winners from [TOPIC_IDEA_VAULT.md](research/TOPIC_IDEA_VAULT.md))
+| Order | ID | Folder / Target | Working Title / Idea | Format | Status |
+|:---:|:---:|:---|---|---|:---:|
+| **1 (Immediate)** | **L08 + S06** | `videos/longForm/L08_ai-layoffs-capex-heist` + `videos/shortForm/S06_30-percent-ai-rehire-trap` | **`A6`:** *Why 200,000 Tech Workers Really Got Fired* + Short: *Why 30% of "AI-Replaced" Workers Will Be Rehired* | 6–8 min Long + 50–55s Climax Short | **SELECTED NEXT UP (Nov 17 — 6/6 Live Verified)** |
+| **2 (Open Loop)** | **L09** | `videos/longForm/L09_ram-gpu-shortage-2028` *(planned)* | **`A5`:** *Why Even an AI Bubble Crash Won't Make RAM or GPUs Cheap Until 2028* (`+360%` DRAM / HBM wafer lockup through 2028–2029) | 6–8 min Long + 2 Shorts | **QUEUED (6/6)** |
+| **3 (Consumer Trap)** | **L10** | `videos/longForm/L10_ftc-surveillance-pricing` *(planned)* | **`A7`:** *Two Phones, Same Flight, Higher Price: Inside the FTC's Surveillance Pricing Raid* (FTC Section 6(b) orders on Uber, Delta, Walmart + ESL tags) | 6–8 min Long + 3 Shorts | **QUEUED (6/6)** |
+| **4 (Grid Sequel)** | **L11** | `videos/longForm/L11_big-tech-power-pledges` *(planned)* | **`A1-R`:** *Big Tech Pledged to Pay Your Electric Bill — Why It Won't Drop* (Pairs with `S01` + Nov 2026 HBS/ratepayer pledges) | 6–8 min Long | **QUEUED (6/6)** |
+
+- **Ready Masters (`L07` & `S05`):** `L07_why-you-cant-cancel` (*Master V2 Ready*, 5m 17s, -15.9 LUFS) and `S05_the-shelf-price-is-fake` (*Master V2 Ready*, 41.93s, -15.8 LUFS) staged for release.
+- **Parked off-franchise (finished):** `L06_the-memory-lie` (`videos/longForm/L06_the-memory-lie`), `S02`–`S04`. Hold until 90-day review gate.
+- **Live public long-form:** `L01` AI Bubble, `L04` Ownership->Rent. Every other earlier L-video is private/unpublished.
 
 
 

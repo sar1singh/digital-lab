@@ -207,3 +207,16 @@
   2. **Golden Voice Level:** Voice locked at **90% volume** (`volume=0.90`) for comfortable listening headroom (mean ~ -23 dB, true peak ~ -5 dB).
   3. **Golden Ambient Bed Level:** Continuous ambient background music locked at **30% volume** (`volume=0.30`) with `normalize=0` so music is clearly audible without fighting or attenuating speech.
   4. Codified in `synthesize_master_audio.py` and `mix_v05_audio.py`.
+
+
+### Retro Item 17: S06 HyperFrames + SVG Eddy Pilot Audit & Batched 5–6m Production Rules (Nov 18, 2026)
+* **Audience QC Verdict & Directives:**
+  1. Approved S06 V3 overall (*"overall, I think this is the best you could do"*).
+  2. *"too much use of those over head emojies, keep it only for impactful emotions, or impact scenes."*
+  3. *"Do not render the full video in one go. make it in batches. Specially the hook, hook should be fast paced."*
+  4. *"Also, are you considering findings and download real B Roll stock images, wherever necessary in the video for better context and visual story telling?"*
+  5. *"tighten the script and video, to reduce the visual token usage, and focus on a High Quality visuals, do not forget the story telling process and insights. I had already shared a lot of youtube videos about story telling"*
+* **Systemic Rules Codified (`thinklate-designer`, `media-use`, `CORPUS_PLAYBOOK_UNIVERSAL_VS_EXPERIMENTS`):**
+  1. **Overhead Emote Restraint:** Maximum **1–2 overhead reaction props (`lightbulb`, `storm_cloud`, `questions`, `shock_burst`, `sparkles`) per minute**, reserved strictly for peak emotional turns or punchline impacts.
+  2. **Batched Pipeline Mandate:** Zero monolithic full-video renders. Deliver and inspect in focused batches, starting with **Batch 1: Fast-Paced Hook** (`<= 1.5–2.5s` visual shifts, `I+C+C`, `< 30s` title/thumb promise bridge).
+  3. **Real B-Roll Stock + Primary Archives First (Token-Conscious High Craft):** Actively search & download real stock images/video (Wikimedia Commons, Openverse CC0/CC-BY, Pexels/Playwright, and HyperFrames `media-use` once signed in) + real receipts/UI captures for grounded storytelling (`fObsjdBxTjc` *Real Archives Over 100% AI Slop*), reserving Google Flow / generative AI strictly for high-leverage hero hook / bespoke metaphor plates inside a tight **5–6 min (~750–900w)** cut.

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Off Script Tonight — Organic Session Card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #070A10; --card: #101624; --bdr: #1F2A40; --txt: #F1F5F9; --dim: #94A3B8;
+      --orange: #FF5500; --cyan: #00F0FF; --lime: #E2FF00; --green: #10B981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--txt); font-family: 'Plus Jakarta Sans', sans-serif; padding: 24px 20px 60px; line-height: 1.6; }
+    .container { max-width: 920px; margin: 0 auto; display: grid; gap: 18px; }
+    .topbar {
+      background: var(--card); border: 1px solid var(--bdr); border-radius: 12px;
+      padding: 16px 22px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .brand { font-family: 'JetBrains Mono', monospace; font-weight: 800; color: var(--orange); font-size: 15px; letter-spacing: 0.6px; }
+    .sub { font-size: 13px; color: var(--dim); }
+    .controls { display: flex; align-items: center; gap: 12px; font-family: 'JetBrains Mono', monospace; }
+    .timer { font-size: 20px; font-weight: 800; color: var(--lime); min-width: 72px; text-align: right; }
+    .btn { background: rgba(255,255,255,0.07); color: #FFF; border: 1px solid var(--bdr); padding: 7px 12px; border-radius: 8px; cursor: pointer; font-weight: 700; font-size: 13px; }
+    .btn:hover { border-color: var(--cyan); color: var(--cyan); }
+    .card { background: var(--card); border: 1px solid var(--bdr); border-radius: 14px; padding: 20px 24px; }
+    .hero-card { border-color: var(--cyan); border-left: 6px solid var(--cyan); }
+    .post-card { border-left: 6px solid var(--green); }
+    .tag { display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 800; padding: 3px 9px; border-radius: 5px; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 10px; }
+    .tag-cyan { background: rgba(0,240,255,0.14); color: var(--cyan); }
+    .tag-orange { background: rgba(255,85,0,0.16); color: var(--orange); }
+    .tag-green { background: rgba(16,185,129,0.16); color: #6EE7B7; }
+    .pill-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+    .pill { font-family: 'JetBrains Mono', monospace; font-size: 13px; background: rgba(0,0,0,0.35); padding: 6px 12px; border-radius: 6px; border: 1px solid var(--bdr); }
+    ul { padding-left: 18px; display: grid; gap: 8px; color: #CBD5E1; font-size: 15px; }
+    li strong { color: #FFF; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <div>
+        <div class="brand">OFF SCRIPT // ORGANIC SESSION CARD</div>
+        <div class="sub">Assassin's Creed Black Flag — Spanish Naval Fort Rematch (Re-Using Existing Thumbnail)</div>
+      </div>
+      <div class="controls">
+        <div class="timer" id="timer">00:00</div>
+        <button class="btn" onclick="toggleTimer()" id="timerBtn">▶ START</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tag tag-orange">10-Second OBS Check</span>
+      <div class="pill-row">
+        <span class="pill">Encoder: <strong>CQP 20–22 · P5</strong></span>
+        <span class="pill">Track 1: Game + Mic</span>
+        <span class="pill">Track 2: Isolated Mic</span>
+        <span class="pill" style="border-color:var(--green); color:#6EE7B7;"><strong>Mic Live 100% — Never Mute/Unmute</strong></span>
+      </div>
+    </div>
+
+    <div class="card hero-card">
+      <span class="tag tag-cyan">Where You Left Off (Last Session Recap)</span>
+      <ul>
+        <li><strong>Ship Status:</strong> Upgraded the <em>Jackdaw</em> (Hull &amp; Broadsides Grade 12) after grinding 15,000 reales.</li>
+        <li><strong>Inventory:</strong> Unlocked all 4 Templar Armor Keys and scouted the Spanish Naval Fort that forced the retreat.</li>
+        <li><strong>Tonight's Flow:</strong> No forced topics or script bullets — play naturally, react to whatever happens on the water, and speak whenever a genuine thought comes up.</li>
+      </ul>
+    </div>
+
+    <div class="card post-card">
+      <span class="tag tag-green">Handled 100% Automatically in Post-Production</span>
+      <ul>
+        <li><strong>Zero Manual Muting Needed:</strong> Noise gate (<code>-64 dB</code>) + phase-cancelled stereo game isolation + auto-ducking handles all quiet breathing and combat audio automatically after you record.</li>
+        <li><strong>Silence &amp; Stall Trimming:</strong> Long dead gaps (&gt;20s) are cut automatically while keeping natural 15–20s ocean/combat audio breathing windows intact.</li>
+        <li><strong>Hook &amp; Chapters From What Actually Happens:</strong> Whisper transcription extracts tonight's organic moments, chapters, and title directly from your raw run.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    let sec = 0, iv = null;
+    function toggleTimer() {
+      const b = document.getElementById('timerBtn');
+      if (iv) { clearInterval(iv); iv = null; b.textContent = '▶ RESUME'; }
+      else {
+        iv = setInterval(() => {
+          sec++;
+          const m = String(Math.floor(sec / 60)).padStart(2, '0');
+          const r = String(sec % 60).padStart(2, '0');
+          document.getElementById('timer').textContent = `${m}:${r}`;
+        }, 1000);
+        b.textContent = '⏸ PAUSE';
+      }
+    }
+  </script>
+</body>
+</html>

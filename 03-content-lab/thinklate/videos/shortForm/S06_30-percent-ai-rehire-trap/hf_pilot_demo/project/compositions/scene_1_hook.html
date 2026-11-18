@@ -1,0 +1,357 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      background: #f4efe6;
+      color: #111318;
+      font-family: "Montserrat", sans-serif;
+      overflow: hidden;
+    }
+    .paper-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(to right, rgba(17, 19, 24, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(17, 19, 24, 0.05) 1px, transparent 1px);
+      background-size: 64px 64px;
+    }
+    .paper-vignette {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 46% 48%, transparent 45%, rgba(17, 19, 24, 0.08) 100%);
+      pointer-events: none;
+    }
+    .stage-cam {
+      position: absolute;
+      inset: 0;
+      transform-origin: 50% 50%;
+    }
+    .eyebrow {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #d92d20;
+      position: absolute;
+      left: 112px;
+      top: 96px;
+    }
+    .hero-stat {
+      position: absolute;
+      left: 108px;
+      top: 146px;
+      width: 1040px;
+    }
+    .hero-num {
+      font-size: 168px;
+      font-weight: 900;
+      line-height: 0.90;
+      letter-spacing: -6px;
+      font-variant-numeric: tabular-nums;
+      color: #111318;
+    }
+    .hero-rule {
+      width: 720px;
+      height: 8px;
+      background: #d92d20;
+      margin-top: 14px;
+      transform-origin: left center;
+    }
+    .hero-sub {
+      font-size: 52px;
+      font-weight: 900;
+      letter-spacing: -1.5px;
+      margin-top: 14px;
+      color: #111318;
+    }
+    .ai-excuse-wrap {
+      position: absolute;
+      left: 112px;
+      top: 446px;
+      display: inline-block;
+      padding: 14px 26px;
+      border: 4px solid #111318;
+      background: #fffdf8;
+      box-shadow: 10px 10px 0 #111318;
+    }
+    .ai-hl-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      background: #facc15;
+      transform-origin: left center;
+      z-index: 0;
+    }
+    .ai-excuse-text {
+      position: relative;
+      z-index: 1;
+      font-size: 36px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+    }
+    .slack-slip {
+      position: absolute;
+      left: 112px;
+      top: 590px;
+      width: 820px;
+      background: #ffffff;
+      border: 4px solid #111318;
+      border-radius: 10px;
+      padding: 28px 34px;
+      box-shadow: 14px 16px 0 rgba(17, 19, 24, 0.94);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .slack-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .slack-dot {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #d92d20;
+      flex-shrink: 0;
+    }
+    .slack-title {
+      font-size: 34px;
+      font-weight: 800;
+      color: #111318;
+    }
+    .slack-meta {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 28px;
+      color: #525866;
+      margin-top: 6px;
+    }
+    .slack-badge {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 28px;
+      font-weight: 800;
+      background: #d92d20;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      letter-spacing: 1px;
+    }
+    .giants-stage {
+      position: absolute;
+      left: 112px;
+      top: 132px;
+      width: 1040px;
+      height: 760px;
+    }
+    .profit-bg-chart {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+    .ticker-slip {
+      position: absolute;
+      width: 780px;
+      background: #ffffff;
+      border: 4px solid #111318;
+      padding: 24px 32px;
+      box-shadow: 12px 12px 0 #111318;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .t-meta { left: 0; top: 32px; }
+    .t-amzn { left: 48px; top: 205px; }
+    .t-msft { left: 96px; top: 378px; }
+    .t-name {
+      font-size: 46px;
+      font-weight: 900;
+      letter-spacing: -1.5px;
+    }
+    .t-profit {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 29px;
+      font-weight: 800;
+      color: #047857;
+    }
+    .why-cut-banner {
+      position: absolute;
+      left: 112px;
+      top: 726px;
+      display: inline-block;
+      background: #111318;
+      color: #facc15;
+      padding: 18px 34px;
+      border: 4px solid #111318;
+      box-shadow: 12px 12px 0 #d92d20;
+      font-size: 64px;
+      font-weight: 900;
+      letter-spacing: -2px;
+    }
+    .eddy-stage {
+      position: absolute;
+      right: 76px;
+      bottom: 62px;
+      width: 680px;
+      height: 820px;
+    }
+    .wipe-curtain {
+      position: absolute;
+      inset: 0;
+      background: #0c1424;
+      transform-origin: right center;
+    }
+    .source-tag {
+      position: absolute;
+      left: 112px;
+      bottom: 54px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 20px;
+      color: #525866;
+    }
+  </style>
+
+  <div id="root" data-composition-id="scene_1_hook" data-width="1920" data-height="1080">
+    <div id="s1-cam" class="stage-cam" data-layout-allow-overflow>
+      <div class="paper-grid" data-layout-ignore></div>
+
+      <!-- BEAT 1A: 200,000+ WORKERS & SLACK CARD (0.00 - 5.65s) -->
+      <div id="s1-beat-a" class="clip" data-start="0" data-duration="12.6">
+        <div id="s1-eyebrow" class="eyebrow">TRUEUP TECH TRACKER // 2026</div>
+        <div id="s1-hero-stat" class="hero-stat">
+          <div id="s1-count" class="hero-num">200,000+</div>
+          <div id="s1-rule" class="hero-rule"></div>
+          <div class="hero-sub">TECH WORKERS FIRED</div>
+        </div>
+
+        <div id="s1-ai-box" class="ai-excuse-wrap">
+          <div id="s1-ai-hl" class="ai-hl-bar"></div>
+          <div class="ai-excuse-text">EXCUSE: "ARTIFICIAL INTELLIGENCE"</div>
+        </div>
+
+        <div id="s1-slack" class="slack-slip">
+          <div class="slack-left">
+            <div class="slack-dot"></div>
+            <div>
+              <div class="slack-title">Slack Session Terminated</div>
+              <div class="slack-meta">07:02 AM // 401 ACCOUNT DEACTIVATED</div>
+            </div>
+          </div>
+          <div id="s1-slack-badge" class="slack-badge">LOCKED</div>
+        </div>
+      </div>
+
+      <!-- BEAT 1B: PROFITABLE GIANTS CASCADE + RISING SPARKLINE (5.55 - 12.6s) -->
+      <div id="s1-beat-b" class="clip" data-start="5.50" data-duration="7.10">
+        <div id="s1-giants" class="giants-stage">
+          <svg class="profit-bg-chart" viewBox="0 0 1000 580" width="100%" height="100%" data-layout-ignore>
+            <path id="s1-spark" d="M20,520 L240,460 L440,380 L650,240 L920,60" fill="none" stroke="rgba(4,120,87,0.22)" stroke-width="18" stroke-linecap="round" pathLength="100" stroke-dasharray="100 120" stroke-dashoffset="105" />
+          </svg>
+          <div id="slip-meta" class="ticker-slip t-meta">
+            <span class="t-name">META</span>
+            <span class="t-profit">RECORD PROFIT</span>
+          </div>
+          <div id="slip-amzn" class="ticker-slip t-amzn">
+            <span class="t-name">AMAZON</span>
+            <span class="t-profit">NOT GOING BROKE</span>
+          </div>
+          <div id="slip-msft" class="ticker-slip t-msft">
+            <span class="t-name">MICROSOFT</span>
+            <span class="t-profit">CLOUD BOOMING</span>
+          </div>
+        </div>
+        <div id="s1-why-cut" class="why-cut-banner">SO WHY CUT ENGINEERS?</div>
+      </div>
+
+      <!-- CANONICAL EDDY OWL PUPPET RIG -->
+      <div id="s1-eddy-box" class="eddy-stage clip" data-start="0" data-duration="12.6"></div>
+
+      <div class="source-tag" data-layout-ignore>Source: TrueUp Global Tech Layoffs Tracker (2026)</div>
+    </div>
+
+    <div id="s1-wipe" class="wipe-curtain"></div>
+    <div class="paper-vignette" data-layout-ignore></div>
+  </div>
+
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    const eddyRig = window.ThinkLateEddyRig.createEddyRig({
+      container: document.getElementById("s1-eddy-box"),
+      prefix: "s1",
+      darkGround: false,
+      wordWindows: [
+        [0.0,0.12],[0.12,0.54],[0.54,1.02],[1.02,1.3],[1.3,2.1],[2.1,2.56],[2.56,2.9],
+        [3.24,3.64],[3.64,3.9],[3.9,4.46],[4.46,5.22],
+        [5.82,6.4],[7.0,7.42],[8.0,8.38],[8.38,8.66],[8.66,9.1],[9.1,9.6],[9.6,9.82],[9.82,10.14],
+        [10.82,11.0],[11.0,11.16],[11.16,11.38],[11.38,11.78]
+      ],
+      personas: [
+        { at: 0.0, role: "host", dur: 0.2 },
+        { at: 5.75, role: "questioner", dur: 0.24 }
+      ],
+      keyframes: [
+        { at: 0.0, pose: "CURIOUS", dur: 0.35 },
+        { at: 5.75, pose: "SKEPTIC_ASK", dur: 0.34 },
+        { at: 10.65, pose: "PUZZLED", dur: 0.38 }
+      ],
+      emotes: [
+        { at: 5.80, end: 8.20, kind: "shock_burst" },
+        { at: 10.60, end: 12.25, kind: "questions" }
+      ],
+      lookTargets: [
+        { at: 0.0, x: -3, y: 1 },
+        { at: 3.4, x: -5, y: 2 },
+        { at: 5.8, x: -4, y: -1 },
+        { at: 10.7, x: -2, y: -2 }
+      ]
+    });
+
+    tl.fromTo("#s1-cam", { scale: 1.0, x: 0 }, { scale: 1.04, x: -12, duration: 12.2, ease: "none" }, 0);
+
+    // Rapid counter + underline sweep
+    const counterObj = { val: 14000 };
+    const countEl = document.getElementById("s1-count");
+    tl.to(counterObj, {
+      val: 200000,
+      duration: 1.25,
+      ease: "power3.out",
+      onUpdate: () => {
+        const n = Math.round(counterObj.val);
+        countEl.textContent = n >= 200000 ? "200,000+" : n.toLocaleString("en-US");
+      }
+    }, 0.0);
+    tl.fromTo("#s1-rule", { scaleX: 0 }, { scaleX: 1, duration: 0.65, ease: "power3.out" }, 0.25);
+
+    // Slack deactivation slip & badge snap
+    tl.fromTo("#s1-slack", { opacity: 0, y: 36, scale: 0.96 }, { opacity: 1, y: 0, scale: 1, duration: 0.42, ease: "power4.out" }, 1.25);
+    tl.fromTo("#s1-slack-badge", { scale: 1.4, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.24, ease: "back.out(1.6)" }, 1.55);
+
+    // Artificial Intelligence highlight
+    tl.fromTo("#s1-ai-box", { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.32, ease: "power3.out" }, 3.45);
+    tl.fromTo("#s1-ai-hl", { scaleX: 0 }, { scaleX: 1, duration: 0.55, ease: "power2.out" }, 3.85);
+
+    // Smooth cross-slide into Beat B (zero empty void at 6.3s)
+    tl.to("#s1-beat-a", { opacity: 0, x: -42, duration: 0.26, ease: "power3.in" }, 5.45);
+    tl.fromTo("#s1-spark", { attr: { "stroke-dashoffset": 105 } }, { attr: { "stroke-dashoffset": 0 }, duration: 2.2, ease: "power2.out" }, 5.65);
+    tl.fromTo("#slip-meta", { opacity: 0, x: -70 }, { opacity: 1, x: 0, duration: 0.32, ease: "power4.out" }, 5.65);
+    tl.fromTo("#slip-amzn", { opacity: 0, x: -70 }, { opacity: 1, x: 0, duration: 0.32, ease: "power4.out" }, 6.18);
+    tl.fromTo("#slip-msft", { opacity: 0, x: -70 }, { opacity: 1, x: 0, duration: 0.32, ease: "power4.out" }, 7.05);
+
+    tl.fromTo("#s1-why-cut", { opacity: 0, y: 24, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.28, ease: "back.out(1.3)" }, 10.68);
+    tl.fromTo("#s1-eddy-box", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 0.0);
+
+    // Smooth wipe to Scene 2
+    tl.fromTo("#s1-wipe", { scaleX: 0 }, { scaleX: 1, duration: 0.34, ease: "power3.inOut" }, 12.26);
+
+    tl.eventCallback("onUpdate", () => {
+      eddyRig.render(tl.time());
+    });
+
+    window.__timelines["scene_1_hook"] = tl;
+  </script>
+</template>
