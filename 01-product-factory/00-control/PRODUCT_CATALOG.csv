@@ -4,3 +4,4 @@ Invoice Generator & Payment Tracker,Business operations,Spreadsheet template,Niv
 Project Budget Tracker,Freelancer tools,Spreadsheet tracker,Nivora,Specification Phase,,,7,2026-06-07,,0,0,0,Start workbook build after Products 1-2 are listed or parked,"Product 3 — planning docs complete"
 Net Worth Tracker,Personal finance,Spreadsheet tracker,Planned,,,,,,0,0,0,Wait for Products 1-3 launch,Product 4 — queued
 POD Profit Calculator,POD seller tools,Spreadsheet calculator,Planned,,,,,,0,0,0,Wait for Products 1-4 launch,Product 5 — queued
+ShipLink (Zero-Login Client Status & Sign-Off Portal),B2B Agency / Consultant SaaS,Next.js Static Web App (Zero Backend Smoke Test),ThinkLate / ShipLink,In Build,Web (Vercel / Cloudflare Edge),,0 / $19-$39 Pro Waitlist,2026-11-18,,0,0,0,Complete docs + UI/UX frontend prototype + 14-day smoke test,"3-in-1 Flagship: Architect Portfolio + Consulting Portal + SaaS Validation",02-products/shiplink/web
