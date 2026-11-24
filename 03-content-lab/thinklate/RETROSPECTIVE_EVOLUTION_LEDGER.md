@@ -220,3 +220,17 @@
   1. **Overhead Emote Restraint:** Maximum **1–2 overhead reaction props (`lightbulb`, `storm_cloud`, `questions`, `shock_burst`, `sparkles`) per minute**, reserved strictly for peak emotional turns or punchline impacts.
   2. **Batched Pipeline Mandate:** Zero monolithic full-video renders. Deliver and inspect in focused batches, starting with **Batch 1: Fast-Paced Hook** (`<= 1.5–2.5s` visual shifts, `I+C+C`, `< 30s` title/thumb promise bridge).
   3. **Real B-Roll Stock + Primary Archives First (Token-Conscious High Craft):** Actively search & download real stock images/video (Wikimedia Commons, Openverse CC0/CC-BY, Pexels/Playwright, and HyperFrames `media-use` once signed in) + real receipts/UI captures for grounded storytelling (`fObsjdBxTjc` *Real Archives Over 100% AI Slop*), reserving Google Flow / generative AI strictly for high-leverage hero hook / bespoke metaphor plates inside a tight **5–6 min (~750–900w)** cut.
+
+---
+
+### Retro Item 18: YouTube Studio Ask-Studio Forensic Audit — 17-Min Burst Freeze, Legacy Anime History & Minute-1 Regulatory Drag (Nov 21, 2026)
+* **Live Studio Backend Findings (`@wethinklate`):**
+  1. **Zero Strikes / Zero Shadowban / Not India:** All Nov 14 uploads are `ACCESSIBLE` with zero restrictions. `L04` achieved **`6.78%` Browse CTR** + `533` Suggested impressions; `L01` achieved **`41.02%` AVP** (flat `50–55%` first 90s); `L07`'s Suggested viewer watched **`05:17/05:18` (`99.8%`)**.
+  2. **17-Minute Batch-Upload Cannibalization:** Publishing **6 videos (2 long-form + 4 Shorts) between `12:35–12:52 UTC`** on Nov 14 starved all 6 uploads (`0–9` impressions, `1` total Shorts feed view, `0%` stayed on `S03`).
+  3. **Legacy Anime Channel Contamination + Topic Whiplash:** Lifetime search data showed the channel originally ranked for **anime trailer reactions** (`chainsaw man`, `dan da dan`, `spy×family`), then jumped across 5 unrelated niches. Suggested only activated (`533` impressions) when two consecutive uploads shared one lane (`L03` → `L04` Digital Ownership).
+  4. **The Minute-1 "Regulatory Date Drag" (`00:44–01:56` Cliff):** In `L04`, retention plunged from **`55%` → `25%`** while reciting dates, regulators, and corporate fines (`HP 2016`), then stabilized with **rewatch spikes** (`02:04–02:20`, `04:13`) the moment a **human protagonist story** (Nebraska hog farmer / John Deere hack) began.
+* **Permanent Systemic Upgrades Locked:**
+  1. **Zero Batch-Upload Law:** Never publish multiple videos/Shorts in the same hour or day. Minimum **5–7 days** between long-form uploads (or 15 days in background mode).
+  2. **Minute-1 Human Stakes Law:** Never read regulatory dates, court dockets, or fine lists aloud between `0:30` and `2:00`. Go directly from Hook → **visceral human story**, placing primary citations in compact lower-third source badges and the description.
+  3. **Single-Lane Lock:** Strictly **Corporate Traps / Digital Lock-In / Tech Economics** (no off-franchise neuroscience/history detours).
+  4. **Shorts Dark-Box Ban:** Permanently retire dark translucent HTML bullet-point card templates on vertical Shorts (`0%` stayed-to-watch).

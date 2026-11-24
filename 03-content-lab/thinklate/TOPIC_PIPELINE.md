@@ -1,6 +1,12 @@
 # ThinkLate Video & Topic Pipeline
 *Structured backlog by Genre, Niche, and Core Paradox. Session-persistent.*
-*Last Updated: 2026-11-17 (Synced with 6-Gate Topic Vault & 7-Video Corpus Laws)*
+*Last Updated: 2026-11-24 (Synced with Locked B1-Only `V0 → V10` Evergreen Software Architect Series — Gate G2 Frozen)*
+
+> **ACTIVE CHANNEL RE-ALIGNMENT (LOCKED 2026-11-24 — GATE G2 FROZEN UNTIL POST-B1 RESULT):**
+> - **Status:** **ALL public video production is FROZEN until Gate G2 (after EPAM B1 assessment result).**
+> - **Canonical Evergreen Season 1 Series (`V0 → V10` — 11 Locked Videos):** ThinkLate pulls directly from [B1_HLD_ROADMAP_AND_TOPICS.md](../../../engineering-foundations/00-control/B1_HLD_ROADMAP_AND_TOPICS.md) (`V0` Role Clarity + `V1–V10` Core Software Architect Baseline) with reusable studio deck at [studio/decks/v0_architect_roles.js](studio/decks/v0_architect_roles.js).
+> - **Permanent NDA Guardrail:** Public videos MUST use **100% original non-confidential examples** — ZERO mention of EPAM assessments, ZERO EPAM KB cases, ZERO SAS Module 4 slides, ZERO *"Going Green"*, ZERO Cox Automotive internals.
+> - *(Legacy `L01–L11` consumer-economics backlog below is archived/paused.)*
 
 ---
 
@@ -33,18 +39,18 @@ ThinkLate is **conversational infotainment, high-curiosity questioning, pattern 
 | **L03** | `videos/longForm/L03_death-of-ownership` | *Death of Ownership* | A: Business / Tech | Cloud Hardware Rentierism | **PRIVATE (Nov 6)** |
 | **L04** | `videos/longForm/L04_the-subscription-trap` | *The Subscription Trap* | A: Business Monopoly | SaaS, Firmware Locks, Cartels | **PUBLISHED** |
 | **L05** | `videos/longForm/L05_how-airbnb-stole-100b` | *How Airbnb Stole $100 Billion* | A: Business & Platform | Housing Market Extraction | **PRIVATE / NOT LIVE** |
-| **L06** | `videos/longForm/L06_the-memory-lie` | *The Memory Lie* | D: Philosophy / Neuroscience | Holographic Memory | **PARKED (finished master, off-franchise, unpublished)** |
-| **L07** | `videos/longForm/L07_why-you-cant-cancel` | *Why You Can't Cancel Anything* | A: Business Monopoly | Consumer Economics / Iliad Flow | **MASTER V2 READY (1080p, 5m 17s, -15.9 LUFS)** |
-| **L08** | `videos/longForm/L08_ai-layoffs-capex-heist` | *Why 200,000 Tech Workers Really Got Fired* (`A6`) | A: Business & Tech | AI Capex vs Payroll (`6/6` Gate Winner) | **SCRIPT & QC PASSED (1,288w, 0 violations) + DUAL THUMBNAILS + AUDIO AUDITIONS READY** |
+| **L06** | `videos/longForm/L06_the-memory-lie` | *The Memory Lie* | D: Philosophy / Neuroscience | Holographic Memory | **PUBLISHED (Nov 14 — 1 impr / 0 views, throttled)** |
+| **L07** | `videos/longForm/L07_why-you-cant-cancel` | *Why You Can't Cancel Anything* | A: Business Monopoly | Consumer Economics / Iliad Flow | **PUBLISHED (Nov 14 — 9 impr / 5–6 views, 1:31 AVD)** |
+| **L08** | `videos/longForm/L08_ai-layoffs-capex-heist` | *Why 200,000 Tech Workers Really Got Fired* (`A6`) | A: Business & Tech | AI Capex vs Payroll (`6/6` Gate Winner) | **PAUSED PENDING CHANNEL PIVOT AUDIT (Nov 21)** |
 | **L05-Alt**| `videos/backlog/L05-alt_the-ai-ipo-bubble` | *The AI IPO Bubble* | A: Business / Tech | Venture Capital Dumping | Backlog |
 
 ### Short-Form Vertical Videos (S-Series)
 | ID | Folder Path | Title / Working Title | Linked Long-Form | Duration | Status |
 |:---:|:---|---|:---:|:---:|:---:|
 | **S01** | `videos/shortForm/S01_ai-energy-shock` | *The $22 Tax On Every AI Prompt* | L06 (Splice 1) | 52.50s | **PULLED (silent audio)** |
-| **S02–S04** | `videos/shortForm/S02_the-eyewitness-lie` (`S03`/`S04`) | *The Eyewitness Lie / Holographic Shard / Photocopy Trap* | L06 (Standalone Climax Shorts) | 48s–57s | **PARKED (Rendered Nov 8)** |
-| **S05** | `videos/shortForm/S05_the-shelf-price-is-fake` | *The Shelf Price Is Fake* | L07 (The Fine Print) | 41.93s | **MASTER V2 READY (1080x1920, -15.8 LUFS)** |
-| **S06** | `videos/shortForm/S06_30-percent-ai-rehire-trap` | *Why 30% of "AI-Replaced" Workers Will Be Rehired* (`A6` Splice) | L08 | 50–55s | **SCRIPT & QC PASSED (121w, 0 violations) — Awaiting Audio Pick** |
+| **S02–S04** | `videos/shortForm/S02_the-eyewitness-lie` (`S03`/`S04`) | *The Eyewitness Lie / Holographic Shard / Photocopy Trap* | L06 (Standalone Climax Shorts) | 48s–57s | **PUBLISHED (Nov 14 — 0–9 impr / 0–1 views, Shorts feed frozen)** |
+| **S05** | `videos/shortForm/S05_the-shelf-price-is-fake` | *The Shelf Price Is Fake* | L07 (The Fine Print) | 41.93s | **PUBLISHED (Nov 14 — 0 impr / 0 views, Shorts feed frozen)** |
+| **S06** | `videos/shortForm/S06_30-percent-ai-rehire-trap` | *Why 30% of "AI-Replaced" Workers Will Be Rehired* (`A6` Splice) | L08 | 50–55s | **PAUSED PENDING CHANNEL PIVOT AUDIT (Nov 21)** |
 
 ---
 

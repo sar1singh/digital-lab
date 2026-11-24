@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThinkLate Studio — Modern Presentation & Infinite-Canvas Recording Deck</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <style>
+    /* Default Theme: Warm Paper (Eye-Friendly Daylight — Zero Harsh Pure White) */
+    :root {
+      --bg: #ece8df;
+      --dot: #cfc8ba;
+      --paper: #f7f4ee;
+      --card: #efebe2;
+      --topbar: #f2eee6;
+      --border: #dcd5c7;
+      --border-strong: #c6bda9;
+      --ink: #1c1917;
+      --ink-2: #44403c;
+      --muted: #78716c;
+      --blue: #1d4ed8;
+      --blue-soft: #e6eefc;
+      --emerald: #047857;
+      --emerald-soft: #e3f5ee;
+      --amber: #b45309;
+      --amber-soft: #f9eed9;
+      --rose: #be123c;
+      --rose-soft: #fbe6eb;
+      --shadow: rgba(28, 25, 23, 0.08);
+      --note-font: 14.5px;
+    }
+
+    /* Theme 2: Cool Mist (Soft Slate-Grey — Zero Glare) */
+    body[data-theme="mist"] {
+      --bg: #dde4ee;
+      --dot: #bcc7d6;
+      --paper: #edf2f7;
+      --card: #e3eaf2;
+      --topbar: #e7edf5;
+      --border: #cbd5e1;
+      --border-strong: #b0bfd1;
+      --ink: #0f172a;
+      --ink-2: #334155;
+      --muted: #64748b;
+      --blue: #2563eb;
+      --blue-soft: #dbeafe;
+      --emerald: #059669;
+      --emerald-soft: #d1fae5;
+      --amber: #b45309;
+      --amber-soft: #fef3c7;
+      --rose: #e11d48;
+      --rose-soft: #ffe4e6;
+      --shadow: rgba(15, 23, 42, 0.09);
+    }
+
+    /* Theme 3: Soft Charcoal (Modern Warm Graphite — Calm, Not Pitch-Black) */
+    body[data-theme="charcoal"] {
+      --bg: #181c24;
+      --dot: #2b3240;
+      --paper: #212733;
+      --card: #28303e;
+      --topbar: #1c212b;
+      --border: #343d4f;
+      --border-strong: #465269;
+      --ink: #f1f5f9;
+      --ink-2: #cbd5e1;
+      --muted: #94a3b8;
+      --blue: #60a5fa;
+      --blue-soft: rgba(96, 165, 250, 0.14);
+      --emerald: #34d399;
+      --emerald-soft: rgba(52, 211, 153, 0.14);
+      --amber: #fbbf24;
+      --amber-soft: rgba(251, 191, 36, 0.14);
+      --rose: #fb7185;
+      --rose-soft: rgba(251, 113, 133, 0.15);
+      --shadow: rgba(0, 0, 0, 0.35);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Inter', system-ui, sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    /* Top Studio Bar */
+    .topbar {
+      height: 54px;
+      background: var(--topbar);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      gap: 10px;
+      flex-shrink: 0;
+      z-index: 40;
+    }
+    body.obs-clean .topbar,
+    body.obs-clean .notes-pane { display: none !important; }
+    body.obs-clean .stage-wrap { padding: 0; }
+    body.obs-clean .slide-frame { border: none; border-radius: 0; width: 100vw; height: 100vh; max-width: none; max-height: none; box-shadow: none; }
+
+    .brand { display: flex; align-items: center; gap: 9px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 14px; color: var(--ink); }
+    .brand-badge { background: var(--blue); color: #fff; font-size: 10px; font-family: 'JetBrains Mono', monospace; padding: 2px 8px; border-radius: 999px; font-weight: 700; }
+    .controls { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+    select, button {
+      background: var(--paper);
+      color: var(--ink-2);
+      border: 1px solid var(--border-strong);
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 12.5px;
+      font-weight: 500;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      transition: all 0.14s ease;
+    }
+    button:hover, select:hover { border-color: var(--blue); color: var(--blue); background: var(--blue-soft); }
+    button.active { background: var(--blue); border-color: var(--blue); color: #fff; }
+    button.emerald-btn { border-color: var(--emerald); background: var(--emerald-soft); color: var(--emerald); font-weight: 600; }
+    button.emerald-btn:hover { background: var(--emerald); color: #fff; }
+    button.danger { border-color: var(--rose); background: var(--rose-soft); color: var(--rose); }
+    button.danger:hover { background: var(--rose); color: #fff; }
+    .timer-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 5px 10px;
+      border-radius: 8px;
+      background: var(--emerald-soft);
+      border: 1px solid var(--emerald);
+      color: var(--emerald);
+      min-width: 68px;
+      text-align: center;
+    }
+
+    /* Main Split Layout */
+    .workspace { flex: 1; display: flex; min-height: 0; position: relative; }
+    .stage-wrap {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background-color: var(--bg);
+      background-image: radial-gradient(var(--dot) 1.15px, transparent 1.15px);
+      background-size: 24px 24px;
+    }
+
+    /* Floating Annotation Toolbar */
+    .draw-bar {
+      position: absolute;
+      bottom: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 35;
+      background: var(--topbar);
+      border: 1px solid var(--border-strong);
+      border-radius: 999px;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 10px 28px var(--shadow);
+    }
+    .draw-bar button { border-radius: 999px; padding: 5px 10px; font-size: 12px; }
+    .swatch { width: 16px; height: 16px; border-radius: 50%; border: 2px solid var(--paper); box-shadow: 0 0 0 1px var(--muted); cursor: pointer; }
+    .swatch.active { box-shadow: 0 0 0 2px var(--ink); transform: scale(1.15); }
+
+    /* Mode 1: Crisp 16:9 Slide Frame */
+    .slide-frame {
+      width: 100%;
+      max-width: 1280px;
+      aspect-ratio: 16 / 9;
+      max-height: 100%;
+      background: var(--paper);
+      border: 1px solid var(--border-strong);
+      border-radius: 18px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      padding: 38px 50px 28px;
+      box-shadow: 0 18px 50px var(--shadow);
+    }
+    .slide-frame::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(var(--dot) 1px, transparent 1px);
+      background-size: 22px 22px;
+      opacity: 0.45;
+      pointer-events: none;
+    }
+    .slide-inner { position: relative; z-index: 2; flex: 1; display: flex; flex-direction: column; justify-content: center; min-height: 0; }
+    .slide-footer {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+      padding-top: 12px;
+      margin-top: 10px;
+      border-top: 1px solid var(--border);
+    }
+    .progress-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--blue), var(--emerald));
+      transition: width 0.25s ease;
+    }
+
+    /* Mode 2: Infinite Pan & Zoom Whiteboard */
+    #infiniteViewport {
+      display: none;
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      cursor: grab;
+      background-color: var(--bg);
+      background-image: radial-gradient(var(--dot) 1.2px, transparent 1.2px);
+      background-size: 26px 26px;
+    }
+    #infiniteViewport.active { display: block; }
+    #infiniteViewport.grabbing { cursor: grabbing; }
+    #infiniteWorld {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform-origin: 0 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1180px);
+      gap: 70px;
+      padding: 80px;
+      transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    #infiniteWorld.no-anim { transition: none; }
+    .canvas-board {
+      width: 1180px;
+      min-height: 660px;
+      background: var(--paper);
+      border: 2px solid var(--border-strong);
+      border-radius: 18px;
+      padding: 36px 46px 28px;
+      box-shadow: 0 14px 40px var(--shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      cursor: pointer;
+    }
+    .canvas-board.focused { border-color: var(--blue); box-shadow: 0 0 0 4px var(--blue-soft), 0 20px 50px var(--shadow); }
+    .board-num-badge {
+      position: absolute;
+      top: -15px;
+      left: 26px;
+      background: var(--blue);
+      color: #fff;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+
+    /* Live Drawing Canvas */
+    #drawCanvas { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 25; pointer-events: none; }
+    body.draw-on #drawCanvas { pointer-events: auto; cursor: crosshair; }
+
+    /* Slide Components */
+    .kicker {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--blue);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    h1.hero-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: clamp(32px, 3.8vw, 52px);
+      font-weight: 800;
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+    h2.slide-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: clamp(22px, 2.35vw, 31px);
+      font-weight: 800;
+      line-height: 1.16;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 18px;
+    }
+    .subhead { font-size: clamp(15px, 1.35vw, 19px); color: var(--ink-2); line-height: 1.55; max-width: 820px; margin-bottom: 24px; }
+    .pill-row { display: flex; flex-wrap: wrap; gap: 9px; }
+    .pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: var(--blue-soft);
+      border: 1px solid var(--border-strong);
+      color: var(--blue);
+    }
+
+    /* Steps Grid */
+    .steps-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .steps-grid.three-col { grid-template-columns: repeat(3, 1fr); }
+    .step-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 18px;
+      transition: border-color 0.15s ease;
+    }
+    .step-card:hover { border-color: var(--blue); }
+    .step-num {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--emerald);
+      background: var(--emerald-soft);
+      border: 1px solid var(--border);
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+    }
+    .step-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; font-weight: 700; margin-bottom: 5px; color: var(--ink); }
+    .step-desc { font-size: 13px; color: var(--ink-2); line-height: 1.48; }
+
+    /* Matrix Table */
+    table.matrix { width: 100%; border-collapse: collapse; font-size: 13px; background: var(--paper); border-radius: 12px; overflow: hidden; border: 1px solid var(--border-strong); }
+    table.matrix th {
+      text-align: left;
+      padding: 11px 13px;
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid var(--border-strong);
+    }
+    table.matrix td { padding: 10px 13px; border-bottom: 1px solid var(--border); color: var(--ink-2); }
+    table.matrix tr:last-child td { border-bottom: none; }
+    table.matrix td:first-child { font-weight: 700; color: var(--ink); }
+    table.matrix tr:nth-child(even) td { background: var(--card); }
+    table.matrix tr:hover td { background: var(--blue-soft); }
+
+    /* Tradeoff Split */
+    .tradeoff-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .tradeoff-box { background: var(--card); border-radius: 14px; padding: 20px 22px; border: 1px solid var(--border-strong); }
+    .tradeoff-box.emerald { border-top: 4px solid var(--emerald); }
+    .tradeoff-box.blue, .tradeoff-box.cyan { border-top: 4px solid var(--blue); }
+    .tradeoff-tag { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 7px; color: var(--emerald); }
+    .tradeoff-box.blue .tradeoff-tag, .tradeoff-box.cyan .tradeoff-tag { color: var(--blue); }
+    .tradeoff-box h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; margin-bottom: 12px; color: var(--ink); }
+    .tradeoff-box ul { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .tradeoff-box li { font-size: 13.5px; color: var(--ink-2); line-height: 1.48; padding-left: 18px; position: relative; }
+    .tradeoff-box li::before { content: "→"; position: absolute; left: 0; color: var(--blue); font-weight: 700; }
+
+    /* Interactive Zoomable & Pannable Diagram Viewport (Works Right Inside Any Slide!) */
+    .diagram-stage {
+      position: relative;
+      flex: 1;
+      min-height: 310px;
+      background: var(--card);
+      border: 1.5px solid var(--border-strong);
+      border-radius: 14px;
+      overflow: hidden;
+      cursor: grab;
+      user-select: none;
+    }
+    .diagram-stage.panning { cursor: grabbing; }
+    .diagram-stage.expanded {
+      position: fixed;
+      inset: 60px 18px 66px 18px;
+      z-index: 60;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.35);
+      border: 2px solid var(--blue);
+    }
+    .diagram-transform {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform-origin: center center;
+      transition: transform 0.12s ease-out;
+    }
+    .diagram-transform.no-anim { transition: none; }
+    .diagram-transform svg { max-width: 94%; max-height: 92%; height: auto; }
+    .diagram-hud {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--topbar);
+      border: 1px solid var(--border-strong);
+      border-radius: 10px;
+      padding: 4px 6px;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+    .diagram-hud button { padding: 3px 8px; font-size: 12px; border-radius: 6px; }
+    .diagram-zoom-pct { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; color: var(--muted); min-width: 40px; text-align: center; }
+    .diagram-hint {
+      position: absolute;
+      bottom: 8px;
+      left: 12px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10.5px;
+      color: var(--muted);
+      background: var(--topbar);
+      padding: 3px 8px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      pointer-events: none;
+    }
+    .mermaid-caption { margin-top: 10px; font-size: 13px; font-weight: 500; color: var(--muted); text-align: center; }
+
+    /* Compact Single-View Flow Roadmap (4-Act 2x2 Sequence Boxes) */
+    .roadmap-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .act-box {
+      background: var(--card);
+      border: 1px solid var(--border-strong);
+      border-radius: 12px;
+      padding: 13px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .act-box.blue { border-left: 4px solid var(--blue); }
+    .act-box.emerald { border-left: 4px solid var(--emerald); }
+    .act-box.amber { border-left: 4px solid var(--amber); }
+    .act-box.rose { border-left: 4px solid var(--rose); }
+    .act-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--blue);
+      padding-bottom: 5px;
+      border-bottom: 1px solid var(--border);
+    }
+    .act-box.emerald .act-head { color: var(--emerald); }
+    .act-box.amber .act-head { color: var(--amber); }
+    .act-box.rose .act-head { color: var(--rose); }
+    .act-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+    .act-item { display: flex; align-items: baseline; gap: 8px; font-size: 12.8px; line-height: 1.32; }
+    .v-chip {
+      flex-shrink: 0;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10.5px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 5px;
+      background: var(--paper);
+      border: 1px solid var(--border-strong);
+      color: var(--ink);
+      min-width: 30px;
+      text-align: center;
+    }
+    .v-title { font-weight: 700; color: var(--ink); }
+    .v-sub { color: var(--muted); font-size: 11.8px; }
+
+    /* Right Speaker & Studio Dock Sidebar */
+    .notes-pane {
+      width: 375px;
+      background: var(--topbar);
+      border-left: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      overflow-y: auto;
+      padding: 15px;
+      gap: 13px;
+      z-index: 30;
+    }
+    .pane-section { background: var(--paper); border: 1px solid var(--border); border-radius: 12px; padding: 13px 14px; }
+    .pane-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 9px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .notes-list { list-style: none; display: flex; flex-direction: column; gap: 9px; font-size: var(--note-font); line-height: 1.52; color: var(--ink-2); }
+    .notes-list li { padding-left: 14px; position: relative; }
+    .notes-list li::before { content: "•"; position: absolute; left: 0; color: var(--emerald); font-weight: 800; }
+    .coach-tip { margin-top: 10px; padding: 9px 11px; border-radius: 8px; background: var(--amber-soft); border: 1px solid var(--border); font-size: 12.5px; color: var(--amber); line-height: 1.45; }
+
+    .dock-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; }
+    .dock-link {
+      display: block;
+      text-decoration: none;
+      color: var(--ink-2);
+      background: var(--card);
+      border: 1px solid var(--border-strong);
+      border-radius: 8px;
+      padding: 7px 9px;
+      font-size: 12px;
+      font-weight: 600;
+      text-align: center;
+      transition: all 0.14s ease;
+    }
+    .dock-link:hover { border-color: var(--blue); color: var(--blue); background: var(--blue-soft); }
+    .res-list { display: flex; flex-direction: column; gap: 7px; }
+    .res-link { color: var(--blue); font-size: 12.5px; font-weight: 500; text-decoration: none; line-height: 1.38; }
+    .res-link:hover { text-decoration: underline; }
+    .retake-log { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--rose); display: flex; flex-direction: column; gap: 4px; max-height: 95px; overflow-y: auto; }
+
+    /* Laser Pointer */
+    #laser {
+      position: fixed;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #e11d48;
+      box-shadow: 0 0 14px 4px rgba(225, 29, 72, 0.55);
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      display: none;
+      z-index: 9999;
+    }
+    body.laser-on { cursor: none; }
+    body.laser-on #laser { display: block; }
+  </style>
+</head>
+<body data-theme="paper">
+  <div id="laser"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span>THINKLATE STUDIO</span>
+      <span class="brand-badge">CANVAS V2.1</span>
+    </div>
+    <div class="controls">
+      <select id="deckSelect" title="Switch Episode"></select>
+      <select id="themeSelect" title="Eye-Comfort Surface Theme">
+        <option value="paper">☀️ Warm Paper</option>
+        <option value="mist">🌤️ Cool Mist</option>
+        <option value="charcoal">🌙 Soft Charcoal</option>
+      </select>
+      <button id="prevBtn" title="Previous (Left Arrow)">←</button>
+      <span id="slideCounter" style="font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;color:var(--muted);min-width:46px;text-align:center;">1 / 1</span>
+      <button id="nextBtn" title="Next (Right Arrow)">→</button>
+      <button id="canvasModeBtn" title="Toggle Infinite Pan/Zoom Whiteboard (C)">🗺️ Canvas (C)</button>
+      <button id="exportExcaliBtn" class="emerald-btn" title="Download native .excalidraw file">⬇ .excalidraw</button>
+      <div class="timer-pill" id="timerDisplay">00:00</div>
+      <button id="timerToggle" title="Timer (T)">▶</button>
+      <button id="retakeBtn" class="danger" title="Flag Retake (X)">🚩</button>
+      <button id="obsBtn" title="Clean OBS Recording View (H)">🎥 OBS (H)</button>
+      <button id="fsBtn" title="Fullscreen (F)">⛶</button>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <section class="stage-wrap" id="stageWrap">
+      <!-- Mode 1: Single Crisp 16:9 Slide -->
+      <div class="slide-frame" id="slideFrame">
+        <div class="slide-inner" id="stageInner"></div>
+        <div class="slide-footer">
+          <span id="footerLeft">THINKLATE · ENTERPRISE ARCHITECTURE</span>
+          <span id="footerRight">BOARD 01 / 08</span>
+        </div>
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <!-- Mode 2: Infinite Pan & Zoom Whiteboard -->
+      <div id="infiniteViewport">
+        <div id="infiniteWorld"></div>
+      </div>
+
+      <!-- Live Annotation Layer -->
+      <canvas id="drawCanvas"></canvas>
+
+      <!-- Floating Bottom Draw Bar -->
+      <div class="draw-bar" id="drawBar">
+        <button id="penBtn" title="Draw on screen (P)">✏️ Draw (P)</button>
+        <button id="hiBtn" title="Highlighter">🖍️ Highlight</button>
+        <span class="swatch active" data-color="#e11d48" style="background:#e11d48;" title="Red"></span>
+        <span class="swatch" data-color="#2563eb" style="background:#2563eb;" title="Blue"></span>
+        <span class="swatch" data-color="#059669" style="background:#059669;" title="Emerald"></span>
+        <span class="swatch" data-color="#d97706" style="background:#d97706;" title="Amber"></span>
+        <button id="clearDrawBtn" title="Clear ink (E)">🧹 Clear (E)</button>
+        <button id="laserBtn" title="Laser dot (L)">🔴 Laser (L)</button>
+        <button id="zoomFitBtn" style="display:none;" title="Fit all boards">⊞ Fit All</button>
+      </div>
+    </section>
+
+    <aside class="notes-pane">
+      <div class="pane-section">
+        <div class="pane-title">
+          <span>Speaking Prompts (Bullet Mode)</span>
+          <span>
+            <button id="fontMinus" style="padding:2px 6px;font-size:11px;">A-</button>
+            <button id="fontPlus" style="padding:2px 6px;font-size:11px;">A+</button>
+          </span>
+        </div>
+        <ul class="notes-list" id="notesList"></ul>
+        <div class="coach-tip" id="coachTip"></div>
+      </div>
+
+      <div class="pane-section">
+        <div class="pane-title"><span>External Freeform Canvas & Study Dock</span></div>
+        <div class="dock-grid">
+          <a class="dock-link" href="https://excalidraw.com/" target="_blank">Excalidraw ↗</a>
+          <a class="dock-link" href="https://app.eraser.io/" target="_blank">Eraser.io ↗</a>
+          <a class="dock-link" href="https://mermaid.live/" target="_blank">Mermaid Live ↗</a>
+          <a class="dock-link" href="https://notebooklm.google.com/" target="_blank">NotebookLM ↗</a>
+          <a class="dock-link" href="https://serverlessland.com/patterns" target="_blank">AWS Patterns ↗</a>
+          <a class="dock-link" href="https://refactoring.guru/design-patterns" target="_blank">Refactoring.Guru ↗</a>
+        </div>
+      </div>
+
+      <div class="pane-section">
+        <div class="pane-title"><span>Module Study Links</span></div>
+        <div class="res-list" id="resList"></div>
+      </div>
+
+      <div class="pane-section">
+        <div class="pane-title">
+          <span>Retake Flags</span>
+          <button id="clearRetakes" style="padding:2px 6px;font-size:11px;">Clear</button>
+        </div>
+        <div class="retake-log" id="retakeLog"><span style="color:var(--muted);">No retakes flagged. Press X to mark.</span></div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Register Modular Video Decks (V0 -> V11) -->
+  <script src="decks/v0_architect_roles.js"></script>
+
+  <script>
+    function initMermaid(themeName) {
+      const isDark = themeName === 'charcoal';
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: isDark ? 'dark' : 'base',
+        look: 'handDrawn',
+        themeVariables: isDark
+          ? { fontFamily: 'Inter, sans-serif', primaryColor: '#28303e', primaryBorderColor: '#60a5fa', primaryTextColor: '#f1f5f9', lineColor: '#94a3b8' }
+          : { fontFamily: 'Inter, sans-serif', primaryColor: '#e6eefc', primaryBorderColor: '#1d4ed8', primaryTextColor: '#1c1917', lineColor: '#44403c', secondaryColor: '#e3f5ee', tertiaryColor: '#f9eed9' }
+      });
+    }
+
+    const savedTheme = localStorage.getItem('thinklate_studio_theme') || 'paper';
+    document.body.setAttribute('data-theme', savedTheme);
+    document.getElementById('themeSelect').value = savedTheme;
+    initMermaid(savedTheme);
+
+    const decks = window.THINKLATE_DECKS || {};
+    const deckKeys = Object.keys(decks);
+    let currentDeckKey = deckKeys[0];
+    let slideIdx = 0;
+    let isCanvasMode = false;
+    let seconds = 0, timerRunning = false, timerInt = null;
+    let retakes = [], noteFontSize = 14.5;
+
+    // Infinite Canvas state
+    let cam = { x: 40, y: 40, scale: 0.55 };
+    let dragging = false, dragStart = { x: 0, y: 0 };
+
+    // Drawing state
+    const drawCanvas = document.getElementById('drawCanvas');
+    const ctx = drawCanvas.getContext('2d');
+    let drawMode = 'off', drawColor = '#e11d48', isDrawing = false;
+
+    function resizeDrawCanvas() {
+      const r = document.getElementById('stageWrap').getBoundingClientRect();
+      drawCanvas.width = r.width;
+      drawCanvas.height = r.height;
+    }
+    window.addEventListener('resize', resizeDrawCanvas);
+    resizeDrawCanvas();
+
+    drawCanvas.addEventListener('mousedown', e => {
+      if (drawMode === 'off') return;
+      isDrawing = true;
+      const r = drawCanvas.getBoundingClientRect();
+      ctx.beginPath();
+      ctx.moveTo(e.clientX - r.left, e.clientY - r.top);
+    });
+    drawCanvas.addEventListener('mousemove', e => {
+      if (!isDrawing) return;
+      const r = drawCanvas.getBoundingClientRect();
+      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';
+      ctx.strokeStyle = drawMode === 'hi' ? drawColor + '55' : drawColor;
+      ctx.lineWidth = drawMode === 'hi' ? 18 : 3.5;
+      ctx.lineTo(e.clientX - r.left, e.clientY - r.top);
+      ctx.stroke();
+    });
+    window.addEventListener('mouseup', () => { isDrawing = false; });
+
+    function clearInk() { ctx.clearRect(0, 0, drawCanvas.width, drawCanvas.height); }
+    function setDrawMode(mode) {
+      drawMode = (drawMode === mode) ? 'off' : mode;
+      document.body.classList.toggle('draw-on', drawMode !== 'off');
+      document.getElementById('penBtn').classList.toggle('active', drawMode === 'pen');
+      document.getElementById('hiBtn').classList.toggle('active', drawMode === 'hi');
+    }
+
+    const deckSelect = document.getElementById('deckSelect');
+    deckKeys.forEach(k => {
+      const opt = document.createElement('option');
+      opt.value = k;
+      opt.textContent = `${k}: ${decks[k].title}`;
+      deckSelect.appendChild(opt);
+    });
+
+    function fmtTime(s) { return `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`; }
+
+    function buildSlideHTML(deck, slide, idx) {
+      let html = `<div class="kicker">${slide.kicker || deck.badge}</div>`;
+      if (slide.type === 'hero') {
+        html += `<h1 class="hero-title">${slide.headline}</h1>`;
+        html += `<p class="subhead">${slide.subhead}</p>`;
+        html += `<div class="pill-row">${(slide.pills || []).map(p => `<span class="pill">${p}</span>`).join('')}</div>`;
+      } else if (slide.type === 'steps') {
+        const cls = (slide.items || []).length > 4 ? 'steps-grid three-col' : 'steps-grid';
+        html += `<h2 class="slide-title">${slide.headline}</h2>`;
+        html += `<div class="${cls}">${slide.items.map(it => `
+          <div class="step-card">
+            <div class="step-num">${it.num}</div>
+            <div class="step-title">${it.title}</div>
+            <div class="step-desc">${it.desc}</div>
+          </div>`).join('')}</div>`;
+      } else if (slide.type === 'matrix') {
+        html += `<h2 class="slide-title">${slide.headline}</h2>`;
+        html += `<table class="matrix"><thead><tr>${slide.headers.map(h => `<th>${h}</th>`).join('')}</tr></thead><tbody>`;
+        html += slide.rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('');
+        html += `</tbody></table>`;
+      } else if (slide.type === 'tradeoff') {
+        html += `<h2 class="slide-title">${slide.headline}</h2>`;
+        html += `<div class="tradeoff-grid">
+          <div class="tradeoff-box ${slide.leftColor || 'emerald'}">
+            <div class="tradeoff-tag">${slide.leftTag}</div>
+            <h3>${slide.leftTitle}</h3>
+            <ul>${slide.leftPoints.map(p => `<li>${p}</li>`).join('')}</ul>
+          </div>
+          <div class="tradeoff-box ${slide.rightColor || 'blue'}">
+            <div class="tradeoff-tag">${slide.rightTag}</div>
+            <h3>${slide.rightTitle}</h3>
+            <ul>${slide.rightPoints.map(p => `<li>${p}</li>`).join('')}</ul>
+          </div>
+        </div>`;
+      } else if (slide.type === 'roadmap') {
+        html += `<h2 class="slide-title">${slide.headline}</h2>`;
+        html += `<div class="roadmap-grid">${(slide.acts || []).map(act => `
+          <div class="act-box ${act.color || 'blue'}">
+            <div class="act-head"><span>${act.label}</span><span>${act.range}</span></div>
+            <ul class="act-list">${act.items.map(it => `
+              <li class="act-item">
+                <span class="v-chip">${it.id}</span>
+                <span><span class="v-title">${it.title}</span> <span class="v-sub">— ${it.sub}</span></span>
+              </li>`).join('')}
+            </ul>
+          </div>`).join('')}</div>`;
+      } else if (slide.type === 'mermaid') {
+        html += `<h2 class="slide-title">${slide.headline}</h2>`;
+        html += `
+          <div class="diagram-stage" data-dstage="1">
+            <div class="diagram-hud">
+              <button type="button" data-dzoom="out" title="Zoom Out">−</button>
+              <span class="diagram-zoom-pct" data-dpct>100%</span>
+              <button type="button" data-dzoom="in" title="Zoom In">+</button>
+              <button type="button" data-dzoom="reset" title="Reset View">Reset</button>
+              <button type="button" data-dzoom="expand" title="Expand Diagram Full Canvas">⤢ Expand</button>
+            </div>
+            <div class="diagram-transform" data-dtransform>
+              <div class="mermaid" data-midx="${idx}">${slide.diagram}</div>
+            </div>
+            <div class="diagram-hint">Scroll to Zoom · Drag to Pan · Double-Click to Reset</div>
+          </div>`;
+        if (slide.caption) html += `<div class="mermaid-caption">${slide.caption}</div>`;
+      }
+      return html;
+    }
+
+    function wireZoomableDiagrams(container) {
+      container.querySelectorAll('.diagram-stage').forEach(stage => {
+        const txEl = stage.querySelector('[data-dtransform]');
+        const pctEl = stage.querySelector('[data-dpct]');
+        let dz = { scale: 1, x: 0, y: 0 };
+
+        const apply = (anim = true) => {
+          txEl.classList.toggle('no-anim', !anim);
+          txEl.style.transform = `translate(${dz.x}px, ${dz.y}px) scale(${dz.scale})`;
+          if (pctEl) pctEl.textContent = `${Math.round(dz.scale * 100)}%`;
+        };
+
+        stage.querySelectorAll('[data-dzoom]').forEach(btn => {
+          btn.addEventListener('click', e => {
+            e.stopPropagation();
+            const act = btn.dataset.dzoom;
+            if (act === 'in') dz.scale = Math.min(3.5, dz.scale + 0.25);
+            else if (act === 'out') dz.scale = Math.max(0.5, dz.scale - 0.25);
+            else if (act === 'reset') dz = { scale: 1, x: 0, y: 0 };
+            else if (act === 'expand') {
+              stage.classList.toggle('expanded');
+              btn.textContent = stage.classList.contains('expanded') ? '✕ Close' : '⤢ Expand';
+            }
+            apply(true);
+          });
+        });
+
+        stage.addEventListener('wheel', e => {
+          if (isCanvasMode && !stage.classList.contains('expanded')) return;
+          e.preventDefault();
+          e.stopPropagation();
+          const factor = e.deltaY < 0 ? 1.12 : 0.89;
+          dz.scale = Math.max(0.5, Math.min(3.5, dz.scale * factor));
+          apply(false);
+        }, { passive: false });
+
+        stage.addEventListener('dblclick', e => {
+          e.stopPropagation();
+          dz = { scale: 1, x: 0, y: 0 };
+          apply(true);
+        });
+
+        stage.addEventListener('mousedown', e => {
+          if (e.target.closest('.diagram-hud') || drawMode !== 'off') return;
+          if (isCanvasMode && !stage.classList.contains('expanded')) return;
+          e.stopPropagation();
+          stage.classList.add('panning');
+          const sx = e.clientX - dz.x, sy = e.clientY - dz.y;
+          const onMove = ev => {
+            dz.x = ev.clientX - sx;
+            dz.y = ev.clientY - sy;
+            apply(false);
+          };
+          const onUp = () => {
+            stage.classList.remove('panning');
+            window.removeEventListener('mousemove', onMove);
+            window.removeEventListener('mouseup', onUp);
+          };
+          window.addEventListener('mousemove', onMove);
+          window.addEventListener('mouseup', onUp);
+        });
+      });
+    }
+
+    async function renderMermaidInside(container) {
+      const els = container.querySelectorAll('.mermaid');
+      for (const el of els) {
+        const code = el.textContent.trim();
+        try {
+          const { svg } = await mermaid.render('m_' + Math.random().toString(36).slice(2, 9), code);
+          el.innerHTML = svg;
+        } catch (e) {}
+      }
+      wireZoomableDiagrams(container);
+    }
+
+    function updateNotes() {
+      const deck = decks[currentDeckKey];
+      const slide = deck.slides[slideIdx];
+      document.getElementById('slideCounter').textContent = `${slideIdx + 1} / ${deck.slides.length}`;
+      document.getElementById('notesList').innerHTML = (slide.notes || []).map(n => `<li>${n}</li>`).join('');
+      document.getElementById('coachTip').textContent = slide.tip ? `🎙️ Delivery Tip: ${slide.tip}` : '';
+      document.getElementById('resList').innerHTML = (deck.resources || []).map(r => `<a class="res-link" href="${r.url}" target="_blank">• ${r.label} ↗</a>`).join('');
+    }
+
+    async function renderSlide() {
+      clearInk();
+      const deck = decks[currentDeckKey];
+      const slide = deck.slides[slideIdx];
+      const inner = document.getElementById('stageInner');
+      document.getElementById('footerLeft').textContent = `${deck.id} · ${deck.title.toUpperCase()}`;
+      document.getElementById('footerRight').textContent = `BOARD ${String(slideIdx + 1).padStart(2,'0')} / ${String(deck.slides.length).padStart(2,'0')}`;
+      document.getElementById('progressBar').style.width = `${((slideIdx + 1) / deck.slides.length) * 100}%`;
+      inner.innerHTML = buildSlideHTML(deck, slide, slideIdx);
+      await renderMermaidInside(inner);
+      updateNotes();
+      if (isCanvasMode) focusBoard(slideIdx);
+    }
+
+    async function buildInfiniteCanvas() {
+      const deck = decks[currentDeckKey];
+      const world = document.getElementById('infiniteWorld');
+      world.innerHTML = deck.slides.map((s, i) => `
+        <div class="canvas-board ${i === slideIdx ? 'focused' : ''}" data-idx="${i}">
+          <span class="board-num-badge">BOARD ${String(i + 1).padStart(2, '0')}</span>
+          <div class="slide-inner">${buildSlideHTML(deck, s, i)}</div>
+          <div class="slide-footer"><span>${deck.id} · ${deck.title}</span><span>CLICK TO FOCUS · SCROLL TO ZOOM</span></div>
+        </div>`).join('');
+      await renderMermaidInside(world);
+      world.querySelectorAll('.canvas-board').forEach(b => {
+        b.addEventListener('click', e => {
+          if (dragging || e.target.closest('.diagram-hud')) return;
+          slideIdx = Number(b.dataset.idx);
+          focusBoard(slideIdx);
+          updateNotes();
+        });
+      });
+    }
+
+    function applyCam(animate = true) {
+      const world = document.getElementById('infiniteWorld');
+      world.classList.toggle('no-anim', !animate);
+      world.style.transform = `translate(${cam.x}px, ${cam.y}px) scale(${cam.scale})`;
+    }
+
+    function focusBoard(idx) {
+      const vp = document.getElementById('infiniteViewport').getBoundingClientRect();
+      document.querySelectorAll('.canvas-board').forEach((b, i) => b.classList.toggle('focused', i === idx));
+      const col = idx % 2, row = Math.floor(idx / 2);
+      const bx = 80 + col * (1180 + 70), by = 80 + row * (660 + 70);
+      const scale = Math.min((vp.width - 70) / 1180, (vp.height - 90) / 660, 0.96);
+      cam.scale = scale;
+      cam.x = (vp.width - 1180 * scale) / 2 - bx * scale;
+      cam.y = (vp.height - 660 * scale) / 2 - by * scale;
+      applyCam(true);
+    }
+
+    function fitAllBoards() {
+      const vp = document.getElementById('infiniteViewport').getBoundingClientRect();
+      const deck = decks[currentDeckKey];
+      const rows = Math.ceil(deck.slides.length / 2);
+      const totalW = 160 + 2 * 1180 + 70, totalH = 160 + rows * 660 + (rows - 1) * 70;
+      const scale = Math.min((vp.width - 40) / totalW, (vp.height - 60) / totalH);
+      cam.scale = scale;
+      cam.x = (vp.width - totalW * scale) / 2;
+      cam.y = (vp.height - totalH * scale) / 2;
+      applyCam(true);
+    }
+
+    async function toggleCanvasMode() {
+      isCanvasMode = !isCanvasMode;
+      document.getElementById('slideFrame').style.display = isCanvasMode ? 'none' : 'flex';
+      document.getElementById('infiniteViewport').classList.toggle('active', isCanvasMode);
+      document.getElementById('canvasModeBtn').classList.toggle('active', isCanvasMode);
+      document.getElementById('zoomFitBtn').style.display = isCanvasMode ? 'inline-block' : 'none';
+      clearInk();
+      if (isCanvasMode) { await buildInfiniteCanvas(); focusBoard(slideIdx); }
+      else { await renderSlide(); }
+    }
+
+    const vpEl = document.getElementById('infiniteViewport');
+    vpEl.addEventListener('wheel', e => {
+      if (!isCanvasMode) return;
+      e.preventDefault();
+      const factor = e.deltaY < 0 ? 1.1 : 0.91;
+      const rect = vpEl.getBoundingClientRect();
+      const mx = e.clientX - rect.left, my = e.clientY - rect.top;
+      const newScale = Math.max(0.18, Math.min(2.6, cam.scale * factor));
+      cam.x = mx - (mx - cam.x) * (newScale / cam.scale);
+      cam.y = my - (my - cam.y) * (newScale / cam.scale);
+      cam.scale = newScale;
+      applyCam(false);
+    }, { passive: false });
+    vpEl.addEventListener('mousedown', e => {
+      if (!isCanvasMode || drawMode !== 'off') return;
+      dragging = false;
+      dragStart = { x: e.clientX - cam.x, y: e.clientY - cam.y, sx: e.clientX, sy: e.clientY };
+      const onMove = ev => {
+        if (Math.hypot(ev.clientX - dragStart.sx, ev.clientY - dragStart.sy) > 5) dragging = true;
+        if (!dragging) return;
+        vpEl.classList.add('grabbing');
+        cam.x = ev.clientX - dragStart.x;
+        cam.y = ev.clientY - dragStart.y;
+        applyCam(false);
+      };
+      const onUp = () => {
+        vpEl.classList.remove('grabbing');
+        window.removeEventListener('mousemove', onMove);
+        window.removeEventListener('mouseup', onUp);
+        setTimeout(() => { dragging = false; }, 30);
+      };
+      window.addEventListener('mousemove', onMove);
+      window.addEventListener('mouseup', onUp);
+    });
+
+    function exportExcalidraw() {
+      const deck = decks[currentDeckKey];
+      const elements = [];
+      let seed = 1000;
+      const mkId = () => 'el_' + (seed++);
+      const baseProps = () => ({
+        angle: 0, fillStyle: 'solid', strokeWidth: 2, strokeStyle: 'solid', roughness: 1, opacity: 100,
+        groupIds: [], frameId: null, roundness: { type: 3 }, seed: seed++, version: 1, versionNonce: seed++,
+        isDeleted: false, boundElements: null, updated: Date.now(), link: null, locked: false
+      });
+      const addRect = (x, y, w, h, stroke, bg) => elements.push({ ...baseProps(), id: mkId(), type: 'rectangle', x, y, width: w, height: h, strokeColor: stroke, backgroundColor: bg });
+      const addText = (x, y, w, text, size = 18, color = '#1c1917') => {
+        const lines = text.split('\n').length;
+        elements.push({ ...baseProps(), id: mkId(), type: 'text', x, y, width: w, height: lines * size * 1.35, text, originalText: text, fontSize: size, fontFamily: 1, textAlign: 'left', verticalAlign: 'top', strokeColor: color, backgroundColor: 'transparent', lineHeight: 1.25, containerId: null });
+      };
+      deck.slides.forEach((s, i) => {
+        const col = i % 2, row = Math.floor(i / 2);
+        const bx = col * 1160, by = row * 720;
+        addRect(bx, by, 1080, 640, '#1d4ed8', '#f7f4ee');
+        addText(bx + 36, by + 28, 980, `BOARD ${i + 1} · ${s.kicker || deck.badge}`, 15, '#1d4ed8');
+        addText(bx + 36, by + 62, 1000, s.headline || deck.title, 28, '#1c1917');
+        if (s.type === 'hero') {
+          addText(bx + 36, by + 135, 980, s.subhead || '', 20, '#44403c');
+          (s.pills || []).forEach((p, pi) => {
+            const px = bx + 36 + (pi % 3) * 320, py = by + 260 + Math.floor(pi / 3) * 76;
+            addRect(px, py, 295, 54, '#1d4ed8', '#e6eefc');
+            addText(px + 18, py + 15, 260, p, 18, '#1d4ed8');
+          });
+        } else if (s.type === 'steps') {
+          (s.items || []).forEach((it, ii) => {
+            const ic = ii % 2, ir = Math.floor(ii / 2);
+            const cx = bx + 36 + ic * 510, cy = by + 130 + ir * 155;
+            addRect(cx, cy, 485, 138, '#c6bda9', '#efebe2');
+            addText(cx + 16, cy + 12, 450, `[${it.num}] ${it.title}`, 18, '#047857');
+            addText(cx + 16, cy + 46, 450, it.desc.slice(0, 140), 14, '#44403c');
+          });
+        } else if (s.type === 'matrix') {
+          let ty = by + 130;
+          addRect(bx + 36, ty, 1008, 42, '#1d4ed8', '#e6eefc');
+          addText(bx + 48, ty + 10, 980, (s.headers || []).join('   |   '), 15, '#1d4ed8');
+          ty += 52;
+          (s.rows || []).forEach(r => {
+            addRect(bx + 36, ty, 1008, 58, '#c6bda9', '#efebe2');
+            addText(bx + 48, ty + 16, 980, r.join('  —  '), 14, '#1c1917');
+            ty += 68;
+          });
+        } else if (s.type === 'tradeoff') {
+          addRect(bx + 36, by + 135, 485, 450, '#047857', '#e3f5ee');
+          addText(bx + 54, by + 155, 450, s.leftTitle, 20, '#047857');
+          addText(bx + 54, by + 205, 450, (s.leftPoints || []).map(p => '• ' + p).join('\n\n'), 15, '#1c1917');
+          addRect(bx + 555, by + 135, 485, 450, '#1d4ed8', '#e6eefc');
+          addText(bx + 573, by + 155, 450, s.rightTitle, 20, '#1d4ed8');
+          addText(bx + 573, by + 205, 450, (s.rightPoints || []).map(p => '• ' + p).join('\n\n'), 15, '#1c1917');
+        } else if (s.type === 'roadmap') {
+          (s.acts || []).forEach((act, ai) => {
+            const ac = ai % 2, ar = Math.floor(ai / 2);
+            const ax = bx + 36 + ac * 510, ay = by + 125 + ar * 245;
+            addRect(ax, ay, 485, 225, '#1d4ed8', '#efebe2');
+            addText(ax + 16, ay + 12, 450, `${act.label} (${act.range})`, 16, '#1d4ed8');
+            const body = act.items.map(it => `[${it.id}] ${it.title} — ${it.sub}`).join('\n');
+            addText(ax + 16, ay + 44, 455, body, 13, '#1c1917');
+          });
+        } else if (s.type === 'mermaid') {
+          addRect(bx + 36, by + 135, 1008, 430, '#047857', '#efebe2');
+          addText(bx + 60, by + 160, 950, 'Senior / Lead (8–12 YOE)\n   ├─► Staff Engineer ──► Principal Engineer (Product IC Track)\n   └─► Software Architect (B1) ──► Solution Architect ──► Chief Architect (2–3 Cr)\n                                         └──► Fractional Consulting & Audits', 19, '#1c1917');
+          addText(bx + 60, by + 480, 950, s.caption || '', 16, '#047857');
+        }
+      });
+      const payload = { type: 'excalidraw', version: 2, source: 'thinklate-architect-studio', elements, appState: { viewBackgroundColor: '#f7f4ee', gridSize: 20 }, files: {} };
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `${deck.id.toLowerCase()}_thinklate_board.excalidraw`;
+      a.click();
+    }
+
+    function next() { const d = decks[currentDeckKey]; if (slideIdx < d.slides.length - 1) { slideIdx++; renderSlide(); } }
+    function prev() { if (slideIdx > 0) { slideIdx--; renderSlide(); } }
+    function toggleTimer() {
+      timerRunning = !timerRunning;
+      document.getElementById('timerToggle').textContent = timerRunning ? '⏸' : '▶';
+      if (timerRunning) timerInt = setInterval(() => { seconds++; document.getElementById('timerDisplay').textContent = fmtTime(seconds); }, 1000);
+      else clearInterval(timerInt);
+    }
+    function flagRetake() {
+      retakes.push(`[${fmtTime(seconds)}] Board ${slideIdx + 1}`);
+      document.getElementById('retakeLog').innerHTML = retakes.map(r => `<div>🚩 ${r}</div>`).join('');
+    }
+
+    document.getElementById('themeSelect').addEventListener('change', async e => {
+      const t = e.target.value;
+      document.body.setAttribute('data-theme', t);
+      localStorage.setItem('thinklate_studio_theme', t);
+      initMermaid(t);
+      if (isCanvasMode) { await buildInfiniteCanvas(); focusBoard(slideIdx); }
+      else { await renderSlide(); }
+    });
+    deckSelect.addEventListener('change', e => { currentDeckKey = e.target.value; slideIdx = 0; renderSlide(); if (isCanvasMode) buildInfiniteCanvas().then(() => focusBoard(0)); });
+    document.getElementById('nextBtn').onclick = next;
+    document.getElementById('prevBtn').onclick = prev;
+    document.getElementById('canvasModeBtn').onclick = toggleCanvasMode;
+    document.getElementById('zoomFitBtn').onclick = fitAllBoards;
+    document.getElementById('exportExcaliBtn').onclick = exportExcalidraw;
+    document.getElementById('timerToggle').onclick = toggleTimer;
+    document.getElementById('retakeBtn').onclick = flagRetake;
+    document.getElementById('clearRetakes').onclick = () => { retakes = []; document.getElementById('retakeLog').innerHTML = '<span style="color:var(--muted);">Cleared.</span>'; };
+    document.getElementById('obsBtn').onclick = () => document.body.classList.toggle('obs-clean');
+    document.getElementById('penBtn').onclick = () => setDrawMode('pen');
+    document.getElementById('hiBtn').onclick = () => setDrawMode('hi');
+    document.getElementById('clearDrawBtn').onclick = clearInk;
+    document.getElementById('laserBtn').onclick = () => { document.body.classList.toggle('laser-on'); document.getElementById('laserBtn').classList.toggle('active'); };
+    document.getElementById('fsBtn').onclick = () => { if (!document.fullscreenElement) document.documentElement.requestFullscreen(); else document.exitFullscreen(); };
+    document.getElementById('fontPlus').onclick = () => { noteFontSize = Math.min(22, noteFontSize + 2); document.documentElement.style.setProperty('--note-font', noteFontSize + 'px'); };
+    document.getElementById('fontMinus').onclick = () => { noteFontSize = Math.max(12, noteFontSize - 2); document.documentElement.style.setProperty('--note-font', noteFontSize + 'px'); };
+    document.querySelectorAll('.swatch').forEach(s => s.onclick = () => {
+      document.querySelectorAll('.swatch').forEach(x => x.classList.remove('active'));
+      s.classList.add('active');
+      drawColor = s.dataset.color;
+    });
+
+    document.addEventListener('mousemove', e => {
+      const l = document.getElementById('laser');
+      l.style.left = e.clientX + 'px';
+      l.style.top = e.clientY + 'px';
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); next(); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); prev(); }
+      else if (e.key.toLowerCase() === 'c') toggleCanvasMode();
+      else if (e.key.toLowerCase() === 'p') setDrawMode('pen');
+      else if (e.key.toLowerCase() === 'e') clearInk();
+      else if (e.key.toLowerCase() === 'h') document.body.classList.toggle('obs-clean');
+      else if (e.key.toLowerCase() === 'l') { document.body.classList.toggle('laser-on'); document.getElementById('laserBtn').classList.toggle('active'); }
+      else if (e.key.toLowerCase() === 't') toggleTimer();
+      else if (e.key.toLowerCase() === 'x') flagRetake();
+      else if (e.key.toLowerCase() === 'f') { if (!document.fullscreenElement) document.documentElement.requestFullscreen(); else document.exitFullscreen(); }
+    });
+
+    renderSlide();
+  </script>
+</body>
+</html>
